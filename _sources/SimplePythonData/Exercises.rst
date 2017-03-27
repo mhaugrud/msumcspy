@@ -91,17 +91,6 @@ Exercises
 
                 ## question 3 solution ##
 
-                current_time_string = input("What is the current time (in hours)? ")
-                waiting_time_string = input("How many hours do you have to wait? ")
-
-                current_time_int = int(current_time_string)
-                waiting_time_int = int(waiting_time_string)
-
-                hours = current_time_int + waiting_time_int
-
-                timeofday = hours % 24
-
-                print(timeofday)
 
         .. tab:: Discussion
 
@@ -142,18 +131,6 @@ Exercises
 
                 ## question 5 solution ##
 
-                word1 = "All"
-                word2 = "work"
-                word3 = "and"
-                word4 = "no"
-                word5 = "play"
-                word6 = "makes"
-                word7 = "Jack"
-                word8 = "a"
-                word9 = "dull"
-                word10 = "boy."
-
-                print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
 
 
         .. tab:: Discussion
@@ -197,16 +174,6 @@ Exercises
 
                 ## question 7 solution ##
 
-                P = 10000
-                n = 12
-                r = 0.08
-
-                t = int(input("Compound for how many years? "))
-
-                final = P * ( ((1 + (r/n)) ** (n * t)) )
-
-                print ("The final amount after", t, "years is", final)
-
 
         .. tab:: Discussion
 
@@ -240,13 +207,6 @@ Exercises
 
                 ## question 9 solution
 
-                width = int(input("Width? "))
-                height = int(input("Height? "))
-
-                area = width * height
-
-                print("The area of the rectangle is", area)
-
 
         .. tab:: Discussion
 
@@ -279,12 +239,6 @@ Exercises
 
                 ## question 11 solution ##
 
-                deg_c = int(input("What is the temperature in Celsius? "))
-
-                # formula to convert C to F is: (degrees Celcius) times (9/5) plus (32)
-                deg_f = deg_c * (9 / 5) + 32
-
-                print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
 
         .. tab:: Discussion
 

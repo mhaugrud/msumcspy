@@ -49,6 +49,8 @@ So far so good.  Now let's take the next step.  We need to figure out what the t
 
    final_time = current_time + wait_time
    print(final_time)
+   # define string concatenation on the following line
+   #
 
 Hmm, when you run that example you see that something funny has happened.
 
@@ -76,6 +78,8 @@ This error was probably pretty simple to spot, because we printed out the value 
 
    final_time_int = current_time_int + wait_time_int
    print(final_time_int)
+   # what does boundary testing mean in this problem?
+   #
 
 
 .. index:: boundary conditions, testing, debugging

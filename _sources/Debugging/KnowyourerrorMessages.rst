@@ -132,7 +132,7 @@ Here are a couple examples of Parse errors in the example program we have been u
 
     .. tab:: Question
 
-        Find and fix the error in the following code.
+        Fix the error in the following code: current time should be surrounded with double quote marks
 
         .. activecode:: db_ex3_7
 
@@ -174,8 +174,8 @@ Here's an example of a type error created by a Polish learner.  See if you can f
 
 .. activecode:: db_ex3_8
 
-    a = input(uu'wpisz godzine')
-    x = input(uu'wpisz liczbe godzin')
+    a = input('wpisz godzine')
+    x = input('wpisz liczbe godzin')
     int(x)
     int(a)
     h = x // 24
@@ -308,7 +308,7 @@ Value errors occur when you pass a parameter to a function and the function is e
    print(final_time_int)
 
 
-Run the program but instead of typing in anything to the dialog box just click OK.  You should see the following error message:  ``ValueError: invalid literal for int() with base 10: '' on line: 4``   This error is not because you have made a mistake in your program.  Although sometimes we do want to check the user input to make sure its valid, but we don't have all the tools we need for that yet.  The error happens because the user did not give us something we can convert to an integer, instead we gave it an empty value.  Try running the program again.  Now this time enter "ten" instead of the number 10.  You will get a similar error message.
+Run the program but **do not type in anything to the dialog box** just click OK.  You should see the following error message:  ``ValueError: invalid literal for int() with base 10: '' on line: 4``   This error is not because you have made a mistake in your program.  Although sometimes we do want to check the user input to make sure its valid, but we don't have all the tools we need for that yet.  The error happens because the user did not give us something we can convert to an integer, instead we gave it an empty value.  Try running the program again.  Now this time enter "ten" instead of the number 10.  You will get a similar error message.
 
 ValueErrors are not always caused by user input error, but in this program that is the case.  We'll look again at ValueErrors again when we get to more complicated programs.  For now it is worth repeating that you need to keep track of the types of your variables, and understand what types your function is expecting.  You can do this by writing comments in your code, or by naming your variables in a way that reminds you of their type.
 
