@@ -23,12 +23,12 @@ left        angle         Turns the turtle counter clockwise
 up          None          Picks up the turtles tail
 down        None          Puts down the turtles tail
 color       color name    Changes the color of the turtle's tail
-fillcolor   color name    Changes the color of the turtle will use to fill a polygon
+xcor        None          Returns the x coordinate
+ycor        None          Returns the y coordinate
 heading     None          Returns the current heading
 position    None          Returns the current position
 goto        x,y           Move the turtle to position x,y
-begin_fill  None          Remember the starting point for a filled polygon
-end_fill    None          Close the polygon and fill with the current fill color
+distance    turtle        Returns the distance between 2 turtles
 dot         None          Leave a dot at the current position
 stamp       None          Leaves an impression of a turtle shape at the current location
 shape       shapename     Should be 'arrow', 'classic', 'turtle', or 'circle'

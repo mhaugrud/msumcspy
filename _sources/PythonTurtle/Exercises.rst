@@ -28,8 +28,6 @@ Exercises
             .. activecode::  q1_answer
                 :nocanvas:
 
-                for i in range(100):
-                    print("We like Python's turtles!")
 
         .. tab:: Discussion
 
@@ -65,8 +63,6 @@ Exercises
             .. activecode:: q3_answer
 
 
-                for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
-                    print("One of the months of the year is", amonth)
 
         .. tab:: Discussion
 
@@ -109,61 +105,18 @@ Exercises
             .. sourcecode:: python
 
                 # draw an equilateral triangle
-                import turtle
-
-                wn = turtle.Screen()
-                norvig = turtle.Turtle()
-
-                for i in range(3):
-                    norvig.forward(100)
-
-                    # the angle of each vertice of a regular polygon
-                    # is 360 divided by the number of sides
-                    norvig.left(360/3)
-
-                wn.exitonclick()
 
             .. sourcecode:: python
 
                 # draw a square
-                import turtle
-
-                wn = turtle.Screen()
-                kurzweil = turtle.Turtle()
-
-                for i in range(4):
-                    kurzweil.forward(100)
-                    kurzweil.left(360/4)
-
-                wn.exitonclick()
 
             .. sourcecode:: python
 
                 # draw a hexagon
-                import turtle
-
-                wn = turtle.Screen()
-                dijkstra = turtle.Turtle()
-
-                for i in range(6):
-                    dijkstra.forward(100)
-                    dijkstra.left(360/6)
-
-                wn.exitonclick()
 
             .. sourcecode:: python
 
                 # draw an octogon
-                import turtle
-
-                wn = turtle.Screen()
-                knuth = turtle.Turtle()
-
-                for i in range(8):
-                    knuth.forward(75)
-                    knuth.left(360/8)
-
-                wn.exitonclick()
 
         .. tab:: Discussion
 
@@ -198,28 +151,6 @@ Exercises
            .. activecode:: q7_answer
                :nocodelens:
 
-               import turtle
-
-               wn = turtle.Screen()
-               lovelace = turtle.Turtle()
-
-               # move the turtle forward a little so that the whole path fits on the screen
-               lovelace.penup()
-               lovelace.forward(60)
-
-               # now draw the drunk pirate's path
-               lovelace.pendown()
-               for angle in [160, -43, 270, -97, -43, 200, -940, 17, -86]:
-
-                   # we use .left() so that positive angles are counter-clockwise
-                   # and negative angles are clockwise
-                   lovelace.left(angle)
-                   lovelace.forward(100)
-
-               # the .heading() method gives us the turtle's current heading in degrees
-               print("The pirate's final heading was", lovelace.heading())
-
-               wn.exitonclick()
 
        .. tab:: Discussion
 
@@ -265,13 +196,6 @@ Exercises
             .. activecode:: q9_answer
                 :nocodelens:
 
-                import turtle
-
-                turing = turtle.Turtle()
-
-                for i in range(5):
-                    turing.forward(110)
-                    turing.left(216)
 
         .. tab:: Discussion
 
@@ -308,16 +232,6 @@ Exercises
             .. activecode:: q11_answer
                 :nocodelens:
 
-                import turtle
-
-                tanenbaum = turtle.Turtle()
-
-                tanenbaum.hideturtle()
-                tanenbaum.speed(20)
-
-                for i in range(350):
-                    tanenbaum.forward(i)
-                    tanenbaum.right(98)
 
         .. tab:: Discussion
 
@@ -354,30 +268,6 @@ Exercises
             .. activecode:: q13_answer
                 :nocodelens:
 
-                import turtle
-
-                wn = turtle.Screen()
-
-                babbage = turtle.Turtle()
-                babbage.shape("triangle")
-
-                n = int(input("How many legs should this sprite have? "))
-                angle = 360 / n
-
-                for i in range(n):
-                    # draw the leg
-                    babbage.right(angle)
-                    babbage.forward(65)
-                    babbage.stamp()
-
-                    # go back to the middle and turn back around
-                    babbage.right(180)
-                    babbage.forward(65)
-                    babbage.right(180)
-
-                babbage.shape("circle")
-
-                wn.exitonclick()
 
 
 
