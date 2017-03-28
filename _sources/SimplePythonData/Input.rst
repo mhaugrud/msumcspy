@@ -31,19 +31,19 @@ there is a built-in function to accomplish this task.  As you might expect, it i
 
 .. sourcecode:: python
 
-    n = input("Please enter your name: ")
+    name = input("Please enter your name: ")
 
 The input function allows the user to provide a **prompt string**.  When the function is evaluated, the prompt is
 shown.
 The user of the program can enter the name and press `return`. When this
 happens the text that has been entered is returned from the `input` function,
-and in this case assigned to the variable `n`.  Make sure you run this example a number
+and in this case assigned to the variable `name`.  Make sure you run this example a number
 of times and try some different names in the input box that appears.
 
 .. activecode:: inputfun
 
-    n = input("Please enter your name: ")
-    print("Hello", n)
+    name = input("Please enter your name: ")
+    print("Hello", name)
 
 It is very important to note that the ``input`` function returns a string value.  Even if you asked the user to enter their age, you would get back a string like
 ``"17"``.  It would be your job, as the programmer, to convert that string into

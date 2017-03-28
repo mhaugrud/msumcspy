@@ -39,7 +39,7 @@ statement makes sure that there is no confusion as to the result.
 
     x = 6        # initialize x
     print(x)
-    x = x + 1    # update x
+    x = x + 1    # increment x
     print(x)
 
 

@@ -73,8 +73,17 @@ is in later chapters.
 .. activecode:: ch02_2
     :nocanvas:
 
-    print(type(3.2))
+    print(3)
+    print(3.0)
+    print(3.2)
+    print(1.2345e2)
 
+    print(type(3))
+    print(type(3.0))
+    print(type(3.2))
+    print(type(1.2345e2))
+    # what does e2 mean? (answer on next line)
+    #
 
 What about values like ``"17"`` and ``"3.2"``? They look like numbers, but they
 are in quotation marks like strings.
@@ -93,6 +102,10 @@ quotes (``"``), or three of each (``'''`` or ``"""``)
 .. activecode:: ch02_4
     :nocanvas:
 
+    print('This is a string.')
+    print("And so is this.")
+    print("""and this.""")
+    print('''and even this...''')
     print(type('This is a string.') )
     print(type("And so is this.") )
     print(type("""and this.""") )
@@ -148,8 +161,8 @@ Python, but it does mean something else, which is legal:
 .. activecode:: ch02_8
     :nocanvas:
 
-    print(42000)
-    print(42,000)
+    print(42000.1)
+    print(42,000.1)
 
 
 Well, that's not what we expected at all! Because of the comma, Python chose to

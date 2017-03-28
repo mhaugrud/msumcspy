@@ -68,8 +68,13 @@ the left on the number line).
     print(7 / 4)
     print(7 // 4)
     minutes = 645
+    hours = minutes / 60
+    print(hours)
     hours = minutes // 60
     print(hours)
+    # what does the value for hours mean in the line above?
+    #
+
 
 Pay particular attention to the first two examples above.  Notice that the result of floating point division
 is ``1.75`` but the result of the integer division is simply ``1``.

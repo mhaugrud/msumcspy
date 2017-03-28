@@ -69,11 +69,17 @@ by the variable.
 
     message = "What's up, Doc?"
     n = 17
-    pi = 3.14159
+    PI = 3.14159
+    pi = 3
+    pI = 'apple'
 
     print(message)
     print(n)
+    print(PI)
     print(pi)
+    print(pI)
+    # what do you see about the names of variables? 
+    #
 
 In each case the result is the value of the variable.
 To see this in even more detail, we can run the program using codelens.
@@ -83,11 +89,11 @@ To see this in even more detail, we can run the program using codelens.
 
     message = "What's up, Doc?"
     n = 17
-    pi = 3.14159
+    PI = 3.14159
 
     print(message)
     print(n)
-    print(pi)
+    print(PI)
 
 Now, as you step through the statements, you can see
 the variables and the values they reference as those references are
@@ -104,11 +110,11 @@ types; again, we can ask the interpreter what they are.
 
     message = "What's up, Doc?"
     n = 17
-    pi = 3.14159
+    PI = 3.14159
 
     print(type(message))
     print(type(n))
-    print(type(pi))
+    print(type(PI))
 
 
 The type of a variable is the type of the object it currently refers to.

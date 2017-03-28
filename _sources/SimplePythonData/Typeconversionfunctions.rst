@@ -61,6 +61,10 @@ quotes are removed.  However, if we print the type, we can see that it is defini
     print(str(123.45))
     print(type(str(123.45)))
 
+    print(str("this use of str is very foolish"))
+    # why is the line above foolish? (answer on line below)
+    #
+
 **Check your understanding**
 
 .. mchoice:: test_question2_2_1
