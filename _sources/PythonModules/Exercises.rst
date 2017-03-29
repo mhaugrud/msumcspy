@@ -24,12 +24,6 @@ Exercises
 
             .. activecode:: mod_q1_answer
 
-               import random
-
-               howmany = 10
-               for counter in range(howmany):
-                   arandom = random.random()
-                   print(arandom)
 
         .. tab:: Discussion
 
@@ -57,12 +51,6 @@ Exercises
 
             .. activecode:: mod_q3_answer
 
-               import math
-
-               side1 = 3
-               side2 = 4
-               hypotenuse = math.hypot(side1,side2)
-               print(hypotenuse)
 
         .. tab:: Discussion
 
