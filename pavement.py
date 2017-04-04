@@ -19,7 +19,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "tcspymsum"
+project_name = "haugrud17"
 ###############################
 
 master_url = None
@@ -51,7 +51,7 @@ options(
         doctrees = doctrees,
         template_args = {
             'course_id':project_name,
-            'login_required':'false',
+            'login_required':'true',
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
