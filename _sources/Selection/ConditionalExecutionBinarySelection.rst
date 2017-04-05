@@ -72,6 +72,8 @@ all the statements under the ``else`` clause are executed.
 There is no limit on the number of statements that can appear under the two clauses of an
 ``if`` statement, but there has to be at least one statement in each block.
 
+**String Comparison**
+
 The comparison operators also work on strings. To see if two strings are equal you simply write a boolean
 expression using the equality operator.
 

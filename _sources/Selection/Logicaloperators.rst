@@ -57,5 +57,12 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
 
    What is the correct Python expression for checking to see if a number stored in a variable x is between 0 and 5.
 
+.. note::
+
+  This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
+
+  .. activecode:: scratch_06_01
+
+
 
 

@@ -11,7 +11,7 @@
    :prefix: list-17-
    :start: 1
 
-Lists and ``for`` loops
+List Traversal by Index
 -----------------------
 
 We can also use the indices to access the items in an iterative fashion.

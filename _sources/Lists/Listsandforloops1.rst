@@ -11,8 +11,8 @@
    :prefix: list-17-
    :start: 1
 
-Lists and ``for`` loops
------------------------
+List Traversal by Item
+----------------------
 
 We can perform **list traversal** by iterating over the items in a list.
 

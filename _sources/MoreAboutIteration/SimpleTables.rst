@@ -85,3 +85,48 @@ column does not depend on the number of digits in the first column.
 
   What is the difference between a tab (``'\t'``) and a sequence of spaces?
 
+Nested Iteration
+^^^^^^^^^^^^^^^^
+
+Nested iteration simply means that we will place one iteration construct inside of another.  We will call these two
+iterations the **outer iteration** and the **inner iteration**.
+To see how this works, consider the iteration below.
+
+.. sourcecode:: python
+
+    for i in range(5):
+        print(i)
+
+We have seen this enough times to know that the value of ``i`` will be 0, then 1, then 2, and so on up to 4.
+The ``print`` will be performed once for each pass.
+However, the body of the loop can contain any statements including another iteration (another ``for`` statement).  For example,
+
+.. sourcecode:: python
+
+    for i in range(5):
+        for j in range(3):
+            print(i, j)
+
+The ``for i`` iteration is the `outer iteration` and the ``for j`` iteration is the `inner iteration`.  Each pass through
+the outer iteration will result in the complete processing of the inner iteration from beginning to end.  This means that
+the output from this nested iteration will show that for each value of ``i``, all values of ``j`` will occur.
+
+Here is the same example in activecode.  Try it.  Note that the value of ``i`` stays the same while the value of ``j`` changes.  The inner iteration, in effect, is moving faster than the outer iteration.
+
+.. activecode:: nested1
+
+    for i in range(5):
+        for j in range(3):
+            print(i, j)
+
+Another way to see this in more detail is to examine the behavior with codelens.  Step through the iterations to see the
+flow of control as it occurs with the nested iteration.  Again, for every value of ``i``, all of the values of ``j`` will occur.  You can see that the inner iteration completes before going on to the next pass of the outer iteration.
+
+.. codelens:: nested2
+
+    for i in range(5):
+        for j in range(3):
+            print(i, j)
+
+
+

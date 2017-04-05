@@ -53,8 +53,16 @@ two values are equal to one another.
 
 .. activecode:: ch05_2
 
-    print(5 == 5)
-    print(5 == 6)
+    x = 5
+    y = 5
+    print(x == y)
+    
+    
+    
+    
+    
+    y = 6
+    print(x == y)
 
 In the first statement, the two operands are equal, so the expression evaluates
 to ``True``.  In the second statement, 5 is not equal to 6, so we get ``False``.

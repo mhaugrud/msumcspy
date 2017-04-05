@@ -6,10 +6,10 @@ Selection
    :maxdepth: 2
 
    BooleanValuesandBooleanExpressions.rst
-   Logicaloperators.rst
-   PrecedenceofOperators.rst
    ConditionalExecutionBinarySelection.rst
    OmittingtheelseClauseUnarySelection.rst
+   Logicaloperators.rst
+   PrecedenceofOperators.rst
    Nestedconditionals.rst
    Chainedconditionals.rst
    BooleanFunctions.rst
