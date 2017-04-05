@@ -25,9 +25,9 @@ Remember that the accumulator pattern allows us to keep a "running total".  With
     def removeVowels(s):
         vowels = "aeiouAEIOU"
         sWithoutVowels = ""
-        for eachChar in s:
-            if eachChar not in vowels:
-                sWithoutVowels = sWithoutVowels + eachChar
+        for aChar in s:
+            if aChar not in vowels:
+                sWithoutVowels = sWithoutVowels + aChar
         return sWithoutVowels 
        
     print(removeVowels("compsci"))
@@ -37,20 +37,20 @@ Line 5 uses the ``not in`` operator to check whether the current character is no
 
 .. sourcecode:: python
 
-    if eachChar != 'a'  and eachChar != 'e'  and eachChar != 'i'  and
-       eachChar != 'o'  and eachChar != 'u'  and eachChar != 'A'  and
-       eachChar != 'E'  and eachChar != 'I'  and eachChar != 'O'  and
-       eachChar != 'U':      
+    if aChar != 'a'  and aChar != 'e'  and aChar != 'i'  and
+       aChar != 'o'  and aChar != 'u'  and aChar != 'A'  and
+       aChar != 'E'  and aChar != 'I'  and aChar != 'O'  and
+       aChar != 'U':      
        
-         sWithoutVowels = sWithoutVowels + eachChar
+         sWithoutVowels = sWithoutVowels + aChar
 
                   
       
 
-Look carefully at line 6 in the above program (``sWithoutVowels = sWithoutVowels + eachChar``).  We will do this for every character that is not a vowel.  This should look
+Look carefully at line 6 in the above program (``sWithoutVowels = sWithoutVowels + aChar``).  We will do this for every character that is not a vowel.  This should look
 very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to "accumulate" the final result.
 In words it says that the new value of ``sWithoutVowels`` will be the old value of ``sWithoutVowels`` concatenated with
-the value of ``eachChar``.  We are building the result string character by character. 
+the value of ``aChar``.  We are building the result string character by character. 
 
 Take a close look also at the initialization of ``sWithoutVowels``.  We start with an empty string and then begin adding
 new characters to the end.
@@ -62,9 +62,9 @@ Step through the function using codelens to see the accumulator variable grow.
     def removeVowels(s):
         vowels = "aeiouAEIOU"
         sWithoutVowels = ""
-        for eachChar in s:
-            if eachChar not in vowels:
-                sWithoutVowels = sWithoutVowels + eachChar
+        for aChar in s:
+            if aChar not in vowels:
+                sWithoutVowels = sWithoutVowels + aChar
         return sWithoutVowels 
        
     print(removeVowels("compsci"))
@@ -72,22 +72,22 @@ Step through the function using codelens to see the accumulator variable grow.
 **Check your understanding**
 
 .. mchoice:: test_question8_11_1
-   :answer_a: Ball
+   :answer_a: BALLBALLBALLBALL
    :answer_b: BALL
    :answer_c: LLAB
    :correct: c
-   :feedback_a: Each item is converted to upper case before concatenation.
-   :feedback_b: Each character is converted to upper case but the order is wrong.
+   :feedback_a: item is a single character.
+   :feedback_b: The order is wrong.
    :feedback_c: Yes, the order is reversed due to the order of the concatenation.
 
    What is printed by the following statements:
    
    .. code-block:: python
 
-      s = "ball"
+      s = "BALL"
       r = ""
       for item in s:
-          r = item.upper() + r
+          r = item + r
       print(r)
 
 

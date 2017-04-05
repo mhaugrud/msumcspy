@@ -9,21 +9,20 @@ Strings
    ACollectionDataType.rst
    OperationsonStrings.rst
    IndexOperatorWorkingwiththeCharactersofaString.rst
-   StringMethods.rst
    Length.rst
    TheSliceOperator.rst
-   StringComparison.rst
    StringsareImmutable.rst
    TraversalandtheforLoopByItem.rst
-   TraversalandtheforLoopByIndex.rst
-   TraversalandthewhileLoop.rst
    Theinandnotinoperators.rst
    TheAccumulatorPatternwithStrings.rst
-   TurtlesandStringsandLSystems.rst
    Loopingandcounting.rst
+   Characterclassification.rst
+   StringMethods.rst
+   StringComparison.rst
+   TraversalandtheforLoopByIndex.rst
+   TraversalandthewhileLoop.rst
    Afindfunction.rst
    Optionalparameters.rst
-   Characterclassification.rst
    Summary.rst
    Glossary.rst
    Exercises.rst

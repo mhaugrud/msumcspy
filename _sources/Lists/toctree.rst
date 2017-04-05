@@ -13,22 +13,21 @@ Lists
    ConcatenationandRepetition.rst
    ListSlices.rst
    ListsareMutable.rst
+   ListMethods.rst
+   Listsandforloops.rst
+   StringsandLists.rst
+   UsingListsasParameters.rst
+   PureFunctions.rst
+   WhichisBetter.rst
+   FunctionsthatProduceLists.rst
+   NestedLists.rst
    ListDeletion.rst
    ObjectsandReferences.rst
    Aliasing.rst
    CloningLists.rst
    RepetitionandReferences.rst
-   ListMethods.rst
-   TheReturnofLSystems.rst
    AppendversusConcatenate.rst
-   Listsandforloops.rst
-   UsingListsasParameters.rst
-   PureFunctions.rst
-   WhichisBetter.rst
-   FunctionsthatProduceLists.rst
    ListComprehensions.rst
-   NestedLists.rst
-   StringsandLists.rst
    listTypeConversionFunction.rst
    TuplesandMutability.rst
    TupleAssignment.rst
