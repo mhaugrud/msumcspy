@@ -16,13 +16,12 @@ Logical operators
 
 There are three **logical operators**: ``and``, ``or``, and ``not``. The
 semantics (meaning) of these operators is similar to their meaning in English.
-For example, ``x > 0 and x < 10`` is true only if ``x`` is greater than 0 *and*
-at the same time, x is less than 10.  How would you describe this in words?  You would say that
-x is between 0 and 10, not including the endpoints.
+For example, ``x < 0 or x > 10`` is true if *either* x is less than 0 *or*
+ x is greater than 10.  How would you describe this in words?  You would say that x is not between 0 and 10. With the *or* operator, one, or the other, or
+both of the conditions can be true for the result to be true.
 
-``n % 2 == 0 or n % 3 == 0`` is true if *either* of the conditions is true,
-that is, if the number is divisible by 2 *or* divisible by 3.  In this case, one, or the other, or
-both of the parts has to be true for the result to be true.
+``x % 2 == 0 and x % 3 == 0`` is true if *both* of the conditions are true,
+that is, if x is divisible by 2 *and also* divisible by 3.  
 
 Finally, the ``not`` operator negates a boolean expression, so ``not  x > y``
 is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
@@ -31,10 +30,10 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
 .. activecode:: chp05_3
 
     x = 5
-    print(x > 0 and x < 10)
+    print(x < 0 and x > 10)
 
-    n = 25
-    print(n % 2 == 0 or n % 3 == 0)
+    print(x % 2 == 0 or x % 3 == 0)
+    # change the value of x in line 1 so both of the expressions are True
 
 
 .. admonition:: Common Mistake!
@@ -56,6 +55,12 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
    :feedback_d: Yes, with an and keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true.
 
    What is the correct Python expression for checking to see if a number stored in a variable x is between 0 and 5.
+
+**Truth Table**
+A truth table lists logical operations with all combinations of Boolean operands.
+
+.. image:: Figures/truth.png
+
 
 .. note::
 

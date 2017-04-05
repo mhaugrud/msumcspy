@@ -35,6 +35,7 @@ This is sometimes referred to as **binary selection** since there are two possib
         print(x, "is even")
     else:
         print(x, "is odd")
+    # change the value of x in line 1 so the other path through the if statement is executed
 
 
 The syntax for an ``if`` statement looks like this:
@@ -84,6 +85,7 @@ expression using the equality operator.
         print("Yes, we have bananas!")
     else:
         print("Yes, we have NO bananas!")
+    # change banana in line 1 so the other path through the if statement is executed
 
 
 .. admonition:: Lab

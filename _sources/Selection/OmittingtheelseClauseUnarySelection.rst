@@ -40,6 +40,7 @@ executed.  Otherwise the flow of execution continues to the statement after the 
     if x < 0:
         print("The negative number ",  x, " is not valid here.")
     print("This is always printed")
+    # change the value of x in line 1 so the body of the if statement is executed
 
 
 What would be printed if the value of ``x`` is negative?  Try it.
