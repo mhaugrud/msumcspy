@@ -13,9 +13,10 @@ Lists
    ConcatenationandRepetition.rst
    ListSlices.rst
    ListsareMutable.rst
-   ListMethods.rst
-   Listsandforloops.rst
+   Listsandforloops1.rst
    StringsandLists.rst
+   ListMethods.rst
+   Listsandforloops2.rst
    UsingListsasParameters.rst
    PureFunctions.rst
    WhichisBetter.rst

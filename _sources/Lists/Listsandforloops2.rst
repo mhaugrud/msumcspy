@@ -14,19 +14,6 @@
 Lists and ``for`` loops
 -----------------------
 
-It is also possible to perform **list traversal** using iteration by item as well as iteration by index.
-
-
-.. activecode:: chp09_03a
-
-    fruits = ["apple", "orange", "banana", "cherry"]
-
-    for afruit in fruits:     # by item
-        print(afruit)
-
-It almost reads like natural language: For (every) fruit in (the list of) fruits,
-print (the name of the) fruit.
-
 We can also use the indices to access the items in an iterative fashion.
 
 .. activecode:: chp09_03b

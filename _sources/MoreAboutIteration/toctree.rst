@@ -5,6 +5,9 @@ More About Iteration
    :caption: More About Iteration
    :maxdepth: 2
 
+   SimpleTables.rst
+   2DimensionalIterationImageProcessing.rst
+   ImageProcessingonYourOwn.rst
    intro-IterationRevisited.rst
    Theforlooprevisited.rst
    ThewhileStatement.rst
@@ -13,8 +16,5 @@ More About Iteration
    Newton'sMethod.rst
    SentinelValuesAndValidation.rst
    AlgorithmsRevisited.rst
-   SimpleTables.rst
-   2DimensionalIterationImageProcessing.rst
-   ImageProcessingonYourOwn.rst
    Glossary.rst
    Exercises.rst
