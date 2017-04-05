@@ -72,6 +72,17 @@ all the statements under the ``else`` clause are executed.
 There is no limit on the number of statements that can appear under the two clauses of an
 ``if`` statement, but there has to be at least one statement in each block.
 
+The comparison operators also work on strings. To see if two strings are equal you simply write a boolean
+expression using the equality operator.
+
+.. activecode:: ch08_comp1
+    
+    word = "banana"
+    if word == "banana":
+        print("Yes, we have bananas!")
+    else:
+        print("Yes, we have NO bananas!")
+
 
 .. admonition:: Lab
 

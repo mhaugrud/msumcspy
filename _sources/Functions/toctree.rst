@@ -14,6 +14,6 @@ Functions
    mainfunction.rst
    ProgramDevelopment.rst
    Composition.rst
-   ATurtleBarChart.rst
+   TuplesasReturnValues.rst
    Glossary.rst
    thinkcspyExercises.rst

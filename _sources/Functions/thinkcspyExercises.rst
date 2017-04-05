@@ -56,25 +56,6 @@ Exercises
                 import turtle
 
                 def drawSquare(t, sz):
-                    """Make turtle t draw a square of with side sz."""
-                    for i in range(4):
-                        t.forward(sz)
-                        t.left(90)
-
-                wn = turtle.Screen()       # Set up the window and its attributes
-                wn.bgcolor("lightgreen")
-
-                alex = turtle.Turtle()     # create alex
-                alex.color('hotpink')
-                alex.pensize(3)
-
-                for i in range(5):
-                    drawSquare(alex, 20)   # Call the function to draw the square
-                    alex.penup()
-                    alex.forward(40)       # move alex to the starting position for the next square
-                    alex.pendown()
-
-                wn.exitonclick()
 
         .. tab:: Discussion
 
@@ -115,18 +96,6 @@ Exercises
                 import turtle
 
                 def drawPoly(t, num_sides, side_length):
-                    for i in range(num_sides):
-                        t.forward(side_length)
-                        t.left(360/num_sides)
-
-                wn = turtle.Screen()       # Set up the window and its attributes
-                wn.bgcolor("lightgreen")
-
-                tess = turtle.Turtle()
-                tess.color('hotpink')
-                tess.pensize(3)
-
-                drawPoly(tess, 8, 50)
 
         .. tab:: Discussion
 
@@ -162,38 +131,6 @@ Exercises
                 import turtle
 
                 def drawSpiral(t, angle):
-                    ''' takes a turtle, t, and an angle in degrees '''
-                    length = 1
-                    for i in range(84):
-                        t.forward(length)
-                        t.right(angle)
-                        length = length + 2
-
-
-                wn = turtle.Screen()       # Set up the window and its attributes
-                wn.bgcolor("lightgreen")
-
-                guido = turtle.Turtle()    # create guido
-                guido.color('blue')
-
-                ## draw the first spiral ##
-                # position guido
-                guido.penup()
-                guido.backward(110)
-                guido.pendown()
-
-                # draw the spiral using a 90 degree turn angle
-                drawSpiral(guido, 90)
-
-
-                ## draw the second spiral ##
-                # position guido
-                guido.home()
-                guido.penup()
-                guido.forward(90)
-                guido.pendown()
-
-                drawSpiral(guido, 89)
 
 
         .. tab:: Discussion
@@ -246,16 +183,6 @@ Exercises
                 from test import testEqual
 
                 def sumTo(n):
-                    result = (n * (n + 1)) / 2
-                    return result
-
-                # Now lets see how well this works
-                t = sumTo(0)
-                print("The sum from 1 to 0 is",t)
-                t = sumTo(10)
-                print("The sum from 1 to 10 is",t)
-                t = sumTo(5)
-                print("The sum from 1 to 5 is",t)
 
         .. tab:: Discussion
 
@@ -306,12 +233,6 @@ Exercises
                 import turtle
 
                 def drawFivePointStar(t):
-                    for i in range(5):
-                        t.forward(100)
-                        t.left(216)
-
-                wolfram = turtle.Turtle()
-                drawFivePointStar(wolfram)
 
         .. tab:: Discussion
 
@@ -351,12 +272,6 @@ Exercises
                 import turtle
 
                 def drawStar(t, n):
-                    for i in range(n):
-                        t.forward(100)
-                        t.left(180 - 180/n)
-
-                stroustrup = turtle.Turtle()
-                drawStar(stroustrup, 7)
 
         .. tab:: Discussion
 
@@ -406,18 +321,6 @@ Exercises
             .. activecode:: q13_answer
 
                 def sumTo(n):
-                    sum = 0
-                    for i in range(1,n+1):
-                        sum = sum + i
-                    return sum
-
-                # Now lets see how well this works
-                t = sumTo(0)
-                print("The sum from 1 to 0 is",t)
-                t = sumTo(10)
-                print("The sum from 1 to 10 is",t)
-                t = sumTo(5)
-                print("The sum from 1 to 5 is",t)
 
         .. tab:: Discussion
 
@@ -473,21 +376,6 @@ Exercises
             .. activecode:: q15_answer
 
                 def myPi(iters):
-                    ''' Calculate an approximation of PI using the Leibniz
-                    approximation with iters number of iterations '''
-                    pi = 0
-                    sign = 1
-                    denominator = 1
-                    for i in range(iters):
-                        pi = pi + (sign/denominator)
-                        sign = sign * -1  # alternate positive and negative
-                        denominator = denominator + 2
-
-                    pi = pi * 4.0
-                    return pi
-
-                pi_approx = myPi(10000)
-                print(pi_approx)
 
         .. tab:: Discussion
 
@@ -526,25 +414,6 @@ Exercises
                 import turtle
 
                 def drawSprite(t, numlegs, leglength):
-                   angle = 360/numlegs
-                   for i in range(numlegs):
-                      t.forward(leglength)
-                      t.backward(leglength)
-                      t.left(angle)
-
-                def drawFancySquare(t, sz, lgs, lgl):
-                   for i in range(4):
-                       t.forward(sz)
-                       drawSprite(t, lgs, lgl)
-                       t.left(90)
-
-                wn = turtle.Screen()
-                wn.bgcolor("lightgreen")
-
-                alex = turtle.Turtle()
-                drawFancySquare(alex, 100, 10, 15)
-
-                wn.exitonclick()
 
         .. tab:: Discussion
 

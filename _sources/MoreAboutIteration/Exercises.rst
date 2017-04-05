@@ -35,13 +35,6 @@ Exercises
             .. activecode:: q1_answer
 
                 def newtonSqrt(n):
-                    approx = 0.5 * n
-                    better = 0.5 * (approx + n/approx)
-                    while better != approx:
-                        approx = better
-                        better = 0.5 * (approx + n/approx)
-                        print("Approx:", better)
-                    return approx
 
 
                 print("Final approx:", newtonSqrt(25))
@@ -107,10 +100,7 @@ Exercises
             .. activecode:: q3_answer
 
                 def is_prime(n):
-                    for i in range(2, n):
-                        if n % i == 0:
-                            return False
-                    return True
+
 
                 print(is_prime(25))
                 print(is_prime(7))
@@ -156,35 +146,13 @@ Exercises
                 import turtle
 
                 def moveRandom(wn, t):
-                    coin = random.randrange(0,2)
-                    if coin == 0:
-                        t.left(90)
-                    else:
-                        t.right(90)
 
-                    t.forward(50)
 
                 def areColliding(t1, t2):
-                    if t1.distance(t2) < 2:
-                        return True
-                    else:
-                        return False
+
 
                 def isInScreen(w, t):
-                    leftBound = - w.window_width() / 2
-                    rightBound = w.window_width() / 2
-                    topBound = w.window_height() / 2
-                    bottomBound = -w.window_height() / 2
 
-                    turtleX = t.xcor()
-                    turtleY = t.ycor()
-
-                    stillIn = True
-                    if turtleX > rightBound or turtleX < leftBound:
-                        stillIn = False
-                    if turtleY > topBound or turtleY < bottomBound:
-                        stillIn = False
-                    return stillIn
 
                 t1 = turtle.Turtle()
                 t2 = turtle.Turtle()
@@ -259,24 +227,6 @@ Exercises
 
                 import image
 
-                img = image.Image("luther.jpg")
-                newimg = image.EmptyImage(img.getWidth(), img.getHeight())
-                win = image.ImageWin()
-
-                for col in range(img.getWidth()):
-                    for row in range(img.getHeight()):
-                        p = img.getPixel(col, row)
-
-                        newred = 0
-                        green = p.getGreen()
-                        blue = p.getBlue()
-
-                        newpixel = image.Pixel(newred, green, blue)
-
-                        newimg.setPixel(col, row, newpixel)
-
-                newimg.draw(win)
-                win.exitonclick()
 
         .. tab:: Discussion
 
@@ -311,35 +261,6 @@ Exercises
                 import image
 
                 def convertBlackWhite(input_image):
-                    grayscale_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
-
-                    for col in range(input_image.getWidth()):
-                        for row in range(input_image.getHeight()):
-                            p = input_image.getPixel(col, row)
-
-                            red = p.getRed()
-                            green = p.getGreen()
-                            blue = p.getBlue()
-
-                            avg = (red + green + blue) / 3.0
-
-                            newpixel = image.Pixel(avg, avg, avg)
-                            grayscale_image.setPixel(col, row, newpixel)
-
-                    blackwhite_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
-                    for col in range(input_image.getWidth()):
-                        for row in range(input_image.getHeight()):
-                            p = grayscale_image.getPixel(col, row)
-                            red = p.getRed()
-                            if red > 140:
-                                val = 255
-                            else:
-                                val = 0
-
-                            newpixel = image.Pixel(val, val, val)
-                            blackwhite_image.setPixel(col, row, newpixel)
-                    return blackwhite_image
-
 
                 win = image.ImageWin()
                 img = image.Image("luther.jpg")
@@ -392,20 +313,7 @@ Exercises
                import image
 
                def double(oldimage):
-                   oldw = oldimage.getWidth()
-                   oldh = oldimage.getHeight()
 
-                   newim = image.EmptyImage(oldw * 2, oldh * 2)
-                   for row in range(oldh):
-                       for col in range(oldw):
-                           oldpixel = oldimage.getPixel(col, row)
-
-                           newim.setPixel(2*col, 2*row, oldpixel)
-                           newim.setPixel(2*col+1, 2*row, oldpixel)
-                           newim.setPixel(2*col, 2*row+1, oldpixel)
-                           newim.setPixel(2*col+1, 2*row+1, oldpixel)
-
-                   return newim
 
                win = image.ImageWin()
                img = image.Image("luther.jpg")
@@ -455,23 +363,10 @@ Exercises
                 import image
 
                 def pixelMapper(oldimage, rgbFunction):
-                    width = oldimage.getWidth()
-                    height = oldimage.getHeight()
-                    newim = image.EmptyImage(width, height)
 
-                    for row in range(height):
-                        for col in range(width):
-                            originalpixel = oldimage.getPixel(col, row)
-                            newpixel = rgbFunction(originalpixel)
-                            newim.setPixel(col, row, newpixel)
-
-                    return newim
 
                 def graypixel(oldpixel):
-                    intensitysum = oldpixel.getRed() + oldpixel.getGreen() + oldpixel.getBlue()
-                    aveRGB = intensitysum // 3
-                    newPixel = image.Pixel(aveRGB, aveRGB, aveRGB)
-                    return newPixel
+
 
                 win = image.ImageWin()
                 img = image.Image("luther.jpg")

@@ -132,7 +132,7 @@ Here are a couple examples of Parse errors in the example program we have been u
 
     .. tab:: Question
 
-        Fix the error in the following code: current time should be surrounded with double quote marks
+        Fix the error in the following code: the words ``current time`` should be surrounded with double quote marks
 
         .. activecode:: db_ex3_7
 
@@ -214,7 +214,7 @@ Name errors almost always mean that you have used a variable before it has a val
 .. activecode:: db_ex3_9
 
     str_time = input("What time is it now?")
-    str_wait_time = input("What is the number of nours to wait?")
+    str_wait_time = input("What is the number of hours to wait?")
     time = int(str_time)
     wai_time = int(str_wait_time)
 
@@ -259,7 +259,7 @@ And one last bit of code to fix.
 
 .. activecode:: db_ex3_11
 
-    present_time = input("Enter the present timein hours:")
+    present_time = input("Enter the present time in hours:")
     set_alarm = input("Set the hours for alarm:")
     int (present_time, set_time, alarm_time)
     alarm_time = present_time + set_alarm

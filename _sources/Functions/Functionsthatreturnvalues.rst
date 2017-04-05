@@ -24,7 +24,7 @@ the absolute value:
 
     print(abs(5))
 
-    print(abs(-5))
+    print(abs(9-4))
 
 In this example, the arguments to the ``abs`` function are 5 and -5.
 
@@ -42,7 +42,7 @@ called
     import math
     print(math.pow(2, 3))
 
-    print(math.pow(7, 4))
+    print(math.pow(7, 3+1))
 
 .. note::
 
@@ -56,6 +56,8 @@ Another built-in function that takes more than one argument is ``max``.
     print(max(7, 11))
     print(max(4, 1, 17, 2, 12))
     print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
+    # what is very different about the parameters for the max function?
+    #
 
 ``max`` can be sent any number of arguments, separated by commas, and will
 return the maximum value sent. The arguments can be either simple values or

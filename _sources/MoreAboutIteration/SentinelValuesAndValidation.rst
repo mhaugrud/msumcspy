@@ -93,10 +93,8 @@ Validating Input
 You can also use a ``while`` loop when you want to **validate** input;  when you want to make
 sure the user has entered valid input for a prompt. Let's say you want a function
 that asks a yes-or-no question. In this case, you want to make sure that the person using
-your program enters either a Y for yes or N for no (in either upper or lower case). 
+your program enters either a Y for yes or N for no. 
 Here is a program that uses a ``while`` loop to keep asking until it receives a valid answer.
-As a preview of coming attractions, it uses
-the ``upper()`` method which is described in :ref:`stringMethods` to convert a string to upper case.
 When you run the following code, try typing something other than Y or N to see how the code reacts:
     
 .. activecode:: ch07_validation
@@ -105,7 +103,6 @@ When you run the following code, try typing something other than Y or N to see h
         valid_input = False
         while not valid_input:
             answer = input(message)
-            answer = answer.upper() # convert to upper case
             if answer == 'Y' or answer == 'N':
                 valid_input = True
             else:
