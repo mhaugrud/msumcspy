@@ -14,11 +14,9 @@
 Logical operators
 -----------------
 
-There are three **logical operators**: ``and``, ``or``, and ``not``. The
-semantics (meaning) of these operators is similar to their meaning in English.
-For example, ``x < 0 or x > 10`` is true if *either* x is less than 0 *or*
- x is greater than 10.  How would you describe this in words?  You would say that x is not between 0 and 10. With the *or* operator, one, or the other, or
-both of the conditions can be true for the result to be true.
+There are three **logical operators**: ``and``, ``or``, and ``not``. The semantics (meaning) of these operators is similar to their meaning in English.
+
+For example, ``x < 0 or x > 10`` is true if *either* x is less than 0 *or* x is greater than 10.  How would you describe this in words?  You would say that x is not between 0 and 10. With the *or* operator, one, or the other, or both of the conditions can be true for the result to be true.
 
 ``x % 2 == 0 and x % 3 == 0`` is true if *both* of the conditions are true,
 that is, if x is divisible by 2 *and also* divisible by 3.  
@@ -30,9 +28,9 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
 .. activecode:: chp05_3
 
     x = 5
-    print(x < 0 and x > 10)
+    print(x < 0 or x > 10)
 
-    print(x % 2 == 0 or x % 3 == 0)
+    print(x % 2 == 0 and x % 3 == 0)
     # change the value of x in line 1 so both of the expressions are True
 
 

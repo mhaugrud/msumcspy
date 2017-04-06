@@ -23,9 +23,9 @@ Lists
    FunctionsthatProduceLists.rst
    NestedLists.rst
    ListDeletion.rst
+   CloningLists.rst
    ObjectsandReferences.rst
    Aliasing.rst
-   CloningLists.rst
    RepetitionandReferences.rst
    AppendversusConcatenate.rst
    ListComprehensions.rst

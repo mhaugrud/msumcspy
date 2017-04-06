@@ -21,7 +21,7 @@ default, any number of whitespace characters is considered a word boundary.
 
 .. activecode:: ch09_split1
     
-    song = "The rain in Spain..."
+    song = "The rain in Spain falls mainly on the plain"
     wds = song.split()
     print(wds)
 
@@ -31,7 +31,7 @@ characters to use as word boundaries. The following example uses the string
 
 .. activecode:: ch09_split2
     
-    song = "The rain in Spain..."
+    song = "The rain in Spain falls mainly on the plain"
     wds = song.split('ai')
     print(wds)
 
