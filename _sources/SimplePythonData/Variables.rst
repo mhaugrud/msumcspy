@@ -78,7 +78,7 @@ by the variable.
     print(PI)
     print(pi)
     print(pI)
-    # what do you see about the names of variables? 
+    # what do you see about the names for variables? (answer below)
     #
 
 In each case the result is the value of the variable.

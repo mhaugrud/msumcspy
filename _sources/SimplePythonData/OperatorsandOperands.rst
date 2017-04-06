@@ -70,9 +70,10 @@ the left on the number line).
     minutes = 645
     hours = minutes / 60
     print(hours)
+
     hours = minutes // 60
     print(hours)
-    # what does the value for hours mean in the line above?
+    # what does the value for hours (line 8) mean? (answer below)
     #
 
 

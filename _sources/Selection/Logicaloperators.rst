@@ -21,17 +21,16 @@ For example, ``x < 0 or x > 10`` is true if *either* x is less than 0 *or* x is 
 ``x % 2 == 0 and x % 3 == 0`` is true if *both* of the conditions are true,
 that is, if x is divisible by 2 *and also* divisible by 3.  
 
-Finally, the ``not`` operator negates a boolean expression, so ``not  x > y``
-is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
-``y``.
+Finally, the ``not`` operator negates a boolean expression, so ``not  x > 0`` is true if ``x > 0`` is false, that is, if ``x`` is less than or equal to 0.
 
 .. activecode:: chp05_3
 
     x = 5
     print(x < 0 or x > 10)
-
     print(x % 2 == 0 and x % 3 == 0)
-    # change the value of x in line 1 so both of the expressions are True
+    print(not x > 0)
+    # run then change the value of x in line 1
+    # so all of the expressions are True
 
 
 .. admonition:: Common Mistake!

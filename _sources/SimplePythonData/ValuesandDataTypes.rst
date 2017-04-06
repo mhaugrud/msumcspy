@@ -130,14 +130,14 @@ Triple quoted strings can even span multiple lines:
 .. activecode:: ch02_6
     :nocanvas:
 
-    message = """This message will
-    span several
-    lines."""
-    print(message)
+    message = 'This message
 
-    print("""This message will span
-    several lines
-    of the text.""")
+    span several
+    lines.'
+
+    print(message)
+    # run this and you will get an error then change the
+    # quotes (') to triple quotes (''') and run again
 
 Python doesn't care whether you use single or double quotes or the
 three-of-a-kind quotes to surround your strings.  Once it has parsed the text of
