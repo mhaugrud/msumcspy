@@ -66,6 +66,8 @@ nonsensical variation of the square function.
     power = 2
     result = badsquare(10)
     print(result)
+    # what is bad about this fuction? (answer below)
+    #
 
 
 Although the ``badsquare`` function works, it is silly and poorly written.  We have done it here to illustrate

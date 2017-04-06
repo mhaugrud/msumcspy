@@ -56,7 +56,7 @@ Another built-in function that takes more than one argument is ``max``.
     print(max(7, 11))
     print(max(4, 1, 17, 2, 12))
     print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
-    # what is very different about the parameters for the max function?
+    # what is very different about the parameters for the max function? (answer below)
     #
 
 ``max`` can be sent any number of arguments, separated by commas, and will
@@ -101,6 +101,10 @@ black-box diagram with the Python code following.
     toSquare = 10
     result = square(toSquare)
     print("The result of ", toSquare, " squared is ", result)
+    
+    import test
+    print('testing square function)
+    test.testEqual(square(10), 100)
 
 The **return** statement is followed by an expression which is evaluated.  Its
 result is returned to the caller as the "fruit" of calling this function.

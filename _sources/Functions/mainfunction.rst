@@ -48,7 +48,7 @@ In many programming languages (e.g. Java and C++), it is not possible to simply 
 
 The following activecode shows this idea.  In line 11 we have defined a new function called ``main`` that doesn't need any parameters.  The five lines of main processing are now placed inside this function.  Finally, in order to execute that main processing code, we need to invoke the ``main`` function (line 20).  When you push run, you will see that the program works the same as it did before.
 
-.. activecode:: ch04_1
+.. activecode:: ch04_1bb
     :nocodelens:
 
     import turtle
@@ -103,6 +103,9 @@ The activecode below defines two simple functions and a main.
         
     if __name__ == "__main__":
         main()
+        import test
+        print('testing squareit')
+        test.testEqual(squareit(5), 25)
         
 Line 12 uses an ``if`` statement to ask about the value of the ``__name__`` variable.  If the value is ``"__main__"``, then the ``main`` function will be called.  Otherwise, it can be assumed that the program is being imported into another program and we do not want to call ``main`` because that program will invoke the functions as needed.  This ability to conditionally execute our main function can be extremely useful when we are writing code that will potentially be used by others.  It allows us to include functionality that the user of the code will not need, most often as part of a testing process to be sure that the functions are working correctly.
 

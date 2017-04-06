@@ -106,7 +106,8 @@ we compute and return the result.
         result = dsquared**0.5
         return result
 
-    print(distance(1, 2, 4, 6))
+    def main():
+        print(distance(1, 2, 4, 6))
 
 
 If that works correctly, you are done. Otherwise, you might want to print the
