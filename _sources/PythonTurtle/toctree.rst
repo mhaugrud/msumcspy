@@ -13,6 +13,7 @@ Python Turtle Graphics
    IterationSimplifiesourTurtleProgram.rst
    TherangeFunction.rst
    AFewMoreturtleMethodsandObservations.rst
+   race.rst
    SummaryofTurtleMethods.rst
    Glossary.rst
    Exercises.rst
