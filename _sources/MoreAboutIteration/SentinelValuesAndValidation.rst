@@ -93,27 +93,21 @@ Validating Input
 You can also use a ``while`` loop when you want to **validate** input;  when you want to make
 sure the user has entered valid input for a prompt. Let's say you want a function
 that asks a yes-or-no question. In this case, you want to make sure that the person using
-your program enters either a Y for yes or N for no. 
+your program enters either a y for yes or n for no. 
 Here is a program that uses a ``while`` loop to keep asking until it receives a valid answer.
-When you run the following code, try typing something other than Y or N to see how the code reacts:
+When you run the following code, try typing something other than y or n to see how the code reacts:
     
 .. activecode:: ch07_validation
 
-    def get_yes_or_no(message):
-        valid_input = False
-        while not valid_input:
-            answer = input(message)
-            if answer == 'Y' or answer == 'N':
-                valid_input = True
-            else:
-                print('Please enter Y for yes or N for no.')
-        return answer
-    
-    response = get_yes_or_no('Do you like lima beans? Y)es or N)o: ')
-    if response == 'Y':
-        print('Great! They are very healthy.')
-    else:
-        print('Too bad. If cooked right, they are quite tasty.')
+response = 'x' # initial value ensures loop body will execute
+while not(response == 'y' or response == 'n'):    
+    response = input('Do you like lima beans? (y or n): ')
+
+
+if response == 'y':
+    print('Great! They are very healthy.')
+else:
+    print('Too bad. If cooked right, they are quite tasty.')
         
        
 .. index::
