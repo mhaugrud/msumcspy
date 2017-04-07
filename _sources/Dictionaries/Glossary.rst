@@ -31,6 +31,9 @@ Glossary
         `associative array <http://en.wikipedia.org/wiki/Associative_array>`__
         abstract data type.
 
+    tuple
+	    A sequential collection of items, similar to a list.  Any python object can be an element of a tuple.  However, unlike a list, tuples are immutable.
+
 
 
 

@@ -21,6 +21,7 @@ Lists
    PureFunctions.rst
    WhichisBetter.rst
    FunctionsthatProduceLists.rst
+   listTypeConversionFunction.rst
    NestedLists.rst
    ListDeletion.rst
    CloningLists.rst
@@ -29,9 +30,5 @@ Lists
    RepetitionandReferences.rst
    AppendversusConcatenate.rst
    ListComprehensions.rst
-   listTypeConversionFunction.rst
-   TuplesandMutability.rst
-   TupleAssignment.rst
-   TuplesasReturnValues.rst
    Glossary.rst
    Exercises.rst
