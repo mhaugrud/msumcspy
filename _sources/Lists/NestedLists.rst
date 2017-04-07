@@ -23,13 +23,13 @@ left to right.
 
 .. activecode:: chp09_nest
     
-    nested = ["hello", 2.0, 5, [10, 20]]
-    innerlist = nested[3]
+    nested = ["hello", [2.0, 5], [10, 20]]
+    innerlist = nested[1]
     print(innerlist)
     item = innerlist[1]
     print(item)
 
-    print(nested[3][1])
+    print(nested[1][1])
 
 
 .. index:: matrix

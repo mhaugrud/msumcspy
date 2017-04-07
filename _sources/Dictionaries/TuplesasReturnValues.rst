@@ -33,7 +33,7 @@ of a circle of radius r.
         a = 3.14159 * r * r
         return (c, a)
 
-    print(circleInfo(10))
+    t = circleInfo(10)
 
 
 

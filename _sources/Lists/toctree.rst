@@ -21,8 +21,8 @@ Lists
    PureFunctions.rst
    WhichisBetter.rst
    FunctionsthatProduceLists.rst
-   listTypeConversionFunction.rst
    NestedLists.rst
+   listTypeConversionFunction.rst
    ListDeletion.rst
    CloningLists.rst
    ObjectsandReferences.rst
