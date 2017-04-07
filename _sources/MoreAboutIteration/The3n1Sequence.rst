@@ -58,10 +58,6 @@ You might like to have some fun and see if you can find a small starting
 number that needs more than a hundred steps before it terminates.
 
 
-.. admonition:: Lab
-
-    * `Experimenting with the 3n+1 Sequence <../Labs/sequencelab.html>`_ In this guided lab exercise we will try to learn more about this sequence.
-
 
 Particular values aside, the interesting question is whether we can prove that
 this sequence terminates for *all* positive values of ``n``. So far, no one has been able
@@ -77,31 +73,7 @@ You'll notice that if you don't stop when you reach one, the sequence gets into
 its own loop:  1, 4, 2, 1, 4, 2, 1, 4, and so on.  One possibility is that there might
 be other cycles that we just haven't found.
 
-.. admonition:: Choosing between ``for`` and ``while``
 
-   Use a ``for`` loop if you know the maximum number of times that you'll
-   need to execute the body.  For example, if you're traversing a list of elements,
-   or can formulate a suitable call to ``range``, then choose the ``for`` loop.
-
-   So any problem like "iterate this weather model run for 1000 cycles", or "search this
-   list of words", "check all integers up to 10000 to see which are prime" suggest that a ``for`` loop is best.
-
-   By contrast, if you are required to repeat some computation until some condition is
-   met, as we did in this 3n + 1 problem, you'll need a ``while`` loop.
-
-   As we noted before, the first case is called **definite iteration** --- we have some definite bounds for
-   what is needed.   The latter case is called **indefinite iteration** --- we are not sure
-   how many iterations we'll need --- we cannot even establish an upper bound!
-
-
-
-.. There are also some great visualization tools becoming available to help you
-.. trace and understand small fragments of Python code.  The one we recommend is at
-.. http://netserv.ict.ru.ac.za/python3_viz
-
-
-.. index::
-    single: Newton's method
 
 **Check your understanding**
 
@@ -115,5 +87,53 @@ be other cycles that we just haven't found.
    :feedback_c: That this sequence terminates for all values of n has not been proven or disproven so no one knows whether the while loop will always terminate or not.
 
    Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any positive integer value of n?
+
+Experimenting With the 3n+1 Sequence
+------------------------------------
+
+
+.. activecode:: seq3nlab1
+    def seq3np1(n):
+        """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
+
+        while n != 1:
+            print(n)
+            if n % 2 == 0:        # n is even
+                n = n // 2
+            else:                 # n is odd
+                n = n * 3 + 1
+        print(n)                  # the last print is 1
+
+    seq3np1(3)
+
+
+#. Count the number of iterations it takes to stop.
+
+	Our program currently **prints** the values in the sequence until it stops at 1.  Remember that one of the interesting
+	questions is `How many items are in the sequence before stopping at 1?`.  To determine this, we will need to count them.
+
+	First, comment out (or delete) the print statements that currently exist.  Now we will need a local variable to keep track of the count.  It would make sense to call it `count`.  It will need to be initialized to 0 since before we begin the loop.
+
+	Once inside the loop, we will need to update ``count`` by 1 (increment), so that we can keep track of the number of iterations.  It is very important that you put these statements in the right place.  Notice that the previous location of the print statements can be very helpful in determining the location.
+
+	When the loop terminates (we get to 1), **return** the value of ``count``.
+
+	This demonstrates an important pattern of computation called a **counter** (note that it is
+	a type of accumulator).
+	The variable ``count`` is initialized to 0 and then incremented each time the
+	loop body is executed. When the loop exits, ``count`` contains the result ---
+	the total number of times the loop body was executed.
+
+	Since the function now returns a value, we will need to call the function inside of a print statement in order to see the result.
+
+
+
+
+#. Repeat the call to ``seq3np1`` using a range of values, up to and including an upper bound.
+
+	Now that we have a function that can return the number of iterations required to get to 1, we can use it to check a wide range of starting values.  In fact, instead of just doing one value at a time, we can call the function iteratively, each time passing in a new value.
+
+	Create a simple for loop using a loop variable called ``start`` that provides values from 1 up to 50.  Call the ``seq3np1`` function once for each value of ``start``.  Modify the print statement to also print the value of ``start``.
+
 
 

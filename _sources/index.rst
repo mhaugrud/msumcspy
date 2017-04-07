@@ -72,24 +72,6 @@ Table of Contents
    Exceptions/toctree.rst
    IntroRecursion/toctree.rst
 
-Labs
-::::
-
-.. toctree::
-   :caption: Labs
-   :maxdepth: 1
-
-   Labs/astronomylab.rst
-   Labs/lab03_01.rst
-   Labs/lab04_01.rst
-   Labs/lab04_01a.rst
-   Labs/lab12_01.rst
-   Labs/lab12_02.rst
-   Labs/montepi.rst
-   Labs/pythonshell.rst
-   Labs/sequencelab.rst
-   Labs/sinlab.rst
-
 Appendices
 ::::::::::
 

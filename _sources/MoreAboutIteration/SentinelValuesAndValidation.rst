@@ -11,11 +11,29 @@
    :prefix: iter-x-
    :start: 1
    
-Other uses of ``while``
-------------------------------
+More Uses of Indefinite Iteration
+---------------------------------
+
+.. admonition:: Choosing between ``for`` and ``while``
+
+   Use a ``for`` loop if you know the maximum number of times that you'll
+   need to execute the body.  For example, if you're traversing a list of elements,
+   or can formulate a suitable call to ``range``, then choose the ``for`` loop.
+
+   So any problem like "iterate this weather model run for 1000 cycles", or "search this
+   list of words", "check all integers up to 10000 to see which are prime" suggest that a ``for`` loop is best.
+
+   By contrast, if you are required to repeat some computation until some condition is
+   met, as we did in the randomly walking turtle problem, you'll need a ``while`` loop.
+
+   As we noted before, the first case is called **definite iteration** --- we have some definite bounds for
+   what is needed.   The latter case is called **indefinite iteration** --- we are not sure
+   how many iterations we'll need --- we cannot even establish an upper bound!
+
+
 
 Sentinel Values
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Indefinite loops are much more common in the real world than definite loops.
 
