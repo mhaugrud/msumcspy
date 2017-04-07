@@ -34,8 +34,9 @@ you would assign the return value back to ``things``.
     
     things = [2, 5, 9]
     print(things)
-    things = doubleStuff(things)
-    print(things)
+    stuff = doubleStuff(things)
+    print('things', things)
+    print('stuff', stuff)
 
 Once again, codelens helps us to see the actual references and objects as they are passed and returned.
 

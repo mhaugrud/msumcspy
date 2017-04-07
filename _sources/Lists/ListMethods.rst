@@ -93,7 +93,9 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
     mylist.append(12)
     print(mylist)
 
-    mylist = mylist.sort()   #probably an error
+    mylist = mylist.sort()
+    # why is line 8 an error? (answer below, then fix line 8 so it correctly sorts)
+    # 
     print(mylist)
 
 **Check your understanding**

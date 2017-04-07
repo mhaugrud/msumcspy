@@ -93,6 +93,7 @@ Experimenting With the 3n+1 Sequence
 
 
 .. activecode:: seq3nlab1
+
     def seq3np1(n):
         """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
 

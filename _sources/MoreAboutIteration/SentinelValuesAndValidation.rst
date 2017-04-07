@@ -119,13 +119,13 @@ When you run the following code, try typing something other than y or n to see h
 
     response = 'x' # initial value ensures loop body will execute
     while not(response == 'y' or response == 'n'):    
-        response = input('Do you like lima beans? (y or n): ')
+        response = input('Do you like brussel sprouts? (y or n): ')
 
 
     if response == 'y':
-        print('Great! They are very healthy.')
+        print('You can have mine.')
     else:
-        print('Too bad. If cooked right, they are quite tasty.')
+        print('Neither do I.')
         
        
 .. index::

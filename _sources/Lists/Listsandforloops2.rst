@@ -30,18 +30,6 @@ so that we can iterate correctly no matter how many items are in the list.
 
 
 
-
-Any sequence expression can be used in a ``for`` loop.  For example, the ``range`` function returns a sequence of integers.
-
-.. activecode:: chp09_for3
-    
-    for number in range(20):
-        if number % 3 == 0:
-            print(number)
-
-
-This example prints all the multiples of 3 between 0 and 19.
-
 Since lists are mutable, it is often desirable to traverse a list, modifying
 each of its elements as you go. The following code squares all the numbers from ``1`` to
 ``5`` using iteration by position.
@@ -87,6 +75,20 @@ list, so that we can assign a new value to it.
      for item in alist:
          blist.append(item+5)
      print(blist)
+
+
+
+The above example, illustrates the accumulator pattern for lists: you start with an empty list then repeatedly add more items to the list.
+
+.. activecode:: chp09_for3
+    
+    numbers = [1, 2, 3, 5, 8]
+    squares = []
+
+
+    print(squares)
+
+Use the list accumulator pattern to fill the squares list with the squares of numbers
 
 
 .. index:: parameter

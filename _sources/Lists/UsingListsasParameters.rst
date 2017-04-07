@@ -31,6 +31,7 @@ argument and multiplies each element in the list by 2:
             aList[position] = 2 * aList[position]
 
     things = [2, 5, 9]
+
     print(things)
     doubleStuff(things)
     print(things)
