@@ -89,7 +89,7 @@ be other cycles that we just haven't found.
    Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any positive integer value of n?
 
 Experimenting With the 3n+1 Sequence
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. activecode:: seq3nlab1
