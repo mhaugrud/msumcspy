@@ -100,25 +100,25 @@ Here is the same program in codelens.  Step through the function and watch the "
 
 .. note::
 
-    What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it and find out**.
+    What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it in the workspace below**.
 
     It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. Then **properly initialize the accumulator variable**.
 
-    Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to multiply to get the square of ``x``? **Change the ``x`` in ``range(x)`` to repeat the correct number of times**.
-
-
-
-.. index::
-    functional decomposition
-    generalization
-    abstraction
-
-
-.. note::
-
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
+    Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 4 to get the square of ``x``? **Change line 3 to repeat the correct number of times**.
 
    .. activecode:: scratch_05_04
+
+    def square(x):
+        runningtotal = 0
+        for counter in range(x):
+            runningtotal = runningtotal + x
+
+        return runningtotal
+
+    toSquare = 10
+    squareResult = square(toSquare)
+    print("The result of", toSquare, "squared is", squareResult)
+
 
 **Check your understanding**
 
@@ -163,6 +163,12 @@ Here is the same program in codelens.  Step through the function and watch the "
       oddnumber = oddnumber + 2
    =====
    print(thesum)
+
+
+.. index::
+    functional decomposition
+    generalization
+    abstraction
 
 
 
