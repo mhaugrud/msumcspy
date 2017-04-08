@@ -71,6 +71,7 @@ to making it work successfully is to be sure to initialize the variable before y
 Once inside the iteration, it is required that you update the accumulator.
 
 **The General Accumulator Pattern**
+
 .. code-block:: python
 
     initialize the accumulator variable
@@ -101,9 +102,9 @@ Here is the same program in codelens.  Step through the function and watch the "
 
     What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it and find out**.
 
-It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. Then **properly initialize the accumulator variable**.
+    It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. Then **properly initialize the accumulator variable**.
 
-Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to multiply to get the square of ``x``? **Change the ``x`` in ``range(x)`` to repeat the correct number of times**.
+    Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to multiply to get the square of ``x``? **Change the ``x`` in ``range(x)`` to repeat the correct number of times**.
 
 
 
