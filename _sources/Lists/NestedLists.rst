@@ -23,7 +23,7 @@ left to right.
 
 .. activecode:: chp09_nest
     
-    nested = ["hello", [2.0, 5], [10, 20]]
+    nested = [['h','i'], [2.0, 5], [10, 20]]
     innerlist = nested[1]
     print(innerlist)
     item = innerlist[1]

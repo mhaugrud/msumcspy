@@ -14,13 +14,13 @@
 Tuples as Return Values
 -----------------------
 
-We may want a function to return multiple values. This is very useful --- we often want to
+A function can only return a single value. However, we may want a function to return multiple values. We may want to
 know some batsman's highest and lowest score, or we want to find the mean and the standard 
-deviation, or we want to know the year, the month, and the day, or if we're doing
-some ecological modeling we may want to know the number of rabbits and the number
-of wolves on an island at a given time.  However, a function which can only return a single value. We can overcome this limitation by using a tuple as the return value.
+deviation, or we want to know the year, the month, and the day, or, if we're doing
+some ecological modeling, we may want to know the number of rabbits and the number
+of wolves on an island at a given time.
 
-A tuple is a group of items, separated by commas, and surrounded by parentheses. For example, (9,11,2001) or ('December',25).  A single tuple can hold multiple elements. 
+We can overcome this limitation by using a tuple as the return value.  A tuple is a group of items, separated by commas, and surrounded by parentheses. For example, (9,11,2001) or ('December',25).  A single tuple can hold multiple elements. 
 
 For example, we could write a function that returns both the area and the circumference
 of a circle of radius r.
