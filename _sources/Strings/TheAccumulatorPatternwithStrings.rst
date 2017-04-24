@@ -20,7 +20,15 @@ write a function that removes all the vowels from a string.  The idea is to star
 
 Remember that the accumulator pattern allows us to keep a "running total".  With strings, we are not accumulating a numeric total.  Instead we are accumulating characters onto a string.
 
-We start with an empty string. Then, we repeatedly concatenate characters to the string.
+The general steps of the string accumulator pattern are:
+
+.. sourcecode:: python
+
+    initialize the output string to an empty string
+
+    for each character in another string:
+        (if appropriate) concatenate that character to the output string
+
 
 .. activecode:: ch08_acc1
     

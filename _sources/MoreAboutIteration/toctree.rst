@@ -12,9 +12,9 @@ More About Iteration
    Theforlooprevisited.rst
    ThewhileStatement.rst
    RandomlyWalkingTurtles.rst
+   Newton'sMethod.rst
    SentinelValuesAndValidation.rst
    The3n1Sequence.rst
-   Newton'sMethod.rst
    AlgorithmsRevisited.rst
    Glossary.rst
    Exercises.rst

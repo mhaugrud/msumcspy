@@ -70,11 +70,15 @@ referred to as the **accumulator pattern**.  We refer to the variable as the **a
 to making it work successfully is to be sure to initialize the variable before you start the iteration.
 Once inside the iteration, it is required that you update the accumulator.
 
-.. note::
+**The General Accumulator Pattern**
 
-    What would happen if we put the assignment ``runningTotal = 0`` inside
-    the for statement?  Not sure? Try it and find out.
+.. code-block:: python
 
+    initialize the accumulator variable
+    repeat the following:
+        modify the accumulator variable
+
+    # when the loop terminates the accumulator has the correct value
 
 
 Here is the same program in codelens.  Step through the function and watch the "running total" accumulate the result.
@@ -94,19 +98,27 @@ Here is the same program in codelens.  Step through the function and watch the "
 
 
 
-
-
-.. index::
-    functional decomposition
-    generalization
-    abstraction
-
-
 .. note::
 
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
+    What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it in the workspace below**.
+
+    It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. Then **properly initialize the accumulator variable**.
+
+    Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 4 to get the square of ``x``? **Change line 3 to repeat the correct number of times**.
 
    .. activecode:: scratch_05_04
+
+    def square(x):
+        runningtotal = 0
+        for counter in range(x):
+            runningtotal = runningtotal + x
+
+        return runningtotal
+
+    toSquare = 10
+    squareResult = square(toSquare)
+    print("The result of", toSquare, "squared is", squareResult)
+
 
 **Check your understanding**
 
@@ -151,6 +163,12 @@ Here is the same program in codelens.  Step through the function and watch the "
       oddnumber = oddnumber + 2
    =====
    print(thesum)
+
+
+.. index::
+    functional decomposition
+    generalization
+    abstraction
 
 
 
