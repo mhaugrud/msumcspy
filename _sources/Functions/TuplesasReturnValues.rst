@@ -14,7 +14,7 @@
 Tuples as Return Values
 -----------------------
 
-A function can only return a single value. However, we may want a function to return multiple values. We may want to
+A function can only return a single value. However, we may want to return multiple values. We may want to
 know some batsman's highest and lowest score, or we want to find the mean and the standard 
 deviation, or we want to know the year, the month, and the day, or, if we're doing
 some ecological modeling, we may want to know the number of rabbits and the number
@@ -34,8 +34,9 @@ of a circle of radius r.
         a = 3.14159 * r * r
         return (c, a)
 
-    print(circleInfo(10))
-    (circum, area) = circleInfo(1)
+    result = circleInfo(10)
+    (circum, area) = circleInfo(10)
+    print(result, circum, area)
 
 
 
