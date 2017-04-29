@@ -26,24 +26,24 @@ the target.
 
         def __init__(self, initX, initY):
             """ Create a new point at the given coordinates. """
-            self.x = initX
-            self.y = initY
+            self.__x = initX
+            self.__y = initY
 
         def getX(self):
-            return self.x
+            return self.__x
 
         def getY(self):
-            return self.y
+            return self.__y
 
         def distanceFromOrigin(self):
-            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+            return ((self.__x ** 2) + (self.__y ** 2)) ** 0.5
           
         def __str__(self):
-            return "x=" + str(self.x) + ", y=" + str(self.y)
+            return "x=" + str(self.__x) + ", y=" + str(self.__y)
 
         def halfway(self, target): 
-             mx = (self.x + target.x) / 2
-             my = (self.y + target.y) / 2
+             mx = (self.__x + target.__x) / 2
+             my = (self.__y + target.__y) / 2
              return Point(mx, my)
 
     p = Point(3, 4)

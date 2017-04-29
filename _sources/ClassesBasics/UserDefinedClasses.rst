@@ -14,44 +14,36 @@ We've already seen classes like ``str``, ``int``, ``float`` and ``Turtle``.  The
 made available for us to use.  However, in many cases when we are solving problems we need to create data objects
 that are related to the problem we are trying to solve.  We need to create our own classes.
 
-As an example, consider the concept of a mathematical point. In two dimensions, a point is two
-numbers (coordinates) that are treated collectively as a single object. 
-Points are often written in parentheses with a comma
-separating the coordinates. For example, ``(0, 0)`` represents the origin, and
-``(x, y)`` represents the point ``x`` units to the right and ``y`` units up
-from the origin.  This ``(x,y)`` is the state of the point.
+As an example, consider the concept of a checking account at a bank. An account has a current balance, a starting balance (when the last statement was generated), and a list of transactions. All these items are treated collectively as a single object. A particular account could have a current balance of 100, a starting balance of 0, and transactions of [150, -30, -20].
+This is the state of that account.
 
-Thinking about our diagram above, we could draw a ``point`` object as shown here.
+Thinking about our diagram above, we could draw an ``account`` object as shown here.
 
 .. image:: Figures/objectpic2.png
-   :alt: A point has an x and a y
+   :alt: An account has a balance, a start, and a list
 
 
-Some of the typical operations that one associates with points might be to ask
-the point for its x coordinate, ``getX``, or to ask for its y coordinate, ``getY``.  You may also
-wish to calculate the distance of a point from the origin, or the distance of a point from another point,
-or find the midpoint between two points, or answer the question as to whether a point falls within a
-given rectangle or circle.  We'll shortly see how we can organize these
-together with the data.
+A typical operation that one associates with accounts might be to ask the account for its curent balance, `getBalance``. One might wish to make a deposit to the account, ``deposit``, withdraw funds from the account, ``withdraw``, or generate a statement for it listing its transactions, ``statement``.  We'll shortly see how we can organize these together with the data.
 
 .. image:: Figures/objectpic3.png
-   :alt: A point also has methods
+   :alt: An account also has methods
 
 
-Now that we understand what a ``point`` object might look like, we can define a new **class**. 
-We'll want our points to each have an ``x`` and a ``y`` attribute,
+Now that we understand what an ``account`` object might look like, we can define a new **class**. 
+We'll want our accounts to each have a ``balance``, a ``start``, and a ``transactions`` attribute,
 so our first class definition looks like this.
 
 .. sourcecode:: python
     :linenos:
     
-    class Point:
-        """ Point class for representing and manipulating x,y coordinates. """
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
-            """ Create a new point at the origin """
-            self.x = 0
-            self.y = 0          
+            """ Create a new account with zero balance"""
+            self.__balance = 0
+            self.__start = 0
+            self.__trans = []
 
 Class definitions can appear anywhere in a program, but they are usually near
 the beginning (after the ``import`` statements). The syntax rules for a class
@@ -60,38 +52,36 @@ which begins with the keyword, ``class``, followed by the name of the class,
 and ending with a colon.
 
 If the first line after the class header is a string, it becomes
-the docstring of the class, and will be recognized by various tools.  (This
-is also the way docstrings work in functions.)
+the docstring of the class, and will be recognized by various tools.  (This is also the way docstrings work in functions.)
 
 Every class should have a method with the special name ``__init__``.  
 This **initializer method**, often referred to as the **constructor**, is automatically called whenever a new 
-instance of ``Point`` is created.  It gives the programmer the opportunity 
+instance of ``Account`` is created.  It gives the programmer the opportunity 
 to set up the attributes required within the new instance by giving them 
 their initial state values.  The ``self`` parameter (you could choose any
 other name, but nobody ever does!) is automatically set to reference
 the newly-created object that needs to be initialized.   
 
-So let's use our new Point class now.
+So let's use our new Account class now.
 
 .. activecode:: chp13_classes1
     
-    class Point:
-        """ Point class for representing and manipulating x,y coordinates. """
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
             """ Create a new point at the origin """
-            self.x = 0
-            self.y = 0
+            self.__balance = 0
+            self.__start = 0
+            self.__trans = []
     
-    p = Point()         # Instantiate an object of type Point
-    q = Point()         # and make a second point
+    p = Account()        # Instantiate an object of type Account
+    q = Account()        # and make a second Account
 
-    print("Nothing seems to have happened with the points")
+    print("Nothing seems to have happened with the accounts")
 
-During the initialization of the objects, we created two
-attributes called `x` and `y` for each, and gave them both the value 0.  You will note that when you run the
-program, nothing happens.  It turns out that this is not quite the case.  In fact, two ``Points`` have been created, each
-having an x and y coordinate with value 0.  However, because we have not asked the point to do anything, we don't see any other result.
+During the initialization of the objects, we created three
+attributes called `__balance`, `__start`, and `__trans` for each, and gave each attribute a starting value.  You will note that when you run the program, nothing happens.  It turns out that this is not quite the case.  In fact, two ``Accounts`` have been created, each having their attributes initialized: zero for balance and start; an empty list for their transactions.  However, because we have not asked either account to do anything, we don't see any other result.
 
 
 .. image:: Figures/objectpic4.png
@@ -101,18 +91,19 @@ You can see this for yourself, via codelens:
 
 .. codelens:: chp13_points
 
-    class Point:
-        """ Point class for representing and manipulating x,y coordinates. """
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
             """ Create a new point at the origin """
-            self.x = 0
-            self.y = 0
+            self.__balance = 0
+            self.__start = 0
+            self.__trans = []
     
-    p = Point()         # Instantiate an object of type Point
-    q = Point()         # and make a second point
+    p = Account()        # Instantiate an object of type Account
+    q = Account()        # and make a second Account
 
-    print("Nothing seems to have happened with the points")
+    print("Nothing seems to have happened with the accounts")
 
 
 The following program adds a few print statements. You can see that the output suggests that each one is a ``Point object``.
@@ -120,16 +111,19 @@ However, notice that the ``is`` operator returns ``False`` meaning that they are
 
 .. activecode:: chp13_classes2
     
-    class Point:
-        """ Point class for representing and manipulating x,y coordinates. """
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
-            """ Create a new point at the origin """ 
-            self.x = 0
-            self.y = 0
+            """ Create a new point at the origin """
+            self.__balance = 0
+            self.__start = 0
+            self.__trans = []
     
-    p = Point()         # Instantiate an object of type Point
-    q = Point()         # and make a second point
+    p = Account()        # Instantiate an object of type Account
+    q = Account()        # and make a second Account
+
+    print("Nothing seems to have happened with the accounts")
 
     print(p)
     print(q)
@@ -147,15 +141,15 @@ more than one object:
     tess = Turtle()     # Instantiate objects of type Turtle   
     alex = Turtle()  
  
-The variables ``p`` and ``q`` are assigned references to two new ``Point`` objects. 
-A function like ``Turtle`` or ``Point`` that creates a new object instance 
+The variables ``p`` and ``q`` are assigned references to two new ``Account`` objects. 
+A function like ``Turtle`` or ``Account`` that creates a new object instance 
 is called a **constructor**.  Every class automatically uses the name of the class as the name of the constructor function.
 The definition of the constructor function is done
 when you write the ``__init__`` function.
 
 It may be helpful to think of a class as a factory for making objects.  
-The class itself isn't an instance of a point, but it contains the machinery 
-to make point instances.   Every time you call the constructor, you're asking
+The class itself isn't an instance of an account, but it contains the machinery 
+to make account instances.   Every time you call the constructor, you're asking
 the factory to make you a new object.  As the object comes off the 
 production line, its initialization method is executed to 
 get the object properly set up with its factory default settings.

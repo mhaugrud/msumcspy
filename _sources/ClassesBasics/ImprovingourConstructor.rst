@@ -23,8 +23,8 @@ the ``__init__`` method, as shown in this codelens example.
         
         def __init__(self, initX, initY):
             """ Create a new point at the given coordinates. """
-            self.x = initX
-            self.y = initY
+            self.__x = initX
+            self.__y = initY
     
     p = Point(7, 6)
 

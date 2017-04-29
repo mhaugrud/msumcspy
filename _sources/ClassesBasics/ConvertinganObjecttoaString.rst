@@ -21,17 +21,17 @@ Consider the example below.
         
         def __init__(self, initX, initY):
             """ Create a new point at the given coordinates. """ 
-            self.x = initX
-            self.y = initY
+            self.__x = initX
+            self.__y = initY
 
         def getX(self):
-            return self.x
+            return self.__x
 
         def getY(self):
-            return self.y
+            return self.__y
 
         def distanceFromOrigin(self):
-            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+            return ((self.__x ** 2) + (self.__y ** 2)) ** 0.5
 
     
     p = Point(7, 6)
@@ -55,20 +55,20 @@ is required that the ``__str__`` method create and *return* a string.
 
         def __init__(self, initX, initY):
             """ Create a new point at the given coordinates. """
-            self.x = initX
-            self.y = initY
+            self.__x = initX
+            self.__y = initY
 
         def getX(self):
-            return self.x
+            return self.__x
 
         def getY(self):
-            return self.y
+            return self.__y
 
         def distanceFromOrigin(self):
-            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+            return ((self.__x ** 2) + (self.__y ** 2)) ** 0.5
           
         def __str__(self):
-            return "x=" + str(self.x) + ", y=" + str(self.y)
+            return "x=" + str(self.__x) + ", y=" + str(self.__y)
 
     p = Point(7, 6)
     print(p)

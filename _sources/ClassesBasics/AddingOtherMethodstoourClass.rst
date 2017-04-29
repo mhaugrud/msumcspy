@@ -33,21 +33,21 @@ to write functions that return values.  One thing to notice is that even though 
         
         def __init__(self, initX, initY):
             """ Create a new point at the given coordinates. """ 
-            self.x = initX
-            self.y = initY
+            self.__x = initX
+            self.__y = initY
 
         def getX(self):
-            return self.x
+            return self.__x
 
         def getY(self):
-            return self.y
+            return self.__y
 
     
     p = Point(7, 6)
     print(p.getX())
     print(p.getY())
 
-Note that the ``getX`` method simply returns the value of ``self.x`` from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``x``.  Likewise, the ``getY`` method looks the same.
+Note that the ``getX`` method simply returns the value of ``self.__x`` from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``x``.  Likewise, the ``getY`` method looks the same.
 
 Let's add another method, ``distanceFromOrigin``, to see better how methods
 work.  This method will again not need any additional information to do its work.
@@ -61,17 +61,17 @@ It will perform a more complex task.
         
         def __init__(self, initX, initY):
             """ Create a new point at the given coordinates. """ 
-            self.x = initX
-            self.y = initY
+            self.__x = initX
+            self.__y = initY
 
         def getX(self):
-            return self.x
+            return self.__x
 
         def getY(self):
-            return self.y
+            return self.__y
 
         def distanceFromOrigin(self):
-            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+            return ((self.__x ** 2) + (self.__y ** 2)) ** 0.5
 
     
     p = Point(7, 6)
