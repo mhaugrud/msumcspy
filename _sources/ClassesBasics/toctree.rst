@@ -9,7 +9,6 @@ Classes and Objects - the Basics
    Achangeofperspective.rst
    ObjectsRevisited.rst
    UserDefinedClasses.rst
-   ImprovingourConstructor.rst
    AddingOtherMethodstoourClass.rst
    ObjectsasArgumentsandParameters.rst
    ConvertinganObjecttoaString.rst

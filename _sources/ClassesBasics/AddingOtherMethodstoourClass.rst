@@ -10,11 +10,11 @@
 Adding Other Methods to our Class
 ---------------------------------
           
-The key advantage of using a class like ``Point`` rather than something like a simple
-tuple ``(7, 6)`` now becomes apparent.  We can add methods to
-the ``Point`` class that are sensible operations for points.  Had we chosen to use a simple
-tuple to represent the point, we would not have this capability.
-Creating a class like ``Point`` brings an exceptional
+The key advantage of using a class like ``Account`` rather than something like a simple
+tuple ``(100, 0, [150, -30, -20])`` now becomes apparent.  We can add methods to
+the ``Account`` class that are sensible operations for accounts.  Had we chosen to use a simple
+tuple to represent the account, we would not have this capability.
+Creating a class like ``Account`` brings an exceptional
 amount of "organizational power" to our programs, and to our thinking. 
 We can group together the sensible operations, and the kinds of data 
 they apply to, and each instance of the class can have its own state.       
@@ -23,64 +23,100 @@ A **method** behaves like a function but it is invoked on a specific
 instance.  For example, with a turtle named ``tess``,  ``tess.right(90)`` asks the ``tess`` object to perform its
 ``right`` method and turn 90 degrees.   Methods are accessed using dot notation.  
 
-Let's add two simple methods to allow a point to give us information about its state.  The ``getX`` method, when invoked, will return the value of the x coordinate.  The implementation of this method is straight forward since we already know how
-to write functions that return values.  One thing to notice is that even though the ``getX`` method does not need any other parameter information to do its work, there is still one formal parameter, ``self``.  As we stated earlier, all methods defined in a class that operate on objects of that class will have ``self`` as their first parameter.  Again, this serves as reference to the object itself which in turn gives access to the state data inside the object.
+Let's add a simple method to allow an account to give us information about its state.  The ``getBalance`` method, when invoked, will return the value of the balance attribute.  The implementation of this method is straight forward since we already know how
+to write functions that return values.  One thing to notice is that even though the ``getBalance`` method does not need any other parameter information to do its work, there is still one formal parameter, ``self``.  As we stated earlier, all methods defined in a class that operate on objects of that class will have ``self`` as their first parameter.  Again, this serves as reference to the object itself which in turn gives access to the state data inside the object.
 
 .. activecode:: chp13_classes4
     
-    class Point:
-        """ Point class for representing and manipulating x,y coordinates. """
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
         
-        def __init__(self, initX, initY):
-            """ Create a new point at the given coordinates. """ 
-            self.__x = initX
-            self.__y = initY
+        def __init__(self):
+            """ Create a new point at the origin """
+            self.__balance = 0
+            self.__start = 0
+            self.__trans = []
+    
 
-        def getX(self):
-            return self.__x
-
-        def getY(self):
-            return self.__y
+        def getBalance(self):
+            return self.__balance
 
     
-    p = Point(7, 6)
-    print(p.getX())
-    print(p.getY())
+    p = Account()
+    print(p.getBalance())
 
-Note that the ``getX`` method simply returns the value of ``self.__x`` from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``x``.  Likewise, the ``getY`` method looks the same.
+Note that the ``getBalance`` method simply returns the value of ``self.__balance`` from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``balance
 
-Let's add another method, ``distanceFromOrigin``, to see better how methods
-work.  This method will again not need any additional information to do its work.
-It will perform a more complex task.
+Let's add another method, ``deposit``, to see better how methods
+work.  This method will need some additional information to do its work: the amount to deposit.  It will perform a more complex task. In addition to altering the balance, it will also append the deposit amount to the list of transactions.
 
 
 .. activecode:: chp13_classes5
     
-    class Point:
-        """ Point class for representing and manipulating x,y coordinates. """
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
         
-        def __init__(self, initX, initY):
-            """ Create a new point at the given coordinates. """ 
-            self.__x = initX
-            self.__y = initY
+        def __init__(self):
+            """ Create a new point at the origin """
+            self.__balance = 0
+            self.__start = 0
+            self.__trans = []
+    
 
-        def getX(self):
-            return self.__x
+        def getBalance(self):
+            return self.__balance
 
-        def getY(self):
-            return self.__y
-
-        def distanceFromOrigin(self):
-            return ((self.__x ** 2) + (self.__y ** 2)) ** 0.5
+        def deposit(self, amount):
+            self.__balance += amount
+            self.__trans.append(amount)
 
     
-    p = Point(7, 6)
-    print(p.distanceFromOrigin())
+    p = Account()
+    print(p.getBalance())
+    p.deposit(150)
+    print(p.getBalance())
 
 
-
-Notice that the caller of ``distanceFromOrigin`` does not explicitly 
+Notice that the caller of ``deposit`` does not explicitly 
 supply an argument to match the ``self`` parameter.  This is true of all method calls. The definition will always
 have one additional parameter as compared to the invocation.  
+
+The ``withdraw`` method operates in a similar manner. However, we append the amount of the withdrawal as a negative number.
+
+
+.. activecode:: chp13_classes6
+    
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
+        
+        def __init__(self):
+            """ Create a new point at the origin """
+            self.__balance = 0
+            self.__start = 0
+            self.__trans = []
+    
+
+        def getBalance(self):
+            return self.__balance
+
+        def deposit(self, amount):
+            self.__balance += amount
+            self.__trans.append(amount)
+
+        def withdraw(self, amount):
+            self.__balance -= amount
+            self.__trans.append(-amount)
+
+  
+    p = Account()
+    print(p.getBalance())
+    p.deposit(150)
+    print(p.getBalance())
+    p.withdraw(30)
+    print(p.getBalance())
+    p.withdraw(20)
+    print(p.getBalance())
+
+
 
     

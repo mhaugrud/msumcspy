@@ -23,7 +23,7 @@ Thinking about our diagram above, we could draw an ``account`` object as shown h
    :alt: An account has a balance, a start, and a list
 
 
-A typical operation that one associates with accounts might be to ask the account for its curent balance, `getBalance``. One might wish to make a deposit to the account, ``deposit``, withdraw funds from the account, ``withdraw``, or generate a statement for it listing its transactions, ``statement``.  We'll shortly see how we can organize these together with the data.
+A typical operation that one associates with accounts might be to ask the account for its curent balance, ``getBalance``. One might wish to make a deposit to the account, ``deposit``, withdraw funds from the account, ``withdraw``, or generate a statement for it listing its transactions, ``statement``.  We'll shortly see how we can organize these together with the data.
 
 .. image:: Figures/objectpic3.png
    :alt: An account also has methods
@@ -80,8 +80,7 @@ So let's use our new Account class now.
 
     print("Nothing seems to have happened with the accounts")
 
-During the initialization of the objects, we created three
-attributes called `__balance`, `__start`, and `__trans` for each, and gave each attribute a starting value.  You will note that when you run the program, nothing happens.  It turns out that this is not quite the case.  In fact, two ``Accounts`` have been created, each having their attributes initialized: zero for balance and start; an empty list for their transactions.  However, because we have not asked either account to do anything, we don't see any other result.
+During the initialization, for each of the objects, we created three attributes called `__balance`, `__start`, and `__trans`, and gave each attribute a starting value.  You will note that when you run the program, nothing seems to have happened.  It turns out that this is not quite the case.  In fact, two ``Accounts`` have been created, each having their attributes initialized: zero for balance and start; an empty list for their transactions.  However, because we have not asked either account to do anything, we don't see any other result.
 
 
 .. image:: Figures/objectpic4.png
@@ -106,7 +105,7 @@ You can see this for yourself, via codelens:
     print("Nothing seems to have happened with the accounts")
 
 
-The following program adds a few print statements. You can see that the output suggests that each one is a ``Point object``.
+The following program adds a few print statements. You can see that the output suggests that each one is an ``Account object``.
 However, notice that the ``is`` operator returns ``False`` meaning that they are different objects (we will have more to say about this in a later chapter).
 
 .. activecode:: chp13_classes2
