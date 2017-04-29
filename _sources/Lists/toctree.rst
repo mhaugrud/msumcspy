@@ -23,12 +23,12 @@ Lists
    FunctionsthatProduceLists.rst
    NestedLists.rst
    listTypeConversionFunction.rst
-   ListDeletion.rst
-   CloningLists.rst
    ObjectsandReferences.rst
    Aliasing.rst
+   CloningLists.rst
    RepetitionandReferences.rst
    AppendversusConcatenate.rst
+   ListDeletion.rst
    ListComprehensions.rst
    Glossary.rst
    Exercises.rst

@@ -15,21 +15,21 @@ Nested Lists
 ------------
 
 A nested list is a list that appears as an element in another list. In this
-list, the element with index 3 is a nested list.  
-If we print(``nested[3]``), we get ``[10, 20]``. To extract an element from the
+list, the element with index 2 is a nested list.  
+If we print(``nested[2]``), we get ``[10, 20]``. To extract an element from the
 nested list, we can proceed in two steps.  First, extract the nested list, then extract the item
 of interest.  It is also possible to combine those steps using bracket operators that evaluate from
 left to right.
 
 .. activecode:: chp09_nest
     
-    nested = ["hello", [2.0, 5], [10, 20]]
-    innerlist = nested[1]
+    nested = [['h','i'], [2.0, 5], [10, 20]]
+    innerlist = nested[2]
     print(innerlist)
     item = innerlist[1]
     print(item)
 
-    print(nested[1][1])
+    print(nested[2][1])
 
 
 .. index:: matrix
