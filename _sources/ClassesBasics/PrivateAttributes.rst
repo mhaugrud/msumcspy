@@ -4,7 +4,7 @@ Private Attributes
 Each Account object has a balance attribute. What would happen if we tried to change it directly instead of using the deposit or withdraw methods? Could we get into an illegal state that way?
 
 
-.. activecode:: chp13_classes6
+.. activecode:: oop_7
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
@@ -31,9 +31,9 @@ Each Account object has a balance attribute. What would happen if we tried to ch
 
 This is definitely a problem. We provided methods that prevent an Account getting into an illegal state. But this was easily circumvented by directly accessing the attribute. This could be done since balance is a **public** attribute. Public attributes can be directly manipulated **outside** of the class definition.
 
-We can prevent this by using **private** atttibutes. To make an attribute private, preface its name with two underscore characters, __balance. We read this as dunder balance.
+We can prevent this by using **private** atttibutes. To make an attribute private, preface its name with two underscore characters ``__balance``. We read this as dunder (double underscore) balance.
     
-.. activecode:: chp13_classes6
+.. activecode:: oop_8
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
@@ -59,5 +59,6 @@ We can prevent this by using **private** atttibutes. To make an attribute privat
     print(p.getBalance())
 
 Now the balance is not affected. Private attributes prevent anyone from directly accessing them **outside** of the class definition. The only way to access these attributes is through the methods that are provided in the class definition. This concept is called **information hiding** and is central to object oriented programming. 
-.. Note::
+
+.. note::
     In contrast to other programming languages like C++ and Java, Python only partially supports information hiding.

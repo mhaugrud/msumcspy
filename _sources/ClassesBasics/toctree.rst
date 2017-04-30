@@ -12,8 +12,8 @@ Classes and Objects - the Basics
    AddingOtherMethodstoourClass.rst
    MethodswithParameters.rst
    PrivateAttributes.rst
-   ObjectsasArgumentsandParameters.rst
    ConvertinganObjecttoaString.rst
+   ObjectsasArgumentsandParameters.rst
    InstancesasReturnValues.rst
    Glossary.rst
    Exercises.rst

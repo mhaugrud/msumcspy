@@ -14,65 +14,68 @@ Converting an Object to a String
 When we're working with classes and objects, it is often necessary to print an object (that is to print the state of an object).
 Consider the example below.
 
-.. activecode:: chp13_classesstr1
+.. activecode:: oop_9
     
-    class Point:
-        """ Point class for representing and manipulating x,y coordinates. """
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
         
-        def __init__(self, initX, initY):
-            """ Create a new point at the given coordinates. """ 
-            self.__x = initX
-            self.__y = initY
+        def __init__(self):
+            """ Create a new account with zero balance"""
+            self.__balance = 0.00
 
-        def getX(self):
-            return self.__x
+        def getBalance(self):
+            return self.__balance
 
-        def getY(self):
-            return self.__y
+        def deposit(self, amount):
+            if amount >= 0:
+                self.__balance += amount
 
-        def distanceFromOrigin(self):
-            return ((self.__x ** 2) + (self.__y ** 2)) ** 0.5
+        def withdraw(self, amount):
+            if self.__balance >= amount:
+                self.__balance -= amount
 
-    
-    p = Point(7, 6)
+    p = Account()
+    p.deposit(150)
     print(p)
 
-The ``print`` function shown above produces a string representation of the Point ``p``.  The default functionality provided by
-Python tells you that ``p`` is an object of type ``Point``.  However, it does not tell you anything about the specific
-state of the point.
+The ``print`` function shown above produces a string representation of the Account ``p``.  The default functionality provided by
+Python tells you that ``p`` is an object of type ``Account``.  However, it does not tell you anything about the specific
+state of the Account.
 
-We can improve on this representation if we include a special method call ``__str__``.  Notice that this method uses the same naming convention as the constructor, that is two underscores before and after the name.  It is common that Python
+We can improve on this representation if we include a special method call ``__str__``.  Notice that this method uses the same naming convention as the constructor, that is two underscores (dunder) before and after the name.  It is common that Python
 uses this naming technique for special methods.
 
-The ``__str__`` method is responsible for returning a string representation as defined by the class creator.  In other words, you as the programmer, get to choose what a ``Point`` should look like when it gets printed.  In this case, we
-have decided that the string representation will include the values of x and y as well as some identifying text.  It
+The ``__str__`` method is responsible for returning a string representation as defined by the class creator.  In other words, you as the programmer, get to choose what an ``Account`` should look like when it gets printed.  In this case, we
+have decided that the string representation will include the values of the balance attribute as well as some formatting.  It
 is required that the ``__str__`` method create and *return* a string.
 
-.. activecode:: chp13_classesstr2
+.. activecode:: oop_10
+    
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
+        
+        def __init__(self):
+            """ Create a new account with zero balance"""
+            self.__balance = 0.00
 
-    class Point:
-        """ Point class for representing and manipulating x,y coordinates. """
+        def getBalance(self):
+            return self.__balance
 
-        def __init__(self, initX, initY):
-            """ Create a new point at the given coordinates. """
-            self.__x = initX
-            self.__y = initY
+        def deposit(self, amount):
+            if amount >= 0:
+                self.__balance += amount
 
-        def getX(self):
-            return self.__x
+        def withdraw(self, amount):
+            if self.__balance >= amount:
+                self.__balance -= amount
 
-        def getY(self):
-            return self.__y
-
-        def distanceFromOrigin(self):
-            return ((self.__x ** 2) + (self.__y ** 2)) ** 0.5
-          
         def __str__(self):
-            return "x=" + str(self.__x) + ", y=" + str(self.__y)
+            return "${:,.2f}".format(self.__balance)
 
-    p = Point(7, 6)
+    p = Account()
+    p.deposit(150)
     print(p)
-
+          
 
 When we run the program above you can see that the ``print`` function now shows the string that we chose.
 

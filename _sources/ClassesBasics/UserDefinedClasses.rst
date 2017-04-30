@@ -56,7 +56,7 @@ instance of ``Account`` is created.  It gives the programmer the opportunity to 
 
 So let's use our new Account class now.
 
-.. activecode:: chp13_classes1
+.. activecode:: oop_1
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
@@ -78,7 +78,7 @@ During the initialization, for each of the objects, we created an attribute call
 
 You can see this for yourself, via codelens:
 
-.. codelens:: chp13_points
+.. codelens:: oop_1c
 
     class Account:
         """ Account class for representing and manipulating bank accounts. """
@@ -96,7 +96,7 @@ You can see this for yourself, via codelens:
 The following program adds a few print statements. You can see that the output suggests that each one is an ``Account object``.
 However, notice that the ``is`` operator returns ``False`` meaning that they are different objects (we will have more to say about this in a later chapter).
 
-.. activecode:: chp13_classes2
+.. activecode:: oop_2
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """

@@ -10,7 +10,7 @@
 Adding Other Methods to our Class
 ---------------------------------
           
-The key advantage of using a class like ``Account`` rather than something like a simple variable ``balance`` now becomes apparent.  We can add methods to
+The key advantage of using a class like ``Account`` rather than something like a simple variable like ``balance`` now becomes apparent.  We can add methods to
 the ``Account`` class that are sensible operations for accounts.  Had we chosen to use a simple
 variable to represent the account, we would not have this capability.
 Creating a class like ``Account`` brings an exceptional
@@ -25,7 +25,7 @@ instance.  For example, with a turtle named ``tess``,  ``tess.right(90)`` asks t
 Let's add a simple method to allow an account to give us information about its state.  The ``getBalance`` method, when invoked, will return the value of the balance attribute.  The implementation of this method is straight forward since we already know how
 to write functions that return values.  One thing to notice is that even though the ``getBalance`` method does not need any other parameter information to do its work, there is still one formal parameter, ``self``.  As we stated earlier, all methods defined in a class that operate on objects of that class will have ``self`` as their first parameter.  Again, this serves as reference to the object itself which in turn gives access to the state data inside the object.
 
-.. activecode:: chp13_classes4
+.. activecode:: oop_3
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
@@ -41,7 +41,7 @@ to write functions that return values.  One thing to notice is that even though 
     p = Account()
     print(p.getBalance())
 
-Note that the ``getBalance`` method simply returns the value of ``self.__balance`` from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``balance``.  This is like asking the bank teller "What is my current balance?"
+Note that the ``getBalance`` method simply returns the value of ``self.balance`` from the Account itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``balance``.  This is like asking the bank teller "What is my current balance?"
 
 We could write another method to change the current balance. If so, we would need to supply a parameter for the method to indicate how much the balance should become.
 
@@ -60,5 +60,6 @@ We could write another method to change the current balance. If so, we would nee
         def setBalance(self, amount):
             self.balance = amount
 
-However this would be a bad design choice. The Account class is meant to model a bank account. If we go to the bank, we do not ask the teller to change our balance to some specified amount. Instead, we either make a deposit or withdrawal. These actions indirectly change the balance.
+.. admonition::
+    However this would be a bad design choice. The Account class is meant to model a bank account. If we go to the bank, we do not ask the teller to change our balance to some specified amount. Instead, we either make a deposit or withdrawal. These actions indirectly change the balance.
 
