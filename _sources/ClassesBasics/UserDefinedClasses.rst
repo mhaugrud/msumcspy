@@ -14,13 +14,12 @@ We've already seen classes like ``str``, ``int``, ``float`` and ``Turtle``.  The
 made available for us to use.  However, in many cases when we are solving problems we need to create data objects
 that are related to the problem we are trying to solve.  We need to create our own classes.
 
-As an example, consider the concept of a checking account at a bank. An account has a current balance, a starting balance (when the last statement was generated), and a list of transactions. All these items are treated collectively as a single object. A particular account could have a current balance of 100, a starting balance of 0, and transactions of [150, -30, -20].
-This is the state of that account.
+As an example, consider the concept of a checking account at a bank. An account has a current balance. A particular account could have a current balance of 150. This is the state of that account.
 
 Thinking about our diagram above, we could draw an ``account`` object as shown here.
 
 .. image:: Figures/objectpic2.png
-   :alt: An account has a balance, a start, and a list
+   :alt: An account has a balance
 
 
 A typical operation that one associates with accounts might be to ask the account for its curent balance, ``getBalance``. One might wish to make a deposit to the account, ``deposit``, withdraw funds from the account, ``withdraw``, or generate a statement for it listing its transactions, ``statement``.  We'll shortly see how we can organize these together with the data.
@@ -30,7 +29,7 @@ A typical operation that one associates with accounts might be to ask the accoun
 
 
 Now that we understand what an ``account`` object might look like, we can define a new **class**. 
-We'll want our accounts to each have a ``balance``, a ``start``, and a ``transactions`` attribute,
+We'll want our accounts to each have a ``balance`` attribute,
 so our first class definition looks like this.
 
 .. sourcecode:: python
@@ -41,9 +40,7 @@ so our first class definition looks like this.
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0
-            self.__start = 0
-            self.__trans = []
+            self.__balance = 0.00
 
 Class definitions can appear anywhere in a program, but they are usually near
 the beginning (after the ``import`` statements). The syntax rules for a class
@@ -56,11 +53,7 @@ the docstring of the class, and will be recognized by various tools.  (This is a
 
 Every class should have a method with the special name ``__init__``.  
 This **initializer method**, often referred to as the **constructor**, is automatically called whenever a new 
-instance of ``Account`` is created.  It gives the programmer the opportunity 
-to set up the attributes required within the new instance by giving them 
-their initial state values.  The ``self`` parameter (you could choose any
-other name, but nobody ever does!) is automatically set to reference
-the newly-created object that needs to be initialized.   
+instance of ``Account`` is created.  It gives the programmer the opportunity to set up the attributes required within the new instance by giving them their initial state values.  The ``self`` parameter (you could choose any other name, but nobody ever does!) is automatically set to reference the newly-created object that needs to be initialized.   
 
 So let's use our new Account class now.
 
@@ -70,17 +63,15 @@ So let's use our new Account class now.
         """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
-            """ Create a new point at the origin """
-            self.__balance = 0
-            self.__start = 0
-            self.__trans = []
+            """ Create a new account with zero balance"""
+            self.__balance = 0.00
     
     p = Account()        # Instantiate an object of type Account
     q = Account()        # and make a second Account
 
     print("Nothing seems to have happened with the accounts")
 
-During the initialization, for each of the objects, we created three attributes called `__balance`, `__start`, and `__trans`, and gave each attribute a starting value.  You will note that when you run the program, nothing seems to have happened.  It turns out that this is not quite the case.  In fact, two ``Accounts`` have been created, each having their attributes initialized: zero for balance and start; an empty list for their transactions.  However, because we have not asked either account to do anything, we don't see any other result.
+During the initialization, for each of the objects, we created an attribute called `__balance` and gave that attribute a starting value.  You will note that when you run the program, nothing seems to have happened.  It turns out that this is not quite the case.  In fact, two ``Accounts`` have been created, each having their attribute initialized to zero.  However, because we have not asked either account to do anything, we don't see any apparent result.
 
 
 .. image:: Figures/objectpic4.png
@@ -94,10 +85,8 @@ You can see this for yourself, via codelens:
         """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
-            """ Create a new point at the origin """
-            self.__balance = 0
-            self.__start = 0
-            self.__trans = []
+            """ Create a new account with zero balance"""
+            self.__balance = 0.00
     
     p = Account()        # Instantiate an object of type Account
     q = Account()        # and make a second Account
@@ -114,10 +103,8 @@ However, notice that the ``is`` operator returns ``False`` meaning that they are
         """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
-            """ Create a new point at the origin """
-            self.__balance = 0
-            self.__start = 0
-            self.__trans = []
+            """ Create a new account with zero balance"""
+            self.__balance = 0.00
     
     p = Account()        # Instantiate an object of type Account
     q = Account()        # and make a second Account
@@ -141,16 +128,14 @@ more than one object:
     alex = Turtle()  
  
 The variables ``p`` and ``q`` are assigned references to two new ``Account`` objects. 
-A function like ``Turtle`` or ``Account`` that creates a new object instance 
-is called a **constructor**.  Every class automatically uses the name of the class as the name of the constructor function.
+A function like ``Turtle`` or ``Account`` that creates a new object instance is called a **constructor**.  Every class automatically uses the name of the class as the name of the constructor function.
 The definition of the constructor function is done
 when you write the ``__init__`` function.
 
 It may be helpful to think of a class as a factory for making objects.  
 The class itself isn't an instance of an account, but it contains the machinery 
 to make account instances.   Every time you call the constructor, you're asking
-the factory to make you a new object.  As the object comes off the 
-production line, its initialization method is executed to 
+the factory to make you a new object.  As the object comes off the production line, its initialization method is executed to 
 get the object properly set up with its factory default settings.
 
 The combined process of "make me a new object" and "get its settings initialized

@@ -10,10 +10,9 @@
 Adding Other Methods to our Class
 ---------------------------------
           
-The key advantage of using a class like ``Account`` rather than something like a simple
-tuple ``(100, 0, [150, -30, -20])`` now becomes apparent.  We can add methods to
+The key advantage of using a class like ``Account`` rather than something like a simple variable ``balance`` now becomes apparent.  We can add methods to
 the ``Account`` class that are sensible operations for accounts.  Had we chosen to use a simple
-tuple to represent the account, we would not have this capability.
+variable to represent the account, we would not have this capability.
 Creating a class like ``Account`` brings an exceptional
 amount of "organizational power" to our programs, and to our thinking. 
 We can group together the sensible operations, and the kinds of data 
@@ -32,12 +31,9 @@ to write functions that return values.  One thing to notice is that even though 
         """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
-            """ Create a new point at the origin """
-            self.__balance = 0
-            self.__start = 0
-            self.__trans = []
+            """ Create a new account with zero balance"""
+            self.__balance = 0.00
     
-
         def getBalance(self):
             return self.__balance
 
@@ -45,7 +41,27 @@ to write functions that return values.  One thing to notice is that even though 
     p = Account()
     print(p.getBalance())
 
-Note that the ``getBalance`` method simply returns the value of ``self.__balance`` from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``balance
+Note that the ``getBalance`` method simply returns the value of ``self.__balance`` from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``balance``.  This is like asking the bank teller "What is my current balance?"
+
+It could write another method to change the current balance. We would need to supply a parameter for the method to indicate how much the balance should become.
+
+.. sourcecode:: python
+    :linenos:
+    
+    class Account:
+        """ Account class for representing and manipulating bank accounts. """
+        
+        def __init__(self):
+            """ Create a new account with zero balance"""
+            self.__balance = 0.00
+
+        def getBalance(self):
+            return self.__balance
+
+        def setBalance(self, amount):
+            self.__balance += amount
+
+However this would be a bad design choice. The Account class is meant to model a bank account. If we go to the bank, we do not ask the teller to change our balance to some specified amount. Instead, we either make a deposit or withdrawal. These actions indirectly change the balance.
 
 Let's add another method, ``deposit``, to see better how methods
 work.  This method will need some additional information to do its work: the amount to deposit.  It will perform a more complex task. In addition to altering the balance, it will also append the deposit amount to the list of transactions.
@@ -57,10 +73,8 @@ work.  This method will need some additional information to do its work: the amo
         """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
-            """ Create a new point at the origin """
-            self.__balance = 0
-            self.__start = 0
-            self.__trans = []
+            """ Create a new account with zero balance"""
+            self.__balance = 0.00
     
 
         def getBalance(self):
@@ -68,7 +82,6 @@ work.  This method will need some additional information to do its work: the amo
 
         def deposit(self, amount):
             self.__balance += amount
-            self.__trans.append(amount)
 
     
     p = Account()
