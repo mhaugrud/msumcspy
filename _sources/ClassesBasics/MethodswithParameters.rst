@@ -21,16 +21,16 @@ work.  These methods will need some additional data to do their work: the amount
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0.00
+            self.balance = 0.00
 
         def getBalance(self):
-            return self.__balance
+            return self.balance
 
         def deposit(self, amount):
-            self.__balance += amount
+            self.balance += amount
 
         def withdraw(self, amount):
-            self.__balance -= amount
+            self.balance -= amount
 
   
     p = Account()
@@ -54,16 +54,16 @@ You may ask, "Why did we write two methods instead of just one that could handle
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0.00
+            self.balance = 0.00
 
         def getBalance(self):
-            return self.__balance
+            return self.balance
 
         def deposit(self, amount):
-            self.__balance += amount
+            self.balance += amount
 
         def withdraw(self, amount):
-            self.__balance -= amount
+            self.balance -= amount
 
   
     p = Account()
@@ -74,7 +74,7 @@ You may ask, "Why did we write two methods instead of just one that could handle
     print(p.getBalance())
 
 
-Criminals can be quite clever as demonstrated in the activecode below.   Edit the deposit method to check that the amount parameter is not negative before adjusting the balance.
+What would happen if a clever account holder deposited a negative amount to the account. Run the activecode below to see. Edit the deposit method to check that the amount parameter is not negative before if adjusts the balance.
 
 
 .. activecode:: chp13_classes5
@@ -84,19 +84,18 @@ Criminals can be quite clever as demonstrated in the activecode below.   Edit th
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0.00
+            self.balance = 0.00
 
         def getBalance(self):
-            return self.__balance
+            return self.balance
 
         def deposit(self, amount):
-            self.__balance += amount
+            self.balance += amount
 
         def withdraw(self, amount):
-            if self.__balance >= amount:
-                self.__balance -= amount
+            if self.balance >= amount:
+                self.balance -= amount
 
-  
     p = Account()
     print(p.getBalance())
     p.deposit(150)
@@ -109,30 +108,3 @@ Criminals can be quite clever as demonstrated in the activecode below.   Edit th
 
 We could consider a negative balance to be an illegal state for an account. The methods in a well designed class ensure an object will never get into an illegal state.  A class is responsible for maintaining the itegrity of its objects.
 
-Each Account object has a balance attribute. What would happen if we tried to change it directly instead of using the deposit or withdraw methods? Could we get into an illegal state that way?
-
-
-.. activecode:: chp13_classes6
-    
-    class Account:
-        """ Account class for representing and manipulating bank accounts. """
-        
-        def __init__(self):
-            """ Create a new account with zero balance"""
-            self.__balance = 0.00
-
-        def getBalance(self):
-            return self.__balance
-
-        def deposit(self, amount):
-            self.__balance += amount
-
-        def withdraw(self, amount):
-            self.__balance -= amount
-
-  
-    p = Account()
-    print(p.getBalance())
-    p.__balance = -12345
-    print(p.getBalance())
-    

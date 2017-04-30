@@ -11,6 +11,7 @@ Classes and Objects - the Basics
    UserDefinedClasses.rst
    AddingOtherMethodstoourClass.rst
    MethodswithParameters.rst
+   PrivateAttributes.rst
    ObjectsasArgumentsandParameters.rst
    ConvertinganObjecttoaString.rst
    InstancesasReturnValues.rst

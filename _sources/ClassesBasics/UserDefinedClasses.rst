@@ -33,14 +33,13 @@ We'll want our accounts to each have a ``balance`` attribute,
 so our first class definition looks like this.
 
 .. sourcecode:: python
-    :linenos:
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0.00
+            self.balance = 0.00
 
 Class definitions can appear anywhere in a program, but they are usually near
 the beginning (after the ``import`` statements). The syntax rules for a class
@@ -64,14 +63,14 @@ So let's use our new Account class now.
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0.00
+            self.balance = 0.00
     
     p = Account()        # Instantiate an object of type Account
     q = Account()        # and make a second Account
 
     print("Nothing seems to have happened with the accounts")
 
-During the initialization, for each of the objects, we created an attribute called `__balance` and gave that attribute a starting value.  You will note that when you run the program, nothing seems to have happened.  It turns out that this is not quite the case.  In fact, two ``Accounts`` have been created, each having their attribute initialized to zero.  However, because we have not asked either account to do anything, we don't see any apparent result.
+During the initialization, for each of the objects, we created an attribute called `balance` and gave that attribute a starting value.  You will note that when you run the program, nothing seems to have happened.  It turns out that this is not quite the case.  In fact, two ``Accounts`` have been created, each having their attribute initialized to zero.  However, because we have not asked either account to do anything, we don't see any apparent result.
 
 
 .. image:: Figures/objectpic4.png
@@ -86,7 +85,7 @@ You can see this for yourself, via codelens:
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0.00
+            self.balance = 0.00
     
     p = Account()        # Instantiate an object of type Account
     q = Account()        # and make a second Account
@@ -104,7 +103,7 @@ However, notice that the ``is`` operator returns ``False`` meaning that they are
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0.00
+            self.balance = 0.00
     
     p = Account()        # Instantiate an object of type Account
     q = Account()        # and make a second Account

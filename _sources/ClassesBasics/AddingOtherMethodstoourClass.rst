@@ -32,10 +32,10 @@ to write functions that return values.  One thing to notice is that even though 
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0.00
+            self.balance = 0.00
     
         def getBalance(self):
-            return self.__balance
+            return self.balance
 
     
     p = Account()
@@ -43,93 +43,22 @@ to write functions that return values.  One thing to notice is that even though 
 
 Note that the ``getBalance`` method simply returns the value of ``self.__balance`` from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``balance``.  This is like asking the bank teller "What is my current balance?"
 
-It could write another method to change the current balance. We would need to supply a parameter for the method to indicate how much the balance should become.
+We could write another method to change the current balance. If so, we would need to supply a parameter for the method to indicate how much the balance should become.
 
 .. sourcecode:: python
-    :linenos:
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
         
         def __init__(self):
             """ Create a new account with zero balance"""
-            self.__balance = 0.00
+            self.balance = 0.00
 
         def getBalance(self):
-            return self.__balance
+            return self.balance
 
         def setBalance(self, amount):
-            self.__balance += amount
+            self.balance = amount
 
 However this would be a bad design choice. The Account class is meant to model a bank account. If we go to the bank, we do not ask the teller to change our balance to some specified amount. Instead, we either make a deposit or withdrawal. These actions indirectly change the balance.
 
-Let's add another method, ``deposit``, to see better how methods
-work.  This method will need some additional information to do its work: the amount to deposit.  It will perform a more complex task. In addition to altering the balance, it will also append the deposit amount to the list of transactions.
-
-
-.. activecode:: chp13_classes5
-    
-    class Account:
-        """ Account class for representing and manipulating bank accounts. """
-        
-        def __init__(self):
-            """ Create a new account with zero balance"""
-            self.__balance = 0.00
-    
-
-        def getBalance(self):
-            return self.__balance
-
-        def deposit(self, amount):
-            self.__balance += amount
-
-    
-    p = Account()
-    print(p.getBalance())
-    p.deposit(150)
-    print(p.getBalance())
-
-
-Notice that the caller of ``deposit`` does not explicitly 
-supply an argument to match the ``self`` parameter.  This is true of all method calls. The definition will always
-have one additional parameter as compared to the invocation.  
-
-The ``withdraw`` method operates in a similar manner. However, we append the amount of the withdrawal as a negative number.
-
-
-.. activecode:: chp13_classes6
-    
-    class Account:
-        """ Account class for representing and manipulating bank accounts. """
-        
-        def __init__(self):
-            """ Create a new point at the origin """
-            self.__balance = 0
-            self.__start = 0
-            self.__trans = []
-    
-
-        def getBalance(self):
-            return self.__balance
-
-        def deposit(self, amount):
-            self.__balance += amount
-            self.__trans.append(amount)
-
-        def withdraw(self, amount):
-            self.__balance -= amount
-            self.__trans.append(-amount)
-
-  
-    p = Account()
-    print(p.getBalance())
-    p.deposit(150)
-    print(p.getBalance())
-    p.withdraw(30)
-    print(p.getBalance())
-    p.withdraw(20)
-    print(p.getBalance())
-
-
-
-    
