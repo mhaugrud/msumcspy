@@ -35,9 +35,17 @@ We can illustrate this with two simple classes to model various world currencies
     c = CAD(100) # 100 Canadian dollars
     print(c.getAmt(), 'Canadian dollars is worth')
     print(c.exchange(), 'US dollars')
-    pnd = b(100) # 100 GB Pounds
+    b = GBP(100) # 100 GB Pounds
     print(b.getAmt(), 'GB pounds is worth')
     print(b.exchange(), 'US dollars')
+
+.. note::
+   Just like instance attributes, class level attributes can be either public or private.
+
+Mutable or Immutable?
+~~~~~~~~~~~~~~~~~~~~~
+
+
 
 Distinquishing between Classes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -74,6 +82,6 @@ We have often used the type function to see what kind of an object we are examin
     b = GBP(100)
     c = CAD(100)
     print(isinstance(a, float)
-    print(isinstance(b, GBP)
+    print(isinstance(b, GBP))
     print(isinstance(c, CAD))
 
