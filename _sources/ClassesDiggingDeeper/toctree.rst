@@ -6,6 +6,7 @@ Classes and Objects - Digging a Little Deeper
    :maxdepth: 2
 
    ClassAttributes.rst
+   Polymorphism.rst
    Fractions.rst
    ObjectsareMutable.rst
    Sameness.rst

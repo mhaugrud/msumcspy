@@ -105,6 +105,6 @@ What would happen if a clever account holder deposited a negative amount to the 
     p.deposit(-200)
     print(p.getBalance())
 
-.. note::
-    We could consider a negative balance to be an illegal state for an account. The methods in a well designed class ensure an object will never get into an illegal state.  A class is responsible for maintaining the itegrity of its objects.
+.. important::
+    We can consider a negative balance to be an illegal state for an account. The methods in a well designed class ensure an object will never get into an illegal state.  A class is responsible for maintaining the itegrity of its objects.
 

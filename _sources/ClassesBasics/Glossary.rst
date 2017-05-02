@@ -14,7 +14,7 @@ Glossary
 
 
     attribute
-        One of the named data items that makes up an instance.
+        One of the named data items that makes up an instance. The name of a **private** attribute begins with two underscores (dunder).
 
     class
         A user-defined compound type. A class can also be thought of as a
@@ -24,6 +24,9 @@ Glossary
         Every class has a "factory", called by the same name as the class, for
         making new instances.  If the class has an *initializer method*, this method
         is used to get the attributes (i.e. the state) of the new object properly set up. 
+
+    information hiding
+        Private attributes cannot be accessed outside of the class definition. They can only be manipulated through the class methods.
             
     initializer method
         A special method in Python (called ``__init__``) 
