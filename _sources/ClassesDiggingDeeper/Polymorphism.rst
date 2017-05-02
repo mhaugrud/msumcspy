@@ -10,7 +10,6 @@ We can illustrate this with two simple classes to model various world currencies
 .. activecode:: oop2_3
     
     class CAD:
-        """Canadian Dollar"""
         USD = 0.75   # the value of a CAD in terms of a USD
         def __init__(self, amt):
             self.__amt = amt
@@ -22,8 +21,6 @@ We can illustrate this with two simple classes to model various world currencies
             return self.__amt * CAD.USD
 
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
-        
         def __init__(self):
             """ Create a new account with zero balance"""
             self.balance = 0.00
@@ -36,7 +33,7 @@ We can illustrate this with two simple classes to model various world currencies
                 amt = amount.exchange()
             else:
                 amt = amount
-            self.balance += amount
+            self.balance += amt
 
     a = Account()
     a.deposit(CAD(100))
