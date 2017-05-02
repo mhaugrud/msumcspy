@@ -18,13 +18,13 @@ As an example, consider the concept of a checking account at a bank. An account 
 
 Thinking about our diagram above, we could draw an ``account`` object as shown here.
 
-.. image:: Figures/objectpic2.png
+.. image:: Figures/account1.png
    :alt: An account has a balance
 
 
 A typical operation that one associates with accounts might be to ask the account for its curent balance, ``getBalance``. One might wish to make a deposit to the account, ``deposit``, withdraw funds from the account, ``withdraw``, or generate a statement for it listing its transactions, ``statement``.  We'll shortly see how we can organize these together with the data.
 
-.. image:: Figures/objectpic3.png
+.. image:: Figures/account2.png
    :alt: An account also has methods
 
 

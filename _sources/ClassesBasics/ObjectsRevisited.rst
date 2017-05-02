@@ -22,8 +22,7 @@ all turtles, they differ in the specific values of the individual state attribut
 
 
 
-.. important:: Encapsulation
-
+.. important::
    The first principle of object oriented programming is placing the state (data) and the methods (operations) together in a package (a class). This is called **encapsulation**.
 
 .. index:: compound data type
