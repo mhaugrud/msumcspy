@@ -58,11 +58,11 @@ We can prevent this by using **private** atttibutes. To make an attribute privat
     p.__balance = -12345
     print(p.getBalance())
 
-Now the balance is not affected. Private attributes prevent anyone from directly accessing them **outside** of the class definition. The only way to access these attributes is through the methods that are provided in the class definition.
+Now the balance is not affected. Private attributes prevent anyone from directly accessing them **outside** of the class definition. 
 
 .. admonition:: Information Hiding
 
-   This concept is called **information hiding** and is the second central principle of object oriented programming. 
+   The only way to access private attributes is through the methods that are provided in the class definition. This protects the attributes from misuse. **Information hiding** is the second central principle of object oriented programming. 
 
 .. note::
     In contrast to other programming languages like C++ and Java, Python only partially supports information hiding.

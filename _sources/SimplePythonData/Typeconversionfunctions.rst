@@ -11,11 +11,11 @@
    :prefix: data-3-
    :start: 1
 
-Type Construction Functions
--------------------------
+Type Constructor Functions
+--------------------------
 
 Sometimes it is necessary to create one type of object from another.  Python provides a few simple functions that will allow us to do that.  The functions ``int``, ``float`` and ``str``
-will take their argument and (attempt to) create an `int`, `float` and `str` respectively.  We call these **type conversion** functions.
+will take their argument and (attempt to) create an `int`, `float` and `str` respectively.  We call these **type constructor** functions.
 
 The ``int`` function can take a floating point number or a string, and make an int from it. For floating point numbers, it *discards* the decimal portion of the number - a process we call *truncation towards zero* on the number line.
 Let us see this in action:
