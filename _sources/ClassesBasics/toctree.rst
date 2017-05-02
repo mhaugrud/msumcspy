@@ -13,5 +13,6 @@ Classes and Objects - the Basics
    MethodswithParameters.rst
    PrivateAttributes.rst
    ConvertinganObjecttoaString.rst
+   AddingMoreAttributes.rst
    Glossary.rst
    Exercises.rst

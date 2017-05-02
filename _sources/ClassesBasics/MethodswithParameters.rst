@@ -14,7 +14,7 @@ Let's add the ``deposit`` and ``withdraw`` methods to see better how methods
 work.  These methods will need some additional data to do their work: the amount to deposit or withdraw.
 
 
-.. activecode:: oop_4
+.. activecode:: oop1_4
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
@@ -47,7 +47,7 @@ have one additional parameter as compared to the invocation.
 You may ask, "Why did we write two methods instead of just one that could handle either type of transaction?"  One reason is that bankers get rather upset if you withdraw more money from your account than you have on deposit. Run the activecode below. Then edit the withdraw method to check that the balance is sufficient before adjusting the balance.
 
 
-.. activecode:: oop_5
+.. activecode:: oop1_5
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
@@ -77,7 +77,7 @@ You may ask, "Why did we write two methods instead of just one that could handle
 What would happen if a clever account holder deposited a negative amount to the account. Run the activecode below to see. Edit the deposit method to check that the amount parameter is not negative before it adjusts the balance.
 
 
-.. activecode:: oop_6
+.. activecode:: oop1_6
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
@@ -105,6 +105,6 @@ What would happen if a clever account holder deposited a negative amount to the 
     p.deposit(-200)
     print(p.getBalance())
 
-.. admonition::
+.. note::
     We could consider a negative balance to be an illegal state for an account. The methods in a well designed class ensure an object will never get into an illegal state.  A class is responsible for maintaining the itegrity of its objects.
 

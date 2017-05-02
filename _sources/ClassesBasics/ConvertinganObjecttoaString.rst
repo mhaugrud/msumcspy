@@ -7,14 +7,14 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Converting an Object to a String
+Creating a String from an Object
 --------------------------------
 
  
 When we're working with classes and objects, it is often necessary to print an object (that is to print the state of an object).
 Consider the example below.
 
-.. activecode:: oop_9
+.. activecode:: oop1_9
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """
@@ -49,7 +49,7 @@ The ``__str__`` method is responsible for returning a string representation as d
 have decided that the string representation will include the values of the balance attribute as well as some formatting.  It
 is required that the ``__str__`` method create and *return* a string.
 
-.. activecode:: oop_10
+.. activecode:: oop1_10
     
     class Account:
         """ Account class for representing and manipulating bank accounts. """

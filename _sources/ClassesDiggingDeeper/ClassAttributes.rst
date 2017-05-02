@@ -2,11 +2,12 @@ Class Level Attributes
 ----------------------
 
 Every Account object we create has its own balance attribute. This is known as an **instance attribute**.  We may wish to make an attribute that is shared by all instances of the class: a **class level attribute**. A class level attribute is declared within the class but not within any particular method definition. 
+Just like instance attributes, class level attributes can be either public or private.
 
 
 We can illustrate this with two simple classes to model various world currencies: the Canadian dollar (CAD) and the Great Britain Pound (GBP). They will include a class level attribute that represents the value of that currency relative to the US Dollar. They will also include a method to ``exchange`` that currency for the comparable number of US Dollars.
     
-.. activecode:: oop_11
+.. activecode:: oop2_1
     
     class CAD:
         """Canadian Dollar"""
@@ -40,7 +41,8 @@ We can illustrate this with two simple classes to model various world currencies
     print(b.exchange(), 'US dollars')
 
 .. note::
-   Just like instance attributes, class level attributes can be either public or private.
+   The Python version that is provided in this interactive text does not allow us to change the value of a class level attribute after it is created. However, we are not so limited if we run Python locally on our own computer.
+
 
 Mutable or Immutable?
 ~~~~~~~~~~~~~~~~~~~~~
@@ -52,7 +54,7 @@ Distinquishing between Classes
 
 We have often used the type function to see what kind of an object we are examining. Python also provides a similar Boolean function ``isinstance`` that requires two parameters: an object and a particular type. It then returns True if the object is of the specified type.
 
-.. activecode:: oop_12
+.. activecode:: oop2_2
     
     class CAD:
         """Canadian Dollar"""
