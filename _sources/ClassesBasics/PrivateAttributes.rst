@@ -61,6 +61,7 @@ We can prevent this by using **private** atttibutes. To make an attribute privat
 Now the balance is not affected. Private attributes prevent anyone from directly accessing them **outside** of the class definition. The only way to access these attributes is through the methods that are provided in the class definition.
 
 .. admonition:: Information Hiding
+
    This concept is called **information hiding** and is the second central principle of object oriented programming. 
 
 .. note::

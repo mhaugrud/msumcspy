@@ -11,17 +11,13 @@
    :prefix: data-3-
    :start: 1
 
-Type conversion functions
+Type Construction Functions
 -------------------------
 
-Sometimes it is necessary to convert values from one type to another.  Python provides
-a few simple functions that will allow us to do that.  The functions ``int``, ``float`` and ``str``
-will (attempt to) convert their arguments into types `int`, `float` and `str`
-respectively.  We call these **type conversion** functions.
+Sometimes it is necessary to create one type of object from another.  Python provides a few simple functions that will allow us to do that.  The functions ``int``, ``float`` and ``str``
+will take their argument and (attempt to) create an `int`, `float` and `str` respectively.  We call these **type conversion** functions.
 
-The ``int`` function can take a floating point number or a string, and turn it
-into an int. For floating point numbers, it *discards* the decimal portion of
-the number - a process we call *truncation towards zero* on the number line.
+The ``int`` function can take a floating point number or a string, and make an int from it. For floating point numbers, it *discards* the decimal portion of the number - a process we call *truncation towards zero* on the number line.
 Let us see this in action:
 
 .. activecode:: ch02_20
@@ -37,12 +33,11 @@ Let us see this in action:
     print(int("23bottles"))
 
 
-The last case shows that a string has to be a syntactically legal number,
-otherwise you'll get one of those pesky runtime errors.  Modify the example by deleting the
-``bottles`` and rerun the program.  You should see the integer ``23``.
+.. note::
+   The last case shows that a string has to be a syntactically legal number, otherwise you'll get one of those pesky runtime errors.  Modify the example by deleting the ``bottles`` and rerun the program.  You should see the integer ``23``.
 
-The type converter ``float`` can turn an integer, a float, or a syntactically
-legal string into a float.
+The type constructor ``float`` can make a float from an integer or a syntactically
+legal string.
 
 .. activecode:: ch02_21
     :nocanvas:
@@ -51,7 +46,7 @@ legal string into a float.
     print(type(float("123.45")))
 
 
-The type converter ``str`` turns its argument into a string.  Remember that when we print a string, the
+The type constructor ``str`` uses its argument to create a string.  Remember that when we print a string, the
 quotes are removed.  However, if we print the type, we can see that it is definitely `str`.
 
 .. activecode:: ch02_22

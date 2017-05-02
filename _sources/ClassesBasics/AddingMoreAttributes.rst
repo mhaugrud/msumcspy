@@ -38,9 +38,9 @@ Lets improve the Account class by enabling it to keep a history of all its trans
             return "${:,.2f}".format(self.__balance)
 
         def statement(self):
-            print('starting balance ${:,.2f}'.format(self.__start))
+            print('starting balance ${:>8,.2f}'.format(self.__start))
             
-            print('ending balance   ${:,.2f}'.format(self.__balance))
+            print('ending balance   ${:>8,.2f}'.format(self.__balance))
 
     p = Account()
     p.deposit(150)
@@ -50,8 +50,6 @@ Lets improve the Account class by enabling it to keep a history of all its trans
           
 
 .. note::
-   Modify the deposit and withdraw methods in the above activecode to append the amount to the transaction list (for withdraw, append the negative of the amount).
+   * Modify the deposit and withdraw methods in the above activecode to append the amount to the transaction list (for withdraw, append the negative of the amount).
 
-
-.. note::
-   Modify the statement method (between the two existing print statements) to iterate over the list of transactions, displaying the amount of each one.
+   * Modify the statement method (between the two existing print statements) to iterate over the list of transactions, displaying the amount of each one.

@@ -11,12 +11,11 @@
    :prefix: list-25-
    :start: 1
 
-``list`` Type Conversion Function
----------------------------------
+``list`` Type Constructor Function
+----------------------------------
     
-Python has a built-in type conversion function called 
-``list`` that tries to turn whatever you give it
-into a list.  For example, try the following:
+Python has a built-in type constructor function called 
+``list`` that tries to make a list from whatever you give it.  For example, try the following:
 
 .. activecode:: ch09_list1
     
@@ -24,7 +23,7 @@ into a list.  For example, try the following:
     print(xs)
 
 
-The string "Crunchy Frog" is turned into a list by taking each character in the string and placing it in a list.  In general, any sequence can be turned into a list using this function.  The result will be a list containing the elements in the original sequence.  It is not legal to use the ``list`` conversion function on any argument that is not a sequence.
+A list is made from the string "Crunchy Frog" by taking each character in the string and placing it in a list.  In general, any sequence can be turned into a list using this function.  The result will be a list containing the elements in the original sequence.  It is not legal to use the ``list`` constructor function on any argument that is not a sequence.
 
-It is also important to point out that the ``list`` conversion function will place each element of the original sequence in the new list.  When working with strings, this is very different than the result of the ``split`` method.  Whereas ``split`` will break a string into a list of "words", ``list`` will always break it into a list of characters.
+It is also important to point out that the ``list`` constructor function will place each element of the original sequence in the new list.  When working with strings, this is very different than the result of the ``split`` method.  Whereas ``split`` will break a string into a list of "words", ``list`` will always break it into a list of characters.
     

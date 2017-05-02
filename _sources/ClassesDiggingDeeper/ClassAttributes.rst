@@ -49,7 +49,7 @@ Mutable or Immutable?
 
 
 
-Distinquishing between Classes
+Distinguishing between Classes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We have often used the type function to see what kind of an object we are examining. Python also provides a similar Boolean function ``isinstance`` that requires two parameters: an object and a particular type. It then returns True if the object is of the specified type.
@@ -83,7 +83,7 @@ We have often used the type function to see what kind of an object we are examin
     a = 100.0
     b = GBP(100)
     c = CAD(100)
-    print(isinstance(a, float)
+    print(isinstance(a, float))
     print(isinstance(b, GBP))
     print(isinstance(c, CAD))
 
