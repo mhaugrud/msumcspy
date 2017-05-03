@@ -48,4 +48,4 @@ We can illustrate this with two simple classes to model various world currencies
 
    The Account class contains methods that alter the state of an Account object. However, the CAD and GBP classes contain no such methods. Why not? 
 
-   Classes are designed to model real world things. Real bank accounts constantly change so our Account object must be mutable. A dollar, whether US or Canadian, never changes once it is printed. Therefore, our currency objects are also immutable.
+   Classes are designed to model real world things. Real bank accounts constantly change so our Account objects must be mutable. A dollar, whether US or Canadian, never changes once it is printed. Therefore, our currency objects are immutable.

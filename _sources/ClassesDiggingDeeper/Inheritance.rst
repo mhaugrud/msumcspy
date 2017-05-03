@@ -11,7 +11,7 @@ Specialization
 
 Suppose our bank introduces a new line of credit (LOC) type account. An overdraft (negative balance) is permitted up to a specified amount. The maximum overdraft amount (line of credit) is established when the account is opened.
 
-We start by saying that LOC is a child class of Account.
+We start by defining LOC as a child class of Account. The name of the parent class appears in parentheses after the name of the new class.
 
 .. activecode:: oop2_4
     
@@ -108,9 +108,11 @@ Now we modify the withdraw method.
     print(a.getBalance())
     a.withdraw(300)
     print(a.getBalance())
+    a.withdraw(400)
+    print(a.getBalance())
 
 
-Both Account and LOC have a withdraw method. Both have exactly the same name. The LOC (child) withdraw **overrides** the Account (parent) withdraw. Now we can withdraw more than we have on deposit.
+Both Account and LOC have a withdraw method. Both have exactly the same name. The LOC (child) withdraw **overrides** the Account (parent) withdraw. Now we can withdraw more than we have on deposit, but not more than the account's line of credit.
 
 .. note::
    This form of inheritance is called **specialization**. The child class has an alternate way to perform an action that the parent already performs. 
