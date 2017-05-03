@@ -44,7 +44,7 @@ work.  These methods will need some additional data to do their work: the amount
 Notice that the caller of ``deposit`` or ``withdraw`` does not explicitly supply an argument to match the ``self`` parameter.  This is true of all method calls. The definition will always
 have one additional parameter as compared to the invocation.  
 
-You may ask, "Why did we write two methods instead of just one that could handle either type of transaction?"  One reason is that bankers get rather upset if you withdraw more money from your account than you have on deposit. Run the activecode below. Then edit the withdraw method to check that the balance is sufficient before adjusting the balance.
+You may ask, "Why did we write two methods instead of just one that could handle either type of transaction?"  One reason is that bankers get rather upset if you withdraw more money from your account than you have on deposit. Run the activecode below. 
 
 
 .. activecode:: oop1_5
@@ -73,9 +73,13 @@ You may ask, "Why did we write two methods instead of just one that could handle
     p.withdraw(200)
     print(p.getBalance())
 
+.. admonition:: Extend the program
 
-What would happen if a clever account holder deposited a negative amount to the account. Run the activecode below to see. Edit the deposit method to check that the amount parameter is not negative before it adjusts the balance.
+   Edit the withdraw method in the above active code to check that the balance is sufficient before adjusting the balance.
 
+.. admonition:: Think about it
+
+What would happen if a clever account holder deposited a negative amount to the account? Run the activecode below to see. 
 
 .. activecode:: oop1_6
     
@@ -104,6 +108,12 @@ What would happen if a clever account holder deposited a negative amount to the 
     print(p.getBalance())
     p.deposit(-200)
     print(p.getBalance())
+
+.. admonition:: Extend the program
+
+   Now edit the deposit method to check that the amount parameter is not negative before it adjusts the balance.
+
+
 
 .. important::
     We can consider a negative balance to be an illegal state for an account. The methods in a well designed class ensure an object will never get into an illegal state.  A class is responsible for maintaining the itegrity of its objects.
