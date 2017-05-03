@@ -7,8 +7,7 @@ Classes and Objects - Digging a Little Deeper
 
    ClassAttributes.rst
    Polymorphism.rst
-   Inheritance1.rst
-   Inheritance2.rst
+   Inheritance.rst
    Fractions.rst
    ObjectsareMutable.rst
    Sameness.rst

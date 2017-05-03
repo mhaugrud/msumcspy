@@ -1,12 +1,53 @@
 Polymorphism
 ------------
 
+Distinguishing between Classes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We have often used the type function to see what kind of an object we are examining. Python also provides a similar Boolean function ``isinstance`` that requires two parameters: an object and a particular type. It then returns True if the object is of the specified type.
+
+.. activecode:: oop2_2
+    
+    class CAD:
+        """Canadian Dollar"""
+        USD = 0.75   # the value of a CAD in terms of a USD
+        def __init__(self, amt):
+            self.__amt = amt
+
+        def getAmt(self):
+            return self.__amt
+
+        def exchange(self):
+            return self.__amt * CAD.USD
+
+    class GBP:
+        """Great Britain Pound"""
+        USD = 0.75   # the value of a GBP in terms of a USD
+        def __init__(self, amt):
+            self.__amt = amt
+
+        def getAmt(self):
+            return self.__amt
+
+        def exchange(self):
+            return self.__amt * GBP.USD
+
+    a = 100.0
+    b = GBP(100)
+    c = CAD(100)
+    print(isinstance(a, float))
+    print(isinstance(b, GBP))
+    print(isinstance(c, CAD))
+
+
+
+Polymorphism
+~~~~~~~~~~~~
+
 Our Account class has methods that enable us to make deposits and withdrawals. Our balance is in US dollars and our usual transactions are in US dollars. However, we may occasionally use other currencies. If a transaction in some other currency, we must convert that amount to an appropriate amount of US dollars.
 Suppose we give the bank teller some Canadian currency to deposit in our account. The teller will convert it to US dollars and place that amount in our account. Lets extend the deposit method to make this happen in our class.
 
 
-We can illustrate this with two simple classes to model various world currencies: the Canadian dollar (CAD) and the Great Britain Pound (GBP). They will include a class level attribute that represents the value of that currency relative to the US Dollar. They will also include a method to ``exchange`` that currency for the comparable number of US Dollars.
-    
 .. activecode:: oop2_3
     
     class CAD:

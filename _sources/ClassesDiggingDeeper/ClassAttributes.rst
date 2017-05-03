@@ -44,46 +44,8 @@ We can illustrate this with two simple classes to model various world currencies
    The Python version that is provided in this interactive text does not allow us to change the value of a class level attribute after it is created. However, we are not so limited if we run Python locally on our own computer.
 
 
-Mutable or Immutable?
-~~~~~~~~~~~~~~~~~~~~~
+.. admonition:: Mutable or Immutable?
 
+   The Account class contains methods that alter the state of an Account object. However, the CAD and GBP classes contain no such methods. Why not? 
 
-
-Distinguishing between Classes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-We have often used the type function to see what kind of an object we are examining. Python also provides a similar Boolean function ``isinstance`` that requires two parameters: an object and a particular type. It then returns True if the object is of the specified type.
-
-.. activecode:: oop2_2
-    
-    class CAD:
-        """Canadian Dollar"""
-        USD = 0.75   # the value of a CAD in terms of a USD
-        def __init__(self, amt):
-            self.__amt = amt
-
-        def getAmt(self):
-            return self.__amt
-
-        def exchange(self):
-            return self.__amt * CAD.USD
-
-    class GBP:
-        """Great Britain Pound"""
-        USD = 0.75   # the value of a GBP in terms of a USD
-        def __init__(self, amt):
-            self.__amt = amt
-
-        def getAmt(self):
-            return self.__amt
-
-        def exchange(self):
-            return self.__amt * GBP.USD
-
-    a = 100.0
-    b = GBP(100)
-    c = CAD(100)
-    print(isinstance(a, float))
-    print(isinstance(b, GBP))
-    print(isinstance(c, CAD))
-
+   Classes are designed to model real world things. Real bank accounts constantly change so our Account object must be mutable. A dollar, whether US or Canadian, never changes once it is printed. Therefore, our currency objects are also immutable.
