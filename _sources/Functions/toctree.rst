@@ -5,6 +5,7 @@ Functions
    :caption: Functions
    :maxdepth: 2
 
+   introduction.rst
    functions.rst
    Functionsthatreturnvalues.rst
    Variablesandparametersarelocal.rst

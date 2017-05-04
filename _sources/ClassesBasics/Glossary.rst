@@ -26,7 +26,7 @@ Glossary
         is used to get the attributes (i.e. the state) of the new object properly set up. 
 
     information hiding
-        Private attributes cannot be accessed outside of the class definition. They can only be manipulated through the class methods.
+        Private attributes cannot be directly accessed outside of the class definition. They can only be manipulated through the class methods.
             
     initializer method
         A special method in Python (called ``__init__``) 

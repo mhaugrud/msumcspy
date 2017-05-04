@@ -98,7 +98,7 @@ Here is the same program in codelens.  Step through the function and watch the "
 
 
 
-.. note::
+.. admonition:: What would happen?
 
     What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it in the workspace below**.
 
