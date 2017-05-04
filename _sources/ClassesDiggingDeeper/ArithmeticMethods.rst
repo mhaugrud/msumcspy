@@ -80,31 +80,73 @@ You can try the addition method and then modify the fractions and retry.
     f3 = f1.add(f2)
     print(f3)
 
+Operator Overloading
+~~~~~~~~~~~~~~~~~~~~
 
 One final modification to this method will be quite useful.  Instead invoking the ``add`` method, we can use the
-addition operator "+".  This requires that we implement another special method, this time called ``__add__``.
+addition operator "+".  We call this process **operator overloading**. We extend a familar operator to work with a new data type. In this example, it requires that we implement another special method, this time called ``__add__``.
 The details of the method are the same.
 
-.. sourcecode:: python
+.. activecode:: fractions_add1
 
-	def __add__(self, otherfraction):
+    def gcd(m, n):
+        while m % n != 0:
+            oldm = m
+            oldn = n
 
-	    newnum = self.num*otherfraction.den + self.den*otherfraction.num
-	    newden = self.den * otherfraction.den
+            m = oldn
+            n = oldm % oldn
 
-	    common = gcd(newnum, newden)
+        return n
 
-	    return Fraction(newnum // common, newden // common)
+    class Fraction:
 
-However, now we can perform addition in the same manner that we are used to with other numeric data.
+        def __init__(self, top, bottom):
 
-.. sourcecode:: python
+            self.num = top        # the numerator is on top
+            self.den = bottom     # the denominator is on the bottom
 
-	f1 = Fraction(1, 2)
-	f2 = Fraction(1, 4)
+        def __str__(self):
+            return str(self.num) + "/" + str(self.den)
 
-	f3 = f1 + f2    # calls the __add__ method of f1
-	print(f3)
+        def simplify(self):
+            common = gcd(self.num, self.den)
+
+            self.num = self.num // common
+            self.den = self.den // common
+
+        def __add__(self,otherfraction):
+
+            newnum = self.num*otherfraction.den + self.den*otherfraction.num
+            newden = self.den * otherfraction.den
+
+            common = gcd(newnum, newden)
+
+            return Fraction(newnum // common, newden // common)
+
+    f1 = Fraction(1, 2)
+    f2 = Fraction(1, 4)
+
+    f3 = f1 + f2
+    print(f3)
+
+Now we can perform addition in the same manner that we are used to with other numeric data.
+
+We can overload many common operators as shown in the following table.
+
+.. table::
+
+   ========  =======
+   operator   method
+   ========  =======
+      -      __sub__
+      *      __mul__
+      ==     __eq__
+      !=     __ne__
+      <      __lt__
+      <=     __le__
+      >      __gt__
+   ========  =======   
 
 .. note::
 
