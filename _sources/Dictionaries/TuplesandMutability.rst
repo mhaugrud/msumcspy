@@ -34,9 +34,13 @@ some related information that belongs together, like your student record.  There
 no description of what each of these *fields* means, but we can guess.  A tuple
 lets us "chunk" together related information and use it as a single thing.
 
-Tuples support the same sequence operations as strings and
-lists. 
-For example, the index operator selects an element from a tuple.
+Tuples support many of the same operations as strings and
+lists: 
+- [] (index operator)
+- in
+- slicing
+- len
+- iteration
 
 As with strings, if we try to use item assignment to modify one of the elements of the
 tuple, we get an error.

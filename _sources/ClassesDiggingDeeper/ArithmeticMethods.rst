@@ -139,8 +139,8 @@ We can overload many common operators as shown in the following table.
    ========  =======
    operator   method
    ========  =======
-      -      __sub__
-      *      __mul__
+      \-      __sub__
+      \*      __mul__
       ==     __eq__
       !=     __ne__
       <      __lt__
