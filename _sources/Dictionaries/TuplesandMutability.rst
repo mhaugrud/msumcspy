@@ -37,13 +37,13 @@ lets us "chunk" together related information and use it as a single thing.
 Tuples support many of the same operations as strings and
 lists:
  
-   * [] (index operator)
+   * [ ] (index operator)
 
    * in
 
    * slicing
 
-   * + (concatenation)
+   * \+ (concatenation)
 
    * len
 
