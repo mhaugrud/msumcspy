@@ -33,7 +33,8 @@ Let us see this in action:
     print(int("23bottles"))
 
 
-.. note::
+.. admonition:: Fix the error
+
    The last case shows that a string has to be a syntactically legal number, otherwise you'll get one of those pesky runtime errors.  Modify the example by deleting the ``bottles`` and rerun the program.  You should see the integer ``23``.
 
 The type constructor ``float`` can make a float from an integer or a syntactically

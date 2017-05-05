@@ -15,6 +15,6 @@ We have seen in the previous chapter how modules like math, random, and turtle c
 
 .. admonition:: Think about it
 
-   You used various math and random module functions. Do you know **how** they work? No? We don't need to worry about that. It is not important. You only need to know **what** they do and how to call them. This frees us to concentrate on the problem we do need to need to work on. This advantage is called **abstraction**.
+   You used various math and random module functions. Do you know **how** they work? No? We don't need to worry about that. It is not important. You only need to know **what** they do and how to call them. This frees us to concentrate on the problem we do need to work on. This advantage is called **abstraction**.
 
    Functions give us a way to break large problems into small pieces. It is easier to solve small problems than large ones. A well designed function is an independent solution to a small problem. We may even be able to reuse these small solutions for other larger problems! This advantage is called **modularization**.

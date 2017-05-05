@@ -100,24 +100,24 @@ Here is the same program in codelens.  Step through the function and watch the "
 
 .. admonition:: What would happen?
 
-    What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it in the workspace below**.
+   What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it in the workspace below**.
 
-    It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. Then **properly initialize the accumulator variable**.
+   It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. Then **properly initialize the accumulator variable**.
 
-    Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 4 to get the square of ``x``? **Change line 3 to repeat the correct number of times**.
+   Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 4 to get the square of ``x``? **Change line 3 to repeat the correct number of times**.
 
-   .. activecode:: scratch_05_04
+.. activecode:: scratch_05_04
 
-    def square(x):
-        runningtotal = 0
-        for counter in range(x):
-            runningtotal = runningtotal + x
+   def square(x):
+       runningtotal = 0
+       for counter in range(x):
+           runningtotal = runningtotal + x
 
-        return runningtotal
+       return runningtotal
 
-    toSquare = 10
-    squareResult = square(toSquare)
-    print("The result of", toSquare, "squared is", squareResult)
+   toSquare = 10
+   squareResult = square(toSquare)
+   print("The result of", toSquare, "squared is", squareResult)
 
 
 **Check your understanding**
