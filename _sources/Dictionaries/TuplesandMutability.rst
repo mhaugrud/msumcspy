@@ -35,16 +35,21 @@ no description of what each of these *fields* means, but we can guess.  A tuple
 lets us "chunk" together related information and use it as a single thing.
 
 Tuples support many of the same operations as strings and
-lists: 
+lists:
+ 
    * [] (index operator)
+
    * in
+
    * slicing
+
    * + (concatenation)
+
    * len
+
    * iteration
 
-As with strings, if we try to use item assignment to modify one of the elements of the
-tuple, we get an error.
+As with strings, if we try to use item assignment to modify one of the elements of the tuple, we get an error.
 
 .. sourcecode:: python
 
