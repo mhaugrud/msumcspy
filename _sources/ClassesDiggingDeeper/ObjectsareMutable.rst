@@ -7,14 +7,10 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Objects are Mutable
--------------------
+Helper Functions
+----------------
 
-We can change the state of an object by making an assignment to one of its instance variables.
-For example, we could change the numerator of the fraction by assigning a new
-value to ``self.num``.  Likewise, we could do the same thing for ``self.den``.
-
-One place where this type of modification makes sense is when we place a fraction in **lowest terms**.  Lowest terms simply
+We can perform various operations on Fractions more easily if we first place it in **lowest terms**.  Lowest terms simply
 means that the numerator and denominator do not share any common factors.  For example, ``12/16`` is a fraction but it is
 not in lowest terms since 2 can divide into both 12 and 16.  We call 2 a **common divisor**.  If we divide the numerator
 and the denominator by a common divisor, we get an equivalent fraction.  If we divide by the **greatest common divisor**, 
@@ -40,10 +36,10 @@ function on a number of different examples.
 
 
 Now that we have a function that can help us with finding the greatest common divisor, we can use that to implement
-a fraction method called ``simplify``.  We will ask the fraction "to put itself in lowest terms".
+a fraction method called ``simplify``.  We will ask the fraction "to create a new instance of itself in lowest terms".
 
 The ``simplify`` method will pass the numerator and the denominator to the ``gcd`` function to find the
-greatest common divisor.  It will then modify itself by dividing its ``num`` and its ``den`` by that value.
+greatest common divisor.  It will then make a new Fraction by dividing its ``num`` and its ``den`` by that value.
 
 .. activecode:: fractions_simplify
 
@@ -61,30 +57,28 @@ greatest common divisor.  It will then modify itself by dividing its ``num`` and
 
         def __init__(self, top, bottom):
 
-            self.num = top        # the numerator is on top
-            self.den = bottom     # the denominator is on the bottom
+            self.__num = top        # the numerator is on top
+            self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.num) + "/" + str(self.den)
+            return str(self.__num) + "/" + str(self.__den)
 
         def simplify(self):
-            common = gcd(self.num, self.den)
+            common = gcd(self.__num, self.__den)
 
-            self.num = self.num // common
-            self.den = self.den // common
+            return Fraction(self.__num // common, self.__den // common)
 
     myfraction = Fraction(12, 16)
 
     print(myfraction)
-    myfraction.simplify()
-    print(myfraction)
+    newfraction = myfraction.simplify()
+    print(newfraction)
 
 
 There are two important things to note about this implementation.  First, the ``gcd`` function is not
 a method of the class.  It does not belong to ``Fraction``.  Instead it is a function that is used by ``Fraction``
 to assist in a task that needs to be performed.  This type of function is often called a **helper function**.  Second,
-the ``simplify`` method does not return anything.  Its job is to modify the object itself.  This type of method is
-known as a **mutator** method because it mutates or changes the internal state of the object. 
+the ``simplify`` method does not change the original Fraction.  Its job is to create a new Fraction based on the original one.  
 
 
 

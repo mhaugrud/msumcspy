@@ -27,8 +27,8 @@ greatest common divisor and then divide each part of the new fraction.
 
 	def add(self,otherfraction):
 
-	    newnum = self.num*otherfraction.den + self.den*otherfraction.num
-	    newden = self.den * otherfraction.den
+	    newnum = self.__num*otherfraction.__den + self.__den*otherfraction.__num
+	    newden = self.__den * otherfraction.__den
 
 	    common = gcd(newnum,newden)
 
@@ -53,22 +53,21 @@ You can try the addition method and then modify the fractions and retry.
 
         def __init__(self, top, bottom):
 
-            self.num = top        # the numerator is on top
-            self.den = bottom     # the denominator is on the bottom
+            self.__num = top        # the numerator is on top
+            self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.num) + "/" + str(self.den)
+            return str(self.__num) + "/" + str(self.__den)
 
         def simplify(self):
-            common = gcd(self.num, self.den)
+            common = gcd(self.__num, self.__den)
 
-            self.num = self.num // common
-            self.den = self.den // common
+            return Fraction(self.__num // common, self.__den // common)
 
         def add(self,otherfraction):
 
-            newnum = self.num*otherfraction.den + self.den*otherfraction.num
-            newden = self.den * otherfraction.den
+            newnum = self.__num*otherfraction.__den + self.__den*otherfraction.__num
+            newden = self.__den * otherfraction.__den
 
             common = gcd(newnum, newden)
 
@@ -103,22 +102,21 @@ The details of the method are the same.
 
         def __init__(self, top, bottom):
 
-            self.num = top        # the numerator is on top
-            self.den = bottom     # the denominator is on the bottom
+            self.__num = top        # the numerator is on top
+            self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.num) + "/" + str(self.den)
+            return str(self.__num) + "/" + str(self.__den)
 
         def simplify(self):
-            common = gcd(self.num, self.den)
+            common = gcd(self.__num, self.__den)
 
-            self.num = self.num // common
-            self.den = self.den // common
+            return Fraction(self.__num // common, self.__den // common)
 
         def __add__(self,otherfraction):
 
-            newnum = self.num*otherfraction.den + self.den*otherfraction.num
-            newden = self.den * otherfraction.den
+            newnum = self.__num*otherfraction.__den + self.__den*otherfraction.__num
+            newden = self.__den * otherfraction.__den
 
             common = gcd(newnum, newden)
 
@@ -146,6 +144,7 @@ We can overload many common operators as shown in the following table.
       <      __lt__
       <=     __le__
       >      __gt__
+      >=     __ge__
    ========  =======   
 
 .. note::

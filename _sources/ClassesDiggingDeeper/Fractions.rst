@@ -32,17 +32,17 @@ method which will allow the user to provide a numerator and a denominator for th
 
         def __init__(self, top, bottom):
 
-            self.num = top        # the numerator is on top
-            self.den = bottom     # the denominator is on the bottom
+            self.__num = top        # the numerator is on top
+            self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.num) + "/" + str(self.den)
+            return str(self.__num) + "/" + str(self.__den)
 
         def getNum(self):
-            return self.num
+            return self.__num
 
         def getDen(self):
-            return self.den
+            return self.__den
 
     myfraction = Fraction(3, 4)
     print(myfraction)
