@@ -32,7 +32,6 @@ It allows us to find out if two references refer to the same object.
     class Fraction:
 
         def __init__(self, top, bottom):
-
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom
 
@@ -43,7 +42,6 @@ It allows us to find out if two references refer to the same object.
     myfraction = Fraction(3, 4)
     yourfraction = Fraction(3, 4)
     print(myfraction is yourfraction)
-
     ourfraction = myfraction
     print(myfraction is ourfraction)
 
@@ -81,7 +79,6 @@ This type of equality is known as **deep equality** since it compares the values
     class Fraction:
 
         def __init__(self, top, bottom):
-
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom
 

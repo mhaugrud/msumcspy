@@ -9,7 +9,8 @@ Classes and Objects - Digging a Little Deeper
    Polymorphism.rst
    Inheritance.rst
    Fractions.rst
-   ObjectsareMutable.rst
+   HelperFuncs.rst
+   MoreInheritance.rst
    Sameness.rst
    ArithmeticMethods.rst
    Glossary.rst

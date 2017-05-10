@@ -26,10 +26,8 @@ function on a number of different examples.
 	    while m % n != 0:
 	        oldm = m
 	        oldn = n
-
 	        m = oldn
 	        n = oldm % oldn
-            
 	    return n
 
 	print(gcd(12, 16))
@@ -47,16 +45,13 @@ greatest common divisor.  It will then make a new Fraction by dividing its ``num
         while m % n != 0:
             oldm = m
             oldn = n
-
             m = oldn
             n = oldm % oldn
-
         return n
 
     class Fraction:
 
         def __init__(self, top, bottom):
-
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom
 
@@ -65,11 +60,9 @@ greatest common divisor.  It will then make a new Fraction by dividing its ``num
 
         def simplify(self):
             common = gcd(self.__num, self.__den)
-
             return Fraction(self.__num // common, self.__den // common)
 
     myfraction = Fraction(12, 16)
-
     print(myfraction)
     newfraction = myfraction.simplify()
     print(newfraction)
