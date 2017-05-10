@@ -15,10 +15,10 @@ Lets improve the Account class by enabling it to keep a history of all its trans
 .. activecode:: oop1_11
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.__balance = 0.00
             self.__trans = []
             self.__start = 0.00
@@ -27,10 +27,12 @@ Lets improve the Account class by enabling it to keep a history of all its trans
             return self.__balance
 
         def deposit(self, amount):
+            '''increase balance by a positive amount'''
             if amount >= 0:
                 self.__balance += amount
 
         def withdraw(self, amount):
+            '''reduce balance by amount but do not an allow overdraft'''
             if self.__balance >= amount:
                 self.__balance -= amount
 
@@ -38,6 +40,7 @@ Lets improve the Account class by enabling it to keep a history of all its trans
             return "${:,.2f}".format(self.__balance)
 
         def statement(self):
+            '''list the transactions with the running balance'''
             print('starting balance ${:>8,.2f}'.format(self.__start))
             
             print('ending balance   ${:>8,.2f}'.format(self.__balance))

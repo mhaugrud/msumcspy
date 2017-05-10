@@ -17,20 +17,22 @@ Consider the example below.
 .. activecode:: oop1_9
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.__balance = 0.00
 
         def getBalance(self):
             return self.__balance
 
         def deposit(self, amount):
+            '''increase balance by a positive amount'''
             if amount >= 0:
                 self.__balance += amount
 
         def withdraw(self, amount):
+            '''reduce balance by amount but do not an allow overdraft'''
             if self.__balance >= amount:
                 self.__balance -= amount
 
@@ -52,20 +54,22 @@ is required that the ``__str__`` method create and *return* a string.
 .. activecode:: oop1_10
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.__balance = 0.00
 
         def getBalance(self):
             return self.__balance
 
         def deposit(self, amount):
+            '''increase balance by a positive amount'''
             if amount >= 0:
                 self.__balance += amount
 
         def withdraw(self, amount):
+            '''reduce balance by amount but do not an allow overdraft'''
             if self.__balance >= amount:
                 self.__balance -= amount
 

@@ -35,10 +35,10 @@ so our first class definition looks like this.
 .. sourcecode:: python
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
 
 Class definitions can appear anywhere in a program, but they are usually near
@@ -59,10 +59,10 @@ So let's use our new Account class now.
 .. activecode:: oop1_1
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
     
     p = Account()        # Instantiate an object of type Account
@@ -81,10 +81,10 @@ You can see this for yourself, via codelens:
 .. codelens:: oop_1c
 
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
     
     p = Account()        # Instantiate an object of type Account
@@ -99,10 +99,10 @@ However, notice that the ``is`` operator returns ``False`` meaning that they are
 .. activecode:: oop1_2
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
     
     p = Account()        # Instantiate an object of type Account

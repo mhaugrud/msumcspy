@@ -17,10 +17,10 @@ work.  These methods will need some additional data to do their work: the amount
 .. activecode:: oop1_4
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
 
         def getBalance(self):
@@ -50,10 +50,10 @@ You may ask, "Why did we write two methods instead of just one that could handle
 .. activecode:: oop1_5
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
 
         def getBalance(self):
@@ -84,10 +84,10 @@ What would happen if a clever account holder deposited a negative amount to the 
 .. activecode:: oop1_6
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
 
         def getBalance(self):
@@ -97,6 +97,7 @@ What would happen if a clever account holder deposited a negative amount to the 
             self.balance += amount
 
         def withdraw(self, amount):
+            '''reduce balance by amount but do not an allow overdraft'''
             if self.balance >= amount:
                 self.balance -= amount
 

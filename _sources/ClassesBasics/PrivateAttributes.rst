@@ -7,20 +7,22 @@ Each Account object has a balance attribute. What would happen if we tried to ch
 .. activecode:: oop1_7
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
 
         def getBalance(self):
             return self.balance
 
         def deposit(self, amount):
+            '''increase balance by a positive amount'''
             if amount >= 0:
                 self.balance += amount
 
         def withdraw(self, amount):
+            '''reduce balance by amount but do not an allow overdraft'''
             if self.balance >= amount:
                 self.balance -= amount
 
@@ -29,27 +31,31 @@ Each Account object has a balance attribute. What would happen if we tried to ch
     p.balance = -12345
     print(p.getBalance())
 
-This is definitely a problem. We provided methods that prevent an Account getting into an illegal state. But this was easily circumvented by directly accessing the attribute. This could be done since balance is a **public** attribute. Public attributes can be directly manipulated **outside** of the class definition.
+.. caution::
+
+   This is definitely a problem. We provided methods that prevent an Account getting into an illegal state. But this was easily circumvented by directly accessing the attribute. This could be done since balance is a **public** attribute. Public attributes can be directly manipulated **outside** of the class definition.
 
 We can prevent this by using **private** atttibutes. To make an attribute private, preface its name with two underscore characters ``__balance``. We read this as dunder (double underscore) balance.
     
 .. activecode:: oop1_8
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.__balance = 0.00
 
         def getBalance(self):
             return self.__balance
 
         def deposit(self, amount):
+            '''increase balance by a positive amount'''
             if amount >= 0:
                 self.__balance += amount
 
         def withdraw(self, amount):
+            '''reduce balance by amount but do not an allow overdraft'''
             if self.__balance >= amount:
                 self.__balance -= amount
 

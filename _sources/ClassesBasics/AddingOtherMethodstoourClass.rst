@@ -28,10 +28,10 @@ to write functions that return values.  One thing to notice is that even though 
 .. activecode:: oop1_3
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
     
         def getBalance(self):
@@ -48,10 +48,10 @@ We could write another method to change the current balance. If so, we would nee
 .. sourcecode:: python
     
     class Account:
-        """ Account class for representing and manipulating bank accounts. """
+        '''Account class for representing and manipulating bank accounts'''
         
         def __init__(self):
-            """ Create a new account with zero balance"""
+            '''Create a new account with zero balance'''
             self.balance = 0.00
 
         def getBalance(self):
