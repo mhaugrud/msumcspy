@@ -29,14 +29,14 @@ In this example we define SFraction, specialized sub-class of Fraction. SFractio
             self.den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.__num) + "/" + str(self.__den)
+            return str(self.num) + "/" + str(self.den)
 
     class SFraction(Fraction):
         '''a Fraction in simplest form'''
 
         def __init__(self, top, bottom):
             common = gcd(top, bottom)
-            Fraction.__init__(self, num // common, den // common)            
+            Fraction.__init__(self, top // common, bottom // common)            
     afraction = Fraction(12, 16)
     print(afraction)
     sfraction = SFraction(12, 16)
