@@ -30,7 +30,7 @@ We start by defining LOC as a child class of Account. The name of the parent cla
                 self.balance -= amount
 
     class LOC(Account):
-        ''' LOC inherits everything from Account '''
+        '''LOC inherits everything from Account'''
 
     a = LOC()
     a.deposit(100)
@@ -95,12 +95,13 @@ Now we modify the withdraw method.
                 self.balance -= amount
 
     class LOC(Account):
-        def __init__(self, loc):
-            self.__loc = loc
+        def __init__(self, line):
+            self.__line = line
             Account.__init__(self)
 
         def withdraw(self, amount):
-            if self.balance + self.__loc >= amount:
+            '''allow overdraft up to line of credit'''
+            if self.balance + self.__line >= amount:
                 self.balance -= amount
 
     a = LOC(500)
@@ -141,10 +142,17 @@ We start by saying that LOC is a child class of Account. Then we add the accrue 
                 self.balance -= amount
 
     class Savings(Account):
-        ''' Savings inherits everything from Account '''
+        '''Savings inherits everything from Account'''
         __rate = 0.01
+        def __init__(self):
+            self.__intPaid = 0.0
+            Account.__init__(self)
+       
         def accrue(self):
-            self.deposit(Savings.__rate * self.balance)
+            '''calculate and deposit interest'''
+            interest = Savings.__rate * self.balance
+            self.__intPaid += interest
+            self.deposit(interest)
 
     a = Savings()
     a.deposit(100)
