@@ -114,18 +114,18 @@ We can overload many common operators as shown in the following table.
 
 .. table::
 
-   ========  =======
-   operator   method
-   ========  =======
-      \-      __sub__
-      \*      __mul__
-      ==     __eq__
-      !=     __ne__
-      <      __lt__
-      <=     __le__
-      >      __gt__
-      >=     __ge__
-   ========  =======   
+   ========  =======  ===========
+   operator   method  description
+   ========  =======  ===========
+      \-      __sub__ **sub**tract
+      \*      __mul__ **mul**tiply
+      ==     __eq__   **eq**ual
+      !=     __ne__   **n**ot **e**qual
+      <      __lt__   **l**ess **t**han
+      <=     __le__   **l**ess than or **e**qual
+      >      __gt__   **g**reater **t**han
+      >=     __ge__   **g**reater than or **e**qual
+   ========  =======  ===========
 
 .. note::
 
