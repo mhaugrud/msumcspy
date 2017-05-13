@@ -26,12 +26,9 @@ greatest common divisor and then divide each part of the new fraction.
 .. sourcecode:: python
 
 	def add(self,otherfraction):
-
 	    newnum = self.__num*otherfraction.__den + self.__den*otherfraction.__num
 	    newden = self.__den * otherfraction.__den
-
 	    common = gcd(newnum,newden)
-
 	    return Fraction(newnum//common,newden//common)
 
 You can try the addition method and then modify the fractions and retry.
@@ -48,7 +45,6 @@ You can try the addition method and then modify the fractions and retry.
         return n
 
     class Fraction:
-
         def __init__(self, top, bottom):
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom
@@ -90,7 +86,6 @@ The details of the method are the same.
         return n
 
     class Fraction:
-
         def __init__(self, top, bottom):
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom

@@ -23,7 +23,6 @@ In this example we define SFraction, specialized sub-class of Fraction. SFractio
         return n
 
     class Fraction:
-
         def __init__(self, top, bottom):
             self.num = top        # the numerator is on top
             self.den = bottom     # the denominator is on the bottom
@@ -36,7 +35,8 @@ In this example we define SFraction, specialized sub-class of Fraction. SFractio
 
         def __init__(self, top, bottom):
             common = gcd(top, bottom)
-            Fraction.__init__(self, top // common, bottom // common)            
+            Fraction.__init__(self, top // common, bottom // common)
+
     afraction = Fraction(12, 16)
     print(afraction)
     sfraction = SFraction(12, 16)
