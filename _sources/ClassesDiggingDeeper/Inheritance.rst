@@ -63,8 +63,8 @@ Now we modify the constructor.
                 self.balance -= amount
 
     class LOC(Account):
-        def __init__(self, loc):
-            self.__loc = loc
+        def __init__(self, line):
+            self.__line = line
             Account.__init__(self)
 
     a = LOC(500)
@@ -155,5 +155,13 @@ We start by saying that LOC is a child class of Account. Then we add the accrue 
 
 .. note::
    This form of inheritance is called **augmentation**. The child class has a new capability that was not available in the parent. 
+
+Class Diagram with Inheritance
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The arrow in this class diagram indicates inheritance. The sub-classes inherit the attributes and methods of the super-class. The sub-classes can have additional attributes or methods or they can override methods of the super-class.
+
+.. image:: Figures/class2.PNG
+
 
 

@@ -20,7 +20,7 @@ Lets improve the Account class by enabling it to keep a history of all its trans
         def __init__(self):
             '''Create a new account with zero balance'''
             self.__balance = 0.00
-            self.__trans = []
+            self.__transactions = []
             self.__start = 0.00
 
         def getBalance(self):
@@ -57,3 +57,16 @@ Lets improve the Account class by enabling it to keep a history of all its trans
    * Modify the deposit and withdraw methods in the above activecode to append the amount to the transaction list (for withdraw, append the negative of the amount).
 
    * Modify the statement method (between the two existing print statements) to iterate over the list of transactions, displaying the amount of each one.
+
+Class Diagram
+~~~~~~~~~~~~~
+
+Computer scientists often use diagrams to describe the design of their programs. One such diagram is a **UML Class Diagram**. It shows the design of one or more classes. Each class is represented with a rectangle that is composed of three parts:
+
+   * The name of the class
+
+   * A list of the attributes
+
+   * A list of the methods (with parameters)
+
+.. image:: Figures/class1.PNG
