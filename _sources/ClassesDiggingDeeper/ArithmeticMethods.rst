@@ -117,8 +117,8 @@ We can overload many common operators as shown in the following table.
    ========  =======  ===========
    operator   method  description
    ========  =======  ===========
-      \-      __sub__ **sub**tract
-      \*      __mul__ **mul**tiply
+      \-      __sub__  **sub**tract
+      \*      __mul__  **mul**tiply
       ==     __eq__   **eq**ual
       !=     __ne__   **n**ot **e**qual
       <      __lt__   **l**ess **t**han
