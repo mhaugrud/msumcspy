@@ -50,6 +50,7 @@ greatest common divisor.  It will then make a new Fraction by dividing its ``num
         return n
 
     class Fraction:
+
         def __init__(self, top, bottom):
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom
