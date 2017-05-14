@@ -119,18 +119,18 @@ We can overload many common operators as shown in the following table.
 
 .. table::
 
-   ========   ======
-   operator   method  
-   ========   ======
-   \-     __sub__
-   \*     __mul__
-   ==     __eq__
-   !=     __ne__
-   <      __lt__
-   <=     __le__
-   >      __gt__
-   >=     __ge__
-   ========   ======
+   ========  =======
+   operator  method  
+   ========  =======
+   \-         __sub__
+   \*         __mul__
+   ==        __eq__
+   !=        __ne__
+   <         __lt__
+   <=        __le__
+   >         __gt__
+   >=        __ge__
+   ========  =======
 
 
 .. note::
