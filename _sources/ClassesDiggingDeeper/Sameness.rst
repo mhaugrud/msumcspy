@@ -30,7 +30,6 @@ It allows us to find out if two references refer to the same object.
 .. activecode:: fractions_is
 
     class Fraction:
-
         def __init__(self, top, bottom):
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom
@@ -77,7 +76,6 @@ This type of equality is known as **deep equality** since it compares the values
         return (f1.getNum() == f2.getNum()) and (f1.getDen() == f2.getDen())
  
     class Fraction:
-
         def __init__(self, top, bottom):
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom
@@ -90,7 +88,6 @@ This type of equality is known as **deep equality** since it compares the values
 
         def getDen(self):
             return self.__den
-
 
     myfraction = Fraction(3, 4)
     yourfraction = Fraction(3, 4)

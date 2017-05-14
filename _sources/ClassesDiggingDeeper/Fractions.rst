@@ -29,7 +29,6 @@ method which will allow the user to provide a numerator and a denominator for th
 .. activecode:: fractions_init
 
     class Fraction:
-
         def __init__(self, top, bottom):
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom
