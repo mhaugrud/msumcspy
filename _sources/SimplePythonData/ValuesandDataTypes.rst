@@ -85,13 +85,13 @@ is in later chapters.
     # what does e2 mean? (answer on next line)
     #
 
-What about values like ``"17"`` and ``"3.2"``? They look like numbers, but they
+What about values like ``"3"`` and ``"3.2"``? They look like numbers, but they
 are in quotation marks like strings.
 
 .. activecode:: ch02_3
     :nocanvas:
 
-    print(type("17"))
+    print(type("3"))
     print(type("3.2"))
 
 They're strings!
@@ -154,8 +154,8 @@ So the Python language designers usually chose to surround their strings by
 single quotes.  What do you think would happen if the string already contained
 single quotes?
 
-When you type a large integer, you might be tempted to use commas between
-groups of three digits, as in ``42,000``. This is not a legal integer in
+When you type a large number, you might be tempted to use commas between
+groups of three digits, as in ``42,000.1``. This is not a legal number in
 Python, but it does mean something else, which is legal:
 
 .. activecode:: ch02_8

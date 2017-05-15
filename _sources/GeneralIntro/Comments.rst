@@ -29,7 +29,7 @@ Here is a new version of *Hello, World!*.
 
     #---------------------------------------------------
     # This demo program shows off how elegant Python is!
-    # Written by Joe Soap, December 2010.
+    # Written by Joe Soap, December 25, 2010.
     # Anyone may freely copy or modify this program.
     #---------------------------------------------------
 
@@ -43,8 +43,8 @@ programs much easier for humans to parse.  Use them liberally!
 .. admonition:: Do this ...
 
    Modify the activecode program shown above.
-   * Change **Joe Soap, December 2010** to your name and the current date
-   * Change **easy** to fun
+   - Change **Joe Soap, December 25, 2010** to your name and the current date
+   - Change **easy** to fun
 
 
 **Check your understanding**

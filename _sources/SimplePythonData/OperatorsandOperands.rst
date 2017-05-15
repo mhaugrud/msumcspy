@@ -101,6 +101,13 @@ operators.
 
 In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1.
 
+.. admonition:: Extend the program ...
+
+   - Return to activecode ch02_17 (make sure the comment you typed is displayed)
+   - On line 6 (a blank line) type **print(minutes % 60)**
+   - Run and study the output
+   - Type a comment at the end of line 6 that explains what that value means (run again)
+
 The modulus operator turns out to be surprisingly useful. For example, you can
 check whether one number is divisible by another---if ``x % y`` is zero, then
 ``x`` is divisible by ``y``.
