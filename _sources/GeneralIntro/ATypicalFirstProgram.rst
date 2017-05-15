@@ -35,8 +35,12 @@ Here is the example in activecode.  Give it a try!
 
     print("Hello, World!")
 
-The quotation marks in the program mark the beginning and end of the value.
-They don't appear in the result.
+The quotation marks in the program mark the beginning and end of the value. They don't appear in the result.
+
+.. admonition:: Do this ...
+
+   Modify the activecode program shown above.  Change **World** to your full name, then run it.
+
 
 Some people judge the quality of a programming language by the simplicity of
 the Hello, World! program. By this standard, Python does about as well as

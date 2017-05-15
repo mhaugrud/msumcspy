@@ -40,6 +40,13 @@ You'll also notice that we've left a blank line in the program.  Blank lines
 are also ignored by the interpreter, but comments and blank lines can make your
 programs much easier for humans to parse.  Use them liberally!
 
+.. admonition:: Do this ...
+
+   Modify the activecode program shown above.
+   * Change **Joe Soap, December 2010** to your name and the current date
+   * Change **easy** to fun
+
+
 **Check your understanding**
 
 .. mchoice:: question1_12_1

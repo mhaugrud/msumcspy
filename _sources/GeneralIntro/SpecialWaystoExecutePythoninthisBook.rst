@@ -37,13 +37,17 @@ Take a look at the activecode interpreter in action.  If we use the Python code 
    print(2 + 3)
 
 
-Now try modifying the activecode program shown above.  First, modify the string in the first print statement
+.. admonition:: Do this ...
+
+   Now try modifying the activecode program shown above.  First, modify the string in the first print statement
 by changing the word *adds* to the word *multiplies*.  Now press *run*.  You can see that the result of the program
 has changed.  However, it still prints "5" as the answer.  Modify the second print statement by changing the
 addition symbol, the "+", to the multiplication symbol, "*".  Press *run* to see the new results.
 
-You can also make changes and save them for reloading later. *Save* and *Load* allow you to keep one copy of the program you are working on.  For example, press the *Save* button now.  You have just saved the current contents of the activecode window.  Now make a few changes and press the *Run* button.  You have changed the current program.
-Press *Load* to return your program to its previously saved state.
+.. tip::
+
+   You can also make changes and save them for reloading later. *Save* and *Load* allow you to keep copies of the program you are working on.  For example, press the *Save* button now.  You have just saved the current contents of the activecode window.  Now make a few changes and press the *Run* button.  You have changed the current program.
+Press *Load* to return your program to its previously saved state. Use the history scroll bar to see the previous versions of your code.
 
 In addition to activecode, you can also execute Python code with the assistance of a unique visualization tool.  This tool, known as **codelens**, allows you to control the step by step execution of a program.  It also lets you see the values of
 all variables as they are created and modified.  The following example shows codelens in action on the same program as we saw above.  Note that in activecode, the source code executes from beginning to end and you can see the final result.  In codelens you can see and control the step by step progress.  Note that the red arrow always points to the next line of code that is going to be executed.  The light green
