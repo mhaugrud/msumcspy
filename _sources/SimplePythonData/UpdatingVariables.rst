@@ -53,7 +53,10 @@ Updating a variable by adding 1 is called an **increment**; subtracting 1 is
 called a **decrement**.  Sometimes programmers also talk about **bumping**
 a variable, which means the same as incrementing it by 1.
 
+.. admonition:: Extend the program ...
 
+   - Copy lines 3 and 4 to lines 5 and 6
+   - On line 5, change ``+`` to ``-`` and ``increment`` to ``decrement``
 
 
 .. admonition:: Advanced Topics

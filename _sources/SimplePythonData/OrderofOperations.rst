@@ -80,6 +80,10 @@ rules for its mathematical operators that mathematics does.
 .. The immediate mode command prompt of Python is great for exploring and
 .. experimenting with expressions like this.
 
+.. admonition:: Extend the program ...
+
+   On line 3, type a print function to display the value of the expression 2*60**2+8*60+4 (you should recognize this value from activecode int_secs)
+
 **Check your understanding**
 
 .. mchoice:: test_question2_8_1

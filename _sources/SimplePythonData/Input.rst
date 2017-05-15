@@ -70,6 +70,11 @@ print some appropriate output.
 The variable ``str_seconds`` will refer to the string that is entered by the user. As we said above, even though this string may be ``7684``, it is still a string and not a number.  To convert it to an integer, we use the ``int`` function.
 The result is referred to by ``total_secs``.  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.
 
+.. admonition:: Extend this program ...
+
+   On line 10, type a print function to display the **sum** of these three terms: hours times 3600, minutes times 60, and sec_finally_remaining. If you typed this correctly, line 10 will display the number you entered in line 1.
+   
+
 **Check your understanding**
 
 .. mchoice:: test_question2_7_1
