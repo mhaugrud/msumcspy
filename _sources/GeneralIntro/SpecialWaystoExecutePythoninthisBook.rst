@@ -45,7 +45,7 @@ Take a look at the activecode interpreter in action.  If we use the Python code 
 
    You can also make changes and save them for reloading later. *Save* and *Load* allow you to keep copies of the program you are working on.  Each time you press the **Run & Save** button in addition to running the code, you also save the current contents of the activecode window.  Pressing **Load History** enables you to scroll to see the previous versions of your code.
 
-.. important::
+.. caution::
    Be certain ALL the required activecode modifications are displayed the last time you press Run & Save
 
 In addition to activecode, you can also execute Python code with the assistance of a unique visualization tool.  This tool, known as **codelens**, allows you to control the step by step execution of a program.  It also lets you see the values of

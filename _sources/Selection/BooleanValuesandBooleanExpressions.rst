@@ -77,18 +77,17 @@ The ``==`` operator is one of six common **comparison operators**; the others ar
     x >= y               # x is greater than or equal to y
     x <= y               # x is less than or equal to y
 
-Although these operations are probably familiar to you, the Python symbols are
-different from the mathematical symbols. A common error is to use a single
-equal sign (``=``) instead of a double equal sign (``==``). Remember that ``=``
-is an assignment operator and ``==`` is a comparison operator. Also, there is
+Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols. A common error is to use a single equal sign (``=``) instead of a double equal sign (``==``). Remember that ``=`` is an assignment operator and ``==`` is a comparison operator. Also, there is
 no such thing as ``=<`` or ``=>``.
 
-.. With reassignment it is especially important to distinguish between an
-.. assignment statement and a boolean expression that tests for equality.
-.. Because Python uses the equal token (``=``) for assignment,
-.. it is tempting to interpret a statement like
-.. ``a = b`` as a boolean test.  Unlike mathematics, it is not!  Remember that the Python token
-.. for the equality operator is ``==``.
+.. admonition:: Extend the program ...
+   - Copy line 3 onto lines 4 through 8
+   - On lines 4 through 8, change ``==`` to the other comparison operators (as shown above)
+   - Copy lines 4 through 8 onto lines 11 through 15
+   - Run and study the output
+
+With reassignment it is especially important to distinguish between an assignment statement and a boolean expression that tests for equality.
+Because Python uses the equal token (``=``) for assignment, it is tempting to interpret a statement like ``a = b`` as a boolean test.  Unlike mathematics, it is not!  Remember that the Python token for the equality operator is ``==``.
 
 Note too that an equality test is symmetric, but assignment is not. For example,
 if ``a == 7`` then ``7 == a``. But in Python, the statement ``a = 7``

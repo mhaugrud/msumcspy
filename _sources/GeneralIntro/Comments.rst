@@ -42,7 +42,6 @@ programs much easier for humans to parse.  Use them liberally!
 
 .. admonition:: Do this ...
 
-   Modify the activecode program shown above.
    - Change **Joe Soap, December 25, 2010** to your name and the current date
    - Change **easy** to fun
 
