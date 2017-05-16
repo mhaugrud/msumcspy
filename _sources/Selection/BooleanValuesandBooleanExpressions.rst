@@ -81,6 +81,7 @@ Although these operations are probably familiar to you, the Python symbols are d
 no such thing as ``=<`` or ``=>``.
 
 .. admonition:: Extend the program ...
+
    - Copy line 3 onto lines 4 through 8
    - On lines 4 through 8, change ``==`` to the other comparison operators (as shown above)
    - Copy lines 4 through 8 onto lines 11 through 15
