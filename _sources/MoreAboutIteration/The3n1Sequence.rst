@@ -109,7 +109,7 @@ Experimenting With the 3n+1 Sequence
 
 .. admonition:: Extend the program ...
 
-   - Count the number of iterations it takes to stop. Our program currently **prints** the values in the sequence until it stops at 1.  Remember that one of the interesting questions is `How many items are in the sequence before stopping at 1?`.  To determine this, we will need to count them.
+   #. Count the number of iterations it takes to stop. Our program currently **prints** the values in the sequence until it stops at 1.  Remember that one of the interesting questions is `How many items are in the sequence before stopping at 1?`.  To determine this, we will need to count them.
 
       - First, comment out (or delete) the print statements that currently exist.  Now we will need a local variable to keep track of the count.  It would make sense to call it `count`.  It will need to be initialized to 0 since before we begin the loop.
 
@@ -121,7 +121,7 @@ Experimenting With the 3n+1 Sequence
 
       - Since the function now returns a value, we will need to call the function inside of a print statement in order to see the result.
 
-   - Repeat the call to ``seq3np1`` using a range of values, up to and including an upper bound.
+   #. Repeat the call to ``seq3np1`` using a range of values, up to and including an upper bound.
 
       - Now that we have a function that can return the number of iterations required to get to 1, we can use it to check a wide range of starting values.  In fact, instead of just doing one value at a time, we can call the function iteratively, each time passing in a new value.
 

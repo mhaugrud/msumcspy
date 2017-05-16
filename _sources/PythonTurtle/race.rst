@@ -13,9 +13,7 @@
 Turtle Racing Lab
 =================
 
-.. admonition:: Lab
-
-    In this guided lab exercise we will work through a simple problem solving exercise related to having some turtles race.
+In this guided lab exercise we will work through a simple problem solving exercise related to having some turtles race.
 
 
 Random Numbers
@@ -32,32 +30,16 @@ It's easy to use:
    x = random.randrange(1,10)
    print(x)
 
-The ``randrange`` function as called in the example above, generates a random
-number from 1 to 9.
-Even though we said 10 the randrange function works just like the *range*
-function when it comes to starting and stopping points.  Now if you run the
-program over and over again you should see that each time you run it a
-different number is generated.  Random numbers are the basis of all kinds of
-interesting programs we can write, and the ``randrange`` function is just one
-of many functions available in the random module.
+The ``randrange`` function as called in the example above, generates a random number from 1 to 9. Even though we said 10 the randrange function works just like the *range* function when it comes to starting and stopping points.  Now if you run the program over and over again you should see that each time you run it a different number is generated.  Random numbers are the basis of all kinds of interesting programs we can write, and the ``randrange`` function is just one of many functions available in the random module.
 
 Turtle Races
 ------------
 
-In this lab we are going to work step by step through the problem of racing
-turtles.  The idea is that we want to create two or more turtles and have
-them race across the screen from left to right. The turtle that goes the
-farthest is the winner.
+In this lab we are going to work step by step through the problem of racing turtles.  The idea is that we want to create two or more turtles and have them race across the screen from left to right. The turtle that goes the farthest is the winner.
 
-There are several different, and equally plausible, solutions to this problem.
-Let's look at what needs to be done, and then look at some of the options for
-the solution.  To start, let's think about a solution to the simplest form
-of the problem, a race between two turtles. We'll look at more complex races
-later.  
+There are several different, and equally plausible, solutions to this problem. Let's look at what needs to be done, and then look at some of the options for the solution.  To start, let's think about a solution to the simplest form of the problem, a race between two turtles. We'll look at more complex races later.  
 
-When you are faced with a problem like this in computer science it is
-often a good idea to find a solution to a simple problem first and then
-figure out how to make the solution more general.
+When you are faced with a problem like this in computer science it is often a good idea to find a solution to a simple problem first and then figure out how to make the solution more general.
 
 Here is a possible sequence of steps that we will need to accomplish:
 
@@ -98,32 +80,21 @@ Here is the Python code for the first 4 steps above
    wn.exitonclick()
 
 
-Now, you have several choices for how to fill in code for step 5. Here are
-some possibilities to try.  Try coding each of the following in the box above
-to see the different kinds of behavior.
+Now, you have several choices for how to fill in code for step 5. Here are some possibilities to try.  Try coding each of the following in the box above to see the different kinds of behavior.
 
-* Use a single call to ``forward`` for each turtle, using a random number as
-  the distance to move.
+#. Use a single call to ``forward`` for each turtle, using a random number as the distance to move.
 
-* Create a for loop, using a random number for the parameter passed to the
-  range function.  Inside the for loop move one of the turtles forward by
-  some number of units.
+#. Create a for loop, using a random number for the parameter passed to the range function.  Inside the for loop move one of the turtles forward by some number of units.
 
-* Create a single for loop using something like 150 or 200 as the range 
-  parameter. Then inside the for loop move each turtle forward using a random
-  number as the parameter to forward.
+#. Create a single for loop using something like 150 or 200 as the range parameter. Then inside the for loop move each turtle forward using a different random number as the parameter to forward.
 
 
-So, which of these programs is better?  Which of these programs is most
-correct?  These are excellent questions. Program 1 is certainly the simplest,
-but it isn't very satisfying as far as a race is concerned.  Each turtle
-simply moves their distance on their turn.  That is not very satisfying as far
-as a simulated race goes.  Program 2 ends up looking a lot like Program 1
-when you run it.  Program 3 is probably the most 'realistic' assuming realism
-is very important when we're talking about a simulated race of virtual
-turtles.
+So, which of these options is better?  Which is most correct?  These are excellent questions. Option 1 is certainly the simplest, but it isn't very satisfying as far as a race is concerned.  Each turtle simply moves their distance on their turn.  That is not very satisfying as far as a simulated race goes.  Option 2 ends up looking a lot like option 1
+when you run it.  Option 3 is probably the most 'realistic' assuming realism is very important when we're talking about a simulated race of virtual turtles.
 
-You may be thinking why can't each turtle just move forward until they cross
-some artificial finish line?  Good question!  We'll get to the answer to
-this, and look at the program in a later lesson when we learn about something
-called the ``while loop``.
+.. admonition:: Complete the program ...
+
+   Type in instructions (between # your code goes here and wn.exitonclick()) to implement Option 3. It requires 3-5 lines of code. Experiment with values for the random range (it should be quite small) so that the turtles do not consistently move off the screen.
+   
+
+You may be thinking why can't each turtle just move forward until they cross some artificial finish line?  Good question!  We'll get to the answer to this, and look at the program in a later lesson when we learn about something called the ``while loop``.
