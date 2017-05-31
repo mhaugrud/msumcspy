@@ -86,7 +86,7 @@ Now, you have several choices for how to fill in code for step 5. Here are some 
 
 #. Create a for loop, using a random number for the parameter passed to the range function.  Inside the for loop move one of the turtles forward by some number of units.
 
-#. Create a single for loop using something like 150 or 200 as the range parameter. Then inside the for loop move each turtle forward using a different random number as the parameter to forward.
+#. Create a single for loop using something like 150 or 200 as the range parameter. Inside the for loop, generate a random number and move a turtle forward by that amount. Generate another random number and move the the other turtle forward by that amount.
 
 
 So, which of these options is better?  Which is most correct?  These are excellent questions. Option 1 is certainly the simplest, but it isn't very satisfying as far as a race is concerned.  Each turtle simply moves their distance on their turn.  That is not very satisfying as far as a simulated race goes.  Option 2 ends up looking a lot like option 1
@@ -94,7 +94,7 @@ when you run it.  Option 3 is probably the most 'realistic' assuming realism is 
 
 .. admonition:: Complete the program ...
 
-   Type in instructions (between # your code goes here and wn.exitonclick()) to implement Option 3. It requires 3-5 lines of code. Experiment with values for the random range (it should be quite small) so that the turtles do not consistently move off the screen.
+   Type in instructions (between # your code goes here and wn.exitonclick()) to implement Option 3. It requires 3-5 lines of code. Experiment with values for the random range to move the turtles. It should be quite small so that the turtles do not consistently move off the screen.
    
 
 You may be thinking why can't each turtle just move forward until they cross some artificial finish line?  Good question!  We'll get to the answer to this, and look at the program in a later lesson when we learn about something called the ``while loop``.

@@ -43,6 +43,12 @@ argument, using the same semantics as ``range`` --- so the lower bound is includ
 the upper bound is excluded.   All the values have an equal probability of occurring
 (i.e. the results are *uniformly* distributed).
 
+.. admonition::Extend the program
+   
+   - On line 2, make a for loop that repeats 5 times. Indent lines 3 and 4 so they become the body of this loop
+
+   - On line 5, make a for loop that repeats 5 times. Indent lines 6 and 7 so they become the body of this loop
+
 The ``random()`` function returns a floating point number in the range [0.0, 1.0) --- the
 square bracket means "closed interval on the left" and the round parenthesis means
 "open interval on the right".  In other words, 0.0 is possible, but all returned
@@ -65,7 +71,9 @@ If you continue to press the run button you will see random values between 0.0 a
 
 
 
+.. admonition::Extend the program
 
+   On line 2, make a for loop that repeats 10 times. Indent lines 3, 4 and 5 so they become the body of this loop
 
 
 .. index:: deterministic algorithm,  algorithm; deterministic, unit tests

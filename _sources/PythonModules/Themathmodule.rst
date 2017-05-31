@@ -33,13 +33,11 @@ Here are some items from the math module in action.  If you want more informatio
 
     print(math.sqrt(2.0))
 
-    print(math.sin(math.radians(90)))   # sin of 90 degrees
+    print(math.sin(math.radians(90)))   # sine of 90 degrees
 
 
-
-..  Like almost all other programming languages, angles are expressed in *radians*
-.. rather than degrees.  There are two functions ``radians`` and ``degrees`` to
-.. convert between the two popular ways of measuring angles.
+.. note::
+  Like almost all other programming languages, angles are expressed in *radians* rather than degrees.  There are two functions ``radians`` and ``degrees`` to convert between the two popular ways of measuring angles.
 
 Notice another difference between this module and our use of ``turtle``.
 In  ``turtle`` we create objects (either ``Turtle`` or ``Screen``) and call methods on those objects.  Remember that
@@ -53,6 +51,16 @@ They are all housed together in a module called `math`.  Once we have imported t
 can be used in our program.  Notice that we always use the name of the module followed by a `dot` followed by the
 specific item from the module (``math.sqrt``).  You can think of this as lastname.firstname where the lastname is the module
 family and the firstname is the individual entry in the module.
+
+.. admonition::Extend the program
+
+   #. On line 9, calculate and display the cosine of 90 degrees
+
+   #. On line 10, calculate and display the tangent of 90 degrees
+
+   #. On line 11, calculate and display the natural logarithm of the math constant e
+
+   #. On line 12, calculate and display the square root of the sum of the following 2 terms (use the pow function in each of these terms): 12 squared and 5 squared
 
 If you have not done so already, take a look at the documentation
 for the math module.
