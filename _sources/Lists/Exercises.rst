@@ -11,7 +11,7 @@ Exercises
 ---------
 
 .. question:: strings_ex_1
-
+   :number: 1
 
    .. tabbed:: q1
 
