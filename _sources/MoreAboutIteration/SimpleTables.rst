@@ -36,18 +36,18 @@ left column and 2 raised to the power of that value in the right column:
 
 .. activecode:: ch07_table1
 
-    
-    
+                                 #
+                                 #
     
     print("n", '\t', "2**n")     #table column headings
     print("---", '\t', "-----")
 
-    for x in range(13):        # generate values for columns
+    for x in range(13):          #generate values for columns
         print(x, '\t', 2 ** x)
 
 The string ``'\t'`` represents a **tab character**. The backslash character in ``'\t'`` indicates the beginning of an **escape sequence**.  Escape sequences are used to represent invisible characters like tabs and newlines. The sequence ``\n`` represents a **newline**.
 
-.. admonition:: Modify the program
+.. admonition:: Modify the program ...
 
    - On line 1, define a function that has one parameter ``n``.
    - On line 2, write its body: It returns ``2 ** n``.

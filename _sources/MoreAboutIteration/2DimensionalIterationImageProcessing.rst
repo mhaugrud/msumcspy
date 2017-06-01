@@ -253,17 +253,50 @@ Change the name of the file in the ``image.Image()`` call to see how these image
     img.draw(win)
     win.exitonclick()
 
-Let's take a closer look at the code.  After importing the image module, we create two image objects.  The first, ``img``, represents a typical digital photo.  The second, ``newimg``, is an empty image that will be "filled in" as we process the original pixel by pixel.  Note that the width and height of the empty image is set to be the same as the width and height of the original.
+Let's take a closer look at the code.  After importing the image module, we create an image object.  It represents a typical digital photo.
 
 Lines 8 and 9 create the nested iteration that we discussed earlier.  This allows us to process each pixel in the image.
 Line 10 gets an individual pixel.
 
 Lines 12-14 create the negative intensity values by extracting the original intensity from the pixel and subtracting it
-from 255.  Once we have the ``newred``, ``newgreen``, and ``newblue`` values, we can create a new pixel (Line 15).
+from 255.  Once we have the ``newred``, ``newgreen``, and ``newblue`` values, we can create a new pixel (Line 16).
 
 Finally, we need to replace the old pixel with the new pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.
 
 Try to change the program above so that the outer loop iterates over the columns and the inner loop iterates over the rows.  We still create a negative image, but you can see that the pixels update in a very different order.
+
+
+.. activecode::  acimg_2
+    :nocodelens:
+
+    import image, time
+
+    img = image.Image("luther.jpg")
+    win = image.ImageWin(img.getWidth(), img.getHeight())
+    newimg = image.EmptyImage(img.getWidth(), img.getHeight())
+    img.draw(win)
+
+    for row in range(img.getHeight()):
+        for col in range(img.getWidth()):
+            p = img.getPixel(col, row)
+
+            newred = 255 - p.getRed()
+            newgreen = 255 - p.getGreen()
+            newblue = 255 - p.getBlue()
+
+            newpixel = image.Pixel(newred, newgreen, newblue)
+
+            newimg.setPixel(col, row, newpixel)
+
+    newimg.draw(win)
+    time.sleep(5) # wait 5 seconds
+    img.draw(win)
+
+
+Here we create a second image object: an empty image that will be "filled in" as we process the original pixel by pixel.  Note that the width and height of the empty image is set to be the same as the width and height of the original. 
+
+The second image becomes a modified version of the original image. By doing this we still have the original if we want to display it.
+
 
 .. admonition:: Other pixel manipulation
 

@@ -59,7 +59,7 @@ is the details of how the squaring is done.  This is a great example of "black b
     print("The result of", toSquare, "squared is", squareResult)
 
 
-.. admonition:: Modify the program
+.. admonition:: Modify the program ...
 
    Type an appropriate docstring for the above square function.
 
