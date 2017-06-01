@@ -7,7 +7,6 @@ More About Iteration
 
    SimpleTables.rst
    2DimensionalIterationImageProcessing.rst
-   ImageProcessingonYourOwn.rst
    intro-IterationRevisited.rst
    Theforlooprevisited.rst
    ThewhileStatement.rst
