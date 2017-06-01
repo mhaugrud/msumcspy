@@ -49,7 +49,12 @@ calculation yielding a better result.
     print(newtonSqrt(1, 10))
 
 
-All three of the calls to ``newtonSqrt`` in the previous example produce the correct square root for the first parameter.  However, were 10 iterations required to get the correct answer? Experiment with different values for the number of repetitions (the 10 on lines 8, 9, and 10). For each of these call find the **smallest** value for the number of repetitions that will produce in the **correct** result. Repeating more than the required number of times is a waste of computing resources. So definite iteration is not a good solution to this problem.
+.. admonition:: Modify the program
+
+   All three of the calls to ``newtonSqrt`` in the previous example produce the correct square root for the first parameter.  However, were 10 iterations required to get the correct answer? Experiment with different values for the number of repetitions (the 10 on lines 8, 9, and 10). For each of these call find the **smallest** value for the number of repetitions that will produce in the **correct** result.
+
+
+Repeating more than the required number of times is a waste of computing resources. So definite iteration is not a good solution to this problem.
 
 In general, Newton's algorithm will eventually reach a point where the new approximation is no better than the previous.  At that point, we could simply stop.
 In other words, by repeatedly applying this formula until the better approximation gets close
@@ -75,21 +80,6 @@ uses a ``while`` condition to execute until the approximation is no longer chang
 	The ``while`` statement shown above uses comparison of two floating point numbers in the condition.  Since floating point numbers are themselves approximation of real numbers in mathematics, it is often
 	better to compare for a result that is within some small threshold of the value you are looking for.
 
-.. admonition:: Choosing between ``for`` and ``while``
-
-   Use a ``for`` loop if you know the maximum number of times that you'll
-   need to execute the body.  For example, if you're traversing a list of elements,
-   or can formulate a suitable call to ``range``, then choose the ``for`` loop.
-
-   So any problem like "iterate this weather model run for 1000 cycles", or "search this
-   list of words", "check all integers up to 10000 to see which are prime" suggest that a ``for`` loop is best.
-
-   By contrast, if you are required to repeat some computation until some condition is
-   met, as we did in the randomly walking turtle problem, you'll need a ``while`` loop.
-
-   As we noted before, the first case is called **definite iteration** --- we have some definite bounds for
-   what is needed.   The latter case is called **indefinite iteration** --- we are not sure
-   how many iterations we'll need --- we cannot even establish an upper bound!
 
 
 .. index:: algorithm

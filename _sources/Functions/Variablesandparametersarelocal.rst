@@ -64,7 +64,7 @@ nonsensical variation of the square function.
 
    1. Comment out line 8 (type # in front of it) so there is not a runtime error. Then run
 
-   2. In line 5, change 2 to 3. Then run
+   2. In line 5, change 2 to 3. Then run. The function is no longer squaring is it?
 
    3. On line 9, type a comment that explains why this function is bad.
 

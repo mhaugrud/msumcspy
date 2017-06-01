@@ -56,7 +56,7 @@ Another built-in function that takes more than one argument is ``max``.
     print(max(7, 11))
     print(max(4, 1, 17, 2, 12))
     print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
-    # what is very different about the parameters for the max function? (answer below)
+    # what is very different about the parameters for the max function? (answer below and run)
     #
 
 ``max`` can be sent any number of arguments, separated by commas, and will
@@ -193,7 +193,7 @@ Unit Testing
 
 When we write functions that return values, we intend to use them over and over again. However, we want to be certain that they return the correct result. To be more certain these functions work correctly we write unit tests.
 
-To write a unit test, we must know what correct result is when calling the function with particular input(s). 
+To write a unit test, we must know the correct result when calling the function with a specific input. 
 
 .. activecode:: ch04_unittest
 
@@ -206,7 +206,7 @@ To write a unit test, we must know what correct result is when calling the funct
     test.testEqual(square(10), 100)
 
 
-``test.testEqual`` is a function that allows us to perform a unit test. It takes two parameters. The first is a call the function we want to test (square in this example) with a particular input (10 in this example). The second parameter is the correct result that should be produced (100 in this example). ``test.testEqual`` will compare what the function returns with the correct result and display whether or not the unit test passes
+``test.testEqual`` is a function that allows us to perform a unit test. It takes two parameters. The first is a call to the function we want to test (square in this example) with a particular input (10 in this example). The second parameter is the correct result that should be produced (100 in this example). ``test.testEqual`` compares what the function returns with the correct result and displays whether the unit test passes or fails.
 
 .. admonition:: Extend the program
 

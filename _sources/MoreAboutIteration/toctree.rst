@@ -13,8 +13,9 @@ More About Iteration
    ThewhileStatement.rst
    RandomlyWalkingTurtles.rst
    Newton'sMethod.rst
+   AlgorithmsRevisited.rst
    SentinelValuesAndValidation.rst
    The3n1Sequence.rst
-   AlgorithmsRevisited.rst
+   WhilevsFor.rst
    Glossary.rst
    Exercises.rst

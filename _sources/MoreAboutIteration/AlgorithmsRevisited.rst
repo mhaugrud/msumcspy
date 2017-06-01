@@ -53,12 +53,6 @@ algorithm.
            cursor
 
 
-.. note::
-
-  This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-  .. activecode:: scratch_07_03
-
 
 
 

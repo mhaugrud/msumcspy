@@ -43,7 +43,7 @@ programs much easier for humans to parse.  Use them liberally!
 .. admonition:: Modify the program ...
 
    - Change **Joe Soap, December 25, 2010** to your name and the current date
-   - Change **easy** to fun
+   - Change **easy** (in line 7) to fun
 
 
 **Check your understanding**

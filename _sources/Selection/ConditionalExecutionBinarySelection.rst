@@ -36,6 +36,7 @@ This is sometimes referred to as **binary selection** since there are two possib
     else:
         print(x, "is odd")
 
+    print("This is always printed")
 
 The syntax for an ``if`` statement looks like this:
 
@@ -79,10 +80,13 @@ expression using the equality operator.
 .. activecode:: ch08_comp1
     
     word = "banana"
+
     if word == "banana":
         print("Yes, we have bananas!")
     else:
         print("Yes, we have NO bananas!")
+
+    print("This is always printed")
 
 
 .. admonition:: Modify the program ...

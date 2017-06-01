@@ -35,33 +35,32 @@ example of iteration. The following program outputs a sequence of values in the
 left column and 2 raised to the power of that value in the right column:
 
 .. activecode:: ch07_table1
-    :nocodelens:
 
+    
+    
+    
     print("n", '\t', "2**n")     #table column headings
     print("---", '\t', "-----")
 
     for x in range(13):        # generate values for columns
         print(x, '\t', 2 ** x)
 
-The string ``'\t'`` represents a **tab character**. The backslash character in
-``'\t'`` indicates the beginning of an **escape sequence**.  Escape sequences
-are used to represent invisible characters like tabs and newlines. The sequence
-``\n`` represents a **newline**.
+The string ``'\t'`` represents a **tab character**. The backslash character in ``'\t'`` indicates the beginning of an **escape sequence**.  Escape sequences are used to represent invisible characters like tabs and newlines. The sequence ``\n`` represents a **newline**.
 
-An escape sequence can appear anywhere in a string.  In this example, the tab
-escape sequence is the only thing in the string. How do you think you represent
-a backslash in a string?
+.. admonition:: Modify the program
 
-As characters and strings are displayed on the screen, an invisible marker
-called the **cursor** keeps track of where the next character will go. After a
-``print`` function is executed, the cursor normally goes to the beginning of the next
+   - On line 1, define a function that has one parameter ``n``.
+   - On line 2, write its body: It returns ``2 ** n``.
+   - Edit line 8 to call your function with ``x``.
+   - The same table will be produced as before.
+
+An escape sequence can appear anywhere in a string.  In this example, the tab escape sequence is the only thing in the string. How do you think you represent a backslash in a string?
+
+As characters and strings are displayed on the screen, an invisible marker called the **cursor** keeps track of where the next character will go. After a ``print`` function is executed, the cursor normally goes to the beginning of the next
 line.
 
-The tab character shifts the cursor to the right until it reaches one of the
-tab stops. Tabs are useful for making columns of text line up, as in the output
-of the previous program.
-Because of the tab characters between the columns, the position of the second
-column does not depend on the number of digits in the first column.
+The tab character shifts the cursor to the right until it reaches one of the tab stops. Tabs are useful for making columns of text line up, as in the output of the previous program.
+Because of the tab characters between the columns, the position of the second column does not depend on the number of digits in the first column.
 
 
 

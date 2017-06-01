@@ -21,6 +21,7 @@ functions can return boolean values.  This turns out to be a very convenient way
 .. activecode:: ch06_boolfun1
 
     def isDivisible(x, y):
+        '''is x evenly divisible by y?'''
         if x % y == 0:
             result = True
         else:
@@ -30,18 +31,21 @@ functions can return boolean values.  This turns out to be a very convenient way
 
     print(isDivisible(10, 5))
 
-The name of this function is ``isDivisible``. It is common to give **boolean
-functions** names that sound like yes/no questions.  ``isDivisible`` returns
-either ``True`` or ``False`` to indicate whether the ``x`` is or is not
-divisible by ``y``.
+The name of this function is ``isDivisible``. It is common to give **boolean functions** names that sound like yes/no questions.  ``isDivisible`` returns either ``True`` or ``False`` to indicate whether the ``x`` is or is not divisible by ``y``.
 
-We can make the function more concise by taking advantage of the fact that the
-condition of the ``if`` statement is itself a boolean expression. We can return
-it directly, avoiding the ``if`` statement altogether:
+.. admonition:: Modify the program
+
+   - On line 11, write a line similar to line 10 that displays ``False``.
+
+   - Edit the isDivisible function as shown immediately below.
+
+
+We can make the function more concise by taking advantage of the fact that the condition of the ``if`` statement is itself a boolean expression. We can return it directly, avoiding the ``if`` statement altogether:
 
 .. sourcecode:: python
 
     def isDivisible(x, y):
+        '''is x evenly divisible by y?'''
         return x % y == 0
 
 
@@ -63,17 +67,19 @@ with a few other actual parameters to see what is printed.
 .. activecode:: ch06_boolfun2
 
     def isDivisible(x, y):
-        if x % y == 0:
-            result = True
-        else:
-            result = False
-
-        return result
+        '''is x evenly divisible by y?'''
+        return x % y == 0
 
     if isDivisible(10, 5):
         print("That works")
     else:
         print("Those values are no good")
+
+
+.. admonition:: Modify the program
+
+   In line 5, change the parameters so *Those values are no good* is displayed
+
 
 Here is the same program in codelens.  When we evaluate the ``if`` statement in the main part of the program, the evaluation of
 the boolean expression causes a call to the ``isDivisible`` function.  This is very easy to see in codelens.

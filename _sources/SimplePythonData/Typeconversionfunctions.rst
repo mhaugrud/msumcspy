@@ -58,7 +58,7 @@ quotes are removed.  However, if we print the type, we can see that it is defini
     print(type(str(123.45)))
 
     print(str("this use of str is very foolish"))
-    # why is the line above foolish? (answer on line below)
+    # why is the line above foolish? (answer on line below and run)
     #
 
 **Check your understanding**
