@@ -35,7 +35,6 @@ This is sometimes referred to as **binary selection** since there are two possib
         print(x, "is even")
     else:
         print(x, "is odd")
-    # change the value of x in line 1 so the other path through the if statement is executed
 
 
 The syntax for an ``if`` statement looks like this:
@@ -57,23 +56,22 @@ indented under the `else` clause get executed.
 
 
 
-As with the function definition from the last chapter and other compound
-statements like ``for``, the ``if`` statement consists of a header line and a body. The header
-line begins with the keyword ``if`` followed by a *boolean expression* and ends with
+As with the function definition from the last chapter and other compound statements like ``for``, the ``if`` statement consists of a header line and a body. The header line begins with the keyword ``if`` followed by a *boolean expression* and ends with
 a colon (:).
 
-The indented statements that follow are called a **block**. The first
-unindented statement marks the end of the block.
+The indented statements that follow are called a **block**. The first unindented statement marks the end of the block.
 
-Each of the statements inside the first block of statements is executed in order if the boolean
-expression evaluates to ``True``. The entire first block of statements
-is skipped if the boolean expression evaluates to ``False``, and instead
+Each of the statements inside the first block of statements is executed in order if the boolean expression evaluates to ``True``. The entire first block of statements is skipped if the boolean expression evaluates to ``False``, and instead
 all the statements under the ``else`` clause are executed.
 
-There is no limit on the number of statements that can appear under the two clauses of an
-``if`` statement, but there has to be at least one statement in each block.
+.. admonition:: Modify the program ...
 
-**String Comparison**
+   Change the value of ``x`` in line 1 so the other path through the if statement is executed.
+
+There is no limit on the number of statements that can appear under the two clauses of an ``if`` statement, but there has to be at least one statement in each block.
+
+String Comparison
+~~~~~~~~~~~~~~~~~
 
 The comparison operators also work on strings. To see if two strings are equal you simply write a boolean
 expression using the equality operator.
@@ -85,8 +83,11 @@ expression using the equality operator.
         print("Yes, we have bananas!")
     else:
         print("Yes, we have NO bananas!")
-    # change banana in line 1 so the other path through the if statement is executed
 
+
+.. admonition:: Modify the program ...
+
+   Change ``banana`` in line 1 so the other path through the if statement is executed.
 
 .. admonition:: Lab
 

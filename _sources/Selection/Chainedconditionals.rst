@@ -55,7 +55,14 @@ Here is the same program using ``elif``.
     else:
         print("x and y must be equal")
 
+    print('this is always printed')
 
+
+.. admonition:: Modify the program ...
+
+   - Change the value of ``x`` in line 1 so that line 5 is executed. Run
+
+   - Change the value of ``y`` in line 2 so that line 7 is executed. Run
 
 
 .. note::

@@ -29,8 +29,11 @@ Finally, the ``not`` operator negates a boolean expression, so ``not  x > 0`` is
     print(x < 0 or x > 10)
     print(x % 2 == 0 and x % 3 == 0)
     print(not x > 0)
-    # run then change the value of x in line 1
-    # so all of the expressions are True
+
+
+.. admonition:: Modify the program ...
+
+   Change the value of ``x`` in line 1 so all of the expressions are **True**
 
 
 .. admonition:: Common Mistake!
