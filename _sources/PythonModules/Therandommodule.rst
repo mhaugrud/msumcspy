@@ -43,7 +43,7 @@ argument, using the same semantics as ``range`` --- so the lower bound is includ
 the upper bound is excluded.   All the values have an equal probability of occurring
 (i.e. the results are *uniformly* distributed).
 
-.. admonition::Extend the program
+.. admonition:: Extend the program ...
    
    - On line 2, make a for loop that repeats 5 times. Indent lines 3 and 4 so they become the body of this loop
 
@@ -71,7 +71,7 @@ If you continue to press the run button you will see random values between 0.0 a
 
 
 
-.. admonition::Extend the program
+.. admonition:: Extend the program ...
 
    On line 2, make a for loop that repeats 10 times. Indent lines 3, 4 and 5 so they become the body of this loop
 

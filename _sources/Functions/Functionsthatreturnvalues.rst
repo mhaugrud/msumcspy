@@ -40,9 +40,9 @@ called
     :nocanvas:
 
     import math
-    print(math.pow(2, 3))
+    print(math.pow(2, 4))
 
-    print(math.pow(7, 3+1))
+    print(math.pow(9-2, 8/4))
 
 .. note::
 

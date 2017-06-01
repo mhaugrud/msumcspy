@@ -52,7 +52,7 @@ can be used in our program.  Notice that we always use the name of the module fo
 specific item from the module (``math.sqrt``).  You can think of this as lastname.firstname where the lastname is the module
 family and the firstname is the individual entry in the module.
 
-.. admonition::Extend the program
+.. admonition:: Extend the program ...
 
    #. On line 9, calculate and display the cosine of 90 degrees
 
