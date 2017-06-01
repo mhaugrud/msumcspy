@@ -82,7 +82,7 @@ is in later chapters.
     print(type(3.0))
     print(type(3.2))
     print(type(1.2345e2))
-    # what does e2 mean? (answer on next line)
+    # what does e2 mean? (answer on next line then run)
     #
 
 What about values like ``"3"`` and ``"3.2"``? They look like numbers, but they
@@ -132,17 +132,16 @@ Triple quoted strings can even span multiple lines:
 
     message = 'This message
 
-    span several
+    spans several
     lines.'
 
     print(message)
-    # run this and you will get an error then change the
-    # quotes (') to triple quotes (''') and run again
 
-Python doesn't care whether you use single or double quotes or the
-three-of-a-kind quotes to surround your strings.  Once it has parsed the text of
-your program or command, the way it stores the value is identical in all cases,
-and the surrounding quotes are not part of the value.
+.. admonition:: Fix the error
+
+   When you run the above activecode a runtime error occurs. Change the quotes (') to triple quotes ('''). Then it will run with no errors.
+
+Python doesn't care whether you use single or double quotes or the three-of-a-kind quotes to surround your strings.  Once it has parsed the text of your program or command, the way it stores the value is identical in all cases, and the surrounding quotes are not part of the value.
 
 .. activecode:: ch02_7
     :nocanvas:

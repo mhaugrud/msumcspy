@@ -37,7 +37,7 @@ Here is the example in activecode.  Give it a try!
 
 The quotation marks in the program mark the beginning and end of the value. They don't appear in the result.
 
-.. admonition:: Do this ...
+.. admonition:: Modify the program ...
 
    Modify the activecode program shown above.  Change **World** to your full name, then run it.
 

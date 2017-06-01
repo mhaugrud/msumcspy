@@ -14,10 +14,7 @@
 Variables and Parameters are Local
 ----------------------------------
 
-An assignment statement in a function creates a **local variable** for the
-variable on the left hand side of the assignment operator. It is called local because this variable only
-exists inside the function and you cannot use it outside. For example,
-consider again the ``square`` function:
+An assignment statement in a function creates a **local variable** for the variable on the left hand side of the assignment operator. It is called local because this variable only exists inside the function and you cannot use it outside. For example, consider again the ``square`` function:
 
 .. codelens:: bad_local
 
@@ -44,17 +41,12 @@ Note when they are subsequently destroyed as the function returns.
 
 Formal parameters are also local and act like local variables.
 For example, the lifetime of ``x`` begins when ``square`` is
-called,
-and its lifetime ends when the function completes its execution.
+called, and its lifetime ends when the function completes its execution.
 
-So it is not possible for a function to set some local variable to a
-value, complete its execution, and then when it is called again next
-time, recover the local variable.  Each call of the function creates
-new local variables, and their lifetimes expire when the function returns
+So it is not possible for a function to set some local variable to a value, complete its execution, and then when it is called again next time, recover the local variable.  Each call of the function creates new local variables, and their lifetimes expire when the function returns
 to the caller.
 
-On the other hand, it is legal for a function to access a global variable.  However, this is considered
-**bad form** by nearly all programmers and should be avoided.  Look at the following,
+On the other hand, it is legal for a function to access a global variable.  However, this is considered **bad form** by nearly all programmers and should be avoided.  Look at the following,
 nonsensical variation of the square function.
 
 .. activecode:: badsquare_1
@@ -66,23 +58,22 @@ nonsensical variation of the square function.
     power = 2
     result = badsquare(10)
     print(result)
-    # what is bad about this fuction? (answer below)
-    #
+    print(y)
 
+.. admonition:: Fix the error
 
-Although the ``badsquare`` function works, it is silly and poorly written.  We have done it here to illustrate
-an important rule about how variables are looked up in Python.
-First, Python looks at the variables that are defined as local variables in
-the function.  We call this the **local scope**.  If the variable name is not
-found in the local scope, then Python looks at the global variables,
-or **global scope**.  This is exactly the case illustrated in the code above.
-``power`` is not found locally in ``badsquare`` but it does exist globally.
-The appropriate way to write this function would be to pass power as a parameter.
+   1. Comment out line 8 (type # in front of it) so there is not a runtime error. Then run
+
+   2. In line 5, change 2 to 3. Then run
+
+   3. On line 9, type a comment that explains why this function is bad.
+
+Although the ``badsquare`` function works, it is silly and poorly written.  We have done it here to illustrate an important rule about how variables are looked up in Python. First, Python looks at the variables that are defined as local variables in
+the function.  We call this the **local scope**.  If the variable name is not found in the local scope, then Python looks at the global variables, or **global scope**.  This is exactly the case illustrated in the code above. ``power`` is not found locally in ``badsquare`` but it does exist globally. The appropriate way to write this function would be to pass power as a parameter.
 For practice, you should rewrite the badsquare example to have a second parameter called power.
 
 There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot 
-change variables defined outside the function.  Consider the following
-codelens example:
+change variables defined outside the function.  Consider the following codelens example:
 
 .. codelens::  cl_powerof_bad
 

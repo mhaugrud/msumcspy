@@ -110,7 +110,17 @@ we compute and return the result.
         print(distance(1, 2, 4, 6))
 
 
-If that works correctly, you are done. Otherwise, you might want to print the
+.. admonition:: Fix the error
+
+   The above program will run but not produce any output. Why? 
+
+   Neither of the functions are actually executed. You can see this with codelens.
+
+   On line 10, go to the left margin and type ``main()``. Now the program will display an answer.
+
+
+
+If the answer is correct, you are done. Otherwise, you might want to print the
 value of ``result`` before the return statement.
 
 When you start out, you might add only a line or two of code at a time. As you

@@ -60,7 +60,9 @@ family and the firstname is the individual entry in the module.
 
    #. On line 11, calculate and display the natural logarithm of the math constant e
 
-   #. On line 12, calculate and display the square root of the sum of the following 2 terms (use the pow function in each of these terms): 12 squared and 5 squared
+   #. On line 12, use the sqrt and pow functions to display the following:
+.. image:: Figures/pythag.png
+
 
 If you have not done so already, take a look at the documentation
 for the math module.

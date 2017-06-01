@@ -112,3 +112,11 @@ Line 12 uses an ``if`` statement to ask about the value of the ``__name__`` vari
 .. note::
 
     In order to conditionally execute the ``main`` function, we used a structure called an ``if`` statement to create what is known as selection.  This topic will be studied in much more detail later.
+
+.. admonition:: Modify the program
+
+   1. Type appropriate docstrings for the squareit and cubeit functions.
+
+   2. Write a unit test for the cubeit function (immediately below the squareit unit test). Run to make sure it passes.
+
+   3. Change the body of the cubeit function: Instead of returning n*n*n,  call squareit and return that value multiplied by n. Since this produces the same result as before, the unit test will still pass.

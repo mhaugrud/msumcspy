@@ -73,7 +73,7 @@ the left on the number line).
 
     hours = minutes // 60
     print(hours)
-    # what does the value for hours (line 8) mean? (answer below)
+    # what does the value for hours (line 8) mean? (answer below and run)
     #
 
 

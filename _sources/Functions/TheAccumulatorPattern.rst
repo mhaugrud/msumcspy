@@ -59,7 +59,9 @@ is the details of how the squaring is done.  This is a great example of "black b
     print("The result of", toSquare, "squared is", squareResult)
 
 
+.. admonition:: Modify the program
 
+   Type an appropriate docstring for the above square function.
 
 
 In the program above, notice that the variable ``runningtotal`` starts out with a value of 0.  Next, the iteration is performed ``x`` times.  Inside the for loop, the update occurs. ``runningtotal`` is reassigned a new value which is the old value plus the value of ``x``.
@@ -109,6 +111,7 @@ Here is the same program in codelens.  Step through the function and watch the "
 .. activecode:: scratch_05_04
 
    def square(x):
+       '''raise x to the second power'''
        runningtotal = 0
        for counter in range(x):
            runningtotal = runningtotal + x

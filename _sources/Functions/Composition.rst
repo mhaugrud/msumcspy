@@ -74,5 +74,12 @@ Note that we could have written the composition without storing the intermediate
         return area(distance(xc, yc, xp, yp))
 
 
+.. admonition:: Modify the program
+
+   - Change the body of the area2 function as shown above.
+
+   - Verify it still produces the same result.
+
+
 .. index:: boolean function
 

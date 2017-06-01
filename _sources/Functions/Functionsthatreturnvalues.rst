@@ -84,10 +84,8 @@ piece of data that is returned from the function.
 .. image:: Figures/blackboxfun.png
 
 
-How do we write our own fruitful function?  Let's start by creating a very simple
-mathematical function that we will call ``square``.  The square function will take one number
-as a parameter and return the result of squaring that number.  Here is the
-black-box diagram with the Python code following.
+How do we write our own fruitful function?  Let's start by creating a very simple mathematical function that we will call ``square``.  The square function will take one number
+as a parameter and return the result of squaring that number.  Here is the black-box diagram with the Python code following.
 
 
 .. image:: Figures/squarefun.png
@@ -102,19 +100,16 @@ black-box diagram with the Python code following.
     result = square(toSquare)
     print("The result of ", toSquare, " squared is ", result)
     
-    import test
-    print('testing square function)
-    test.testEqual(square(10), 100)
 
-The **return** statement is followed by an expression which is evaluated.  Its
-result is returned to the caller as the "fruit" of calling this function.
-Because the return statement can contain any Python expression we could have
-avoided creating the **temporary variable** ``y`` and simply used
-``return x*x``.
-Try modifying the square function above to see that this works just the same.
-On the other hand, using **temporary variables** like ``y`` in the program above makes
-debugging
-easier.  These temporary variables are referred to as **local variables**.
+The **return** statement is followed by an expression which is evaluated.  Its result is returned to the caller as the "fruit" of calling this function. Because the return statement can contain any Python expression we could have avoided creating the **temporary variable** ``y`` and simply used ``return x*x``.
+
+.. admonition:: Modify the program
+
+   - Type an appropriate docstring for the square function.
+
+   - Change the body of the square function as described in the previous paragraph. It will produce the same answer.
+
+On the other hand, using **temporary variables** like ``y`` in the program above makes debugging easier.  These temporary variables are referred to as **local variables**.
 
 .. The line `toInvest = float(input("How much do you want to invest?"))`
 ..  also shows yet another example
@@ -145,18 +140,14 @@ where the function call was made.
     squareResult = square(toSquare)
     print("The result of ", toSquare, " squared is ", squareResult)
 
-Another important thing to notice as you step through this codelens
-demonstration is the movement of the red and green arrows.  Codelens uses these arrows to show you where it is currently executing.
-Recall that the red arrow always points to the next line of code that will be executed.  The light green arrow points to the line
-that was just executed in the last step.
+Another important thing to notice as you step through this codelens demonstration is the movement of the red and green arrows.  Codelens uses these arrows to show you where it is currently executing. Recall that the red arrow always points to the next line of code that will be executed.  The light green arrow points to the line that was just executed in the last step.
 
 When you first start running this codelens demonstration you will notice that there is only a red arrow and it points to
-line 1.  This is because line 1 is the next line to be executed and since it is the first line, there is no previously executed line
-of code.  
+line 1.  This is because line 1 is the next line to be executed and since it is the first line, there is no previously executed line of code.  
 
 When you click on the forward button, notice that the red arrow moves to line 5, skipping lines 2 and 3 of the function (and
 the light green arrow has now appeared on line 1).  Why is this?
-The answer is that function definition is not the same as function execution.  Lines 2
+The answer is that function definition is not the same as function execution.  Lines 2 
 and 3 will not be executed until the function is called on line 6.  Line 1 defines the function and the name ``square`` is added to the
 global variables, but that is all the ``def`` does at that point.  The body of the function will be executed later.  Continue to click
 the forward button to see how the flow of control moves from the call, back up to the body of the function, and then finally back to line 7, after the function has returned its value and the value has been assigned to ``squareResult``.
@@ -197,9 +188,32 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
     single: variable; local
     single: lifetime
 
+Unit Testing
+~~~~~~~~~~~~
+
+When we write functions that return values, we intend to use them over and over again. However, we want to be certain that they return the correct result. To be more certain these functions work correctly we write unit tests.
+
+To write a unit test, we must know what correct result is when calling the function with particular input(s). 
+
+.. activecode:: ch04_unittest
+
+    def square(x):
+        '''raise x to the second power'''
+        return x * x
+    
+    import test
+    print('testing square function')
+    test.testEqual(square(10), 100)
 
 
+``test.testEqual`` is a function that allows us to perform a unit test. It takes two parameters. The first is a call the function we want to test (square in this example) with a particular input (10 in this example). The second parameter is the correct result that should be produced (100 in this example). ``test.testEqual`` will compare what the function returns with the correct result and display whether or not the unit test passes
 
+.. admonition:: Extend the program
+
+   On line 8, write another unit test (that should pass) for the square function.
+
+.. note::
+   When we write unit tests, we should consider **boundary conditions** for the function. That is, inputs that result in significantly different results. Refer the the Debugging chapter.
 
 **Check your understanding**
 
