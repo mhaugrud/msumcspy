@@ -32,12 +32,7 @@ this:
     last = fruit[sz]       # ERROR!
     print(last)
 
-That won't work. It causes the runtime error
-``IndexError: string index out of range``. The reason is that there is no
-letter at index position 6 in ``"Banana"``. 
-Since we started counting at zero, the six indexes are
-numbered 0 to 5. To get the last character, we have to subtract 1 from
-``length``.  Give it a try in the example above.
+That won't work. It causes the runtime error ``IndexError: string index out of range``. The reason is that there is no letter at index position 6 in ``"Banana"``. Since we started counting at zero, the six indexes are numbered 0 to 5. To get the last character, we have to subtract 1 from ``length``.  Give it a try in the example above.
 
 .. activecode:: ch08_len3
     
@@ -46,17 +41,20 @@ numbered 0 to 5. To get the last character, we have to subtract 1 from
     lastch = fruit[sz-1]
     print(lastch)
 
-.. Alternatively, we can use **negative indices**, which count backward from the
-.. end of the string. The expression ``fruit[-1]`` yields the last letter,
-.. ``fruit[-2]`` yields the second to last, and so on.  Try it!
 
-Typically, a Python programmer will access the last character by combining the
-two lines of code from above.
+Typically, a Python programmer will access the last character by combining the two lines of code from above.
 
 
 .. sourcecode:: python
     
     lastch = fruit[len(fruit)-1]
+
+.. admonition:: Modify the program ...
+
+   - Comment out line 2.
+
+   - Edit line 3 as shown above.
+
 
 **Check your understanding**
 

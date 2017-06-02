@@ -33,7 +33,7 @@ functions can return boolean values.  This turns out to be a very convenient way
 
 The name of this function is ``isDivisible``. It is common to give **boolean functions** names that sound like yes/no questions.  ``isDivisible`` returns either ``True`` or ``False`` to indicate whether the ``x`` is or is not divisible by ``y``.
 
-.. admonition:: Modify the program
+.. admonition:: Modify the program ...
 
    - On line 11, write a line similar to line 10 that displays ``False``.
 
@@ -76,7 +76,7 @@ with a few other actual parameters to see what is printed.
         print("Those values are no good")
 
 
-.. admonition:: Modify the program
+.. admonition:: Modify the program ...
 
    In line 5, change the parameters so *Those values are no good* is displayed
 

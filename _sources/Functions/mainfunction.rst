@@ -113,7 +113,7 @@ Line 12 uses an ``if`` statement to ask about the value of the ``__name__`` vari
 
     In order to conditionally execute the ``main`` function, we used a structure called an ``if`` statement to create what is known as selection.  This topic will be studied in much more detail later.
 
-.. admonition:: Modify the program
+.. admonition:: Modify the program ...
 
    1. Type appropriate docstrings for the squareit and cubeit functions.
 

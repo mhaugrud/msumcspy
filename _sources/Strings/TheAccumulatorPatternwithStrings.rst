@@ -34,11 +34,11 @@ The general steps of the string accumulator pattern are:
     
     def removeVowels(s):
         vowels = "aeiouAEIOU"
-        sWithoutVowels = ""
+        newString = ""
         for aChar in s:
             if aChar not in vowels:
-                sWithoutVowels = sWithoutVowels + aChar
-        return sWithoutVowels 
+                newString = newString + aChar
+        return newString
        
     print(removeVowels("compsci"))
     print(removeVowels("aAbEefIijOopUus"))
@@ -52,18 +52,15 @@ Line 5 uses the ``not in`` operator to check whether the current character is no
        aChar != 'E'  and aChar != 'I'  and aChar != 'O'  and
        aChar != 'U':      
        
-         sWithoutVowels = sWithoutVowels + aChar
+         newString = newString + aChar
 
                   
       
 
-Look carefully at line 6 in the above program (``sWithoutVowels = sWithoutVowels + aChar``).  We will do this for every character that is not a vowel.  This should look
-very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to "accumulate" the final result.
-In words it says that the new value of ``sWithoutVowels`` will be the old value of ``sWithoutVowels`` concatenated with
-the value of ``aChar``.  We are building the result string character by character. 
+Look carefully at line 6 in the above program (``newString = newString + aChar``).  We will do this for every character that is not a vowel.  This should look very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to "accumulate" the final result.
+In words it says that the new value of ``newString`` will be the old value of ``newString`` concatenated with the value of ``aChar``.  We are building the result string character by character. 
 
-Take a close look also at the initialization of ``sWithoutVowels``.  We start with an empty string and then begin adding
-new characters to the end.
+Take a close look also at the initialization of ``newString``.  We start with an empty string and then begin adding new characters to the end.
 
 Step through the function using codelens to see the accumulator variable grow.
 
@@ -71,11 +68,11 @@ Step through the function using codelens to see the accumulator variable grow.
     
     def removeVowels(s):
         vowels = "aeiouAEIOU"
-        sWithoutVowels = ""
+        newString = ""
         for aChar in s:
             if aChar not in vowels:
-                sWithoutVowels = sWithoutVowels + aChar
-        return sWithoutVowels 
+                newString = newString + aChar
+        return newString 
        
     print(removeVowels("compsci"))
 
@@ -105,11 +102,11 @@ Step through the function using codelens to see the accumulator variable grow.
     
     def removeVowels(s):
         vowels = "aeiouAEIOU"
-        sWithoutVowels = ""
+        newString = ""
         for aChar in s:
             if aChar not in vowels:
-                sWithoutVowels = sWithoutVowels + aChar
-        return sWithoutVowels 
+                newString = newString + aChar
+        return newString 
        
     print(removeVowels("compsci"))
 

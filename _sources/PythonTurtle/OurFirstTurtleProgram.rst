@@ -62,10 +62,9 @@ by **invoking** or activating alex's **methods** --- these are the
 instructions that all turtles know how to respond to.
 
 
-.. admonition:: Complete the rectangle ...
+.. admonition:: Modify the program ...
 
-    Modify the program by adding the commands necessary to have *alex* complete the
-    rectangle.
+   Starting on line 7, adding the commands necessary to have *alex* complete the rectangle.
 
 **Check your understanding**
 

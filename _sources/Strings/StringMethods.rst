@@ -27,10 +27,10 @@ Strings are also objects.  Each string instance has its own attributes and metho
 .. activecode:: chp08_upper
 
     ss = "Hello, World"
-    print('line 2', ss.upper())
+    print('line 2:', ss.upper())
 
     tt = ss.lower()
-    print('line 4', tt)
+    print('line 4:', tt)
 
 
 In this example, ``upper`` is a method that can be invoked on any string object to create a new string in which all the 
@@ -97,15 +97,15 @@ change the original.  You can also consult the `Python documentation for strings
     print("*" + food.ljust(size) + "*")     # stars added to show bounds
     print("*" + food.rjust(size) + "*")
 
-    print('line 8', food.find("e"))
-    print('line 9', food.find("na"))
-    print('line 10', food.find("b"))
+    print('line  8:', food.find("e"))
+    print('line  9:', food.find("na"))
+    print('line 10:', food.find("b"))
 
-    print('line 12', food.rfind("e"))
-    print('line 13', food.rfind("na"))
-    print('line 14', food.rfind("b"))
+    print('line 12:', food.rfind("e"))
+    print('line 13:', food.rfind("na"))
+    print('line 14:', food.rfind("b"))
 
-    print('line 16', food.index("e"))
+    print('line 16:', food.index("e"))
 
 .. admonition:: Modify the program ...
 

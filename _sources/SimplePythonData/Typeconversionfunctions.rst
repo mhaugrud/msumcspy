@@ -33,7 +33,7 @@ Let us see this in action:
     print(int("23bottles"))
 
 
-.. admonition:: Fix the error
+.. admonition:: Fix the error ...
 
    The last case shows that a string has to be a syntactically legal number, otherwise you'll get one of those pesky runtime errors.  Modify the example by deleting the ``bottles`` and rerun the program.  You should see the integer ``23``.
 

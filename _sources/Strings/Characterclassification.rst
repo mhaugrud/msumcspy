@@ -14,16 +14,9 @@
 Character classification
 ------------------------
 
-It is often helpful to examine a character and test whether it is upper- or
-lowercase, or whether it is a character or a digit. The ``string`` module
-provides several constants that are useful for these purposes. One of these,
-``string.digits`` is equivalent to "0123456789".  It can be used to check if a character
-is a digit using the ``in`` operator.
+It is often helpful to examine a character and test whether it is upper- or lowercase, or whether it is a character or a digit. The ``string`` module provides several constants that are useful for these purposes. One of these, ``string.digits`` is equivalent to "0123456789".  It can be used to check if a character is a digit using the ``in`` operator.
 
-The string ``string.ascii_lowercase`` contains all of the ascii letters that the system
-considers to be lowercase. Similarly, ``string.ascii_uppercase`` contains all of the
-uppercase letters. ``string.punctuation`` comprises all the characters considered
-to be punctuation. Try the following and see what you get.
+The string ``string.ascii_lowercase`` contains all of the ascii letters that the system considers to be lowercase. Similarly, ``string.ascii_uppercase`` contains all of the uppercase letters. ``string.punctuation`` comprises all the characters considered to be punctuation. Finally ``string.whitespace`` contains *invisible* characters like space, tab, and new line.
 
 .. sourcecode:: python
     
@@ -31,16 +24,21 @@ to be punctuation. Try the following and see what you get.
     print(string.ascii_uppercase)
     print(string.digits)
     print(string.punctuation)
+    print(string.whitespace)
 
     
 
 For more information consult the ``string`` module documentaiton (see `Global Module Index <http://docs.python.org/py3k/py-modindex.html>`_).
 
 
-.. note::
 
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
+.. activecode:: scratch_08_04
 
-   .. activecode:: scratch_08_04
+   import string
+
+
+.. admonition:: Modify the program ...
+
+   Starting on line 2, print the five character sets (nothing will show for whitespace).
 
 

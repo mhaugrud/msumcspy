@@ -137,7 +137,7 @@ Triple quoted strings can even span multiple lines:
 
     print(message)
 
-.. admonition:: Fix the error
+.. admonition:: Fix the error ...
 
    When you run the above activecode a runtime error occurs. Change the quotes (') to triple quotes ('''). Then it will run with no errors.
 

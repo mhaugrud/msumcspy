@@ -57,7 +57,7 @@ end of the string.
 
    - Change ``banana`` to your your name (first and last).
 
-   - On line 2, type ``fruit[:]``.
+   - On line 2, type ``print(fruit[:])``.
 
    - On line 3, change 3 so just your first name is displayed.
 

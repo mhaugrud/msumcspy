@@ -60,7 +60,7 @@ nonsensical variation of the square function.
     print(result)
     print(y)
 
-.. admonition:: Fix the error
+.. admonition:: Fix the error ...
 
    1. Comment out line 8 (type # in front of it) so there is not a runtime error. Then run
 

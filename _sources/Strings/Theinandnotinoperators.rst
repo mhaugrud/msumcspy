@@ -41,5 +41,5 @@ The ``not in`` operator returns the logical opposite result of ``in``.
 
 .. admonition:: Modify the program ...
 
-   Change ``x`` to some letter that is in ``apple``.
+   Change ``x`` to some letter that **is** in ``apple``.
 

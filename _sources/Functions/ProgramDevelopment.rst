@@ -110,7 +110,7 @@ we compute and return the result.
         print(distance(1, 2, 4, 6))
 
 
-.. admonition:: Fix the error
+.. admonition:: Fix the error ...
 
    The above program will run but not produce any output. Why? 
 

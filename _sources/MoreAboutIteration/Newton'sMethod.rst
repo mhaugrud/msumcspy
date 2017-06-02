@@ -49,7 +49,7 @@ calculation yielding a better result.
     print(newtonSqrt(1, 10))
 
 
-.. admonition:: Modify the program
+.. admonition:: Modify the program ...
 
    All three of the calls to ``newtonSqrt`` in the previous example produce the correct square root for the first parameter.  However, were 10 iterations required to get the correct answer? Experiment with different values for the number of repetitions (the 10 on lines 8, 9, and 10). For each of these call find the **smallest** value for the number of repetitions that will produce in the **correct** result.
 

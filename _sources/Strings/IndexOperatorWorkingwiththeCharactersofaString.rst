@@ -33,7 +33,7 @@ Note that the character at index 6 (or -8) is the blank character.
     m = school[2]
     print(m)
     
-    lastchar = school[-1]
+    lastchar = school[13]
     print(lastchar)
 
 The expression ``school[2]`` selects the character at index 2 from ``school``, and creates a new string containing just this one character. The variable ``m`` refers to the result. 
@@ -43,11 +43,15 @@ from zero. The letter at index zero of ``"Luther College"`` is ``L``.  So at pos
 
 If you want the zero-eth letter of a string, you just put 0, or any expression with the value 0, in the brackets.  Give it a try.
 
+Alternatively, we can use **negative indices**, which count backward from the .. end of the string. The expression ``school[-1]`` yields the last letter, .. ``school[-2]`` yields the second to last, and so on.  Try it!
+
 .. admonition:: Modify the program ...
 
-   - Change the school to ``Minnesota State University``.
+   - Change the 13 in line 5 to a negative number that is the index of the last character of the string. Run.
 
-   - Change the 2 in line 2 so that ``U`` is displayed in line 3.
+   - Change the school to ``Minnesota State University``. Run and notice the last character of the new string is displayed.
+
+   - Change the 2 (use a positive index) in line 2 so that ``U`` is displayed in line 3.
 
 The expression in brackets is called an **index**. An index specifies a member
 of an ordered collection.  In this case the collection of characters in the string. The index

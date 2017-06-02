@@ -103,7 +103,7 @@ as a parameter and return the result of squaring that number.  Here is the black
 
 The **return** statement is followed by an expression which is evaluated.  Its result is returned to the caller as the "fruit" of calling this function. Because the return statement can contain any Python expression we could have avoided creating the **temporary variable** ``y`` and simply used ``return x*x``.
 
-.. admonition:: Modify the program
+.. admonition:: Modify the program ...
 
    - Type an appropriate docstring for the square function.
 
@@ -208,7 +208,7 @@ To write a unit test, we must know the correct result when calling the function 
 
 ``test.testEqual`` is a function that allows us to perform a unit test. It takes two parameters. The first is a call to the function we want to test (square in this example) with a particular input (10 in this example). The second parameter is the correct result that should be produced (100 in this example). ``test.testEqual`` compares what the function returns with the correct result and displays whether the unit test passes or fails.
 
-.. admonition:: Extend the program
+.. admonition:: Extend the program ...
 
    On line 8, write another unit test (that should pass) for the square function.
 
