@@ -19,18 +19,25 @@ In this guided lab exercise we will work through a simple problem solving exerci
 Random Numbers
 --------------
 
-Before we begin writing code for this lab, we need to introduce one more
-Python module.  The ``random`` module allows us to generate random numbers.
-It's easy to use:
+Before we begin writing code for this lab, we need to introduce one more Python module.  The ``random`` module allows us to generate random numbers. It's easy to use:
 
 .. activecode:: lab01_1
    :nocanvas:
 
    import random
+
    x = random.randrange(1,10)
    print(x)
 
 The ``randrange`` function as called in the example above, generates a random number from 1 to 9. Even though we said 10 the randrange function works just like the *range* function when it comes to starting and stopping points.  Now if you run the program over and over again you should see that each time you run it a different number is generated.  Random numbers are the basis of all kinds of interesting programs we can write, and the ``randrange`` function is just one of many functions available in the random module.
+
+.. admonition:: Modify the program ...
+
+   - On line 2, make a loop that repeats 20 times.
+
+   - Indent lines 3 and 4 so they become the body of the loop.
+
+   - Run a couple of times and notice the different random integers.
 
 Turtle Races
 ------------

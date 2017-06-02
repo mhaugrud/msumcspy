@@ -85,8 +85,7 @@ range(start,stop+1).
     stop it helps to simply think that the sequence begins with start and
     continues as long as the number is less than stop.
 
-Here are a two examples for you to run.  Try them and then add another line below to create a sequence starting
-at 10 and going up to 20 (including 20).
+Here are a two examples for you to run.
 
 
 .. activecode:: ch03_5
@@ -95,6 +94,10 @@ at 10 and going up to 20 (including 20).
     print(range(4))
     print(range(1, 5))
 
+
+.. admonition:: Extend the program ...
+
+   On line 3, type a similar instruction to create a sequence starting at 10 and going up to 20 (including 20).
 
 Codelens will help us to further understand the way range works.  In this case, the variable ``i`` will take on values
 produced by the ``range`` function.
@@ -129,6 +132,14 @@ Try it in codelens.
 
     for i in range(0, 20, 2):
        print(i)
+
+.. admonition:: Extend the program ...
+
+   - On line 4, type a similar instruction to display the **odd** numbers between 0 and 20.
+
+   - Starting on line 5, write a loop that counts down from 99 to 0 (including 0)
+
+   - On line 6 (indented since this is the body of the loop), print the current value of the loop variable and the string "bottles of beer on the wall". When you run this, the first line should be "99 bottles of beer on the wall" and the last line should be "0 bottles of beer on the wall".
 
 **Check your understanding**
 

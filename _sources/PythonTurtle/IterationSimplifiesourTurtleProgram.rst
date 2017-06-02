@@ -14,8 +14,7 @@
 Iteration Simplifies our Turtle Program
 ---------------------------------------
 
-To draw a square we'd like to do the same thing four times --- move the turtle forward some distance and turn 90 degrees.  We previously used 8 lines of Python code to have alex draw the four sides of a
-square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the `forward` and `left` four times, one time for
+To draw a square we'd like to do the same thing four times --- move the turtle forward some distance and turn 90 degrees.  We previously used 8 lines of Python code to have alex draw the four sides of a square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the `forward` and `left` four times, one time for
 each value in the list.
 
 .. activecode:: ch03_for1
@@ -33,14 +32,15 @@ each value in the list.
 
 
 
-While "saving some lines of code" might be convenient, it is not the big
-deal here.  What is much more important is that we've found a "repeating
-pattern" of statements, and we reorganized our program to repeat the pattern.
-Finding the chunks and somehow getting our programs arranged around those
-chunks is a vital  skill when learning *How to think like a computer scientist*.
+While "saving some lines of code" might be convenient, it is not the big deal here.  What is much more important is that we've found a "repeating pattern" of statements, and we reorganized our program to repeat the pattern. Finding the chunks and somehow getting our programs arranged around those chunks is a vital  skill when learning *How to think like a computer scientist*.
 
-The values [0,1,2,3] were provided to make the loop body execute 4 times.
-We could have used any four values.  For example, consider the following program.
+.. admonition:: Modify the program ...
+
+   - In line 5, add another value to the list (so there are 5 items).
+
+   - In line 7, change ``90`` to ``360/5``. Now what shape is drawn?
+
+The values [0,1,2,3] were provided to make the loop body execute 4 times. We could have used any four values.  For example, consider the following program.
 
 
 .. activecode:: ch03_forcolor
