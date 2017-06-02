@@ -101,10 +101,23 @@ Step through the function using codelens to see the accumulator variable grow.
       print(r)
 
 
-.. note::
+.. activecode:: scratch_08_03
+    
+    def removeVowels(s):
+        vowels = "aeiouAEIOU"
+        sWithoutVowels = ""
+        for aChar in s:
+            if aChar not in vowels:
+                sWithoutVowels = sWithoutVowels + aChar
+        return sWithoutVowels 
+       
+    print(removeVowels("compsci"))
 
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
+.. admonition:: Modify the program ...
 
-   .. activecode:: scratch_08_03
+   - Change ``compsci`` to your full name (properly capitalized). Run.
 
+   - In line 5, remove ``not``. Run.
+
+   - The name of the function is now very misleading. Rename the function appropriately and run to make sure it still works.
 

@@ -22,6 +22,7 @@ selecting a character:
     singers = "Peter, Paul, and Mary"
     print(singers[0:5])
     print(singers[7:11])
+
     print(singers[17:21])
     
 
@@ -32,6 +33,14 @@ This
 behavior may seem counter-intuitive but if you recall the ``range`` function, it did not include its end
 point either.
 
+.. admonition:: Modify the program ...
+
+   - On line 2, **concatenate** ``*`` on both ends of the string that is printed. This will result in ``*Peter*`` being displayed.
+
+   - Do similar concatenations on lines 3 and 5.
+
+   - On line 4, type similar instructions (using concatenation and slice) that cause ``*and*`` to be displayed.
+
 If you omit the first index (before the colon), the slice starts at the
 beginning of the string. If you omit the second index, the slice goes to the
 end of the string.
@@ -39,10 +48,21 @@ end of the string.
 .. activecode:: chp08_slice2
     
     fruit = "banana"
-    print(fruit[:3])
-    print(fruit[3:])
 
-What do you think ``fruit[:]`` means?
+    print("*"+fruit[:3]+"*")
+    print("*"+fruit[3:]+"*")
+
+
+.. admonition:: Modify the program ...
+
+   - Change ``banana`` to your your name (first and last).
+
+   - On line 2, type ``fruit[:]``.
+
+   - On line 3, change 3 so just your first name is displayed.
+
+   - On line 4, change 3 so just your last name is displayed.
+
 
 **Check your understanding**
 

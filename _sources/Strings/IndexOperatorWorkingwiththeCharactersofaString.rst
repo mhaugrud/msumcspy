@@ -36,15 +36,18 @@ Note that the character at index 6 (or -8) is the blank character.
     lastchar = school[-1]
     print(lastchar)
 
-The expression ``school[2]`` selects the character at index 2 from ``school``, and creates a new
-string containing just this one character. The variable ``m`` refers to the result. 
+The expression ``school[2]`` selects the character at index 2 from ``school``, and creates a new string containing just this one character. The variable ``m`` refers to the result. 
 
 Remember that computer scientists often start counting
-from zero. The letter at index zero of ``"Luther College"`` is ``L``.  So at
-position ``[2]`` we have the letter ``t``.
+from zero. The letter at index zero of ``"Luther College"`` is ``L``.  So at position ``[2]`` we have the letter ``t``.
 
-If you want the zero-eth letter of a string, you just put 0, or any expression
-with the value 0, in the brackets.  Give it a try.
+If you want the zero-eth letter of a string, you just put 0, or any expression with the value 0, in the brackets.  Give it a try.
+
+.. admonition:: Modify the program ...
+
+   - Change the school to ``Minnesota State University``.
+
+   - Change the 2 in line 2 so that ``U`` is displayed in line 3.
 
 The expression in brackets is called an **index**. An index specifies a member
 of an ordered collection.  In this case the collection of characters in the string. The index

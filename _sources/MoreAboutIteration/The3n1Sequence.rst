@@ -54,8 +54,9 @@ particular values of ``n``, we can prove termination. For example, if the
 starting value is a power of two, then the value of ``n`` will be even each
 time through the loop until it reaches 1.
 
-You might like to have some fun and see if you can find a small starting
-number that needs more than a hundred steps before it terminates.
+.. admonition:: Modify the program ...
+
+   In line 11, try different starting values instead of 3. Find a small starting number (less than 50) that needs more than a hundred steps before it terminates. (Your final save and run must be this value.)
 
 
 

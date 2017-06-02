@@ -30,10 +30,15 @@ string.  It is another example of the accumulator pattern that we have seen in p
         return lettercount
 
     print(count("banana","a"))    
+    print(count("banana","b"))    
 
 The function ``count`` takes a string as its parameter.  The ``for`` statement iterates through each character in
 the string and checks to see if the character is equal to the value of ``aChar``.  If so, the counting variable, ``lettercount``, is incremented by one.
 When all characters have been processed, the ``lettercount`` is returned.
+
+.. admonition:: Modify the program ...
+
+   In line 9, change ``"b"`` to ``"B"``.
 
 .. index:: traversal, eureka traversal, pattern of computation,
            computation pattern

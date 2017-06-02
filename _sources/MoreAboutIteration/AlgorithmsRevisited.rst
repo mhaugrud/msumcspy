@@ -46,6 +46,19 @@ language is a good example. We all do it, but so far no one has been able to
 explain *how* we do it, at least not in the form of a step-by-step mechanical
 algorithm.
 
+.. activecode:: scratch_07_01
+
+    def sumTo(aBound):
+        """ Return the sum of reciprocals of powers of 2 """
+
+        theSum  = 0
+        aNumber = 1
+        while aNumber <= aBound:
+            theSum = theSum + 1/2**aNumber
+            aNumber = aNumber + 1
+        return theSum
+
+    print(sumTo(4))
 
 
 

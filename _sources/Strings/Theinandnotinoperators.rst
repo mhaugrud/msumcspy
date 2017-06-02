@@ -21,11 +21,9 @@ The ``in`` operator tests if one string is a substring of another:
     print('p' in 'apple')
     print('i' in 'apple')
     print('ap' in 'apple')
-    print('pa' in 'apple')
+    print('AP' in 'apple')
 
-Note that a string is a substring of itself, and the empty string is a 
-substring of any other string. (Also note that computer scientists 
-like to think about these edge cases quite carefully!) 
+Note that a string is a substring of itself, and the empty string is a substring of any other string. (Also note that computer scientists like to think about these **boundary cases** quite carefully!) 
 
 .. activecode:: chp8_in2
     
@@ -39,4 +37,9 @@ The ``not in`` operator returns the logical opposite result of ``in``.
 .. activecode:: chp8_in3
 
     print('x' not in 'apple')
+
+
+.. admonition:: Modify the program ...
+
+   Change ``x`` to some letter that is in ``apple``.
 

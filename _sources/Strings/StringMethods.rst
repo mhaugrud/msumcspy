@@ -27,16 +27,21 @@ Strings are also objects.  Each string instance has its own attributes and metho
 .. activecode:: chp08_upper
 
     ss = "Hello, World"
-    print(ss.upper())
+    print('line 2', ss.upper())
 
     tt = ss.lower()
-    print(tt)
+    print('line 4', tt)
 
 
-In this example, ``upper`` is a method that can be invoked on any string object 
-to create a new string in which all the 
-characters are in uppercase.  ``lower`` works in a similar fashion changing all characters in the string
-to lowercase.  (The original string ``ss`` remains unchanged.  A new string ``tt`` is created.)
+In this example, ``upper`` is a method that can be invoked on any string object to create a new string in which all the 
+characters are in uppercase.  ``lower`` works in a similar fashion changing all characters in the string to lowercase.  (The original string ``ss`` remains unchanged.  A new string ``tt`` is created.)
+
+.. admonition:: Modify the program ...
+
+   - In line 1, change ``Hello World`` to your full name.
+
+   - On lines 3 and 6, print the string ``ss``. Notice it does not change. Remember **strings are immutable**.
+
 
 In addition to ``upper`` and ``lower``, the following table provides a summary of some other useful string methods.  There are a few activecode examples that follow so that you can try them out.
 
@@ -87,20 +92,26 @@ change the original.  You can also consult the `Python documentation for strings
 
     food = "banana bread"
     print(food.capitalize())
+    size = 25
+    print("*" + food.center(size) + "*")
+    print("*" + food.ljust(size) + "*")     # stars added to show bounds
+    print("*" + food.rjust(size) + "*")
 
-    print("*" + food.center(25) + "*")
-    print("*" + food.ljust(25) + "*")     # stars added to show bounds
-    print("*" + food.rjust(25) + "*")
+    print('line 8', food.find("e"))
+    print('line 9', food.find("na"))
+    print('line 10', food.find("b"))
 
-    print(food.find("e"))
-    print(food.find("na"))
-    print(food.find("b"))
+    print('line 12', food.rfind("e"))
+    print('line 13', food.rfind("na"))
+    print('line 14', food.rfind("b"))
 
-    print(food.rfind("e"))
-    print(food.rfind("na"))
-    print(food.rfind("b"))
+    print('line 16', food.index("e"))
 
-    print(food.index("e"))
+.. admonition:: Modify the program ...
+
+   - On line 11, type a line similar to line 10 that results in ``6`` being displayed.
+
+   - On line 7, make a string from the interger variable ``size`` (recall how you can make a string from an integer with ``str``). Use the rjust method on that string to right justify it in a field 5 characters wide and print the resulting string. Notice the number 25 is preceded by 3 spaces.
 
 
 **Check your understanding**

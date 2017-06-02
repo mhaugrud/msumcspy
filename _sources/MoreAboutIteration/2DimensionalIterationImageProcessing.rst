@@ -233,7 +233,7 @@ Change the name of the file in the ``image.Image()`` call to see how these image
 
     import image
 
-    img = image.Image("luther.jpg")
+    img = image.Image("goldygopher.png")
     win = image.ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
     img.setDelay(1,15)   # setDelay(0) turns off animation
@@ -270,11 +270,12 @@ Try to change the program above so that the outer loop iterates over the columns
     :nocodelens:
 
     import image, time
-
-    img = image.Image("luther.jpg")
+ 
+    img = image.Image("goldygopher.png")
     win = image.ImageWin(img.getWidth(), img.getHeight())
-    newimg = image.EmptyImage(img.getWidth(), img.getHeight())
     img.draw(win)
+    time.sleep(5) # wait 5 seconds
+    newimg = image.EmptyImage(img.getWidth(), img.getHeight())
 
     for row in range(img.getHeight()):
         for col in range(img.getWidth()):
@@ -310,12 +311,6 @@ The second image becomes a modified version of the original image. By doing this
 	`Sepia Tone <http://en.wikipedia.org/wiki/Sepia_tone#Sepia_toning>`_
 
 
-
-
-
-
-You have just passed a very important point in your study of Python programming.  Even though there is much more that we will do, you have learned all of the basic building blocks that are necessary to solve many interesting problems.  From an algorithm point of view, you can now implement selection and iteration.  You can also solve problems by breaking them down into smaller parts, writing functions for those parts, and then calling the functions to complete the implementation.
-What remains is to focus on ways that we can better represent our problems in terms of the data that we manipulate.  We will now turn our attention to studying the main data collections provided by Python.
 
 **Check your understanding**
 

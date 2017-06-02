@@ -42,6 +42,11 @@ except that all the uppercase letters come before all the lowercase letters.
         print("Yes, we have no bananas!")
 
 
+.. admonition:: Modify the program ...
+
+   In line 1, change ``zebra`` so that line 4 is executed.
+
+
 It is probably clear to you that the word `apple` would be less than (come before) the word ``banana``.
 After all, `a` is before `b` in the alphabet.  But what if we consider the words ``apple`` and ``Apple``?
 Are they the same?  
@@ -71,6 +76,13 @@ When you compare characters or strings to one another, Python converts the chara
 Humans commonly ignore capitalization when comparing two words.  However, computers do not.  A common way to address this issue is to convert strings to a standard
 format, such as all lowercase, before performing the comparison. 
 
+.. admonition :: Extend the program ...
+
+   - On line 8, write a for loop that iterates over the letters in your name.
+
+   - On line 9 (the body of the loop), display the current letter and its ordinal value.
+
+
 There is also a similar function called ``chr`` that converts integers into their character equivalent.
 
 .. activecode:: ch08_ord3
@@ -85,6 +97,14 @@ There is also a similar function called ``chr`` that converts integers into thei
     print(ord(" "))
 
 One thing to note in the last two examples is the fact that the space character has an ordinal value (32).  Even though you don't see it, it is an actual character.  We sometimes call it a *nonprinting* character.
+
+.. admonition :: Extend the program ...
+
+   - Refer to activecode ch08_ord2 where you displayed the ordinal values for the letters in your name. On line 9, make a list that contains those integers. Write a for loop that iterates over that list of integers.
+
+   - As the body of the loop, display the current integer and its character equivalent.
+
+
 
 **Check your understanding**
 
