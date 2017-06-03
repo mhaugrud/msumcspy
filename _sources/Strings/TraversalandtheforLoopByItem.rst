@@ -14,41 +14,36 @@
 Traversal and the ``for`` Loop: By Item
 ---------------------------------------
 
-A lot of computations involve processing a collection one item at a time.  For strings this means
-that we would like to process one character at a time.
-Often we start at the beginning, select each character in turn, do something
-to it, and continue until the end. This pattern of processing is called a
-**traversal**.
+A lot of computations involve processing a collection one item at a time.  For strings this means that we would like to process one character at a time. Often we start at the beginning, select each character in turn, do something to it, and continue until the end. This pattern of processing is called a **traversal**.
 
-We have previously seen that the ``for`` statement can iterate over the items of a sequence (a list of names in the case below).
+We have previously seen that the ``for`` statement can iterate over a sequence of integers created by the ``range`` constructor.
 
 .. activecode:: ch08_4
     :nocanvas:
 
-    for aname in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
-        invitation = "Hi " + aname + ".  Please come to my party on Saturday!"
-        print(invitation) 
-      
-Recall that the loop variable takes on each value in the sequence of names.  The body is performed once for each name.  The same was true for the sequence of integers created by the ``range`` function.
-
-.. activecode:: ch08_5
-    :nocanvas:
-
     for avalue in range(10):
         print(avalue)
-
+      
+Recall that the loop variable takes on each value in the sequence.  The body is performed once for each value.
 
 Since a string is simply a sequence of characters, the ``for`` loop iterates over each character automatically.
 
-.. activecode:: ch08_6
+
+.. activecode:: ch08_5
     :nocanvas:
 
     for achar in "Go Spot Go":
         print(achar)
 
-The loop variable ``achar`` is automatically reassigned each character in the string "Go Spot Go".
-We will refer to this type of sequence iteration as **iteration by item**.  
-Note that it is only possible to process the characters one at a time from left to right.
+The loop variable ``achar`` is automatically reassigned each character in the string "Go Spot Go". We will refer to this type of sequence iteration as **iteration by item**.  Note that we to process the characters one at a time from left to right.
+
+.. activecode:: ch08_6
+    :nocanvas:
+
+    aString = input('enter a string')
+    for achar in aString:
+        print(achar)
+
 
 **Check your understanding**
 

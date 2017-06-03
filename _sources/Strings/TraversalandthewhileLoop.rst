@@ -24,7 +24,7 @@ body to guarantee that the condition will eventually fail.
     :nocanvas:
 
 
-    fruit = "apple"
+    fruit = input('enter a string')
 
     position = 0
     while position < len(fruit):
@@ -32,10 +32,7 @@ body to guarantee that the condition will eventually fail.
         position = position + 1
 
 
-The loop condition is ``position < len(fruit)``, so when ``position`` is equal to the
-length of the string, the condition is false, and the body of the loop is not
-executed. The last character accessed is the one with the index
-``len(fruit)-1``, which is the last character in the string.
+The loop condition is ``position < len(fruit)``, so when ``position`` is equal to the length of the string, the condition is false, and the body of the loop is not executed. The last character accessed is the one with the index ``len(fruit)-1``, which is the last character in the string.
 
 
 Here is the same example in codelens so that you can trace the values of the variables.

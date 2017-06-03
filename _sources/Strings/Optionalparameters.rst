@@ -14,9 +14,7 @@
 Optional parameters
 -------------------
 
-To find the locations of the second or third occurrence of a character in a
-string, we can modify the ``find`` function, adding a third parameter for the
-starting position in the search string:
+To find the locations of the second or third occurrence of a character in a string, we can modify the ``find`` function, adding a third parameter for the starting position in the search string:
 
 .. activecode:: ch08_fun4
     
@@ -40,10 +38,7 @@ starting position in the search string:
     print(find2('banana', 'a', 2))
 
 
-The call ``find2('banana', 'a', 2)`` now returns ``3``, the index of the first
-occurrence of 'a' in 'banana' after index 2. What does
-``find2('banana', 'n', 3)`` return? If you said, 4, there is a good chance you
-understand how ``find2`` works.  Try it.
+The call ``find2('banana', 'a', 2)`` now returns ``3``, the index of the first occurrence of 'a' in 'banana' after index 2. What does ``find2('banana', 'n', 3)`` return? If you said, 4, there is a good chance you understand how ``find2`` works.  Try it.
 
 Better still, we can combine ``find`` and ``find2`` using an
 **optional parameter**.
@@ -69,12 +64,15 @@ Better still, we can combine ``find`` and ``find2`` using an
 	
 	print(find3('banana', 'a', 2))
 
-The call ``find3('banana', 'a', 2)`` to this version of ``find`` behaves just
-like ``find2``, while in the call ``find3('banana', 'a')``, ``start`` will be
-set to the **default value** of ``0``.
+The call ``find3('banana', 'a', 2)`` to this version of ``find`` behaves just like ``find2``, while in the call ``find3('banana', 'a')``, ``start`` will be set to the **default value** of ``0``.
 
-Adding another optional parameter to ``find`` makes it search from a starting
-position, up to but not including the end position.
+.. admonition:: Extend the program ...
+
+   Make a copy of line 18 on line 19 but remove the optional parameter. Run and notice which ``a`` is now found.
+
+   
+
+Adding another optional parameter to ``find`` makes it search from a starting position, up to but not including the end position.
 
 .. activecode:: chp08_fun6
     

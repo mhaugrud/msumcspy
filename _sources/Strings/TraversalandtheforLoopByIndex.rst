@@ -14,8 +14,9 @@
 Traversal and the ``for`` Loop: By Index
 ----------------------------------------
 
-It is also possible to use the ``range`` function to systematically generate the indices of the characters.  The ``for`` loop can then be used to iterate over these positions. 
-These positions can be used together with the indexing operator to access the individual
+When we need to iterate over the characters in a string, we should use the technique shown in ch08_6 (iterating by character) if possible. However, there are times when we must iterate by index.
+
+We can use the ``range`` function to systematically generate the indices of the characters.  The ``for`` loop can then be used to iterate over these positions. These positions can be used together with the indexing operator to access the individual
 characters in the string.
 
 Consider the following codelens example.
@@ -37,14 +38,17 @@ correctly when using ``len`` of the string as its parameter value.
     :nocanvas:
 
 
-    fruit = "apple"
+    fruit = input('enter a string')
     for idx in range(len(fruit)):
         print(fruit[idx])
 
 
-You may also note that iteration by position allows the programmer to control the direction of the
-traversal by changing the sequence of index values.  Recall that we can create ranges that count down as 
-well as up so the following code will print the characters from right to left.
+You may also note that iteration by position allows the programmer to control the direction of the traversal by changing the sequence of index values.  Recall that we can create ranges that count down as well as up so the following code will print the characters from right to left.
+
+.. admonition:: Modify the program ...
+
+   On line 2, change the range so that the characters of fruit are printed in **reverse** order.
+
 
 .. codelens:: ch08_8
 

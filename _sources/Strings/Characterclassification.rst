@@ -20,11 +20,11 @@ The string ``string.ascii_lowercase`` contains all of the ascii letters that the
 
 .. sourcecode:: python
     
-    print(string.ascii_lowercase)
-    print(string.ascii_uppercase)
-    print(string.digits)
-    print(string.punctuation)
-    print(string.whitespace)
+    string.ascii_lowercase
+    string.ascii_uppercase
+    string.digits
+    string.punctuation
+    string.whitespace
 
     
 

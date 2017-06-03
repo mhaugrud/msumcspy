@@ -14,23 +14,32 @@
 Nested Lists
 ------------
 
-A nested list is a list that appears as an element in another list. In this
-list, the element with index 2 is a nested list.  
-If we print(``nested[2]``), we get ``[10, 20]``. To extract an element from the
-nested list, we can proceed in two steps.  First, extract the nested list, then extract the item
-of interest.  It is also possible to combine those steps using bracket operators that evaluate from
-left to right.
+A nested list is a list that appears as an element in another list. In this list, the element with index 2 is a nested list.  
+If we print(``nested[2]``), we get ``[10, 20]``. To extract an element from the nested list, we can proceed in two steps.  First, extract the nested list, then extract the item of interest.  It is also possible to combine those steps using bracket operators that evaluate from left to right.
 
 .. activecode:: chp09_nest
     
     nested = [['h','i'], [2.0, 5], [10, 20]]
-    innerlist = nested[2]
+    i = 2
+    j = 1
+    innerlist = nested[i]
     print(innerlist)
-    item = innerlist[1]
+    item = innerlist[j]
     print(item)
 
-    print(nested[2][1])
+    print(nested[i][j])
 
+
+.. admonition:: Extend the program ...
+
+   - On line 10, write a loop that iterates over the range 3.
+
+   - On line 11, make a **nested** loop that iterates over the range 2.
+
+   - On line 12, (the body of the inner loop), print the current item using the two loop variables and square brackets (somewhat like is done in line 9).
+
+.. note::
+   Even though using this index notation to iterate over items in nested lists works, the Pythonic technique is what we did in chp09_3a (load your saved code to refresh your memory).
 
 .. index:: matrix
 
