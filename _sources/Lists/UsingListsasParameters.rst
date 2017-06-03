@@ -39,7 +39,7 @@ The parameter ``aList`` and the variable ``things`` are aliases for the same obj
    
 .. admonition:: Modify the program ...
 
-   On line 7, use a list method to put ``spam`` between 5 and 9 (as shown in the picture below the activecode).
+   On line 7, use a list **method** to put ``spam`` between 5 and 9 (as shown in the picture below the activecode).
 
 
 Since the list object is shared by two references, there is only one copy. If a function modifies the elements of a list arameter, the caller sees the change since the change is occurring to the original.

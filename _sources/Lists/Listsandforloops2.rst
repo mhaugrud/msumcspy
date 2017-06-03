@@ -85,7 +85,7 @@ The above example, illustrates the accumulator pattern for lists: you start with
 
 .. admonition:: Modify the program ...
 
-   Type instructions on lines 3 and 4 that use the list accumulator pattern to fill the ``squares` list with the squares of ``numbers``.
+   Type instructions on lines 3 and 4 that use the list accumulator pattern to fill the ``squares`` list with the squares of ``numbers``.
 
 
 .. index:: parameter

@@ -55,11 +55,11 @@ The list that you glue together (``wds`` in this example) is not modified.  Also
 
    - Edit ch09_split1: 
 
-       On line 4 use the join method on a space character to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
+      - On line 4 use the join method on a space character to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
 
    - Edit ch09_split2: 
 
-       On line 4 use the join method on "ai" to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
+      - On line 4 use the join method on "ai" to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
 
 **Check your understanding**
 
