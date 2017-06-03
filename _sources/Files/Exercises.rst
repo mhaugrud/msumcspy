@@ -46,12 +46,6 @@ Exercises
 
                 f = open("studentdata.txt", "r")
 
-                for aline in f:
-                    items = aline.split()
-                    if len(items[1:]) > 6:
-                        print(items[0])
-
-                f.close()
 
         .. tab:: Discussion
 
@@ -96,11 +90,6 @@ Exercises
 
                 f = open("studentdata.txt", "r")
 
-                for aline in f:
-                    items = aline.split()
-                    print(items[0], "max is", max(items[1:]), "min is", min(items[1:]))
-
-                f.close()
 
         .. tab:: Discussion
 
@@ -203,19 +192,6 @@ Exercises
 
                 f = open("mystery.txt", "r")
 
-                for aline in f:
-                    items = aline.split()
-                    if items[0] == "UP":
-                        t.up()
-                    else:
-                        if items[0] == "DOWN":
-                            t.down()
-                        else:
-                            # must be coords
-                            t.goto(int(items[0]), int(items[1]))
-
-                f.close()
-                wn.exitonclick()
 
 
 

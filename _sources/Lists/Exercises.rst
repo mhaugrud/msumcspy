@@ -70,15 +70,6 @@ Exercises
 
                 myList = [76, 92.3, 'hello', True, 4, 76]
 
-                myList.append("apple")         # a
-                myList.append(76)              # a
-                myList.insert(3, "cat")        # b
-                myList.insert(0, 99)           # c
-
-                print(myList.index("hello"))   # d
-                print(myList.count(76))        # e
-                myList.remove(76)              # f
-                myList.pop(myList.index(True)) # g
 
                 print (myList)
 
@@ -113,15 +104,11 @@ Exercises
                 import random
 
                 def max(lst):
-                    max = 0
-                    for e in lst:
-                        if e > max:
-                            max = e
-                    return max
+
+
 
                 lst = []
-                for i in range(100):
-                    lst.append(random.randint(0, 1000))
+
 
                 print(max(lst))
 
@@ -190,16 +177,11 @@ Exercises
                 import random
 
                 def countOdd(lst):
-                    odd = 0
-                    for e in lst:
-                        if e % 2 != 0:
-                            odd = odd + 1
-                    return odd
+
 
                 # make a random list to test the function
                 lst = []
-                for i in range(100):
-                    lst.append(random.randint(0, 1000))
+
 
                 print(countOdd(lst))
 
@@ -267,15 +249,12 @@ Exercises
                 import random
 
                 def sumNegative(lst):
-                    sum = 0
-                    for e in lst:
-                        if e < 0:
-                            sum = sum + e
-                    return sum
+
+
 
                 lst = []
-                for i in range(100):
-                    lst.append(random.randrange(-1000, 1000))
+
+
 
                 print(sumNegative(lst))
 
@@ -328,16 +307,11 @@ Exercises
                 import random
 
                 def sum(lst):
-                    sum = 0
-                    index = 0
-                    while index < len(lst) and lst[index] % 2 != 0:
-                        sum = sum + lst[index]
-                        index = index + 1
-                    return sum
+
+
 
                 lst = []
-                for i in range(100):
-                    lst.append(random.randint(0,1000))
+
 
                 print(sum(lst))
 
@@ -381,37 +355,24 @@ Exercises
             .. activecode:: q13_answer
 
                 def count(obj, lst):
-                    count = 0
-                    for e in lst:
-                        if e == obj:
-                            count = count + 1
-                    return count
+
+
 
                 def is_in(obj, lst):  # cannot be called in() because in is a reserved keyword
-                    for e in lst:
-                        if e == obj:
-                            return True
-                    return False
+
+
 
                 def reverse(lst):
-                    reversed = []
-                    for i in range(len(lst)-1, -1, -1): # step through the original list backwards
-                        reversed.append(lst[i])
-                    return reversed
+
+
 
                 def index(obj, lst):
-                    for i in range(len(lst)):
-                        if lst[i] == obj:
-                            return i
-                    return -1
+
+
 
                 def insert(obj, index, lst):
-                    newlst = []
-                    for i in range(len(lst)):
-                        if i == index:
-                            newlst.append(obj)
-                        newlst.append(lst[i])
-                    return newlst
+
+
 
                 lst = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
                 print(count(1, lst))
@@ -490,64 +451,19 @@ Exercises
                 import turtle
 
                 def createLSystem(numIters, axiom):
-                    startString = axiom
-                    endString = ""
-                    for i in range(numIters):
-                        endString = processString(startString)
-                        startString = endString
 
-                    return endString
 
                 def processString(oldStr):
-                    newstr = ""
-                    for ch in oldStr:
-                        newstr = newstr + applyRules(ch)
 
-                    return newstr
 
                 def applyRules(ch):
-                    newstr = ""
-                    if ch == 'H':
-                        newstr = 'HFX[+H][-H]'   # Rule 1
-                    elif ch == 'X':
-                        newstr = 'X[-FFF][+FFF]FX'
-                    else:
-                        newstr = ch     # no rules apply so keep the character
 
-                    return newstr
 
                 def drawLsystem(aTurtle, instructions, angle, distance):
-                    savedInfoList = []
-                    for cmd in instructions:
-                        if cmd == 'F':
-                            aTurtle.forward(distance)
-                        elif cmd == 'B':
-                            aTurtle.backward(distance)
-                        elif cmd == '+':
-                            aTurtle.right(angle)
-                        elif cmd == '-':
-                            aTurtle.left(angle)
-                        elif cmd == '[':
-                            savedInfoList.append([aTurtle.heading(), aTurtle.xcor(), aTurtle.ycor()])
-                            #print(savedInfoList)
-                        elif cmd == ']':
-                            newInfo = savedInfoList.pop()
-                            aTurtle.setheading(newInfo[0])
-                            aTurtle.setposition(newInfo[1], newInfo[2])
 
 
                 def main():
-                    inst = createLSystem(4, "H")   # create the string
-                    print(inst)
-                    t = turtle.Turtle()            # create the turtle
-                    wn = turtle.Screen()
-                    t.up()
-                    t.back(200)
-                    t.down()
-                    t.speed(9)
-                    drawLsystem(t, inst, 27.5, 5)  # draw the picture
 
-                    wn.exitonclick()
 
                 main()
 
