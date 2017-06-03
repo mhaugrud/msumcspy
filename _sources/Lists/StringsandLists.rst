@@ -15,9 +15,7 @@ Strings and Lists
 -----------------
 
 Two of the most useful methods on strings involve lists of
-strings. The ``split`` method
-breaks a string into a list of words.  By
-default, any number of whitespace characters is considered a word boundary.
+strings. The ``split`` method breaks a string into a list of words.  By default, any number of whitespace characters is considered a word boundary.
 
 .. activecode:: ch09_split1
     
@@ -25,9 +23,7 @@ default, any number of whitespace characters is considered a word boundary.
     wds = song.split()
     print(wds)
 
-An optional argument called a **delimiter** can be used to specify which
-characters to use as word boundaries. The following example uses the string
-``ai`` as the delimiter:
+An optional argument called a **delimiter** can be used to specify which characters to use as word boundaries. The following example uses the string ``ai`` as the delimiter:
 
 .. activecode:: ch09_split2
     
@@ -53,10 +49,17 @@ and join the list with the glue between each of the elements.
     print("".join(wds))
 
 
-The list that you glue together (``wds`` in this example) is not modified.  Also, 
-you can use empty glue or multi-character strings as glue.
+The list that you glue together (``wds`` in this example) is not modified.  Also, you can use empty glue or multi-character strings as glue.
 
+.. admonition:: Modify the program ...
 
+   - Edit ch09_split1: 
+
+       On line 4 use the join method on a space character to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
+
+   - Edit ch09_split2: 
+
+       On line 4 use the join method on "ai" to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
 
 **Check your understanding**
 

@@ -24,15 +24,12 @@ We can also use the indices to access the items in an iterative fashion.
         print(fruits[position])
 
 
-In this example, each time through the loop, the variable ``position`` is used as an index into the
-list, printing the ``position``-eth element. Note that we used ``len`` as the upper bound on the range
-so that we can iterate correctly no matter how many items are in the list.
+In this example, each time through the loop, the variable ``position`` is used as an index into the list, printing the ``position``-eth element. Note that we used ``len`` as the upper bound on the range so that we can iterate correctly no matter how many items are in the list.
 
+.. note::
+   This technique should only be used when necessary. Whenever possible, the iterate by item technique (chp09_3a) should be used.
 
-
-Since lists are mutable, it is often desirable to traverse a list, modifying
-each of its elements as you go. The following code squares all the numbers from ``1`` to
-``5`` using iteration by position.
+Since lists are mutable, it is often desirable to traverse a list, modifying each of its elements as you go. The following code squares all the numbers from ``1`` to ``5`` using iteration by position.
 
 .. activecode:: chp09_for4
 
@@ -44,9 +41,7 @@ each of its elements as you go. The following code squares all the numbers from 
 
     print(numbers)
 
-Take a moment to think about ``range(len(numbers))`` until you understand how
-it works. We are interested here in both the *value* and its *index* within the
-list, so that we can assign a new value to it.
+Take a moment to think about ``range(len(numbers))`` until you understand how it works. We are interested here in both the *value* and its *index* within the list, so that we can assign a new value to it.
 
 
     
@@ -88,7 +83,9 @@ The above example, illustrates the accumulator pattern for lists: you start with
 
     print(squares)
 
-Use the list accumulator pattern to fill the squares list with the squares of numbers
+.. admonition:: Modify the program ...
+
+   Type instructions on lines 3 and 4 that use the list accumulator pattern to fill the ``squares` list with the squares of ``numbers``.
 
 
 .. index:: parameter

@@ -14,10 +14,7 @@
 List Methods
 ------------
 
-The dot operator can also be used to access built-in methods of list objects.  
-``append`` is a list method which adds the argument passed to it to the end of
-the list. Continuing with this example, we show several other list methods.  Many of them are
-easy to understand.  
+The dot operator can also be used to access built-in methods of list objects.  ``append`` is a list method which adds the argument passed to it to the end of the list. Continuing with this example, we show several other list methods.  Many of them are easy to understand.  
 
 .. activecode:: chp09_meth1
 
@@ -180,9 +177,15 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
 
 
 
-.. note::
+.. admonition:: Write the program ...
 
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
+   In the activecode workspace below:
+
+   - Make a list that contains the names of five of your friends (do this all on one line).
+
+   - Sort the list.
+   - Put the list in reverse order.
+   - Print the list.
 
    .. activecode:: scratch_09_03
 

@@ -24,6 +24,10 @@ We can perform **list traversal** by iterating over the items in a list.
     for afruit in fruits:     # by item
         print(afruit)
 
-It almost reads like natural language: For (every) fruit in (the list of) fruits,
-print (the name of the) fruit.
+It almost reads like natural language: For (every) fruit in (the list of) fruits, print (the name of the) fruit.
 
+.. admonition:: Extend the program ...
+
+   - On line 5, make a **nested** loop to iterate over the characters in ``afruit``.
+
+   - On line 6, print the current character from ``afruit``.
