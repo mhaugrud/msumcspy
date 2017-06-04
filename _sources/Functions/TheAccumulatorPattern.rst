@@ -21,25 +21,13 @@ The Accumulator Pattern
    http://media.interactivepython.org/thinkcsVideos/accumulatorpattern.mov
    http://media.interactivepython.org/thinkcsVideos/accumulatorpattern.webm
 
-In the previous example, we wrote a function that computes the square of a number.  The algorithm we used
-in the function was simple: multiply the number by itself.
-In this section we will reimplement the square function and use a different algorithm, one that relies on addition instead
-of multiplication.
+In the previous example, we wrote a function that computes the square of a number.  The algorithm we used in the function was simple: multiply the number by itself. In this section we will reimplement the square function and use a different algorithm, one that relies on addition instead of multiplication.
 
-If you want to multiply two numbers together, the most basic approach is to think of it as repeating the process of
-adding one number to itself.  The number of repetitions is where the second number comes into play.  For example, if we
-wanted to multiply three and five, we could think about it as adding three to itself five times.  Three plus three is six, plus three is nine, plus three is 12, and finally plus three is 15.  Generalizing this, if we want to implement
-the idea of squaring a number, call it `n`, we would add `n` to itself `n` times.
+If you want to multiply two numbers together, the most basic approach is to think of it as repeating the process of adding one number to itself.  The number of repetitions is where the second number comes into play.  For example, if we wanted to multiply three and five, we could think about it as adding three to itself five times.  Three plus three is six, plus three is nine, plus three is 12, and finally plus three is 15.  Generalizing this, if we want to implement the idea of squaring a number, call it `n`, we would add `n` to itself `n` times.
 
-Do this by hand first and try to isolate exactly what steps you take.  You'll
-find you need to keep some "running total" of the sum so far, either on a piece
-of paper, or in your head.  Remembering things from one step to the next is
-precisely why we have variables in a program.  This means that we will need some variable
-to remember the "running total".  It should be initialized with a value of zero.  Then, we need to **update** the "running total" the correct number of times.  For each repetition, we'll want
-to update the running total by adding the number to it.
+Do this by hand first and try to isolate exactly what steps you take.  You'll find you need to keep some "running total" of the sum so far, either on a piece of paper, or in your head.  Remembering things from one step to the next is precisely why we have variables in a program.  This means that we will need some variable to remember the "running total".  It should be initialized with a value of zero.  Then, we need to **update** the "running total" the correct number of times.  For each repetition, we'll want to update the running total by adding the number to it.
 
-In words we could say it this way.  To square the value of `n`, we will repeat the process of updating a running total `n` times.  To update the running total, we take the old value of the "running total" and add `n`.  That sum becomes the new
-value of the "running total".
+In words we could say it this way.  To square the value of `n`, we will repeat the process of updating a running total `n` times.  To update the running total, we take the old value of the "running total" and add `n`.  That sum becomes the new value of the "running total".
 
 Here is the program in activecode.  Note that the function definition is the same as it was before.  All that has changed
 is the details of how the squaring is done.  This is a great example of "black box" design.  We can change out the details inside of the box and still use the function exactly as we did before.
@@ -48,6 +36,7 @@ is the details of how the squaring is done.  This is a great example of "black b
 .. activecode:: sq_accum1
 
     def square(x):
+
         runningtotal = 0
         for counter in range(x):
             runningtotal = runningtotal + x
@@ -68,9 +57,7 @@ In the program above, notice that the variable ``runningtotal`` starts out with 
 
 
 This pattern of iterating the updating of a variable is commonly
-referred to as the **accumulator pattern**.  We refer to the variable as the **accumulator**.  This pattern will come up over and over again.  Remember that the key
-to making it work successfully is to be sure to initialize the variable before you start the iteration.
-Once inside the iteration, it is required that you update the accumulator.
+referred to as the **accumulator pattern**.  We refer to the variable as the **accumulator**.  This pattern will come up over and over again.  Remember that the key to making it work successfully is to be sure to initialize the variable before you start the iteration. Once inside the iteration, it is required that you update the accumulator.
 
 **The General Accumulator Pattern**
 
@@ -100,13 +87,13 @@ Here is the same program in codelens.  Step through the function and watch the "
 
 
 
-.. admonition:: What would happen?
+.. admonition:: Modify the program ...
 
-   What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it in the workspace below**.
+   What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it in the activecode workspace below**.
 
    It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. Then **properly initialize the accumulator variable**.
 
-   Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 4 to get the square of ``x``? **Change line 3 to repeat the correct number of times**.
+   Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 5 to get the square of ``x``? **Change line 4 to repeat the correct number of times**.
 
 .. activecode:: scratch_05_04
 

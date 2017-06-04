@@ -14,16 +14,11 @@
 Tuples as Return Values
 -----------------------
 
-A function can only return a single value. However, we may want to return multiple values. We may want to
-know some batsman's highest and lowest score, or we want to find the mean and the standard 
-deviation, or we want to know the year, the month, and the day, or, if we're doing
-some ecological modeling, we may want to know the number of rabbits and the number
-of wolves on an island at a given time.
+A function can only return a single value. However, we may want to return multiple values. We may want to know some batsman's highest and lowest score, or we want to find the mean and the standard deviation, or we want to know the year, the month, and the day, or, if we're doing some ecological modeling, we may want to know the number of deer and the number of wolves on an island at a given time.
 
 We can overcome this limitation by using a tuple as the return value.  A tuple is a group of items, separated by commas, and surrounded by parentheses. For example, (9,11,2001) or ('December',25).  A single tuple can hold multiple elements. 
 
-For example, we could write a function that returns both the area and the circumference
-of a circle of radius r.
+For example, we could write a function that returns both the area and the circumference of a circle of radius r.
 
 .. activecode:: chp09_tuple3
 
@@ -34,11 +29,15 @@ of a circle of radius r.
         a = 3.14159 * r * r
         return (c, a)
 
-    result = circleInfo(10)
+    result = circleInfo(10) 
+    print(result)
     (circum, area) = circleInfo(10)
-    print(result, circum, area)
+    print(circum, area)
 
 
+In lines 7 and 8 ``result`` is a tuple that contains two elements.
+
+On line 9 circleInfo still returns a tuple but we **unpack** it into two separate variables.
 
 
 .. note::

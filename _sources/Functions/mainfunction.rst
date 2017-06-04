@@ -91,9 +91,11 @@ The activecode below defines two simple functions and a main.
 .. activecode:: ch04_adv
 
     def squareit(n):
+
         return n * n
         
     def cubeit(n):
+
         return n*n*n
         
     def main():
