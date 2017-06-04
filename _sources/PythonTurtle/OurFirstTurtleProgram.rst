@@ -14,16 +14,9 @@
 Our First Turtle Program
 ------------------------
 
-Let's try a couple of lines of Python code to create a new turtle and
-start drawing a simple figure like a rectangle.
-We will refer to our first turtle using the variable name alex, but remember that you can choose any name you wish as long
-as you follow the naming rules
-from the previous chapter.
+Let's try a couple of lines of Python code to create a new turtle and start drawing a simple figure like a rectangle. We will refer to our first turtle using the variable name alex, but remember that you can choose any name you wish as long as you follow the naming rules from the previous chapter.
 
-The program as shown will only draw the first two sides of the rectangle.
-After line 4 you will have a straight line going from the center of the
-drawing canvas towards the right.  After line 6, you will have a canvas with a
-turtle and a half drawn rectangle.  Press the run button to try it and see.
+The program as shown will only draw the first two sides of the rectangle. After line 4 you will have a straight line going from the center of the drawing canvas towards the right.  After line 6, you will have a canvas with a turtle and a half drawn rectangle.  Press the run button to try it and see.
 
 .. activecode:: ch03_1
     :tour_1: "Overall Tour"; 1-6: Example01_Tour01_Line01; 3: Example01_Tour01_Line02; 4: Example01_Tour01_Line03; 5: Example01_Tour01_Line04; 6: Example01_Tour01_Line05;
@@ -42,29 +35,18 @@ turtle and a half drawn rectangle.  Press the run button to try it and see.
 
 Here are a couple of things you'll need to understand about this program.
 
-The first line tells Python to load a **module** named ``turtle``.  That module
-brings us two new types that we can use: the ``Turtle`` type, and the
-``Screen`` type.  The dot notation ``turtle.Turtle`` means *"The Turtle type
-that is defined within the turtle module"*.   (Remember that Python is case
-sensitive, so the module name, ``turtle``, with a lowercase `t`, is different from the type
-``Turtle`` because of the uppercase `T`.)
+The first line tells Python to load a **module** named `turtle``.  That module brings us two new types that we can use: the ``Turtle`` type, and the ``Screen`` type.  The dot notation ``turtle.Turtle`` means *"The Turtle type that is defined within the turtle module"*.   (Remember that Python is case sensitive, so the module name, ``turtle``, with a lowercase `t`, is different from the type ``Turtle`` because of the uppercase `T`.)
 
-We then create and open what the turtle module calls a screen (we would
-prefer to call it a window, or in the case of this web version of Python
-simply a canvas), which we assign to variable `wn`. Every window
-contains a **canvas**, which is the area inside the window on which we can draw.
+We then create and open what the turtle module calls a screen (we would prefer to call it a window, or in the case of this web version of Python simply a canvas), which we assign to variable `wn`. Every window contains a **canvas**, which is the area inside the window on which we can draw.
 
-In line 3 we create a turtle. The variable `alex` is made to refer to this
-turtle.   These first three lines set us up so that we are ready to do some drawing.
+In line 3 we create a turtle. The variable `alex` is made to refer to this turtle. These first three lines set us up so that we are ready to do some drawing.
 
-In lines 4-6, we instruct the **object** alex to move and to turn. We do this
-by **invoking** or activating alex's **methods** --- these are the
-instructions that all turtles know how to respond to.
+In lines 4-6, we instruct the **object** alex to move and to turn. We do this by **invoking** or activating alex's **methods** --- these are the instructions that all turtles know how to respond to.
 
 
 .. admonition:: Modify the program ...
 
-   Starting on line 7, adding the commands necessary to have *alex* complete the rectangle.
+   Starting on line 7, add the commands necessary to have *alex* complete the rectangle.
 
 **Check your understanding**
 
@@ -168,18 +150,9 @@ screen until we click on it.
 
 .. admonition:: Extend this program ...
 
-    #. Modify this program so that before it creates the window, it prompts
-       the user to enter the desired background color. It should store the
-       user's responses in a variable, and modify the color of the window
-       according to the user's wishes.
-       (Hint: you can find a list of permitted color names at
-       http://www.w3schools.com/html/html_colornames.asp.  It includes some quite
-       unusual ones, like "PeachPuff"  and "HotPink".)
+    #. Modify this program so that before it creates the window, it prompts the user to type the desired background color. It should store the user's response in a variable, and modify the color of the window according to the user's wishes. (Hint: you can find a list of permitted color names at  http://www.w3schools.com/html/html_colornames.asp.  It includes some quite unusual ones, like "PeachPuff"  and "HotPink".)
     #. Do similar changes to allow the user, at runtime, to set tess' color.
-    #. Do the same for the width of tess' pen.  *Hint:* your dialog with the
-       user will return a string, but tess' ``pensize`` method
-       expects its argument to be an ``int``.  That means you need to convert
-       the string to an int before you pass it to ``pensize``.
+    #. Do the same for the width of tess' pen.  *Hint:* your dialog with the user will return a string, but tess' ``pensize`` method expects its argument to be an ``int``.  That means you need to make an int from the string before you pass it to ``pensize``.
 
 
 **Check your understanding**

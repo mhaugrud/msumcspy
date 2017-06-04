@@ -33,7 +33,7 @@ In Python, the **for** statement allows us to write programs that implement iter
     :tour_1: "Overall Tour"; 1-2: Example04_Tour01_Line01; 2: Example04_Tour01_Line02; 1: Example04_Tour01_Line03;
 
     for name in ["Adam", "Seth", "Enosh", "Kenan", "Mahalalel", "Jared", "Enoch", "Methuselah", "Lamech", "Noah"]:
-        print("Hi", name, "Please come to my party on Saturday!")
+        print("Hi", name, "Please come to my party!")
 
 
 Take a look at the output produced when you press the ``run`` button.  There is one line printed for each friend.  Here's how it works:

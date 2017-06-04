@@ -40,17 +40,18 @@ When more than one operator appears in an expression, the order of evaluation de
 #. Operators with the *same* precedence are evaluated from left-to-right. In algebra we say they are *left-associative*. So in the expression ``6-3+2``, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been ``6-(3+2)``, which is 1.
 
 .. note::
-   The acronym PEMDAS is a useful way to remember the order of operations:
+   The acronym PEMDAS is a useful way to remember the order of operations.
 
-  (The acronym PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don't be misled.  Subtraction and addition are at the same precedence, and the left-to-right rule applies.)
+  The acronym PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don't be misled.  Subtraction and addition are at the same precedence, and the left-to-right rule applies.
 
    Due to some historical quirk, an exception to the left-to-right left-associative rule is the exponentiation operator `**`. A useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
 
-    .. activecode:: ch02_23
-        :nocanvas:
 
-        print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
-        print((2 ** 3) ** 2)   # use parentheses to force the order you want!
+.. activecode:: ch02_23
+   :nocanvas:
+
+   print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
+   print((2 ** 3) ** 2)   # use parentheses to force the order you want!
 
 
 .. admonition:: Extend the program ...
