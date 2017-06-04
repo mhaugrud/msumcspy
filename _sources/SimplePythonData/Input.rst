@@ -61,10 +61,14 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
 
 .. admonition:: Modify the program ...
 
-   - In line 1 the input function is used which produces a string output. In line 2 we make an integer from this string. It is important to see that both of these steps must be performed. However, we generally combine them in one statement.
-      - In line 1, change ``str_seconds`` to ``total_secs``, type ``int(`` between ``=`` and ``input``, and type ``)`` at the end of the line.
-      - Delete (or comment out) line 2.
-      - The program still runs the same. What you did in line 1 is called **nesting**, putting one thing inside of another. In this case, you placed the input function inside of the int function.
+   In line 1 the input function is used which produces a string output. In line 2 we make an integer from this string. It is important to see that both of these steps must be performed. However, we generally combine them in one statement.
+
+   - In line 1, change ``str_seconds`` to ``total_secs``, type ``int(`` between ``=`` and ``input``, and type ``)`` at the end of the line.
+
+   - Comment out line 2.
+
+   - The program still runs the same. What you did in line 1 is called **nesting**, putting one thing inside of another. In this case, you placed the input function inside of the int function.
+
    - On line 10, type a print function to display the **sum** of these three terms: hours times 3600, minutes times 60, and sec_finally_remaining. If you typed this correctly, line 10 will display the number you entered in line 1.
    
 
