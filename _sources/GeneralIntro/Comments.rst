@@ -32,18 +32,19 @@ Here is a new version of *Hello, World!*.
     # Written by Joe Soap, December 25, 2010.
     # Anyone may freely copy or modify this program.
     #---------------------------------------------------
+    print("Joe Soap")         # Isn't this easy!
+    print("Hello, World!")
 
-    print("Hello, World!")     # Isn't this easy!
-
-Notice that when you run this program, it still only prints the phrase Hello, World!  None of the comments appear.
-You'll also notice that we've left a blank line in the program.  Blank lines
-are also ignored by the interpreter, but comments and blank lines can make your
-programs much easier for humans to parse.  Use them liberally!
+Notice that when you run this program, it still only prints the phrase Hello, World!  None of the comments appear. You'll also notice that we've left a blank line in the program.  Blank lines
+are also ignored by the interpreter, but comments and blank lines can make your programs much easier for humans to parse.  Use them liberally!
 
 .. admonition:: Modify the program ...
 
-   - Change **Joe Soap, December 25, 2010** to your name and the current date
-   - Change **easy** (in line 7) to fun
+   - Change **both** instances of ``Joe Soap`` to *your name*.
+   - Change ``December 25, 2010`` to the current date.
+   - Change ``easy`` (in line 6) to ``fun``. Run.
+   - Type ``#`` at the beginning of line 7. Run and notice that ``Hello, World!`` is not displayed.
+   We **comment out** a line when we change an executable line into a comment. This technique is useful to prevent a line from executing but we don't want to permanently delete it.
 
 
 **Check your understanding**
