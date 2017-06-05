@@ -12,6 +12,7 @@ Tuples and Dictionaries
    Dictionaryoperations.rst
    Dictionarymethods.rst
    Aliasingandcopying.rst
+   CountingLetters.rst
    Sparsematrices.rst
    Glossary.rst
    Exercises.rst

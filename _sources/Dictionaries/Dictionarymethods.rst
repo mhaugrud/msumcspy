@@ -32,9 +32,9 @@ The ``keys`` method returns what Python 3 calls a **view** of its underlying key
 We can iterate over the view or turn the view into a 
 list by using the ``list`` conversion function.
 
-.. activecode:: chp12_dict6
+.. activecode:: tdf
     
-    inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}  
+    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
   
     for akey in inventory.keys():     # the order in which we get the keys is not defined
        print("Got key", akey, "which maps to value", inventory[akey])     
@@ -43,29 +43,24 @@ list by using the ``list`` conversion function.
     print(ks)
 
     
-It is so common to iterate over the keys in a dictionary that you can
-omit the ``keys`` method call in the ``for`` loop --- iterating over
-a dictionary implicitly iterates over its keys.
+It is so common to iterate over the keys in a dictionary that you can omit the ``keys`` method call in the ``for`` loop --- iterating over a dictionary implicitly iterates over its keys.
 
-.. activecode:: chp12_dict7
+.. activecode:: tdg
     
-    inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}  
+    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
+  
     
     for k in inventory:     
        print("Got key", k)
 
  
-As we saw earlier with strings and lists, dictionary methods use dot notation,
-which specifies the name of the method to the right of the dot and the name of
-the object on which to apply the method immediately to the left of the dot. The empty
-parentheses in the case of ``keys`` indicate that this method takes no parameters.
+As we saw earlier with strings and lists, dictionary methods use dot notation, which specifies the name of the method to the right of the dot and the name of the object on which to apply the method immediately to the left of the dot. The empty parentheses in the case of ``keys`` indicate that this method takes no parameters.
 
-The ``values`` and ``items`` methods are similar to ``keys``. They return  view objects which can be turned
-into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.
+The ``values`` and ``items`` methods are similar to ``keys``. They return  view objects which can be turned into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.
 
-.. activecode:: chp12_dict8
+.. activecode:: tdh
     
-    inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}  
+    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}  
     
     print(list(inventory.values()))
     print(list(inventory.items()))
@@ -76,15 +71,15 @@ into lists or iterated over directly.  Note that the items are shown as tuples c
     for k in inventory:
         print("Got", k, "that maps to", inventory[k])
     
-Note that tuples are often useful for getting both the key and the value at the same
-time while you are looping.  The two loops do the same thing.
+Note that tuples are often useful for getting both the key and the value at the same time while you are looping.  The two loops do the same thing.
 
     
 The ``in`` and ``not in`` operators can test if a key is in the dictionary:
 
-.. activecode:: chp12_dict9
+.. activecode:: tdi
     
-    inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
+    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
+
     print('apples' in inventory)
     print('cherries' in inventory)
 
@@ -94,17 +89,16 @@ The ``in`` and ``not in`` operators can test if a key is in the dictionary:
         print("We have no bananas")
      
 
-This operator can be very useful since looking up a non-existent key in a
-dictionary causes a runtime error.
+This operator can be very useful since looking up a non-existent key in a dictionary causes a runtime error.
 
 The ``get`` method allows us to access the value associated with a key, similar to the ``[ ]`` operator.
 The important difference is that ``get`` will not cause a runtime error if the key is not present.  It
 will instead return None.  There exists a variation of ``get`` that allows a second parameter that serves as an alternative return value
 in the case where the key is not present.  This can be seen in the final example below.  In this case, since "cherries" is not a key, return 0 (instead of None).
 
-.. activecode:: chp12_dict10
+.. activecode:: tdj
     
-    inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
+    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
     
     print(inventory.get("apples"))
     print(inventory.get("cherries"))
@@ -118,7 +112,7 @@ in the case where the key is not present.  This can be seen in the final example
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: scratch_11_02
+    .. activecode:: tdk
 
 
 **Check your understanding**
@@ -144,8 +138,22 @@ in the case where the key is not present.  This can be seen in the final example
      keylist.sort()
      print(keylist[3])
    
+
+.. admonition:: Modify the program ...
+
+   - On lines 2 and 3, type instructions make a list of sorted keys (similar to the above multiple choice question
+
+   - Edit line 4 to iterate over the sorted list
    
+   .. activecode:: tdl
+    
+      inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
+      
+      
+      for akey in inventory.keys():     
+          print("key:", akey, "value:", inventory[akey])     
    
+
 .. mchoice:: test_question11_3_2
    :answer_a: 2
    :answer_b: 0.5

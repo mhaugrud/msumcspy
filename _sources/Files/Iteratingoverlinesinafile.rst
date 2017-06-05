@@ -90,7 +90,7 @@ construct a simple sentence.
 
 
 
-.. activecode:: files_for
+.. activecode:: fia
     :nocodelens:
     :available_files: qbdata.txt
 

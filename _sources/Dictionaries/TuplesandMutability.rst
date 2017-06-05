@@ -63,7 +63,7 @@ bits to make the new tuple.  So ``julia`` has a new recent film, and we might wa
 to change her tuple.  We can easily slice off the parts we want and concatenate them with
 the new tuple.
 
-.. activecode:: ch09_tuple1
+.. activecode:: tda
 
 
     julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
@@ -80,7 +80,7 @@ To create a tuple with a single element (but you're probably not likely
 to do that too often), we have to include the final comma, because without
 the final comma, Python treats the ``(5)`` below as an integer in parentheses:
 
-.. activecode:: chp09_tuple2
+.. activecode:: tdb
 
     tup = (5,)
     print(type(tup))
