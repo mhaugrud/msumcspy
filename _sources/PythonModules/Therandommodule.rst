@@ -26,7 +26,7 @@ We often want to use **random numbers** in programs.  Here are a few typical use
 Python provides a module ``random`` that helps with tasks like this.  You can
 take a look at it in the documentation.  Here are the key things we can do with it.
 
-.. activecode:: chmodule_rand
+.. activecode:: slc
 
     import random
 
@@ -61,7 +61,7 @@ the range [0.0, 5.0).  Once more, these are uniformly distributed numbers --- nu
 close to 0 are just as likely to occur as numbers close to 0.5, or numbers close to 1.0.
 If you continue to press the run button you will see random values between 0.0 and up to but not including 5.0.
 
-.. activecode:: chmodule_rand2
+.. activecode:: sld
 
     import random
 
@@ -148,7 +148,7 @@ get random behavior each time you execute.
 
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-   .. activecode:: scratch_04
+   .. activecode:: sle
 
 
 

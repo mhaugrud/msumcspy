@@ -29,7 +29,7 @@ One of the most common forms of reassignment is an **update** where the new valu
 
 This means get the current value of x, add one, and then update x with the new value.  The new value of x is the old value of x plus 1.  Although this assignment statement may look a bit strange, remember that executing assignment is a two-step process.  First, evaluate the right-hand side expression.  Second, let the variable name on the left-hand side refer to this new resulting object.  The fact that ``x`` appears on both sides does not matter.  The semantics of the assignment statement makes sure that there is no confusion as to the result.
 
-.. activecode:: sdy
+.. activecode:: sdz
 
     x = 6        # initialize x
     print(x)
@@ -123,7 +123,7 @@ a variable, which means the same as incrementing it by 1.
 
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-   .. activecode:: sdz
+   .. activecode:: sdza
 
 
 

@@ -40,7 +40,7 @@ Again we will use one of our earlier functions:
 
 Wrapping that up in a function, we get:
 
-.. activecode:: ch06_newarea
+.. activecode:: fnr
     
     def distance(x1, y1, x2, y2):
         dx = x2 - x1

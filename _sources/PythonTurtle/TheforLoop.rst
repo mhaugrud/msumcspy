@@ -28,7 +28,7 @@ A basic building block of all programs is to be able to repeat some code over an
 
 In Python, the **for** statement allows us to write programs that implement iteration.   As a simple example, let's say we have some friends, and we'd like to send them each an email inviting them to our party.  We don't quite know how to send email yet, so for the moment we'll just print a message for each friend.
 
-.. activecode:: ch03_4
+.. activecode:: tgd
     :nocanvas:
     :tour_1: "Overall Tour"; 1-2: Example04_Tour01_Line01; 2: Example04_Tour01_Line02; 1: Example04_Tour01_Line03;
 

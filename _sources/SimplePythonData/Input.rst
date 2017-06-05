@@ -34,7 +34,7 @@ The input function allows the user to provide a **prompt string**.  When the fun
 shown. The user of the program can enter the name and press `return`. When this happens the text that has been entered is returned from the `input` function, and in this case assigned to the variable `name`.  Make sure you run this example a number
 of times and try some different names in the input box that appears.
 
-.. activecode:: sdt
+.. activecode:: sdu
 
     name = input("Please enter your name: ")
     print("Hello", name)
@@ -43,7 +43,7 @@ It is very important to note that the ``input`` function returns a **string** va
 
 To modify our previous program, we will add an input statement to allow the user to enter the number of seconds.  Then we will convert that string to an integer.  From there the process is the same as before.  To complete the example, we will print some appropriate output.
 
-.. activecode:: sdu
+.. activecode:: sdv
 
     str_seconds = input("Please enter the number of seconds you wish to convert")
     total_secs = int(str_seconds)

@@ -49,7 +49,7 @@ to the caller.
 On the other hand, it is legal for a function to access a global variable.  However, this is considered **bad form** by nearly all programmers and should be avoided.  Look at the following,
 nonsensical variation of the square function.
 
-.. activecode:: badsquare_1
+.. activecode:: fnk
 
     def badsquare(x):
         y = x ** power
@@ -62,11 +62,11 @@ nonsensical variation of the square function.
 
 .. admonition:: Fix the error ...
 
-   1. Comment out line 8 (type # in front of it) so there is not a runtime error. Then run
+   - Comment out line 8 (type # in front of it) so there is not a runtime error. Then run
 
-   2. In line 5, change 2 to 3. Then run. The function is no longer squaring is it?
+   - In line 5, change 2 to 3. Then run. The function is no longer squaring is it?
 
-   3. On line 9, type a comment that explains why this function is bad.
+   - On line 9, type a comment that explains why this function is bad.
 
 Although the ``badsquare`` function works, it is silly and poorly written.  We have done it here to illustrate an important rule about how variables are looked up in Python. First, Python looks at the variables that are defined as local variables in
 the function.  We call this the **local scope**.  If the variable name is not found in the local scope, then Python looks at the global variables, or **global scope**.  This is exactly the case illustrated in the code above. ``power`` is not found locally in ``badsquare`` but it does exist globally. The appropriate way to write this function would be to pass power as a parameter.

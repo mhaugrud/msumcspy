@@ -21,7 +21,7 @@ Random Numbers
 
 Before we begin writing code for this lab, we need to introduce one more Python module.  The ``random`` module allows us to generate random numbers. It's easy to use:
 
-.. activecode:: lab01_1
+.. activecode:: tgk
    :nocanvas:
 
    import random
@@ -62,7 +62,7 @@ Here is a possible sequence of steps that we will need to accomplish:
 
 Here is the Python code for the first 4 steps above
 
-.. activecode:: lab01_2
+.. activecode:: tgl
    :nocodelens:
 
    import turtle              # 1.  import the modules

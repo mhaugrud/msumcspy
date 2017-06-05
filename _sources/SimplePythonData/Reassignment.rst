@@ -24,7 +24,7 @@ Reassignment
 
 As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
 
-.. activecode:: sdw
+.. activecode:: sdx
 
     bruce = 5
     print(bruce)
@@ -44,7 +44,7 @@ Here is what **reassignment** looks like in a reference diagram:
 
 It is important to note that in mathematics, a statement of equality is always true.  If ``a is equal to b`` now, then ``a will always equal to b``. In Python, an assignment statement can make two variables refer to the same object and therefore have the same value.  They appear to be equal.  However, because of the possibility of reassignment, they don't have to stay that way:
 
-.. activecode:: sdx
+.. activecode:: sdy
 
     a = 5
     b = a    # after executing this line, a and b are now equal

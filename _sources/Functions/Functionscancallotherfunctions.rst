@@ -102,7 +102,7 @@ our square.
 
 Here is the entire example with the necessary set up code.
 
-.. activecode:: ch04_3
+.. activecode:: fnm
     :nocodelens:
 
     import turtle

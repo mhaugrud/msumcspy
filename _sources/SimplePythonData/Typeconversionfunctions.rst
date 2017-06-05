@@ -20,7 +20,7 @@ will take their argument and (attempt to) create an `int`, `float` and `str` res
 The ``int`` function can take a floating point number or a string, and make an int from it. For floating point numbers, it *discards* the decimal portion of the number - a process we call *truncation towards zero* on the number line.
 Let us see this in action:
 
-.. activecode:: c2j
+.. activecode:: sdj
     :nocanvas:
 
     print(3.14, int(3.14))

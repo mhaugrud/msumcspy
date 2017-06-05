@@ -80,7 +80,7 @@ squares.  It would make sense if we did not have to duplicate all the steps each
 
 Here is a program containing a function to capture this idea.  Give it a try.
 
-.. activecode:: ch04_1
+.. activecode:: fna
     :nocodelens:
 
     import turtle
@@ -143,7 +143,7 @@ one of our turtles to draw a square and then we can move the turtle and have it 
 different location.  Note that we lift the tail so that when ``alex`` moves there is no trace.  We put the tail
 back down before drawing the next square.  Make sure you can identify both invocations of the ``drawSquare`` function.
 
-.. activecode:: ch04_1a
+.. activecode:: fnb
     :nocodelens:
 
     import turtle
@@ -174,7 +174,7 @@ In the next example, we've changed the ``drawSquare``
 function a little and we get ``tess`` to draw 15 squares with some variations.  Once the function has
 been defined, we can call it as many times as we like with whatever actual parameters we like.
 
-.. activecode:: ch04_2
+.. activecode:: fnc
     :nocodelens:
 
     import turtle
@@ -206,7 +206,7 @@ been defined, we can call it as many times as we like with whatever actual param
 
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-   .. activecode:: scratch_05_01
+   .. activecode:: fnd
 
 
 

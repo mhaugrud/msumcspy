@@ -28,7 +28,7 @@ the ``turtle`` module.  Recall that once we import the module, we can use things
 that are defined inside.
 
 
-.. activecode:: chmod_01
+.. activecode:: sla
     :nocodelens:
 
     import turtle            # allows us to use the turtles library

@@ -88,7 +88,7 @@ range(start,stop+1).
 Here are a two examples for you to run.
 
 
-.. activecode:: ch03_5
+.. activecode:: tgh
     :nocanvas:
 
     print(range(4))
@@ -119,7 +119,7 @@ and count by 2's.  So if we wanted the first 10 even numbers we would use
 ``range(start, stop, step)``.  You can also create a sequence of numbers that
 starts big and gets smaller by using a negative value for the step parameter.
 
-.. activecode:: ch03_6
+.. activecode:: tgi
     :nocanvas:
 
     print(range(0, 19, 2))

@@ -33,7 +33,7 @@ Here is the program in activecode.  Note that the function definition is the sam
 is the details of how the squaring is done.  This is a great example of "black box" design.  We can change out the details inside of the box and still use the function exactly as we did before.
 
 
-.. activecode:: sq_accum1
+.. activecode:: fnk
 
     def square(x):
 
@@ -95,7 +95,7 @@ Here is the same program in codelens.  Step through the function and watch the "
 
    Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 5 to get the square of ``x``? **Change line 4 to repeat the correct number of times**.
 
-.. activecode:: scratch_05_04
+.. activecode:: fnl
 
    def square(x):
        '''raise x to the second power'''

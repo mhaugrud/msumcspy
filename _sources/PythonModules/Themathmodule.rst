@@ -24,7 +24,7 @@ As we noted above, when we ``import math``, we create a reference to a module ob
 Here are some items from the math module in action.  If you want more information, you can check out the
 `Math Module <http://docs.python.org/py3k/library/math.html#module-math>`_ Python Documentation.
 
-.. activecode:: chmodule_02
+.. activecode:: slb
 
     import math
 

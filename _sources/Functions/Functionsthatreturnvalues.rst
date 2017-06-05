@@ -16,7 +16,7 @@ Functions that Return Values
 
 Most functions require arguments, values that control how the function does its job. For example, if you want to find the absolute value of a number, you have to indicate what the number is. Python has a built-in function for computing the absolute value:
 
-.. activecode:: ch04_4
+.. activecode:: fne
     :nocanvas:
 
     print(abs(5))
@@ -31,7 +31,7 @@ Some functions take more than one argument. For example the math module contains
 .. Inside the function,
 .. the values that are passed get assigned to variables called **parameters**.
 
-.. activecode:: ch04_5
+.. activecode:: fnf
     :nocanvas:
 
     import math
@@ -45,7 +45,7 @@ Some functions take more than one argument. For example the math module contains
 
 Another built-in function that takes more than one argument is ``max``.
 
-.. activecode:: ch04_6
+.. activecode:: fng
     :nocanvas:
 
     print(max(7, 11))
@@ -74,7 +74,7 @@ How do we write our own fruitful function?  Let's start by creating a very simpl
 
 .. image:: Figures/squarefun.png
 
-.. activecode:: ch04_square
+.. activecode:: fnh
 
     def square(x):
 
@@ -140,7 +140,7 @@ Finally, there is one more aspect of function return values that should be noted
 function returns.
 
 
-.. activecode:: ch04_clsquare_bad
+.. activecode:: fni
 
     def square(x):
         y = x * x
@@ -169,7 +169,7 @@ When we write functions that return values, we intend to use them over and over 
 
 To write a unit test, we must know the correct result when calling the function with a specific input. 
 
-.. activecode:: ch04_unittest
+.. activecode:: fnj
 
     def square(x):
         '''raise x to the second power'''
