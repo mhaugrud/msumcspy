@@ -18,7 +18,7 @@ We have already seen that boolean values result from the evaluation of boolean e
 expression evaluation can be returned by a function (using the ``return`` statement),
 functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:
 
-.. activecode:: ch06_boolfun1
+.. activecode:: bol
 
     def isDivisible(x, y):
         '''is x evenly divisible by y?'''
@@ -64,7 +64,7 @@ but the extra comparison is  not necessary.  The following example shows the ``i
 descriptive the code is when we move the testing details into a boolean function.  Try it
 with a few other actual parameters to see what is printed.
 
-.. activecode:: ch06_boolfun2
+.. activecode:: bom
 
     def isDivisible(x, y):
         '''is x evenly divisible by y?'''
@@ -134,7 +134,7 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
 
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-   .. activecode:: scratch_06_03
+   .. activecode:: bon
 
 
 

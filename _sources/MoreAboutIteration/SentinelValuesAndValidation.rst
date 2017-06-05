@@ -21,7 +21,7 @@ Validating Input
 You can use a ``while`` loop when you want to **validate** input;  when you want to make sure the user has entered valid input for a prompt. Let's say you want a function that asks a yes-or-no question. In this case, you want to make sure that the person using your program enters either a y for yes or n for no. 
 Here is a program that uses a ``while`` loop to keep asking until it receives a valid answer. When you run the following code, try typing something other than y or n to see how the code reacts:
     
-.. activecode:: ch07_validation
+.. activecode:: ito
 
     response = 'x' # initial value ensures loop body will execute
     while not(response == 'y' or response == 'n'):    
@@ -36,7 +36,7 @@ Here is a program that uses a ``while`` loop to keep asking until it receives a 
 
 .. admonition:: Modify the program ...
 
-   In line 2, change ``not(response == 'y' or response == 'n')`` to ``response != 'y' and response != 'n'``. The program will still work the same. Do a web search on De Morgan's Law.
+   In line 2, change ``not(response == 'y' or response == 'n')`` to ``response != 'y' and response != 'n'``. The program will still work the same. (For more about this, do a web search on De Morgan's Law.)
        
 Sentinel Values
 ~~~~~~~~~~~~~~~
@@ -63,7 +63,7 @@ The pseudocode (code written half in English, half in Python) for the body of th
 This pseudocode has no option to set ``moreItems`` to ``False``, so it would run forever. In a grocery store, there's a little
 plastic bar that you put after your last item to separate your groceries from those of the person behind you; that's how the clerk knows you have no more items. We don't have a "little plastic bar" data type in Python, so we'll do the next best thing: we will use a ``price`` of zero to mean "this is my last item." In this program, zero is a **sentinel value**, a value used to signal the end of the loop. Here's the code:
     
-.. activecode:: ch07_sentinel
+.. activecode:: itp
 
     def checkout():
         total = 0

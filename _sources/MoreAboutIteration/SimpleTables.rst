@@ -34,7 +34,7 @@ Although a power of 2 table is not as useful as it once was, it still makes a go
 example of iteration. The following program outputs a sequence of values in the
 left column and 2 raised to the power of that value in the right column:
 
-.. activecode:: ch07_table1
+.. activecode:: ita
 
                                  #
                                  #
@@ -112,7 +112,7 @@ the output from this nested iteration will show that for each value of ``i``, al
 
 Here is the same example in activecode.  Try it.  Note that the value of ``i`` stays the same while the value of ``j`` changes.  The inner iteration, in effect, is moving faster than the outer iteration.
 
-.. activecode:: nested1
+.. activecode:: itb
 
     for i in range(5):
         for j in range(3):

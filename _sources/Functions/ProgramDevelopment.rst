@@ -52,7 +52,7 @@ that we can test it before we make it more complicated.
 To test the new function, we call it with sample values.
 
 
-.. activecode:: fnp
+.. activecode:: fnq
     
     def distance(x1, y1, x2, y2):
         return 0.0
@@ -97,7 +97,7 @@ should be 25).
 Finally, using the fractional exponent ``0.5`` to find the square root,
 we compute and return the result.
 
-.. activecode:: fnq
+.. activecode:: fnr
     
     def distance(x1, y1, x2, y2):
         dx = x2 - x1

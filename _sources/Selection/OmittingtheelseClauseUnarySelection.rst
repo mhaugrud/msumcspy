@@ -34,7 +34,7 @@ In this case, when the condition evaluates to ``True``, the statements are
 executed.  Otherwise the flow of execution continues to the statement after the body of the ``if``.
 
 
-.. activecode:: ch05_unaryselection
+.. activecode:: bof
 
     x = 10
     if x < 0:

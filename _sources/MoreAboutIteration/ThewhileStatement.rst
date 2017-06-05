@@ -37,7 +37,7 @@ In order to control the iteration, we must create a boolean expression that eval
 
 Here is a new version of the summation program that uses a while statement.
 
-.. activecode:: ch07_while1
+.. activecode:: iti
 
     def sumTo(aBound):
         """ Return the sum of 1+2+3 ... n """

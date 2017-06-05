@@ -27,7 +27,7 @@ conditions and change the behavior of the program accordingly. **Selection state
 also referred to as **conditional statements**, give us this ability. The simplest form of selection is the **if statement**.  
 This is sometimes referred to as **binary selection** since there are two possible paths of execution.
 
-.. activecode:: ch05_4
+.. activecode:: bod
 
     x = 15
 
@@ -77,7 +77,7 @@ String Comparison
 The comparison operators also work on strings. To see if two strings are equal you simply write a boolean
 expression using the equality operator.
 
-.. activecode:: ch08_comp1
+.. activecode:: boe
     
     word = "banana"
 

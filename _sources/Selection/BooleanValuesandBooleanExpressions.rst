@@ -29,7 +29,7 @@ There are only two **boolean values**.  They are ``True`` and ``False``.  Capita
 is important, since ``true`` and ``false`` are not boolean values (remember Python is case
 sensitive).
 
-.. activecode:: ch05_1
+.. activecode:: boa
 
     print(True)
     print(type(True))
@@ -42,7 +42,7 @@ sensitive).
     types shown below.
 
 
-.. activecode:: ch05_1a
+.. activecode:: bob
 
     print(type(True))
     print(type("True"))
@@ -51,7 +51,7 @@ A **boolean expression** is an expression that evaluates to a boolean value.
 The equality operator, ``==``, compares two values and produces a boolean value related to whether the
 two values are equal to one another.
 
-.. activecode:: ch05_2
+.. activecode:: boc
 
     x = 5
     y = 5

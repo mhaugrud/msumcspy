@@ -43,7 +43,7 @@ branch executes.
 
 Here is the same program using ``elif``.
 
-.. activecode:: sel4
+.. activecode:: boj
 
     x = 10
     y = 10
@@ -69,7 +69,7 @@ Here is the same program using ``elif``.
 
   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-  .. activecode:: scratch_06_02
+  .. activecode:: bok
 
 
 **Check your understanding**

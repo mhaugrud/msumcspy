@@ -1,4 +1,4 @@
-Python Modules
+Standard Library Modules
 ::::::::::::::
 
 .. toctree::

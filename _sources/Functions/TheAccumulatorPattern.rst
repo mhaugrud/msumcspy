@@ -33,7 +33,7 @@ Here is the program in activecode.  Note that the function definition is the sam
 is the details of how the squaring is done.  This is a great example of "black box" design.  We can change out the details inside of the box and still use the function exactly as we did before.
 
 
-.. activecode:: fnk
+.. activecode:: fnl
 
     def square(x):
 
@@ -86,16 +86,7 @@ Here is the same program in codelens.  Step through the function and watch the "
     print("The result of", toSquare, "squared is", squareResult)
 
 
-
-.. admonition:: Modify the program ...
-
-   What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  **Try it in the activecode workspace below**.
-
-   It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. Then **properly initialize the accumulator variable**.
-
-   Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 5 to get the square of ``x``? **Change line 4 to repeat the correct number of times**.
-
-.. activecode:: fnl
+.. activecode:: fnm
 
    def square(x):
        '''raise x to the second power'''
@@ -108,6 +99,15 @@ Here is the same program in codelens.  Step through the function and watch the "
    toSquare = 10
    squareResult = square(toSquare)
    print("The result of", toSquare, "squared is", squareResult)
+
+
+.. admonition:: Modify the program ...
+
+   What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  Make this change to the program and look at the output.
+
+   It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. **Properly initialize the accumulator variable** and run the program.
+
+   Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 5 to get the square of ``x``? **Change line 4 to repeat the correct number of times**. Now the program should produce the correct result.
 
 
 **Check your understanding**

@@ -20,7 +20,7 @@ We can overcome this limitation by using a tuple as the return value.  A tuple i
 
 For example, we could write a function that returns both the area and the circumference of a circle of radius r.
 
-.. activecode:: fns
+.. activecode:: fnt
 
     
     def circleInfo(r):
@@ -44,5 +44,5 @@ On line 9 circleInfo still returns a tuple but we **unpack** it into two separat
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: fnt
+    .. activecode:: fnu
 

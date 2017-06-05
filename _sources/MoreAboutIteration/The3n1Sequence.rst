@@ -23,7 +23,7 @@ terminates when ``n`` reaches 1.
 
 This Python function captures that algorithm.  Try running this program several times supplying different values for n.
 
-.. activecode:: ch07_indef1
+.. activecode:: itq
 
     def seq3np1(n):
         """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
@@ -93,7 +93,7 @@ Experimenting With the 3n+1 Sequence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. activecode:: seq3nlab1
+.. activecode:: itr
 
     def seq3np1(n):
         """ Print the 3n+1 sequence from n, terminating when it reaches 1."""

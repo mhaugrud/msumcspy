@@ -81,7 +81,7 @@ In the example below, we first create a pixel with 45 units of red, 76 units of 
 We then print the current amount of red, change the amount of red, and finally, set the amount of blue to be
 the same as the current amount of green.
 
-.. activecode::  pixelex1a
+.. activecode::  itc
     :nocodelens:
 
     import image
@@ -153,7 +153,7 @@ on its basic color intensities.
 
 
 
-.. activecode::  pixelex1
+.. activecode::  itd
     :nocodelens:
 
     import image
@@ -228,7 +228,7 @@ The program below implements this algorithm using the previous image (luther.jpg
 Change the name of the file in the ``image.Image()`` call to see how these images look as negatives.  Also, note that there is an ``exitonclick`` method call at the very end which will close the window when you click on it.  This will allow you to "clear the screen" before drawing the next negative.
 
 
-.. activecode::  acimg_1
+.. activecode::  ite
     :nocodelens:
 
     import image
@@ -266,7 +266,7 @@ Finally, we need to replace the old pixel with the new pixel in our image. It is
 Try to change the program above so that the outer loop iterates over the columns and the inner loop iterates over the rows.  We still create a negative image, but you can see that the pixels update in a very different order.
 
 
-.. activecode::  acimg_2
+.. activecode::  itf
     :nocodelens:
 
     import image, time

@@ -41,7 +41,7 @@ The flow of control for this example can be seen in this flowchart illustration.
 
 Here is a complete program that defines values for ``x`` and ``y``.  Run the program and see the result.  Then change the values of the variables to change the flow of control.
 
-.. activecode:: sel2
+.. activecode:: boi
 
     x = 10
     y = 10

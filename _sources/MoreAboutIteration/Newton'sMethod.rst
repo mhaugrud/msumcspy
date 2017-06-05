@@ -27,7 +27,7 @@ Execute this algorithm a few times using your calculator.  Can you see why each 
 The following implementation of Newton's method requires two parameters.  The first is the value whose square root will be approximated.  The second is the number of times to iterate the
 calculation yielding a better result.
 
-.. activecode:: chp07_newtonsdef
+.. activecode:: itl
 
     def newtonSqrt(n, howmany):
         approx = 0.5 * n
@@ -53,7 +53,7 @@ enough to the previous one, we can write a function for computing the square roo
 
 This implementation, as shown below, uses a ``while`` condition to execute until the approximation is no longer changing.  Each time through the loop we compute a "better" approximation using the formula described earlier.  As long as the "better" is different, we try again.  Step through the program and watch the approximations get closer and closer.
 
-.. activecode:: chp07_sqrtwhile
+.. activecode:: itm
 
     def sqrt(n):
         approx = 0.5 * n
@@ -79,7 +79,7 @@ The following program adds up the reciprocals of powers of two.
 
 You may have studied this sequence in a math class and learned that the sum approaches but never reaches 2.0. That is true in theory. However, when we implement this summation in a program, we see something different. 
 
-.. activecode:: scratch_07_01
+.. activecode:: itn
 
     def sumTo():
         """ Return the sum of reciprocals of powers of 2 """

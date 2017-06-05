@@ -23,7 +23,7 @@ that is, if x is divisible by 2 *and also* divisible by 3.
 
 Finally, the ``not`` operator negates a boolean expression, so ``not  x > 0`` is true if ``x > 0`` is false, that is, if ``x`` is less than or equal to 0.
 
-.. activecode:: chp05_3
+.. activecode:: bog
 
     x = 5
     print(x < 0 or x > 10)
@@ -66,7 +66,7 @@ A truth table lists logical operations with all combinations of Boolean operands
 
   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-  .. activecode:: scratch_06_01
+  .. activecode:: boh
 
 
 

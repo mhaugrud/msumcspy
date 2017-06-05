@@ -58,7 +58,7 @@ return true would not be a good idea we will write our version to decide
 randomly.  Let's say that there is a 90% chance the turtle is still in the
 window and 10% that the turtle has escaped.
 
-.. activecode:: iter_randwalk1
+.. activecode:: itj
     :nocodelens:
 
     import random
@@ -135,7 +135,7 @@ clause.
 
 Here is the full version of our random walk program.
 
-.. activecode:: iter_randwalk2
+.. activecode:: itk
     :nocodelens:
 
     import random
