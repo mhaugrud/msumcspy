@@ -19,7 +19,7 @@ of items in the list).  However, since lists can have items which are themselves
 that ``len`` only returns the top-most length.  In other words, sublists are considered to be a single
 item when counting the length of the list.
 
-.. activecode:: chp09_01a
+.. activecode:: lib
 
     alist =  ["hello", 2.0, 5, [10, 20]]
     print(len(alist))

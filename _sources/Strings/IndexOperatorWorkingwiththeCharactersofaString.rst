@@ -27,7 +27,7 @@ index and so on.
 Note that the character at index 6 (or -8) is the blank character.
 
 
-.. activecode:: chp08_index1
+.. activecode:: stc
     
     school = "Luther College"
     m = school[2]

@@ -16,7 +16,7 @@ The ``in`` and ``not in`` operators
 
 The ``in`` operator tests if one string is a substring of another:
 
-.. activecode:: chp8_in1
+.. activecode:: sto
     
     print('p' in 'apple')
     print('i' in 'apple')
@@ -25,7 +25,7 @@ The ``in`` operator tests if one string is a substring of another:
 
 Note that a string is a substring of itself, and the empty string is a substring of any other string. (Also note that computer scientists like to think about these **boundary cases** quite carefully!) 
 
-.. activecode:: chp8_in2
+.. activecode:: stp
     
     print('a' in 'a')
     print('apple' in 'apple')
@@ -34,7 +34,7 @@ Note that a string is a substring of itself, and the empty string is a substring
     
 The ``not in`` operator returns the logical opposite result of ``in``.
 
-.. activecode:: chp8_in3
+.. activecode:: stq
 
     print('x' not in 'apple')
 

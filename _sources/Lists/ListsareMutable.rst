@@ -18,7 +18,7 @@ Unlike strings, lists are **mutable**.  This means we can change an item in a li
 it directly as part of the assignment statement. Using the indexing operator (square brackets) on the left side of an assignment, we can
 update one of the list items.
 
-.. activecode:: ch09_7
+.. activecode:: lig
     
     fruit = ["banana", "apple", "cherry"]
     print(fruit)
@@ -45,7 +45,7 @@ Here is the same example in codelens so that you can step through the statements
 
 By combining assignment with the slice operator we can update several elements at once.
 
-.. activecode:: ch09_8
+.. activecode:: lih
     
     alist = ['a', 'b', 'c', 'd', 'e', 'f']
     alist[1:3] = ['x', 'y']
@@ -53,7 +53,7 @@ By combining assignment with the slice operator we can update several elements a
 
 We can also remove elements from a list by assigning the empty list to them.
 
-.. activecode:: ch09_9
+.. activecode:: lii
     
     alist = ['a', 'b', 'c', 'd', 'e', 'f']
     alist[1:3] = []
@@ -62,7 +62,7 @@ We can also remove elements from a list by assigning the empty list to them.
 We can even insert elements into a list by squeezing them into an empty slice at the
 desired location.
 
-.. activecode:: ch09_10
+.. activecode:: lij
     
     alist = ['a', 'd', 'f']
     alist[1:1] = ['b', 'c']

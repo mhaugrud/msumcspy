@@ -21,7 +21,7 @@ the index. Remember that the indices start at 0.  Any integer expression can be 
 as an index and as with strings, negative index values will locate items from the right instead
 of from the left.
 
-.. activecode:: chp09_02
+.. activecode:: lic
     
     numbers = [17, 123, 87, 34, 66, 8398, 44]
     print(numbers[2])

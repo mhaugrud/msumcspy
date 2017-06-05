@@ -17,7 +17,7 @@ The Slice Operator
 A substring of a string is called a **slice**. Selecting a slice is similar to
 selecting a character:
 
-.. activecode:: chp08_slice1
+.. activecode:: stg
     
     singers = "Peter, Paul, and Mary"
     print(singers[0:5])
@@ -45,7 +45,7 @@ If you omit the first index (before the colon), the slice starts at the
 beginning of the string. If you omit the second index, the slice goes to the
 end of the string.
 
-.. activecode:: chp08_slice2
+.. activecode:: sth
     
     fruit = "banana"
 
@@ -112,7 +112,7 @@ end of the string.
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: scratch_08_01
+    .. activecode:: sti
 
 
 

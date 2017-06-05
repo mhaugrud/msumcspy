@@ -29,7 +29,7 @@ Interestingly, the ``+`` operator does work with strings, but for strings, the
 ``+`` operator represents **concatenation**, not addition.  Concatenation means
 joining the two operands by linking them end-to-end. For example:
 
-.. activecode:: ch08_add
+.. activecode:: sta
     :nocanvas:
 
     fruit = "banana"
@@ -47,7 +47,7 @@ The output of this program is ``banananut bread``. The two strings are run toget
 
 The ``*`` operator also works on strings.  It performs repetition. For example, ``'Fun'*3`` is ``'FunFunFun'``. One of the operands has to be a string and the other has to be an integer.
 
-.. activecode:: ch08_mult
+.. activecode:: stb
     :nocanvas:
 
     print("Go" * 6)

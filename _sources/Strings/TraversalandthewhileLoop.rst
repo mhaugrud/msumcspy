@@ -20,7 +20,7 @@ condition, making sure that the condition is correct, and making sure that somet
 body to guarantee that the condition will eventually fail.
 
 
-.. activecode:: ch08_7c
+.. activecode:: st4
     :nocanvas:
 
 
@@ -73,7 +73,7 @@ Here is the same example in codelens so that you can trace the values of the var
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: scratch_08_02
+    .. activecode:: st5
 
 
 

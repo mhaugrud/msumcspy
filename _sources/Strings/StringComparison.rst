@@ -17,7 +17,7 @@ String Comparison
 The comparison operators also work on strings. To see if two strings are equal you simply write a boolean
 expression using the equality operator.
 
-.. activecode:: ch08_comp1
+.. activecode:: sty
     
     word = "banana"
     if word == "banana":
@@ -30,7 +30,7 @@ Other comparison operations are useful for putting words in
 This is similar to the alphabetical order you would use with a dictionary,
 except that all the uppercase letters come before all the lowercase letters.
 
-.. activecode:: ch08_comp2
+.. activecode:: stz
 
     word = "zebra"
     
@@ -51,7 +51,7 @@ It is probably clear to you that the word `apple` would be less than (come befor
 After all, `a` is before `b` in the alphabet.  But what if we consider the words ``apple`` and ``Apple``?
 Are they the same?  
 
-.. activecode:: chp08_ord1
+.. activecode:: st0
 
     print("apple" < "banana")
 
@@ -62,7 +62,7 @@ It turns out, as you recall from our discussion of variable names, that uppercas
 each character is assigned a unique integer value.  "A" is 65, "B" is 66, and "5" is 53.  The way you can
 find out the so-called **ordinal value** for a given character is to use a character function called ``ord``.
 
-.. activecode:: ch08_ord2
+.. activecode:: st1
 
     print(ord("A"))
     print(ord("B"))
@@ -85,7 +85,7 @@ format, such as all lowercase, before performing the comparison.
 
 There is also a similar function called ``chr`` that converts integers into their character equivalent.
 
-.. activecode:: ch08_ord3
+.. activecode:: st2
 
     print(chr(65))
     print(chr(66))
@@ -100,7 +100,7 @@ One thing to note in the last two examples is the fact that the space character 
 
 .. admonition :: Extend the program ...
 
-   - Refer to activecode ch08_ord2 where you displayed the ordinal values for the letters in your name. On line 9, make a list that contains those integers. Write a for loop that iterates over that list of integers.
+   - Refer to activecode st1 where you displayed the ordinal values for the letters in your name. On line 9, make a list that contains those integers. Write a for loop that iterates over that list of integers.
 
    - As the body of the loop, display the current integer and its character equivalent.
 

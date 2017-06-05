@@ -16,7 +16,7 @@ List Traversal by Index
 
 We can also use the indices to access the items in an iterative fashion.
 
-.. activecode:: chp09_03b
+.. activecode:: lir
 
     fruits = ["apple", "orange", "banana", "cherry"]
 
@@ -27,11 +27,11 @@ We can also use the indices to access the items in an iterative fashion.
 In this example, each time through the loop, the variable ``position`` is used as an index into the list, printing the ``position``-eth element. Note that we used ``len`` as the upper bound on the range so that we can iterate correctly no matter how many items are in the list.
 
 .. note::
-   This technique should only be used when necessary. Whenever possible, the iterate by item technique (chp09_3a) should be used.
+   This technique should only be used when necessary. Whenever possible, the iterate by item technique (activecode lik) should be used.
 
 Since lists are mutable, it is often desirable to traverse a list, modifying each of its elements as you go. The following code squares all the numbers from ``1`` to ``5`` using iteration by position.
 
-.. activecode:: chp09_for4
+.. activecode:: lis
 
     numbers = [1, 2, 3, 4, 5]
     print(numbers)
@@ -75,7 +75,7 @@ Take a moment to think about ``range(len(numbers))`` until you understand how it
 
 The above example, illustrates the accumulator pattern for lists: you start with an empty list then repeatedly add more items to the list.
 
-.. activecode:: chp09_for3
+.. activecode:: lit
     
     numbers = [1, 2, 3, 5, 8]
     squares = []

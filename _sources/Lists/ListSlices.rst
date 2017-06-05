@@ -19,7 +19,7 @@ that if you omit the first index (before the colon), the slice starts at the
 beginning of the sequence. If you omit the second index, the slice goes to the
 end of the sequence.
 
-.. activecode:: chp09_6
+.. activecode:: lif
     
     a_list = ['a', 'b', 'c', 'd', 'e', 'f']
     print(a_list[1:3])

@@ -34,7 +34,7 @@ of the characters.
 In order to make the iteration more general, we can use the ``len`` function to provide the bound for ``range``.  This is a very common pattern for traversing any sequence by position.	Make sure you understand why the range function behaves
 correctly when using ``len`` of the string as its parameter value.
 
-.. activecode:: ch08_7b
+.. activecode:: st3
     :nocanvas:
 
 

@@ -24,7 +24,7 @@ it can perform.
 
 Strings are also objects.  Each string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There are a wide variety of methods.  Try the following program.
 
-.. activecode:: chp08_upper
+.. activecode:: stv
 
     ss = "Hello, World"
     print('line 2:', ss.upper())
@@ -72,7 +72,7 @@ You should experiment with these
 methods so that you understand what they do.  Note once again that the methods that return strings do not
 change the original.  You can also consult the `Python documentation for strings <http://docs.python.org/py3k/library/stdtypes.html#index-21>`_.
 
-.. activecode:: ch08_methods1
+.. activecode:: stw
 
     ss = "    Hello, World    "
 
@@ -87,7 +87,7 @@ change the original.  You can also consult the `Python documentation for strings
     print(news)
 
 
-.. activecode:: ch08_methods2
+.. activecode:: stx
 
 
     food = "banana bread"

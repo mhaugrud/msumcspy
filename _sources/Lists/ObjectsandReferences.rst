@@ -42,7 +42,7 @@ refer to.
 We already know that objects can be identified using their unique identifier.  We can also test whether two names refer to the same object using the *is*
 operator.  The *is* operator will return true if the two references are to the same object.  In other words, the references are the same.  Try our example from above.
 
-.. activecode:: chp09_is1
+.. activecode:: liy
 
     a = "banana"
     b = "banana"
@@ -56,7 +56,7 @@ that refer to the same string value refer to the same object.
 
 This is not the case with lists.  Consider the following example.  Here, ``a`` and ``b`` refer to two different lists, each of which happens to have the same element values.
 
-.. activecode:: chp09_is2
+.. activecode:: liz
     
     a = [81, 82, 83]
     b = [81, 82, 83]

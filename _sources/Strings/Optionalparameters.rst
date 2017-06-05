@@ -16,7 +16,7 @@ Optional parameters
 
 To find the locations of the second or third occurrence of a character in a string, we can modify the ``find`` function, adding a third parameter for the starting position in the search string:
 
-.. activecode:: ch08_fun4
+.. activecode:: st7
     
     def find2(astring, achar, start):
         """
@@ -43,7 +43,7 @@ The call ``find2('banana', 'a', 2)`` now returns ``3``, the index of the first o
 Better still, we can combine ``find`` and ``find2`` using an
 **optional parameter**.
 
-.. activecode:: chp08_fun5
+.. activecode:: st8
     
 	def find3(astring, achar, start=0):
 	    """
@@ -74,7 +74,7 @@ The call ``find3('banana', 'a', 2)`` to this version of ``find`` behaves just li
 
 Adding another optional parameter to ``find`` makes it search from a starting position, up to but not including the end position.
 
-.. activecode:: chp08_fun6
+.. activecode:: st9
     
     def find4(astring, achar, start=0, end=None):
         """

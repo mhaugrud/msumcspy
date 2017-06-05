@@ -17,7 +17,7 @@ List Traversal by Item
 We can perform **list traversal** by iterating over the items in a list.
 
 
-.. activecode:: chp09_03a
+.. activecode:: lik
 
     fruits = ["apple", "orange", "banana", "cherry"]
 

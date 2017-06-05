@@ -37,7 +37,7 @@ empty list and is denoted ``[]``.
 
 As you would expect, we can also assign list values to variables and pass lists as parameters to functions.  
 
-.. activecode:: chp09_01
+.. activecode:: lia
     
     vocabulary = ["iteration", "selection", "control"]
     numbers = [17, 123]

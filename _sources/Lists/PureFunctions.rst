@@ -22,7 +22,7 @@ To use the pure function version of ``double_stuff`` to modify ``things``,
 you would assign the return value back to ``things``.
 
 
-.. activecode:: ch09_mod2
+.. activecode:: liv
     
     def doubleStuff(a_list):
         """ Return a new list in which contains doubles of the elements in a_list. """

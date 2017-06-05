@@ -32,7 +32,7 @@ For more information consult the ``string`` module documentaiton (see `Global Mo
 
 
 
-.. activecode:: scratch_08_04
+.. activecode:: stu
 
    import string
 

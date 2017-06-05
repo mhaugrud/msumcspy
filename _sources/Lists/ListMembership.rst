@@ -17,7 +17,7 @@ List Membership
 ``in`` and ``not in`` are boolean operators that test membership in a sequence. We
 used them previously with strings and they also work here.
 
-.. activecode:: chp09_4
+.. activecode:: lid
     
     fruit = ["apple", "orange", "banana", "cherry"]
 

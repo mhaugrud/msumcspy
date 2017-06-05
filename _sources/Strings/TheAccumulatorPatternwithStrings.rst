@@ -30,7 +30,7 @@ The general steps of the string accumulator pattern are:
         (if appropriate) concatenate that character to the output string
 
 
-.. activecode:: ch08_acc1
+.. activecode:: str
     
     def removeVowels(s):
         vowels = "aeiouAEIOU"
@@ -98,7 +98,7 @@ Step through the function using codelens to see the accumulator variable grow.
       print(r)
 
 
-.. activecode:: scratch_08_03
+.. activecode:: sts
     
     def removeVowels(s):
         vowels = "aeiouAEIOU"

@@ -20,7 +20,7 @@ We will finish this chapter with a few more examples that show variations on the
 The following program counts the number of times a particular letter, ``aChar``, appears in a
 string.  It is another example of the accumulator pattern that we have seen in previous chapters.
 
-.. activecode:: chp08_fun2
+.. activecode:: stt
 
     def count(text, aChar): 
         lettercount = 0

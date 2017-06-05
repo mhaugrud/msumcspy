@@ -16,7 +16,7 @@ List Methods
 
 The dot operator can also be used to access built-in methods of list objects.  ``append`` is a list method which adds the argument passed to it to the end of the list. Continuing with this example, we show several other list methods.  Many of them are easy to understand.  
 
-.. activecode:: chp09_meth1
+.. activecode:: lio
 
     mylist = []
     mylist.append(5)
@@ -81,7 +81,7 @@ can be found in the `Python Documentation <http://docs.python.org/py3k/library/s
 It is important to remember that methods like ``append``, ``sort``, 
 and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to the result of sorting ``mylist`` will result in losing the entire list.  Calls like these will likely never appear as part of an assignment statement (see line 8 below).
 
-.. activecode:: chp09_meth2
+.. activecode:: lip
 
     mylist = []
     mylist.append(5)
@@ -187,7 +187,7 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
    - Put the list in reverse order.
    - Print the list.
 
-   .. activecode:: scratch_09_03
+   .. activecode:: liq
 
 
 

@@ -17,7 +17,7 @@ Strings and Lists
 Two of the most useful methods on strings involve lists of
 strings. The ``split`` method breaks a string into a list of words.  By default, any number of whitespace characters is considered a word boundary.
 
-.. activecode:: ch09_split1
+.. activecode:: lil
     
     song = "The rain in Spain falls mainly on the plain"
     wds = song.split()
@@ -25,7 +25,7 @@ strings. The ``split`` method breaks a string into a list of words.  By default,
 
 An optional argument called a **delimiter** can be used to specify which characters to use as word boundaries. The following example uses the string ``ai`` as the delimiter:
 
-.. activecode:: ch09_split2
+.. activecode:: lim
     
     song = "The rain in Spain falls mainly on the plain"
     wds = song.split('ai')
@@ -37,7 +37,7 @@ The inverse of the ``split`` method is ``join``.  You choose a
 desired **separator** string, (often called the *glue*) 
 and join the list with the glue between each of the elements.
 
-.. activecode:: ch09_join
+.. activecode:: lin
 
     wds = ["red", "blue", "green"]
     glue = ';'
@@ -53,9 +53,9 @@ The list that you glue together (``wds`` in this example) is not modified.  Also
 
 .. admonition:: Modify the program ...
 
-   - Edit ch09_split1: 
+   - Edit lil: 
       - On line 4 use the join method on a space character to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
-   - Edit ch09_split2: 
+   - Edit lim: 
       - On line 4 use the join method on "ai" to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
 
 **Check your understanding**

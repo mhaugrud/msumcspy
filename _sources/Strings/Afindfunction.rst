@@ -16,7 +16,7 @@ A ``find`` function
 
 Here is an implementation for the ``find`` method.
 
-.. activecode:: ch08_run3
+.. activecode:: st6
     
     def find(astring, achar):
         """

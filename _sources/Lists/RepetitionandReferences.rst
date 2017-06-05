@@ -16,7 +16,7 @@ Repetition and References
 
 We have already seen the repetition operator working on strings as well as lists.  For example, 
 
-.. activecode:: repref1
+.. activecode:: li1
 
     origlist = [45, 76, 34, 55]
     print(origlist * 3)
@@ -25,7 +25,7 @@ With a list, the repetition operator creates copies of the references.  Although
 
 Consider the following extension on the previous example.
 
-.. activecode:: repref2
+.. activecode:: li2
 
     origlist = [45, 76, 34, 55]
     print(origlist * 3)
@@ -47,7 +47,7 @@ Consider the following extension on the previous example.
 Now, what happens if we modify a value in ``origlist``.
 
 
-.. activecode:: repref3
+.. activecode:: li3
 
     origlist = [45, 76, 34, 55]
 

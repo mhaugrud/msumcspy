@@ -17,7 +17,7 @@ Concatenation and Repetition
 Again, as with strings, the ``+`` operator concatenates lists.  
 Similarly, the ``*`` operator repeats the items in a list a given number of times.
 
-.. activecode:: chp09_5
+.. activecode:: lie
 
     fruit = ["apple", "orange", "banana", "cherry"]
     print([1, 2] + [3, 4])

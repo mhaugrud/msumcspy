@@ -20,7 +20,7 @@ The previous example creates a list from a sequence of values based on some sele
 
 where the if clause is optional.  For example,
 
-.. activecode:: listcomp1
+.. activecode:: li6
 
     mylist = [1,2,3,4,5]
 
@@ -48,7 +48,7 @@ To write the ``primes_upto`` function we will use the ``is_prime`` function to f
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: scratch_09_06
+    .. activecode:: li7
     
     
 

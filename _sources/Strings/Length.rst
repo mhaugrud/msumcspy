@@ -16,7 +16,7 @@ Length
 
 The ``len`` function, when applied to a string, returns the number of characters in a string.
 
-.. activecode:: chp08_len1
+.. activecode:: std
     
     fruit = "Banana"
     print(len(fruit))
@@ -25,20 +25,24 @@ The ``len`` function, when applied to a string, returns the number of characters
 To get the last letter of a string, you might be tempted to try something like
 this:
 
-.. activecode:: chp08_len2
+.. activecode:: ste
     
     fruit = "Banana"
-    sz = len(fruit)
-    last = fruit[sz]       # ERROR!
+    length = len(fruit)
+    last = fruit[length] 
     print(last)
 
-That won't work. It causes the runtime error ``IndexError: string index out of range``. The reason is that there is no letter at index position 6 in ``"Banana"``. Since we started counting at zero, the six indexes are numbered 0 to 5. To get the last character, we have to subtract 1 from ``length``.  Give it a try in the example above.
+That won't work. It causes the runtime error ``IndexError: string index out of range``. The reason is that there is no letter at index position 6 in ``"Banana"``.
 
-.. activecode:: ch08_len3
+.. admonition:: Fix the error ...
+
+   Since we started counting at zero, the six indicies are numbered 0 to 5. To get the last character, we have to subtract 1 from ``length``.
+
+.. activecode:: stf
     
     fruit = "Banana"
-    sz = len(fruit)
-    lastch = fruit[sz-1]
+    length = len(fruit)
+    lastch = fruit[length-1]
     print(lastch)
 
 

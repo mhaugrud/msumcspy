@@ -17,7 +17,7 @@ Aliasing
 Since variables refer to objects, if we assign one variable to another, both
 variables refer to the same object:
 
-.. activecode:: listalias1
+.. activecode:: li0
     
     a = [81, 82, 83]
     b = a

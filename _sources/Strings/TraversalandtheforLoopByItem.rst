@@ -18,7 +18,7 @@ A lot of computations involve processing a collection one item at a time.  For s
 
 We have previously seen that the ``for`` statement can iterate over a sequence of integers created by the ``range`` constructor.
 
-.. activecode:: ch08_4
+.. activecode:: stl
     :nocanvas:
 
     for avalue in range(10):
@@ -29,7 +29,7 @@ Recall that the loop variable takes on each value in the sequence.  The body is 
 Since a string is simply a sequence of characters, the ``for`` loop iterates over each character automatically.
 
 
-.. activecode:: ch08_5
+.. activecode:: stm
     :nocanvas:
 
     for achar in "Go Spot Go":
@@ -37,7 +37,7 @@ Since a string is simply a sequence of characters, the ``for`` loop iterates ove
 
 The loop variable ``achar`` is automatically reassigned each character in the string "Go Spot Go". We will refer to this type of sequence iteration as **iteration by item**.  Note that we to process the characters one at a time from left to right.
 
-.. activecode:: ch08_6
+.. activecode:: stn
     :nocanvas:
 
     aString = input('enter a string')

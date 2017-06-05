@@ -17,7 +17,7 @@
 Python has a built-in type constructor function called 
 ``list`` that tries to make a list from whatever you give it.  For example, try the following:
 
-.. activecode:: ch09_list1
+.. activecode:: lix
     
     xs = list("Crunchy Frog")
     print(xs)
