@@ -14,19 +14,15 @@
 The ``for`` loop revisited
 --------------------------
 
-Recall that the ``for`` loop processes each item in a list.  Each item in
-turn is (re-)assigned to the loop variable, and the body of the loop is executed.
-We saw this example in an earlier chapter.
+Recall that the ``for`` loop processes each item in a list.  Each item in turn is (re-)assigned to the loop variable, and the body of the loop is executed. We saw this example in an earlier chapter.
 
 .. activecode:: ch07_for1
 
-    for f in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
-        print("Hi", f, "Please come to my party on Saturday")
+    for name in ["Adam", "Seth", "Enosh", "Kenan", "Mahalalel", "Jared", "Enoch", "Methuselah", "Lamech", "Noah"]:
+        print("Hi", name, "Please come to my party!")
 
 
-We have also seen iteration paired with the update idea to form the accumulator pattern.  For example, to compute
-the sum of the first n integers, we could create a for loop using the ``range`` to produce the numbers 1 through n.
-Using the accumulator pattern, we can start with a running total variable initialized to 0 and on each iteration, add the current value of the loop
+We have also seen iteration paired with the update idea to form the accumulator pattern.  For example, to compute the sum of the first n integers, we could create a for loop using the ``range`` to produce the numbers 1 through n. Using the accumulator pattern, we can start with a running total variable initialized to 0 and on each iteration, add the current value of the loop
 variable.  A function to compute this sum is shown below.
 
 .. activecode:: ch07_summation

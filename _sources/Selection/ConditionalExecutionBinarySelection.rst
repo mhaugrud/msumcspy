@@ -93,10 +93,8 @@ expression using the equality operator.
 
    Change ``banana`` in line 1 so the other path through the if statement is executed.
 
-.. admonition:: Lab
 
-    * `Approximating Pi with Simulation <../Labs/montepi.html>`_ In this guided lab exercise we will work
-      through a problem solving exercise related to approximating the value of pi using random numbers.
+.. `Approximating Pi with Simulation <../Labs/montepi.html>`_ In this guided lab exercise we will work through a problem solving exercise related to approximating the value of pi using random numbers.
 
 
 

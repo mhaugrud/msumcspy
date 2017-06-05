@@ -36,7 +36,7 @@ Here is a program that uses a ``while`` loop to keep asking until it receives a 
 
 .. admonition:: Modify the program ...
 
-   In line 2, change ``not(response == 'y' or response == 'n')`` to ``response != 'y' and response != 'n'``. The program will still work the same. 
+   In line 2, change ``not(response == 'y' or response == 'n')`` to ``response != 'y' and response != 'n'``. The program will still work the same. Do a web search on De Morgan's Law.
        
 Sentinel Values
 ~~~~~~~~~~~~~~~

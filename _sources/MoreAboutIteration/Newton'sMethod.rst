@@ -43,7 +43,7 @@ calculation yielding a better result.
 
 .. admonition:: Modify the program ...
 
-   All three of the calls to ``newtonSqrt`` in the previous example produce the correct square root for the first parameter.  However, were 10 iterations required to get the correct answer? Experiment with different values for the number of repetitions (the 10 on lines 8, 9, and 10). For each of these call find the **smallest** value for the number of repetitions that will produce in the **correct** result.
+   All three of the calls to ``newtonSqrt`` in the previous example produce the correct square root for the first parameter.  However, were 10 iterations required to get the correct answer? Experiment with different values for the number of repetitions (the 10 on lines 8, 9, and 10). For each of these calls, find the **smallest** value for the number of repetitions that will produce the **correct** result.
 
 
 Repeating more than the required number of times is a waste of computing resources. So definite iteration is not a good solution to this problem.

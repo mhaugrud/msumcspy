@@ -108,6 +108,7 @@ The activecode below defines two simple functions and a main.
         import test
         print('testing squareit')
         test.testEqual(squareit(5), 25)
+        print('testing cubeit')
         
 Line 12 uses an ``if`` statement to ask about the value of the ``__name__`` variable.  If the value is ``"__main__"``, then the ``main`` function will be called.  Otherwise, it can be assumed that the program is being imported into another program and we do not want to call ``main`` because that program will invoke the functions as needed.  This ability to conditionally execute our main function can be extremely useful when we are writing code that will potentially be used by others.  It allows us to include functionality that the user of the code will not need, most often as part of a testing process to be sure that the functions are working correctly.
 
@@ -117,8 +118,8 @@ Line 12 uses an ``if`` statement to ask about the value of the ``__name__`` vari
 
 .. admonition:: Modify the program ...
 
-   1. Type appropriate docstrings for the squareit and cubeit functions.
+   - Type appropriate docstrings for the squareit and cubeit functions.
 
-   2. Write a unit test for the cubeit function (immediately below the squareit unit test). Run to make sure it passes.
+   - Write a unit test for the cubeit function (below the last print statement). Run to make sure it passes.
 
-   3. Change the body of the cubeit function: Instead of returning n*n*n,  call squareit and return that value multiplied by n. Since this produces the same result as before, the unit test will still pass.
+   - Change the body of the cubeit function: Instead of returning n*n*n,  call squareit and return that value multiplied by n. Since this produces the same result as before, the unit test will still pass.
