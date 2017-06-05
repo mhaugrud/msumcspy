@@ -118,6 +118,8 @@ Line 12 uses an ``if`` statement to ask about the value of the ``__name__`` vari
 
 .. admonition:: Modify the program ...
 
+   - Comment out line 15. Run and notice you are no longer prompted to enter a number but the unit test still runs.
+
    - Type appropriate docstrings for the squareit and cubeit functions.
 
    - Write a unit test for the cubeit function (below the last print statement). Run to make sure it passes.
