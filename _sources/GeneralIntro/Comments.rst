@@ -14,18 +14,11 @@
 Comments
 --------
 
-As programs get bigger and more complicated, they get more difficult to read.
-Formal languages are dense, and it is often difficult to look at a piece of
-code and figure out what it is doing, or why.
-For this reason, it is a good idea to add notes to your programs to explain in
-natural language what the program is doing.  These notes are called comments.
+As programs get bigger and more complicated, they get more difficult to read. Formal languages are dense, and it is often difficult to look at a piece of code and figure out what it is doing, or why. For this reason, it is a good idea to add notes to your programs to explain in natural language what the program is doing.  These notes are called comments.
 
-A **comment** in a computer program is text that is intended only for the human
-reader - it is completely ignored by the interpreter.
-In Python, the `#` token starts a comment.  The rest of the line is ignored.
-Here is a new version of *Hello, World!*.
+A **comment** in a computer program is text that is intended only for the human reader - it is completely ignored by the interpreter. In Python, the `#` token starts a comment.  The rest of the line is ignored. Here is a new version of *Hello, World!*.
 
-.. activecode:: ch01_3
+.. activecode:: gic
 
     #---------------------------------------------------
     # This demo program shows off how elegant Python is!
@@ -67,7 +60,7 @@ are also ignored by the interpreter, but comments and blank lines can make your 
 
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-   .. activecode:: scratch_01
+   .. activecode:: gid
 
 
 

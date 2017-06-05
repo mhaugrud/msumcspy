@@ -28,7 +28,7 @@ Ok, let's look at an example.  Let's solve the problem posed in question 3 at th
 
 So, where to start?  The problem requires two pieces of input from the user, so let's start there and make sure we can get the data we need.
 
-.. activecode:: db_ex3_1
+.. activecode:: dba
 
    current_time = input("what is the current time (in hours)?")
    wait_time = input("How many hours do you want to wait")
@@ -39,7 +39,7 @@ So, where to start?  The problem requires two pieces of input from the user, so 
 
 So far so good.  Now let's take the next step.  We need to figure out what the time will be after waiting ``wait_time`` number of hours.  A good first approximation to that is to simply add ``wait_time`` to ``current_time`` and print out the result.  So lets try that.
 
-.. activecode:: db_ex3_2
+.. activecode:: dbb
 
    current_time = input("What is the current time (in hours 0 - 23)?")
    wait_time = input("How many hours do you want to wait")
@@ -68,7 +68,7 @@ Hmm, when you run that example you see that something funny has happened.
 This error was probably pretty simple to spot, because we printed out the value of ``final_time`` and it is easy to see that the numbers were just concatenated together rather than added.  So what do we do about the problem?  We will need to convert both ``current_time`` and ``wait_time`` to ``int``.  At this stage of your programming development, it can be a good idea to include the type of the variable in the variable name itself.  So let's look at another iteration of the program that does that, and the conversion to integer.
 
 
-.. activecode:: db_ex3_3
+.. activecode:: dbc
 
    current_time_str = input("What is the current time (in hours 0-23)?")
    wait_time_str = input("How many hours do you want to wait")
@@ -88,7 +88,7 @@ Now, thats a lot better, and in fact depending on the hours you chose, it may be
 
 So finally we need to account for those numbers that are bigger than 23.  For this we will need one final step, using the modulo operator.
 
-.. activecode:: db_ex3_4
+.. activecode:: dbd
 
    current_time_str = input("What is the current time (in hours 0-23)?")
    wait_time_str = input("How many hours do you want to wait")

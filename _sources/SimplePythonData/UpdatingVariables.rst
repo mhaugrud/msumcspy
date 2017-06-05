@@ -21,21 +21,15 @@ Updating Variables
     http://media.interactivepython.org/thinkcsVideos/update.mov
     http://media.interactivepython.org/thinkcsVideos/update.webm
 
-One of the most common forms of reassignment is an **update** where the new
-value of the variable depends on the old.  For example,
+One of the most common forms of reassignment is an **update** where the new value of the variable depends on the old.  For example,
 
 .. sourcecode:: python
 
     x = x + 1
 
-This means get the current value of x, add one, and then update x with the new
-value.  The new value of x is the old value of x plus 1.  Although this assignment statement may
-look a bit strange, remember that executing assignment is a two-step process.  First, evaluate the
-right-hand side expression.  Second, let the variable name on the left-hand side refer to this new
-resulting object.  The fact that ``x`` appears on both sides does not matter.  The semantics of the assignment
-statement makes sure that there is no confusion as to the result.
+This means get the current value of x, add one, and then update x with the new value.  The new value of x is the old value of x plus 1.  Although this assignment statement may look a bit strange, remember that executing assignment is a two-step process.  First, evaluate the right-hand side expression.  Second, let the variable name on the left-hand side refer to this new resulting object.  The fact that ``x`` appears on both sides does not matter.  The semantics of the assignment statement makes sure that there is no confusion as to the result.
 
-.. activecode:: ch07_update1
+.. activecode:: sdy
 
     x = 6        # initialize x
     print(x)
@@ -129,7 +123,7 @@ a variable, which means the same as incrementing it by 1.
 
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-   .. activecode:: scratch_02
+   .. activecode:: sdz
 
 
 

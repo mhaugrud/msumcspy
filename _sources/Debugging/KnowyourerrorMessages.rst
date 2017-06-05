@@ -31,7 +31,7 @@ Can you see what is wrong, just by looking at the code?  Maybe, maybe not.  Our 
 
 Let's try the program again, but this time in an activecode:
 
-.. activecode:: db_ex3_5
+.. activecode:: dbe
 
    current_time_str = input("What is the current time (in hours 0-23)?")
    wait_time_str = input("How many hours do you want to wait")
@@ -98,7 +98,7 @@ Here are a couple examples of Parse errors in the example program we have been u
 
         Find and fix the error in the following code.
 
-        .. activecode:: db_ex3_6
+        .. activecode:: dbf
 
            current_time_str = input("What is the current time (in hours 0-23)?")
            wait_time_str = input("How many hours do you want to wait"
@@ -134,7 +134,7 @@ Here are a couple examples of Parse errors in the example program we have been u
 
         Fix the error in the following code: the words ``current time`` should be surrounded with double quote marks
 
-        .. activecode:: db_ex3_7
+        .. activecode:: dbg
 
            current_time_str = input("What is the "current time" (in hours 0-23)?")
            wait_time_str = input("How many hours do you want to wait")
@@ -172,7 +172,7 @@ TypeErrors occur when you you try to combine two objects that are not compatible
 
 Here's an example of a type error created by a Polish learner.  See if you can find and fix the error.
 
-.. activecode:: db_ex3_8
+.. activecode:: dbh
 
     a = input('wpisz godzine')
     x = input('wpisz liczbe godzin')
@@ -211,7 +211,7 @@ NameError
 
 Name errors almost always mean that you have used a variable before it has a value.  Often NameErrors are simply caused by typos in your code.  They can be hard to spot if you don't have a good eye for catching spelling mistakes.  Other times you may simply mis-remember the name of a variable or even a function you want to call.    You have seen one example of a NameError at the beginning of this section.  Here is another one.  See if you can get this program to run successfully:
 
-.. activecode:: db_ex3_9
+.. activecode:: dbi
 
     str_time = input("What time is it now?")
     str_wait_time = input("What is the number of hours to wait?")
@@ -237,7 +237,7 @@ Name errors almost always mean that you have used a variable before it has a val
 
 Here is another one for you to try:
 
-.. activecode:: db_ex3_10
+.. activecode:: dbj
 
     n = input("What time is it now (in hours)?")
     n = imt(n)
@@ -257,7 +257,7 @@ Here is another one for you to try:
 
 And one last bit of code to fix.
 
-.. activecode:: db_ex3_11
+.. activecode:: dbk
 
     present_time = input("Enter the present time in hours:")
     set_alarm = input("Set the hours for alarm:")
@@ -296,7 +296,7 @@ ValueError
 
 Value errors occur when you pass a parameter to a function and the function is expecting a certain type, but you pass it a different type.  We can illustrate that with this particular program in two different ways.
 
-.. activecode:: db_ex3_12
+.. activecode:: dbl
 
    current_time_str = input("What is the current time (in hours 0-23)?")
    current_time_int = int(current_time_str)

@@ -14,12 +14,9 @@
 Operators and Operands
 ----------------------
 
-**Operators** are special tokens that represent computations like addition,
-multiplication and division. The values the operator works on are called
-**operands**.
+**Operators** are special tokens that represent computations like addition, multiplication and division. The values the operator works on are called **operands**.
 
-The following are all legal Python expressions whose meaning is more or less
-clear::
+The following are all legal Python expressions whose meaning is more or less clear::
 
     20 + 32
     hour - 1
@@ -28,13 +25,9 @@ clear::
     5 ** 2
     (5 + 9) * (15 - 7)
 
-The tokens ``+``, ``-``, and ``*``, and the use of parenthesis for grouping,
-mean in Python what they mean in mathematics. The asterisk (``*``) is the
-token for multiplication, and ``**`` is the token for exponentiation.
-Addition, subtraction, multiplication, and exponentiation all do what you
-expect.
+The tokens ``+``, ``-``, and ``*``, and the use of parenthesis for grouping, mean in Python what they mean in mathematics. The asterisk (``*``) is the token for multiplication, and ``**`` is the token for exponentiation. Addition, subtraction, multiplication, and exponentiation all do what you expect.
 
-.. activecode:: ch02_15
+.. activecode:: sdq
     :nocanvas:
 
     print(2 + 3)
@@ -43,26 +36,18 @@ expect.
     print(2 ** 3)
     print(3 ** 2)
 
-When a variable name appears in the place of an operand, it is replaced with
-the value that it refers to before the operation is performed.
-For example, what if we wanted to convert 645 minutes into hours.
-In Python 3, division is denoted by the operator token ``/`` which always evaluates to a floating point
-result.
+When a variable name appears in the place of an operand, it is replaced with the value that it refers to before the operation is performed. For example, what if we wanted to convert 645 minutes into hours. In Python 3, division is denoted by the operator token ``/`` which always evaluates to a floating point result.
 
-.. activecode:: ch02_16
+.. activecode:: sdr
     :nocanvas:
 
     minutes = 645
     hours = minutes / 60
     print(hours)
 
-What if, on the other hand, we had wanted to know how many *whole* hours there
-are and how many minutes remain.  To help answer this question, Python gives us a second flavor of
-the division operator.  This version, called **integer division**, uses the token
-``//``.  It always *truncates* its result down to the next smallest integer (to
-the left on the number line).
+What if, on the other hand, we had wanted to know how many *whole* hours there are and how many minutes remain.  To help answer this question, Python gives us a second flavor of the division operator.  This version, called **integer division**, uses the token ``//``.  It always *truncates* its result down to the next smallest integer (to the left on the number line).
 
-.. activecode:: ch02_17
+.. activecode:: sds
     :nocanvas:
 
     print(7 / 4)
@@ -77,20 +62,15 @@ the left on the number line).
     #
 
 
-Pay particular attention to the first two examples above.  Notice that the result of floating point division
-is ``1.75`` but the result of the integer division is simply ``1``.
-Take care that you choose the correct flavor of the division operator.  If
-you're working with expressions where you need floating point values, use the
-division operator ``/``.  If you want an integer result, use ``//``.
+Pay particular attention to the first two examples above.  Notice that the result of floating point division is ``1.75`` but the result of the integer division is simply ``1``. Take care that you choose the correct flavor of the division operator.  If
+you're working with expressions where you need floating point values, use the division operator ``/``.  If you want an integer result, use ``//``.
 
 .. index:: modulus
 
-The **modulus operator**, sometimes also called the **remainder operator** or **integer remainder operator** works on integers (and integer expressions) and yields
-the remainder when the first operand is divided by the second. In Python, the
-modulus operator is a percent sign (``%``). The syntax is the same as for other
+The **modulus operator**, sometimes also called the **remainder operator** or **integer remainder operator** works on integers (and integer expressions) and yields the remainder when the first operand is divided by the second. In Python, the modulus operator is a percent sign (``%``). The syntax is the same as for other
 operators.
 
-.. activecode:: ch02_18
+.. activecode:: sdt
     :nocanvas:
 
     quotient = 7 // 3     # This is the integer division operator
@@ -103,22 +83,15 @@ In the above example, 7 divided by 3 is 2 when we use integer division and there
 
 .. admonition:: Extend the program ...
 
-   - Return to activecode ch02_17 (make sure the comment you typed is displayed)
+   - Return to activecode **sds** (make sure the comment you typed is displayed)
    - On line 6 (a blank line) type **print(minutes % 60)**
    - Run and study the output
    - Type a comment at the end of line 6 that explains what that value means (run again)
 
-The modulus operator turns out to be surprisingly useful. For example, you can
-check whether one number is divisible by another---if ``x % y`` is zero, then
-``x`` is divisible by ``y``.
-Also, you can extract the right-most digit or digits from a number.  For
-example, ``x % 10`` yields the right-most digit of ``x`` (in base 10).
-Similarly ``x % 100`` yields the last two digits.
+The modulus operator turns out to be surprisingly useful. For example, you can check whether one number is divisible by another---if ``x % y`` is zero, then ``x`` is divisible by ``y``.
+Also, you can extract the right-most digit or digits from a number.  For example, ``x % 10`` yields the right-most digit of ``x`` (in base 10). Similarly ``x % 100`` yields the last two digits.
 
-Finally, returning to our time example, the remainder operator is extremely useful for doing conversions, say from seconds,
-to hours, minutes and seconds.
-If we start with a number of seconds, say 7684, the following program uses integer division and remainder to convert to an easier form.  Step through it to be sure you understand how the division and remainder operators are being used to
-compute the correct values.
+Finally, returning to our time example, the remainder operator is extremely useful for doing conversions, say from seconds, to hours, minutes and seconds. If we start with a number of seconds, say 7684, the following program uses integer division and remainder to convert to an easier form.  Step through it to be sure you understand how the division and remainder operators are being used to compute the correct values.
 
 .. codelens:: ch02_19_codelens
 

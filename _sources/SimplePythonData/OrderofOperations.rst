@@ -48,7 +48,7 @@ When more than one operator appears in an expression, the order of evaluation de
 Due to some historical quirk, an exception to the left-to-right left-associative rule is the exponentiation operator `**`. A useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
 
 
-.. activecode:: ch02_23
+.. activecode:: sdv
    :nocanvas:
 
    print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
@@ -57,7 +57,7 @@ Due to some historical quirk, an exception to the left-to-right left-associative
 
 .. admonition:: Extend the program ...
 
-   On line 3, type a print function to display the value of the expression 2 * 60 ** 2 + 8 * 60 + 4 (you should recognize this expression from activecode int_secs on the previous page).
+   On line 3, type a print function to display the value of the expression 2 * 60 ** 2 + 8 * 60 + 4 (you should recognize this expression from activecode sdu on the previous page).
 
 **Check your understanding**
 

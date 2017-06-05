@@ -25,13 +25,11 @@ This book provides two special ways to execute Python programs.  Both techniques
 learn the Python programming language.  They will help you increase your understanding of how Python programs work.
 
 
-First, you can write, modify, and execute programs using a unique **activecode** interpreter that allows you to execute Python code right
-in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent
-environment for learning a programming language like Python since you can experiment with the language as you are reading.
+First, you can write, modify, and execute programs using a unique **activecode** interpreter that allows you to execute Python code right in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent environment for learning a programming language like Python since you can experiment with the language as you are reading.
 
 Take a look at the activecode interpreter in action.  If we use the Python code from the previous example and make it active, you will see that it can be executed directly by pressing the *run* button.   Try pressing the *run* button below.
 
-.. activecode:: ch01_1
+.. activecode:: gia
 
    print("My first program adds two numbers, 2 and 3:")
    print(2 + 3)
@@ -46,11 +44,9 @@ Take a look at the activecode interpreter in action.  If we use the Python code 
    You can also make changes and save them for reloading later. *Save* and *Load* allow you to keep copies of the program you are working on.  Each time you press the **Run & Save** button in addition to running the code, you also save the current contents of the activecode window.  Pressing **Load History** enables you to scroll to see the previous versions of your code.
 
 .. caution::
-   Be certain ALL the required activecode modifications are displayed the last time you press Run & Save
+   Be certain **ALL** the required activecode modifications are displayed the last time you press Run & Save
 
-In addition to activecode, you can also execute Python code with the assistance of a unique visualization tool.  This tool, known as **codelens**, allows you to control the step by step execution of a program.  It also lets you see the values of
-all variables as they are created and modified.  The following example shows codelens in action on the same program as we saw above.  Note that in activecode, the source code executes from beginning to end and you can see the final result.  In codelens you can see and control the step by step progress.  Note that the red arrow always points to the next line of code that is going to be executed.  The light green
-arrow points to the line that was just executed.
+In addition to activecode, you can also execute Python code with the assistance of a unique visualization tool.  This tool, known as **codelens**, allows you to control the step by step execution of a program.  It also lets you see the values of all variables as they are created and modified.  The following example shows codelens in action on the same program as we saw above.  Note that in activecode, the source code executes from beginning to end and you can see the final result.  In codelens you can see and control the step by step progress.  Note that the red arrow always points to the next line of code that is going to be executed.  The light green arrow points to the line that was just executed.
 
 
 

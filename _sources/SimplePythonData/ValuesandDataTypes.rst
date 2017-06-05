@@ -23,7 +23,7 @@ These objects are classified into different **classes**, or **data types**: ``4`
 
 If you are not sure what class a value falls into, Python has a function called **type** which can tell you.
 
-.. activecode:: ch02_1
+.. activecode:: sda
     :nocanvas:
 
     print(type("Hello, World!"))
@@ -59,7 +59,7 @@ Note that in the last example, we simply ask the shell to evaluate the string "H
 Continuing with our discussion of data types, numbers with a decimal point belong to a class called **float**, because these numbers are represented in a format called *floating-point*.  At this stage, you can treat the words *class* and *type*
 interchangeably.  We'll come back to a deeper understanding of what a class is in later chapters.
 
-.. activecode:: ch02_2
+.. activecode:: sdb
     :nocanvas:
 
     print(3)
@@ -76,7 +76,7 @@ interchangeably.  We'll come back to a deeper understanding of what a class is i
 
 What about values like ``"3"`` and ``"3.2"``? They look like numbers, but they are in quotation marks like strings.
 
-.. activecode:: ch02_3
+.. activecode:: sdc
     :nocanvas:
 
     print(type("3"))
@@ -86,7 +86,7 @@ They're strings!
 
 Strings in Python can be enclosed in either single quotes (``'``) or double quotes (``"``), or three of each (``'''`` or ``"""``)
 
-.. activecode:: ch02_4
+.. activecode:: sdd
     :nocanvas:
 
     print('This is a string.')
@@ -105,7 +105,7 @@ Strings enclosed with three occurrences of either quote symbol are called triple
 Python programers usually choose to surround their strings by single quotes.  What do you think would happen if the string already contained single quotes?
 
 
-.. activecode:: ch02_5
+.. activecode:: sde
     :nocanvas:
 
     print('''"Oh no", she exclaimed, "Ben's bike is broken!"''')
@@ -114,7 +114,7 @@ Python programers usually choose to surround their strings by single quotes.  Wh
 
 Triple quoted strings can even span multiple lines:
 
-.. activecode:: ch02_6
+.. activecode:: sdf
     :nocanvas:
 
     message = 'This message
@@ -130,7 +130,7 @@ Triple quoted strings can even span multiple lines:
 
 Python doesn't care whether you use single or double quotes or the three-of-a-kind quotes to surround your strings.  Once it has parsed the text of your program or command, the way it stores the value is identical in all cases, and the surrounding quotes are not part of the value.
 
-.. activecode:: ch02_7
+.. activecode:: sdg
     :nocanvas:
 
     print('This is a string.')
@@ -138,7 +138,7 @@ Python doesn't care whether you use single or double quotes or the three-of-a-ki
 
 When you type a large number, you might be tempted to use commas between groups of three digits, as in ``42,000.1``. This is not a legal number in Python, but it does mean something else, which is legal:
 
-.. activecode:: ch02_8
+.. activecode:: sdh
     :nocanvas:
 
     print(42000.1)
@@ -148,7 +148,7 @@ When you type a large number, you might be tempted to use commas between groups 
 Well, that's not what we expected at all! Because of the comma, Python chose to treat this as a *pair* of values.     In fact, the print function can print any number of values as long
 as you separate them by commas.  Notice that the values are separated by spaces when they are displayed.
 
-.. activecode:: ch02_8a
+.. activecode:: sdi
     :nocanvas:
 
     print(42, 17, 56, 34, 11, 4.35, 32)

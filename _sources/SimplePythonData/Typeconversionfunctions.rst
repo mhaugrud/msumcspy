@@ -20,7 +20,7 @@ will take their argument and (attempt to) create an `int`, `float` and `str` res
 The ``int`` function can take a floating point number or a string, and make an int from it. For floating point numbers, it *discards* the decimal portion of the number - a process we call *truncation towards zero* on the number line.
 Let us see this in action:
 
-.. activecode:: ch02_20
+.. activecode:: c2j
     :nocanvas:
 
     print(3.14, int(3.14))
@@ -40,7 +40,7 @@ Let us see this in action:
 The type constructor ``float`` can make a float from an integer or a syntactically
 legal string.
 
-.. activecode:: ch02_21
+.. activecode:: sdk
     :nocanvas:
 
     print(float("123.45"))
@@ -50,7 +50,7 @@ legal string.
 The type constructor ``str`` uses its argument to create a string.  Remember that when we print a string, the
 quotes are removed.  However, if we print the type, we can see that it is definitely `str`.
 
-.. activecode:: ch02_22
+.. activecode:: sdl
     :nocanvas:
 
     print(str(17))
