@@ -26,7 +26,7 @@ method which will allow the user to provide a numerator and a denominator for th
 
 
 
-.. activecode:: fractions_init
+.. activecode:: c2h
 
     class Fraction:
         def __init__(self, top, bottom):

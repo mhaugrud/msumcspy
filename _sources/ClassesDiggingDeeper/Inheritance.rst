@@ -13,7 +13,7 @@ Suppose our bank introduces a new line of credit (LOC) type account. An overdraf
 
 We start by defining LOC as a child class of Account. The name of the parent class appears in parentheses after the name of the new class.
 
-.. activecode:: oop2_4
+.. activecode:: c2d
     
     class Account:
         def __init__(self):
@@ -46,7 +46,7 @@ At this point a LOC account operates exactly the same as a regular Account.
 
 Now we modify the constructor.
 
-.. activecode:: oop2_5
+.. activecode:: c2e
     
     class Account:
         def __init__(self):
@@ -78,7 +78,7 @@ The constructor now has a parameter to specify the account's line of credit. Thi
 Now we modify the withdraw method.
 
 
-.. activecode:: oop2_6
+.. activecode:: c2f
     
     class Account:
         def __init__(self):
@@ -125,7 +125,7 @@ Now suppose our bank offers Savings accounts. This type of Account accrues (earn
 
 We start by saying that LOC is a child class of Account. Then we add the accrue method to pay interest.
 
-.. activecode:: oop2_7
+.. activecode:: c2g
     
     class Account:
         def __init__(self):

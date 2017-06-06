@@ -14,7 +14,7 @@ Creating a String from an Object
 When we're working with classes and objects, it is often necessary to print an object (that is to print the state of an object).
 Consider the example below.
 
-.. activecode:: oop1_9
+.. activecode:: c1i
     
     class Account:
         '''Account class for representing and manipulating bank accounts'''
@@ -51,7 +51,7 @@ The ``__str__`` method is responsible for returning a string representation as d
 have decided that the string representation will include the values of the balance attribute as well as some formatting.  It
 is required that the ``__str__`` method create and *return* a string.
 
-.. activecode:: oop1_10
+.. activecode:: c1j
     
     class Account:
         '''Account class for representing and manipulating bank accounts'''

@@ -20,7 +20,7 @@ representation would be 3/4.
 There is a very nice iterative method for computing the greatest common divisor of two integers.  Try to run the
 function on a number of different examples.
 
-.. activecode:: fractions_gcd
+.. activecode:: c2i
 
 	def gcd(m, n):
 	    while m % n != 0:
@@ -39,7 +39,7 @@ a fraction method called ``simplify``.  We will ask the fraction "to create a ne
 The ``simplify`` method will pass the numerator and the denominator to the ``gcd`` function to find the
 greatest common divisor.  It will then make a new Fraction by dividing its ``num`` and its ``den`` by that value.
 
-.. activecode:: fractions_simplify
+.. activecode:: c2j
 
     def gcd(m, n):
         while m % n != 0:

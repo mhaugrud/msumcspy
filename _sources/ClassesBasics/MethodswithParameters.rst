@@ -14,7 +14,7 @@ Let's add the ``deposit`` and ``withdraw`` methods to see better how methods
 work.  These methods will need some additional data to do their work: the amount to deposit or withdraw.
 
 
-.. activecode:: oop1_4
+.. activecode:: c1d
     
     class Account:
         '''Account class for representing and manipulating bank accounts'''
@@ -47,7 +47,7 @@ have one additional parameter as compared to the invocation.
 You may ask, "Why did we write two methods instead of just one that could handle either type of transaction?"  One reason is that bankers get rather upset if you withdraw more money from your account than you have on deposit. Run the activecode below. 
 
 
-.. activecode:: oop1_5
+.. activecode:: c1e
     
     class Account:
         '''Account class for representing and manipulating bank accounts'''
@@ -81,7 +81,7 @@ You may ask, "Why did we write two methods instead of just one that could handle
 
 What would happen if a clever account holder deposited a negative amount to the account? Run the activecode below to see. 
 
-.. activecode:: oop1_6
+.. activecode:: c1f
     
     class Account:
         '''Account class for representing and manipulating bank accounts'''

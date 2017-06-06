@@ -25,7 +25,7 @@ instance.  For example, with a turtle named ``tess``,  ``tess.right(90)`` asks t
 Let's add a simple method to allow an account to give us information about its state.  The ``getBalance`` method, when invoked, will return the value of the balance attribute.  The implementation of this method is straight forward since we already know how
 to write functions that return values.  One thing to notice is that even though the ``getBalance`` method does not need any other parameter information to do its work, there is still one formal parameter, ``self``.  As we stated earlier, all methods defined in a class that operate on objects of that class will have ``self`` as their first parameter.  Again, this serves as reference to the object itself which in turn gives access to the state data inside the object.
 
-.. activecode:: oop1_3
+.. activecode:: c1c
     
     class Account:
         '''Account class for representing and manipulating bank accounts'''

@@ -6,7 +6,7 @@ Distinguishing between Classes
 
 We have often used the ``type`` function to see what kind of an object we are examining. Python also provides a similar Boolean function ``isinstance`` that requires two parameters: an object and a particular type. It then returns True if the object is of the specified type.
 
-.. activecode:: oop2_2
+.. activecode:: c2b
     
     class CAD:
         """Canadian Dollar"""
@@ -48,7 +48,7 @@ Our Account class has methods that enable us to make deposits and withdrawals. O
 Suppose we give the bank teller some Canadian currency to deposit in our account. The teller will convert it to US dollars and place that amount in our account. Lets extend the deposit method to make this happen in our class.
 
 
-.. activecode:: oop2_3
+.. activecode:: c2c
     
     class CAD:
         USD = 0.75   # the value of a CAD in terms of a USD

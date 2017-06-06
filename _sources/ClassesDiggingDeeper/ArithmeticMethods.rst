@@ -34,7 +34,7 @@ greatest common divisor and then divide each part of the new fraction.
 You can try the addition method and then modify the fractions and retry.
 
 
-.. activecode:: fractions_add1
+.. activecode:: c2n
 
     def gcd(m, n):
         while m % n != 0:
@@ -74,7 +74,7 @@ One final modification to this method will be quite useful.  Instead invoking th
 addition operator "+".  We call this process **operator overloading**. We extend a familar operator to work with a new data type. In this example, it requires that we implement another special method, this time called ``__add__``.
 The details of the method are the same.
 
-.. activecode:: fractions_add1
+.. activecode:: c2o
 
     def gcd(m, n):
         while m % n != 0:
@@ -131,6 +131,6 @@ We can overload many common operators as shown in the following table.
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: scratch_cl_02	
+    .. activecode:: c2p	
 
 

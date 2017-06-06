@@ -7,7 +7,7 @@ Just like instance attributes, class level attributes can be either public or pr
 
 We can illustrate this with two simple classes to model various world currencies: the Canadian dollar (CAD) and the Great Britain Pound (GBP). They will include a class level attribute that represents the value of that currency relative to the US Dollar. They will also include a method to ``exchange`` that currency for the comparable number of US Dollars.
     
-.. activecode:: oop2_1
+.. activecode:: c2a
     
     class CAD:
         """Canadian Dollar"""

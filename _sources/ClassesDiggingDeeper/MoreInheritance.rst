@@ -12,7 +12,7 @@ More Inheritance
 
 In this example we define SFraction, specialized sub-class of Fraction. SFraction objects are automatically reduced to simplest form as they are instantiated.
 
-.. activecode:: sfraction
+.. activecode:: c2k
 
     def gcd(m, n):
         while m % n != 0:

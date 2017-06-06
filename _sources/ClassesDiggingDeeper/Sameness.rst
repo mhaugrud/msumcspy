@@ -27,7 +27,7 @@ talked about aliases.
 It allows us to find out if two references refer to the same object.
 
 
-.. activecode:: fractions_is
+.. activecode:: c2l
 
     class Fraction:
         def __init__(self, top, bottom):
@@ -70,7 +70,7 @@ denominator.  For example, here is a boolean function that performs this check.
 
 This type of equality is known as **deep equality** since it compares the values "deep" in the object, not just the reference to the object. 
   
-.. activecode:: fractions_eq1
+.. activecode:: c2m
 
     def sameFraction(f1, f2):
         return (f1.getNum() == f2.getNum()) and (f1.getDen() == f2.getDen())

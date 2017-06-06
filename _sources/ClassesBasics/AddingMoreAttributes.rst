@@ -12,7 +12,7 @@ Adding More Attributes to the Class
 
 Lets improve the Account class by enabling it to keep a history of all its transactions (deposits and withdrawals) since a statement was last generated for the Account. We add two new attributes: a list for the transactions and a starting balance for this statement period. Both of these attributes are initialized in the constructor. We also add the method ``statement`` to display this history.
 
-.. activecode:: oop1_11
+.. activecode:: c1k
     
     class Account:
         '''Account class for representing and manipulating bank accounts'''

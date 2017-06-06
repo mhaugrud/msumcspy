@@ -4,7 +4,7 @@ Private Attributes
 Each Account object has a balance attribute. What would happen if we tried to change it directly instead of using the deposit or withdraw methods? Could we get into an illegal state that way?
 
 
-.. activecode:: oop1_7
+.. activecode:: c1g
     
     class Account:
         '''Account class for representing and manipulating bank accounts'''
@@ -37,7 +37,7 @@ Each Account object has a balance attribute. What would happen if we tried to ch
 
 We can prevent this by using **private** atttibutes. To make an attribute private, preface its name with two underscore characters ``__balance``. We read this as dunder (double underscore) balance.
     
-.. activecode:: oop1_8
+.. activecode:: c1h
     
     class Account:
         '''Account class for representing and manipulating bank accounts'''

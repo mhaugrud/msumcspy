@@ -141,7 +141,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 .. admonition:: Modify the program ...
 
-   - On lines 2 and 3, type instructions make a list of sorted keys (similar to the above multiple choice question
+   - On lines 2 and 3, type instructions make a list of sorted keys (similar to the above multiple choice question).
 
    - Edit line 4 to iterate over the sorted list
    
