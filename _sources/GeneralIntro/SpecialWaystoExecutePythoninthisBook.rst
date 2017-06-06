@@ -37,7 +37,12 @@ Take a look at the activecode interpreter in action.  If we use the Python code 
 
 .. admonition:: Do this ...
 
-   Now try modifying the activecode program shown above. First, modify the string in the first print statement by changing the word *adds* to the word *multiplies*.  Now press *run*.  You can see that the result of the program has changed.  However, it still prints "5" as the answer.  Modify the second print statement by changing the addition symbol, the "+", to the multiplication symbol, "*".  Press *run* to see the new results.
+   Now try modifying the activecode program shown above.
+
+   - Modify the string in the first print statement by changing the word *adds* to the word *multiplies*.
+   - Press *run*.  You can see that the output of the program has changed.  However, it still prints "5" as the answer.
+   - Modify the second print statement by changing the addition symbol, the ``+``, to the multiplication symbol, ``*``.
+   - Press *run* to see the new results.
 
 .. tip::
 

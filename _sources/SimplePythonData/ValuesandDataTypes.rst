@@ -100,17 +100,21 @@ Strings in Python can be enclosed in either single quotes (``'``) or double quot
 
 
 Double quoted strings can contain single quotes inside them, as in ``"Bruce's beard"``, and single quoted strings can have double quotes inside them, as in ``'The knights who say "Ni!"'``.
-Strings enclosed with three occurrences of either quote symbol are called triple quoted strings.  They can contain either single or double quotes:
 
-Python programers usually choose to surround their strings by single quotes.  What do you think would happen if the string already contained single quotes?
+What do you think would happen if the string already contained quotes both single and double?
 
 
 .. activecode:: sde
     :nocanvas:
 
-    print('''"Oh no", she exclaimed, "Ben's bike is broken!"''')
+    print("Oh no", she exclaimed, "Ben's bike is broken!")
 
 
+.. admonition:: Fix the error ...
+
+   When you run the above activecode a syntax error occurs. Type triple quotes ``'''`` at the beginning and end of the string. Then it will run with no errors.
+
+Strings enclosed with three occurrences of either quote symbol are called triple quoted strings.  They can contain either single or double quotes
 
 Triple quoted strings can even span multiple lines:
 
@@ -126,29 +130,25 @@ Triple quoted strings can even span multiple lines:
 
 .. admonition:: Fix the error ...
 
-   When you run the above activecode a runtime error occurs. Change the quotes (') to triple quotes ('''). Then it will run with no errors.
+   When you run the above activecode a runtime error occurs. Change the quotes ``'`` to triple quotes, either ``'''`` or ``"""``. Then it will run with no errors.
 
 Python doesn't care whether you use single or double quotes or the three-of-a-kind quotes to surround your strings.  Once it has parsed the text of your program or command, the way it stores the value is identical in all cases, and the surrounding quotes are not part of the value.
 
-.. activecode:: sdg
-    :nocanvas:
-
-    print('This is a string.')
-    print("""And so is this.""")
+.. note::
+   Python programers usually choose to surround their strings by single quotes.
 
 When you type a large number, you might be tempted to use commas between groups of three digits, as in ``42,000.1``. This is not a legal number in Python, but it does mean something else, which is legal:
 
-.. activecode:: sdh
+.. activecode:: sdg
     :nocanvas:
 
     print(42000.1)
     print(42,000.1)
 
 
-Well, that's not what we expected at all! Because of the comma, Python chose to treat this as a *pair* of values.     In fact, the print function can print any number of values as long
-as you separate them by commas.  Notice that the values are separated by spaces when they are displayed.
+Well, that's not what we expected at all! Because of the comma, Python treats this as a *pair* of values.     In fact, the print function can print any number of values as long as you separate them by commas.  Notice that the values are separated by spaces when they are displayed.
 
-.. activecode:: sdi
+.. activecode:: sdh
     :nocanvas:
 
     print(42, 17, 56, 34, 11, 4.35, 32)

@@ -52,11 +52,11 @@ A common way to represent variables on paper is to write the name with an arrow 
 If you ask Python to evaluate a variable, it will produce the value that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
 by the variable.
 
-.. activecode:: sdm
+.. activecode:: sdl
     :nocanvas:
 
     message = "What's up, Doc?"
-    n = 17
+    17 = n
     PI = 3.14159
     pi = 3
     pI = 'apple'
@@ -66,8 +66,12 @@ by the variable.
     print(PI)
     print(pi)
     print(pI)
-    # what do you see about the names for variables? (answer below and run)
-    #
+    # 
+
+.. admonition:: Fix the error ...
+
+   - In line 2, put the variable name on the right of ``=`` and the value on the left. Then you will not get an error.
+   - What do you notice about the variable names (PI, pi, and pI)? (hint: the next page talks about this.) Type this as a comment on line 12. Run.
 
 In each case the result is the value of the variable.
 To see this in even more detail, we can run the program using codelens.
@@ -91,7 +95,7 @@ created.
 
 Variables also have types; again, we can ask the interpreter what they are.
 
-.. activecode:: sdn
+.. activecode:: sdm
     :nocanvas:
 
     message = "What's up, Doc?"

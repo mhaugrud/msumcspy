@@ -31,26 +31,23 @@ This means get the current value of x, add one, and then update x with the new v
 
 .. activecode:: sdz
 
-    x = 6        # initialize x
-    print(x)
+    #x = 6        # initialize x
     x = x + 1    # increment x
     print(x)
+    x + 1 = x    # ERROR
+
+.. admonition:: Fix the error ...
+
+   - In an assignment statement the only thing that can be left of the ``=`` is a variable name. Delete line 4. Run.
+   - You must **initialize** a variable before you can update it. Remove ``#`` at the beginning of line 1. Run.
+   - Copy lines 2 and 3 to lines 4 and 5
+   - On line 4, change ``+`` to ``-`` and ``increment`` to ``decrement``
 
 
-If you try to update a variable that doesn't exist, you get an error because
-Python evaluates the expression on the right side of the assignment operator
-before it assigns the resulting value to the name on the left.
-Before you can update a variable, you have to **initialize** it, usually with a
-simple assignment.  In the above example, ``x`` was initialized to 6.
 
-Updating a variable by adding 1 is called an **increment**; subtracting 1 is
-called a **decrement**.  Sometimes programmers also talk about **bumping**
-a variable, which means the same as incrementing it by 1.
+If you try to update a variable that doesn't exist, you get an error because Python evaluates the expression on the right side of the assignment operator before it assigns the resulting value to the name on the left. Before you can update a variable, you have to **initialize** it, usually with a simple assignment.  In the above example, ``x`` was initialized to 6.
 
-.. admonition:: Extend the program ...
-
-   - Copy lines 3 and 4 to lines 5 and 6
-   - On line 5, change ``+`` to ``-`` and ``increment`` to ``decrement``
+Updating a variable by adding 1 is called an **increment** and subtracting 1 is called a **decrement**.
 
 
 .. admonition:: Advanced Topics
@@ -123,7 +120,7 @@ a variable, which means the same as incrementing it by 1.
 
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-   .. activecode:: sdza
+   .. activecode:: sd0
 
 
 
