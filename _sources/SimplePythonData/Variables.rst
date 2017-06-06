@@ -71,7 +71,7 @@ by the variable.
 .. admonition:: Fix the error ...
 
    - In line 2, put the variable name on the right of ``=`` and the value on the left. Then you will not get an error.
-   - What do you notice about the variable names (PI, pi, and pI)? (hint: the next page talks about this.) Type this as a comment on line 12. Run.
+   - What do you notice about the variable names (PI, pi, and pI)? Type this as a comment on line 12. Run. (hint: the next page talks about this subject.) 
 
 In each case the result is the value of the variable.
 To see this in even more detail, we can run the program using codelens.

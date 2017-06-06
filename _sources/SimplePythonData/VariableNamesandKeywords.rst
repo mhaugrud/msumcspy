@@ -32,6 +32,7 @@ If you give a variable an illegal name, you get a syntax error.  In the example 
     76trombones = "big parade"
     more$ = 1000000
     class = "Computer Science 101"
+    print(76trombones, more$, class)
 
 
 ``76trombones`` is illegal because it does not begin with a letter.  ``more$`` is illegal because it contains an illegal character, the dollar sign. But what's wrong with ``class``?
@@ -56,7 +57,7 @@ yield    True     False    None
 You might want to keep this list handy. If the interpreter complains about one of your variable names and you don't know why, see if it is on this list.
 
 .. note::
-   Programmers generally choose names for their variables that are meaningful to the human readers of the program --- they help the programmer document, or remember, what the variable is used for.
+   Computer scientists choose names for their variables that are **meaningful** to the human readers of the program --- they help the programmer document, or remember, what the variable is used for.
 
 .. caution::
 

@@ -130,7 +130,7 @@ Triple quoted strings can even span multiple lines:
 
 .. admonition:: Fix the error ...
 
-   When you run the above activecode a runtime error occurs. Change the quotes ``'`` to triple quotes, either ``'''`` or ``"""``. Then it will run with no errors.
+   When you run the above activecode a syntax error occurs. Change the quotes ``'`` to triple quotes, either ``'''`` or ``"""``. Then it will run with no errors.
 
 Python doesn't care whether you use single or double quotes or the three-of-a-kind quotes to surround your strings.  Once it has parsed the text of your program or command, the way it stores the value is identical in all cases, and the surrounding quotes are not part of the value.
 
