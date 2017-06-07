@@ -29,7 +29,7 @@ between them in order to track them down more quickly.
 
 **Check your understanding**
 
-.. mchoice:: question1_5_1
+.. mchoice:: mc1i
    :answer_a: tracking down programming errors and correcting them.
    :answer_b: removing all the bugs from your house.
    :answer_c: finding all the bugs in the program.

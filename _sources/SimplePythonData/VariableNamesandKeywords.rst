@@ -77,7 +77,7 @@ You might want to keep this list handy. If the interpreter complains about one o
 
 **Check your understanding**
 
-.. mchoice:: test_question2_4_1
+.. mchoice:: mc2e
    :answer_a: True
    :answer_b: False
    :correct: b

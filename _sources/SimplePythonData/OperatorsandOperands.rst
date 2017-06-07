@@ -104,7 +104,7 @@ Finally, returning to our time example, the remainder operator is extremely usef
 
 **Check your understanding**
 
-.. mchoice:: test_question2_6_1
+.. mchoice:: mc2f
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
@@ -123,7 +123,7 @@ Finally, returning to our time example, the remainder operator is extremely usef
 
 
 
-.. mchoice:: test_question2_6_2
+.. mchoice:: mc2g
    :answer_a: 4.25
    :answer_b: 5
    :answer_c: 4
@@ -141,7 +141,7 @@ Finally, returning to our time example, the remainder operator is extremely usef
       print(18 // 4)
 
 
-.. mchoice:: test_question2_6_3
+.. mchoice:: mc2h
    :answer_a: 4.25
    :answer_b: 5
    :answer_c: 4

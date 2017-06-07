@@ -73,7 +73,7 @@ The variable ``str_seconds`` will refer to the string that is entered by the use
 
 **Check your understanding**
 
-.. mchoice:: test_question2_7_1
+.. mchoice:: mc2i
    :answer_a: &lt;class 'str'&gt;
    :answer_b: &lt;class 'int'&gt;
    :answer_c: &lt;class 18&gt;

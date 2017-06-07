@@ -60,7 +60,7 @@ Line 4 changes the value of ``a`` but does not change the value of ``b``, so the
 
 **Check your understanding**
 
-.. mchoice:: test_question2_9_1
+.. mchoice:: mc2l
    :answer_a: x is 15 and y is 15
    :answer_b: x is 22 and y is 22
    :answer_c: x is 15 and y is 22

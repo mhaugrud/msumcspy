@@ -62,7 +62,7 @@ The type constructor ``str`` uses its argument to create a string.  Remember tha
 
 **Check your understanding**
 
-.. mchoice:: test_question2_2_1
+.. mchoice:: mc2c
    :answer_a: Nothing is printed. It generates a runtime error.
    :answer_b: 53
    :answer_c: 54

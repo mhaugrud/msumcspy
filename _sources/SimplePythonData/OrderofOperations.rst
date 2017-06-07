@@ -61,7 +61,7 @@ Due to some historical quirk, an exception to the left-to-right left-associative
 
 **Check your understanding**
 
-.. mchoice:: test_question2_8_1
+.. mchoice:: mc2j
    :answer_a: 14
    :answer_b: 24
    :answer_c: 3
@@ -80,7 +80,7 @@ Due to some historical quirk, an exception to the left-to-right left-associative
 
 
 
-.. mchoice:: test_question2_8_2
+.. mchoice:: mc2k
    :answer_a: 768
    :answer_b: 128
    :answer_c: 12

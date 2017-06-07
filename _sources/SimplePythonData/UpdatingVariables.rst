@@ -65,7 +65,7 @@ Updating a variable by adding 1 is called an **increment** and subtracting 1 is 
 
 **Check your understanding**
 
-.. mchoice:: test_question2_10_1
+.. mchoice:: mc2m
    :answer_a: 12
    :answer_b: -1
    :answer_c: 11
@@ -85,7 +85,7 @@ Updating a variable by adding 1 is called an **increment** and subtracting 1 is 
      x = x - 1
      print(x)
 
-.. mchoice:: test_question2_10_2
+.. mchoice:: mc2n
    :answer_a: 12
    :answer_b: 9
    :answer_c: 15

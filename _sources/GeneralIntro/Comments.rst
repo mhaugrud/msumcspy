@@ -42,7 +42,7 @@ are also ignored by the interpreter, but comments and blank lines can make your 
 
 **Check your understanding**
 
-.. mchoice:: question1_12_1
+.. mchoice:: mc1r
    :answer_a: To tell the computer what you mean in your program.
    :answer_b: For the people who are reading your code to know, in natural language, what the program is doing.
    :answer_c: Nothing, they are extraneous information that is not needed.

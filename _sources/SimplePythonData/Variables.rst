@@ -137,7 +137,7 @@ A great deal of programming is about having the computer remember things.  For e
 
 **Check your understanding**
 
-.. mchoice:: test_question2_3_2
+.. mchoice:: mc2d
    :answer_a: Nothing is printed. A runtime error occurs.
    :answer_b: Thursday
    :answer_c: 32.5
