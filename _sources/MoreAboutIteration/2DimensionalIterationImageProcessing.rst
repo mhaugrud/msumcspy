@@ -251,7 +251,7 @@ Change the name of the file in the ``image.Image()`` call to see how these image
             img.setPixel(col, row, newpixel)
 
     img.draw(win)
-    win.exitonclick()
+
 
 Let's take a closer look at the code.  After importing the image module, we create an image object.  It represents a typical digital photo.
 
@@ -284,7 +284,7 @@ Finally, we need to replace the old pixel with the new pixel in our image. It is
     img.draw(win)
     print('making negative')
     time.sleep(5) # wait 5 seconds
-    newimg = image.EmptyImage(img.getWidth(), img.getHeight())
+    
 
     for row in range(img.getHeight()):
         for col in range(img.getWidth()):

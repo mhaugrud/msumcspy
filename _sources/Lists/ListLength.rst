@@ -21,10 +21,10 @@ item when counting the length of the list.
 
 .. activecode:: lib
 
-    alist =  ["hello", 2.0, 5, [10, 20]]
-    print(len(alist))
-    print(len(['spam!', 1, ['Brie', 'Roquefort', 'Pol le Veq'], [1, 2, 3]]))
-
+    print(len(["hello", 2.0, 5, 10]))
+    print(len(['spam!', 1, ['Brie', 'Roquefort', 'Pol le Veq'], [1, 2, 2, 3, 5, 8]]))
+    # Why do both of these lists have the same length? (answer on next line and run)
+    #
 
 **Check your understanding**
 
