@@ -23,7 +23,7 @@ The ``while`` Statement
 
 There is another Python statement that can also be used to build an iteration.  It is called the ``while`` statement.
 The ``while`` statement provides a much more general mechanism for iterating.  Similar to the ``if`` statement, it uses
-a boolean expression to control the flow of execution.  The body of while will be repeated as long as the controlling boolean expression evaluates to ``True``.
+a boolean expression to control the flow of execution.  The difference is that the body of a while loop will be **repeated as long as** the controlling boolean expression evaluates to ``True``. The body of an if statement is not executed more than once.
 
 The following figure shows the flow of control.
 
@@ -114,14 +114,28 @@ other cases, it is not so easy to tell.
 	for the loop to terminate.  Since we do not necessarily know when this will happen, it creates what we
 	call **indefinite iteration**.  Indefinite iteration simply means that we don't know how many times we will repeat but eventually the condition controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem)
 
-What you will notice here is that the ``while`` loop is more work for
-you --- the programmer --- than the equivalent ``for`` loop.  When using a ``while``
-loop you have to control the loop variable yourself.  You give it an initial value, test
-for completion, and then make sure you change something in the body so that the loop
+What you will notice here is that the ``while`` loop is more work for you --- the programmer --- than the equivalent ``for`` loop.  When using a ``while`` loop you have to control the loop variable yourself.  You give it an initial value, test for completion, and then make sure you change something in the body so that the loop
 terminates.
 
-So why have two kinds of loop if ``for`` looks easier?  This next example shows an indefinite iteration where
-we need the extra power that we get from the ``while`` loop.
+.. admonition:: Modify the program ...
+
+   There are three activities that must be done so that a while loop works properly. You must 
+
+   1. **initialize** the loop variable (before the while statement)
+
+   2. **test** the loop variable (in the while statement condition)
+
+   3. **modify** the loop variable (in the body of the while loop)
+
+   Return to active code **iti** and type comments at the end of the lines where these activities are performed.
+
+   - At the end of line 5, type ``# initialize loop variable``.
+
+   - At the end of line 6, type ``# test loop variable``.
+
+   - At the end of line 8, type ``# modify loop variable``. Run.
+
+
 
 
 

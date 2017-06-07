@@ -14,9 +14,10 @@
 Randomly Walking Turtles
 ------------------------
 
-Suppose we want to entertain ourselves by watching a turtle wander around
-randomly inside the screen.  When we run the program we want the turtle and
-program to behave in the following way:
+So why have two kinds of loop when ``for`` is much easier?  This next example shows an indefinite iteration where we need the extra power that we get from the ``while`` loop.
+
+
+Suppose we want to entertain ourselves by watching a turtle wander around randomly inside the screen.  When we run the program we want the turtle and program to behave in the following way:
 
 #. The turtle begins in the center of the screen.
 #. Flip a coin. If its heads then turn to the left 90 degrees. If its tails
@@ -77,7 +78,7 @@ window and 10% that the turtle has escaped.
 
     t.shape('turtle')
     while isInScreen(wn, t):
-        coin = random.randrange(0, 2)
+        coin = random.randrange(2)
         if coin == 0:              # heads
             t.left(90)
         else:                      # tails
@@ -163,7 +164,7 @@ Here is the full version of our random walk program.
 
     t.shape('turtle')
     while isInScreen(wn,t):
-        coin = random.randrange(0, 2)
+        coin = random.randrange(2)
         if coin == 0:
             t.left(90)
         else:
@@ -173,16 +174,17 @@ Here is the full version of our random walk program.
 
     wn.exitonclick()
 
-We could have written this program without using a boolean function.
-You might want to try to rewrite it using a complex condition on the while statement.
-However, using a boolean function makes the program much more readable and easier
-to understand.  It also gives us another tool to use if this was a
-larger program and we needed to have a check for whether the turtle
-was still in the screen in another part of the program.  Another advantage is
-that if you ever need to write a similar program, you can reuse this function
+We could have written this program without using a boolean function. However you would need a rather complex condition on the while statement. Using a boolean function makes the program much more readable and easier to understand.  It also gives us another tool to use if this was a larger program and we needed to have a check for whether the turtle was still in the screen in another part of the program.  Another advantage is that if you ever need to write a similar program, you can reuse this function
 with confidence the next time you need it.  Breaking up this
 program into a couple of parts is another example of functional decomposition.
 
+.. admonition:: Modify the program ...
+
+   Instead of going left or right on each move, allow the turtle to go straight ahead.
+
+   - In line 26, change the randomrange from 2 to 3. The the coin now has 3 sides!
+
+   - In line 29, change the else to elif and check to see if the value of coin is 1.
 
 
 .. index:: 3n + 1 sequence

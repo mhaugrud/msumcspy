@@ -263,7 +263,15 @@ from 255.  Once we have the ``newred``, ``newgreen``, and ``newblue`` values, we
 
 Finally, we need to replace the old pixel with the new pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.
 
-Try to change the program above so that the outer loop iterates over the columns and the inner loop iterates over the rows.  We still create a negative image, but you can see that the pixels update in a very different order.
+.. admonition:: Modify the program ...
+
+   Change the program above so that the outer loop iterates over the columns and the inner loop iterates over the rows.
+
+   - In line 8, change ``row`` to ``col`` and ``getHeight`` to ``getWidth``.
+
+   - In line 9, change ``col`` to ``row`` and ``getWidth`` to ``getHeight``.
+
+   We still create a negative image, but you can see that the pixels update in a very different order.
 
 
 .. activecode::  itf
@@ -274,6 +282,7 @@ Try to change the program above so that the outer loop iterates over the columns
     img = image.Image("goldygopher.png")
     win = image.ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
+    print('making negative')
     time.sleep(5) # wait 5 seconds
     newimg = image.EmptyImage(img.getWidth(), img.getHeight())
 
@@ -287,14 +296,24 @@ Try to change the program above so that the outer loop iterates over the columns
 
             newpixel = image.Pixel(newred, newgreen, newblue)
 
-            newimg.setPixel(col, row, newpixel)
+            img.setPixel(col, row, newpixel)
 
-    newimg.draw(win)
-    time.sleep(5) # wait 5 seconds
     img.draw(win)
+    print('finished negative')
+    time.sleep(5) # wait 5 seconds
+    img.draw(win) # draw original image
+
+Run the program and notice that after the negative image is created and displayed, we cannot display the original image (line 25).
 
 
-Here we create a second image object: an empty image that will be "filled in" as we process the original pixel by pixel.  Note that the width and height of the empty image is set to be the same as the width and height of the original. 
+.. admonition:: Modify the program ...
+
+   - On line 8, type ``newimg = image.EmptyImage(img.getWidth(), img.getHeight())``.
+
+   - On lines 20 and 22, change ``img`` to ``newimg``.
+
+
+Here we create a second image object: an empty image that will be "filled in" as we process the original pixel by pixel.  Note that the width and height of the empty image is set to be the same as the width and height of the original image. 
 
 The second image becomes a modified version of the original image. By doing this we still have the original if we want to display it.
 

@@ -51,7 +51,7 @@ The string ``'\t'`` represents a **tab character**. The backslash character in `
 
    - On line 1, define a function that has one parameter ``n``.
    - On line 2, write its body: It returns ``2 ** n``.
-   - Edit line 8 to call your function with ``x``.
+   - Edit line 8 to call your function with ``x`` (instead of using the expression ``2 ** x``).
    - The same table will be produced as before.
 
 An escape sequence can appear anywhere in a string.  In this example, the tab escape sequence is the only thing in the string. How do you think you represent a backslash in a string?
