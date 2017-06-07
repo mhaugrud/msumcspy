@@ -79,24 +79,23 @@ Let's do an example that shows off some of these new features.
    tess.color("blue")
    tess.shape("turtle")
 
-   print(range(5, 60, 2))
-   tess.up()                     # this is new
-   for size in range(5, 60, 2):    # start with size = 5 and grow by 2
-       tess.stamp()                # leave an impression on the canvas
+   print(range(5, 84, 2))
+   tess.up()                       # this is new
+   for size in range(5, 84, 2):    # start with size = 5 and grow by 2
+       
        tess.forward(size)          # move tess along
        tess.right(24)              # and turn her
 
    wn.exitonclick()
 
-The list of integers shown above is created by printing the ``range(5,60,2)`` result.  It is only
-done to show you the distances being used to move the turtle forward.  The actual use appears
-as part of the ``for`` loop.
+The list of integers shown above is created by printing the ``range(5,84,2)`` result.  It is only done to show you the distances being used to move the turtle forward.  The actual use appears as part of the ``for`` loop.
 
-One more thing to be careful about.  All except one of the shapes you see on the screen here are
-footprints created by ``stamp``.  But the program still only has *one* turtle
-instance --- can you figure out which one is the real tess?  (Hint: if you're
-not sure, write a new line of code after the ``for`` loop to change tess'
-color, or to put her pen down and draw a line, or to change her shape, etc.)
+.. admonition:: Extend the program ...
+
+   - On line 11, type ``tess.stamp()``.
+   - On line 14 (not indented), give tess a different color.
+
+One more thing to be careful about.  All except one of the shapes you see on the screen here are footprints created by ``stamp``.  But the program still only has *one* turtle instance --- can you figure out which one is the real tess?  
 
 **Mixed up program**
 
