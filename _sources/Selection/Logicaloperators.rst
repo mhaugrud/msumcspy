@@ -43,7 +43,7 @@ Finally, the ``not`` operator negates a boolean expression, so ``not  x > 0`` is
 
 **Check your understanding**
 
-.. mchoice:: test_question6_2_1
+.. mchoice:: mc6g
    :answer_a: x &gt; 0 and &lt; 5
    :answer_b: 0 &lt; x &lt; 5
    :answer_c: x &gt; 0 or x &lt; 5

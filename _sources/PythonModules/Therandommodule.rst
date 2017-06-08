@@ -90,7 +90,7 @@ get random behavior each time you execute.
 
 **Check your understanding**
 
-.. mchoice:: question4_4_1
+.. mchoice:: mc4e
    :answer_a: math.pi
    :answer_b: math(pi)
    :answer_c: pi.math
@@ -103,7 +103,7 @@ get random behavior each time you execute.
 
    Which of the following is the correct way to reference the value pi within the math module.   Assume you have already imported the math module.
 
-.. mchoice:: question4_4_2
+.. mchoice:: mc4f
    :answer_a: the math module
    :answer_b: the random module
    :answer_c: the turtle module
@@ -117,7 +117,7 @@ get random behavior each time you execute.
    Which module would you most likely use if you were writing a function to simulate rolling dice?
 
 
-.. mchoice:: question4_4_3
+.. mchoice:: mc4g
    :answer_a: prob = random.randrange(1, 101)
    :answer_b: prob = random.randrange(1, 100)
    :answer_c: prob = random.randrange(0, 101)
@@ -130,7 +130,7 @@ get random behavior each time you execute.
 
    The correct code to generate a random number between 1 and 100 (inclusive) is:
 
-.. mchoice:: question4_4_4
+.. mchoice:: mc4h
    :answer_a: There is no computer on the stage for the drawing.
    :answer_b: Because computers don't really generate random numbers, they generate pseudo-random numbers.
    :answer_c: They would just generate the same numbers over and over again.

@@ -49,7 +49,7 @@ executed.  Otherwise the flow of execution continues to the statement after the 
 
 **Check your understanding**
 
-.. mchoice:: test_question6_5_1
+.. mchoice:: mc6e
    :answer_a: Output a
    :answer_b: Output b
    :answer_c: Output c
@@ -82,7 +82,7 @@ executed.  Otherwise the flow of execution continues to the statement after the 
      The negative number -10 is not valid here
 
 
-.. mchoice:: test_question6_5_2
+.. mchoice:: mc6f
    :answer_a: No
    :answer_b: Yes
    :correct: b

@@ -104,7 +104,7 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
 
 **Check your understanding**
 
-.. mchoice:: test_question6_8_1
+.. mchoice:: mc6l
    :answer_a: A function that returns True or False
    :answer_b: A function that takes True or False as an argument
    :answer_c: The same as a Boolean expression
@@ -115,7 +115,7 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
 
    What is a Boolean function?
 
-.. mchoice:: test_question6_8_2
+.. mchoice:: mc6m
    :answer_a: Yes
    :answer_b: No
    :correct: a

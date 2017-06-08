@@ -50,7 +50,7 @@ In lines 4-6, we instruct the **object** alex to move and to turn. We do this by
 
 **Check your understanding**
 
-.. mchoice:: test_question3_1_0
+.. mchoice:: mc3a
    :answer_a: North
    :answer_b: South
    :answer_c: East 

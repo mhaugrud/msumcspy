@@ -143,7 +143,7 @@ Try it in codelens.
 
 **Check your understanding**
 
-.. mchoice:: test_question3_5_1
+.. mchoice:: mc3g
   :answer_a: Range should generate a list that stops at 9 (including 9).
   :answer_b: Range should generate a list that starts at 10 (including 10).
   :answer_c: Range should generate a list starting at 3 that stops at 10 (including 10).
@@ -156,7 +156,7 @@ Try it in codelens.
 
   In the command range(3, 10, 2), what does the second argument (10) specify?
 
-.. mchoice:: test_question3_5_2
+.. mchoice:: mc3h
   :answer_a: range(2, 5, 8)
   :answer_b: range(2, 8, 3)
   :answer_c: range(2, 10, 3)
@@ -169,7 +169,7 @@ Try it in codelens.
 
   What command correctly generates the list [2, 5, 8]?
 
-.. mchoice:: test_question3_5_3
+.. mchoice:: mc3i
   :answer_a: It will generate a list starting at 0, with every number included up to but not including the argument it was passed.
   :answer_b: It will generate a list starting at 1, with every number up to but not including the argument it was passed.
   :answer_c: It will generate a list starting at 1, with every number including the argument it was passed.

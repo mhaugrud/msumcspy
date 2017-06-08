@@ -100,7 +100,7 @@ expression using the equality operator.
 
 **Check your understanding**
 
-.. mchoice:: test_question6_4_1
+.. mchoice:: mc6b
    :answer_a: Just one.
    :answer_b: Zero or more.
    :answer_c: One or more.
@@ -113,7 +113,7 @@ expression using the equality operator.
 
    How many statements can appear in each block (the if and the else) in a conditional statement?
 
-.. mchoice:: test_question6_4_2
+.. mchoice:: mc6c
    :answer_a: TRUE
    :answer_b: FALSE
    :answer_c: TRUE on one line and FALSE on the next
@@ -134,7 +134,7 @@ expression using the equality operator.
          print("FALSE")
 
 
-.. mchoice:: test_question6_4_3
+.. mchoice:: mc6d
    :answer_a: Output a
    :answer_b: Output b
    :answer_c: Output c

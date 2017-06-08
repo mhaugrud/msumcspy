@@ -191,7 +191,7 @@ To write a unit test, we must know the correct result when calling the function 
 
 **Check your understanding**
 
-.. mchoice:: test_question5_2_1
+.. mchoice:: mc5h
    :answer_a: You should never use a print statement in a function definition.
    :answer_b: You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.
    :answer_c: You must calculate the value of x+y+z before you return it.
@@ -211,7 +211,7 @@ To write a unit test, we must know the correct result when calling the function 
          print('the answer is', x + y + z)
 
 
-.. mchoice:: test_question5_2_2
+.. mchoice:: mc5i
    :answer_a: Nothing (no value)
    :answer_b: The value of x + y + z
    :answer_c: The string 'x + y + z'

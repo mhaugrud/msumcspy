@@ -87,7 +87,7 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
 
 **Check your understanding**
 
-.. mchoice:: test_question6_6_1
+.. mchoice:: mc6i
    :answer_a: No
    :answer_b: Yes
    :correct: a

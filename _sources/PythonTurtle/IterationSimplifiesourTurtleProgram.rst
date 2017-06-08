@@ -121,7 +121,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
 
 **Check your understanding**
 
-.. mchoice:: test_question3_4_1
+.. mchoice:: mc3c
    :answer_a: 1
    :answer_b: 5
    :answer_c: 6
@@ -140,7 +140,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
          print("I have", number, "cookies.  I'm going to eat one.")
 
 
-.. mchoice:: test_question3_4_2
+.. mchoice:: mc3d
    :answer_a: They are indented to the same degree from the loop header.
    :answer_b: There is always exactly one line in the loop body.
    :answer_c: The loop body ends with a semi-colon (;) which is not shown in the code above.
@@ -151,7 +151,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
 
    How does python know what lines are contained in the loop body?
 
-.. mchoice:: test_question3_4_3
+.. mchoice:: mc3e
       :answer_a: 2
       :answer_b: 4
       :answer_c: 5
@@ -170,7 +170,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
              print("I have", number, "cookies.  I'm going to eat one.")
 
 
-.. mchoice:: test_question3_4_4
+.. mchoice:: mc3f
       :answer_a: Draw a square using the same color for each side.
       :answer_b: Draw a square using a different color for each side.
       :answer_c: Draw one side of a square.
