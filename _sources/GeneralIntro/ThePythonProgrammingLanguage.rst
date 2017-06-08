@@ -9,8 +9,7 @@
 
 
 .. qnum::
-   :prefix: intro-3-
-   :start: 1
+   :prefix: intro-
 
 The Python Programming Language
 -------------------------------
@@ -125,7 +124,7 @@ most programs are more interesting than this one.
 **Check your understanding**
 
 .. mchoice:: mc1c
-   :answer_a: the instructions in a program, stored in a file.
+   :answer_a: the instructions of a program, stored in a file.
    :answer_b: the language that you are programming in (e.g., Python).
    :answer_c: the environment/tool in which you are programming.
    :answer_d: the number (or "code") that you must input at the top of each program to tell the computer how to execute your program.

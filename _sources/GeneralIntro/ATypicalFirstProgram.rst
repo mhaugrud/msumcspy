@@ -8,8 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: intro-12-
-   :start: 1
+   :prefix: intro-
 
 A Typical First Program
 -----------------------

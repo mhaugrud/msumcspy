@@ -8,8 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: intro-9-
-   :start: 1
+   :prefix: intro-
 
 Semantic Errors
 ---------------

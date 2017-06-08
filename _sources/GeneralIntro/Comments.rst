@@ -8,8 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: intro-13-
-   :start: 1
+   :prefix: intro-
 
 Comments
 --------

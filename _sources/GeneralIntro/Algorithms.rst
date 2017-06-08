@@ -8,8 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: intro-2-
-   :start: 1
+   :prefix: intro-
 
 Algorithms
 ----------

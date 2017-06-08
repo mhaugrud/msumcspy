@@ -8,8 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: intro-4-
-   :start: 1
+   :prefix: intro-
 
 Executing Python in this Book
 -----------------------------

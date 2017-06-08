@@ -8,8 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: intro-6-
-   :start: 1
+   :prefix: intro-
 
 What is Debugging?
 ------------------

@@ -8,8 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: intro-7-
-   :start: 1
+   :prefix: intro-
 
 Syntax errors
 -------------
