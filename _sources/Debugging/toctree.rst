@@ -1,8 +1,8 @@
-Debugging Interlude 1
+Debugging Interlude
 :::::::::::::::::::::
 
 .. toctree::
-   :caption: Debugging Interlude 1
+   :caption: Debugging Interlude
    :maxdepth: 2
 
    intro-HowtobeaSuccessfulProgrammer.rst
