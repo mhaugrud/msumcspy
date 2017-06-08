@@ -9,6 +9,7 @@
 
 .. qnum::
    :prefix: intro-
+   :start: 1
 
 Formal and Natural Languages
 ----------------------------

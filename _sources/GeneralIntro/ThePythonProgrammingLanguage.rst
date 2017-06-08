@@ -10,6 +10,7 @@
 
 .. qnum::
    :prefix: intro-
+   :start: 1
 
 The Python Programming Language
 -------------------------------
