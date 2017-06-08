@@ -31,7 +31,7 @@ of from the left.
     
 **Check your understanding**
  
-.. mchoice:: test_question9_3_1
+.. mchoice:: mc9d
    :answer_a: [ ]
    :answer_b: 3.14
    :answer_c: False
@@ -48,7 +48,7 @@ of from the left.
      print(alist[5])
 
    
-.. mchoice:: test_question9_3_2
+.. mchoice:: mc9e
    :answer_a: Error, you cannot use the upper method on a list.
    :answer_b: 2
    :answer_c: CAT
@@ -65,7 +65,7 @@ of from the left.
      print(alist[2].upper())
 
    
-.. mchoice:: test_question9_3_3
+.. mchoice:: mc9f
    :answer_a: 56
    :answer_b: c
    :answer_c: cat

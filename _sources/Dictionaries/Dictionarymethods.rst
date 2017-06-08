@@ -117,7 +117,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 **Check your understanding**
 
-.. mchoice:: test_question11_3_1
+.. mchoice:: mc11d
    :answer_a: cat
    :answer_b: dog
    :answer_c: elephant
@@ -154,7 +154,7 @@ in the case where the key is not present.  This can be seen in the final example
           print("key:", akey, "value:", inventory[akey])     
    
 
-.. mchoice:: test_question11_3_2
+.. mchoice:: mc11e
    :answer_a: 2
    :answer_b: 0.5
    :answer_c: bear
@@ -176,7 +176,7 @@ in the case where the key is not present.  This can be seen in the final example
 
    
    
-.. mchoice:: test_question11_3_3
+.. mchoice:: mc11f
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -192,7 +192,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 
-.. mchoice:: test_question11_3_4
+.. mchoice:: mc11g
    :answer_a: True
    :answer_b: False
    :correct: b
@@ -208,7 +208,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 
-.. mchoice:: test_question11_3_5
+.. mchoice:: mc11h
    :answer_a: 18
    :answer_b: 43
    :answer_c: 0

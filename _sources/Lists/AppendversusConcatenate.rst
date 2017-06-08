@@ -53,7 +53,7 @@ accumulator pattern.
 
 **Check you understanding**
 
-.. mchoice:: test_question9_15_1
+.. mchoice:: mc9w
    :answer_a: [4, 2, 8, 6, 5, 999]
    :answer_b: Error, you cannot concatenate a list with an integer.
    :correct: b

@@ -63,7 +63,7 @@ It is just a string of length 1.
 
 **Check your understanding**
 
-.. mchoice:: test_question8_2_1
+.. mchoice:: mc8c
    :answer_a: t
    :answer_b: h
    :answer_c: c
@@ -85,7 +85,7 @@ It is just a string of length 1.
 
 
 
-.. mchoice:: test_question8_2_2
+.. mchoice:: mc8d
    :answer_a: tr
    :answer_b: ps
    :answer_c: nn

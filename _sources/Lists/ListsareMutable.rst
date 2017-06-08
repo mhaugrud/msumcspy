@@ -72,7 +72,7 @@ desired location.
 
 **Check your understanding**
 
-.. mchoice:: test_question9_7_1
+.. mchoice:: mc9l
    :answer_a: [4, 2, True, 8, 6, 5]
    :answer_b: [4, 2, True, 6, 5]
    :answer_c: Error, it is illegal to assign

@@ -60,7 +60,7 @@ The list that you glue together (``wds`` in this example) is not modified.  Also
 
 **Check your understanding**
 
-.. mchoice:: test_question9_22_1
+.. mchoice:: mc9m
    :answer_a: Poe
    :answer_b: EdgarAllanPoe
    :answer_c: EAP

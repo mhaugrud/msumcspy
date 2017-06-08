@@ -90,7 +90,7 @@ The key ``'two'`` yields the value ``'dos'``.
 
 **Check your understanding**
 
-.. mchoice:: test_question11_1_1
+.. mchoice:: mc11a
    :answer_a: False
    :answer_b: True
    :correct: b
@@ -100,7 +100,7 @@ The key ``'two'`` yields the value ``'dos'``.
    A dictionary is an unordered collection of key-value pairs.
 
 
-.. mchoice:: test_question11_1_2
+.. mchoice:: mc11b
    :answer_a: 12
    :answer_b: 6
    :answer_c: 23

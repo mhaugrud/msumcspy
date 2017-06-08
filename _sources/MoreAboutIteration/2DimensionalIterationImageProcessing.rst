@@ -335,7 +335,7 @@ The second image becomes a modified version of the original image. By doing this
 
 
 .. mchoice:: mc7e
-   :answer_a: It would look like a red-washed version of the bell image
+   :answer_a: It would look like a red-filtered version of the original image
    :answer_b: It would be a solid red rectangle the same size as the original image
    :answer_c: It would look the same as the original image
    :answer_d: It would look the same as the negative image in the example code
@@ -345,7 +345,7 @@ The second image becomes a modified version of the original image. By doing this
    :feedback_c: If you remove the blue and green values from the pixels, the image will look different, even though there does not appear to be any blue or green in the original image (remember that other colors are made of combinations of red, green and blue).
    :feedback_d: Because we have changed the value of the pixels from what they were in the original ActiveCode box code, the image will not be the same.
 
-   What would the image produced from ActiveCode box 16 look like if you replaced the lines:
+   What would the image produced from the above activecode (itf) look like if you replaced the lines:
 
    .. code-block:: python
 

@@ -60,7 +60,7 @@ Trace the values of ``idx`` and satisfy yourself that they are correct.  In part
 
 **Check your understanding**
 
-.. mchoice:: test_question8_9_1
+.. mchoice:: mc8r
    :answer_a: 0
    :answer_b: 1
    :answer_c: 2

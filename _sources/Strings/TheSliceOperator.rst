@@ -66,7 +66,7 @@ end of the string.
 
 **Check your understanding**
 
-.. mchoice:: test_question8_5_1
+.. mchoice:: mc8g
    :answer_a: python
    :answer_b: rocks
    :answer_c: hon r
@@ -87,7 +87,7 @@ end of the string.
 
 
 
-.. mchoice:: test_question8_5_2
+.. mchoice:: mc8h
    :answer_a: rockrockrock
    :answer_b: rock rock rock
    :answer_c: rocksrocksrocks

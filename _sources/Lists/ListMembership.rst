@@ -26,7 +26,7 @@ used them previously with strings and they also work here.
 
 **Check your understanding**
 
-.. mchoice:: test_question9_4_1
+.. mchoice:: mc9g
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -41,7 +41,7 @@ used them previously with strings and they also work here.
      print(3.14 in alist)
 
 
-.. mchoice:: test_question9_4_2
+.. mchoice:: mc9h
    :answer_a: True
    :answer_b: False
    :correct: b

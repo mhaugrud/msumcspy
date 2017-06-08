@@ -45,7 +45,7 @@ If we print(``nested[2]``), we get ``[10, 20]``. To extract an element from the 
 
 **Check your understanding**
 
-.. mchoice:: test_question9_21_1
+.. mchoice:: mc9s
    :answer_a: 6
    :answer_b: 8
    :answer_c: 888

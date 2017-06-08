@@ -42,7 +42,7 @@ The solution here is to concatenate a new first letter onto a slice of
 
 **Check your understanding**
 
-.. mchoice:: test_question8_7_1
+.. mchoice:: mc8i
    :answer_a: Ball
    :answer_b: Call
    :answer_c: Error

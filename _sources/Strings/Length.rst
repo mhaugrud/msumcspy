@@ -62,7 +62,7 @@ Typically, a Python programmer will access the last character by combining the t
 
 **Check your understanding**
 
-.. mchoice:: test_question8_4_1
+.. mchoice:: mc8e
    :answer_a: 11
    :answer_b: 12
    :correct: b
@@ -79,7 +79,7 @@ Typically, a Python programmer will access the last character by combining the t
 
 
 
-.. mchoice:: test_question8_4_2
+.. mchoice:: mc8f
    :answer_a: o
    :answer_b: r
    :answer_c: s

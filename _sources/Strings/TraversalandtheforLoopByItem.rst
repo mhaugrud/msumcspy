@@ -47,7 +47,7 @@ The loop variable ``achar`` is automatically reassigned each character in the st
 
 **Check your understanding**
 
-.. mchoice:: test_question8_8_1
+.. mchoice:: mc8j
    :answer_a: 10
    :answer_b: 11
    :answer_c: 12
@@ -70,7 +70,7 @@ The loop variable ``achar`` is automatically reassigned each character in the st
    
    
    
-.. mchoice:: test_question8_8_2
+.. mchoice:: mc8k
    :answer_a: 4
    :answer_b: 5
    :answer_c: 6
