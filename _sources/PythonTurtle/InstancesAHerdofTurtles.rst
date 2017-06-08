@@ -66,7 +66,7 @@ Here are some *How to think like a computer scientist* observations:
 
 **Check your understanding**
 
-.. mchoice:: mc3b
+.. mchoice:: mc3f
    :answer_a: True
    :answer_b: False
    :correct: b

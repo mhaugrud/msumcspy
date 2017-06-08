@@ -95,7 +95,7 @@ the same as the current amount of green.
 
 **Check your understanding**
 
-.. mchoice:: test_question7_8_1_1
+.. mchoice:: mc7c
    :answer_a: Dark red
    :answer_b: Light red
    :answer_c: Dark green
@@ -171,7 +171,7 @@ pixel at column 45, row 55, has RGB values of 165, 161, and 158.  Try a few othe
 
 **Check your understanding**
 
-.. mchoice:: test_question7_8_2_1
+.. mchoice:: mc7d
    :answer_a: 149 132 122
    :answer_b: 183 179 170
    :answer_c: 165 161 158
@@ -334,7 +334,7 @@ The second image becomes a modified version of the original image. By doing this
 **Check your understanding**
 
 
-.. mchoice:: test_question7_8_3_2
+.. mchoice:: mc7e
    :answer_a: It would look like a red-washed version of the bell image
    :answer_b: It would be a solid red rectangle the same size as the original image
    :answer_c: It would look the same as the original image

@@ -71,7 +71,7 @@ Because of the tab characters between the columns, the position of the second co
 
 **Check your understanding**
 
-.. mchoice:: test_question7_7_1
+.. mchoice:: mc7a
   :answer_a: A tab will line up items in a second column, regardless of how many characters were in the first column, while spaces will not.
   :answer_b: There is no difference
   :answer_c: A tab is wider than a sequence of spaces
@@ -130,7 +130,7 @@ flow of control as it occurs with the nested iteration.  Again, for every value 
 
 **Check your understanding**
 
-.. mchoice:: test_question7_8_3_1
+.. mchoice:: mc7b
    :answer_a: Output a
    :answer_b: Output b
    :answer_c: Output c
