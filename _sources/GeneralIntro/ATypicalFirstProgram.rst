@@ -9,7 +9,7 @@
 
 .. qnum::
    :prefix: intro-
-   :start: 2
+   :start: 1
 
 A Typical First Program
 -----------------------

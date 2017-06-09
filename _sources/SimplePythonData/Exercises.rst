@@ -13,58 +13,43 @@ Exercises
 .. question:: spd_ex_1
    :number: 1
 
-   .. tabbed:: q1
 
-        .. tab:: Question
 
-            Evaluate the following numerical expressions in your head, then use
-            the active code window to check your results:
+            Evaluate the following numerical expressions in your head, then use the active code window to check your results:
 
             #. ``5 ** 2``
-            #. ``9 * 5``
+            #. ``2 * 5``
             #. ``15 / 12``
             #. ``12 / 15``
             #. ``15 // 12``
             #. ``12 // 15``
-            #. ``5 % 2``
-            #. ``9 % 5``
             #. ``15 % 12``
             #. ``12 % 15``
+            #. ``5 % 2``
+            #. ``2 % 5``
             #. ``6 % 6``
-            #. ``0 % 7``
+            #. ``0 % 6``
+            #. ``2 + (3 - 1) * 10 / 5 * (2 + 3)``
 
             .. activecode:: ch02_ex1
 
                print(5 ** 2)
 
-        .. tab:: Answer
 
-            #. ``5 ** 2  = 25``
-            #. ``9 * 5 = 45``
-            #. ``15 / 12 = 1.25``
-            #. ``12 / 15 = 0.8``
-            #. ``15 // 12 = 1``
-            #. ``12 // 15 = 0``
-            #. ``5 % 2 = 1``
-            #. ``9 % 5 = 4``
-            #. ``15 % 12 = 3``
-            #. ``12 % 15 = 12``
-            #. ``6 % 6 = 0``
-            #. ``0 % 7 = 0``
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: c0a62044cac248859ce3695b46697ecc
 
 .. question:: spd_ex_2
 
-   What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.
+   Write a small program to simulate a bank account:
 
-   ::
+   #. The bank balance begins at 0
+   #. Display the bank balance with a message stating this is the current balance
+   #. Prompt the user to enter the amount to deposit (a floating point number)
+   #. Update the bank balance by increasing it by the deposit amount
+   #. Display the bank balance with a message stating this the the current balance
+   #. Prompt the user to enter the amount to withdraw (a floating point number)
+   #. Update the bank balance by decreasing it by the withdrawal amount
+   #. Display the bank balance with a message stating this the the current balance
 
-       2 + (3 - 1) * 10 / 5 * (2 + 3)
 
    .. actex:: ex_2_2
 

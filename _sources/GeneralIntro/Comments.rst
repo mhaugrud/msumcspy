@@ -9,7 +9,7 @@
 
 .. qnum::
    :prefix: intro-
-   :start: 3
+   :start: 1
 
 Comments
 --------
