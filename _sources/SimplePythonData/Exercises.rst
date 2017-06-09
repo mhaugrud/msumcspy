@@ -39,21 +39,30 @@ Exercises
 
 .. question:: spd_ex_2
 
-   Write a small program to simulate a bank account:
+   .. tabbed:: q7
 
-   #. The bank balance begins at 0
-   #. Display the bank balance with a message stating this is the current balance
-   #. Prompt the user to enter the amount to deposit (a floating point number)
-   #. Update the bank balance by increasing it by the deposit amount
-   #. Display the bank balance with a message stating this the the current balance
-   #. Prompt the user to enter the amount to withdraw (a floating point number)
-   #. Update the bank balance by decreasing it by the withdrawal amount
-   #. Display the bank balance with a message stating this the the current balance
+      .. tab:: Question
 
+         Write a small program to simulate a bank account:
 
-   .. activecode:: ex_2_2
+         #. The bank balance begins at 0
+         #. Display the bank balance with a message stating this is the current balance
+         #. Prompt the user to enter the amount to deposit (a floating point number)
+         #. Update the bank balance by increasing it by the deposit amount
+         #. Display the bank balance with a message stating this the the current balance
+         #. Prompt the user to enter the amount to withdraw (a floating point number)
+         #. Update the bank balance by decreasing it by the withdrawal amount
+         #. Display the bank balance with a message stating this the the current balance
 
+         .. actex:: ex_2_2
 
+      .. tab:: Sample Output
+
+         Current balance = 0
+         Deposit how much? 234.56
+         Current balance = 234.56
+         Withdraw how much? 123.45
+         Current balance = 111.11
 
 .. question:: spd_ex_3
 
@@ -91,14 +100,12 @@ Exercises
 
    Add parenthesis to the expression ``6 * 1 - 2`` to change its value from 4 to -6.
 
-   .. actex:: ex_2_6
+   .. activecode:: ex_2_6
 
 
 .. question:: spd_ex_7
 
-   .. tabbed:: q7
 
-        .. tab:: Question
 
             The formula for computing the final amount if one is earning
             compound interest is given on Wikipedia as
@@ -112,7 +119,7 @@ Exercises
             `t`, that the money will be compounded for.  Calculate and print the final
             amount after `t` years.
 
-            .. actex:: ex_2_7
+            .. activecode:: ex_2_7
 
 
 
@@ -127,14 +134,11 @@ Exercises
 
 .. question:: spd_ex_9
 
-   .. tabbed:: q9
-
-        .. tab:: Question
 
             Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
             Print a nice message with the answer.
 
-            .. actex:: ex_2_9
+            .. activecode:: ex_2_9
 
 
 .. question:: spd_ex_10
@@ -142,22 +146,19 @@ Exercises
    Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
    gallons used.  Print a nice message with the answer.
 
-   .. actex:: ex_2_10
+   .. activecode:: ex_2_10
 
 
 .. question:: spd_ex_11
 
-   .. tabbed:: q11
-
-        .. tab:: Question
 
             Write a program that will convert degrees celsius to degrees fahrenheit.
 
-            .. actex:: ex_2_11
+            .. activecode:: ex_2_11
 
 
 .. question:: spd_ex_12
 
    Write a program that will convert degrees fahrenheit to degrees celsius.
 
-   .. actex:: ex_2_12
+   .. activecode:: ex_2_12
