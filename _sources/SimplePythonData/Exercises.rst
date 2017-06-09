@@ -31,7 +31,7 @@ Exercises
             #. ``0 % 6``
             #. ``2 + (3 - 1) * 10 / 5 * (2 + 3)``
 
-            .. activecode:: ch02_ex1
+            .. activecode:: ex_2_1
 
                print(5 ** 2)
 
@@ -51,15 +51,12 @@ Exercises
    #. Display the bank balance with a message stating this the the current balance
 
 
-   .. actex:: ex_2_2
+   .. activecode:: ex_2_2
 
 
 
 .. question:: spd_ex_3
 
-   .. tabbed:: q3
-
-        .. tab:: Question
 
             Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
             If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
@@ -67,21 +64,8 @@ Exercises
             Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
             Your program should output what the time will be on the clock when the alarm goes off.
 
-            .. actex:: ex_2_3
+            .. activecode:: ex_2_3
 
-        .. tab:: Answer
-
-            .. activecode:: q3_answer
-                :nocanvas:
-
-                ## question 3 solution ##
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: a77ed6163c254612b0d649034b261659
 
 
 .. question:: spd_ex_4
@@ -91,43 +75,21 @@ Exercises
    Write a general version of the program which asks for the starting day number, and
    the length of your stay, and it will tell you the number of day of the week you will return on.
 
-   .. actex:: ex_2_4
+   .. activecode:: ex_2_4
 
-       # Problem 4
-       # My Name:
 
 
 .. question:: spd_ex_5
 
-   .. tabbed:: q5
 
-        .. tab:: Question
+            Take the sentence: *All work and no play makes Jack a dull boy.*             Store each word in a separate variable, then print out the sentence on             one line using ``print``.
 
-            Take the sentence: *All work and no play makes Jack a dull boy.*
-            Store each word in a separate variable, then print out the sentence on
-            one line using ``print``.
+            .. activecode:: ex_2_5
 
-            .. actex:: ex_2_5
-
-        .. tab:: Answer
-
-            .. activecode:: q5_answer
-                :nocanvas:
-
-                ## question 5 solution ##
-
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: d1a30631e500449481955e02d3761dd3
 
 .. question:: spd_ex_6
 
-   Add parenthesis to the expression ``6 * 1 - 2`` to change its value
-   from 4 to -6.
+   Add parenthesis to the expression ``6 * 1 - 2`` to change its value from 4 to -6.
 
    .. actex:: ex_2_6
 
@@ -152,26 +114,15 @@ Exercises
 
             .. actex:: ex_2_7
 
-        .. tab:: Answer
-
-            .. activecode:: q7_answer
-                :nocanvas:
-
-                ## question 7 solution ##
 
 
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: f14145f85af93420ba0c05fca5d1b4d9a
 
 .. question:: spd_ex_8
 
    Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
    back to the user with the answer.
 
-   .. actex:: ex_2_8
+   .. activecode:: ex_2_8
 
 
 .. question:: spd_ex_9
@@ -185,19 +136,6 @@ Exercises
 
             .. actex:: ex_2_9
 
-        .. tab:: Answer
-
-            .. activecode:: q9_answer
-                :nocanvas:
-
-                ## question 9 solution
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: f69d286cc58943b6aef1d886e279a12b
 
 .. question:: spd_ex_10
 
@@ -217,19 +155,6 @@ Exercises
 
             .. actex:: ex_2_11
 
-        .. tab:: Answer
-
-            .. activecode:: q11_answer
-                :nocanvas:
-
-                ## question 11 solution ##
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: c4a929d598ab4c46b484f6abbcec2655
 
 .. question:: spd_ex_12
 
