@@ -58,11 +58,13 @@ Exercises
 
       .. tab:: Sample Output
 
-         Current balance = 0
-         Deposit how much? 234.56
-         Current balance = 234.56
-         Withdraw how much? 123.45
-         Current balance = 111.11
+         .. sourcecode:: python
+
+            Current balance = 0
+            Deposit how much? 234.56
+            Current balance = 234.56
+            Withdraw how much? 123.45
+            Current balance = 111.11
 
 .. question:: spd_ex_3
 
