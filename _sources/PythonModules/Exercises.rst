@@ -14,9 +14,9 @@ Exercises
    :number: 1
 
 
-           Use a ``for`` statement to print 10 random numbers.
+    Use a ``for`` statement to print 10 random numbers.
 
-           .. activecode:: ex_mod_1
+    .. activecode:: ex_mod_1
 
 
 .. question:: pymod_ex_2
@@ -28,9 +28,9 @@ Exercises
 .. question:: pymod_ex_3
 
 
-           The **Pythagorean Theorem** tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the ``math`` module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.
+   The **Pythagorean Theorem** tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the ``math`` module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.
 
-           .. activecode:: ex_mod_3
+   .. activecode:: ex_mod_3
 
 
 .. question:: pymod_ex_4
