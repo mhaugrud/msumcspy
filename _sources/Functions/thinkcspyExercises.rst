@@ -48,7 +48,7 @@ Exercises
 
 .. question:: functions_ex_2
 
-   Write a program to draw this. Assume the innermost square is 20 units per side, and each successive square is 20 units bigger, per side, than the one inside it.
+   Write a program to draw this using the drawSquare function. Assume the innermost square is 20 units per side, and each successive square is 20 units bigger, per side, than the one inside it.
 
    .. image:: Figures/nested_squares.png
 
@@ -75,9 +75,7 @@ Exercises
 
 .. question:: functions_ex_4
 
-   Draw this pretty pattern.
-
-   .. image:: Figures/tess08.png
+   Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the previous question to have its turtle draw a equilateral triangle.
 
    .. activecode:: ex_5_4
       :nocodelens:
@@ -85,26 +83,28 @@ Exercises
 
 .. question:: functions_ex_5
 
+   Draw this pretty pattern using the drawSquare function (there are 20 squares).
+
+   .. image:: Figures/tess08.png
+
+   .. activecode:: ex_5_5
+      :nocodelens:
+
+
+.. question:: functions_ex_6
+
    The two spirals in this picture differ only by the turn angle.  Draw both.
 
    .. image:: Figures/tess_spirals.png
       :height: 240
 
-   .. activecode:: ex_5_5
+   .. activecode:: ex_5_6
       :nocodelens:
 
       import turtle
 
       def drawSpiral(t, angle):
 
-
-
-.. question:: functions_ex_6
-
-   Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the previous question to have its turtle draw a equilateral triangle.
-
-   .. activecode:: ex_5_6
-      :nocodelens:
 
 
 .. question:: functions_ex_7

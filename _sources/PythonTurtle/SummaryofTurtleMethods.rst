@@ -23,6 +23,7 @@ left        angle         Turns the turtle counter clockwise
 up          None          Picks up the turtles tail
 down        None          Puts down the turtles tail
 color       color name    Changes the color of the turtle's tail
+color       None          Returns the color as a tuple
 xcor        None          Returns the x coordinate
 ycor        None          Returns the y coordinate
 heading     None          Returns the current heading
@@ -31,7 +32,8 @@ goto        x,y           Move the turtle to position x,y
 distance    turtle        Returns the distance between 2 turtles
 dot         None          Leave a dot at the current position
 stamp       None          Leaves an impression of a turtle shape at the current location
-shape       shapename     Should be 'arrow', 'classic', 'turtle', or 'circle'
+shape       shape name    Should be 'arrow', 'classic', 'turtle', or 'circle'
+speed       speed         0 is fastest
 ==========  ==========  =========================
 
 Once you are comfortable with the basics of turtle graphics you can read about even

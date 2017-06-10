@@ -13,9 +13,6 @@ Exercises
 .. question:: selection_ex_1
    :number: 1
 
-   .. tabbed:: q1
-
-        .. tab:: Question
 
             What do these expressions evaluate to?
 
@@ -24,21 +21,9 @@ Exercises
             #.  ``3 >= 4``
             #.  ``not (3 < 4)``
 
-                .. actex:: ex_6_1
+            .. activecode:: ex_6_1
 
 
-        .. tab:: Answer
-
-            #. True
-            #. False
-            #. False
-            #. False
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_eb4a097382404ffe81300aac5744e3fe
 
 
 .. question:: selection_ex_2
@@ -50,13 +35,10 @@ Exercises
    #.  ``a >= 18  and  day == 3``
    #.  ``a >= 18  or  day != 3``
 
-   .. actex:: ex_6_2
+   .. activecode:: ex_6_2
 
 .. question:: selection_ex_3
 
-   .. tabbed:: q3
-
-        .. tab:: Question
 
             Write a function which is given an exam mark, and it returns a string --- the grade for that mark --- according to this
             scheme:
@@ -78,7 +60,7 @@ Exercises
 
             Test your function by printing the mark and the grade for a number of different marks.
 
-            .. actex:: ex_6_3
+            .. activecode:: ex_6_3
 
                 def getGrade(grade):
                       #your code here
@@ -100,33 +82,6 @@ Exercises
 
                 myTests().main()
 
-        .. tab:: Answer
-
-            .. activecode:: q3_question
-
-                def grade(mark):
-                    if mark >= 90:
-                        return "A"
-                    else:
-                        if mark >= 80:
-                            return "B"
-                        else:
-                            if mark >= 70:
-                                return "C"
-                            else:
-                                if mark >= 60:
-                                    return "D"
-                                else:
-                                    return "F"
-
-                mark = 83
-                print( "Mark:", str(mark), "Grade:", grade(mark))
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_b9e6fd14629949e59da1a4ae827c0032
 
 .. question:: selection_ex_4
 
@@ -134,7 +89,7 @@ Exercises
    of 200 or more is filled with red, values between [100 and 200) are filled yellow,
    and bars representing values less than 100 are filled green.
 
-   .. actex:: ex_6_4
+   .. activecode:: ex_6_4
       :nocodelens:
 
 .. question:: selection_ex_5
@@ -215,8 +170,7 @@ Exercises
    Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
    the length of the hypotenuse.  (Hint:  ``x ** 0.5`` will return the square root, or use ``sqrt`` from the math module)
 
-   .. actex:: ex_6_6
-      :nocodelens:
+   .. activecode:: ex_6_6
 
       def findHypot(a,b):
           # your code here
@@ -236,16 +190,11 @@ Exercises
 
 .. question:: selection_ex_7
 
-   .. tabbed:: q7
-
-        .. tab:: Question
-
            Write a function called ``is_even(n)`` that takes an integer as an argument
            and returns ``True`` if the argument is an **even number** and ``False`` if
            it is **odd**.
 
-           .. actex:: ex_6_7
-               :nocodelens:
+           .. activecode:: ex_6_7
 
                def is_even(n):
                    # your code here
@@ -263,38 +212,13 @@ Exercises
 
                myTests().main()
 
-        .. tab:: Answer
-
-            .. activecode:: q7_answer
-                :nocodelens:
-
-                from test import testEqual
-
-                def is_even(n):
-                    if n % 2 == 0:
-                        return True
-                    else:
-                        return False
-
-                testEqual(is_even(10), True)
-                testEqual(is_even(5), False)
-                testEqual(is_even(1), False)
-                testEqual(is_even(0), True)
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_7ae92646976d4953ac8a163f338b4358
-
 
 .. question:: selection_ex_8
 
    Now write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd
    and ``False`` otherwise.
 
-   .. actex:: ex_6_8
-       :nocodelens:
+   .. activecode:: ex_6_8
 
        def is_odd(n):
            # your code here
@@ -314,15 +238,11 @@ Exercises
 
 .. question:: selection_ex_9
 
-   .. tabbed:: q9
-
-        .. tab:: Question
 
            Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its
            argument is an odd integer.
 
-           .. actex:: ex_6_9
-               :nocodelens:
+           .. activecode:: ex_6_9
 
                def is_odd(n):
                    # your code here
@@ -340,35 +260,6 @@ Exercises
                myTests().main()
 
 
-        .. tab:: Answer
-
-            .. activecode:: q9_answer
-                :nocodelens:
-
-                from test import testEqual
-
-                def is_even(n):
-                    if n % 2 == 0:
-                        return True
-                    else:
-                        return False
-
-                def is_odd(n):
-                    if is_even(n):
-                        return False
-                    else:
-                        return True
-
-                testEqual(is_odd(10), False)
-                testEqual(is_odd(5), True)
-                testEqual(is_odd(1), True)
-                testEqual(is_odd(0), False)
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_9125792d0c264b65b4d9d72d25485ceb
 
 
 .. question:: selection_ex_10
@@ -389,8 +280,7 @@ Exercises
           ...
 
 
-   .. actex:: ex_6_10
-      :nocodelens:
+   .. activecode:: ex_6_10
 
       def is_rightangled(a, b, c):
           # your code here
@@ -411,14 +301,10 @@ Exercises
 
 .. question:: selection_ex_11
 
-   .. tabbed:: q11
-
-        .. tab:: Question
 
             Extend the above program so that the sides can be given to the function in any order.
 
-            .. actex:: ex_6_11
-                :nocodelens:
+            .. activecode:: ex_6_11
 
                 def is_rightangled(a, b, c):
                     # your code here
@@ -438,45 +324,13 @@ Exercises
 
                 myTests().main()
 
-        .. tab:: Answer
-
-            .. activecode:: q11_answer
-                :nocodelens:
-
-                from test import testEqual
-
-                def is_rightangled(a, b, c):
-                    is_rightangled = False
-
-                    if a > b and a > c:
-                        is_rightangled = abs(b**2 + c**2 - a**2) < 0.001
-                    elif b > a and b > c:
-                        is_rightangled = abs(a**2 + c**2 - b**2) < 0.001
-                    else:
-                        is_rightangled = abs(a**2 + b**2 - c**2) < 0.001
-                    return is_rightangled
-
-                testEqual(is_rightangled(1.5, 2.0, 2.5), True)
-                testEqual(is_rightangled(4.0, 8.0, 16.0), False)
-                testEqual(is_rightangled(4.1, 8.2, 9.1678787077), True)
-                testEqual(is_rightangled(4.1, 8.2, 9.16787), True)
-                testEqual(is_rightangled(4.1, 8.2, 9.168), False)
-                testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_b25992fa70fc4e7581d84315df38d796
-
 
 .. question:: selection_ex_12
 
    A year is a **leap year** if it is divisible by 4 unless it is a century that is not divisible by 400.
    Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
 
-   .. actex:: ex_6_12
-      :nocodelens:
+   .. activecode:: ex_6_12
 
       def isLeap(year):
           # your code here
@@ -498,9 +352,6 @@ Exercises
 
 .. question:: selection_ex_13#.
 
-   .. tabbed:: q13
-
-        .. tab:: Question
 
             Implement the calculator for the date of Easter.
 
@@ -524,34 +375,6 @@ Exercises
 
             Your program should print an error message if the user provides a date that is out of range.
 
-            .. actex:: ex_6_13
+            .. activecode:: ex_6_13
 
 
-        .. tab:: Answer
-
-            .. activecode:: answer_ex_6_13
-
-                year = int(input("Please enter a year"))
-                if year >= 1900 and year <= 2099:
-                    a = year % 19
-                    b = year % 4
-                    c = year % 7
-                    d = (19*a + 24) % 30
-                    e = (2*b + 4*c + 6*d + 5) % 7
-                    dateofeaster = 22 + d + e
-
-                    if year == 1954 or year == 2981 or year == 2049 or year == 2076:
-                        dateofeaster = dateofeaster - 7
-
-                    if dateofeaster > 31:
-                        print("April", dateofeaster - 31)
-                    else:
-                        print("March", dateofeaster)
-                else:
-                    print("ERROR...year out of range")
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_2dfd6acf1ca849c2853dad606d1ba255
