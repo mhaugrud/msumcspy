@@ -20,6 +20,7 @@ Exercises
    .. image:: Figures/five_squares.png
 
    .. activecode:: ex_5_1
+      :nocodelens:
 
       import turtle
 
@@ -34,7 +35,7 @@ Exercises
       wn.bgcolor("lightgreen")
 
       alex = turtle.Turtle()
-      alex.color("pink")
+      alex.color("hotpink")
 
 
 
@@ -53,6 +54,7 @@ Exercises
 
 
    .. activecode:: ex_5_2
+      :nocodelens:
 
 
 .. question:: functions_ex_3
@@ -63,11 +65,12 @@ Exercises
    .. image:: Figures/regularpolygon.png
 
    .. activecode:: ex_5_3
+      :nocodelens:
 
 
       import turtle
 
-         def drawPoly(t, num_sides, side_length):
+      def drawPoly(t, num_sides, side_length):
 
 
 .. question:: functions_ex_4
@@ -77,6 +80,8 @@ Exercises
    .. image:: Figures/tess08.png
 
    .. activecode:: ex_5_4
+      :nocodelens:
+
 
 .. question:: functions_ex_5
 
@@ -86,6 +91,7 @@ Exercises
       :height: 240
 
    .. activecode:: ex_5_5
+      :nocodelens:
 
       import turtle
 
@@ -98,6 +104,7 @@ Exercises
    Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the previous question to have its turtle draw a equilateral triangle.
 
    .. activecode:: ex_5_6
+      :nocodelens:
 
 
 .. question:: functions_ex_7
@@ -110,18 +117,18 @@ Exercises
       def sumTo(n):
           # your code here
 
-          ====
-          from unittest.gui import TestCaseGui
+      ====
+      from unittest.gui import TestCaseGui
 
-          class myTests(TestCaseGui):
+      class myTests(TestCaseGui):
 
-             def testOne(self):
-                 self.assertAlmostEqual(sumTo(15),120.0,0,"Tested sumTo on input 15")
-                 self.assertAlmostEqual(sumTo(0),0.0,0,"Tested sumTo on input 0")
-                 self.assertAlmostEqual(sumTo(25),325.0,0,"Tested sumTo on input 25")
-                 self.assertAlmostEqual(sumTo(7),28.0,0,"Tested sumTo on input 7")
+         def testOne(self):
+             self.assertAlmostEqual(sumTo(15),120.0,0,"Tested sumTo on input 15")
+             self.assertAlmostEqual(sumTo(0),0.0,0,"Tested sumTo on input 0")
+             self.assertAlmostEqual(sumTo(25),325.0,0,"Tested sumTo on input 25")
+             self.assertAlmostEqual(sumTo(7),28.0,0,"Tested sumTo on input 7")
 
-          myTests().main()
+      myTests().main()
 
 
 
@@ -157,6 +164,7 @@ Exercises
    .. image:: Figures/star.png
 
    .. activecode:: ex_5_9
+      :nocodelens:
 
       import turtle
 
@@ -172,6 +180,7 @@ Exercises
    What would it look like if you didn't pick up the pen?
 
    .. activecode:: ex_5_10
+      :nocodelens:
 
 
 .. question:: functions_ex_11
@@ -180,6 +189,7 @@ Exercises
    Extend the star function to draw an n pointed star.  (Hint: n must be an odd number greater or equal to 3).
 
    .. activecode:: ex_5_11
+      :nocodelens:
 
       import turtle
 
@@ -191,6 +201,7 @@ Exercises
    Write a function called drawSprite that will draw a sprite.  The function will need parameters for the turtle, the number of legs, and the length of the legs.  Invoke the function to create a sprite with 15 legs of length 120.
 
    .. activecode:: ex_5_12
+      :nocodelens:
 
 
 .. question:: functions_ex_13
@@ -273,6 +284,7 @@ Exercises
    Write a function called `fancySquare` that will draw a square with fancy corners (spites on the corners).  You should implement and use the `drawSprite` function from above.  For an even more interesting look, how about adding small triangles to the ends of the sprite legs.
 
    .. activecode:: ex_5_17
+      :nocodelens:
 
       import turtle
 
