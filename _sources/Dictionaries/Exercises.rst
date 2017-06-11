@@ -13,9 +13,6 @@ Exercises
 .. question:: dict_ex_1
    :number: 1
 
-   .. tabbed:: q1
-
-        .. tab:: Question
 
            Write a program that allows the user to enter a string.  It then prints a
            table of the letters of the alphabet in alphabetical order which occur in
@@ -41,18 +38,7 @@ Exercises
                w  2
                $
 
-           .. actex:: ex_11_01
-
-        .. tab:: Answer
-
-            .. activecode:: q1_answer
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_de4f21e35d3a41a4a3ac4ac888f78d1a
+           .. activecode:: ex_11_01
 
 
 .. question:: dict_ex_2
@@ -119,9 +105,6 @@ Exercises
 
 .. question:: dict_ex_3
 
-   .. tabbed:: q3
-
-        .. tab:: Question
 
            Write a program called ``alice_words.py`` that creates a text file named
            ``alice_words.txt`` containing an alphabetical listing of all the words, and the
@@ -146,33 +129,21 @@ Exercises
            How many times does the word, ``alice``, occur in the book?  If you are writing this
            in the activecode window simply print out the results rather than write them to a file.
 
-           .. actex:: ex_11_02
+           .. activecode:: ex_11_02
 
-        .. tab:: Answer
-
-            .. sourcecode:: python
-
-                f = open('alice.txt', 'r')
+              f = open('alice.txt', 'r')
 
 
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_4f2d7860fc3143339c9c6a533c07b62d
 
 
 .. question:: dict_ex_4
 
    What is the longest word in Alice in Wonderland? How many characters does it have?
 
-   .. actex:: ex_11_03
+   .. activecode:: ex_11_03
 
 .. question:: dict_ex_5
 
-   .. tabbed:: q5
-
-        .. tab:: Question
 
             Here's a table of English to Pirate translations
 
@@ -202,18 +173,7 @@ Exercises
             Write a program that asks the user for a sentence in English and then translates that
             sentence to Pirate.
 
-            .. actex:: ex_11_04
+            .. activecode:: ex_11_04
 
 
-        .. tab:: Answer
-
-            .. activecode:: ch11_q5_answer
-
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_dd296be40c8643999060129b6d8dc7ae
 

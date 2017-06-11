@@ -13,9 +13,6 @@ Exercises
 .. question:: files_ex_1
    :number: 1
 
-   .. tabbed:: q1
-
-        .. tab:: Question
 
             The following sample file called ``studentdata.txt`` contains one line for each student in an imaginary class.  The
             student's name is the first thing on each line, followed by some exam scores.
@@ -34,24 +31,11 @@ Exercises
 
 
 
-            .. actex:: ex_6_1
+            .. activecode:: ex_6_1
                :nocodelens:
                :available_files: studentdata.txt
 
 
-        .. tab:: Answer
-
-            .. activecode:: ch_files_q1answer
-                :nocodelens:
-
-                f = open("studentdata.txt", "r")
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_eb4a097382404ffe81300aac5744e3fe
 
 
 
@@ -60,7 +44,7 @@ Exercises
    Using the text file ``studentdata.txt`` (shown in exercise 1) write a program that calculates the average grade
    for each student, and print out the student's name along with their average grade.
 
-   .. actex:: ex_10_2
+   .. activecode:: ex_10_2
       :nocodelens:
       :available_files: studentdata.txt
 
@@ -68,42 +52,15 @@ Exercises
 
 .. question:: files_ex_3
 
-   .. tabbed:: q3
-
-        .. tab:: Question
-
 
             Using the text file ``studentdata.txt`` (shown in exercise 1) write a program that calculates the minimum and
             maximum score for each student.  Print out their name as well.
 
 
 
-            .. actex:: ex_6_3
+            .. activecode:: ex_6_3
                :nocodelens:
                :available_files: studentdata.txt
-
-
-        .. tab:: Answer
-
-            .. activecode:: ch_files_q3answer
-                :nocodelens:
-
-                f = open("studentdata.txt", "r")
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q3
-
-
-
-
-
-
-
-
 
 
 
@@ -155,7 +112,7 @@ Exercises
    draw the best fit line, in a different color, through the points.
 
 
-   .. actex:: ex_10_4
+   .. activecode:: ex_10_4
       :nocodelens:
       :available_files: labdata.txt
 
@@ -163,9 +120,6 @@ Exercises
 .. question:: files_ex_5
 
 
-   .. tabbed:: q5
-
-        .. tab:: Question
 
             At the bottom of this page is a very long file called ``mystery.txt`` The lines of this
             file contain either the word UP or DOWN or a pair of numbers.  UP and DOWN are instructions
@@ -173,33 +127,9 @@ Exercises
             Write a program that reads the file ``mystery.txt`` and uses the turtle to draw the picture
             described by the commands and the set of points.
 
-            .. actex:: ex_10_5
+            .. activecode:: ex_10_5
                :nocodelens:
                :available_files: mystery.txt
-
-
-
-        .. tab:: Answer
-
-            .. activecode:: ch_files_q5answer
-                :nocodelens:
-
-                import turtle
-
-                t = turtle.Turtle()
-                wn = turtle.Screen()
-                wn.setworldcoordinates(-300, -300, 300, 300)
-
-                f = open("mystery.txt", "r")
-
-
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q5
 
 
 
