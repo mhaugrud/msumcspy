@@ -49,10 +49,6 @@ Step 1: Make sure you have a reasonable GUI design and implementation plan
 before you start coding. Draw a sketch of your initial design on paper
 and consider how a user will interact with your program.
 
-.. figure:: Figures/Whack_a_mole_design.png
-  :align: center
-
-  Initial design of a Whack-a-mole game
 
 Step 2: Create the basic structure of your interface using appropriate ``frame``
 widgets. You will need to give a size to the frames because they will contain

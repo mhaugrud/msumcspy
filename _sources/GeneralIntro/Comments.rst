@@ -37,6 +37,7 @@ are also ignored by the interpreter, but comments and blank lines can make your 
    - Change ``December 25, 2010`` to the current date.
    - Change ``easy`` (in line 6) to ``fun``. Run.
    - Type ``#`` at the beginning of line 7. Run and notice that ``Hello, World!`` is not displayed.
+
    We **comment out** a line when we change an executable line into a comment. This technique is useful to prevent a line from executing but we don't want to permanently delete it.
 
 

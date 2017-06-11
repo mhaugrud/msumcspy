@@ -79,7 +79,7 @@ You may ask, "Why did we write two methods instead of just one that could handle
 
 .. admonition:: Think about it
 
-What would happen if a clever account holder deposited a negative amount to the account? Run the activecode below to see. 
+   What would happen if a clever account holder deposited a negative amount to the account? Run the activecode below to see. 
 
 .. activecode:: c1f
     
@@ -117,5 +117,6 @@ What would happen if a clever account holder deposited a negative amount to the 
 
 
 .. important::
-    We can consider a negative balance to be an illegal state for an account. The methods in a well designed class ensure an object will never get into an illegal state.  A class is responsible for maintaining the itegrity of its objects.
+
+   We can consider a negative balance to be an illegal state for an account. The methods in a well designed class ensure an object will never get into an illegal state.  A class is responsible for maintaining the itegrity of its objects.
 

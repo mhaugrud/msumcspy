@@ -12,7 +12,7 @@
    :start: 1
 
 Choosing between ``for`` and ``while``
--------------------------------------
+--------------------------------------
 
 ``for`` loops are simpler but ``while`` loops provide more control. 
 

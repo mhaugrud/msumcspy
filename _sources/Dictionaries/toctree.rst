@@ -1,5 +1,5 @@
 Tuples and Dictionaries
-::::::::::::
+:::::::::::::::::::::::
 
 .. toctree::
    :caption: Dictionaries
