@@ -63,7 +63,7 @@ Exercises
             .. activecode:: ex_6_3
 
                 def getGrade(grade):
-                      #your code here
+                    #your code here
 
 
                 ====

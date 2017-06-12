@@ -15,35 +15,16 @@ Exercises
 .. question:: moreiter_ex_1
    :number: 1
 
-   .. tabbed:: q1
-
-        .. tab:: Question
 
            Add a print statement to Newton's ``sqrt`` function that
            prints out ``better`` each time it is calculated. Call your modified
            function with 25 as an argument and record the results.
 
-           .. actex:: ex_7_7
+           .. activecode:: ex_7_7
 
               def newtonSqrt(n):
                   # your code here
 
-
-
-        .. tab:: Answer
-
-            .. activecode:: q1_answer
-
-                def newtonSqrt(n):
-
-
-                print("Final approx:", newtonSqrt(25))
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_5784e08291ba43199d43fdab277849f5
 
 
 .. question:: moreiter_ex_2
@@ -60,7 +41,7 @@ Exercises
 
    (*hint: use a web search to find out what a triangular number is.*)
 
-   .. actex:: ex_7_8
+   .. activecode:: ex_7_8
 
       def print_triangular_numbers(n):
           # your code here
@@ -68,15 +49,11 @@ Exercises
 
 .. question:: moreiter_ex_3
 
-   .. tabbed:: q3
-
-        .. tab:: Question
-
            Write a function, ``is_prime``, that takes a single integer argument
            and returns ``True`` when the argument is a *prime number* and ``False``
            otherwise.
 
-           .. actex:: ex_7_9
+           .. activecode:: ex_7_9
 
               def is_prime(n):
                   # your code here
@@ -95,25 +72,6 @@ Exercises
               myTests().main()
 
 
-        .. tab:: Answer
-
-            .. activecode:: q3_answer
-
-                def is_prime(n):
-
-
-                print(is_prime(25))
-                print(is_prime(7))
-                print(is_prime(251))
-                print(is_prime(20))
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_418de05233374e76b3b66aeb96b55656
-
-
 .. question:: moreiter_ex_4
 
    Modify the walking turtle program so that rather than a 90 degree left or right turn the
@@ -127,69 +85,54 @@ Exercises
 
 .. question:: moreiter_ex_5
 
-   .. tabbed:: q5
-
-        .. tab:: Question
-
            Modify the turtle walk program so that you have two turtles each with a
            random starting location.  Keep the turtles moving until one of them leaves the screen.
 
-           .. actex:: ex_7_13
+           .. activecode:: ex_7_13
               :nocodelens:
 
-        .. tab:: Answer
+              import random
+              import turtle
 
-            .. activecode:: q5_answer
-                :nocodelens:
-
-                import random
-                import turtle
-
-                def moveRandom(wn, t):
+              def moveRandom(wn, t):
 
 
-                def areColliding(t1, t2):
+              def areColliding(t1, t2):
 
 
-                def isInScreen(w, t):
+              def isInScreen(w, t):
 
 
-                t1 = turtle.Turtle()
-                t2 = turtle.Turtle()
-                wn = turtle.Screen()
+              t1 = turtle.Turtle()
+              t2 = turtle.Turtle()
+              wn = turtle.Screen()
 
-                t1.shape('turtle')
-                t2.shape('circle')
+              t1.shape('turtle')
+              t2.shape('circle')
 
-                leftBound = -wn.window_width() / 2
-                rightBound = wn.window_width() / 2
-                topBound = wn.window_height() / 2
-                bottomBound = -wn.window_height() / 2
+              leftBound = -wn.window_width() / 2
+              rightBound = wn.window_width() / 2
+              topBound = wn.window_height() / 2
+              bottomBound = -wn.window_height() / 2
 
-                t1.up()
-                t1.goto(random.randrange(leftBound, rightBound),
-                        random.randrange(bottomBound, topBound))
-                t1.setheading(random.randrange(0, 360))
-                t1.down()
+              t1.up()
+              t1.goto(random.randrange(leftBound, rightBound),
+                      random.randrange(bottomBound, topBound))
+              t1.setheading(random.randrange(0, 360))
+              t1.down()
 
-                t2.up()
-                t2.goto(random.randrange(leftBound, rightBound),
-                        random.randrange(bottomBound, topBound))
-                t2.setheading(random.randrange(0, 360))
-                t2.down()
+              t2.up()
+              t2.goto(random.randrange(leftBound, rightBound),
+                      random.randrange(bottomBound, topBound))
+              t2.setheading(random.randrange(0, 360))
+              t2.down()
 
 
-                while isInScreen(wn, t1) and isInScreen(wn, t2):
-                    moveRandom(wn, t1)
-                    moveRandom(wn, t2)
+              while isInScreen(wn, t1) and isInScreen(wn, t2):
+                  moveRandom(wn, t1)
+                  moveRandom(wn, t2)
 
-                wn.exitonclick()
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_0cd01637a1814f86b11f576c37a46437
+              wn.exitonclick()
 
 
 .. question:: moreiter_ex_6
@@ -197,17 +140,13 @@ Exercises
    Modify the previous turtle walk program so that the turtle turns around
    when it hits the wall or when one turtle collides with another turtle.
 
-   .. actex:: ex_7_12
+   .. activecode:: ex_7_12
       :nocodelens:
 
 
 
 
 .. question:: moreiter_ex_7
-
-   .. tabbed:: q7
-
-        .. tab:: Question
 
            Write a function to remove all the red from an image.
 
@@ -217,64 +156,37 @@ Exercises
                <h4 style="text-align: left;">For this and the following exercises, use the
                luther.jpg photo.</h4>
 
-           .. actex:: ex_7_15
+           .. activecode:: ex_7_15
               :nocodelens:
 
-        .. tab:: Answer
-
-            .. activecode:: q7_answer
-                :nocodelens:
-
-                import image
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_777006b154ca4af7ab8bd11cc25c208a
 
 .. question:: moreiter_ex_8
 
    Write a function to convert the image to grayscale.
 
-   .. actex:: ex_7_16
+   .. activecode:: ex_7_16
       :nocodelens:
 
 
 .. question:: moreiter_ex_9
 
-   .. tabbed:: q9
-
-        .. tab:: Question
-
            Write a function to convert an image to black and white.
 
-           .. actex:: ex_7_17
+           .. activecode:: ex_7_17
               :nocodelens:
 
-        .. tab:: Answer
+              import image
 
-            .. activecode:: q9_answer
-                :nocodelens:
+              def convertBlackWhite(input_image):
 
-                import image
+              win = image.ImageWin()
+              img = image.Image("luther.jpg")
 
-                def convertBlackWhite(input_image):
+              bw_img = convertBlackWhite(img)
+              bw_img.draw(win)
 
-                win = image.ImageWin()
-                img = image.Image("luther.jpg")
+              win.exitonclick()
 
-                bw_img = convertBlackWhite(img)
-                bw_img.draw(win)
-
-                win.exitonclick()
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_0f0fb41d607743998a86962a11eed53d
 
 .. question:: moreiter_ex_10
 
@@ -290,45 +202,30 @@ Exercises
    Write a function to convert an image to sepia tone. *Hint:*
    Remember that rgb values must be integers between 0 and 255.
 
-   .. actex:: ex_7_18
+   .. activecode:: ex_7_18
       :nocodelens:
 
 .. question:: moreiter_ex_11
 
-   .. tabbed:: q11
-
-        .. tab:: Question
-
            Write a function to uniformly enlarge an image by a factor of 2 (double the size).
 
 
-           .. actex:: ex_7_19
+           .. activecode:: ex_7_19
               :nocodelens:
 
-        .. tab:: Answer
+              import image
 
-            .. activecode:: answer_7_11
-               :nocodelens:
-
-               import image
-
-               def double(oldimage):
+              def double(oldimage):
 
 
-               win = image.ImageWin()
-               img = image.Image("luther.jpg")
+              win = image.ImageWin()
+              img = image.Image("luther.jpg")
 
-               bigimg = double(img)
-               bigimg.draw(win)
+              bigimg = double(img)
+              bigimg.draw(win)
 
-               win.exitonclick()
+              win.exitonclick()
 
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_9ca319187b4a4c2399402de0d99c0b1d
 
 .. question:: moreiter_ex_12
 
@@ -339,49 +236,34 @@ Exercises
    parameter and smooths the image.  Your function should return a new image
    that is the same as the old but smoothed.
 
-       .. actex:: ex_7_20
-          :nocodelens:
+   .. activecode:: ex_7_20
+      :nocodelens:
 
 .. question:: moreiter_ex_13
-
-    .. tabbed:: q13
-
-        .. tab:: Question
 
            Write a general pixel mapper function that will take an image and a pixel mapping function as
            parameters.  The pixel mapping function should perform a manipulation on a single pixel and return
            a new pixel.
 
-           .. actex:: ex_7_21
+           .. activecode:: ex_7_21
               :nocodelens:
 
-        .. tab:: Answer
+              import image
 
-            .. activecode:: q13_answer
-                :nocodelens:
-
-                import image
-
-                def pixelMapper(oldimage, rgbFunction):
+              def pixelMapper(oldimage, rgbFunction):
 
 
-                def graypixel(oldpixel):
+              def graypixel(oldpixel):
 
 
-                win = image.ImageWin()
-                img = image.Image("luther.jpg")
+              win = image.ImageWin()
+              img = image.Image("luther.jpg")
 
-                newim = pixelMapper(img, graypixel)
-                newim.draw(win)
+              newim = pixelMapper(img, graypixel)
+              newim.draw(win)
 
-                win.exitonclick()
+              win.exitonclick()
 
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_eb9f71a62de24efaa61f64b5a7e5d9c9
 
 .. question:: moreiter_ex_14
 
@@ -390,133 +272,14 @@ Exercises
    or the images may even be damaged.  One way of eliminating this noise is
    to replace each pixel by the median value of the pixels surrounding it.
 
-   .. actex:: ex_7_22
+   .. activecode:: ex_7_22
       :nocodelens:
 
 .. question:: moreiter_ex_15
 
-   .. tabbed:: q15
-
-        .. tab:: Question
-
            Research the Sobel edge detection algorithm and implement it.
 
-           .. actex:: ex_7_23
+           .. activecode:: ex_7_23
               :nocodelens:
 
 
-        .. tab:: Answer
-
-            .. activecode:: q15_answer
-                :nocodelens:
-
-                import image
-                import math
-                import sys
-
-                # Code adapted from http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/image-processing/edge_detection.html
-                # Licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
-
-                # this algorithm takes some time for larger images - this increases the amount of time
-                # the program is allowed to run before it times out
-                sys.setExecutionLimit(20000)
-
-                img = image.Image("luther.jpg")
-                newimg = image.EmptyImage(img.getWidth(), img.getHeight())
-                win = image.ImageWin()
-
-                for x in range(1, img.getWidth()-1):  # ignore the edge pixels for simplicity (1 to width-1)
-                    for y in range(1, img.getHeight()-1): # ignore edge pixels for simplicity (1 to height-1)
-
-                        # initialise Gx to 0 and Gy to 0 for every pixel
-                        Gx = 0
-                        Gy = 0
-
-                        # top left pixel
-                        p = img.getPixel(x-1, y-1)
-                        r = p.getRed()
-                        g = p.getGreen()
-                        b = p.getBlue()
-
-                        # intensity ranges from 0 to 765 (255 * 3)
-                        intensity = r + g + b
-
-                        # accumulate the value into Gx, and Gy
-                        Gx += -intensity
-                        Gy += -intensity
-
-                        # remaining left column
-                        p = img.getPixel(x-1, y)
-                        r = p.getRed()
-                        g = p.getGreen()
-                        b = p.getBlue()
-
-                        Gx += -2 * (r + g + b)
-
-                        p = img.getPixel(x-1, y+1)
-                        r = p.getRed()
-                        g = p.getGreen()
-                        b = p.getBlue()
-
-                        Gx += -(r + g + b)
-                        Gy += (r + g + b)
-
-                        # middle pixels
-                        p = img.getPixel(x, y-1)
-                        r = p.getRed()
-                        g = p.getGreen()
-                        b = p.getBlue()
-
-                        Gy += -2 * (r + g + b)
-
-                        p = img.getPixel(x, y+1)
-                        r = p.getRed()
-                        g = p.getGreen()
-                        b = p.getBlue()
-
-                        Gy += 2 * (r + g + b)
-
-                        # right column
-                        p = img.getPixel(x+1, y-1)
-                        r = p.getRed()
-                        g = p.getGreen()
-                        b = p.getBlue()
-
-                        Gx += (r + g + b)
-                        Gy += -(r + g + b)
-
-                        p = img.getPixel(x+1, y)
-                        r = p.getRed()
-                        g = p.getGreen()
-                        b = p.getBlue()
-
-                        Gx += 2 * (r + g + b)
-
-                        p = img.getPixel(x+1, y+1)
-                        r = p.getRed()
-                        g = p.getGreen()
-                        b = p.getBlue()
-
-                        Gx += (r + g + b)
-                        Gy += (r + g + b)
-
-                        # calculate the length of the gradient (Pythagorean theorem)
-                        length = math.sqrt((Gx * Gx) + (Gy * Gy))
-
-                        # normalise the length of gradient to the range 0 to 255
-                        length = length / 4328 * 255
-
-                        length = int(length)
-
-                        # draw the length in the edge image
-                        newpixel = image.Pixel(length, length, length)
-                        newimg.setPixel(x, y, newpixel)
-
-                newimg.draw(win)
-                win.exitonclick()
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_dd2d9ca5ea744aafbf7cdc2a4ad5e974
