@@ -49,11 +49,11 @@ The program has been started for you.  You need to fill in the part that will "t
 	import math
 	import random
 
-	fred = turtle.Turtle()
-	fred.up()
-
 	wn = turtle.Screen()
 	wn.setworldcoordinates(-1,-1,1,1)
+
+	fred = turtle.Turtle()
+	fred.up()
 
 	numdarts = 10
 	for i in range(numdarts):
