@@ -25,6 +25,49 @@ Exercises
               
           .. actex:: classes_deeper_q1
               
+        .. tab:: Answer
+        
+            .. activecode:: ch_cl2_answer1
+            
+                class Point:
+                    """ Point class for representing and manipulating x,y coordinates. """
+
+                    def __init__(self, initX, initY):
+
+                        self.x = initX
+                        self.y = initY
+
+                    def getX(self):
+                        return self.x
+
+                    def getY(self):
+                        return self.y
+
+                    def __str__(self):
+                        return "x=" + str(self.x) + ", y=" + str(self.y)
+                    
+                    
+                class Rectangle:
+                    """Rectangle class using Point, width and height"""
+                
+                    def __init__(self, initP, initW, initH):
+                
+                        self.location = initP
+                        self.width = initW
+                        self.height = initH
+                        
+                loc = Point(4, 5)
+                r = Rectangle(loc, 6, 5)
+                print(r)
+                    
+                    
+        .. tab:: Discussion
+        
+             .. disqus::
+                 :shortname: interactivepython
+                 :identifier: disqus_ch_cl2_q1
+                 
+   
    
                  
 .. question:: cdd_ex_2
@@ -48,6 +91,48 @@ Exercises
               test(r.area(), 50)
 
            .. actex:: classes_q3
+
+        .. tab:: Answer
+        
+            .. activecode:: ch_cl2_q3answer
+            
+                class Point:
+                    """ Point class for representing and manipulating x,y coordinates. """
+
+                    def __init__(self, initX, initY):
+
+                        self.x = initX
+                        self.y = initY
+
+                    def getX(self):
+                        return self.x
+
+                    def getY(self):
+                        return self.y
+
+                    def __str__(self):
+                        return "x=" + str(self.x) + ", y=" + str(self.y)
+            
+            
+                class Rectangle:
+                    """Rectangle class using Point, width and height"""
+        
+                    def __init__(self, initP, initW, initH):
+        
+                        self.location = initP
+                        self.width = initW
+                        self.height = initH
+                        
+                    def area(self):
+                        return self.width * self.height
+                        
+                        
+
+        .. tab:: Discussion 
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_d43c8f8afb2c4c808917bb7e948dbcbe
 
 
 .. question:: cdd_ex_4
@@ -78,6 +163,49 @@ Exercises
               test(r.height, 10)
 
            .. actex:: classes_q5
+
+        .. tab:: Answer
+            
+            .. activecode:: ch_cl2_q5answer
+        
+                class Point:
+                    """ Point class for representing and manipulating x,y coordinates. """
+
+                    def __init__(self, initX, initY):
+
+                        self.x = initX
+                        self.y = initY
+
+                    def getX(self):
+                        return self.x
+
+                    def getY(self):
+                        return self.y
+
+                    def __str__(self):
+                        return "x=" + str(self.x) + ", y=" + str(self.y)
+        
+        
+                class Rectangle:
+                    """Rectangle class using Point, width and height"""
+    
+                    def __init__(self, initP, initW, initH):
+    
+                        self.location = initP
+                        self.width = initW
+                        self.height = initH
+                    
+                    def transpose(self):
+                        temp = self.width
+                        self.width = self.height
+                        self.height = temp
+                    
+                    
+        .. tab:: Discussion 
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_chcl_q5disc
 
 
 .. question:: cdd_ex_6
@@ -110,6 +238,48 @@ Exercises
            from the lower left corner to the opposite corner.
         
            .. actex:: classes_q7
+
+        .. tab:: Answer
+            
+            .. activecode:: ch_cl2_answer7
+            
+                class Point:
+                    """ Point class for representing and manipulating x,y coordinates. """
+
+                    def __init__(self, initX, initY):
+
+                        self.x = initX
+                        self.y = initY
+
+                    def getX(self):
+                        return self.x
+
+                    def getY(self):
+                        return self.y
+
+                    def __str__(self):
+                        return "x=" + str(self.x) + ", y=" + str(self.y)
+    
+    
+                class Rectangle:
+                    """Rectangle class using Point, width and height"""
+
+                    def __init__(self, initP, initW, initH):
+
+                        self.location = initP
+                        self.width = initW
+                        self.height = initH
+                        
+                    def diagonal(self):
+                    
+                        d = (self.width**2 + self.height**2) ** 0.5
+                        return d
+
+        .. tab:: Discussion 
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_5f1e3f17064f44088a896e9bc0e10b4d
 
 
 .. question:: cdd_ex_8

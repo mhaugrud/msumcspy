@@ -12,6 +12,9 @@ Exercises
 
 #.
 
+    .. tabbed:: q1
+
+        .. tab:: Question
 
             What is the result of each of the following:
 
@@ -25,7 +28,23 @@ Exercises
             #. 'apple' > 'pineapple'
             #. 'pineapple' < 'Peach'
 
-            .. activecode:: ex_8_1
+        .. tab:: Answer
+
+            a. 'Python'[1] = 'y'
+            #. 'Strings are sequences of characters.'[5] = 'g'
+            #. len('wonderful') = 9
+            #. 'Mystery'[:4] = 'Myst'
+            #. 'p' in 'Pineapple' = True
+            #. 'apple' in 'Pineapple' = True
+            #. 'pear' not in 'Pineapple' = True
+            #. 'apple' > 'pineapple' = False
+            #. 'pineapple' < 'Peach' = False
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_dc2457710a924d9283b12f42a31d2b27
 
 
 #. In Robert McCloskey's
@@ -44,10 +63,13 @@ Exercises
    Of course, that's not quite right because Ouack and Quack are misspelled.
    Can you fix it?
 
-   .. activecode:: ex_8_2
+    .. actex:: ex_8_2
 
 #.
 
+    .. tabbed:: q3
+
+        .. tab:: Question
 
            Assign to a variable in your program a triple-quoted string that contains
            your favorite paragraph of text - perhaps a poem, a speech, instructions
@@ -57,23 +79,40 @@ Exercises
 
                Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
 
-           .. activecode:: ex_8_3
+           .. actex:: ex_8_3
 
               def count(p):
                   # your code here
 
+        .. tab:: Answer
+
+            .. activecode:: q3_answer
+
+                def count(p):
+
+                count(p)
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_bf88b1c4616d43f289c798b56a43b01c
 
 
 #. Print out a neatly formatted multiplication table, up to 12 x 12.
 
-   .. activecode:: ex_8_4
+   .. actex:: ex_8_4
 
 
 #.
 
+    .. tabbed:: q5
+
+        .. tab:: Question
+
            Write a function that will return the number of digits in an integer.
 
-           .. activecode:: ex_7_10
+           .. actex:: ex_7_10
 
               def numDigits(n):
                   # your code here
@@ -95,10 +134,27 @@ Exercises
               myTests().main()
 
 
+        .. tab:: Answer
+
+            .. activecode:: q5_answer
+
+                def numDigits(n):
+
+
+                print(numDigits(50))
+                print(numDigits(20000))
+                print(numDigits(1))
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_bfd6f74a183c4682b29c72c4411200fb
+
 
 #. Write a function that reverses its string argument.
 
-   .. activecode:: ex_8_5
+   .. actex:: ex_8_5
       :nocodelens:
 
       def reverse(astring):
@@ -122,10 +178,13 @@ Exercises
 
 #.
 
+    .. tabbed:: q7
+
+        .. tab:: Question
 
            Write a function that mirrors its argument.
 
-           .. activecode:: ex_8_6
+           .. actex:: ex_8_6
               :nocodelens:
 
               def mirror(mystr):
@@ -148,10 +207,32 @@ Exercises
 
 
 
+        .. tab:: Answer
+
+            .. activecode:: q7_answer
+                :nocodelens:
+
+                from test import testEqual
+
+                def reverse(mystr):
+
+                def mirror(mystr):
+
+                testEqual(mirror('good'), 'gooddoog')
+                testEqual(mirror('Python'), 'PythonnohtyP')
+                testEqual(mirror(''), '')
+                testEqual(mirror('a'), 'aa')
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_70b7ac515456497c952a2de5caa27ab9
+
 
 #. Write a function that removes all occurrences of a given letter from a string.
 
-   .. activecode:: ex_8_7
+   .. actex:: ex_8_7
       :nocodelens:
 
       def remove_letter(theLetter, theString):
@@ -177,9 +258,13 @@ Exercises
 
 #.
 
+    .. tabbed:: q9
+
+        .. tab:: Question
+
            Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
 
-           .. activecode:: ex_8_8
+           .. actex:: ex_8_8
               :nocodelens:
 
               def is_palindrome(myStr):
@@ -205,11 +290,33 @@ Exercises
               myTests().main()
 
 
+        .. tab:: Answer
+
+            .. activecode:: q9_answer
+                :nocodelens:
+
+                from test import testEqual
+
+                def reverse(mystr):
+
+                def is_palindrome(myStr):
+
+                testEqual(is_palindrome('abba'), True)
+                testEqual(is_palindrome('abab'), False)
+                testEqual(is_palindrome('straw warts'), True)
+                testEqual(is_palindrome('a'), True)
+                testEqual(is_palindrome(''), True)
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_605923545bb849f7b8d41bbf823518e9
 
 
 #. Write a function that counts how many times a substring occurs in a string.
 
-   .. activecode:: ex_8_9
+   .. actex:: ex_8_9
       :nocodelens:
 
       def count(substr,theStr):
@@ -239,9 +346,13 @@ Exercises
 
 #.
 
+    .. tabbed:: q11
+
+        .. tab:: Question
+
            Write a function that removes the first occurrence of a string from another string.
 
-           .. activecode:: ex_8_10
+           .. actex:: ex_8_10
               :nocodelens:
 
               def remove(substr,theStr):
@@ -266,11 +377,30 @@ Exercises
 
 
 
+        .. tab:: Answer
+
+            .. activecode:: q11_answer
+                :nocodelens:
+
+                from test import testEqual
+
+                def remove(substr,theStr):
+
+                testEqual(remove('an', 'banana'), 'bana')
+                testEqual(remove('cyc', 'bicycle'), 'bile')
+                testEqual(remove('iss', 'Mississippi'), 'Missippi')
+                testEqual(remove('egg', 'bicycle'), 'bicycle')
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_2f2772134b604a6498748138542d312d
 
 
 #. Write a function that removes all occurrences of a string from another string.
 
-   .. activecode:: ex_8_11
+   .. actex:: ex_8_11
 
       def remove_all(substr,theStr):
           # your code here
@@ -296,6 +426,9 @@ Exercises
 
 #.
 
+    .. tabbed:: q13
+
+        .. tab:: Question
 
            Here is another interesting L-System called a Hilbert curve.  Use 90 degrees::
 
@@ -303,9 +436,22 @@ Exercises
                L -> +RF-LFL-FR+
                R -> -LF+RFR+FL-
 
-           .. activecode:: ex_8_12
+           .. actex:: ex_8_12
               :nocodelens:
 
+        .. tab:: Answer
+
+            .. activecode:: q13_answer
+                :nocodelens:
+
+                import turtle
+
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_ab823200fac64461a9e88f53b75f5795
 
 
 #. Here is a dragon curve.  Use 90 degrees.::
@@ -314,11 +460,14 @@ Exercises
        X -> X+YF+
        Y -> -FX-Y
 
-   .. activecode:: ex_8_13
+   .. actex:: ex_8_13
       :nocodelens:
 
 #.
 
+    .. tabbed:: q15
+
+        .. tab:: Question
 
            Here is something called an arrowhead curve.  Use 60 degrees.::
 
@@ -326,8 +475,21 @@ Exercises
                X -> YF+XF+Y
                Y -> XF-YF-X
 
-           .. activecode:: ex_8_14
+           .. actex:: ex_8_14
               :nocodelens:
+
+        .. tab:: Answer
+
+            .. activecode:: q15_answer
+                :nocodelens:
+
+
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_9b2dfba083a64d5c894f873af2e93a1b
 
 
 #. Try the Peano-Gosper curve.  Use 60 degrees.::
@@ -336,11 +498,14 @@ Exercises
        X -> X+YF++YF-FX--FXFX-YF+
        Y -> -FX+YFYF++YF+FX--FX-Y
 
-   .. activecode:: ex_8_15
+   .. actex:: ex_8_15
       :nocodelens:
 
 #.
 
+    .. tabbed:: q17
+
+        .. tab:: Question
 
             The Sierpinski Triangle.  Use 60 degrees.::
 
@@ -348,8 +513,23 @@ Exercises
                F -> FF
                X -> --FXF++FXF++FXF--
 
-           .. activecode:: ex_8_16
+           .. actex:: ex_8_16
               :nocodelens:
+
+        .. tab:: Answer
+
+            .. activecode:: q17_answer
+                :nocodelens:
+
+                import turtle
+
+
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_912a5f19d3964dc2af7a067dcd832c7e
 
 
 #. Write a function that implements a substitution cipher.  In a substitution
@@ -359,17 +539,24 @@ Exercises
    the mapping of the 26 letters in the alphabet.  Your function should
    return a string that is the encrypted version of the message.
 
-   .. activecode:: ex_8_17
+   .. actex:: ex_8_17
 
 #.
 
+    .. tabbed:: q19
+
+        .. tab:: Question
 
            Write a function that decrypts the message from the previous exercise.  It
            should also take two parameters.  The encrypted message,
            and the mixed up alphabet.  The function should return a string that is
            the same as the original unencrypted message.
 
-           .. activecode:: ex_8_18
+           .. actex:: ex_8_18
+
+        .. tab:: Answer
+
+            .. activecode:: q19_answer
 
                 def encrypt(message, cipher):
 
@@ -377,12 +564,17 @@ Exercises
 
 
 
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_d7d1ca00bfff4e7bacf886386fb3302e
 
 
 #. Write a function called  ``remove_dups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
    there will never be a duplicate letter added to the new string.
 
-   .. activecode:: ex_8_19
+   .. actex:: ex_8_19
 
       def remove_dups(astring):
           # your code here
@@ -407,6 +599,9 @@ Exercises
 
 #.
 
+    .. tabbed:: q21
+
+        .. tab:: Question
 
            Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message.
            The Caesar cipher works like a substitution cipher but each character is replaced
@@ -416,7 +611,7 @@ Exercises
            and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
            to think of modulo arithmetic.
 
-           .. activecode:: ex_8_20
+           .. actex:: ex_8_20
 
               def rot13(mess):
                   # Your code here
@@ -425,3 +620,14 @@ Exercises
               print(rot13('nopqr'))
               print(rot13(rot13('Since rot13 is symmetric you should see this message')))
 
+        .. tab:: Answer
+
+            .. activecode:: q21_answer
+
+                def rot13(mess):
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_49e1151bb7864a3287a6b6ae1c84db16
