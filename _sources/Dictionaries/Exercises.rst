@@ -13,10 +13,6 @@ Exercises
 .. question:: dict_ex_1
    :number: 1
 
-   .. tabbed:: q1
-
-        .. tab:: Question
-
            Write a program that allows the user to enter a string.  It then prints a
            table of the letters of the alphabet in alphabetical order which occur in
            the string together with the number of times each letter occurs. Case should
@@ -41,18 +37,7 @@ Exercises
                w  2
                $
 
-           .. actex:: ex_11_01
-
-        .. tab:: Answer
-
-            .. activecode:: q1_answer
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_de4f21e35d3a41a4a3ac4ac888f78d1a
+           .. activecode:: ex_11_01
 
 
 .. question:: dict_ex_2
@@ -166,7 +151,7 @@ Exercises
 
    What is the longest word in Alice in Wonderland? How many characters does it have?
 
-   .. actex:: ex_11_03
+   .. activecode:: ex_11_03
 
 .. question:: dict_ex_5
 
@@ -205,15 +190,4 @@ Exercises
             .. actex:: ex_11_04
 
 
-        .. tab:: Answer
-
-            .. activecode:: ch11_q5_answer
-
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_dd296be40c8643999060129b6d8dc7ae
 
