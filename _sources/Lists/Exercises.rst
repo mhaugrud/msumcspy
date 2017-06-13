@@ -10,7 +10,7 @@
 Exercises
 ---------
 
-.. question:: strings_ex_1
+.. question:: lists_ex_1
    :number: 1
 
    .. tabbed:: q1
@@ -38,18 +38,14 @@ Exercises
                 :identifier: disqus_12314cf40dbe407cb145f029870c0347
 
 
-.. question:: strings_ex_2
+.. question:: lists_ex_2
 
    Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.  Do it with both append and with concatenation, one item at a time.
 
-   .. actex:: ex_9_2
+   .. activecode:: ex_9_2
 
 
-.. question:: strings_ex_3
-
-   .. tabbed:: q3
-
-        .. tab:: Question
+.. question:: lists_ex_3
 
            Starting with the list in Exercise 2, write Python statements to do the following:
 
@@ -62,70 +58,38 @@ Exercises
            #. Remove True from the list using ``pop`` and ``index``.
 
 
-           .. actex:: ex_9_3
-
-        .. tab:: Answer
-
-            .. activecode:: q3_answer
-
-                myList = [76, 92.3, 'hello', True, 4, 76]
+           .. activecode:: ex_9_3
 
 
-                print (myList)
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_b9034b274ebe4c55a58c44315ee681a4
-
-
-.. question:: strings_ex_4
+.. question:: lists_ex_4
 
    Create a list containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).  Write a function called ``average`` that will take the list as a parameter and return the average.
 
-   .. actex:: ex_9_4
+   .. activecode:: ex_9_4
 
-.. question:: strings_ex_5
-
-   .. tabbed:: q5
-
-        .. tab:: Question
+.. question:: lists_ex_5
 
            Write a Python function that will take a the list of 100 random integers between 0 and 1000 and return the maximum value.  (Note: there is a builtin function named ``max`` but pretend you cannot use it.)
 
-           .. actex:: ex_9_5
+           .. activecode:: ex_9_5
 
+               import random
 
-        .. tab:: Answer
-
-            .. activecode:: q5_answer
-
-                import random
-
-                def max(lst):
+               def max(lst):
 
 
 
-                lst = []
+               print(max(lst))
 
 
-                print(max(lst))
 
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_714fd5537ebf41189ce5fb6fb16d1d26
-
-
-.. question:: strings_ex_6
+.. question:: lists_ex_6
 
    Write a function ``sum_of_squares(xs)`` that computes the sum
    of the squares of the numbers in the list ``xs``.  For example,
    ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is 29:
 
-   .. actex:: ex_7_11
+   .. activecode:: ex_7_11
 
       def sum_of_squares(xs):
           # your code here
@@ -142,15 +106,11 @@ Exercises
 
       myTests().main()
 
-.. question:: strings_ex_7
-
-   .. tabbed:: q7
-
-        .. tab:: Question
+.. question:: lists_ex_7
 
            Write a function to count how many odd numbers are in a list.
 
-           .. actex:: ex_9_6
+           .. activecode:: ex_9_6
 
               def countOdd(lst):
                   # your code here
@@ -170,33 +130,12 @@ Exercises
 
 
 
-        .. tab:: Answer
 
-            .. activecode:: q7_answer
-
-                import random
-
-                def countOdd(lst):
-
-
-                # make a random list to test the function
-                lst = []
-
-
-                print(countOdd(lst))
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_fdd366b1b4c8494082a385e1e1197844
-
-
-.. question:: strings_ex_8
+.. question:: lists_ex_8
 
    Sum up all the even numbers in a list.
 
-   .. actex:: ex_9_7
+   .. activecode:: ex_9_7
 
       def sumEven(lst):
           # your code here
@@ -214,15 +153,11 @@ Exercises
 
       myTests().main()
 
-.. question:: strings_ex_9
-
-   .. tabbed:: q9
-
-        .. tab:: Question
+.. question:: lists_ex_9
 
            Sum up all the negative numbers in a list.
 
-           .. actex:: ex_9_8
+           .. activecode:: ex_9_8
 
               def sumNegatives(lst):
                   # your code here
@@ -242,47 +177,21 @@ Exercises
 
 
 
-        .. tab:: Answer
 
-            .. activecode:: q9_answer
-
-                import random
-
-                def sumNegative(lst):
-
-
-
-                lst = []
-
-
-
-                print(sumNegative(lst))
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_bfe671ac1e0942f2be4de7179921f83f
-
-
-.. question:: strings_ex_10
+.. question:: lists_ex_10
 
    Count how many words in a list have length 5.
 
-   .. actex:: ex_9_9
+   .. activecode:: ex_9_9
 
       def countWords(lst):
           # your code here
 
-.. question:: strings_ex_11
-
-   .. tabbed:: q11
-
-        .. tab:: Question
+.. question:: lists_ex_11
 
            Sum all the elements in a list up to but not including the first even number.
 
-           .. actex:: ex_9_10
+           .. activecode:: ex_9_10
 
               def sumUntilEven(lst):
                   # your code here
@@ -300,44 +209,19 @@ Exercises
               myTests().main()
 
 
-        .. tab:: Answer
 
-            .. activecode:: q11_answer
-
-                import random
-
-                def sum(lst):
-
-
-
-                lst = []
-
-
-                print(sum(lst))
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_90f95bbe4a49428caa9ed0c5e02747b1
-
-
-.. question:: strings_ex_12
+.. question:: lists_ex_12
 
    Count how many words occur in a list up to and including the first occurrence of the word "sam".
 
-   .. actex:: ex_9_11
+   .. activecode:: ex_9_11
 
       def count(lst):
           # your code here
 
 
 
-.. question:: strings_ex_13
-
-   .. tabbed:: q13
-
-        .. tab:: Question
+.. question:: lists_ex_13
 
            Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:
 
@@ -348,47 +232,37 @@ Exercises
            #. insert
 
 
-           .. actex:: ex_9_12
+           .. activecode:: ex_9_12
 
-        .. tab:: Answer
-
-            .. activecode:: q13_answer
-
-                def count(obj, lst):
+              def count(obj, lst):
 
 
 
-                def is_in(obj, lst):  # cannot be called in() because in is a reserved keyword
+              def is_in(obj, lst):  # cannot be called in() because in is a reserved keyword
 
 
 
-                def reverse(lst):
+              def reverse(lst):
 
 
 
-                def index(obj, lst):
+              def index(obj, lst):
 
 
 
-                def insert(obj, index, lst):
+              def insert(obj, index, lst):
 
 
 
-                lst = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
-                print(count(1, lst))
-                print(is_in(4, lst))
-                print(reverse(lst))
-                print(index(2, lst))
-                print(insert('cat', 4, lst))
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_39ee0274e51d4c888cc20b6fefa4069c
+              lst = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+              print(count(1, lst))
+              print(is_in(4, lst))
+              print(reverse(lst))
+              print(index(2, lst))
+              print(insert('cat', 4, lst))
 
 
-.. question:: strings_ex_14
+.. question:: lists_ex_14
 
    Write a function ``replace(s, old, new)`` that replaces all occurences of
    ``old`` with ``new`` in a string ``s``::
@@ -404,7 +278,7 @@ Exercises
 
    *Hint*: use the ``split`` and ``join`` methods.
 
-   .. actex:: ex_9_13
+   .. activecode:: ex_9_13
 
       def replace(s, old, new):
           # your code here
@@ -423,11 +297,7 @@ Exercises
 
 
 
-.. question:: strings_ex_15
-
-   .. tabbed:: q15
-
-        .. tab:: Question
+.. question:: lists_ex_15
 
            Here are the rules for an L-system that creates something that resembles
            a common garden herb.  Implement the following rules and try it.  Use an
@@ -440,42 +310,11 @@ Exercises
                X --> X[-FFF][+FFF]FX
 
 
-           .. actex:: ex_9_14
+           .. activecode:: ex_9_14
               :nocodelens:
 
-        .. tab:: Answer
 
-            .. activecode:: q15_answer
-                :nocodelens:
-
-                import turtle
-
-                def createLSystem(numIters, axiom):
-
-
-                def processString(oldStr):
-
-
-                def applyRules(ch):
-
-
-                def drawLsystem(aTurtle, instructions, angle, distance):
-
-
-                def main():
-
-
-                main()
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_10a1fdd1fadb401b8e733afd9d105052
-
-
-.. question:: strings_ex_16
+.. question:: lists_ex_16
 
    Here is another L-System.  Use an Angle of 25.
 
@@ -484,5 +323,5 @@ Exercises
        F
        F --> F[-F]F[+F]F
 
-   .. actex:: ex_9_16
+   .. activecode:: ex_9_16
       :nocodelens:
