@@ -31,7 +31,7 @@ So, where to start?  The problem requires two pieces of input from the user, so 
 .. activecode:: dba
 
    current_time = input("what is the current time (in hours)?")
-   wait_time = input("How many hours do you want to wait")
+   wait_time = input("How many hours do you want to wait?")
 
    print(current_time)
    print(wait_time)
@@ -42,7 +42,7 @@ So far so good.  Now let's take the next step.  We need to figure out what the t
 .. activecode:: dbb
 
    current_time = input("What is the current time (in hours 0 - 23)?")
-   wait_time = input("How many hours do you want to wait")
+   wait_time = input("How many hours do you want to wait?")
 
    print(current_time)
    print(wait_time)
@@ -71,7 +71,7 @@ This error was probably pretty simple to spot, because we printed out the value 
 .. activecode:: dbc
 
    current_time_str = input("What is the current time (in hours 0-23)?")
-   wait_time_str = input("How many hours do you want to wait")
+   wait_time_str = input("How many hours do you want to wait?")
 
    current_time_int = int(current_time_str)
    wait_time_int = int(wait_time_str)
@@ -91,7 +91,7 @@ So finally we need to account for those numbers that are bigger than 23.  For th
 .. activecode:: dbd
 
    current_time_str = input("What is the current time (in hours 0-23)?")
-   wait_time_str = input("How many hours do you want to wait")
+   wait_time_str = input("How many hours do you want to wait?")
 
    current_time_int = int(current_time_str)
    wait_time_int = int(wait_time_str)

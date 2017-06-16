@@ -14,8 +14,7 @@ Exercises
    :number: 1
 
 
-
-            Evaluate the following numerical expressions in your head, then use the active code window to check your results:
+            Evaluate the following numerical expressions in your head, then use the activecode window to check your results:
 
             #. ``5 ** 2``
             #. ``2 * 5``
@@ -33,13 +32,35 @@ Exercises
 
             .. activecode:: ex_2_1
 
-               print(5 ** 2)
+               print(' 1:', 5 ** 2)
 
 
 
 .. question:: spd_ex_2
 
-   .. tabbed:: q7
+   .. tabbed:: q2
+
+      .. tab:: Question
+
+         It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  For example, you go on a wonderful holiday
+         leaving on day number 3 (a Wednesday) and you return home after 9 nights, which is day 5 (a Friday).
+         Write a general version of the program which asks for the starting day number, and
+         the length of your stay, and it will tell you the number of day of the week you will return on.
+
+         .. actex:: ex_2_2
+
+      .. tab:: Sample Output
+
+         .. sourcecode:: python
+
+            Starting day (0-6)? 3
+            length of stay? 9
+            Return on day 5
+
+
+.. question:: spd_ex_3
+
+   .. tabbed:: q3
 
       .. tab:: Question
 
@@ -54,7 +75,7 @@ Exercises
          #. Update the bank balance by decreasing it by the withdrawal amount
          #. Display the bank balance with a message stating this the the current balance
 
-         .. actex:: ex_2_2
+         .. actex:: ex_2_3
 
       .. tab:: Sample Output
 
@@ -66,8 +87,8 @@ Exercises
             Withdraw how much? 123.45
             Current balance = 111.11
 
-.. question:: spd_ex_3
 
+.. question:: spd_ex_4
 
             Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
             If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
@@ -75,18 +96,7 @@ Exercises
             Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
             Your program should output what the time will be on the clock when the alarm goes off.
 
-            .. activecode:: ex_2_3
-
-
-
-.. question:: spd_ex_4
-
-   It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
-   leaving on day number 3 (a Wednesday) and you return home after 10 nights.
-   Write a general version of the program which asks for the starting day number, and
-   the length of your stay, and it will tell you the number of day of the week you will return on.
-
-   .. activecode:: ex_2_4
+            .. activecode:: ex_2_4
 
 
 

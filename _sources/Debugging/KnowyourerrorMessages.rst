@@ -19,7 +19,7 @@ Many problems in your program will lead to an error message.  For example as I w
 .. sourcecode:: python
 
    current_time_str = input("What is the current time (in hours 0-23)?")
-   wait_time_str = input("How many hours do you want to wait")
+   wait_time_str = input("How many hours do you want to wait?")
 
    current_time_int = int(current_time_str)
    wait_time_int = int(wait_time_int)
@@ -34,7 +34,7 @@ Let's try the program again, but this time in an activecode:
 .. activecode:: dbe
 
    current_time_str = input("What is the current time (in hours 0-23)?")
-   wait_time_str = input("How many hours do you want to wait")
+   wait_time_str = input("How many hours do you want to wait?")
 
    current_time_int = int(current_time_str)
    wait_time_int = int(wait_time_int)
@@ -101,7 +101,7 @@ Here are a couple examples of Parse errors in the example program we have been u
         .. activecode:: dbf
 
            current_time_str = input("What is the current time (in hours 0-23)?")
-           wait_time_str = input("How many hours do you want to wait"
+           wait_time_str = input("How many hours do you want to wait?"
 
            current_time_int = int(current_time_str)
            wait_time_int = int(wait_time_str)
@@ -114,7 +114,7 @@ Here are a couple examples of Parse errors in the example program we have been u
         .. sourcecode:: python
 
            current_time_str = input("What is the current time (in hours 0-23)?")
-           wait_time_str = input("How many hours do you want to wait"
+           wait_time_str = input("How many hours do you want to wait?"
 
            current_time_int = int(current_time_str)
            wait_time_int = int(wait_time_str)
@@ -137,7 +137,7 @@ Here are a couple examples of Parse errors in the example program we have been u
         .. activecode:: dbg
 
            current_time_str = input("What is the "current time" (in hours 0-23)?")
-           wait_time_str = input("How many hours do you want to wait")
+           wait_time_str = input("How many hours do you want to wait?")
 
            current_time_int = int(current_time_str)
            wait_time_int = int(wait_time_str)
@@ -150,7 +150,7 @@ Here are a couple examples of Parse errors in the example program we have been u
         .. sourcecode:: python
 
            current_time_str = input("What is the "current time" (in hours 0-23)?")
-           wait_time_str = input("How many hours do you want to wait")
+           wait_time_str = input("How many hours do you want to wait?")
 
            current_time_int = int(current_time_str)
            wait_time_int = int(wait_time_str)
@@ -301,7 +301,7 @@ Value errors occur when you pass a parameter to a function and the function is e
    current_time_str = input("What is the current time (in hours 0-23)?")
    current_time_int = int(current_time_str)
 
-   wait_time_str = input("How many hours do you want to wait")
+   wait_time_str = input("How many hours do you want to wait?")
    wait_time_int = int(wait_time_int)
 
    final_time_int = current_time_int + wait_time_int
