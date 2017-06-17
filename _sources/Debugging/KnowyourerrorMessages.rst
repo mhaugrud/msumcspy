@@ -198,7 +198,7 @@ Here's an example of a type error created by a Polish learner.  See if you can f
 
         * The expression ``int(x)`` converts the string referenced by x to an integer but it does not store it anywhere.  It is very common to assume that ``int(x)`` somehow changes x itself, as that is what you are intending!  The thing that makes this very tricky is that ``int(x)`` is a valid expression, so it doesn't cause any kind of error, but rather the error happens later on in the program.
 
-        * The assignment statement  ``x = int(x)`` is very different.  Again, the ``int(x)`` expression converts the string referenced by x to an integer, but this time it also changes what x references so that x now refers to the integer value returned by the ``int`` function.  
+        * The assignment statement ``x = int(x)`` is very different.  Again, the ``int(x)`` expression converts the string referenced by x to an integer, but this time it also changes what x references so that x now refers to the integer value returned by the ``int`` function.  
 
         So, the solution to this problem is to change lines 3 and 4 so they are assignment statements.
 
