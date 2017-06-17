@@ -58,9 +58,17 @@ Wrapping that up in a function, we get:
         result = area(radius)
         return result
 
-    print(area2(0,0,1,1))
+    def main():
+        print(area2(0,0,1,1))
 
 
+.. admonition:: Fix the error ...
+
+   The above program will run but not produce any output. Why?
+
+   None of the functions are actually executed. You can see this with codelens.
+
+   On line 19, go to the left margin and type main(). Now the program will display an answer.
 
 We called this function ``area2`` to distinguish it from the ``area`` function
 defined earlier. There can only be one function with a given name within a
