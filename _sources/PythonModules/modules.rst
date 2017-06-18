@@ -11,6 +11,7 @@
    :prefix: modules-1-
    :start: 1
 
+.. index:: module, standard library, python documentation
 Modules and Getting Help
 ------------------------
 

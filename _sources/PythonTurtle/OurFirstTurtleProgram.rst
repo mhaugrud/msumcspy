@@ -11,6 +11,8 @@
    :prefix: turtle-2-
    :start: 1
 
+.. index:: object, invoke, method, attribute, state, canvas
+
 Our First Turtle Program
 ------------------------
 
@@ -265,5 +267,4 @@ screen until we click on it.
    wn.exitonclick()
 
 
-.. index:: instance
 

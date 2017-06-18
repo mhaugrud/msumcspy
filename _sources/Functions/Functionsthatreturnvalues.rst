@@ -11,6 +11,8 @@
    :prefix: func-2-
    :start: 1
 
+.. index:: return, temporary variable, local variable, procedure, fruitful function
+
 Functions that Return Values
 ----------------------------
 

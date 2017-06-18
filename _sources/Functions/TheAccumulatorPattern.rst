@@ -11,6 +11,8 @@
    :prefix: func-10-
    :start: 1
 
+.. index:: accumulator
+
 The Accumulator Pattern
 -----------------------
 
@@ -154,11 +156,6 @@ Here is the same program in codelens.  Step through the function and watch the "
    =====
    print(thesum)
 
-
-.. index::
-    functional decomposition
-    generalization
-    abstraction
 
 
 

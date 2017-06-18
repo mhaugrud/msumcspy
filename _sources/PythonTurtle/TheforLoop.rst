@@ -11,6 +11,8 @@
    :prefix: turtle-3-
    :start: 1
 
+.. index:: for loop, loop, loop variable, loop body, iteration
+
 The ``for`` Loop
 ----------------
 
@@ -48,6 +50,5 @@ Take a look at the output produced when you press the ``run`` button.  There is 
 
 
 
-.. index:: control flow, flow of execution
 
 

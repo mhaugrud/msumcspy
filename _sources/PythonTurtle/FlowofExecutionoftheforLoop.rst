@@ -11,6 +11,8 @@
    :prefix: turtle-5-
    :start: 1
 
+.. index:: control flow, flow of execution
+
 Flow of Execution of the for Loop
 ---------------------------------
 
@@ -41,6 +43,5 @@ the buttons.  You can see the value of ``name`` change as the loop iterates thro
     for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
         print("Hi ", name, "  Please come to my party on Saturday!")
 
-.. index:: range function, chunking
 
 

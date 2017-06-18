@@ -11,6 +11,8 @@
    :prefix: turtle-6-
    :start: 1
 
+.. index:: chunking
+
 Iteration Simplifies our Turtle Program
 ---------------------------------------
 

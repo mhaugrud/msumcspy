@@ -11,6 +11,8 @@
    :prefix: func-7-
    :start: 1
 
+.. index:: composition, function composition
+
 Composition
 -----------
 
@@ -89,5 +91,4 @@ Note that we could have written the composition without storing the intermediate
    - Verify it still produces the same result.
 
 
-.. index:: boolean function
 

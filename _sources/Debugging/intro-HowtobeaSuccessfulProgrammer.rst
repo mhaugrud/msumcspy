@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: debug
+
 How to be a Successful Programmer
 ===============================================
 

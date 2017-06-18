@@ -11,6 +11,8 @@
    :prefix: modules-4-
    :start: 1
 
+.. index:: random module
+
 The `random` module
 -------------------
 

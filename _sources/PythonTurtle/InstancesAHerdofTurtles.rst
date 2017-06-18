@@ -11,6 +11,8 @@
    :prefix: turtle-2-
    :start: 1
 
+.. index:: instance
+
 Instances --- A Bale of Turtles
 -------------------------------
 
@@ -124,5 +126,4 @@ Here are some *How to think like a computer scientist* observations:
    wn.exitonclick()
 
 
-.. index:: for loop
 

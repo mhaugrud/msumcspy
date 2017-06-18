@@ -11,6 +11,8 @@
    :prefix: modules-3-
    :start: 1
 
+.. index:: math module
+
 The `math` module
 -----------------
 

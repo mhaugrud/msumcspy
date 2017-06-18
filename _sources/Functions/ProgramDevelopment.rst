@@ -11,6 +11,8 @@
    :prefix: func-6-
    :start: 1
 
+.. index:: incremental development
+
 Program Development
 -------------------
 
@@ -158,5 +160,4 @@ The key aspects of the process are:
    but only do this if it does not make the program more difficult to read.
 
    
-.. index:: composition, function composition
 

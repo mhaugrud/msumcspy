@@ -11,6 +11,8 @@
    :prefix: func-3-
    :start: 1
 
+.. index:: functional decomposition, generalization
+
 Functions can Call Other Functions
 ----------------------------------
 
@@ -121,7 +123,6 @@ So far, it may not be clear why it is worth the trouble to create all of these n
 
 
 
-.. index:: flow of execution
 
 
 

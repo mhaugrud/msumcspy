@@ -10,6 +10,7 @@
     License".
 
 
+.. index:: random number, randrange
 Turtle Racing Lab
 =================
 

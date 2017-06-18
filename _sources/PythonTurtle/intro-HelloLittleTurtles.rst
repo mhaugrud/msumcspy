@@ -7,15 +7,10 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: turtle
+
 Hello Little Turtles!
 =====================
-
-.. index::
-    single: module
-    single: function
-    single: function definition
-    single: definition; function
-    single: turtle module
 
 .. video:: assignvid
     :controls:
@@ -50,5 +45,4 @@ some pretty amazing drawings with this simple capability.
 	be explored in more depth later.
 
 
-.. index:: object, invoke, method, attribute, state, canvas
 

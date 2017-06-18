@@ -11,6 +11,8 @@
    :prefix: func-4-
    :start: 1
 
+.. index:: flow of execution
+
 Flow of Execution Summary
 -------------------------
 

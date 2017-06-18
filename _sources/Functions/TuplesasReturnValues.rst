@@ -11,6 +11,8 @@
    :prefix: func-8-
    :start: 1
 
+.. index:: tuple, unpack
+
 Tuples as Return Values
 -----------------------
 

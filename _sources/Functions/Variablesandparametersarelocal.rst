@@ -11,6 +11,8 @@
    :prefix: func-9-
    :start: 1
 
+.. index:: local variable, global variable, scope, lifetime
+
 Variables and Parameters are Local
 ----------------------------------
 

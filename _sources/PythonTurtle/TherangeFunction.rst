@@ -11,6 +11,8 @@
    :prefix: turtle-8-
    :start: 1
 
+.. index:: range function
+
 The range Function
 ------------------
 
