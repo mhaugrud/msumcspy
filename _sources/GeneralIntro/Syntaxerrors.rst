@@ -11,6 +11,8 @@
    :prefix: intro-
    :start: 1
 
+.. index:: syntax, syntax error
+
 Syntax errors
 -------------
 
@@ -57,5 +59,4 @@ experience, you will make fewer errors and you will also be able to find your er
 
    Who or what typically finds syntax errors?
 
-.. index:: runtime error, exception, safe language
 

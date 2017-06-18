@@ -11,6 +11,8 @@
    :prefix: intro-
    :start: 1
 
+.. index:: runtime error, exception
+
 Runtime Errors
 --------------
 
@@ -35,5 +37,4 @@ chapters, so it might be a while before you encounter one.
 
    Which of the following is a run-time error?
 
-.. index:: semantics, semantic error
 

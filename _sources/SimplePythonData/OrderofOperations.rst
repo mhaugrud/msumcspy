@@ -11,6 +11,8 @@
    :prefix: data-9-
    :start: 1
 
+.. index:: order of operations, precedence
+
 Order of Operations
 -------------------
 

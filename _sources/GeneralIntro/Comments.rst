@@ -11,6 +11,8 @@
    :prefix: intro-
    :start: 1
 
+.. index:: comment, comment out
+
 Comments
 --------
 
@@ -62,7 +64,6 @@ are also ignored by the interpreter, but comments and blank lines can make your 
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
    .. activecode:: gid
-
 
 
 

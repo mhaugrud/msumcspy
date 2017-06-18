@@ -11,6 +11,8 @@
    :prefix: intro-
    :start: 1
 
+.. index:: program
+
 More About Programs
 -------------------
 
@@ -66,5 +68,4 @@ instructions.
    A program is:
 
 
-.. index:: debugging, bug
 

@@ -11,6 +11,10 @@
    :prefix: data-2-
    :start: 1
 
+.. index:: value, data type, string, integer, int, float, class
+.. index::
+    single: triple quoted string
+
 Values and Data Types
 ---------------------
 
@@ -186,5 +190,4 @@ matter how big they are. Also revisit what we said in the previous chapter: form
    What is the data type of 'this is what kind of data'?
 
 
-.. index:: type converter functions, int, float, str, truncation
 

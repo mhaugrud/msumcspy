@@ -11,6 +11,8 @@
    :prefix: intro-
    :start: 1
 
+.. index:: algorithm, programming language
+
 Algorithms
 ----------
 

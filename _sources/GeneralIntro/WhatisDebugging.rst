@@ -11,6 +11,8 @@
    :prefix: intro-
    :start: 1
 
+.. index:: debug, bug
+
 What is Debugging?
 ------------------
 
@@ -42,5 +44,4 @@ between them in order to track them down more quickly.
 
    Debugging is:
 
-.. index:: syntax, syntax error
 

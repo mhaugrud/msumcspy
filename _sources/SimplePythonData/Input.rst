@@ -11,6 +11,8 @@
    :prefix: data-8-
    :start: 1
 
+.. index:: input, input dialog
+
 Input
 -----
 
@@ -93,5 +95,5 @@ The variable ``str_seconds`` will refer to the string that is entered by the use
      print ( type(n) )
 
 
-.. index:: order of operations, rules of precedence
+
 

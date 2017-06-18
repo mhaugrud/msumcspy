@@ -11,6 +11,8 @@
    :prefix: data-10-
    :start: 1
 
+.. index:: reassignment
+
 Reassignment
 ------------
 

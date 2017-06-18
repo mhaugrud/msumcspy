@@ -11,10 +11,12 @@
    :prefix: intro-
    :start: 1
 
+.. index:: semantic error, logic error
+
 Semantic Errors
 ---------------
 
-The third type of error is the **semantic error**. If there is a semantic error
+The third type of error is the **semantic error** or **logic error**. If there is a semantic error
 in your program, it will run successfully in the sense that the computer will
 not generate any error messages.  However, your program will not do the right thing. It will do
 something else. Specifically, it will do what you told it to do.
@@ -38,8 +40,4 @@ looking at the output of the program and trying to figure out what it is doing.
    Which of the following is a semantic error?
 
 
-.. index::
-    single: Holmes, Sherlock
-    single: Doyle, Arthur Conan
-    single: Linux
 

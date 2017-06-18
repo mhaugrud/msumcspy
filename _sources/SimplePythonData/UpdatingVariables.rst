@@ -11,6 +11,8 @@
    :prefix: data-11-
    :start: 1
 
+.. index:: update, increment, decrement, initialize
+
 Updating Variables
 ------------------
 

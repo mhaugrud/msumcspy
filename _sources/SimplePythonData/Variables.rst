@@ -11,6 +11,8 @@
    :prefix: data-4-
    :start: 1
 
+.. index:: variable, assignment, assignment statement, state snapshot, reference diagram
+
 Variables
 ---------
 
@@ -158,5 +160,4 @@ A great deal of programming is about having the computer remember things.  For e
      print(day)
 
 
-.. index:: keyword, underscore character
 

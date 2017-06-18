@@ -11,6 +11,8 @@
    :prefix: data-3-
    :start: 1
 
+.. index:: constructor, type constructor, int, float, str, truncation
+
 Type Constructor Functions
 --------------------------
 
@@ -80,5 +82,4 @@ The type constructor ``str`` uses its argument to create a string.  Remember tha
       print( int(53.785) )
 
 
-.. index:: variable, assignment, assignment statement, state snapshot
 

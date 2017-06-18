@@ -11,6 +11,8 @@
    :prefix: intro-
    :start: 1
 
+.. index:: debug
+
 Experimental Debugging
 ----------------------
 
@@ -59,5 +61,4 @@ practices.
 
    The difference between programming and debugging is:
 
-.. index:: formal language, natural language, parse, token
 

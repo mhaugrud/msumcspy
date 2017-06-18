@@ -11,6 +11,8 @@
    :prefix: data-6-
    :start: 1
 
+.. index:: statement, expression, evaluate
+
 Statements and Expressions
 --------------------------
 
@@ -67,5 +69,4 @@ is due to the fact that statements, such as the assignment statement, do not ret
 On the other hand, the result of executing the assignment statement is the creation of a reference from a variable, ``y``, to a value, ``3.14``.  When we execute the print function working on ``y``, we see the value that y is referring to.  In fact, evaluating ``y`` by itself results in the same response.
 
 
-.. index:: operator, operand, expression, integer division
 

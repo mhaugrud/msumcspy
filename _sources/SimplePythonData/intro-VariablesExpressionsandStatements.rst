@@ -11,10 +11,7 @@ Variables, Expressions and Statements
 =====================================
 
 
-.. index:: value, data type, string, integer, int, float, class
 
-.. index::
-    single: triple quoted string
 
 .. _values_n_types:
 

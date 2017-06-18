@@ -11,6 +11,8 @@
    :prefix: intro-
    :start: 1
 
+.. index:: formal language, natural language, parse, token, semantics, syntax
+
 Formal and Natural Languages
 ----------------------------
 

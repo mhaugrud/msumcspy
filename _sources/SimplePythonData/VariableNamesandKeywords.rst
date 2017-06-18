@@ -11,10 +11,12 @@
    :prefix: data-5-
    :start: 1
 
+.. index:: reserved word, underscore, identifier, case sensitive
+
 Variable Names
 --------------
 
-**Variable names** can be arbitrarily long. They can contain letters (UPPER and lower case), digits, and the underscore character ( ``_``). They **must** begin with a letter or an underscore. Remember that Python is **case sensitive**, that is case matters. ``Bruce`` and ``bruce`` are different variables.
+**Variable names** or **identifers** can be arbitrarily long. They can contain letters (UPPER and lower case), digits, and the underscore character ( ``_``). They **must** begin with a letter or an underscore. Remember that Python is **case sensitive**, that is case matters. ``Bruce`` and ``bruce`` are different variables.
 
 Although it is legal to use only uppercase letters in a name, by convention we don't unless the variable is used as a constant value. For example, ``FEET_PER_MILE = 5280``.
 
@@ -87,5 +89,4 @@ You might want to keep this list handy. If the interpreter complains about one o
    True or False:  the following is a legal variable name in Python:   A_good_grade_is_A+
 
 
-.. index:: statement
 

@@ -11,6 +11,8 @@
    :prefix: intro-
    :start: 1
 
+.. index:: activecode, codelens
+
 Executing Python in this Book
 -----------------------------
 
@@ -96,5 +98,4 @@ will be able to tell which is which by looking for either the Python prompt in t
 
    Codelens allows you to (select all that apply):
 
-.. index:: program, algorithm
 

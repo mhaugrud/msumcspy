@@ -30,6 +30,4 @@ another level, you will use programming as a means to an end. As we go along,
 that end will become clearer.
 
 
-.. index:: programming language, portable, high-level language,
-           low-level language, compile, interpret
 

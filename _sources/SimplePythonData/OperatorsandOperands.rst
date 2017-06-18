@@ -11,6 +11,8 @@
    :prefix: data-7-
    :start: 1
 
+.. index:: operator, operand, modulus, integer division
+
 Operators and Operands
 ----------------------
 
@@ -159,7 +161,6 @@ Finally, returning to our time example, the remainder operator is extremely usef
       print(18 % 4)
 
 
-.. index:: input, input dialog
 
-.. _input:
+
 

@@ -1,9 +1,12 @@
+.. index:: unit test
+
 Unit Testing
 ------------
 
-When we write functions that return values, we intend to use them over and over again. However, we want to be certain that they return the correct result. To be more certain these functions work correctly we write unit tests.
+When we write functions that return values, we intend to use them over and over again. However, we want to be 
+certain that they return the correct result. To be more certain these functions work correctly we write unit tests.
 
-To write a unit test, we must know the correct result when calling the function with a specific input. 
+To write a **unit test**, we must know the correct result when calling the function with a specific input. 
 
 .. activecode:: fnj
 
