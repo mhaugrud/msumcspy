@@ -8,13 +8,15 @@ Functions
    introduction.rst
    functions.rst
    Functionsthatreturnvalues.rst
-   Variablesandparametersarelocal.rst
-   TheAccumulatorPattern.rst
+   UnitTesting.rst
    Functionscancallotherfunctions.rst
    FlowofExecutionSummary.rst
    mainfunction.rst
    ProgramDevelopment.rst
    Composition.rst
    TuplesasReturnValues.rst
+   Variablesandparametersarelocal.rst
+   TheAccumulatorPattern.rst
+   ProgrammingWithStyle.rst
    Glossary.rst
    thinkcspyExercises.rst

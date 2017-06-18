@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: func-5-
+   :prefix: func-3-
    :start: 1
 
 Functions can Call Other Functions
@@ -64,7 +64,7 @@ square is just a special kind of rectangle.
 
 To draw a rectangle we need to be able to call a function with different arguments for width and height.  Unlike the case of the square, we cannot repeat the same thing 4 times, because the four sides are not equal. However, it is the case that drawing the bottom and right sides are the same sequence as drawing the top and left sides.  So we eventually come up with this rather nice code that can draw a rectangle.
 
-.. activecode:: fnn
+.. activecode:: fnk
     :nocodelens:
 
     import turtle

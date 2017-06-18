@@ -10,21 +10,19 @@
 Programming With Style
 ----------------------
 
-Readability is very important to programmers, since in practice programs are
-read and modified far more often then they are written.  
+Readability is very important to programmers, since in practice programs are read and modified far more often then they are written.  
 
 .. All the code examples
 .. in this book will be consistent with the *Python Enhancement Proposal 8*
 .. (`PEP 8 <http://www.python.org/dev/peps/pep-0008/>`__), a style guide developed by the Python community.
 
-We'll have more to say about style as our programs become more complex, but a
-few pointers will be helpful already:
+We'll have more to say about style as our programs become more complex, but here are a few general rules:
 
+* all statements should be within a function
 * use 4 spaces for indentation
-* imports should go at the top of the file
-* separate function definitions with two blank lines
+* imports should all go at the top of the file
 * keep function definitions together
-* keep top level statements, including function calls, together at the
-  bottom of the program
+* use blank lines to separate logical sections of a program (function definitions, algorithm steps, etc.)
+* keep top level statements, including function calls, together at the bottom of the program
 
 

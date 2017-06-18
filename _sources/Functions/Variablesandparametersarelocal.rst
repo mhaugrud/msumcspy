@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: func-3-
+   :prefix: func-9-
    :start: 1
 
 Variables and Parameters are Local
@@ -49,7 +49,7 @@ to the caller.
 On the other hand, it is legal for a function to access a global variable.  However, this is considered **bad form** by nearly all programmers and should be avoided.  Look at the following,
 nonsensical variation of the square function.
 
-.. activecode:: fnk
+.. activecode:: fns
 
     def badsquare(x):
         y = x ** power
@@ -127,7 +127,7 @@ But this example demonstrates that that is clearly not how Python operates.
 
 **Check your understanding**
 
-.. mchoice:: mc5j
+.. mchoice:: mc5l
    :answer_a: Its value
    :answer_b: The range of statements in the code where a variable can be accessed.
    :answer_c: Its name
@@ -138,7 +138,7 @@ But this example demonstrates that that is clearly not how Python operates.
 
    What is a variable's scope?
 
-.. mchoice:: mc5k
+.. mchoice:: mc5m
    :answer_a: A temporary variable that is only used inside a function
    :answer_b: The same as a parameter
    :answer_c: Another name for any variable
@@ -149,7 +149,7 @@ But this example demonstrates that that is clearly not how Python operates.
 
    What is a local variable?
 
-.. mchoice:: mc5l
+.. mchoice:: mc5n
    :answer_a: Yes, and there is no reason not to.
    :answer_b: Yes, but it is considered bad form.
    :answer_c: No, it will cause an error.

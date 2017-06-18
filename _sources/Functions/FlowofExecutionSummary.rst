@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: func-6-
+   :prefix: func-4-
    :start: 1
 
 Flow of Execution Summary
@@ -60,7 +60,7 @@ until you reach a point where that function is called.
 
 **Check your understanding**
 
-.. mchoice:: mc5n
+.. mchoice:: mc5j
    :answer_a: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
    :answer_b: 1, 2, 3, 5, 6, 7, 9, 10, 11
    :answer_c: 9, 10, 11, 1, 2, 3, 5, 6, 7
@@ -92,7 +92,7 @@ until you reach a point where that function is called.
 
    Which of the following best reflects the order in which these lines of code are processed in Python?
 
-.. mchoice:: mc5o
+.. mchoice:: mc5k
    :answer_a: 25
    :answer_b: 5
    :answer_c: 125

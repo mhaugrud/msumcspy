@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: func-9-
+   :prefix: func-7-
    :start: 1
 
 Composition
@@ -40,7 +40,7 @@ Again we will use one of our earlier functions:
 
 Wrapping that up in a function, we get:
 
-.. activecode:: fns
+.. activecode:: fnp
     
     def distance(x1, y1, x2, y2):
         dx = x2 - x1

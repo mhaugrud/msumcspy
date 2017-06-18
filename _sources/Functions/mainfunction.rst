@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: func-7-
+   :prefix: func-5-
    :start: 1
 
 Using a Main Function
@@ -48,7 +48,7 @@ In many programming languages (e.g. Java and C++), it is not possible to simply 
 
 The following activecode shows this idea.  In line 11 we have defined a new function called ``main`` that doesn't need any parameters.  The five lines of main processing are now placed inside this function.  Finally, in order to execute that main processing code, we need to invoke the ``main`` function (line 20).  When you push run, you will see that the program works the same as it did before.
 
-.. activecode:: fno
+.. activecode:: fnl
     :nocodelens:
 
     import turtle
@@ -88,7 +88,7 @@ For example, assume that we have written a collection of functions to do some si
 
 The activecode below defines two simple functions and a main. 
 
-.. activecode:: fnp
+.. activecode:: fnm
 
     def squareit(n):
 

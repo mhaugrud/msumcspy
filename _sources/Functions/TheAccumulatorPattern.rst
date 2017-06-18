@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: func-4-
+   :prefix: func-10-
    :start: 1
 
 The Accumulator Pattern
@@ -33,7 +33,7 @@ Here is the program in activecode.  Note that the function definition is the sam
 is the details of how the squaring is done.  This is a great example of "black box" design.  We can change out the details inside of the box and still use the function exactly as we did before.
 
 
-.. activecode:: fnl
+.. activecode:: fnt
 
     def square(x):
 
@@ -64,7 +64,7 @@ referred to as the **accumulator pattern**.  We refer to the variable as the **a
 .. code-block:: python
 
     initialize the accumulator variable
-    repeat the following:
+    repeat:
         modify the accumulator variable
 
     # when the loop terminates the accumulator has the correct value
@@ -86,7 +86,7 @@ Here is the same program in codelens.  Step through the function and watch the "
     print("The result of", toSquare, "squared is", squareResult)
 
 
-.. activecode:: fnm
+.. activecode:: fnu
 
    def square(x):
        '''raise x to the second power'''
@@ -112,7 +112,7 @@ Here is the same program in codelens.  Step through the function and watch the "
 
 **Check your understanding**
 
-.. mchoice:: mc5m
+.. mchoice:: mc5o
    :answer_a: The square function will return x instead of x * x
    :answer_b: The square function will cause an error
    :answer_c: The square function will work as expected and return x * x

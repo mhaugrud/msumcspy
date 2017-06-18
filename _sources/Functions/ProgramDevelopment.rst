@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: func-8-
+   :prefix: func-6-
    :start: 1
 
 Program Development
@@ -51,7 +51,7 @@ that we can test it before we make it more complicated.
 
 We import the test module to enable us to write a unit test for the function
 
-.. activecode:: fnq
+.. activecode:: fnn
 
    import test
    def distance(x1, y1, x2, y2):
@@ -66,11 +66,9 @@ and the 0 (the correct answer).
 
 .. admonition:: Extend the program ...
 
-   On line 6, write another unit test. Use (1,2, 4,6) as the parameters to the distance function. How far apart
-Are these two points? Use that value (instead of 0) as the correct answer for this unit test.
+   On line 6, write another unit test. Use (1,2, 4,6) as the parameters to the distance function. How far apart are these two points? Use that value (instead of 0) as the correct answer for this unit test.
 
-   On line 7, write another unit test. Use (0,0, 1,1) as the parameters to the distance function. How far apart
-Are these two points? Use that value as the correct answer for this unit test.
+   On line 7, write another unit test. Use (0,0, 1,1) as the parameters to the distance function. How far apart are these two points? Use that value as the correct answer for this unit test.
 
    The first test passes but the others fail since the distance function does not yet contain all the necessary steps.
 
@@ -114,7 +112,7 @@ should be 25).
 Finally, using the fractional exponent ``0.5`` to find the square root,
 we compute and return the result.
 
-.. activecode:: fnr
+.. activecode:: fno
 
    import test
    def distance(x1, y1, x2, y2):
@@ -133,15 +131,13 @@ we compute and return the result.
 
    Two of the tests pass but the last one fails. Is there still an error in the function?
 
-   Frequently we discover errors in the functions that we are writing. However, it is possible that there is an 
-error in a test. Here the error is in the precision of the correct answer. This could be corrected using the
-``testWithin`` function. Unfortunately, that function is not available in our interactive text.
+   Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer. This could be corrected using the ``testWithin`` function. Unfortunately, that function is not available in our interactive text.
 
    Correct the test by changing the correct answer.
 
 
 
-Now the tests pass! Wonderful! However, you may need to perform additional tests.
+Now the tests pass! Wonderful! However, you may still need to perform additional tests.
 
 
 When you start out, you might add only a line or two of code at a time. As you
