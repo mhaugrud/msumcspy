@@ -11,6 +11,8 @@
    :prefix: select-4-
    :start: 1
 
+.. index:: selection; binary, conditional, block, condition, flow chart
+
 Conditional Execution: Binary Selection
 ---------------------------------------
 
@@ -173,5 +175,4 @@ expression using the equality operator.
 
 
 
-.. index:: alternative execution, branch, wrapping code in a function
 

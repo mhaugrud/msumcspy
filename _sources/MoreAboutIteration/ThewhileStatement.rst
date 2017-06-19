@@ -11,6 +11,7 @@
    :prefix: iter-3-
    :start: 1
 
+.. index:: iteration; definite, iteration; indefinite, loop; infinite
 The ``while`` Statement
 -----------------------
 

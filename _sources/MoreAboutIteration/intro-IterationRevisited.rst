@@ -14,10 +14,7 @@
 Iteration Revisited
 ===================
 
-.. index:: iteration, assignment, assignment statement, reassignment
-
-.. index::
-    single: statement; assignment
+.. index:: iteration
 
 
 Computers are often used to automate repetitive tasks. Repeating identical or
@@ -32,5 +29,4 @@ we are going to look at the ``while`` statement --- another way to have your
 program do iteration.
 
 
-.. index:: for loop
 

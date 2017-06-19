@@ -11,7 +11,7 @@
    :prefix: modules-4-
    :start: 1
 
-.. index:: random module
+.. index:: random module, deterministic algorithm,  algorithm; deterministic
 
 The `random` module
 -------------------
@@ -78,7 +78,6 @@ If you continue to press the run button you will see random values between 0.0 a
    On line 2, make a for loop that repeats 10 times. Indent lines 3, 4 and 5 so they become the body of this loop
 
 
-.. index:: deterministic algorithm,  algorithm; deterministic, unit tests
 
 It is important to note that
 random number generators are based on a **deterministic** algorithm --- repeatable and predictable.

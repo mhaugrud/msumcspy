@@ -11,6 +11,8 @@
    :prefix: iter-9-
    :start: 1
 
+.. index:: image, pixel
+
 2-Dimensional Iteration: Image Processing
 -----------------------------------------
 

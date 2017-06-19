@@ -11,6 +11,8 @@
    :prefix: iter-x-
    :start: 1
    
+.. index:: sentinel, validation
+
 More Uses of Indefinite Iteration
 ---------------------------------
 
@@ -93,9 +95,4 @@ Run the program a couple of times with different values to see that it works. Ho
    * If you enter a negative number, it will be added to the total and count. Modify the code  so that negative numbers give an error message instead (but don't end the loop) Hint: ``elif`` is your friend.
    * If you enter zero the first time you are asked for a price, the loop will end, and the program  will try to divide by zero. Use an ``if``/``else`` statement before the average calculation to avoid the division by zero and tell the user that you can't compute an average without data.
 
-.. index::
-    single: validation
-    single: input; validating
-    single: sentinel value
-    single: value; sentinel
     

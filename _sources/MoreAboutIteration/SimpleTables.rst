@@ -11,6 +11,8 @@
    :prefix: iter-8-
    :start: 1
 
+.. index:: escape sequence, \\ character, nested iteration, iteration; nested
+
 Simple Tables
 -------------
 
@@ -65,9 +67,6 @@ Because of the tab characters between the columns, the position of the second co
 
 
 
-.. index::
-    single: local variable
-    single: variable; local
 
 **Check your understanding**
 

@@ -11,6 +11,8 @@
    :prefix: iter-7-
    :start: 1
 
+.. index:: iteration; definite, iteration; indefinite
+
 Choosing between ``for`` and ``while``
 --------------------------------------
 

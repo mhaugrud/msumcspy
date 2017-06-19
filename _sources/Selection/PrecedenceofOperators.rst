@@ -11,6 +11,8 @@
    :prefix: select-3-
    :start: 1
 
+.. index:: precedence
+
 Precedence of Operators
 -----------------------
 
@@ -47,14 +49,4 @@ Level     Category        Operators
 
    Which of the following properly expresses the precedence of operators (using parentheses) in the following expression: 5*3 > 10 and 4+6==11
 
-.. index:: conditional branching, conditional execution, if, elif, else,
-           if statement, compound statement, statement block, block, body,
-           pass statement
-
-.. index::
-    single: statement; if
-    single: compound statement; header
-    single: compound statement; body
-    single: conditional statement
-    single: statement; pass
 

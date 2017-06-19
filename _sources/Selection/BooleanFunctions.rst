@@ -11,6 +11,8 @@
    :prefix: select-8-
    :start: 1
 
+.. index:: boolean function, function; boolean
+
 Boolean Functions
 -----------------
 

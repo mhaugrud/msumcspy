@@ -11,6 +11,8 @@
    :prefix: select-5-
    :start: 1
 
+.. index:: selection; unary
+
 Omitting the `else` Clause: Unary Selection
 -------------------------------------------
 
@@ -101,7 +103,4 @@ executed.  Otherwise the flow of execution continues to the statement after the 
      else:
          print("This is always printed")
 
-.. index::
-    single: nested conditionals
-    single: conditionals; nested
 

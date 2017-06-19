@@ -11,6 +11,8 @@
    :prefix: select-6-
    :start: 1
 
+.. index:: nested conditional, conditional; nested
+
 Nested conditionals
 -------------------
 
@@ -107,8 +109,4 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
          else:
              print(x," is 0")
 
-
-.. index::
-    single: chained conditional
-    single: conditional; chained
 

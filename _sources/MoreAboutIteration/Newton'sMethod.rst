@@ -11,6 +11,8 @@
    :prefix: iter-6-
    :start: 1
 
+.. index:: newton
+
 Newton's Method
 ---------------
 
@@ -103,6 +105,5 @@ You may have studied this sequence in a math class and learned that the sum appr
 
    But **why** did it reach 2.0? Are those math teachers wrong?
 
-.. index:: algorithm
 
 

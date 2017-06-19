@@ -11,6 +11,8 @@
    :prefix: select-2-
    :start: 1
 
+.. index:: truth table, logical operator, operator; logical
+
 Logical operators
 -----------------
 
