@@ -11,6 +11,8 @@
    :prefix: strings-4-
    :start: 1
 
+.. index:: index, index; operator, subscript operator
+
 Index Operator: Working with the Characters of a String
 -------------------------------------------------------
 

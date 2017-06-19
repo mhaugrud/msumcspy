@@ -11,6 +11,8 @@
    :prefix: strings-7-
    :start: 1
 
+.. index:: slice, operator; slice
+
 The Slice Operator
 ------------------
 
@@ -115,6 +117,4 @@ end of the string.
     .. activecode:: sti
 
 
-
-.. index:: string comparison, comparison of strings
 

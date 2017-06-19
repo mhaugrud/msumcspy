@@ -11,6 +11,8 @@
    :prefix: strings-6-
    :start: 1
 
+.. index:: length, function; len
+
 Length
 ------
 

@@ -11,6 +11,8 @@
    :prefix: strings-14-
    :start: 1
 
+.. index:: accumulator, string; accumulator
+
 The Accumulator Pattern with Strings
 ------------------------------------
 

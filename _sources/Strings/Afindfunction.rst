@@ -11,6 +11,8 @@
    :prefix: strings-15-
    :start: 1
 
+.. index:: traversal; eureka, eureka
+
 A ``find`` function
 -------------------
 
@@ -64,7 +66,4 @@ When the iteration stops, we simply ask a question to find out why and then retu
    - On line 23, use a string **method** to find the index of ``x`` in ``Compsci``. This should produce the same result as line 22.
 
 
-.. index:: optional parameter, default value, parameter; optional
-
-.. _optional_parameters:
 

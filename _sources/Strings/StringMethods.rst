@@ -11,7 +11,7 @@
    :prefix: strings-5-
    :start: 1
 
-.. _stringMethods:
+.. index:: string; method, dot notation
 
 String Methods
 --------------
@@ -155,11 +155,4 @@ change the original.  You can also consult the `Python documentation for strings
       s = "python rocks"
       print(s[1] * s.index("n"))
 
-
-.. index::
-    single: len function
-    single: function; len
-    single: runtime error
-    single: negative index
-    single: index; negative
 

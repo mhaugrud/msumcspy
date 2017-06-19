@@ -14,7 +14,7 @@
 Looping and Counting
 --------------------
 
-We will finish this chapter with a few more examples that show variations on the theme of iteration through the characters of a string.  We will implement a few of the methods that we described earlier to show how they can be done.
+Here is another variation on the theme of iterating through the characters of a string.
 
 
 The following program counts the number of times a particular letter, ``aChar``, appears in a
@@ -40,6 +40,5 @@ When all characters have been processed, the ``lettercount`` is returned.
 
    In line 9, change ``"b"`` to ``"B"``.
 
-.. index:: traversal, eureka traversal, pattern of computation,
-           computation pattern
-
+.. note::
+   As we will later see, this function (and other similar ones) is implemented as a method of the string class.

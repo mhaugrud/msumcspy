@@ -11,6 +11,8 @@
    :prefix: strings-3-
    :start: 1
 
+.. index:: concatenation, overloading
+
 Operations on Strings
 ---------------------
 
@@ -63,6 +65,8 @@ This interpretation of ``+`` and ``*`` makes sense by analogy with addition and 
 example that the order of operations for ``*`` and ``+`` is the same as it was for arithmetic. The repetition is done before the concatenation.  If you want to cause the concatenation to be
 done first, you will need to use parenthesis.
 
+.. note::
+   The extension of familiar operations to different data types is called **overloading**. Overloading should be defined in a manner that makes sense, both with the usual use of the operation and with the new data type.
 
 **Check your understanding**
 

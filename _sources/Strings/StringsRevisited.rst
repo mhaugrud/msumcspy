@@ -11,7 +11,7 @@
    :prefix: strings-1-
    :start: 1
 
-.. index:: compound data type, character, subscript operator, index
+.. index:: string
 
 Strings Revisited
 -----------------

@@ -11,6 +11,8 @@
    :prefix: strings-17-
    :start: 1
 
+.. index:: module; string, string; classification, whitespace
+
 Character classification
 ------------------------
 

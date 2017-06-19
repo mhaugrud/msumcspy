@@ -11,6 +11,8 @@
    :prefix: strings-12-
    :start: 1
 
+.. index:: traversal; by index
+
 Traversal and the ``while`` Loop
 --------------------------------
 
@@ -75,9 +77,4 @@ Here is the same example in codelens so that you can trace the values of the var
 
     .. activecode:: st5
 
-
-
-.. index::
-    single: in operator
-    single: operator; in
 

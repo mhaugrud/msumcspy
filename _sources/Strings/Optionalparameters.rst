@@ -11,6 +11,8 @@
    :prefix: strings-16-
    :start: 1
 
+.. index:: optional parameter, default value, parameter; optional
+
 Optional parameters
 -------------------
 
@@ -114,9 +116,6 @@ The semantics of ``start`` and ``end`` in this function are precisely the same a
 the ``range`` function.
 
 
-
-.. index:: module, string module, dir function, dot notation, function type,
-           docstring
 
 
 

@@ -11,6 +11,8 @@
    :prefix: strings-8-
    :start: 1
 
+.. index:: ordinal value, lexicographic order, string; comparison
+
 String Comparison
 -----------------
 
@@ -72,6 +74,9 @@ find out the so-called **ordinal value** for a given character is to use a chara
     print("apple" > "Apple")
 
 When you compare characters or strings to one another, Python converts the characters into their equivalent ordinal values and compares the integers from left to right.  As you can see from the example above, "a" is greater than "A" so "apple" is greater than "Apple".
+
+.. note::
+   Computers and computer languages utilize several standard character codings: ASCII, Unicode, EBCDIC
 
 Humans commonly ignore capitalization when comparing two words.  However, computers do not.  A common way to address this issue is to convert strings to a standard
 format, such as all lowercase, before performing the comparison. 
@@ -156,5 +161,4 @@ One thing to note in the last two examples is the fact that the space character 
 
    
 
-.. index:: mutable, immutable, runtime error
 

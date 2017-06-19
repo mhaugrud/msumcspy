@@ -63,12 +63,12 @@ What if, on the other hand, we had wanted to know how many *whole* hours there a
     # what does the value for hours (line 8) mean? (answer below and run)
     #
 
-.. index:: integer division
+.. index:: integer division, operator; division
 
 Pay particular attention to the first two examples above.  Notice that the result of floating point division is ``1.75`` but the result of the integer division is simply ``1``. Take care that you choose the correct flavor of the division operator.  If
 you're working with expressions where you need floating point values, use the division operator ``/``.  If you want an integer result, use ``//``.
 
-.. index:: modulus
+.. index:: modulus, operator; modulus
 
 The **modulus operator**, sometimes also called the **remainder operator** or **integer remainder operator** works on integers (and integer expressions) and yields the remainder when the first operand is divided by the second. In Python, the modulus operator is a percent sign (``%``). The syntax is the same as for other
 operators.

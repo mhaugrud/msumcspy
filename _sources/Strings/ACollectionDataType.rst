@@ -11,6 +11,8 @@
    :prefix: strings-2-
    :start: 1
 
+.. index:: collection; data type, collection, sequential, character, empty string, string, string; empty
+
 A Collection Data Type
 ----------------------
 
@@ -32,5 +34,4 @@ that make up the string are assumed to be in a particular order from left to rig
 
 A string that contains no characters, often referred to as the **empty string**, is still considered to be a string.  It is simply a sequence of zero characters and is represented by '' or "" (two single or two double quotes with nothing in between).
 
-.. index:: string operations, concatenation
 
