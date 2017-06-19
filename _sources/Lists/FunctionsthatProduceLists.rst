@@ -11,6 +11,8 @@
    :prefix: list-21-
    :start: 1
 
+.. index:: list; accumulator
+
 Functions that Produce Lists
 ----------------------------
 

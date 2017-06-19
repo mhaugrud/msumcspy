@@ -11,6 +11,8 @@
    :prefix: list-19-
    :start: 1
 
+.. index:: function; pure, side effect
+
 Pure Functions
 --------------
 

@@ -11,6 +11,8 @@
    :prefix: list-1-
    :start: 1
 
+.. index:: list, collection; data type, element, collection; sequential, collection; heterogeneous
+
 Lists
 =====
 
@@ -19,5 +21,4 @@ index. The values that make up a list are called its **elements**. Lists are
 similar to strings, which are ordered collections of characters, except that the
 elements of a list can have any type and for any one list, the items can be of different types.
 
-.. index:: nested list, list; nested
 

@@ -15,7 +15,7 @@ Dictionaries
 ============
 
 
-.. index:: dictionary, mapping type, key, value, key-value pair
+.. index:: dictionary, mapping type, key, value, key-value pair, collection; data type, collection; unordered
 
 All of the compound data types we have studied in detail so far --- strings,
 lists, and tuples --- are sequential collections.  This means that the items in the collection are

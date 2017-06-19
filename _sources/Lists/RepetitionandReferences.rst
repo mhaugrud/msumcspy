@@ -124,5 +124,3 @@ Here is the same example in codelens.  Step through the code paying particular a
 
 
 
-.. index:: list; append
-

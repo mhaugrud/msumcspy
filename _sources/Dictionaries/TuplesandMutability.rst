@@ -11,7 +11,7 @@
    :prefix: list-26-
    :start: 1
 
-.. index:: tuple
+.. index:: tuple, immutable, collection; data type, collection; sequential, collection; heterogeneous
 
 Tuples and Mutability
 ---------------------

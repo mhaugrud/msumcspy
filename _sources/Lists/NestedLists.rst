@@ -11,6 +11,8 @@
    :prefix: list-23-
    :start: 1
 
+.. index:: list; nested
+
 Nested Lists
 ------------
 
@@ -67,5 +69,4 @@ If we print(``nested[2]``), we get ``[10, 20]``. To extract an element from the 
         print(alist[1][1])
 
 
-.. index:: strings and lists, split, join
 

@@ -11,6 +11,8 @@
    :prefix: list-9-
    :start: 1
 
+.. index:: list; delete
+
 List Deletion
 -------------
 
@@ -42,7 +44,4 @@ index.
     .. activecode:: li5
 
 
-
-
-.. index:: is operator, objects and values
 

@@ -11,6 +11,8 @@
    :prefix: list-25-
    :start: 1
 
+.. index:: list; constructor
+
 ``list`` Type Constructor Function
 ----------------------------------
     

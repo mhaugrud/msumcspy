@@ -11,6 +11,8 @@
    :prefix: list-24-
    :start: 1
 
+.. index:: string; method, strings and lists
+
 Strings and Lists
 -----------------
 

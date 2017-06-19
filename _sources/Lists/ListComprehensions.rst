@@ -11,6 +11,8 @@
    :prefix: list-22-
    :start: 1
 
+.. index:: list; comprehension
+
 List Comprehensions
 -------------------
 
@@ -74,5 +76,4 @@ To write the ``primes_upto`` function we will use the ``is_prime`` function to f
      print(blist)
 
 
-.. index:: nested list, list; nested
        

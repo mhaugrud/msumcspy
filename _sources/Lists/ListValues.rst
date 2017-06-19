@@ -11,6 +11,8 @@
    :prefix: list-2-
    :start: 1
 
+.. index:: list; index, list; empty, sublist, list; nested
+
 List Values
 -----------
 
@@ -62,5 +64,4 @@ As you would expect, we can also assign list values to variables and pass lists 
 
    A list can contain only integer items.
 
-.. index:: list index, index, list traversal
 

@@ -11,6 +11,8 @@
    :prefix: list-7-
    :start: 1
 
+.. index:: list; slice, operator; slice
+
 List Slices
 -----------
 
@@ -47,5 +49,4 @@ end of the sequence.
 
 
 
-.. index:: mutable, item assignment, immutable
     

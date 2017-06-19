@@ -11,6 +11,8 @@
    :prefix: list-4-
    :start: 1
 
+.. index:: index, operator; index
+
 Accessing Elements
 ------------------
 

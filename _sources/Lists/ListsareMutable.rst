@@ -11,6 +11,8 @@
    :prefix: list-8-
    :start: 1
 
+.. index:: mutable
+
 Lists are Mutable
 -----------------
 
@@ -90,5 +92,4 @@ desired location.
      print(alist)
 
 
-.. index:: del statement, statement; del
 

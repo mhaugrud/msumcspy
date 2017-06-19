@@ -11,6 +11,8 @@
    :prefix: list-11-
    :start: 1
 
+.. index:: alias
+
 Aliasing
 --------
 
@@ -76,5 +78,4 @@ economize.
      print(alist)
 
 
-.. index:: clone
 

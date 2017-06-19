@@ -11,6 +11,8 @@
    :prefix: list-18-
    :start: 1
 
+.. index:: list; as parameter
+
 Using Lists as Parameters
 -------------------------
 
@@ -59,8 +61,4 @@ This can be easily seen in codelens.  Note that after the call to ``doubleStuff`
     doubleStuff(things)
 
 
-
-.. index:: side effect, modifier
-
-.. _pure-func-mod:
 

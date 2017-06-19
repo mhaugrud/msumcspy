@@ -11,6 +11,8 @@
    :prefix: list-17-
    :start: 1
 
+.. index:: list; traversal, traversal; by index
+
 List Traversal by Index
 -----------------------
 
@@ -88,5 +90,4 @@ The above example, illustrates the accumulator pattern for lists: you start with
    Type instructions on lines 3 and 4 that use the list accumulator pattern to fill the ``squares`` list with the squares of ``numbers``.
 
 
-.. index:: parameter
 

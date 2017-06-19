@@ -11,6 +11,8 @@
    :prefix: list-5-
    :start: 1
 
+.. index:: list; membership, operator; in
+
 List Membership
 ---------------
 

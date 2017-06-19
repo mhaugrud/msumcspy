@@ -69,7 +69,3 @@ accumulator pattern.
      print(alist)
 
 
-.. index:: for loop, enumerate
-
-.. index:: for loop
-

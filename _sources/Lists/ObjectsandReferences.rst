@@ -11,6 +11,8 @@
    :prefix: list-10-
    :start: 1
 
+.. index:: operator; is, reference
+
 Objects and References
 ----------------------
 
@@ -85,5 +87,4 @@ Here is the example in codelens.  Pay particular attention to the `id` values.
     print(a is b)
     print(a == b)
 
-.. index:: aliases
 

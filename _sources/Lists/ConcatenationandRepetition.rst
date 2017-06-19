@@ -11,6 +11,8 @@
    :prefix: list-6-
    :start: 1
 
+.. index:: list; concatenate
+
 Concatenation and Repetition
 ----------------------------
 

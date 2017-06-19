@@ -11,6 +11,8 @@
    :prefix: list-3-
    :start: 1
 
+.. index:: list; length, function; len, length
+
 List Length
 -----------
 

@@ -11,6 +11,8 @@
    :prefix: list-14-
    :start: 1
 
+.. index:: list; method
+
 List Methods
 ------------
 

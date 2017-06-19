@@ -11,6 +11,8 @@
    :prefix: list-17-
    :start: 1
 
+.. index:: list; traversal, traversal; by item
+
 List Traversal by Item
 ----------------------
 
