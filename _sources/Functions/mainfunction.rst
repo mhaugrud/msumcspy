@@ -11,7 +11,7 @@
    :prefix: func-5-
    :start: 1
 
-.. index:: main function, conditional execution
+.. index:: function; main, conditional execution
 
 Using a Main Function
 ---------------------

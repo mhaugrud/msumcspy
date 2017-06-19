@@ -11,7 +11,7 @@
    :prefix: func-2-
    :start: 1
 
-.. index:: return, temporary variable, local variable, procedure, fruitful function
+.. index:: return, variable; temporary, variable; local, procedure, function; fruitful
 
 Functions that Return Values
 ----------------------------
@@ -159,10 +159,6 @@ where the call was done.  Since line 6 uses the return value as the right hand s
 
    Edit the function so it returns the result (instead of printing it).
 
-.. index::
-    single: local variable
-    single: variable; local
-    single: lifetime
 
 **Check your understanding**
 
@@ -187,7 +183,7 @@ where the call was done.  Since line 6 uses the return value as the right hand s
 
 
 .. mchoice:: mc5i
-   :answer_a: Nothing (no value)
+   :answer_a: None (no value)
    :answer_b: The value of x + y + z
    :answer_c: The string 'x + y + z'
    :correct: a

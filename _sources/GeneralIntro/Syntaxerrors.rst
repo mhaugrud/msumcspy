@@ -11,7 +11,7 @@
    :prefix: intro-
    :start: 1
 
-.. index:: syntax, syntax error
+.. index:: syntax, syntax error, syntax; error
 
 Syntax errors
 -------------

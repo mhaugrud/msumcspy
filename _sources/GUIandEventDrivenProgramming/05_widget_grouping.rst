@@ -56,7 +56,3 @@ You can download and run this example program, `all_frame_widgets.py`_ that allo
 with the four types of "contaners."
 
 
-.. index:: Tkinter, widget, widget hierarchy, Frame, LabelFrame, PanedWindow, Notebook
-
-
-.. _all_frame_widgets.py: Programs/all_frame_widgets.py

@@ -150,6 +150,5 @@ here is a GUI program that displays "Hello World!:
   # Start the GUI event loop
   window.mainloop()
 
-.. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter, dialog box
 
 

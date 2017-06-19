@@ -11,8 +11,7 @@
    :prefix: func-1-
    :start: 1
 
-.. index:: function, function definition, parameter, argument, formal parameter, actual parameter, function call, docstring, function invocation
-    single: definition; function
+.. index:: function, function; definition, parameter, argument, parameter; formal, parameter; actual, function; call, docstring, function invocation
 	
 
 Functions

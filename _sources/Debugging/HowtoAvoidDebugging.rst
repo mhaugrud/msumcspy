@@ -11,6 +11,8 @@
    :prefix: debug-2-
    :start: 1
 
+.. index:: boundary condition, testing, debug
+
 How to Avoid Debugging
 ----------------------
 
@@ -82,7 +84,6 @@ This error was probably pretty simple to spot, because we printed out the value 
    #
 
 
-.. index:: boundary conditions, testing, debugging
 
 Now, thats a lot better, and in fact depending on the hours you chose, it may be exactly right.  If you entered 8 for the current time and 5 for the wait time then 13 is correct.  But if you entered 17 (5pm) for the hours and 9 for the wait time then the result of 26 is not correct.  This illustrates an important aspect of **testing**, which is that it is important to test your code on a range of inputs.  It is especially important to test your code on **boundary conditions**.  In this case you would want to test your program for hours including 0, 23, and some in between.  You would want to test your wait times for 0, and some really large numbers.  What about negative numbers?  Negative numbers don't make sense, but since we don't really have the tools to deal with telling the user when something is wrong we will not worry about that just yet.  
 

@@ -156,5 +156,4 @@ Widget               Documentation Resource
 ``ttk.Notebook``     http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Notebook.html
 ===================  =============================================================================
 
-.. index:: widget attributes
 

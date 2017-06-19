@@ -92,4 +92,3 @@ Glossary
         working directory of a program. An *relative file path* never starts
         with a ``/``.
 
-.. index:: absolute file path, relative file path

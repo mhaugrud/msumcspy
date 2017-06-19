@@ -11,7 +11,7 @@
    :prefix: turtle-3-
    :start: 1
 
-.. index:: for loop, loop, loop variable, loop body, iteration
+.. index:: for loop, loop, loop; variable, loop; body, iteration
 
 The ``for`` Loop
 ----------------

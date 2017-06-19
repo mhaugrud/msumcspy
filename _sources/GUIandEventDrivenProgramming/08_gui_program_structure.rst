@@ -122,5 +122,4 @@ It is recommended that you develop all of your GUI programs as Python Classes.
 For complex designs, a Python ``Class`` can help manage the complexity of
 the code and the scoping of variables.
 
-.. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter, dialog box
 

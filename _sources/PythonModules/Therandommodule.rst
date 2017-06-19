@@ -11,7 +11,7 @@
    :prefix: modules-4-
    :start: 1
 
-.. index:: random module, deterministic algorithm,  algorithm; deterministic
+.. index:: random module, module; random,  algorithm; deterministic
 
 The `random` module
 -------------------

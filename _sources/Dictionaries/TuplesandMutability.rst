@@ -11,6 +11,8 @@
    :prefix: list-26-
    :start: 1
 
+.. index:: tuple
+
 Tuples and Mutability
 ---------------------
 
@@ -88,8 +90,4 @@ the final comma, Python treats the ``(5)`` below as an integer in parentheses:
     x = (5)
     print(type(x))
  
-
-.. index::
-    single: assignment; tuple 
-    single: tuple; assignment  
 

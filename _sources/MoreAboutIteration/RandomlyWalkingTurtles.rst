@@ -187,7 +187,6 @@ program into a couple of parts is another example of functional decomposition.
    - In line 29, change the ``else`` to ``elif`` and check to see if the value of coin is 1.
 
 
-.. index:: 3n + 1 sequence
 
 **Check your understanding**
 

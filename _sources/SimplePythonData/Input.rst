@@ -11,7 +11,7 @@
    :prefix: data-8-
    :start: 1
 
-.. index:: input, input dialog
+.. index:: input, input; dialog
 
 Input
 -----

@@ -46,19 +46,6 @@ are scanning from top to bottom, but you should skip the body of the function
 until you reach a point where that function is called.
 
 
-.. index::
-    single: parameter
-    single: function; parameter
-    single: argument
-    single: function; argument
-    single: import statement
-    single: statement; import
-    single: composition
-    single: function; composition
-
-
-.. index:: bar chart
-
 
 **Check your understanding**
 

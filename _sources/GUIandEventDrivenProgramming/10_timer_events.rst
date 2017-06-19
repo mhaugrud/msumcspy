@@ -115,6 +115,5 @@ the callback function when you create the timer event.
                                       # b gets passed to the parameter gamma
 
 
-.. index:: timer events, after method, after_cancel method
 
 

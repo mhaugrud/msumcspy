@@ -11,6 +11,8 @@
    :prefix: dict-3-
    :start: 1
 
+.. index:: dictionary; method
+
 Dictionary Methods
 ------------------
 
@@ -233,5 +235,4 @@ in the case where the key is not present.  This can be seen in the final example
    
 
 
-.. index:: aliases
 

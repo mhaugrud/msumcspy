@@ -11,7 +11,7 @@
    :prefix: intro-
    :start: 1
 
-.. index:: semantic error, logic error
+.. index:: semantic error, logic error, error; semantic, error; logic
 
 Semantic Errors
 ---------------

@@ -161,7 +161,3 @@ operation, the return values are ``None`` and ``None``.
   rgb_color, web_color = colorchooser.askcolor(parent=application_window,
                                                initialcolor=(255, 0, 0))
 
-.. index:: messagebox, showinfo, showerror, showwarning, askokcancel,
-           askretrycancel, askyesno, askyesnocancel, simpledialog, askstring,
-           askinteger, askfloat, filedialog, askdirectory, askopenfilename,
-           askopenfilenames, asksaveasfilename, colorchooser, askcolor

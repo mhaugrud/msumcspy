@@ -170,5 +170,4 @@ To summarize, let's review two very important rules:
 * You should **never** mix and match ``layout managers``; use only one type of
   layout manager for the widgets within a particular parent widget.
 
-.. index:: layout manager, place, grid, pack
 

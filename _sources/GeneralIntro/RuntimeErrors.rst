@@ -11,7 +11,7 @@
    :prefix: intro-
    :start: 1
 
-.. index:: runtime error, exception
+.. index:: runtime error, exception, error; runtime
 
 Runtime Errors
 --------------

@@ -11,7 +11,7 @@
    :prefix: iter-8-
    :start: 1
 
-.. index:: escape sequence, \\ character, nested iteration, iteration; nested
+.. index:: escape sequence, tab character, newline character, nested iteration, iteration; nested
 
 Simple Tables
 -------------

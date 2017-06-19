@@ -564,11 +564,4 @@ However, the end result is not necessarily easy to understand or modify for
 future enhancements. The next lesson will introduce a scheme for breaking
 complete software into more managable pieces.
 
-.. index:: Whack-a-mole game
-
-.. _whack_a_mole_v1.py: Programs/whack_a_mole_v1.py
-.. _whack_a_mole_v2.py: Programs/whack_a_mole_v2.py
-.. _whack_a_mole_v3.py: Programs/whack_a_mole_v3.py
-.. _whack_a_mole_v4.py: Programs/whack_a_mole_v4.py
-.. _whack_a_mole_v5.py: Programs/whack_a_mole_v5.py
 

@@ -129,9 +129,3 @@ By convention, this indicates that the window and the button are instances
 of a Python class. The Tkinter module is entirely object-oriented and makes
 extensive use of object-oriented language features.
 
-.. index:: Tkinter, widget, widget hierarchy, Button, Menu, MenuButton, OptionMenu,
-           Entry, Text, Checkbutton, Radiobutton, Listbox, Combobox, Scale,
-           Label, Message, Separator, Progressbar, Treeview
-
-.. _all_user_input_widgets.py: programs/all_user_input_widgets.py
-

@@ -241,5 +241,4 @@ L-system string and then it creates a turtle and passes it and the string to the
 
 Feel free to try some different angles and segment lengths to see how the drawing changes.
 
-.. index:: counting pattern
 

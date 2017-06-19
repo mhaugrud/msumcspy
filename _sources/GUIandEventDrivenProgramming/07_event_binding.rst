@@ -221,5 +221,4 @@ type of widget and changing that behaviour can make the entire user interface
 confusing to a user.
 
 
-.. index:: focus, event binding, event descriptors, event object
 

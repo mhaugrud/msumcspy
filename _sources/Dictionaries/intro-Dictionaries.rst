@@ -120,5 +120,4 @@ The key ``'two'`` yields the value ``'dos'``.
      print(mydict["dog"])
 
 
-.. index:: del statement, statement; del
 

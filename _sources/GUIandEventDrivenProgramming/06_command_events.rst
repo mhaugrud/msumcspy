@@ -103,5 +103,4 @@ Using ``command`` events for simple actions is the easiest way to handle user
 events. For more complex situations, the next lesson explains how to associate
 "lower level" events with ``event handler`` functions.
 
-.. index:: event, event description, event object, widget command property
 

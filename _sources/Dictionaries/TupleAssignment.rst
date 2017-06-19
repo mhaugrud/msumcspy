@@ -55,6 +55,3 @@ right have to be the same.
     >>> (a, b, c, d) = (1, 2, 3)
     ValueError: need more than 3 values to unpack 
 
-.. index::
-    single: tuple; return value 
-
