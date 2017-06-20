@@ -13,7 +13,7 @@
 
 .. index:: list; traversal, traversal; by item
 
-.. list_traverse:
+.. _list_traverse:
 
 List Traversal by Item
 ----------------------
