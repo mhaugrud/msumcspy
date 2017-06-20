@@ -11,7 +11,7 @@
    :prefix: list-23-
    :start: 1
 
-.. index:: list; nested, pythonic
+.. index:: list; nested
 
 Nested Lists
 ------------

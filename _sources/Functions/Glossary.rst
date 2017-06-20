@@ -26,6 +26,10 @@ Glossary
         Part of a program that can never be executed, often because it appears
         after a ``return`` statement.
 
+    docstring
+        A triple quoted string, immediately below below a function header line, that 
+        describes the purpose of the function and its parameters.
+
     fruitful function
         A function that yields a return value instead of ``None``.
 
@@ -36,6 +40,9 @@ Glossary
     None
         A special Python value. One use in Python is that it is returned 
         by functions that do not execute a return statement with a return argument. 
+
+    Pythonic
+        In the spirit of the Python programming language.
 
     return value
         The value provided as the result of a function call.

@@ -7,12 +7,12 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: style, readability
+.. index:: style, readability, pythonic, docstring
 
 Programming With Style
 ----------------------
 
-Readability is very important to programmers, since in practice programs are read and modified far more often then they are written.  
+**Readability** is very important to programmers, since in practice programs are read and modified far more often then they are written.  
 
 .. All the code examples
 .. in this book will be consistent with the *Python Enhancement Proposal 8*
@@ -27,4 +27,10 @@ We'll have more to say about style as our programs become more complex, but here
 * use blank lines to separate logical sections of a program (function definitions, algorithm steps, etc.)
 * keep top level statements, including function calls, together at the bottom of the program
 
+**Pythonic** is a term that means *in the spirit of the Python programming language*.
+If we program in Python, we should use the language in the way its designers intended.
+Here are some links on writing Pythonic programs.
 
+* `The Zen of Python <https://www.python.org/dev/peps/pep-0020/>`_.
+* `Style Guide for Python <https://www.python.org/dev/peps/pep-0008/>`_.
+* `Docstring Conventions <https://www.python.org/dev/peps/pep-0257/>`_.
