@@ -16,7 +16,8 @@
 Traversal and the ``for`` Loop: By Index
 ----------------------------------------
 
-When we need to iterate over the characters in a string, we should use the technique shown in ch08_6 (iterating by character) if possible. However, there are times when we must iterate by index.
+When we need to iterate over the characters in a string, we should use the technique shown in
+:ref:`string_traverse` if possible. However, there are times when we must iterate by index.
 
 We can use the ``range`` function to systematically generate the indices of the characters.  The ``for`` loop can then be used to iterate over these positions. These positions can be used together with the indexing operator to access the individual
 characters in the string.

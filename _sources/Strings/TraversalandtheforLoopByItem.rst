@@ -13,6 +13,8 @@
 
 .. index:: traversal; by item
 
+.. string_traverse:
+
 Traversal and the ``for`` Loop: By Item
 ---------------------------------------
 

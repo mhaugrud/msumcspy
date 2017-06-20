@@ -11,7 +11,7 @@
    :prefix: list-23-
    :start: 1
 
-.. index:: list; nested
+.. index:: list; nested, pythonic
 
 Nested Lists
 ------------
@@ -41,7 +41,7 @@ If we print(``nested[2]``), we get ``[10, 20]``. To extract an element from the 
    - On line 12, (the body of the inner loop), print the current item using the two loop variables and square brackets (somewhat like is done in line 9).
 
 .. note::
-   Even though using this index notation to iterate over items in nested lists works, the Pythonic technique is what we did in chp09_3a (load your saved code to refresh your memory).
+   Even though using this index notation to iterate over items in nested lists works, the Pythonic technique is what we did in :ref:`list_traverse`.
 
 .. index:: matrix
 

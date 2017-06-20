@@ -13,6 +13,8 @@
 
 .. index:: list; traversal, traversal; by item
 
+.. list_traverse:
+
 List Traversal by Item
 ----------------------
 

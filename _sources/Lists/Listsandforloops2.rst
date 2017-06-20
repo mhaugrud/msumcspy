@@ -29,7 +29,7 @@ We can also use the indices to access the items in an iterative fashion.
 In this example, each time through the loop, the variable ``position`` is used as an index into the list, printing the ``position``-eth element. Note that we used ``len`` as the upper bound on the range so that we can iterate correctly no matter how many items are in the list.
 
 .. note::
-   This technique should only be used when necessary. Whenever possible, the iterate by item technique (activecode lik) should be used.
+   This technique should only be used when necessary. Whenever possible, we should use :ref:`list_traverse`.
 
 Since lists are mutable, it is often desirable to traverse a list, modifying each of its elements as you go. The following code squares all the numbers from ``1`` to ``5`` using iteration by position.
 
