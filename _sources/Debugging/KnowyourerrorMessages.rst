@@ -62,7 +62,7 @@ In writing and using this book over the last few years we have collected a lot o
 =================== ======= =======
 Message             Number  Percent
 =================== ======= =======
-ParseError:         4999    54.74%
+SyntaxError:        4999    54.74%
 TypeError:          1305    14.29%
 NameError:          1009    11.05%
 ValueError:         893     9.78%
@@ -76,21 +76,21 @@ ImportError:        16      0.18%
 IndexError:         6       0.07%
 =================== ======= =======
 
-Nearly 90% of the error messages encountered for this  problem are ParseError, TypeError, NameError, or ValueError.  We will look at these errors in three stages:
+Nearly 90% of the error messages encountered for this  problem are SyntaxError, TypeError, NameError, or ValueError.  We will look at these errors in three stages:
 
 * First we will define what these four error messages mean.
 * Then, we will look at some examples that cause these errors to occur.
 * Finally we will look at ways to help uncover the root cause of these messages.
 
 
-ParseError
-^^^^^^^^^^
+SyntaxError
+^^^^^^^^^^^
 
-Parse errors happen when you make an error in the syntax of your program.  Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say.
+Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say.
 
-Usually ParseErrors can be traced back to missing punctuation characters, such as parenthesis, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.
+Usually SyntaxErrors can be traced back to missing punctuation characters, such as parenthesis, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.
 
-Here are a couple examples of Parse errors in the example program we have been using.  See if you can figure out what caused them.
+Here are some examples of syntax errors in the example program we have been using.  See if you can figure out what caused them.
 
 .. tabbed:: db_tabs1
 
@@ -162,8 +162,45 @@ Here are a couple examples of Parse errors in the example program we have been u
 
 **Finding Clues**  If you follow the same advice as for the last problem, comment out line one, you will immediately get a different error message.  Here's where you need to be very careful and not panic.  The error message you get now is: ``NameError: name 'current_time_str' is not defined on line 4``.  You might be very tempted to think that this is somehow related to the earlier problem and immediately conclude that there is something wrong with the variable name ``current_time_str`` but if you reflect for a minute you will see that by commenting out line one you have caused a new and unrelated error.  That is you have commented out the creation of the name ``current_time_str``.  So of course when you want to convert it to an ``int`` you will get the NameError.  Yes, this can be confusing, but it will become much easier with experience.  It's also important to keep calm, and evaluate each new clue carefully so you don't waste time chasing problems that are not really there.  
 
-Uncomment line 1 and you are back to the ParseError.  Another track is to eliminate a possible source of error.  Rather than commenting out the entire line you might just try to assign ``current_time_str`` to a constant value.  For example you might make line one look like this:  ``current_time_str = "10"  #input("What is the "current time" (in hours 0-23)?")``.  Now you have assigned ``current_time_str`` to the string 10, and commented out the input statement.  And now the program works!  So you conclude that the problem must have something to do with the input function.
+Uncomment line 1 and you are back to the SyntaxError.  Another trick is to eliminate a possible source of error.  Rather than commenting out the entire line you might just try to assign ``current_time_str`` to a constant value.  For example you might make line one look like this:  ``current_time_str = "10"  #input("What is the "current time" (in hours 0-23)?")``.  Now you have assigned ``current_time_str`` to the string 10, and commented out the input statement.  And now the program works!  So you conclude that the problem must have something to do with the input function.
 
+.. tabbed:: db_tabs3
+
+    .. tab:: Question
+
+        Find and fix the error in the following code.
+
+        .. activecode:: dbh
+
+           current_time_str = input("What is the current time (in hours 0-23)?")
+           wait_time_str = input("How many hours do you want to wait?")
+
+            current_time_int = int(current_time_str)
+            wait_time_int = int(wait_time_str)
+
+           final_time_int = current_time_int + wait_time_int
+           print(final_time_int)
+
+    .. tab:: Answer
+
+        Indentation matters in Python. Lines 4 and 5 are indented when they should not be. Lines that should
+        be indented must be indented exactly the same amount. You may indent with either the space key or the
+        tab key. However, you should not use a mix of tabs and spaces. Doing so may result in an indentation
+        error even if the lines appear to be properly indented. In the future we will study the proper use of indentation.
+
+        .. sourcecode:: python
+
+           current_time_str = input("What is the current time (in hours 0-23)?")
+           wait_time_str = input("How many hours do you want to wait?"
+
+           current_time_int = int(current_time_str)
+           wait_time_int = int(wait_time_str)
+
+           final_time_int = current_time_int + wait_time_int
+           print(final_time_int)
+
+
+**All the following are various kinds of runtime errors**
 
 TypeError
 ^^^^^^^^^
@@ -172,7 +209,7 @@ TypeErrors occur when you you try to combine two objects that are not compatible
 
 Here's an example of a type error created by a Polish learner.  See if you can find and fix the error.
 
-.. activecode:: dbh
+.. activecode:: dbi
 
     a = input('wpisz godzine')
     x = input('wpisz liczbe godzin')
@@ -211,7 +248,7 @@ NameError
 
 Name errors almost always mean that you have used a variable before it has a value.  Often NameErrors are simply caused by typos in your code.  They can be hard to spot if you don't have a good eye for catching spelling mistakes.  Other times you may simply mis-remember the name of a variable or even a function you want to call.    You have seen one example of a NameError at the beginning of this section.  Here is another one.  See if you can get this program to run successfully:
 
-.. activecode:: dbi
+.. activecode:: dbj
 
     str_time = input("What time is it now?")
     str_wait_time = input("What is the number of hours to wait?")
@@ -237,7 +274,7 @@ Name errors almost always mean that you have used a variable before it has a val
 
 Here is another one for you to try:
 
-.. activecode:: dbj
+.. activecode:: dbk
 
     n = input("What time is it now (in hours)?")
     n = imt(n)
@@ -257,7 +294,7 @@ Here is another one for you to try:
 
 And one last bit of code to fix.
 
-.. activecode:: dbk
+.. activecode:: dbl
 
     present_time = input("Enter the present time in hours:")
     set_alarm = input("Set the hours for alarm:")
@@ -278,17 +315,6 @@ And one last bit of code to fix.
         4.  Finally, ``int`` should be used in an assignment statement.  Even if ``int`` was called with the correct number of parameters it would have no real effect.
 
 
-.. advanced topic!
-
-.. present_time = int(input("Enter the present time(hhmm):"))
-.. print type(present_time)
-
-.. min = _ * 60 
-.. tot_min = min + [2, 4]
-.. print(tot_min)
-.. set_hrs = int(input("Enter the hours (hhmm):"))
-.. alarm_time = present_time + set_hrs
-.. print(alarm_time)
 
 
 ValueError
@@ -296,7 +322,7 @@ ValueError
 
 Value errors occur when you pass a parameter to a function and the function is expecting a certain type, but you pass it a different type.  We can illustrate that with this particular program in two different ways.
 
-.. activecode:: dbl
+.. activecode:: dbm
 
    current_time_str = input("What is the current time (in hours 0-23)?")
    current_time_int = int(current_time_str)
