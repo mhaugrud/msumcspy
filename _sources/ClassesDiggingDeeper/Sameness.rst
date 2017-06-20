@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: equality, equality; deep, equality; shallow, shallow equality, deep equality      
+
 Sameness
 --------
 

@@ -11,7 +11,7 @@
    :prefix: strings-7-
    :start: 1
 
-.. index:: slice, operator; slice
+.. index:: slice, operator; slice, string; slice
 
 The Slice Operator
 ------------------

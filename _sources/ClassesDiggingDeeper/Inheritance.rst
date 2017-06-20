@@ -1,3 +1,5 @@
+.. index:: inheritance, inheritance; specialization, inheritance; augmentation, class diagram; inheritance, class; child, class; sub, class; super, class; parent
+
 Inheritance
 -----------
 

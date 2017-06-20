@@ -1,3 +1,5 @@
+.. index:: attribute; class, attribute; instance
+
 Class Level Attributes
 ----------------------
 

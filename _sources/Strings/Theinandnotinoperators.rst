@@ -11,7 +11,7 @@
    :prefix: strings-15-
    :start: 1
 
-.. index:: operator; in, in, substring
+.. index:: operator; in, in, substring, string; substring
 
 The ``in`` and ``not in`` operators
 -----------------------------------

@@ -11,7 +11,7 @@
    :prefix: list-17-
    :start: 1
 
-.. index:: list; traversal, traversal; by index
+.. index:: list; traversal, traversal; by index, accumulator, list; accumulator
 
 List Traversal by Index
 -----------------------
@@ -74,8 +74,8 @@ Take a moment to think about ``range(len(numbers))`` until you understand how it
      print(blist)
 
 
-
-The above example, illustrates the accumulator pattern for lists: you start with an empty list then repeatedly add more items to the list.
+.. note::
+   The above example, illustrates the accumulator pattern for lists: you start with an empty list then repeatedly add more items to the list.
 
 .. activecode:: lit
     

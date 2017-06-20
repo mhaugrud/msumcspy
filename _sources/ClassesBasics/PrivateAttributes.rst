@@ -1,3 +1,5 @@
+.. index:: information hiding, attribute; private
+
 Private Attributes
 ------------------
 

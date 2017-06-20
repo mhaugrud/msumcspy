@@ -168,6 +168,5 @@ and ``ZeroDivisionError`` exceptions.
              +-- ResourceWarning
 
 
-.. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter, dialog box
 
 

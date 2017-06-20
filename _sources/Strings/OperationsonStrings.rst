@@ -11,7 +11,7 @@
    :prefix: strings-3-
    :start: 1
 
-.. index:: concatenation, overloading
+.. index:: concatenation, overloading, string; concatenation
 
 Operations on Strings
 ---------------------

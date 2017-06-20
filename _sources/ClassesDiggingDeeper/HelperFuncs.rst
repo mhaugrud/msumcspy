@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: function; helper
+
 Helper Functions
 ----------------
 
@@ -74,5 +76,4 @@ the ``simplify`` method does not change the original Fraction.  Its job is to cr
 
 
 
-.. index:: equality, equality; deep, equality; shallow, shallow equality, deep equality      
 

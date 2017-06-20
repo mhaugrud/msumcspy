@@ -7,6 +7,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: object; instantiation, method; constructor, attribute; self
 User Defined Classes
 --------------------
 

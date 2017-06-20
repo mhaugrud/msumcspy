@@ -19,9 +19,11 @@ Pure Functions
 
 A **pure function** does not produce side effects. It communicates with the
 calling program only through parameters (which it does not modify) and a return
-value. Here is the ``doubleStuff`` function from the previous section written as a pure function.
-To use the pure function version of ``double_stuff`` to modify ``things``,
-you would assign the return value back to ``things``.
+value. Here is the ``doubleStuff`` function from the previous section written as a pure function. 
+Notice it utilizes the **list accumulator** pattern.
+
+If you want to modify the variable ``things`` with the pure function version of ``double_stuff``,
+you must assign the return value back to ``things``.
 
 
 .. activecode:: liv

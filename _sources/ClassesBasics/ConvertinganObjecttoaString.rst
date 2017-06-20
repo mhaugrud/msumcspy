@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: dunder, method; magic
+
 Creating a String from an Object
 --------------------------------
 
@@ -45,7 +47,7 @@ Python tells you that ``p`` is an object of type ``Account``.  However, it does 
 state of the Account.
 
 We can improve on this representation if we include a special method call ``__str__``.  Notice that this method uses the same naming convention as the constructor, that is two underscores (dunder) before and after the name.  It is common that Python
-uses this naming technique for special methods.
+uses this naming technique for special methods (magic methods).
 
 The ``__str__`` method is responsible for returning a string representation as defined by the class creator.  In other words, you as the programmer, get to choose what an ``Account`` should look like when it gets printed.  In this case, we
 have decided that the string representation will include the values of the balance attribute as well as some formatting.  It

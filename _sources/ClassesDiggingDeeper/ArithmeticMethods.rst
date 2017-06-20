@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: operator overloading, method; magic
+
 Arithmetic Methods
 ------------------
 
@@ -113,9 +115,9 @@ We can overload many common operators as shown in the following table.
 
 .. table::
 
-   ========  =======
-   operator  method  
-   ========  =======
+   ========  ============
+   operator  magic method  
+   ========  ============
    \-         __sub__
    \*         __mul__
    ==        __eq__

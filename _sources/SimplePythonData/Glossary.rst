@@ -84,11 +84,6 @@ Glossary
         Integer division yields only the whole number of times that the
         numerator is divisible by the denominator and discards any remainder.
 
-    keyword
-        A reserved word that is used by the compiler to parse program; you
-        cannot use keywords like ``if``, ``def``, and ``while`` as variable
-        names.
-
     modulus operator
 		Also called remainder operator or integer remainder operator.  Gives the remainder after performing integer division.
 
@@ -108,6 +103,11 @@ Glossary
 
     reference diagram
         A picture showing a variable with an arrow pointing to the value (object) that the variable refers to. See also **state snapshot**.
+
+    reserved word
+        A word that is used by the compiler to parse program; you
+        cannot use reserved words like ``if``, ``def``, and ``while`` as variable
+        names.
 
     rules of precedence
         The set of rules governing the order in which expressions involving
@@ -136,12 +136,12 @@ Glossary
     variable
         A name that refers to a value.
 
-    variable name
+    variable name (identifier)
         A name given to a variable. Variable names in Python consist of a
         sequence of letters (a..z, A..Z, and _) and digits (0..9) that begins
         with a letter.  In best programming practice, variable names should be
         chosen so that they describe their use in the program, making the
-        program *self documenting*.
+        program more **readable**.
 
 
 

@@ -55,5 +55,4 @@ state values for the fraction.
 
 .. image:: Figures/fractionpic1.png
    
-.. index:: mutable data type
 
