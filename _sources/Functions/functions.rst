@@ -11,7 +11,7 @@
    :prefix: func-1-
    :start: 1
 
-.. index:: function, function; definition, parameter, argument, parameter; formal, parameter; actual, function; call, docstring, function invocation
+.. index:: function, function; definition, parameter, argument, parameter; formal, parameter; actual, function; call, docstring, function; invocation
 	
 
 Functions
@@ -48,7 +48,7 @@ standard indentation of four spaces. Function definitions are the second of
 several **compound statements** we will see, all of which have the same
 pattern:
 
-#. A header line which begins with a keyword and ends with a colon.
+#. A **header** line which begins with a keyword and ends with a colon.
 #. A **body** consisting of one or more Python statements, each
    indented the same amount -- *4 spaces is the Python standard* -- from
    the header line.

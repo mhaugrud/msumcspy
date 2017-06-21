@@ -7,7 +7,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: style, readability, pythonic, docstring
+.. index:: style, readability, Pythonic, docstring
 
 Programming With Style
 ----------------------

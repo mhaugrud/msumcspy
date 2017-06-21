@@ -11,7 +11,7 @@
    :prefix: select-1-
    :start: 1
 
-.. index:: boolean value, boolean expression, comparison operator, operator; comparison
+.. index:: boolean; value, boolean; expression, comparison operator, operator; comparison
 
 Boolean Values and Boolean Expressions
 --------------------------------------

@@ -11,7 +11,7 @@
    :prefix: func-7-
    :start: 1
 
-.. index:: composition, function composition
+.. index:: composition
 
 Composition
 -----------

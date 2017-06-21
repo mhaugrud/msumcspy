@@ -12,7 +12,7 @@
    :prefix: intro-
    :start: 1
 
-.. index:: portable, high-level language, source code, object code, python shell, low-level language, compile, interpret
+.. index:: portable, high-level language, source code, object code, Python shell, low-level language, compile, interpret
 
 The Python Programming Language
 -------------------------------

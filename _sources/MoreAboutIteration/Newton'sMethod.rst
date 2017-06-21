@@ -11,7 +11,7 @@
    :prefix: iter-6-
    :start: 1
 
-.. index:: newton
+.. index:: Newton
 
 Newton's Method
 ---------------

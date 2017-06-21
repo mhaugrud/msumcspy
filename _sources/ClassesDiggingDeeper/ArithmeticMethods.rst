@@ -7,7 +7,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: operator overloading, method; magic
+.. index:: operator; overloading, method; magic
 
 Arithmetic Methods
 ------------------
