@@ -122,7 +122,7 @@ this purpose!
 Defining a new function does not make the function run. To do that we need a
 **function call**.  This is also known as a **function invocation**. We've already seen how to call some built-in functions like
 ``print``, ``range`` and ``int``. Function calls contain the name of the function to be
-executed followed by a list of values, called *arguments*, which are assigned
+executed followed by a list of values in parentheses, called **arguments**, which are assigned
 to the parameters in the function definition.  So in the second to the last line of
 the program, we call the function, and pass ``alex`` as the turtle to be manipulated,
 and 50 as the size of the square we want.
@@ -198,6 +198,11 @@ been defined, we can call it as many times as we like with whatever actual param
 
     wn.exitonclick()
 
+.. warning::
+
+   Even if a function call needs no arguments, the parentheses ``( )`` after the function name are *required*. 
+   This can lead to a difficult bug: A function name without the parenthesis is a legal expression *referring* 
+   to the function; for example, ``print`` and ``alex.penup``, but they do not *call* the associated functions.
 
 .. note::
 
