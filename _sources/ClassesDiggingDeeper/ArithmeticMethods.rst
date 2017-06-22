@@ -7,7 +7,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: operator; overloading, method; magic
 
 Arithmetic Methods
 ------------------
@@ -69,6 +68,8 @@ You can try the addition method and then modify the fractions and retry.
     f3 = f1.add(f2)
     print(f3)
 
+.. index:: operator; overloading
+
 Operator Overloading
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -110,6 +111,8 @@ The details of the method are the same.
     print(f3)
 
 Now we can perform addition in the same manner that we are used to with other numeric data.
+
+.. index:: method; magic
 
 We can overload many common operators as shown in the following table.
 

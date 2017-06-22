@@ -1,4 +1,3 @@
-.. index:: information hiding, attribute; private
 
 Private Attributes
 ------------------
@@ -37,6 +36,8 @@ Each Account object has a balance attribute. What would happen if we tried to ch
 
    This is definitely a problem. We provided methods that prevent an Account getting into an illegal state. But this was easily circumvented by directly accessing the attribute. This could be done since balance is a **public** attribute. Public attributes can be directly manipulated **outside** of the class definition.
 
+.. index:: attribute; private, dunder
+
 We can prevent this by using **private** atttibutes. To make an attribute private, preface its name with two underscore characters ``__balance``. We read this as dunder (double underscore) balance.
     
 .. activecode:: c1h
@@ -67,6 +68,8 @@ We can prevent this by using **private** atttibutes. To make an attribute privat
     print(p.getBalance())
 
 Now the balance is not affected. Private attributes prevent anyone from directly accessing them **outside** of the class definition. 
+
+.. index:: information hiding
 
 .. important::
    The only way to access private attributes is through the methods that are provided in the class definition. This protects the attributes from misuse. **Information hiding** is the second central principle of object-oriented programming. 

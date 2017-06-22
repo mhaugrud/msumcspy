@@ -1,4 +1,5 @@
-.. index:: polymorphism
+.. index:: isinstance, function; isinstance
+
 Polymorphism
 ------------
 
@@ -40,7 +41,7 @@ We have often used the ``type`` function to see what kind of an object we are ex
     print(isinstance(b, CAD))
     print(isinstance(c, CAD))
 
-
+.. index:: polymorphism
 
 Polymorphism
 ~~~~~~~~~~~~

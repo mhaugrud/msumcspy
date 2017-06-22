@@ -7,7 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: object; instantiation, method; constructor, attribute; self
+.. index:: attribute; self
+
 User Defined Classes
 --------------------
 
@@ -33,6 +34,8 @@ Now that we understand what an ``account`` object might look like, we can define
 We'll want our accounts to each have a ``balance`` attribute,
 so our first class definition looks like this.
 
+.. index:: method; constructor, attribute; self
+
 .. sourcecode:: python
     
     class Account:
@@ -50,6 +53,7 @@ and ending with a colon.
 
 If the first line after the class header is a string, it becomes
 the docstring of the class, and will be recognized by various tools.  (This is also the way docstrings work in functions.)
+
 
 Every class should have a method with the special name ``__init__``.  
 This **initializer method**, often referred to as the **constructor**, is automatically called whenever a new 
@@ -131,6 +135,8 @@ The variables ``p`` and ``q`` are assigned references to two new ``Account`` obj
 A function like ``Turtle`` or ``Account`` that creates a new object instance is called a **constructor**.  Every class automatically uses the name of the class as the name of the constructor function.
 The definition of the constructor function is done
 when you write the ``__init__`` function.
+
+.. index:: object; instantiation
 
 It may be helpful to think of a class as a factory for making objects.  
 The class itself isn't an instance of an account, but it contains the machinery 

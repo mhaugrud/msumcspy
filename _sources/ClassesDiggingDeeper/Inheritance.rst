@@ -1,4 +1,4 @@
-.. index:: inheritance, inheritance; specialization, inheritance; augmentation, class diagram; inheritance, class; child, class; sub, class; super, class; parent
+.. index:: inheritance, class; child, class; sub, class; super, class; parent
 
 Inheritance
 -----------
@@ -7,6 +7,8 @@ Often we build a class but then we need new class that is slightly different. It
 
 .. important::
    **Inheritance** is the fourth principle of object-oriented programming. We define a child (or sub) class based on a parent (or super) class. The child class inherits the features, both attributes and methods, of the parent class.
+
+.. index:: inheritance; specialization
 
 Specialization
 ~~~~~~~~~~~~~~
@@ -120,6 +122,8 @@ Both Account and LOC have a withdraw method. Both have exactly the same name. Th
 .. note::
    This form of inheritance is called **specialization**. The child class has an alternate way to perform an action that the parent already performs. 
 
+.. index:: inheritance; augmentation
+
 Augumentation
 ~~~~~~~~~~~~~
 
@@ -165,6 +169,8 @@ We start by saying that LOC is a child class of Account. Then we add the accrue 
 
 .. note::
    This form of inheritance is called **augmentation**. The child class has a new capability that was not available in the parent. 
+
+.. index:: class diagram; inheritance
 
 Class Diagram with Inheritance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

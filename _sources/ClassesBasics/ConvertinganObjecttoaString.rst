@@ -7,7 +7,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: dunder, method; magic
 
 Creating a String from an Object
 --------------------------------
@@ -45,6 +44,8 @@ Consider the example below.
 The ``print`` function shown above produces a string representation of the Account ``p``.  The default functionality provided by
 Python tells you that ``p`` is an object of type ``Account``.  However, it does not tell you anything about the specific
 state of the Account.
+
+.. index:: method; magic
 
 We can improve on this representation if we include a special method call ``__str__``.  Notice that this method uses the same naming convention as the constructor, that is two underscores (dunder) before and after the name.  It is common that Python
 uses this naming technique for special methods (magic methods).

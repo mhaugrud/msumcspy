@@ -7,7 +7,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: class diagram
 
 Adding More Attributes to the Class
 -----------------------------------
@@ -59,6 +58,8 @@ Lets improve the Account class by enabling it to keep a history of all its trans
    * Modify the deposit and withdraw methods in the above activecode to append the amount to the transaction list (for withdraw, append the negative of the amount).
 
    * Modify the statement method (between the two existing print statements) to iterate over the list of transactions, displaying the amount of each one.
+
+.. index:: class diagram
 
 Class Diagram
 ~~~~~~~~~~~~~

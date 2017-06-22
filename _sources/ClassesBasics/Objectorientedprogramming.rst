@@ -9,7 +9,7 @@
 
 
 
-.. index:: object-oriented programming
+.. index:: object-oriented programming, procedural programming, programming; object-oriented, programming; procedural
 
 
 Object-oriented programming
