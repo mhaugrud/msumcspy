@@ -35,12 +35,15 @@ math and logic
     Perform basic mathematical operations like addition and multiplication
     and logical operations like ``and``, ``or``, and ``not``.
 
-conditional execution
+repetition (iteration)
+    Perform some action repeatedly, usually with some variation.
+
+call
+    Perform some action that is defined in another program.
+
+conditional execution (selection)
     Check for certain conditions and execute the appropriate sequence of
     statements.
-
-repetition
-    Perform some action repeatedly, usually with some variation.
 
 Believe it or not, that's pretty much all there is to it. Every program you've
 ever used, no matter how complicated, is made up of instructions that look more
