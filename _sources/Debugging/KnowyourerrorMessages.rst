@@ -12,7 +12,7 @@
    :start: 1
 
 Know Your Error Messages
-~~~~~~~~~~~~~~~~~~~~~~~~
+========================
 
 Many problems in your program will lead to an error message.  For example as I was writing and testing this chapter of the book I wrote the following version of the example program in the previous section.
 
@@ -83,8 +83,8 @@ Nearly 90% of the error messages encountered for this  problem are SyntaxError, 
 * Finally we will look at ways to help uncover the root cause of these messages.
 
 
-SyntaxError
-^^^^^^^^^^^
+Syntax Errors
+-------------
 
 Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say.
 
@@ -200,7 +200,8 @@ Uncomment line 1 and you are back to the SyntaxError.  Another trick is to elimi
            print(final_time_int)
 
 
-**All the following are various kinds of runtime errors**
+Runtime Errors
+--------------
 
 TypeError
 ^^^^^^^^^

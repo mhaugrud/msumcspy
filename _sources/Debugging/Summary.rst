@@ -8,7 +8,7 @@
     License".
 
 Summary
-~~~~~~~
+-------
 
 * Make sure you take the time to understand error messages.  They can help you a lot.
 
