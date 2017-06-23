@@ -11,6 +11,8 @@
    :prefix: file-1-
    :start: 1
 
+.. index:: file; path, path
+
 Finding a File on your Disk
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
