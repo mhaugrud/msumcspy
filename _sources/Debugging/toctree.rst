@@ -3,7 +3,7 @@ Debugging Interlude
 
 .. toctree::
    :caption: Debugging Interlude
-   :maxdepth: 2
+   :maxdepth: 3
 
    intro-HowtobeaSuccessfulProgrammer.rst
    HowtoAvoidDebugging.rst

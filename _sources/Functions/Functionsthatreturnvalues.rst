@@ -104,7 +104,7 @@ On the other hand, using **temporary variables** like ``y`` in the program above
  .. can be the results of other function calls (like `input`) that we've called along the way.
 
 Notice something important here. The name of the variable we pass as an argument --- ``toSquare`` --- has nothing to do with the name of the formal parameter --- ``x``.  It is as if  ``x = toSquare`` is executed when ``square`` is called. It doesn't matter what the value was named in the caller. In ``square``, it's name is ``x``.  You can see this very clearly in
-codelens, where the global variables and the local variables for the square function are in separate boxes.
+codelens, where the **global variables** (variables defined outside of any function) and the local variables for the square function are in separate boxes.
 
 As you step through the example in codelens notice that the **return** statement not only causes the function to return a value, but it also returns the flow of control back to the place in the program where the function call was made.
 
@@ -119,6 +119,14 @@ As you step through the example in codelens notice that the **return** statement
     toSquare = 10
     squareResult = square(toSquare)
     print("The result of ", toSquare, " squared is ", squareResult)
+
+
+.. note:: 
+   The call to a function *terminates* after the execution of a return statement.  
+   This is fairly obvious if the return statement is the last statement in the function, but
+   we will see later where it makes sense to have a return statement even when other statements
+   follow, and the further statements are *not* executed.
+
 
 Another important thing to notice as you step through this codelens demonstration is the movement of the red and green arrows.  Codelens uses these arrows to show you where it is currently executing. Recall that the red arrow always points to the next line of code that will be executed.  The light green arrow points to the line that was just executed in the last step.
 
@@ -153,7 +161,7 @@ function returns.
     print("The result of ", toSquare, " squared is ", squareResult)
 
 The problem with this function is that even though it prints the value of the square, that value will not be returned to the place
-where the call was done.  Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the function will be ``None``.  In this case, ``squareResult`` will refer to that value after the assignment statement and therefore the result printed in line 7 is incorrect.  Typically, functions will return values that can be printed or processed in some other way by the caller.
+where the call was made.  Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the function will be ``None``.  In this case, ``squareResult`` will refer to that value after the assignment statement and therefore the result printed in line 7 is incorrect.  Typically, functions will return values that can be printed or processed in some other way by the caller.
 
 .. admonition:: Fix the error ...
 

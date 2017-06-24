@@ -79,7 +79,7 @@ Let's do an example that shows off some of these new features.
    tess.color("blue")
    tess.shape("turtle")
 
-   print(range(5, 84, 2))
+   print(list(range(5, 84, 2)))
    tess.up()                       # this is new
    for size in range(5, 84, 2):    # start with size = 5 and grow by 2
        
@@ -88,7 +88,7 @@ Let's do an example that shows off some of these new features.
 
    wn.exitonclick()
 
-The list of integers shown above is created by printing the ``range(5,84,2)`` result.  It is only done to show you the distances being used to move the turtle forward.  The actual use appears as part of the ``for`` loop.
+The list of integers printed above is only displayed to show you the distances being used to move the turtle forward.  The actual use appears as part of the ``for`` loop.
 
 .. admonition:: Extend the program ...
 

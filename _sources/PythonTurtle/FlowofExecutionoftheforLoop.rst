@@ -23,7 +23,8 @@ finger to point to each statement in turn.  So you could think of control flow
 as "Python's moving finger".
 
 Control flow until now has been strictly top to bottom, one statement at a
-time.  We call this type of control **sequential**.  Sequential flow of control is always assumed to be the default behavior for a computer program.  The ``for`` statement changes this.
+time.  We call this type of control **sequential**.  In Python flow is sequential as long as
+successive statements are indented the *same* amount. The ``for`` statement changes this by introducing indented sub-statements (a block) after the for-loop heading.
 
 Flow of control is often easy to visualize and understand if we draw a flowchart.
 This flowchart shows the exact steps and logic of how the ``for`` statement executes.

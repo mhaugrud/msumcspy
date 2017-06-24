@@ -81,6 +81,7 @@ Appendices
 
    Appendices/errorsAndDebug.rst
    SimplePythonData/at_1_1.rst
+   Appendices/PrecedenceTable.rst
 
 Acknowledgements
 ::::::::::::::::

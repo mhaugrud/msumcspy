@@ -31,8 +31,8 @@ Do this by hand first and try to isolate exactly what steps you take.  You'll fi
 
 In words we could say it this way.  To square the value of `n`, we will repeat the process of updating a running total `n` times.  To update the running total, we take the old value of the "running total" and add `n`.  That sum becomes the new value of the "running total".
 
-Here is the program in activecode.  Note that the function definition is the same as it was before.  All that has changed
-is the details of how the squaring is done.  This is a great example of "black box" design.  We can change out the details inside of the box and still use the function exactly as we did before.
+Here is the program in activecode.  Note that the function header is the same as it was before.  All that has changed
+is the body of the function (the details of how the squaring is done).  This is a great example of "black box" design.  We can change out the details inside of the box and still use the function exactly as we did before.
 
 
 .. activecode:: fnt

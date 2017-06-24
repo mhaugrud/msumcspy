@@ -91,7 +91,7 @@ To draw a rectangle we need to be able to call a function with different argumen
 
     wn.exitonclick()
 
-The parameter names are deliberately chosen as single letters to ensure they're not misunderstood. In real programs, once you've had more experience, we will insist on better variable names than this. The point is that the program doesn't "understand" that you're drawing a rectangle or that the parameters represent the width and the height.  Concepts like rectangle, width, and height are meaningful for humans.  They are not concepts that the program or the computer understands.
+The parameter names are chosen as single letters for conciseness. In real programs, we will insist on better variable names than this. The point is that the program doesn't "understand" that you're drawing a rectangle or that the parameters represent the width and the height.  Concepts like rectangle, width, and height are meaningful for humans.  They are not concepts that the program or the computer understands.
 
 *Thinking like a computer scientist* involves looking for patterns and relationships.  In the code above, we've done that to some extent.  We did not just draw four sides. Instead, we spotted that we could draw the rectangle as two halves and used a loop to repeat that pattern twice.
 

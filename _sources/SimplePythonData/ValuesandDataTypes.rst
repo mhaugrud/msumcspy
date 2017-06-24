@@ -86,7 +86,8 @@ What about values like ``"3"`` and ``"3.2"``? They look like numbers, but they a
 
 They're strings!
 
-Strings in Python can be enclosed in either single quotes (``'``) or double quotes (``"``), or three of each (``'''`` or ``"""``)
+Strings in Python can be enclosed in either single quotes (``'``) or double 
+quotes (``"``), or three of the same quote character (``'''`` or ``"""``)
 
 .. activecode:: sdd
     :nocanvas:
