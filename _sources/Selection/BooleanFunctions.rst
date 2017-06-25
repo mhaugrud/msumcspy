@@ -62,7 +62,7 @@ Boolean functions are often used in conditional statements:
 
 It might be tempting to write something like
 ``if isDivisible(x, y) == True:``
-but the extra comparison is redundant. You only need an ``==`` expression if you are comparing some other type than boolean. (``isDivisible(x, y) == False`` can also be made more concise as ``not isDivisible(x, y)``).  The following example shows the ``isDivisible`` function at work.  Notice how
+but the extra comparison is redundant. You only need an ``==`` expression if you are comparing some type other than boolean. (``isDivisible(x, y) == False`` can also be made more concise as ``not isDivisible(x, y)``).  The following example shows the ``isDivisible`` function at work.  Notice how
 descriptive the code is when we move the testing details into a boolean function.  Try it
 with a few other actual parameters to see what is printed.
 

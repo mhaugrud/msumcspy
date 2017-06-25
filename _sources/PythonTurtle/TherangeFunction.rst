@@ -38,10 +38,9 @@ to happen four times.  We said that we could have used any four values.  In fact
 
    wn.exitonclick()
 
-It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
-want to write simple ``for loop`` controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
-In fact, these lists are so popular that Python gives us special built-in
-``range`` objects
+It turns out that generating a sequence with a specific number of integers is a very common thing to do, especially when you
+want to write simple ``for loop`` controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a sequence of integers starting with 0.
+In fact, these sequences are so popular that Python gives us special built-in ``range`` objects
 that can deliver a sequence of values to
 the ``for`` loop.  When called with one parameter, the sequence provided by ``range`` always starts with 0.  If you ask for ``range(4)``, then you will get 4 values starting with 0.  In other words, 0, 1, 2, and finally 3.  Notice that 4 is not included since we started with 0.  Likewise, ``range(10)`` provides 10 values, 0 through 9.
 
@@ -88,7 +87,7 @@ of range, that is the last index included + 1.
     stop it helps to simply think that the sequence begins with start and
     continues as long as the number is less than stop.
 
-Here are a two examples for you to run. (It is rare in a program to print a range but to do sw we nest the ``range`` in a ``list`` constructor.)
+Here are a two examples for you to run. (It is rare in a program to print a range. But to do so, we nest the ``range`` in a ``list`` constructor.)
 
 
 .. activecode:: tgh
@@ -147,9 +146,9 @@ Try it in codelens. Do you see why the first two statements produce the same res
 **Check your understanding**
 
 .. mchoice:: mc3k
-  :answer_a: Range should generate a list that stops before 10 (including 9).
+  :answer_a: Range should generate a list that stops before 10.
   :answer_b: Range should generate a list that starts at 10 (including 10).
-  :answer_c: Range should generate a list starting at 3 that stops at 10 (including 10).
+  :answer_c: Range should generate a list that stops at 10 (including 10).
   :answer_d: Range should generate a list using every 10th number between the start and the stopping number.
   :correct: a
   :feedback_a: Range will generate the sequence 3, 5, 7, 9.
@@ -168,7 +167,7 @@ Try it in codelens. Do you see why the first two statements produce the same res
   :feedback_a: This command generates a sequence with just the number 2 because the first parameter (2) tells range where to start, the second parameter tells range where to end (before 5) and the third parameter tells range how many numbers to skip between elements (8).  Since 10 >= 5, there is only one number in this sequence.
   :feedback_b: This command generates the sequence 2, 5 because 8 is not less than 8 (the beyondLast parameter).
   :feedback_c: The first parameter is the starting point, the second is the beyondLast parameter, and the third is the amount to increment by.
-  :feedback_d: This command generates the sequence 8, 5, 3 because it starts at 8, ends before 1, and steps by 3 going down.
+  :feedback_d: This command generates the sequence 8, 5, 2 because it starts at 8, ends before 1, and steps by 3 going down.
 
   What command correctly generates the sequence 2, 5, 8?
 

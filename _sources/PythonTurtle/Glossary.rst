@@ -49,7 +49,7 @@ Glossary
     loop variable
         A variable used as part of a for loop. It is assigned a different value
         on each iteration of the loop, and is used as part of the terminating
-        condition of the loop, when it can no longer get a further value.
+        condition of the loop, when it can no longer get another value.
 
 
 

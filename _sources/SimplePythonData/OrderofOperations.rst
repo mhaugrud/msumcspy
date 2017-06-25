@@ -44,10 +44,10 @@ When more than one operator appears in an expression, the order of evaluation de
 .. note::
    The acronym PEMDAS is a useful way to remember the order of operations.
 
-   The acronym PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don't be misled.  Subtraction and addition are at the same precedence, and the left-to-right rule applies.
+   PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don't be misled.  Subtraction and addition are at the same precedence, and the left-to-right rule applies.
 
 
-An exception to the left-to-right left-associative rule is the exponentiation operator `**`. A useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
+An exception to the left-to-right left-associative rule is the exponentiation operator ``**``. A useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
 
 
 .. activecode:: sdw

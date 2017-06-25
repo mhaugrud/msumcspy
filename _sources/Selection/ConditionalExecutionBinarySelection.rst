@@ -50,8 +50,8 @@ The syntax for an ``if`` statement looks like this:
         STATEMENTS_2        # executed if condition evaluates to False
 
 The boolean expression after the ``if`` statement is called the **condition**.
-If it is true, then the indented statements, immediately below, get executed. If not, then the statements
-indented under the `else:` clause get executed.
+If it is true, then the indented statements, immediately below, get executed. If it is false, the statements
+indented under the ``else:`` clause get executed.
 
 .. sidebar::  Flowchart of a **if** statement with an **else**
 
