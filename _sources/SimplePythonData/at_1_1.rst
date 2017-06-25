@@ -14,6 +14,38 @@ introduce you to something called an Integrated Development Environment or
 IDE that will make life even better for you when working on a larger Python
 project.
 
+Installing Python on Your Own Computer
+--------------------------------------
+
+If you are using your own computer, you will need to install Python for yourself.  Here
+is a video that explains how to do it.
+
+We use Python 3.4 in our class.  As of this writing the latest version is Python 3.4.4. 
+
+Windows
+^^^^^^^
+
+.. raw:: html
+
+    <iframe width="425" height="349" src="http://www.youtube.com/embed/9EfGpN1Pnsg"
+            frameborder="0" allowfullscreen></iframe>
+
+Mac
+^^^
+
+.. raw:: html
+
+    <iframe width="425" height="349" src="http://www.youtube.com/embed/MEmEJCLLI2k"
+            frameborder="0" allowfullscreen></iframe>
+
+
+This video describes the Python Shell and IDLE
+.. raw:: html
+
+    <iframe width="425" height="349" src="http://www.youtube.com/embed/kXbpB5_ywDw"
+            frameborder="0" allowfullscreen></iframe>
+
+
 The Python Shell
 ----------------
 
@@ -101,21 +133,6 @@ python program that you run using the Python interpreter,
 you have to be explicit about what it is you want to print.  That is why in
 the Python program we use the print function on both lines.
 
-
-Installing Python on Windows
-----------------------------
-
-If you are using windows you will need to install Python for yourself.  Here
-is a video that explains how to do it.
-
-.. raw:: html
-
-    <iframe width="425" height="349" src="http://www.youtube.com/embed/9EfGpN1Pnsg"
-            frameborder="0" allowfullscreen></iframe>
-
-We are assuming that you use Python 3.x, as of this writing the latest
-version is Python 3.2.1.  This link will tell you how to update or install
-Python on Linux, Mac, or Windows. `Install Python <http://interactivepython.org/courselib/static/diveintopython3/installing-python.html>`_
 
 Glossary
 --------
