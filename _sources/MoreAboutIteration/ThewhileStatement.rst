@@ -183,7 +183,7 @@ terminates.
      print(answer)
 
 
-.. mchoice:: test_question7_2_3
+.. mchoice:: mc7h
    :answer_a: 4 7
    :answer_b: 5 7
    :answer_c: 7 15

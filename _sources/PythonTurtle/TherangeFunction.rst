@@ -184,7 +184,7 @@ Try it in codelens. Do you see why the first two statements produce the same res
 
   What happens if you give range only one argument?  For example: range(4)
 
-.. mchoice:: test_question3_5_4
+.. mchoice:: mc3n
   :answer_a: range(5, 25, 5)
   :answer_b: range(20, 3, -5)
   :answer_c: range(20, 5, 4)
@@ -198,7 +198,7 @@ Try it in codelens. Do you see why the first two statements produce the same res
   Which range function call will produce the sequence 20, 15, 10, 5?
 
 
-.. mchoice:: test_question3_5_5
+.. mchoice:: mc3o
   :answer_a: No other value would give the same sequence.
   :answer_b: The only other choice is 14.
   :answer_c: 11, 13, or 14 

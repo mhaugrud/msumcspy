@@ -78,7 +78,7 @@ be other cycles that we just haven't found.
 
 **Check your understanding**
 
-.. mchoice:: mc7j
+.. mchoice:: mc7k
    :answer_a: Yes.
    :answer_b: No.
    :answer_c: No one knows.
