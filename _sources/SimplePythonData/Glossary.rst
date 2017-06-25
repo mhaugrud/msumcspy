@@ -130,8 +130,8 @@ Glossary
     str
         A Python data type that holds a string of characters.
 
-    type conversion function
-		A function that can convert a data value from one type to another.
+    type constructor function
+		A function that can create a data value of one type from a different type.
 
     value
         A number or string (or other things to be named later) that can be
