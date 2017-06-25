@@ -17,7 +17,7 @@ Glossary
         A step-by-step process for solving a category of problems.
 
     body
-        The statements inside a loop.
+        The statements inside another programming structure (loop, if, function, etc.).
 
 
     counter
@@ -30,7 +30,7 @@ Glossary
 
 
     definite iteration
-        A loop where we have an upper bound on the number of times the
+        A loop where, even before it begins, we know how many times the
         body will be executed.  Definite iteration is usually best coded
         as a ``for`` loop.
 
@@ -52,7 +52,8 @@ Glossary
         A loop in which the terminating condition is never satisfied.
 
     indefinite iteration
-        A loop where we just need to keep going until some condition is met.
+        A loop where we keep repeating until some condition is satisfied.
+        We do not know how many repetitions will be required.
         A ``while`` statement is used for this case.
 
 
@@ -77,10 +78,6 @@ Glossary
         A special character that causes the cursor to move to the beginning of
         the next line.
 
-
-    reassignment
-        Making more than one assignment to the same variable during the
-        execution of a program.
 
 
 
