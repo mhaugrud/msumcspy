@@ -15,7 +15,7 @@ Exercises
    :number: 1
 
 
-   Use the drawsquare function we wrote in this chapter in a program to draw the image shown below. Assume each side is 20 units. (Hint: notice that the turtle has already moved away from the ending point of the last square when the program ends.)
+   Use the drawsquare function we wrote in this chapter in a program to draw the image shown below. Assume each side is 20 units. (Notice that the turtle has already moved away from the ending point of the last square when the program ends.)
 
    .. image:: Figures/five_squares.png
 
@@ -48,7 +48,7 @@ Exercises
 
 .. question:: functions_ex_2
 
-   Write a program to draw this using the drawSquare function. Assume the innermost square is 20 units per side, and each successive square is 20 units bigger, per side, than the one inside it.
+   Write a program to draw this using the drawSquare function. Assume the innermost square is 20 units per side, and each successive square is 20 units bigger, per side, than the one inside it. (Notice that the turtle has already moved away from the ending point of the last square when the program ends.)
 
    .. image:: Figures/nested_squares.png
 
@@ -60,7 +60,7 @@ Exercises
 .. question:: functions_ex_3
 
 
-   Write a non-fruitful function ``drawPoly(someturtle, somesides, somesize)`` which makes a turtle draw a regular polygon. When called with ``drawPoly(tess, 8, 50)``, it will draw a shape like this:
+   Write a function ``drawPoly(aturtle, num_sides, side_length)`` which makes a turtle draw a regular polygon. Include a proper docstring. It can be called with any number of sides. However, if called with ``drawPoly(tess, 8, 50)``, it will draw a shape like this:
 
    .. image:: Figures/regularpolygon.png
 
@@ -70,9 +70,15 @@ Exercises
 
       import turtle
 
-      def drawPoly(t, num_sides, side_length):
+      def drawPoly(aturtle, num_sides, side_length):
+          ''' '''
 
 
+
+
+
+
+      
 .. question:: functions_ex_4
 
    Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the previous question to have its turtle draw a equilateral triangle.

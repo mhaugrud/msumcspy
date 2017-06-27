@@ -89,12 +89,14 @@ Here is a program containing a function to capture this idea.  Give it a try.
             t.forward(sz)
             t.left(90)
 
-
     wn = turtle.Screen()              # Set up the window and its attributes
     wn.bgcolor("lightgreen")
 
     alex = turtle.Turtle()            # create alex
-    drawSquare(alex, 50)             # Call the function to draw the square passing the actual turtle and the actual side size
+    drawSquare(alex, 50)              # Call the function to draw the square passing the actual turtle and the actual side size
+
+
+
 
     wn.exitonclick()
 
@@ -134,9 +136,16 @@ and 50 as the size of the square we want.
 
 
 
-Once we've defined a function, we can call it as often as we like and its
-statements will be executed each time we call it.  In this case, we could use it to get
-one of our turtles to draw a square and then we can move the turtle and have it draw a different square in a
+Once we've defined a function, we can call it as often as we like and its statements will be executed each time we call it. 
+
+.. admonition:: Extend the program ...
+
+   Starting on line 16
+   - Make another turtle object
+   - Make it a different color
+   - Call the ``drawSquare`` function with this new turtle and a different size
+
+In the next case, we have our turtle draw a square and then move the turtle and have it draw a different square in a
 different location.  Note that we lift the tail so that when ``alex`` moves there is no trace.  We put the tail
 back down before drawing the next square.  Make sure you can identify both invocations of the ``drawSquare`` function.
 
@@ -191,14 +200,21 @@ been defined, we can call it as many times as we like with whatever actual param
 
     size = 20                        # size of the smallest square
     for i in range(15):
-        drawMulticolorSquare(tess, size)
+        drawMulticolorSquare(size, tess)
         size = size + 10             # increase the size for next time
         tess.forward(10)             # move tess along a little
         tess.right(18)               # and give her some extra turn
 
     wn.exitonclick()
 
+.. admonition:: Fix the error ...
+
+   In line 18, the parameters are in the wrong order so correct this.
+
+
 .. warning::
+
+   When we call a function we must use the right number of arguments and put them in the proper order. The docstring for the function can help us do this.
 
    Even if a function call needs no arguments, the parentheses ``( )`` after the function name are *required*. 
    This can lead to a difficult bug: A function name without the parenthesis is a legal expression *referring* 
