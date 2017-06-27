@@ -11,7 +11,7 @@
    :prefix: turtle-6-
    :start: 1
 
-.. index:: chunking, statement; compound
+.. index:: statement; compound
 
 Iteration Simplifies our Turtle Program
 ---------------------------------------

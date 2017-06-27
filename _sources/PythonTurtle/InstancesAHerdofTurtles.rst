@@ -11,7 +11,7 @@
    :prefix: turtle-2-
    :start: 1
 
-.. index:: instance
+.. index:: instance, chunking
 
 Instances --- A Bale of Turtles
 -------------------------------
@@ -53,6 +53,7 @@ Just like we can have many different integers in a program, we can have many tur
    alex.forward(50)
    alex.left(90)
 
+
    wn.exitonclick()
 
 
@@ -65,6 +66,13 @@ Here are some *How to think like a computer scientist* observations:
 * One of the key uses for comments is to record your mental chunking, and big ideas.   They're not always explicit in the code.
 * And, uh-huh, two turtles may not be enough for a bale, but you get the idea!
 
+.. admonition:: Extend the program ...
+
+   Starting on line 31 add lines as necessary to
+
+   - Make another turtle instance (use your name)
+   - Make it a different color
+   - Use the forward and left methods to make it draw a regular pentagon (5 sides the same length and 5 turns the same number of degrees)
 
 **Check your understanding**
 
