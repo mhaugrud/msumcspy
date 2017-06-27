@@ -25,7 +25,7 @@ Exercises
       import turtle
 
       def drawSquare(t, sz):
-         """Get turtle t to draw a square of sz side"""
+         """Get turtle t to draw a square with sides sz long"""
 
          for i in range(4):
             t.forward(sz)
@@ -36,6 +36,7 @@ Exercises
 
       alex = turtle.Turtle()
       alex.color("hotpink")
+      alex.pensize(3)
 
 
 
@@ -60,7 +61,7 @@ Exercises
 .. question:: functions_ex_3
 
 
-   Write a function ``drawPoly(aturtle, num_sides, side_length)`` which makes a turtle draw a regular polygon. Include a proper docstring. It can be called with any number of sides. However, if called with ``drawPoly(tess, 8, 50)``, it will draw a shape like this:
+   Write a function ``drawPoly(aturtle, num_sides, side_length)`` which makes a turtle draw a regular polygon (all sides are the same length and all angles are the same size). Include a proper docstring. It can be called with any number of sides. For example, if called with ``drawPoly(tess, 8, 50)``, a shape like this would be drawn:
 
    .. image:: Figures/regularpolygon.png
 
@@ -81,7 +82,7 @@ Exercises
       
 .. question:: functions_ex_4
 
-   Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the previous question to have its turtle draw a equilateral triangle.
+   Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the previous question to have its turtle draw an equilateral triangle.
 
    .. activecode:: ex_5_4
       :nocodelens:

@@ -141,6 +141,7 @@ Once we've defined a function, we can call it as often as we like and its statem
 .. admonition:: Extend the program ...
 
    Starting on line 16
+
    - Make another turtle object
    - Make it a different color
    - Call the ``drawSquare`` function with this new turtle and a different size
@@ -209,7 +210,7 @@ been defined, we can call it as many times as we like with whatever actual param
 
 .. admonition:: Fix the error ...
 
-   In line 18, the parameters are in the wrong order so correct this.
+   The error message leads you to believe the problem is in line 6 of the function. This is where the Python interpreter discovers the error. However, the real mistake is in line 18. So correct line 18.
 
 
 .. warning::

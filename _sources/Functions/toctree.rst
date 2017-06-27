@@ -19,4 +19,4 @@ Functions
    TheAccumulatorPattern.rst
    ProgrammingWithStyle.rst
    Glossary.rst
-   thinkcspyExercises.rst
+   Exercises.rst
