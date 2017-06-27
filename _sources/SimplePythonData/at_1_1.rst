@@ -25,24 +25,25 @@ We use Python 3.4 in our class.  As of this writing the latest version is Python
 Windows
 ^^^^^^^
 
-.. raw:: html
+   .. raw:: html
 
-    <iframe width="425" height="349" src="http://www.youtube.com/embed/9EfGpN1Pnsg"
+      <iframe width="425" height="349" src="http://www.youtube.com/embed/9EfGpN1Pnsg"
             frameborder="0" allowfullscreen></iframe>
 
 Mac
 ^^^
 
-.. raw:: html
+   .. raw:: html
 
-    <iframe width="425" height="349" src="http://www.youtube.com/embed/MEmEJCLLI2k"
+      <iframe width="425" height="349" src="http://www.youtube.com/embed/MEmEJCLLI2k"
             frameborder="0" allowfullscreen></iframe>
 
 
 This video describes the Python Shell and IDLE
-.. raw:: html
 
-    <iframe width="425" height="349" src="http://www.youtube.com/embed/kXbpB5_ywDw"
+   .. raw:: html
+
+      <iframe width="425" height="349" src="http://www.youtube.com/embed/kXbpB5_ywDw"
             frameborder="0" allowfullscreen></iframe>
 
 
