@@ -33,7 +33,7 @@ Here is a possible sequence of steps that we will need to accomplish:
 
 Here is the Python code for the first 4 steps above
 
-.. activecode:: tgl
+.. activecode:: slf
    :nocodelens:
 
    import turtle              # 1.  import the modules
