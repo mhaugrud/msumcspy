@@ -9,5 +9,6 @@ Standard Library Modules
    MoreAboutUsingModules.rst
    Themathmodule.rst
    Therandommodule.rst
+   race.rst
    Glossary.rst
    Exercises.rst
