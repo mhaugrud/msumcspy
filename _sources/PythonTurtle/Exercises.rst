@@ -30,11 +30,7 @@ Exercises
 .. question:: turtle_ex_3
 
 
-   Write a program that uses a for loop to print
-      |  ``One of the months of the year is January``
-      |  ``One of the months of the year is February``
-      |  ``One of the months of the year is March``
-      |  etc ...
+   Write a program that uses a for loop to print the current value of the loop variable and the string "bottles of beer on the wall". When you run this, the first line should be "99 bottles of beer on the wall" and the last line should be "0 bottles of beer on the wall".
 
 
    .. activecode:: ex_3_3
@@ -56,7 +52,7 @@ Exercises
    Use ``for`` loops to make a turtle draw these regular polygons (regular means all sides the same lengths, all angles the same):
 
    * An equilateral triangle
-   * A square
+   * A pentagon (five sides)
    * A hexagon (six sides)
    * An octagon (eight sides)
 

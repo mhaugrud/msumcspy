@@ -111,8 +111,6 @@ produced by the ``range`` function.
 
 
 
-
-
 Finally, suppose we want to have a sequence of even numbers.
 How would we do that?  Easy, we add another parameter, a step,
 that tells range what to count by.  For even numbers we want to start at 0
@@ -126,22 +124,25 @@ starts big and gets smaller by using a negative value for the step parameter.
 
     print(list(range(0, 19, 2)))
     print(list(range(0, 20, 2)))
+
+
     print(list(range(10, 0, -1)))
 
-Try it in codelens. Do you see why the first two statements produce the same result?
 
-.. codelens:: rangeme2
-
-    for i in range(0, 20, 2):
-       print(i)
 
 .. admonition:: Extend the program ...
 
+   - On line 3, type a comment explaining why the first two statements produce the same result.
    - On line 4, type a similar instruction to display the **odd** numbers between 0 and 20.
 
-   - Starting on line 5, write a loop that counts down from 99 to 0 (including 0)
 
-   - On line 6 (indented since this is the body of the loop), print the current value of the loop variable and the string "bottles of beer on the wall". When you run this, the first line should be "99 bottles of beer on the wall" and the last line should be "0 bottles of beer on the wall".
+Try it in codelens.
+ 
+.. codelens:: rangeme2
+ 
+    for i in range(10, 0, -1):
+        print(i)
+
 
 **Check your understanding**
 
