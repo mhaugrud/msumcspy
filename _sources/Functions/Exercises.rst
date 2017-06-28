@@ -15,7 +15,7 @@ Exercises
    :number: 1
 
 
-   Use the drawsquare function we wrote in this chapter in a program to draw the image shown below. Assume each side is 20 units. (Notice that the turtle has already moved away from the ending point of the last square when the program ends.)
+   Use the drawsquare function we wrote in this chapter in a program to draw the image shown below. Assume each side is 20 units. (Notice where the turtle is when the program ends.)
 
    .. image:: Figures/five_squares.png
 
@@ -41,31 +41,66 @@ Exercises
 
 
 
+      wn.exitonclick()
+
+
+.. question:: functions_ex_2
+
+
+   Use the drawsquare function we wrote in this chapter in a program to draw the image shown below. Assume each side is 20 units. (Notice where the turtle is when the program ends.)
+
+   .. image:: Figures/five_squaresv.png
+
+   .. activecode:: ex_5_2
+      :nocodelens:
+
+      import turtle
+
+      def drawSquare(t, sz):
+         """Get turtle t to draw a square with sides sz long"""
+
+         for i in range(4):
+            t.forward(sz)
+            t.left(90)
+
+      wn = turtle.Screen()
+      wn.bgcolor("lightgreen")
+
+      alex = turtle.Turtle()
+      alex.color("hotpink")
+      alex.pensize(3)
+
+
 
 
       wn.exitonclick()
 
 
+.. question:: functions_ex_3
 
-.. question:: functions_ex_2
-
-   Write a program to draw this using the drawSquare function. Assume the innermost square is 20 units per side, and each successive square is 20 units bigger, per side, than the one inside it. (Notice that the turtle has already moved away from the ending point of the last square when the program ends.)
+   Write a program to draw this using the drawSquare function. Assume the innermost square is 20 units per side, and each successive square is 20 units bigger, per side, than the one inside it. (Notice where the turtle is when the program ends.)
 
    .. image:: Figures/nested_squares.png
 
 
-   .. activecode:: ex_5_2
+   .. activecode:: ex_5_3
       :nocodelens:
 
 
-.. question:: functions_ex_3
+.. question:: functions_ex_4
 
 
-   Write a function ``drawPoly(aturtle, num_sides, side_length)`` which makes a turtle draw a regular polygon (all sides are the same length and all angles are the same size). Include a proper docstring. It can be called with any number of sides. For example, if called with ``drawPoly(tess, 8, 50)``, a shape like this would be drawn:
+   Write a function ``drawPoly(aturtle, num_sides, side_length)`` which makes a turtle draw a regular polygon (all sides are the same length and all angles are the same size). Include a proper docstring. It can be called with any number of sides. Here are some examples:
+
+   ``drawPoly(fred, 3, 100)``, would draw:
+
+   .. image:: Figures/equitri.png
+
+   ``drawPoly(tess, 8, 50)``, would draw:
 
    .. image:: Figures/regularpolygon.png
 
-   .. activecode:: ex_5_3
+   .. activecode:: ex_5_4
       :nocodelens:
 
 
@@ -76,36 +111,56 @@ Exercises
 
 
 
-
-
-
-      
-.. question:: functions_ex_4
-
-   Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the previous question to have its turtle draw an equilateral triangle.
-
-   .. activecode:: ex_5_4
-      :nocodelens:
-
-
 .. question:: functions_ex_5
 
-   Draw this pretty pattern using the drawSquare function (there are 20 squares).
 
-   .. image:: Figures/tess08.png
+   Call the ``drawPoly`` from the previous question within a loop to produce the regular polygons from a triangle to an octagon:
+
+
+   .. image:: Figures/multipoly.png
 
    .. activecode:: ex_5_5
       :nocodelens:
 
 
+
+      
 .. question:: functions_ex_6
+
+   Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from a previous question to have its turtle draw an equilateral triangle.
+
+   .. activecode:: ex_5_6
+      :nocodelens:
+
+      import turtle
+
+      def drawPoly(aturtle, num_sides, side_length):
+          ''' '''
+
+
+      drawEquitriangle(someturtle, somesize):
+          ''' '''
+
+
+
+.. question:: functions_ex_7
+
+   Draw this pretty pattern using the drawSquare function (there are 20 squares).
+
+   .. image:: Figures/tess08.png
+
+   .. activecode:: ex_5_7
+      :nocodelens:
+
+
+.. question:: functions_ex_8
 
    The two spirals in this picture differ only by the turn angle.  Draw both.
 
    .. image:: Figures/tess_spirals.png
       :height: 240
 
-   .. activecode:: ex_5_6
+   .. activecode:: ex_5_8
       :nocodelens:
 
       import turtle
@@ -114,12 +169,12 @@ Exercises
 
 
 
-.. question:: functions_ex_7
+.. question:: functions_ex_9
 
 
    Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the equation  (n * (n + 1)) / 2.
 
-   .. activecode:: ex_5_7
+   .. activecode:: ex_5_9
 
       def sumTo(n):
           # your code here
@@ -139,11 +194,11 @@ Exercises
 
 
 
-.. question:: functions_ex_8
+.. question:: functions_ex_10
 
    Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`. Make sure you use the math module in your solution.
 
-   .. activecode:: ex_5_8
+   .. activecode:: ex_5_10
 
       def areaOfCircle(r):
           # your code here
@@ -163,14 +218,14 @@ Exercises
       myTests().main()
 
 
-.. question:: functions_ex_9
+.. question:: functions_ex_11
 
 
    Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.
 
    .. image:: Figures/star.png
 
-   .. activecode:: ex_5_9
+   .. activecode:: ex_5_11
       :nocodelens:
 
       import turtle
@@ -178,7 +233,7 @@ Exercises
       def drawFivePointStar(t):
 
 
-.. question:: functions_ex_10
+.. question:: functions_ex_12
 
    Extend your program above.  Draw five stars, but between each, pick up the pen, move forward by 350 units, turn right by 144, put the pen down, and draw the next star. You'll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):
 
@@ -186,16 +241,16 @@ Exercises
 
    What would it look like if you didn't pick up the pen?
 
-   .. activecode:: ex_5_10
+   .. activecode:: ex_5_12
       :nocodelens:
 
 
-.. question:: functions_ex_11
+.. question:: functions_ex_13
 
 
    Extend the star function to draw an n pointed star.  (Hint: n must be an odd number greater or equal to 3).
 
-   .. activecode:: ex_5_11
+   .. activecode:: ex_5_13
       :nocodelens:
 
       import turtle
@@ -203,19 +258,19 @@ Exercises
       def drawStar(t, n):
 
 
-.. question:: functions_ex_12
+.. question:: functions_ex_14
 
    Write a function called drawSprite that will draw a sprite.  The function will need parameters for the turtle, the number of legs, and the length of the legs.  Invoke the function to create a sprite with 15 legs of length 120.
 
-   .. activecode:: ex_5_12
+   .. activecode:: ex_5_14
       :nocodelens:
 
 
-.. question:: functions_ex_13
+.. question:: functions_ex_15
 
    Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and including `n`. This time use the accumulator pattern.
 
-   .. activecode:: ex_5_13
+   .. activecode:: ex_5_15
 
       def sumTo(n):
           # your code here
@@ -235,53 +290,15 @@ Exercises
 
 
 
-.. question:: functions_ex_14
-
-   Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using Newton's algorithm.
-   Newton's approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess is computed using the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
-
-    .. activecode:: ex_5_14
-
-        def mySqrt(n):
-            # your code here
-
-        ====
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-
-            def testOne(self):
-                self.assertAlmostEqual(mySqrt(4.0),2.0,0,"Tested mySqrt on input 4.0")
-                self.assertAlmostEqual(mySqrt(9.0),3.0,4,"Tested accuracy of mySqrt on input 3.0")
-                self.assertAlmostEqual(mySqrt(36.0),6.0,5,"Tested accuracy of mySqrt on input 6.0")
-                self.assertAlmostEqual(mySqrt(100.0),10.0,4,"Tested accuracy of mySqrt on input 10.0. Try iterating more times.")
-
-        myTests().main()
-
-
-.. question:: functions_ex_15
-
-
-   Write a function called ``myPi`` that will return an approximation of PI (3.14159...).  Use the `Leibniz <http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80>`_ approximation.
-
-   .. activecode:: ex_5_15
-
-      def myPi(iters):
-          # Calculate an approximation of PI using the Leibniz
-          # approximation with iters number of iterations
-
-          # your code here
-
-
-
 .. question:: functions_ex_16
 
-   Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
+
+   Write a function called ``myPi`` that will return an approximation of PI (3.14159...).  Use either the `Leibniz <http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80>`_ approximation or the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
 
    .. activecode:: ex_5_16
 
       def myPi(iters):
-          # Calculate an approximation of PI using the Madhava
+          # Calculate an approximation of PI 
           # approximation with iters number of iterations
 
           #your code here
