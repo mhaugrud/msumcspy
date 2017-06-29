@@ -62,9 +62,9 @@ Now, you have several choices for how to fill in code for step 5. Here are some 
 
 #. Use a single call to ``forward`` for each turtle, using a random number as the distance to move.
 
-#. Create a for loop, using a random number for the parameter passed to the range function.  Inside the for loop move one of the turtles forward by some number of units.
+#. Create a for loop, using a random number for the parameter passed to the range function.  Inside the for loop move one of the turtles forward by one unit. Make another loop to do the same with the other turtle.
 
-#. Create a single `for loop` using something like 150 or 200 as the range parameter. Inside the `for loop`, generate a random number and move a turtle forward by that amount. Generate another random number and move the the other turtle forward by that amount.
+#. Create a single `for loop` using something like 150 or 200 as the range parameter. Inside the `for loop`, generate a small random number and move a turtle forward by that amount. Generate another random number and move the the other turtle forward by that amount.
 
 In all of these options, the random numbers are whole numbers. So we should use the ``randrange`` function.
 
@@ -76,4 +76,4 @@ when you run it.  Option 3 is probably the most 'realistic' assuming realism is 
    Type in instructions (between # your code goes here and wn.exitonclick()) to implement Option 3. It requires 3-5 lines of code. Experiment with values for the random range to move the turtles. It should be quite small so that the turtles do not consistently move off the screen.
    
 
-You may be thinking why can't each turtle just move forward until they cross some artificial finish line?  Good question!  We'll get to the answer to this, and look at the program in a later lesson when we learn about something called the ``while loop``.
+You may be thinking why can't each turtle just move forward until it crosses an artificial finish line?  Good question!  We'll get to the answer to this, and look at the program in a later lesson when we learn about something called the ``while loop``.

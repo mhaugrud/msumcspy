@@ -47,9 +47,9 @@ the upper bound is excluded.   All the values have an equal probability of occur
 
 .. admonition:: Extend the program ...
    
-   - On line 2, make a for loop that repeats 5 times. Indent lines 3 and 4 so they become the body of this loop
+   - On line 2, make a for loop that repeats 10 times. Indent lines 3 and 4 so they become the body of this loop
 
-   - On line 5, make a for loop that repeats 5 times. Indent lines 6 and 7 so they become the body of this loop
+   - On line 5, make a for loop that repeats 10 times. Indent lines 6 and 7 so they become the body of this loop
 
 The ``random()`` function returns a floating point number in the range [0.0, 1.0) --- the
 square bracket means "closed interval on the left" and the round parenthesis means

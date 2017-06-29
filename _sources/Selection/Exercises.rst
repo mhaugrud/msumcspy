@@ -167,24 +167,35 @@ Exercises
 
 .. question:: selection_ex_6
 
-   Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
-   the length of the hypotenuse.  (Hint:  ``x ** 0.5`` will return the square root, or use ``sqrt`` from the math module)
+   Write two boolean functions:
+
+   - ``isPositive`` returns ``True`` if the argument is greater than zero, otherwise, ``False``.
+   - ``isNegative`` returns ``True`` if the argument is less than zero, otherwise, ``False``.
 
    .. activecode:: ex_6_6
 
-      def findHypot(a,b):
+      def isPositive(n):
           # your code here
 
-      ====
+
+      def isPositive(n):
+          # your code here
+
+     ====
 
       from unittest.gui import TestCaseGui
-
+      import random
       class myTests(TestCaseGui):
           def testOne(self):
-              self.assertEqual(findHypot(12.0,5.0),13.0,"Tested findHypot on inputs of 12.0 and 5.0")
-              self.assertEqual(findHypot(14.0,48.0),50.0,"Tested findHypot on inputs of 14.0 and 48.0")
-              self.assertEqual(findHypot(21.0,72.0),75.0,"Tested findHypot on inputs of 21.0 and 72.0")
-              self.assertAlmostEqual(findHypot(1,1.73205),1.999999,2,"Tested findHypot on inputs of 1 and 1.73205")
+              r = random.random()*100+1e-10
+              self.assertEqual(isPositive(r),True,"Tested isPositive with input of "+str(r))
+              self.assertEqual(isPositive(0),False,"Tested isPositive with input of 0")
+              self.assertEqual(isPositive(-r),False,"Tested isPositive with input of "+str(-r))
+              r = random.random()*100*1e-10
+              self.assertEqual(isNegative(r),True,"Tested isPositive with input of "+str(-r))
+              self.assertEqual(isPositive(0),False,"Tested isPositive with input of 0")
+              self.assertEqual(isPositive(r),False,"Tested isPositive with input of "+str(r))
+
 
       myTests().main()
 
@@ -202,11 +213,13 @@ Exercises
                ====
 
                from unittest.gui import TestCaseGui
-
+               import random
                class myTests(TestCaseGui):
                     def testOne(self):
-                        self.assertEqual(is_even(10),True,"Tested is_even on input of 10")
-                        self.assertEqual(is_even(5),False,"Tested is_even on input of 5")
+                        r = random.randrange(0,101,2)
+                        self.assertEqual(is_even(r),True,"Tested is_even on input of "+str(r))
+                        r = random.randrange(1,101,2)
+                        self.assertEqual(is_even(r),False,"Tested is_even on input of "+str(r))
                         self.assertEqual(is_even(1),False,"Tested is_even on input of 1")
                         self.assertEqual(is_even(0),True,"Tested is_even on input of 0")
 
@@ -226,11 +239,13 @@ Exercises
 
        ====
        from unittest.gui import TestCaseGui
-
+       import random
        class myTests(TestCaseGui):
             def testOne(self):
-                self.assertEqual(is_odd(10),False,"Tested is_odd on input of 10")
-                self.assertEqual(is_odd(5),True,"Tested is_odd on input of 5")
+                r = random.randrange(1,101,2)
+                self.assertEqual(is_odd(r),True,"Tested is_even on input of "+str(r))
+                r = random.randrange(0,101,2)
+                self.assertEqual(is_odd(r),False,"Tested is_even on input of "+str(r))
                 self.assertEqual(is_odd(1),True,"Tested is_odd on input of 1")
                 self.assertEqual(is_odd(0),False,"Tested is_odd on input of 0")
 
@@ -249,11 +264,13 @@ Exercises
 
                ====
                from unittest.gui import TestCaseGui
-
+               import random
                class myTests(TestCaseGui):
                     def testOne(self):
-                        self.assertEqual(is_odd(10),False,"Tested is_odd on input of 10")
-                        self.assertEqual(is_odd(5),True,"Tested is_odd on input of 5")
+                        r = random.randrange(1,101,2)
+                        self.assertEqual(is_odd(r),True,"Tested is_even on input of "+str(r))
+                        r = random.randrange(0,101,2)
+                        self.assertEqual(is_odd(r),False,"Tested is_even on input of "+str(r))
                         self.assertEqual(is_odd(1),True,"Tested is_odd on input of 1")
                         self.assertEqual(is_odd(0),False,"Tested is_odd on input of 0")
 
