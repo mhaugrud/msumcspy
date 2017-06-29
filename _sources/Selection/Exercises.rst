@@ -209,7 +209,7 @@ Exercises
 
 .. question:: selection_ex_8
 
-   A year is a **leap year** if it is divisible by 4 unless it is a century that is not divisible by 400.
+   A year is a *leap year* if it is evenly divisible by 4 unless it is a century that is not evenly divisible by 400.
    Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
 
    .. activecode:: ex_6_8
@@ -236,9 +236,9 @@ Exercises
 .. question:: selection_ex_9
 
    "Thirty days has September, April, June, and November. All the rest have thirty-one except 
-   February, it's a different one." Write the function ``daysInMonth``. It has two parameters: the
+   February, it's different, son." Write the function ``daysInMonth``. It has two parameters: the
    month (1 to 12) and the year. It returns how many days are that specified month. Since the number
-   days in February depends on whether or not it is a leap year, the ``daysInMonth`` must call the
+   days in February depends on whether or not it is a leap year, ``daysInMonth`` must call the
    ``isLeap`` function.
 
    .. activecode:: ex_6_9
