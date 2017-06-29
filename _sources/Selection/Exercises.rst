@@ -236,9 +236,10 @@ Exercises
 .. question:: selection_ex_9
 
    "Thirty days has September, April, June, and November. All the rest have thirty-one except 
-February, it's a different one." Write the function ``daysInMonth``. It has two parameters: the month (1 to 12) and the year. It returns how many days are that specified month. Since the number days in
-February depends on whether or not it is a leap year, the ``daysInMonth`` must call the ``isLeap``
-function.
+   February, it's a different one." Write the function ``daysInMonth``. It has two parameters: the
+   month (1 to 12) and the year. It returns how many days are that specified month. Since the number
+   days in February depends on whether or not it is a leap year, the ``daysInMonth`` must call the
+   ``isLeap`` function.
 
    .. activecode:: ex_6_9
 
