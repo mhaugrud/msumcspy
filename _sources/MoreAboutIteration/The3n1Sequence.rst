@@ -33,9 +33,9 @@ This Python function captures that algorithm.  Try running this program several 
                 n = n // 2
             else:                 # n is odd
                 n = n * 3 + 1
-        print(n)                  # the last print is 1
+        return n
 
-    seq3np1(3)
+    print(seq3np1(3))
 
 
 
@@ -104,7 +104,7 @@ Experimenting With the 3n+1 Sequence
                 n = n // 2
             else:                 # n is odd
                 n = n * 3 + 1
-        print(n)                  # the last print is 1
+        return n
 
     seq3np1(3)
 
@@ -116,11 +116,9 @@ Experimenting With the 3n+1 Sequence
 
       - Once inside the loop, we will need to update ``count`` by 1 (increment), so that we can keep track of the number of iterations.  It is very important that you put these statements in the right place.  Notice that the previous location of the print statements can be very helpful in determining the location.
 
-      - When the loop terminates (we get to 1), **return** the value of ``count``.
+      - When the loop terminates (we get to 1), **return** the value of ``count`` instead of ``n``.
 
       - This demonstrates an important pattern of computation called a **counter** (note that it is a type of accumulator). The variable ``count`` is initialized to 0 and then incremented each time the loop body is executed. When the loop exits, ``count`` contains the result --- the total number of times the loop body was executed.
-
-      - Since the function now returns a value, we will need to call the function inside of a print statement in order to see the result.
 
    #. Repeat the call to ``seq3np1`` using a range of values, up to and including an upper bound.
 
