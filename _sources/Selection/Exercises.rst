@@ -178,8 +178,8 @@ Exercises
 
    Write two boolean functions:
 
-   - ``isPositive`` returns ``True`` if the argument is greater than zero, otherwise, ``False``.
-   - ``isNegative`` returns ``True`` if the argument is less than zero, otherwise, ``False``.
+   - ``isPositive`` returns ``True`` if the argument is a positive number, otherwise, ``False``.
+   - ``isNegative`` returns ``True`` if the argument is a negative number, otherwise, ``False``.
 
    .. activecode:: ex_6_6
 
