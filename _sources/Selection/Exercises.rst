@@ -73,10 +73,10 @@ Exercises
                 class myTests(TestCaseGui):
 
                     def testOne(self):
-                        self.assertEqual(getGrade(90),'A','Tested getGrade on input of 90')
-                        self.assertEqual(getGrade(80),'B','Tested getGrade on input of 80')
-                        self.assertEqual(getGrade(70),'C','Tested getGrade on input of 70')
-                        self.assertEqual(getGrade(60),'D','Tested getGrade on input of 60')
+                        self.assertEqual(getGrade(90),'A','Tested boundary of 90')
+                        self.assertEqual(getGrade(80),'B','Tested boundary of 80')
+                        self.assertEqual(getGrade(70),'C','Tested boundary of 70')
+                        self.assertEqual(getGrade(60),'D','Tested boundary of 60')
                         r = random.random()*10
                         self.assertEqual(getGrade(90+r),'A','Tested getGrade on input of '+str(90+r))
                         r = random.random()*10
@@ -94,94 +94,13 @@ Exercises
 
 .. question:: selection_ex_4
 
-   Modify the turtle bar chart program from the previous chapter so that the bar for any value
-   of 200 or more is filled with red, values between [100 and 200) are filled yellow,
-   and bars representing values less than 100 are filled green.
-
-   .. activecode:: ex_6_4
-      :nocodelens:
-
-.. question:: selection_ex_5
-
-   .. tabbed:: q5
-
-        .. tab:: Question
-
-            In the turtle bar chart program, what do you expect to happen if one or more
-            of the data values in the list is negative?   Go back and try it out.  Change the
-            program so that when it prints the text value for the negative bars, it puts
-            the text above the base of the bar (on the 0 axis).
-
-            .. actex:: ex_6_5
-               :nocodelens:
-
-        .. tab:: Answer
-
-            .. activecode:: answer_ex_6_5
-                    :nocodelens:
-
-                    import turtle
-
-                    def drawBar(t, height):
-                        """ Get turtle t to draw one bar, of height. """
-                        t.begin_fill()               # start filling this shape
-                        if height < 0:
-                            t.write(str(height))
-                        t.left(90)
-                        t.forward(height)
-                        if height >= 0:
-                            t.write(str(height))
-                        t.right(90)
-                        t.forward(40)
-                        t.right(90)
-                        t.forward(height)
-                        t.left(90)
-                        t.end_fill()                 # stop filling this shape
-
-
-
-                    xs = [48, -50, 200, 240, 160, 260, 220]  # here is the data
-                    maxheight = max(xs)
-                    minheight = min(xs)
-                    numbars = len(xs)
-                    border = 10
-
-                    tess = turtle.Turtle()           # create tess and set some attributes
-                    tess.color("blue")
-                    tess.fillcolor("red")
-                    tess.pensize(3)
-
-                    wn = turtle.Screen()             # Set up the window and its attributes
-                    wn.bgcolor("lightgreen")
-                    if minheight > 0:
-                        lly = 0
-                    else:
-                        lly = minheight - border
-
-                    wn.setworldcoordinates(0-border, lly, 40*numbars+border, maxheight+border)
-
-
-                    for a in xs:
-                        drawBar(tess, a)
-
-                    wn.exitonclick()
-
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_0118bd02de23462bafdb51beb4c85e44
-
-.. question:: selection_ex_6
-
+   
    Write two boolean functions:
 
    - ``isPositive`` returns ``True`` if the argument is a positive number, otherwise, ``False``.
    - ``isNegative`` returns ``True`` if the argument is a negative number, otherwise, ``False``.
 
-   .. activecode:: ex_6_6
+   .. activecode:: ex_6_4
 
       def isPositive(n):
           # your code here
@@ -208,13 +127,13 @@ Exercises
 
       myTests().main()
 
-.. question:: selection_ex_7
+.. question:: selection_ex_5
 
            Write a function called ``is_even(n)`` that takes an integer as an argument
            and returns ``True`` if the argument is an **even number** and ``False`` if
            it is **odd**.
 
-           .. activecode:: ex_6_7
+           .. activecode:: ex_6_5
 
                def is_even(n):
                    # your code here
@@ -235,12 +154,12 @@ Exercises
                myTests().main()
 
 
-.. question:: selection_ex_8
+.. question:: selection_ex_6
 
    Now write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd
    and ``False`` otherwise.
 
-   .. activecode:: ex_6_8
+   .. activecode:: ex_6_6
 
        def is_odd(n):
            # your code here
@@ -260,13 +179,13 @@ Exercises
 
        myTests().main()
 
-.. question:: selection_ex_9
+.. question:: selection_ex_7
 
 
            Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its
            argument is an odd integer.
 
-           .. activecode:: ex_6_9
+           .. activecode:: ex_6_7
 
                def is_odd(n):
                    # your code here
@@ -286,6 +205,73 @@ Exercises
                myTests().main()
 
 
+
+
+.. question:: selection_ex_8
+
+   A year is a **leap year** if it is divisible by 4 unless it is a century that is not divisible by 400.
+   Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
+
+   .. activecode:: ex_6_8
+
+      def isLeap(year):
+          # your code here
+
+      ====
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+          def testOne(self):
+              self.assertEqual(isLeap(1944),True,"Tested isLeap on an input of 1944")
+              self.assertEqual(isLeap(2011),False,"Tested isLeap on an input of 2011")
+              self.assertEqual(isLeap(1986),False,"Tested isLeap on an input of 1986")
+              self.assertEqual(isLeap(1800),False,"Tested isLeap on an input of 1800")
+              self.assertEqual(isLeap(1900),False,"Tested isLeap on an input of 1900")
+              self.assertEqual(isLeap(2000),True,"Tested isLeap on an input of 2000")
+              self.assertEqual(isLeap(2056),True,"Tested isLeap on an input of 2056")
+
+      myTests().main()
+
+
+.. question:: selection_ex_9
+
+   "Thirty days has September, April, June, and November. All the rest have thirty-one except 
+February, it's a different one." Write the function ``daysInMonth``. It has two parameters: the month (1 to 12) and the year. It returns how many days are that specified month. Since the number days in
+February depends on whether or not it is a leap year, the ``daysInMonth`` must call the ``isLeap``
+function.
+
+   .. activecode:: ex_6_9
+
+      def isLeap(y):
+          # your code here
+
+
+      def daysInMonth(month, year):
+          # your code goes here
+
+
+      ====
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+          def testOne(self):
+              self.assertEqual(daysInMonth(1,2001),31,"January")
+              self.assertEqual(daysInMonth(3,2002),31,"March")
+              self.assertEqual(daysInMonth(4,2003),30,"April")
+              self.assertEqual(daysInMonth(5,2004),31,"May")
+              self.assertEqual(daysInMonth(6,2005),30,"June")
+              self.assertEqual(daysInMonth(7,2006),31,"July")
+              self.assertEqual(daysInMonth(8,2007),31,"August")
+              self.assertEqual(daysInMonth(9,2008),30,"September")
+              self.assertEqual(daysInMonth(10,2009),31,"October")
+              self.assertEqual(daysInMonth(11,2010),30,"November")
+              self.assertEqual(daysInMonth(12,2011),31,"December")
+              self.assertEqual(daysInMonth(2,2000),29,"February - leap year")
+              self.assertEqual(daysInMonth(2,2012),29,"February - leap year")
+              self.assertEqual(daysInMonth(2,2013),28,"February - not leap year")
+              self.assertEqual(daysInMonth(2,2100),28,"February - not leap year")
+
+      myTests().main()
 
 
 .. question:: selection_ex_10
@@ -353,31 +339,6 @@ Exercises
 
 .. question:: selection_ex_12
 
-   A year is a **leap year** if it is divisible by 4 unless it is a century that is not divisible by 400.
-   Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
-
-   .. activecode:: ex_6_12
-
-      def isLeap(year):
-          # your code here
-
-      ====
-      from unittest.gui import TestCaseGui
-
-      class myTests(TestCaseGui):
-          def testOne(self):
-              self.assertEqual(isLeap(1944),True,"Tested isLeap on an input of 1944")
-              self.assertEqual(isLeap(2011),False,"Tested isLeap on an input of 2011")
-              self.assertEqual(isLeap(1986),False,"Tested isLeap on an input of 1986")
-              self.assertEqual(isLeap(1800),False,"Tested isLeap on an input of 1800")
-              self.assertEqual(isLeap(1900),False,"Tested isLeap on an input of 1900")
-              self.assertEqual(isLeap(2000),True,"Tested isLeap on an input of 2000")
-              self.assertEqual(isLeap(2056),True,"Tested isLeap on an input of 2056")
-
-      myTests().main()
-
-.. question:: selection_ex_13#.
-
 
             Implement the calculator for the date of Easter.
 
@@ -401,6 +362,6 @@ Exercises
 
             Your program should print an error message if the user provides a date that is out of range.
 
-            .. activecode:: ex_6_13
+            .. activecode:: ex_6_12
 
 
