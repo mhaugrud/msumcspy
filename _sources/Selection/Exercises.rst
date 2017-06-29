@@ -187,7 +187,7 @@ Exercises
           # your code here
 
 
-      def isPositive(n):
+      def isNegative(n):
           # your code here
 
       ====
@@ -201,9 +201,9 @@ Exercises
               self.assertEqual(isPositive(0),False,"Tested isPositive with input of 0")
               self.assertEqual(isPositive(-r),False,"Tested isPositive with input of "+str(-r))
               r = random.random()*100*1e-10
-              self.assertEqual(isNegative(r),True,"Tested isPositive with input of "+str(-r))
-              self.assertEqual(isPositive(0),False,"Tested isPositive with input of 0")
-              self.assertEqual(isPositive(r),False,"Tested isPositive with input of "+str(r))
+              self.assertEqual(isNegative(r),True,"Tested isNegative with input of "+str(-r))
+              self.assertEqual(isNegative(0),False,"Tested isNegative with input of 0")
+              self.assertEqual(isNegative(r),False,"Tested isNegative with input of "+str(r))
 
 
       myTests().main()

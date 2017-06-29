@@ -118,7 +118,7 @@ Exercises
 
 #.
 
-           Write a function that mirrors its argument.
+           Write a function that mirrors its argument. For example, the mirror of 'abc' is 'abccba'.
 
            .. activecode:: ex_8_6
               :nocodelens:
