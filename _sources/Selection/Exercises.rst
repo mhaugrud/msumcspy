@@ -69,15 +69,24 @@ Exercises
                 ====
 
                 from unittest.gui import TestCaseGui
-
+                import random
                 class myTests(TestCaseGui):
 
                     def testOne(self):
-                        self.assertEqual(getGrade(95),'A','Tested getGrade on input of 95')
-                        self.assertEqual(getGrade(85),'B','Tested getGrade on input of 85')
-                        self.assertEqual(getGrade(65),'D','Tested getGrade on input of 65')
-                        self.assertEqual(getGrade(79.99999),'C','Tested getGrade on input of 79.9999')
+                        self.assertEqual(getGrade(90),'A','Tested getGrade on input of 90')
                         self.assertEqual(getGrade(80),'B','Tested getGrade on input of 80')
+                        self.assertEqual(getGrade(70),'C','Tested getGrade on input of 70')
+                        self.assertEqual(getGrade(60),'D','Tested getGrade on input of 60')
+                        r = random.random()*10
+                        self.assertEqual(getGrade(90+r),'A','Tested getGrade on input of '+str(90+r))
+                        r = random.random()*10
+                        self.assertEqual(getGrade(80+r),'B','Tested getGrade on input of '+str(80+r))
+                        r = random.random()*10
+                        self.assertEqual(getGrade(70+r),'C','Tested getGrade on input of '+str(70+r))
+                        r = random.random()*10
+                        self.assertEqual(getGrade(60+r),'D','Tested getGrade on input of '+str(60+r))
+                        r = random.random()*60
+                        self.assertEqual(getGrade(r),'F','Tested getGrade on input of '+str(r))
 
 
                 myTests().main()
@@ -181,7 +190,7 @@ Exercises
       def isPositive(n):
           # your code here
 
-     ====
+      ====
 
       from unittest.gui import TestCaseGui
       import random
