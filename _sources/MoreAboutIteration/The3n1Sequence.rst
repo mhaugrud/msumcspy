@@ -21,7 +21,7 @@ the next term of the sequence from ``n``, either by halving ``n``,
 whenever ``n`` is even, or else by multiplying it by three and adding 1 when it is odd.  The sequence
 terminates when ``n`` reaches 1.
 
-This Python function captures that algorithm.  Try running this program several times supplying different values for n.
+This Python function captures that algorithm.
 
 .. activecode:: itq
 
@@ -33,6 +33,7 @@ This Python function captures that algorithm.  Try running this program several 
                 n = n // 2
             else:                 # n is odd
                 n = n * 3 + 1
+
         return n
 
     print(seq3np1(3))
@@ -56,7 +57,8 @@ time through the loop until it reaches 1.
 
 .. admonition:: Modify the program ...
 
-   In line 11, try different starting values instead of 3. Find a small starting number (less than 50) that needs more than a hundred steps before it terminates. (Your final save and run must be this value.)
+   - In line 11, try different starting values instead of 3.
+   - Find a small starting number (less than 50) that needs more than a hundred steps before it terminates. (Your final save and run must be with this value.)
 
 
 
@@ -87,7 +89,7 @@ be other cycles that we just haven't found.
    :feedback_b: It has not been disproven that the 3n+1 sequence will terminate for all values of n.  In other words, there might be some value for n such that this sequence does not terminate. We just have not found it yet.
    :feedback_c: That this sequence terminates for all values of n has not been proven or disproven so no one knows whether the while loop will always terminate or not.
 
-   Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any positive integer value of n?
+   Consider the code that prints the 3n+1 sequence in the above ActiveCode.  Will the while loop in this code always terminate for any positive integer value of n?
 
 Experimenting With the 3n+1 Sequence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -100,10 +102,12 @@ Experimenting With the 3n+1 Sequence
 
         while n != 1:
             print(n)
+
             if n % 2 == 0:        # n is even
                 n = n // 2
             else:                 # n is odd
                 n = n * 3 + 1
+
         return n
 
     print(seq3np1(3))
@@ -112,9 +116,9 @@ Experimenting With the 3n+1 Sequence
 
    #. Count the number of iterations it takes to stop. Our program currently **prints** the values in the sequence until it stops at 1.  Remember that one of the interesting questions is `How many items are in the sequence before stopping at 1?`.  To determine this, we will need to count them.
 
-      - First, comment out the print statement on line 5.  Now we will need a local variable to keep track of the count.  It would make sense to call it ``count``.  It will need to be initialized to 0 before we begin the loop.
+      - We will need a local variable to keep track of the count.  It would make sense to call it ``count``.  It must be initialized to 0 before we begin the loop.
 
-      - Once inside the loop, we will need to update ``count`` by 1 (incrementing it), so that we can keep track of the number of iterations.  It is very important that you do this in the right place.  The commented out print statement can be very helpful in determining the location.
+      - Inside the loop, we will need to update ``count`` by 1 (incrementing it), so that we can keep track of the number of iterations.  It is very important that you do this in the right place.  The print statement can be very helpful in determining the location.
 
       - When the loop terminates (we get to 1), **return** the value of ``count`` instead of ``n``.
 
@@ -122,6 +126,7 @@ Experimenting With the 3n+1 Sequence
 
    #. Repeat the call to ``seq3np1`` using a range of values, up to and including an upper bound.
 
+      - First, comment out the print statement that is inside the function. 
       - Now that we have a function that can return the number of iterations required to get to 1, we can use it to check a wide range of starting values.  Instead of just doing one value at a time, we can call the function iteratively, each time passing in a new value.
 
       - Create a simple for loop using a loop variable called ``start`` that provides values from 1 up to 50.  Call the ``seq3np1`` function once for each value of ``start``.  Modify the print statement to also print the value of ``start``.
