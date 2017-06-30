@@ -64,7 +64,7 @@ Exercises
 .. question:: turtle_ex_6
 
 
-   Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a regular polygon.  The program should draw the polygon and then fill it in.
+   Write a program that asks the user for the number of sides, the length of the side, and the color of a regular polygon.  The program should draw the polygon.
 
    .. activecode:: ex_3_6
       :nocodelens:
