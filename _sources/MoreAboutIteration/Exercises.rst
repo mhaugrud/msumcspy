@@ -218,8 +218,8 @@ Exercises
               def double(oldimage):
 
 
-              win = image.ImageWin()
               img = image.Image("luther.jpg")
+              win = image.ImageWin(img.getWidth()*2, img.getHeight()*2)
 
               bigimg = double(img)
               bigimg.draw(win)
