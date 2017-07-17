@@ -87,7 +87,7 @@ Nearly 90% of the error messages encountered for this  problem are SyntaxError, 
 Syntax Errors
 -------------
 
-Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say.
+Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say. The Python interpreter cannot translate your source code into object code. So **your program cannot even begin to run**.
 
 Usually SyntaxErrors can be traced back to missing punctuation characters, such as parenthesis, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.
 
@@ -205,6 +205,10 @@ Uncomment line 1 and you are back to the SyntaxError.  Another trick is to elimi
 Runtime Errors
 --------------
 
+As the name implies, these errors occur when the program is running. The program is syntactically correct so the program begins to execute. However, at some point in the program, Python **encounters a statement that is illegal to execute** and the program abruptly stops.
+
+There are many kinds of runtime errors. Here are a few examples:
+
 TypeError
 ^^^^^^^^^
 
@@ -314,7 +318,6 @@ And one last bit of code to fix.
 
         1.  The ``int`` constructor cannot deal with multiple string parameters that are separated by commas.
         2.  ``int`` should be used in an assignment statement.  Even if ``int`` was called with a single string parameter, it would have no real effect since the value it creates is not used in any way.
-
 
 
 
