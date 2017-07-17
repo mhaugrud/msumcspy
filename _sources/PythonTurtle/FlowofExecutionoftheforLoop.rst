@@ -13,8 +13,8 @@
 
 .. index:: control flow, flow of execution
 
-Flow of Execution of the for Loop
----------------------------------
+Flow of Execution of the ``for`` Loop
+-------------------------------------
 
 As a program executes, the interpreter always keeps track of which statement is
 about to be executed.  We call this the **control flow**, or the **flow of

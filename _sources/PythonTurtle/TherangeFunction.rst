@@ -13,8 +13,8 @@
 
 .. index:: range function
 
-The range Function
-------------------
+The ``range`` Function
+----------------------
 
 .. video:: advrange
    :controls:

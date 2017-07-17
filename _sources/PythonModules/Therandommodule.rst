@@ -13,8 +13,8 @@
 
 .. index:: random module, module; random,  algorithm; deterministic
 
-The `random` module
--------------------
+The ``random`` module
+---------------------
 
 We often want to use **random numbers** in programs.  Here are a few typical uses:
 

@@ -13,8 +13,8 @@
 
 .. index:: math module, module; math
 
-The `math` module
------------------
+The ``math`` module
+-------------------
 
 The ``math`` module contains the kinds of mathematical functions you would typically find on your
 calculator and some mathematical constants

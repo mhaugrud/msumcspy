@@ -13,8 +13,8 @@
 
 .. index:: function; main, conditional execution, dunder
 
-Using a Main Function
----------------------
+Using a ``main`` Function
+-------------------------
 
 Using functions is a good idea.  It helps us to modularize our code by breaking a program
 into logical parts where each part is responsible for a specific task.  For example, in one of our first programs there
