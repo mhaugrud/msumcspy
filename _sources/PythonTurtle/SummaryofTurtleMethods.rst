@@ -9,8 +9,8 @@
 
 ..  _turtle_methods:
 
-Summary of Turtle Methods
--------------------------
+Summary of ``turtle`` Methods
+-----------------------------
 
 ==========  ==========  =========================
 Method      Parameters  Description

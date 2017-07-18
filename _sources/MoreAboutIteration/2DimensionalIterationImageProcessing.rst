@@ -110,8 +110,8 @@ the same as the current amount of green.
 
    If you have a pixel whose RGB value is (50, 0, 0), what color will this pixel appear to be?
 
-Image Objects
-^^^^^^^^^^^^^
+``Image`` Objects
+^^^^^^^^^^^^^^^^^
 
 
 To access the pixels in a real image, we need to first create an ``Image`` object.  Image objects can be created in two
