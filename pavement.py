@@ -19,7 +19,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "haugrud17"
+project_name = "haugrud17f"
 ###############################
 
 master_url = None
