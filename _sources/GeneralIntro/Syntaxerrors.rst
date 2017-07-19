@@ -13,7 +13,7 @@
 
 .. index:: syntax, syntax; error, error; syntax
 
-Syntax errors
+Syntax Errors
 -------------
 
 Python can only execute a program if the program is syntactically correct;

@@ -13,8 +13,8 @@
 
 .. index:: selection; unary
 
-Omitting the `else` Clause: Unary Selection
--------------------------------------------
+Omitting the ``else`` Clause: Unary Selection
+---------------------------------------------
 
 .. video:: unaryselection
    :controls:

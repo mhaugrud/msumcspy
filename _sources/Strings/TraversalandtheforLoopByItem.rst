@@ -15,7 +15,7 @@
 
 .. _string_traverse:
 
-Traversal and the ``for`` Loop: By Item
+Traversal and the ``for`` Loop: by Item
 ---------------------------------------
 
 A lot of computations involve processing a collection one item at a time.  For strings this means that we would like to process one character at a time. Often we start at the beginning, select each character in turn, do something to it, and continue until the end. This pattern of processing is called a **traversal**.

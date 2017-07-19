@@ -13,7 +13,7 @@
 
 .. index:: variable; local, variable; global, scope, lifetime
 
-Variables and Parameters are Local
+Variables and Parameters Are Local
 ----------------------------------
 
 An assignment statement in a function creates a **local variable** for the variable on the left hand side of the assignment operator. It is called local because this variable only exists inside the function and you cannot use it outside. For example, consider again the ``square`` function:

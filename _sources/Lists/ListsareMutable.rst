@@ -13,7 +13,7 @@
 
 .. index:: mutable
 
-Lists are Mutable
+Lists Are Mutable
 -----------------
 
 Unlike strings, lists are **mutable**.  This means we can change an item in a list by accessing

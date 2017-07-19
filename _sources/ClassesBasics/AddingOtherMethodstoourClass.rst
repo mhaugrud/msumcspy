@@ -7,7 +7,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Adding Other Methods to our Class
+Adding Other Methods to Our Class
 ---------------------------------
           
 The key advantage of using a class like ``Account`` rather than something like a simple variable like ``balance`` now becomes apparent.  We can add methods to

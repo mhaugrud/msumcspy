@@ -11,8 +11,8 @@
    :prefix: turtle-8-
    :start: 1
 
-A Few More Turtle Methods and Observations
-------------------------------------------
+A Few More ``turtle`` Methods and Observations
+----------------------------------------------
 
 Here are a few more things that you might find useful as you write programs that use turtles.
 

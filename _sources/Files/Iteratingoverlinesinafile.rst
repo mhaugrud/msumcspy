@@ -12,7 +12,7 @@
    :start: 1
 
 
-Iterating over lines in a file
+Iterating over Lines in a File
 ------------------------------
 
 Recall the contents of the qbdata.txt file.

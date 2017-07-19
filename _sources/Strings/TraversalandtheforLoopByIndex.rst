@@ -13,7 +13,7 @@
 
 .. index:: traversal; by index
 
-Traversal and the ``for`` Loop: By Index
+Traversal and the ``for`` Loop: by Index
 ----------------------------------------
 
 When we need to iterate over the characters in a string, we should use the technique shown in

@@ -14,7 +14,7 @@
 .. index:: chained conditional, conditional; chained
 
 
-Chained conditionals
+Chained Conditionals
 --------------------
 
 Python provides an alternative way to write nested selection such as the one shown in the previous section.

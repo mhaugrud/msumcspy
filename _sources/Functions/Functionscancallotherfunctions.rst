@@ -13,7 +13,7 @@
 
 .. index:: functional decomposition, generalization
 
-Functions can Call Other Functions
+Functions Can Call Other Functions
 ----------------------------------
 
 It is important to understand that each of the functions we write can be used

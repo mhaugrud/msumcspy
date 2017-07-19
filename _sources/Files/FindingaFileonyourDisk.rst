@@ -13,7 +13,7 @@
 
 .. index:: file; path, path
 
-Finding a File on your Disk
+Finding a File on Your Disk
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Opening a file requires that you, as a programmer, and Python agree about the

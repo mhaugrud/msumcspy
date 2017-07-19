@@ -9,7 +9,7 @@
 
 .. index:: style, readability, Pythonic, docstring
 
-Programming With Style
+Programming with Style
 ----------------------
 
 **Readability** is very important to programmers, since in practice programs are read and modified far more often then they are written.  

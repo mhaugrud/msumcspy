@@ -13,7 +13,7 @@
 
 .. index:: nested conditional, conditional; nested
 
-Nested conditionals
+Nested Conditionals
 -------------------
 
 One conditional can also be **nested** within another. For example, assume we have two integer variables, ``x`` and ``y``.

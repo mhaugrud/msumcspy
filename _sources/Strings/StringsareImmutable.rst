@@ -13,7 +13,7 @@
 
 .. index:: mutable, immutable
 
-Strings are Immutable
+Strings Are Immutable
 ---------------------
 
 One final thing that makes strings different from some other Python collection types is that

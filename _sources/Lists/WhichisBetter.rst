@@ -11,7 +11,7 @@
    :prefix: list-20-
    :start: 1
 
-Which is Better?
+Which Is Better?
 ----------------
 
 Anything that can be done with modifiers can also be done with pure functions.

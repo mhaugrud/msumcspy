@@ -13,7 +13,7 @@
 
 .. index:: optional parameter, default value, parameter; optional
 
-Optional parameters
+Optional Parameters
 -------------------
 
 To find the locations of the second or third occurrence of a character in a string, we can modify the ``find`` function, adding a third parameter for the starting position in the search string:

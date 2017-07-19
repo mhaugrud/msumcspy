@@ -13,7 +13,7 @@
 
 .. index:: traversal; eureka, eureka
 
-A ``find`` function
+A ``find`` Function
 -------------------
 
 Here is an implementation for the ``find`` method.

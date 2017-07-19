@@ -13,7 +13,7 @@
 
 .. index:: debug, bug
 
-What is Debugging?
+What Is Debugging?
 ------------------
 
 Programming is a complex process.  Since it is done by human beings, errors may often occur.

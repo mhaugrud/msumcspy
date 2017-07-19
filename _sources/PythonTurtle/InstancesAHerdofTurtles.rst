@@ -13,7 +13,7 @@
 
 .. index:: instance, chunking
 
-Instances --- A Bale of Turtles
+Instances --- a Bale of Turtles
 -------------------------------
 
 Just like we can have many different integers in a program, we can have many turtles.  Each of them is an independent object and we call each one an **instance** of the Turtle type (class).  Each instance has its own attributes and methods --- so alex might draw with a thin black pen and be at some position, while tess might be going in her own direction with a fat pink pen.  So here is what happens when alex completes a square and tess completes her triangle:
