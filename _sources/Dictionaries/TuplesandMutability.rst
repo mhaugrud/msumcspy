@@ -11,7 +11,7 @@
    :prefix: list-26-
    :start: 1
 
-.. index:: tuple, immutable, collection; data type, collection; sequential, collection; heterogeneous
+.. index:: tuple, tuple; operations, immutable, collection; data type, collection; sequential, collection; heterogeneous
 
 Tuples
 ------
@@ -29,7 +29,7 @@ enclose tuples in parentheses:
 
 .. sourcecode:: python
 
-    julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
+   julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
 
 Tuples are useful for representing what other languages often call *records* ---
 some related information that belongs together, like your student record.  There is
@@ -47,22 +47,22 @@ Tuples support many of the same operations as strings and lists:
 
 .. activecode:: tda
 
-   julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
+   julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
    print(type(julia))
 
 .. admonition:: Extend this program ...
 
    - On line 3, display the length of the tuple
    - On line 4, display the element at index 2 in the tuple
-   - Starting on line 5, write a loop that iterates over the **items** in the tuple and displays them
+   - Starting on line 5, write a loop that iterates over the **items** (not index) in the tuple and displays them
 
 
 As with strings, if we try to use item assignment to modify one of the elements of the tuple, we get an error.
 
 .. sourcecode:: python
 
-    julia[0] = 'X'
-    TypeError: 'tuple' object does not support item assignment
+   julia[3] = 'Duplicity'
+   TypeError: 'tuple' object does not support item assignment
 
 Of course, even if we can't modify the elements of a tuple, we can make a variable
 reference a new tuple holding different information.  To construct the new tuple,
@@ -73,12 +73,12 @@ the new tuple.
 
 .. activecode:: tdb
 
-    julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
-    print(julia[2])
-    print(julia[2:6])
+   julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
+   print(julia[2])
+   print(julia[2:6])
 
-    julia = julia[:3] + ("Eat Pray Love", 2010) + julia[5:]
-    print(julia)
+   julia = julia[:3] + ("Duplicity", 2009) + julia[5:]
+   print(julia)
 
 
 To create a tuple with a single element (but you're probably not likely
@@ -87,10 +87,10 @@ the final comma, Python treats the ``(5)`` below as an integer in parentheses:
 
 .. activecode:: tdc
 
-    tup = (5,)
-    print(type(tup))
+   tup = (5,)
+   print(type(tup))
 
-    x = (5)
-    print(type(x))
+   x = (5)
+   print(type(x))
  
 

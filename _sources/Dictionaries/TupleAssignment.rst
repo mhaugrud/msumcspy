@@ -11,6 +11,8 @@
    :prefix: list-27-
    :start: 1
 
+.. index:: tuple; assignment
+ 
 Tuple Assignment
 ----------------
 
@@ -20,7 +22,7 @@ on the right of the assignment.
 
 .. activecode:: tdd
 
-   julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
+   julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
    (first_name, last_name, birth_year, movie, movie_year, profession, birth_place) = julia
    print(last_name, birth_place)
 
