@@ -13,8 +13,8 @@
 
 .. index:: tuple, immutable, collection; data type, collection; sequential, collection; heterogeneous
 
-Tuples and Mutability
----------------------
+Tuples
+------
 
 So far you have seen two types of sequential collections: strings, which are made up of
 characters; and lists, which are made up of elements of any type.  One of the
@@ -36,20 +36,26 @@ some related information that belongs together, like your student record.  There
 no description of what each of these *fields* means, but we can guess.  A tuple
 lets us "chunk" together related information and use it as a single thing.
 
-Tuples support many of the same operations as strings and
-lists:
+Tuples support many of the same operations as strings and lists:
  
    * [ ] (index operator)
-
-   * in
-
+   * in (membership)
    * slicing
-
    * \+ (concatenation)
-
    * len
-
    * iteration
+
+.. activecode:: tda
+
+   julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
+   print(type(julia))
+
+.. admonition:: Extend this program ...
+
+   - On line 3, display the length of the tuple
+   - On line 4, display the element at index 2 in the tuple
+   - Starting on line 5, write a loop that iterates over the **items** in the tuple and displays them
+
 
 As with strings, if we try to use item assignment to modify one of the elements of the tuple, we get an error.
 
@@ -65,14 +71,11 @@ bits to make the new tuple.  So ``julia`` has a new recent film, and we might wa
 to change her tuple.  We can easily slice off the parts we want and concatenate them with
 the new tuple.
 
-.. activecode:: tda
-
+.. activecode:: tdb
 
     julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
     print(julia[2])
     print(julia[2:6])
-
-    print(len(julia))
 
     julia = julia[:3] + ("Eat Pray Love", 2010) + julia[5:]
     print(julia)
@@ -82,7 +85,7 @@ To create a tuple with a single element (but you're probably not likely
 to do that too often), we have to include the final comma, because without
 the final comma, Python treats the ``(5)`` below as an integer in parentheses:
 
-.. activecode:: tdb
+.. activecode:: tdc
 
     tup = (5,)
     print(type(tup))

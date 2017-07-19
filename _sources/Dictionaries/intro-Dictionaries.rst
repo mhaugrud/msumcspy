@@ -85,7 +85,7 @@ The key ``'two'`` yields the value ``'dos'``.
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: tde
+    .. activecode:: tdi
 
 
 **Check your understanding**

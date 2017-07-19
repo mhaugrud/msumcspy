@@ -16,7 +16,7 @@ Tuples as Return Values
 
 In the Functions chapter, we saw how to use a tuple as a function's return value. We also saw we can unpack the tuple into simple variables.
 
-.. activecode:: tdc
+.. activecode:: tdg
 
     
     def circleInfo(r):
@@ -36,10 +36,10 @@ In the Functions chapter, we saw how to use a tuple as a function's return value
 
 .. admonition:: Extend the program ...
 
-   In line 11, use the index operator (twice) to print the two elements of the tuple.
+   In line 11, use the index operator (two times) to print the two elements of the tuple.
 
 .. note::
    This workspace is provided for your convenience. You can use this activecode window to try out anything you like.
 
-   .. activecode:: tdd
+   .. activecode:: tdh
 

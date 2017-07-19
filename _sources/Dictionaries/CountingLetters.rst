@@ -19,7 +19,7 @@ Simple Solution: Counting a Single Letter
 We have previously discussed the solution to the problem of counting the number of times a specific letter appears
 in a string.  In the case below, that specific letter is "a".
 
-.. activecode:: tdn
+.. activecode:: tdr
 
     def countA(text): 
         count = 0
@@ -78,7 +78,7 @@ Here is a start to the development of the function.
 
 #. Iterate through the characters of the string, one character at a time.
 
-.. activecode:: tdo
+.. activecode:: tds
 
 
 

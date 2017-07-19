@@ -21,7 +21,7 @@ two variables refer to the same dictionary object, changes to one affect the oth
 For example, ``opposites`` is a dictionary that contains pairs
 of opposites.
 
-.. activecode:: tdm
+.. activecode:: tdq
     
     opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
     alias = opposites

@@ -18,9 +18,11 @@ Python has a very powerful **tuple assignment** feature that allows a tuple of v
 on the left of an assignment to be assigned values from a tuple
 on the right of the assignment.
 
-.. sourcecode:: python
+.. activecode:: tdd
 
-    (name, surname, birth_year, movie, movie_year, profession, birth_place) = julia
+   julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
+   (first_name, last_name, birth_year, movie, movie_year, profession, birth_place) = julia
+   print(last_name, birth_place)
 
 This does the equivalent of seven assignment statements, all on one easy line.  
 One requirement is that the number of variables on the left must match the number
@@ -30,17 +32,29 @@ Once in a while, it is useful to swap the values of two variables.  With
 conventional assignment statements, we have to use a temporary variable. For
 example, to swap ``a`` and ``b``:
 
-.. sourcecode:: python
+.. activecode:: tde
 
-    temp = a
-    a = b
-    b = temp
+   a = 8
+   b = 1
+
+   temp = a
+   a = b
+   b = temp
+
+   print('a:', a)
+   print('b:', b)
 
 Tuple assignment solves this problem neatly:
 
-.. sourcecode:: python
+.. activecode:: tdf
 
-    (a, b) = (b, a)
+   a = 8
+   b = 1
+
+   (a, b) = (b, a)
+
+   print('a:', a)
+   print('b:', b)
 
 The left side is a tuple of variables; the right side is a tuple of values.
 Each value is assigned to its respective variable. All the expressions on the

@@ -13,8 +13,8 @@
 
 .. index:: string; method, dot notation
 
-``string`` Methods
-------------------
+String Methods
+--------------
 
 We previously saw that each turtle instance has its own attributes and 
 a number of methods that can be applied to the instance.  For example,

@@ -34,12 +34,12 @@ The ``keys`` method returns what Python 3 calls a **view** of its underlying key
 We can iterate over the view or turn the view into a 
 list by using the ``list`` conversion function.
 
-.. activecode:: tdf
+.. activecode:: tdj
     
     inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
   
     for akey in inventory.keys():     # the order in which we get the keys is not defined
-       print("Got key", akey, "which maps to value", inventory[akey])     
+        print("Got key", akey, "which maps to value", inventory[akey])     
        
     ks = list(inventory.keys())
     print(ks)
@@ -47,20 +47,20 @@ list by using the ``list`` conversion function.
     
 It is so common to iterate over the keys in a dictionary that you can omit the ``keys`` method call in the ``for`` loop --- iterating over a dictionary implicitly iterates over its keys.
 
-.. activecode:: tdg
+.. activecode:: tdk
     
     inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
   
     
     for k in inventory:     
-       print("Got key", k)
+        print("Got key", k)
 
  
 As we saw earlier with strings and lists, dictionary methods use dot notation, which specifies the name of the method to the right of the dot and the name of the object on which to apply the method immediately to the left of the dot. The empty parentheses in the case of ``keys`` indicate that this method takes no parameters.
 
 The ``values`` and ``items`` methods are similar to ``keys``. They return  view objects which can be turned into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.
 
-.. activecode:: tdh
+.. activecode:: tdl
     
     inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}  
     
@@ -78,7 +78,7 @@ Note that tuples are often useful for getting both the key and the value at the 
     
 The ``in`` and ``not in`` operators can test if a key is in the dictionary:
 
-.. activecode:: tdi
+.. activecode:: tdm
     
     inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
 
@@ -98,7 +98,7 @@ The important difference is that ``get`` will not cause a runtime error if the k
 will instead return None.  There exists a variation of ``get`` that allows a second parameter that serves as an alternative return value
 in the case where the key is not present.  This can be seen in the final example below.  In this case, since "cherries" is not a key, return 0 (instead of None).
 
-.. activecode:: tdj
+.. activecode:: tdn
     
     inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
     
@@ -114,7 +114,7 @@ in the case where the key is not present.  This can be seen in the final example
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: tdk
+    .. activecode:: tdo
 
 
 **Check your understanding**
@@ -143,17 +143,17 @@ in the case where the key is not present.  This can be seen in the final example
 
 .. admonition:: Modify the program ...
 
-   - On lines 2 and 3, type instructions make a list of sorted keys (similar to the above multiple choice question).
-
-   - Edit line 4 to iterate over the sorted list
-   
-   .. activecode:: tdl
+   .. activecode:: tdp
     
       inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
       
       
       for akey in inventory.keys():     
           print("key:", akey, "value:", inventory[akey])     
+   
+   - On lines 2 and 3, type instructions make a list of sorted keys (similar to the above multiple choice question).
+
+   - Edit line 4 to iterate over the sorted list
    
 
 .. mchoice:: mc11e

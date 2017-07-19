@@ -70,7 +70,7 @@ The alternative version of the ``get`` method solves this problem.
 The first argument will be the key.  The second argument is the value ``get`` should
 return if the key is not in the dictionary (which would be 0 since it is sparse).
 
-.. activecode:: tdp
+.. activecode:: tdt
 
    matrix = {(0, 3): 1, (2, 1): 2, (4, 3): 3}
    print(matrix.get((0,3)))
