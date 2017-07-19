@@ -13,7 +13,7 @@
 
 .. index:: list; accumulator
 
-Functions that Produce Lists
+Functions That Produce Lists
 ----------------------------
 
 The pure version of ``doubleStuff`` above made use of an 

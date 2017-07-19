@@ -11,7 +11,7 @@
    :prefix: exceptions-1-
    :start: 1
 
-What is an exception?
+What Is an Exception?
 =====================
 
 An *exception* is a signal that a condition has occurred that can't be easily
@@ -20,7 +20,7 @@ are often defined as being "errors" but this is not always the case. All
 errors in Python are dealt with using *exceptions*, but not all
 *exceptions* are errors.
 
-Exception Handling Flow-of-control
+Exception Handling Flow-of-Control
 ==================================
 
 To explain what an *exception* does, let's review the normal "flow of control"

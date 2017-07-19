@@ -1,8 +1,8 @@
-More about Iteration
+More About Iteration
 ::::::::::::::::::::
 
 .. toctree::
-   :caption: More about Iteration
+   :caption: More About Iteration
    :maxdepth: 2
 
    SimpleTables.rst

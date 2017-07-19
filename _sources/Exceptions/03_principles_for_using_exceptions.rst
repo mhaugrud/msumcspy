@@ -11,7 +11,7 @@
    :prefix: exceptions-3-
    :start: 1
 
-Principles for using Exceptions
+Principles for Using Exceptions
 ===============================
 
 There are many bad examples of *exception* use on the Internet. The purpose

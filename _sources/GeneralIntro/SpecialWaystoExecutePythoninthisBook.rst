@@ -13,7 +13,7 @@
 
 .. index:: activecode, codelens
 
-Executing Python in this Book
+Executing Python in This Book
 -----------------------------
 
 .. video:: codelensvid

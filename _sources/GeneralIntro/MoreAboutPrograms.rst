@@ -13,7 +13,7 @@
 
 .. index:: program
 
-More about Programs
+More About Programs
 -------------------
 
 A **program** is a sequence of instructions that specifies how to perform a

@@ -11,7 +11,7 @@
    :prefix: list-16-
    :start: 1
 
-Append versus Concatenate
+Append Versus Concatenate
 -------------------------
 
 The ``append`` method adds a new item to the end of a list.  It is also possible to add a new item to the end of a list by using the concatenation operator.  However, you need to be careful.

@@ -3,7 +3,7 @@
 Polymorphism
 ------------
 
-Distinguishing between Classes
+Distinguishing Between Classes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We have often used the ``type`` function to see what kind of an object we are examining. Python also provides a similar Boolean function ``isinstance`` that requires two parameters: an object and a particular type. It then returns True if the object is of the specified type.

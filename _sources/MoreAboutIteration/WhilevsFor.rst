@@ -13,7 +13,7 @@
 
 .. index:: iteration; definite, iteration; indefinite
 
-Choosing between ``for`` and ``while``
+Choosing Between ``for`` and ``while``
 --------------------------------------
 
 ``for`` loops are simpler but ``while`` loops provide more control. 

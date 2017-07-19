@@ -32,7 +32,7 @@ because you can't do anything meaningful to recover from the abnormal condition.
   except:
     # If any exception was raised, then execute this code block.
 
-Catch A Specific Exception
+Catch a Specific Exception
 --------------------------
 
 This is perhaps the most often used syntax. It catches one specific condition
@@ -61,7 +61,7 @@ Catch Multiple Specific Exceptions
   else:
     # If there was no exception then execute this block.
 
-Clean-up After Exceptions
+Clean-Up After Exceptions
 -------------------------
 
 If you have code that you want to be executed even if exceptions occur, you
