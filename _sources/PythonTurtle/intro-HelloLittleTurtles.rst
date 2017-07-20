@@ -7,10 +7,14 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: turtle
+.. index:: turtle, module
 
 Hello Little Turtles!
 =====================
+
+There are many **modules** in Python that provide very powerful features that we
+can use in our own programs.  Some of these can send email or fetch web pages. Others allow us to perform complex mathematical calculations.
+In this chapter we will introduce a module that allows us to create a data object called a **turtle** that can be used to draw pictures.
 
 .. video:: assignvid
     :controls:
@@ -20,10 +24,6 @@ Hello Little Turtles!
     http://media.interactivepython.org/thinkcsVideos/turtleintro.webm
 
 
-
-There are many *modules* in Python that provide very powerful features that we
-can use in our own programs.  Some of these can send email or fetch web pages. Others allow us to perform complex mathematical calculations.
-In this chapter we will introduce a module that allows us to create a data object called a **turtle** that can be used to draw pictures.
 
 .. turtles and get them
 .. turn left, etc.  Your turtle's tail is also endowed with the ability to leave

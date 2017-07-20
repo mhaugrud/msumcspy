@@ -10,6 +10,9 @@
 Variables, Expressions and Statements
 =====================================
 
+In order to get started learning any programming language there are a number of
+concepts and ideas that are necessary.
+The goal of this chapter is to introduce you to the basic vocabulary of programming and some of the fundamental building blocks of Python.
 
 
 
@@ -22,9 +25,5 @@ Variables, Expressions and Statements
     http://media.interactivepython.org/thinkcsVideos/TypesNTypeConversion.mov
     http://media.interactivepython.org/thinkcsVideos/TypesNTypeConversion.webm
 
-In order to get started learning any programming language there are a number of
-concepts and ideas that are necessary.
-The goal of this chapter is to introduce you to the basic vocabulary of programming and some of the fundamental
-building blocks of Python.
 
 

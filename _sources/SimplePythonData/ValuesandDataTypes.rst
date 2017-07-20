@@ -11,7 +11,7 @@
    :prefix: data-2-
    :start: 1
 
-.. index:: value, data type, string, integer, int, float, class, triple quoted string
+.. index:: value, data type, string, integer, int, float, class, triple quoted string, type, str
 
 Values and Data Types
 ---------------------

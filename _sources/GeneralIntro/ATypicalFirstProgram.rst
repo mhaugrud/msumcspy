@@ -32,7 +32,7 @@ Here is the example in activecode.  Give it a try!
 
     print("Hello, World!")
 
-The quotation marks in the program mark the beginning and end of the value. They don't appear in the result.
+The quotation marks in the program mark the beginning and end of the string of charachers to print. They don't appear in the result.
 
 .. admonition:: Modify the program ...
 

@@ -15,18 +15,18 @@
 Modules and Getting Help
 ------------------------
 
+A **module** is a file containing Python definitions and statements intended
+for use in other Python programs. There are many Python modules that come with
+Python as part of the **standard library**. We have already used one of these quite extensively,
+the ``turtle`` module.  Recall that once we import the module, we can use things
+that are defined inside.
+
 .. video:: inputvid
     :controls:
     :thumb: ../_static/modules.png
 
     http://media.interactivepython.org/thinkcsVideos/modules.mov
     http://media.interactivepython.org/thinkcsVideos/modules.webm
-
-A **module** is a file containing Python definitions and statements intended
-for use in other Python programs. There are many Python modules that come with
-Python as part of the **standard library**. We have already used one of these quite extensively,
-the ``turtle`` module.  Recall that once we import the module, we can use things
-that are defined inside.
 
 
 .. activecode:: sla

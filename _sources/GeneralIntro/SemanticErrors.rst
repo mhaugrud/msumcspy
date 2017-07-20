@@ -30,7 +30,7 @@ looking at the output of the program and trying to figure out what it is doing.
 
 .. mchoice:: mc1n
    :answer_a: Attempting to divide by 0.
-   :answer_b: Forgetting a closing parenthesis character where one is required.
+   :answer_b: Forgetting a closing parenthesis character ``)`` where one is required.
    :answer_c: Dividing the gallons consumed by the miles driven when calculating the MPG of a vehicle.
    :correct: c
    :feedback_a: Python cannot reliably tell if you are trying to divide by 0 until it is executing your program (e.g., you might be asking the user for a value and then dividing by that value - you cannot know what value the user will enter before you run the program).

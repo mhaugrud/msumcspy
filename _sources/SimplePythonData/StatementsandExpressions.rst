@@ -16,18 +16,18 @@
 Statements and Expressions
 --------------------------
 
+A **statement** is an instruction that the Python interpreter can execute. We have only seen the assignment statement so far.  Some other kinds of statements that we'll see shortly are ``while`` statements, ``for`` statements, ``if`` statements,  and ``import`` statements.  (There are other kinds too!)
+
+
+
+An **expression** is a combination of values, variables, operators, and calls to functions. Expressions need to be evaluated.  If you ask Python to ``print`` an expression, the interpreter **evaluates** the expression and displays the result.
+
 .. video:: expression_vid
     :controls:
     :thumb: ../_static/expressions.png
 
     http://media.interactivepython.org/thinkcsVideos/Expressions.mov
     http://media.interactivepython.org/thinkcsVideos/Expressions.webm
-
-A **statement** is an instruction that the Python interpreter can execute. We have only seen the assignment statement so far.  Some other kinds of statements that we'll see shortly are ``while`` statements, ``for`` statements, ``if`` statements,  and ``import`` statements.  (There are other kinds too!)
-
-
-
-An **expression** is a combination of values, variables, operators, and calls to functions. Expressions need to be evaluated.  If you ask Python to ``print`` an expression, the interpreter **evaluates** the expression and displays the result.
 
 .. activecode:: sdo
     :nocanvas:

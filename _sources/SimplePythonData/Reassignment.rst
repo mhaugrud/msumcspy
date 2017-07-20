@@ -16,6 +16,8 @@
 Reassignment
 ------------
 
+As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
+
 .. video:: reassignmentvid
     :controls:
     :thumb: ../_static/reassignmentthumb.png
@@ -23,8 +25,6 @@ Reassignment
     http://media.interactivepython.org/thinkcsVideos/reassignment.mov
     http://media.interactivepython.org/thinkcsVideos/reassignment.webm
 
-
-As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
 
 .. activecode:: sdx
 

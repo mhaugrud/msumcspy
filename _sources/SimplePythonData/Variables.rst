@@ -16,14 +16,14 @@
 Variables
 ---------
 
+One of the most powerful features of a programming language is the ability to manipulate **variables**. A variable is a name that refers to a value.
+
 .. video:: assignvid
     :controls:
     :thumb: ../_static/assignment.png
 
     http://media.interactivepython.org/thinkcsVideos/Variables.mov
     http://media.interactivepython.org/thinkcsVideos/Variables.webm
-
-One of the most powerful features of a programming language is the ability to manipulate **variables**. A variable is a name that refers to a value.
 
 **Assignment statements** create new variables and also give them values to refer to.
 

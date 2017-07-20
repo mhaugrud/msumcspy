@@ -16,6 +16,8 @@
 Updating Variables
 ------------------
 
+One of the most common forms of reassignment is an **update** where the new value of the variable depends on the old.  
+
 .. video:: updatevid
     :controls:
     :thumb: ../_static/updatethumb.png
@@ -23,7 +25,7 @@ Updating Variables
     http://media.interactivepython.org/thinkcsVideos/update.mov
     http://media.interactivepython.org/thinkcsVideos/update.webm
 
-One of the most common forms of reassignment is an **update** where the new value of the variable depends on the old.  For example,
+For example,
 
 .. sourcecode:: python
 
