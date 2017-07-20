@@ -26,6 +26,7 @@ This book provides two special ways to execute Python programs.  Both techniques
     http://media.interactivepython.org/thinkcsVideos/activecodelens.webm
 
 
+|
 
 First, you can write, modify, and execute programs using a unique **activecode** interpreter that allows you to execute Python code right in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent environment for learning a programming language like Python since you can experiment with the language as you are reading.
 
