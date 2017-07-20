@@ -18,15 +18,13 @@ Syntax Errors
 
 Python can only execute a program if the program is syntactically correct;
 otherwise, the process fails and returns an error message.  **Syntax** refers
-to the structure of a program and the rules about that structure. For example,
-in English, a sentence must begin with a capital letter and end with a period.
+to the grammar of the language: the structure of a program and the rules about that structure. For example, in English, a sentence must begin with a capital letter and end with a period.
 this sentence contains a **syntax error**. So does this one
 
 For most readers, a few syntax errors are not a significant problem, which is
 why we can read the poetry of e. e. cummings without problems.
 Python is not so forgiving. If there is a single syntax error anywhere in your
-program, Python will display an error message and quit.  You will not be able
-to complete the execution of your program. During the first few weeks of your programming career, you
+program, Python will display an error message. Python will not even begin to execute the instructions in your program. During the first few weeks of your programming career, you
 will probably spend a lot of time tracking down syntax errors. However, as you gain
 experience, you will make fewer errors and you will also be able to find your errors faster.
 

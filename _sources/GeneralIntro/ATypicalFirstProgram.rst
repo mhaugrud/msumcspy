@@ -43,7 +43,7 @@ Some people judge the quality of a programming language by the simplicity of the
 
 **Check your understanding**
 
-.. mchoice:: mc1q
+.. mchoice:: mc1s
    :answer_a: sends information to the printer to be printed on paper.
    :answer_b: displays a value on the screen.
    :answer_c: tells the computer to put the information in print, rather than cursive, format.

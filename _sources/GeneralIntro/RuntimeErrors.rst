@@ -17,12 +17,11 @@ Runtime Errors
 --------------
 
 The second type of error is a runtime error, so called because the error does
-not appear until you run the program. These errors are also called
+not appear until you run the program. Python begins to execute the instructions in your program. Python then encounters an instruction in your program that is illegal to perform. At this point, Python stops executing the program and displays an error message. These errors are also called
 **exceptions** because they usually indicate that something exceptional (and
-bad) has happened.
+bad) has happened. 
 
-Runtime errors are rare in the simple programs you will see in the first few
-chapters, so it might be a while before you encounter one.
+There are many kinds of runtime errors. We will will explore them more deeply in a future chapter.
 
 **Check your understanding**
 
@@ -38,3 +37,16 @@ chapters, so it might be a while before you encounter one.
    Which of the following is a run-time error?
 
 
+.. mchoice:: mc1m
+   :answer_a: The programmer.
+   :answer_b: The compiler / interpreter.
+   :answer_c: The computer.
+   :answer_d: The teacher / instructor.
+   :correct: b
+   :feedback_a: Programmers rarely find all the runtime errors, there is a computer program that will do it for us.
+   :feedback_b: If an instruction is illegal to perform at that point in the execution, the interpreter will stop with a message describing the exception.
+   :feedback_c: Well, sort of.  But it is a special thing in the computer that does it.  The stand alone computer without this additional piece can not do it.
+   :feedback_d: Your teacher and instructor may be able to find most of your runtime errors, but only because they have experience looking at code and possibly writing code.  With experience runtime errors are easier to find.  But we also have an automated way of finding these types of errors.
+
+
+   Who or what typically finds runtime errors?

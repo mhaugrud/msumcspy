@@ -118,7 +118,7 @@ natural languages, can make a big difference in a formal language.
 
 **Check your understanding**
 
-.. mchoice:: mc1o
+.. mchoice:: mc1q
    :answer_a: natural languages can be parsed while formal languages cannot.
    :answer_b: ambiguity, redundancy, and literalness.
    :answer_c: there are no differences between natural and formal languages.
@@ -131,7 +131,7 @@ natural languages, can make a big difference in a formal language.
 
    The differences between natural and formal languages include:
 
-.. mchoice:: mc1p
+.. mchoice:: mc1r
    :answer_a: True
    :answer_b: False
    :correct: b
