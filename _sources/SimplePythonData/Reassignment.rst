@@ -25,6 +25,7 @@ As we have mentioned previously, it is legal to make more than one assignment to
     http://media.interactivepython.org/thinkcsVideos/reassignment.mov
     http://media.interactivepython.org/thinkcsVideos/reassignment.webm
 
+|
 
 .. activecode:: sdx
 

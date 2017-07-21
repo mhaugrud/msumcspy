@@ -23,6 +23,8 @@ The ``range`` Function
    http://media.interactivepython.org/thinkcsVideos/AdvancedRange.mov
    http://media.interactivepython.org/thinkcsVideos/AdvancedRange.webm
 
+|
+
 In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration
 to happen four times.  We said that we could have used any four values.  In fact, we even used four colors.
 

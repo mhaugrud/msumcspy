@@ -27,6 +27,7 @@ A basic building block of all programs is to be able to repeat some code over an
    http://media.interactivepython.org/thinkcsVideos/for_loop.mov
    http://media.interactivepython.org/thinkcsVideos/for_loop.webm
 
+|
 
 In Python, the **for** statement allows us to write programs that implement iteration.   As a simple example, let's say we have some friends, and we'd like to send them each an email inviting them to our party.  We don't quite know how to send email yet, so for the moment we'll just print a message for each friend.
 

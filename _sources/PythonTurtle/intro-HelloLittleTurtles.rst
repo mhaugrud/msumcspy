@@ -23,11 +23,7 @@ In this chapter we will introduce a module that allows us to create a data objec
     http://media.interactivepython.org/thinkcsVideos/turtleintro.mov
     http://media.interactivepython.org/thinkcsVideos/turtleintro.webm
 
-
-
-.. turtles and get them
-.. turn left, etc.  Your turtle's tail is also endowed with the ability to leave
-.. to draw shapes and patterns.
+|
 
 Turtle graphics, as it is known, is based on a very simple
 metaphor. Imagine that you have a turtle that understands English.  You can

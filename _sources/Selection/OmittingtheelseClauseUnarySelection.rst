@@ -24,7 +24,7 @@ Omitting the ``else`` Clause: Unary Selection
    http://media.interactivepython.org/thinkcsVideos/unaryselection.webm
 
 
-
+|
 
 .. sidebar::  Flowchart of an **if** with no **else**
 

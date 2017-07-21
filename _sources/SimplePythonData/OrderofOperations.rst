@@ -33,7 +33,7 @@ When more than one operator appears in an expression, the order of evaluation de
     http://media.interactivepython.org/thinkcsVideos/associativity.mov
     http://media.interactivepython.org/thinkcsVideos/associativity.webm
 
-
+|
 
 Python follows the same precedence rules for its mathematical operators that mathematics does.
 

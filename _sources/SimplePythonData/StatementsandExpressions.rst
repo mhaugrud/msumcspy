@@ -29,6 +29,8 @@ An **expression** is a combination of values, variables, operators, and calls to
     http://media.interactivepython.org/thinkcsVideos/Expressions.mov
     http://media.interactivepython.org/thinkcsVideos/Expressions.webm
 
+|
+
 .. activecode:: sdo
     :nocanvas:
 

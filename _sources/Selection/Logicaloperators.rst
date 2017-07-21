@@ -13,7 +13,7 @@
 
 .. index:: truth table, logical operator, operator; logical
 
-Logical operators
+Logical Operators
 -----------------
 
 There are three **logical operators**: ``and``, ``or``, and ``not``. The semantics (meaning) of these operators is similar to their meaning in English.

@@ -15,6 +15,8 @@
 The ``while`` Statement
 -----------------------
 
+There is another Python statement that can also be used to build an iteration.  It is called the ``while`` statement.
+
 .. video:: whileloop
    :controls:
    :thumb: ../_static/whileloop.png
@@ -22,7 +24,8 @@ The ``while`` Statement
    http://media.interactivepython.org/thinkcsVideos/whileloop.mov
    http://media.interactivepython.org/thinkcsVideos/whileloop.webm
 
-There is another Python statement that can also be used to build an iteration.  It is called the ``while`` statement.
+|
+
 The ``while`` statement provides a much more general mechanism for iterating.  Similar to the ``if`` statement, it uses
 a boolean expression to control the flow of execution.  The difference is that the body of a while loop will be **repeated as long as** the controlling boolean expression evaluates to ``True``. The body of an if statement is not executed more than once.
 

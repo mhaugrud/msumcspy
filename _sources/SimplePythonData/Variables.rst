@@ -25,6 +25,8 @@ One of the most powerful features of a programming language is the ability to ma
     http://media.interactivepython.org/thinkcsVideos/Variables.mov
     http://media.interactivepython.org/thinkcsVideos/Variables.webm
 
+|
+
 **Assignment statements** create new variables and also give them values to refer to.
 
 .. sourcecode:: python

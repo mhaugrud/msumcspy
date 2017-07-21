@@ -28,6 +28,7 @@ that are defined inside.
     http://media.interactivepython.org/thinkcsVideos/modules.mov
     http://media.interactivepython.org/thinkcsVideos/modules.webm
 
+|
 
 .. activecode:: sla
     :nocodelens:

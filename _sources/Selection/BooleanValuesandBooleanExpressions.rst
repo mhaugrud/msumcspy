@@ -16,6 +16,10 @@
 Boolean Values and Boolean Expressions
 --------------------------------------
 
+The Python type for storing true and false values is called ``bool``, named
+after the British mathematician, George Boole. George Boole created *Boolean
+Algebra*, which is the basis of all modern computer arithmetic.
+
 .. video:: booleanexpressions
    :controls:
    :thumb: ../_static/booleanexpressions.png
@@ -23,9 +27,7 @@ Boolean Values and Boolean Expressions
    http://media.interactivepython.org/thinkcsVideos/booleanexpressions.mov
    http://media.interactivepython.org/thinkcsVideos/booleanexpressions.webm
 
-The Python type for storing true and false values is called ``bool``, named
-after the British mathematician, George Boole. George Boole created *Boolean
-Algebra*, which is the basis of all modern computer arithmetic.
+|
 
 There are only two **boolean values**.  They are ``True`` and ``False``.  Capitalization
 is important, since ``true`` and ``false`` are not boolean values (remember Python is case

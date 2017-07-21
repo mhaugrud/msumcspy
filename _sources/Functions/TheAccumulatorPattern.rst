@@ -16,6 +16,8 @@
 The Accumulator Pattern
 -----------------------
 
+In the previous example, we wrote a function that computes the square of a number.  The algorithm we used in the function was simple: multiply the number by itself. In this section we will reimplement the square function and use a different algorithm, one that relies on addition instead of multiplication.
+
 .. video:: function_accumulator_pattern
    :controls:
    :thumb: ../_static/accumulatorpattern.png
@@ -23,7 +25,7 @@ The Accumulator Pattern
    http://media.interactivepython.org/thinkcsVideos/accumulatorpattern.mov
    http://media.interactivepython.org/thinkcsVideos/accumulatorpattern.webm
 
-In the previous example, we wrote a function that computes the square of a number.  The algorithm we used in the function was simple: multiply the number by itself. In this section we will reimplement the square function and use a different algorithm, one that relies on addition instead of multiplication.
+|
 
 If you want to multiply two numbers together, the most basic approach is to think of it as repeating the process of adding one number to itself.  The number of repetitions is where the second number comes into play.  For example, if we wanted to multiply three and five, we could think about it as adding three to itself five times.  Three plus three is six, plus three is nine, plus three is 12, and finally plus three is 15.  Generalizing this, if we want to implement the idea of squaring a number, call it `n`, we would add `n` to itself `n` times.
 

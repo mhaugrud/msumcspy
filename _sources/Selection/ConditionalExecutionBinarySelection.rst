@@ -16,6 +16,11 @@
 Conditional Execution: Binary Selection
 ---------------------------------------
 
+In order to write useful programs, we almost always need the ability to check
+conditions and change the behavior of the program accordingly. **Selection statements**, sometimes
+also referred to as **conditional statements**, give us this ability. The simplest form of selection is the **if statement**.  
+This is sometimes referred to as **binary selection** since there are two possible paths of execution.
+
 .. video:: binaryselection
    :controls:
    :thumb: ../_static/binaryselection.png
@@ -23,11 +28,7 @@ Conditional Execution: Binary Selection
    http://media.interactivepython.org/thinkcsVideos/binaryselection.mov
    http://media.interactivepython.org/thinkcsVideos/binaryselection.webm
 
-
-In order to write useful programs, we almost always need the ability to check
-conditions and change the behavior of the program accordingly. **Selection statements**, sometimes
-also referred to as **conditional statements**, give us this ability. The simplest form of selection is the **if statement**.  
-This is sometimes referred to as **binary selection** since there are two possible paths of execution.
+|
 
 .. activecode:: bod
 

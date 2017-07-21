@@ -27,6 +27,7 @@ In order to do this, we need a way to get **input** from the user.  Luckily, in 
     http://media.interactivepython.org/thinkcsVideos/input.mov
     http://media.interactivepython.org/thinkcsVideos/input.webm
 
+|
 
 .. sourcecode:: python
 

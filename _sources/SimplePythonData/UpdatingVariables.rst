@@ -25,6 +25,8 @@ One of the most common forms of reassignment is an **update** where the new valu
     http://media.interactivepython.org/thinkcsVideos/update.mov
     http://media.interactivepython.org/thinkcsVideos/update.webm
 
+|
+
 For example,
 
 .. sourcecode:: python
