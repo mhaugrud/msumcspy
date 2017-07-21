@@ -43,7 +43,7 @@ Let's try the program again, but this time in an activecode:
    print(final_time_int)
 
 
-Aha!  Now we have an error message that might be useful.  The name error tells us that  ``wait_time_int`` is not defined.  It also tells us that the error is on line 5.  Thats **really** useful information.  Now look at line five and you will see that ``wait_time_int`` is used on both the left and the right hand side of the assignment statement. 
+Aha!  Now we have an error message that might be useful.  The name error tells us that  ``wait_time_int`` is not defined.  It also tells us that the error is on line 5.  That's **really** useful information.  Now look at line five and you will see that ``wait_time_int`` is used on both the left and the right hand side of the assignment statement. 
 
 .. mchoice:: mcdb
    :answer_a: You cannot use a variable on both the left and right hand sides of an assignment statement.
@@ -54,7 +54,7 @@ Aha!  Now we have an error message that might be useful.  The name error tells u
    :feedback_b: Yes.  Variables must already have values in order to be used on the right hand side.
    :feedback_c: No, No, No!
 
-   Which of the following explains why ``wait_time_int = int(wait_time_int)`` is an error.
+   Which of the following explains why ``wait_time_int = int(wait_time_int)`` is an error?
 
 
 In writing and using this book over the last few years we have collected a lot of statistics about the programs in this book.  Here are some statistics about error messages for the exercise we have been looking at.
@@ -89,7 +89,7 @@ Syntax Errors
 
 Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say. The Python interpreter cannot translate your source code into object code. So **your program cannot even begin to run**.
 
-Usually SyntaxErrors can be traced back to missing punctuation characters, such as parenthesis, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.
+Usually SyntaxErrors can be traced back to missing punctuation characters, such as parentheses, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.
 
 Here are some examples of syntax errors in the example program we have been using.  See if you can figure out what caused them.
 
