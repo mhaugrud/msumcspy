@@ -35,5 +35,12 @@ Glossary
 	    A sequential collection of items, similar to a list.  Any python object can be an element of a tuple.  However, unlike a list, tuples are immutable.
 
 
+    tuple assignment
+        An assignment to all of the elements in a tuple using a single
+        assignment statement. Tuple assignment occurs in parallel rather than
+        in sequence, making it useful for swapping values.
+
+
+
 
 

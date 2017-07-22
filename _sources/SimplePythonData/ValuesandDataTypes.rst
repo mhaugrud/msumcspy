@@ -36,7 +36,7 @@ Not surprisingly, strings belong to the class **str** and integers belong to the
 
 .. note::
 
-	When we show the value of a string using the ``print`` function, such as in the third example above, the quotes are no longer present.  The value of the string is the sequence of characters inside the quotes.  The quotes are only necessary to help Python know what the value is.
+	When we show the value of a string using the ``print`` function, such as in the third example above, the quotes are not present in the output.  The value of the string is the sequence of characters inside the quotes.  The quotes are only necessary to help Python know what the value is.
 
 
 In the Python shell, it is not necessary to use the ``print`` function to see the values shown above.  The shell evaluates the Python function and automatically prints the result.  For example, consider the shell session shown below.  When
@@ -124,12 +124,11 @@ Triple quoted strings can even span multiple lines:
 .. activecode:: sdf
     :nocanvas:
 
-    message = 'This message
+    print('This message
 
     spans several
-    lines.'
+    lines.')
 
-    print(message)
 
 .. admonition:: Fix the error ...
 
