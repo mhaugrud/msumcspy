@@ -53,7 +53,6 @@ So far so good.  Now let's take the next step.  We need to figure out what the t
 
    final_time = current_time + wait_time
    print(final_time)
-   # define string concatenation on the following line (answer below)
    #
 
 Hmm, when you run this example you see that something unexpected has happened. You would not realize this was an error unless you first knew what the program was supposed to do.
@@ -69,7 +68,13 @@ Hmm, when you run this example you see that something unexpected has happened. Y
 
    Which of the following best describes what is wrong with the  previous example?
 
-This error was probably pretty simple to spot, because we printed out the value of ``final_time`` and it is easy to see that the numbers were just concatenated together rather than added.  So what do we do about the problem?  We will need to convert both ``current_time`` and ``wait_time`` to ``int``.  At this stage of your programming development, it can be a good idea to include the type of the variable in the variable name itself.  So let's look at another iteration of the program that does that, and the conversion to integer.
+This error was probably pretty simple to spot, because we printed out the value of ``final_time`` and it is easy to see that the numbers were just concatenated together rather than added.  
+
+.. admonition:: Modify the program ...
+
+   On line 9 of the previous activecode, type a comment that defines string concatenation. Run.
+
+So what do we do about the problem?  We will need to convert both ``current_time`` and ``wait_time`` to ``int``.  At this stage of your programming development, it can be a good idea to include the type of the variable in the variable name itself.  So let's look at another iteration of the program that does that, and the conversion to integer.
 
 
 .. activecode:: dbc
@@ -82,7 +87,6 @@ This error was probably pretty simple to spot, because we printed out the value 
 
    final_time_int = current_time_int + wait_time_int
    print(final_time_int)
-   # what are the boundaries in this problem? (answer below)
    #
 
 
@@ -90,6 +94,11 @@ This error was probably pretty simple to spot, because we printed out the value 
 Now, that's a lot better, and in fact depending on the hours you chose, it may be exactly right.  If you entered 8 for ``current_time`` and 5 for ``wait_time`` then 13 is correct.  But if you entered 17 (5 pm) for ``current_time`` and 9 for ``wait_time`` then the result of 26 is not correct.
 
 This illustrates an important aspect of **testing**: it is important to test your code on a range of inputs.  It is especially important to test your code on **boundary conditions**.  For this particular problem, you should test your program with ``current_time`` of 0, 23, and some values in between.  You should test your ``wait_time`` for 0, and some larger values.  What about negative numbers?  Negative numbers don't make sense, and since we don't really have the tools to deal with telling the user when something is wrong we will not worry about that just yet.  
+
+.. admonition:: Modify the program ...
+
+   On line 9 of the previous activecode, type a comment that explains what the boundaries are for this problem. Run.
+
 
 So to account for those numbers that are bigger than 23, we need one final step: using the modulus operator.
 
