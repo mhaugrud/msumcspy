@@ -61,6 +61,8 @@ Typically, a Python programmer will access the last character by combining the t
 
    - Edit line 3 as shown above.
 
+Alternatively in Python, we can use **negative indices**, which count backward from the end of the string. The expression ``fruit[-1]`` yields the last letter, ``fruit[-2]`` yields the second to last, and so on.  
+Most other languages do *not* allow the negative indices, but they are a handy feature of Python!
 
 **Check your understanding**
 
@@ -102,3 +104,21 @@ Typically, a Python programmer will access the last character by combining the t
 
 
 
+.. mchoice:: mc8f1
+   :answer_a: c
+   :answer_b: k
+   :answer_c: s
+   :answer_d: Error, negative indices are illegal.
+   :correct: a
+   :feedback_a: Yes, 3 characters from the end.
+   :feedback_b: Count backward 3 characters.
+   :feedback_c: When expressed with a negative index the last character s is at index -1.
+   :feedback_d: Python does use negative indices to count backward from the end.
+
+
+   What is printed by the following statements?
+   
+   .. code-block:: python
+   
+      s = "python rocks"
+      print(s[-3])

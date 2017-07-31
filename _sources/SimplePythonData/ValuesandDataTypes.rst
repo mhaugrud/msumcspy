@@ -78,7 +78,7 @@ interchangeably.  We'll come back to a deeper understanding of what a class is i
 
 .. admonition:: Modify the program ...
 
-   On line 10 of the above activecode, type a comment that explains what e2 (in lines 4 and 9) means. Run.
+   On line 10 of the above activecode, type a comment that explains what ``e2`` (in lines 4 and 9) means. Run.
 
 What about values like ``"3"`` and ``"3.2"``? They look like numbers, but they are in quotation marks like strings.
 
