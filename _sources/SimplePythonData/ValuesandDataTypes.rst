@@ -73,8 +73,12 @@ interchangeably.  We'll come back to a deeper understanding of what a class is i
     print(type(3.0))
     print(type(3.2))
     print(type(1.2345e2))
-    # what does e2 mean? (answer on next line then run)
     #
+
+
+.. admonition:: Modify the program ...
+
+   On line 10 of the above activecode, type a comment that explains what e2 (in lines 4 and 9) means. Run.
 
 What about values like ``"3"`` and ``"3.2"``? They look like numbers, but they are in quotation marks like strings.
 

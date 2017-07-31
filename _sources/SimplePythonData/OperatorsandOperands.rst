@@ -60,13 +60,16 @@ What if, on the other hand, we had wanted to know how many *whole* hours there a
 
     hours = minutes // 60
     print(hours)
-    # what does the value for hours (line 8) mean? (answer below and run)
     #
 
 .. index:: integer division, operator; division
 
 Pay particular attention to the first two examples above.  Notice that the result of floating point division is ``1.75`` but the result of the integer division is simply ``1``. Take care that you choose the correct flavor of the division operator.  If
 you're working with expressions where you need floating point values, use the division operator ``/``.  If you want an integer result, use ``//``.
+
+.. admonition:: Modify the program ...
+
+   On line 9 of the above activecode, type a comment that explains what the value for ``hours`` (in line 8) means. Run.
 
 .. index:: modulus, operator; modulus
 

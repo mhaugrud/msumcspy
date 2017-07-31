@@ -59,8 +59,12 @@ The type constructor ``str`` uses its argument to create a string.  Remember tha
     print(type(str(123.45)))
 
     print(str("this use of str is very foolish"))
-    # why is the line above foolish? (answer on line below and run)
     #
+
+.. admonition:: Modify the program ...
+
+   On line 6 of the above activecode, type a comment that explains why the use of ``str`` in line 5 is foolish. Run.
+
 
 **Check your understanding**
 

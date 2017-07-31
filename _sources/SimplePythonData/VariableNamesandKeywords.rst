@@ -31,19 +31,15 @@ If you give a variable an illegal name, you get a syntax error.  In the example 
 
 .. activecode:: sdn
 
-    76trombones = "big parade"
-    more$ = 1000000
-    class = "Computer Science 101"
-    print(76trombones, more$, class)
+    6oclock = "dinner time"
+    million$ = 1000000
+    class = "Computer Science 152"
+    print(6oclock, million$, class)
 
 
-``76trombones`` is illegal because it does not begin with a letter.  ``more$`` is illegal because it contains an illegal character, the dollar sign. But what's wrong with ``class``?
+``6oclock`` is illegal because it does not begin with a letter.  ``million$`` is illegal because it contains an illegal character, the dollar sign. But what's wrong with ``class``?
 
 It turns out that ``class`` is one of the Python **reserved words**. Reserved words define the language's syntax rules and structure, and they cannot be used as variable names.
-
-.. admonition:: Fix the error ...
-
-   Change the three variable names to legal names.
 
 Python has thirty-something reserved words (and every now and again improvements to Python introduce or eliminate one or two):
 
@@ -60,6 +56,12 @@ You might want to keep this list handy. If the interpreter complains about one o
 
 .. note::
    Computer scientists choose names for their variables that are **meaningful** to the human readers of the program --- they help the programmer document, or remember, what the variable is used for.
+
+
+.. admonition:: Fix the error ...
+
+   In the above activecode, change the three variable names to legal and meaningful names. Run.
+
 
 .. caution::
 
