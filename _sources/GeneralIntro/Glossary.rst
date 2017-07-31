@@ -19,7 +19,7 @@ Glossary
         A general step by step process for solving a problem.
 
     bug
-        An error in a program.
+        An error in a program. **Fault** is a better term to use instead of bug.
 
     byte code
         An intermediate language between source code and object code. Many
@@ -33,6 +33,9 @@ Glossary
         Information in a program that is meant for other programmers (or anyone
         reading the source code) and has no effect on the execution of the
         program.
+
+    comment out
+        Change executable code into a comment by typing a ``#`` in front of it. This is often done when debugging a program or when experimenting with alternate algorithms.
 
     compile
         To translate a program written in a high-level language into a
@@ -104,7 +107,7 @@ Glossary
 
     semantic error
         An error in a program that makes it do something other than what the
-        programmer intended.
+        programmer intended. Also called a logic error.
 
     semantics
         The meaning of a program.
@@ -118,7 +121,7 @@ Glossary
         A program, stored in a file, in a high-level language before being compiled or interpreted.
 
     syntax
-        The structure of a program.
+        The grammar and structure of a program language.
 
     syntax error
         An error in a program that makes it impossible to parse --- and
