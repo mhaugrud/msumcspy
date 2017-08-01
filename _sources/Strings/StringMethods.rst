@@ -163,9 +163,9 @@ change the original.  You can also consult the `Python documentation for strings
 .. _Format-Strings:
 
 String Format Method
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
-In grade school quizzes a common convention is to use fill-in-the blanks. For instance,
+In quizzes a common convention is to use fill-in-the blanks. For instance,
 
     Hello _____!
 
@@ -177,7 +177,7 @@ construction, better called fill-in-the-braces. The string method ``format``,  m
 substitutions into places in a string
 enclosed in braces. Run this code:
 
-.. activecode:: stx1
+.. activecode:: sty
 
     person = input('Your name: ')
     greeting = 'Hello {}!'.format(person) 
@@ -203,7 +203,7 @@ sequence of steps. However, since the value of ``greeting`` is only
 referenced once, it can be eliminated with the more concise
 version:
 
-.. activecode:: stx2
+.. activecode:: stz
 
     person = input('Enter your name: ') 
     print('Hello {}!'.format(person)) 
@@ -211,7 +211,7 @@ version:
 There can be multiple substitutions, with data of any type.  
 Next we use floats.  Try original price $2.50  with a 7% discount:
 
-.. activecode:: stx3
+.. activecode:: st01
 
     origPrice = float(input('Enter the original price: $')) 
     discount = float(input('Enter discount percentage: ')) 
@@ -221,28 +221,20 @@ Next we use floats.  Try original price $2.50  with a 7% discount:
 
 The parameters are inserted into the braces in order.
 
-If you used the data suggested, this result is not satisfying.  
-Prices should appear with exactly two places beyond the decimal point,
-but that is not the default way to display floats.
+If you used the suggested inputs, the result is $2.5 discounted by 7% is $2.3249999999999997. While this is correct, it is not very satisfying. We would like the prices to appear with exactly two places to the right of the decimal point. But that is not the default way to display floats.
 
-Format strings can give further information inside the braces 
-showing how to specially format data.
-In particular floats can be shown with a specific number of decimal places.  
-For two decimal places, put ``:.2f`` inside the braces for the monetary values:
+However, format strings can give further information inside the braces showing how to specially format data. In particular floats can be shown with a specific number of decimal places.  
 
-.. activecode:: stx4
+.. admonition:: Correct the program ...
 
-    origPrice = float(input('Enter the original price: $')) 
-    discount = float(input('Enter discount percentage: ')) 
-    newPrice = (1 - discount/100)*origPrice
-    calculation = '${:.2f} discounted by {}% is ${:.2f}.'.format(origPrice, discount, newPrice)
-    print(calculation)
-
-The 2 in the format modifier can be replaced by another integer to round to that
-specified number of digits.
+   Type ``:.2f`` inside the first and last set of braces (for the monetary values). The output with the suggested inputs is$2.50 discounted by 7% is $2.32. Try running with different inputs.
 
 
-.. mchoice:: mc8n1
+
+The 2 in the format modifier can be replaced by another integer to round to that specified number of digits.
+
+
+.. mchoice:: mc8o
    :answer_a: Nothing - it causes an error
    :answer_b: sum of {} and {} is {}; product: {}. 2 6 8 12
    :answer_c: sum of 2 and 6 is 8; product: 12.
@@ -263,7 +255,7 @@ specified number of digits.
        print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
 
 
-.. mchoice:: mc8n2
+.. mchoice:: mc8p
    :answer_a: 2.34567 2.34567 2.34567
    :answer_b: 2.3 2.34 2.34567
    :answer_c: 2.3 2.35 2.3456700

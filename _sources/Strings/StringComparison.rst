@@ -19,7 +19,7 @@ String Comparison
 The comparison operators also work on strings. To see if two strings are equal you simply write a boolean
 expression using the equality operator.
 
-.. activecode:: sty
+.. activecode:: st02
     
     word = "banana"
     if word == "banana":
@@ -32,7 +32,7 @@ Other comparison operations are useful for putting words in
 This is similar to the alphabetical order you would use with a dictionary,
 except that all the uppercase letters come before all the lowercase letters.
 
-.. activecode:: stz
+.. activecode:: st03
 
     word = "zebra"
     
@@ -53,7 +53,7 @@ It is probably clear to you that the word `apple` would be less than (come befor
 After all, `a` is before `b` in the alphabet.  But what if we consider the words ``apple`` and ``Apple``?
 Are they the same?  
 
-.. activecode:: st0
+.. activecode:: st04
 
     print("apple" < "banana")
 
@@ -64,7 +64,7 @@ It turns out, as you recall from our discussion of variable names, that uppercas
 each character is assigned a unique integer value.  "A" is 65, "B" is 66, and "5" is 53.  The way you can
 find out the so-called **ordinal value** for a given character is to use a character function called ``ord``.
 
-.. activecode:: st1
+.. activecode:: st05
 
     print(ord("A"))
     print(ord("B"))
@@ -90,7 +90,7 @@ format, such as all lowercase, before performing the comparison.
 
 There is also a similar function called ``chr`` that converts integers into their character equivalent.
 
-.. activecode:: st2
+.. activecode:: st06
 
     print(chr(65))
     print(chr(66))
@@ -105,7 +105,7 @@ One thing to note in the last two examples is the fact that the space character 
 
 .. admonition :: Extend the program ...
 
-   - Refer to activecode st1 where you displayed the ordinal values for the letters in your name. On line 9, make a list that contains those integers. Write a for loop that iterates over that list of integers.
+   - Refer to activecode st05 where you displayed the ordinal values for the letters in your name. On line 9 (of st06), make a list that contains those integers. Write a for loop that iterates over that list of integers.
 
    - As the body of the loop, display the current integer and its character equivalent.
 
@@ -113,7 +113,7 @@ One thing to note in the last two examples is the fact that the space character 
 
 **Check your understanding**
 
-.. mchoice:: mc8o
+.. mchoice:: mc8q
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -128,7 +128,7 @@ One thing to note in the last two examples is the fact that the space character 
 
    
    
-.. mchoice:: mc8p
+.. mchoice:: mc8r
    :answer_a: True
    :answer_b: False
    :answer_c: They are the same word
@@ -145,7 +145,7 @@ One thing to note in the last two examples is the fact that the space character 
 
    
   
-.. mchoice:: mc8q
+.. mchoice:: mc8s
    :answer_a: True
    :answer_b: False
    :correct: b

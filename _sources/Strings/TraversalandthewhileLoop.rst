@@ -22,7 +22,7 @@ condition, making sure that the condition is correct, and making sure that somet
 body to guarantee that the condition will eventually fail.
 
 
-.. activecode:: st4
+.. activecode:: st08
     :nocanvas:
 
 
@@ -50,7 +50,7 @@ Here is the same example in codelens so that you can trace the values of the var
 
 **Check your understanding**
 
-.. mchoice:: mc8s
+.. mchoice:: mc8u
    :answer_a: 0
    :answer_b: 1
    :answer_c: 2
@@ -75,6 +75,6 @@ Here is the same example in codelens so that you can trace the values of the var
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: st5
+    .. activecode:: st09
 
 

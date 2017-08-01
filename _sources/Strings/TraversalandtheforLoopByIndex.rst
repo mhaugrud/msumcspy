@@ -37,7 +37,7 @@ of the characters.
 In order to make the iteration more general, we can use the ``len`` function to provide the bound for ``range``.  This is a very common pattern for traversing any sequence by position.	Make sure you understand why the range function behaves
 correctly when using ``len`` of the string as its parameter value.
 
-.. activecode:: st3
+.. activecode:: st07
     :nocanvas:
 
 
@@ -63,7 +63,7 @@ Trace the values of ``idx`` and satisfy yourself that they are correct.  In part
 
 **Check your understanding**
 
-.. mchoice:: mc8r
+.. mchoice:: mc8t
    :answer_a: 0
    :answer_b: 1
    :answer_c: 2
