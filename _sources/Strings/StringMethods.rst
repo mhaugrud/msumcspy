@@ -224,7 +224,7 @@ However, format strings can give further information inside the braces showing h
 
 .. admonition:: Correct the program ...
 
-   Type ``:.2f`` inside the first and last set of braces (for the monetary values). With the suggested inputs, the output is  $2.50 discounted by 7% is $2.32. Try running with different inputs.
+   Type ``:.2f`` inside the first and last set of braces (for the prices). With the suggested inputs, the output is  $2.50 discounted by 7% is $2.32. Try running with different inputs.
 
 
 
