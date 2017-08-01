@@ -169,11 +169,8 @@ In quizzes a common convention is to use fill-in-the blanks. For instance,
 
     Hello _____!
 
-
-and you can fill in the name of the person greeted, and combine
-given text with a chosen insertion. *We use this as an analogy:*  
-Python has a similar
-construction, better called fill-in-the-braces. The string method ``format``,  makes
+You fill in the blank with the name of the person to greet, and combine it with the salutation text. *We use this as an analogy:*  
+Python has a similar construction (better called fill-in-the-braces). The string method ``format``,  makes
 substitutions into places in a string
 enclosed in braces. Run this code:
 
@@ -221,13 +218,13 @@ Next we use floats.  Try original price $2.50  with a 7% discount:
 
 The parameters are inserted into the braces in order.
 
-If you used the suggested inputs, the result is $2.5 discounted by 7% is $2.3249999999999997. While this is correct, it is not very satisfying. We would like the prices to appear with exactly two places to the right of the decimal point. But that is not the default way to display floats.
+Using the suggested inputs, the result is $2.5 discounted by 7% is $2.3249999999999997. While this is correct, it is not very satisfying. We would like the prices to appear with exactly two places to the right of the decimal point. But that is not the default way to display floats.
 
 However, format strings can give further information inside the braces showing how to specially format data. In particular floats can be shown with a specific number of decimal places.  
 
 .. admonition:: Correct the program ...
 
-   Type ``:.2f`` inside the first and last set of braces (for the monetary values). The output with the suggested inputs is$2.50 discounted by 7% is $2.32. Try running with different inputs.
+   Type ``:.2f`` inside the first and last set of braces (for the monetary values). With the suggested inputs, the output is  $2.50 discounted by 7% is $2.32. Try running with different inputs.
 
 
 
