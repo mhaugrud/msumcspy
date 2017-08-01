@@ -146,10 +146,11 @@ Now let's look at another method of reading our file using a ``while`` loop.  Th
 
     infile.close()
 
-The important thing to notice is that on line 2 we have the statement ``line = infile.readline()``.  
+There are some important things to notice in this code:
+
+On line 2 we have the statement ``line = infile.readline()``.  
 We call this initial read the **priming read**.
-It is very important because the while condition needs to have a value for the ``line`` variable.  The ``readline`` method will return the
-empty string if there is no more data in the file.  The condition ``while line:`` means `while the content of line is not the empty string`.  Remember that a
+This is very important because the while condition needs to have a value for the ``line`` variable.  The ``readline`` method will return the empty string if there is no more data in the file. In essence, ``while line:``,  means `while the content of line is not the empty string`.  Remember that a
 blank line in the file actually has a single character, the ``\n`` character (newline).  So, the only way that a line of data from the
 file can be empty is if you are reading at the end of the file.
 
