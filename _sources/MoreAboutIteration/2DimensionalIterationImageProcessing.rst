@@ -171,13 +171,7 @@ Here are some additional images you can try:
 
 .. raw:: html
 
-    <img src="../_static/cs.png" id="cs.png">
-    <h4 style="text-align: center;">cs.png</h4>
-
-.. raw:: html
-
-    <img src="../_static/gate.png" id="gate.png">
-    <h4 style="text-align: center;">gate.png</h4>
+    <img src="../_static/cs.png" id="cs.png"/><img src="../_static/gate.png" id="gate.png"/>
 
 
 **Check your understanding**
