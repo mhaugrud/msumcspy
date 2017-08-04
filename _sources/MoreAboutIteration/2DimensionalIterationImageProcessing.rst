@@ -226,6 +226,11 @@ The program below implements this algorithm using the previous image (luther.jpg
     <img src="../_static/goldygopher.png" id="goldygopher.png">
     <h4 style="text-align: center;">goldygopher.png</h4>
 
+.. raw:: html
+
+    <img src="../_static/thinkcspy.png" id="thinkcspy.png">
+    <h4 style="text-align: center;">thinkcspy.png</h4>
+
 
 Change the name of the file in the ``image.Image()`` call to see how these images look as negatives.  Also, note that there is an ``exitonclick`` method call at the very end which will close the window when you click on it.  This will allow you to "clear the screen" before drawing the next negative.
 
