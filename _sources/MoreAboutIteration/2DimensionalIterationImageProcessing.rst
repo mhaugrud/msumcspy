@@ -303,8 +303,9 @@ Finally, we need to replace the old pixel with the new pixel in our image. It is
             img.setPixel(col, row, newpixel)
 
     img.draw(win)
-    print('finished negative')
+    print('display negative')
     time.sleep(5) # wait 5 seconds
+    print('display original?')
     img.draw(win) # draw original image
 
 Run the program and notice that after the negative image is created and displayed, we cannot display the original image (line 25).
