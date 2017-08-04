@@ -146,13 +146,9 @@ we can use the methods described above to access information about the image or 
 on its basic color intensities.
 
 
-
-
-
 .. raw:: html
 
     <img src="../_static/annefan.png" id="annefan.png"
-
 
 
 .. activecode::  itd
@@ -171,6 +167,19 @@ on its basic color intensities.
 When you run the program you can see that the image has a width of 285 pixels and a height of 250 pixels.  Also, the
 pixel at column 45, row 55, has RGB values of 174, 194, and 218.  Try a few other pixel locations by changing the ``getPixel`` arguments and rerunning the program.
 
+Here are some additional images you can try:
+
+.. raw:: html
+
+    <img src="../_static/cs.png" id="cs.png">
+    <h4 style="text-align: center;">cs.png</h4>
+
+.. raw:: html
+
+    <img src="../_static/gate.png" id="gate.png">
+    <h4 style="text-align: center;">gate.png</h4>
+
+
 **Check your understanding**
 
 .. mchoice:: mc7d
@@ -184,7 +193,7 @@ pixel at column 45, row 55, has RGB values of 174, 194, and 218.  Try a few othe
    :feedback_c: These are the values from the original example (row 45, column 55).
    :feedback_d: Yes, these values are at row 100 and column 30.
 
-   Using the previous ActiveCode example, select the answer that is closest to the RGB values of the pixel at row 100, column 30?  The values may be off by one or two due to differences in browsers.
+   Using the previous ActiveCode example (with annefan.png), select the answer that is closest to the RGB values of the pixel at row 100, column 30?  The values may be off by one or two due to differences in browsers.
 
 
 Image Processing and Nested Iteration
@@ -213,21 +222,7 @@ In the RGB color model, we can consider the opposite of the red component as the
 and 255.  For example, if the original red component was 50, then the opposite, or negative red value would be
 ``255-50`` or 205.  In other words, pixels with a lot of red will have negatives with little red and pixels with little red will have negatives with a lot.  We do the same for the blue and green as well.
 
-The program below implements this algorithm using the previous image (annefan.png).  Run it to see the resulting negative image.  Note that there is a lot of processing taking place and this may take a few seconds to complete.  In addition, here are two other images that you can use (gate.png and cs.png).  
-
-
-.. raw:: html
-
-    <img src="../_static/gate.png" id="gate.png">
-    <h4 style="text-align: center;">gate.png</h4>
-
-.. raw:: html
-
-    <img src="../_static/cs.png" id="cs.png">
-    <h4 style="text-align: center;">cs.png</h4>
-
-
-Change the name of the file in the ``image.Image()`` call to see how these images look as negatives.  Also, note that there is an ``exitonclick`` method call at the very end which will close the window when you click on it.  This will allow you to "clear the screen" before drawing the next negative.
+The program below implements this algorithm.  Run it to see the resulting negative image.  Note that there is a lot of processing taking place and this will take several seconds to complete.  You can change the image file in line 3 to either gate.png or annefan.png to see them as negatives.  
 
 
 .. activecode::  ite
@@ -236,7 +231,7 @@ Change the name of the file in the ``image.Image()`` call to see how these image
 
     import image
 
-    img = image.Image("annefan.png")
+    img = image.Image("cs.png")
     win = image.ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
     img.setDelay(1,15)   # setDelay(0) turns off animation
@@ -283,7 +278,7 @@ Finally, we need to replace the old pixel with the new pixel in our image. It is
 
     import image, time
  
-    img = image.Image("annefan.png")
+    img = image.Image("cs.png")
     win = image.ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
     print('making negative')
