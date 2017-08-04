@@ -168,21 +168,21 @@ on its basic color intensities.
     print(p.getRed(), p.getGreen(), p.getBlue())
 
 
-When you run the program you can see that the image has a width of 400 pixels and a height of 244 pixels.  Also, the
-pixel at column 45, row 55, has RGB values of 165, 161, and 158.  Try a few other pixel locations by changing the ``getPixel`` arguments and rerunning the program.
+When you run the program you can see that the image has a width of 285 pixels and a height of 250 pixels.  Also, the
+pixel at column 45, row 55, has RGB values of 174, 194, and 218.  Try a few other pixel locations by changing the ``getPixel`` arguments and rerunning the program.
 
 **Check your understanding**
 
 .. mchoice:: mc7d
-   :answer_a: 149 132 122
-   :answer_b: 183 179 170
-   :answer_c: 165 161 158
-   :answer_d: 201 104 115
-   :correct: b
-   :feedback_a: These are the values for the pixel at row 30, column 100.  Get the values for row 100 and column 30 with p = img.getPixel(100, 30).
-   :feedback_b: Yes, the RGB values are 183 179 170 at row 100 and column 30.
-   :feedback_c: These are the values from the original example (row 45, column 55). Get the values for row 100 and column 30 with p = img.getPixel(30, 100).
-   :feedback_d: These are simply made-up values that may or may not appear in the image.  Get the values for row 100 and column 30 with p = img.getPixel(30, 100).
+   :answer_a: 207 222 250
+   :answer_b: 165 161 158
+   :answer_c: 174 194 218
+   :answer_d: 172  88 113
+   :correct: d
+   :feedback_a: These are the values for the pixel at row 30, column 100.
+   :feedback_b: These are simply made-up values that may or may not appear in the image.
+   :feedback_c: These are the values from the original example (row 45, column 55).
+   :feedback_d: Yes, these values are at row 100 and column 30.
 
    Using the previous ActiveCode example, select the answer that is closest to the RGB values of the pixel at row 100, column 30?  The values may be off by one or two due to differences in browsers.
 
@@ -232,6 +232,7 @@ Change the name of the file in the ``image.Image()`` call to see how these image
 
 .. activecode::  ite
     :nocodelens:
+    :timelimit: 30000
 
     import image
 
@@ -278,6 +279,7 @@ Finally, we need to replace the old pixel with the new pixel in our image. It is
 
 .. activecode::  itf
     :nocodelens:
+    :timelimit: 30000
 
     import image, time
  
