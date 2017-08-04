@@ -132,7 +132,7 @@ different depending on whether you are using an image file or creating an empty 
     =================== =============================== ==================================================
     Method Name         Example                         Explanation
     =================== =============================== ==================================================
-    Image(filename)     img = image.Image("cy.png")     Create an Image object from the file cy.png.
+    Image(filename)     img = image.Image("cs.png")     Create an Image object from the file cs.png.
     EmptyImage()        img = image.EmptyImage(100,200) Create an Image object that has all "White" pixels
     getWidth()          w = img.getWidth()              Return the width of the image in pixels.
     getHeight()         h = img.getHeight()             Return the height of the image in pixels.
@@ -140,7 +140,7 @@ different depending on whether you are using an image file or creating an empty 
     setPixel(col,row,p) img.setPixel(100,50,mp)         Set the pixel at column 100, row 50 to be mp.
     =================== =============================== ==================================================
 
-Consider the image shown below.  Assume that the image is stored in a file called "luther.jpg".  Line 2 opens the
+Consider the image shown below.  Assume that the image is stored in a file called "annefan.png".  Line 2 opens the
 file and uses the contents to create an image object that is referred to by ``img``.  Once we have an image object,
 we can use the methods described above to access information about the image or to get a specific pixel and check
 on its basic color intensities.
@@ -151,7 +151,7 @@ on its basic color intensities.
 
 .. raw:: html
 
-    <img src="../_static/LutherBellPic.jpg" id="luther.jpg">
+    <img src="../_static/annefan.png" id="annefan.png"
 
 
 
@@ -159,7 +159,7 @@ on its basic color intensities.
     :nocodelens:
 
     import image
-    img = image.Image("luther.jpg")
+    img = image.Image("annefan.png")
 
     print(img.getWidth())
     print(img.getHeight())
@@ -213,23 +213,18 @@ In the RGB color model, we can consider the opposite of the red component as the
 and 255.  For example, if the original red component was 50, then the opposite, or negative red value would be
 ``255-50`` or 205.  In other words, pixels with a lot of red will have negatives with little red and pixels with little red will have negatives with a lot.  We do the same for the blue and green as well.
 
-The program below implements this algorithm using the previous image (luther.jpg).  Run it to see the resulting negative image.  Note that there is a lot of processing taking place and this may take a few seconds to complete.  In addition, here are two other images that you can use (cy.png and goldygopher.png).  
+The program below implements this algorithm using the previous image (annefan.png).  Run it to see the resulting negative image.  Note that there is a lot of processing taking place and this may take a few seconds to complete.  In addition, here are two other images that you can use (gate.png and cs.png).  
 
 
 .. raw:: html
 
-    <img src="../_static/cy.png" id="cy.png">
-    <h4 style="text-align: center;">cy.png</h4>
+    <img src="../_static/gate.png" id="gate.png">
+    <h4 style="text-align: center;">gate.png</h4>
 
 .. raw:: html
 
-    <img src="../_static/goldygopher.png" id="goldygopher.png">
-    <h4 style="text-align: center;">goldygopher.png</h4>
-
-.. raw:: html
-
-    <img src="../_static/thinkcspy.png" id="thinkcspy.png">
-    <h4 style="text-align: center;">thinkcspy.png</h4>
+    <img src="../_static/cs.png" id="cs.png">
+    <h4 style="text-align: center;">cs.png</h4>
 
 
 Change the name of the file in the ``image.Image()`` call to see how these images look as negatives.  Also, note that there is an ``exitonclick`` method call at the very end which will close the window when you click on it.  This will allow you to "clear the screen" before drawing the next negative.
@@ -240,7 +235,7 @@ Change the name of the file in the ``image.Image()`` call to see how these image
 
     import image
 
-    img = image.Image("goldygopher.png")
+    img = image.Image("annefan.png")
     win = image.ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
     img.setDelay(1,15)   # setDelay(0) turns off animation
@@ -286,7 +281,7 @@ Finally, we need to replace the old pixel with the new pixel in our image. It is
 
     import image, time
  
-    img = image.Image("goldygopher.png")
+    img = image.Image("annefan.png")
     win = image.ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
     print('making negative')
