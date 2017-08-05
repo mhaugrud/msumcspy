@@ -189,7 +189,7 @@ Here are some additional images you can try:
    :answer_a: 207 222 250
    :answer_b: 165 161 158
    :answer_c: 174 194 218
-   :answer_d: 172  88 113
+   :answer_d: 223 199 177
    :correct: d
    :feedback_a: These are the values for the pixel at row 30, column 100.
    :feedback_b: These are simply made-up values that may or may not appear in the image.
@@ -285,7 +285,7 @@ Finally, we need to replace the old pixel with the new pixel in our image. It is
     win = image.ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
     print('making negative')
-    time.sleep(5) # wait 5 seconds
+    time.sleep(1) # wait 1 second
     
 
     for row in range(img.getHeight()):
