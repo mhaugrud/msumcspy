@@ -170,8 +170,16 @@ pixel at column 45, row 55, has RGB values of 174, 194, and 218.  Try a few othe
 Here are some additional images you can try:
 
 .. raw:: html
-
-    <img src="../_static/cs.png" id="cs.png"/><img src="../_static/gate.png" id="gate.png"/>
+   <table>
+   <tr>
+   <td><img src="../_static/cs.png" id="cs.png"></td>
+   <td><img src="../_static/gate.png" id="gate.png"></td>
+   </tr>
+   <tr>
+   <td align="center">cs.png</td>
+   <td align="center">gate.png</td>
+   </tr>
+   </table>
 
 
 **Check your understanding**
