@@ -148,7 +148,7 @@ on its basic color intensities.
 
 .. raw:: html
 
-    <img src="../_static/annefan.png" id="annefan.png"
+    <img src="../_static/annefan.png" id="annefan.png">
 
 
 .. activecode::  itd
@@ -170,6 +170,7 @@ pixel at column 45, row 55, has RGB values of 174, 194, and 218.  Try a few othe
 Here are some additional images you can try:
 
 .. raw:: html
+
    <table>
    <tr>
    <td><img src="../_static/cs.png" id="cs.png"></td>
