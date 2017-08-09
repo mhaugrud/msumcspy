@@ -22,7 +22,7 @@ except ImportError:
 project_name = "haugrud"
 ###############################
 
-master_url = None
+master_url = 'https://dev.runestone.academy'
 doctrees = None
 if master_url is None:
     if gethostname() in ['web407.webfaction.com', 'rsbuilder']:
@@ -58,7 +58,7 @@ options(
             'use_services': 'true',
             'python3': 'true',
             'dburl': 'postgresql://bmiller@localhost/runestone',
-            'basecourse': 'thinkcspy',
+            'basecourse': 'haugrud',
         }
 
     )
