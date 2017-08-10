@@ -11,7 +11,7 @@
    :prefix: intro-
    :start: 1
 
-.. index:: algorithm, programming language
+.. index:: algorithm, programming language, Gore; Al
 
 Algorithms
 ----------
@@ -26,7 +26,7 @@ a notation (a program) that can be followed by a computer.  These programs are w
 
 **Check your understanding**
 
-.. mchoice:: question1_1_1
+.. mchoice:: mc1a
    :answer_a: To think like a computer.
    :answer_b: To be able to write code really well.
    :answer_c: To be able to solve problems.
