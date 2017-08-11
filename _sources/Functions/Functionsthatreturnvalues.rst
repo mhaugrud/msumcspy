@@ -110,7 +110,7 @@ As you step through the example in codelens notice that the **return** statement
 
 
 
-.. codelens:: ch04_clsquare
+.. codelens:: cl_ch04_clsquare
 
     def square(x):
         y = x * x

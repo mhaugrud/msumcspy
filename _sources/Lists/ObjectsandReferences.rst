@@ -78,7 +78,7 @@ There is one other important thing to notice about this reference diagram.  The 
 
 Here is the example in codelens.  Pay particular attention to the `id` values.
 
-.. codelens:: chp09_istrace
+.. codelens:: cl_chp09_istrace
     :showoutput:
     
     a = [81, 82, 83]

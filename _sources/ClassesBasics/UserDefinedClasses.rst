@@ -83,7 +83,7 @@ During the initialization, for each of the objects, we created an attribute call
 
 You can see this for yourself, via codelens:
 
-.. codelens:: oop_1c
+.. codelens:: cl_oop_1c
 
     class Account:
         '''Account class for representing and manipulating bank accounts'''

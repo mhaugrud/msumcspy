@@ -24,7 +24,7 @@ characters in the string.
 
 Consider the following codelens example.
 
-.. codelens:: ch08_7
+.. codelens:: cl_ch08_7
 
     fruit = "apple"
     for idx in range(5):
@@ -53,7 +53,7 @@ You may also note that iteration by position allows the programmer to control th
    On line 2, change the range so that the characters of fruit are printed in **reverse** order.
 
 
-.. codelens:: ch08_8
+.. codelens:: cl_ch08_8
 
     fruit = "apple"
     for idx in range(len(fruit)-1, -1, -1):

@@ -39,7 +39,7 @@ The loop condition is ``position < len(fruit)``, so when ``position`` is equal t
 
 Here is the same example in codelens so that you can trace the values of the variables.
 
-.. codelens:: ch08_7c1
+.. codelens:: cl_ch08_7c1
     
     fruit = "apple"
 

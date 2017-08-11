@@ -66,7 +66,7 @@ Take a close look also at the initialization of ``newString``.  We start with an
 
 Step through the function using codelens to see the accumulator variable grow.
 
-.. codelens:: ch08_acc2
+.. codelens:: cl_ch08_acc2
     
     def removeVowels(s):
         vowels = "aeiouAEIOU"

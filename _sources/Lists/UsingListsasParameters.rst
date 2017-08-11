@@ -49,7 +49,7 @@ Since the list object is shared by two references, there is only one copy. If a 
 This can be easily seen in codelens.  Note that after the call to ``doubleStuff``, the formal parameter ``aList`` refers to the same object as the actual parameter ``things``.  There is only one copy of the list object itself.
 
 
-.. codelens:: chp09_parm1_trace
+.. codelens:: cl_chp09_parm1_trace
     
     def doubleStuff(aList):
         """ Overwrite each element in aList with double its value. """

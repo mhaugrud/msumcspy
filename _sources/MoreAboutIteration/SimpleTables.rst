@@ -120,7 +120,7 @@ Here is the same example in activecode.  Try it.  Note that the value of ``i`` s
 Another way to see this in more detail is to examine the behavior with codelens.  Step through the iterations to see the
 flow of control as it occurs with the nested iteration.  Again, for every value of ``i``, all of the values of ``j`` will occur.  You can see that the inner iteration completes before going on to the next pass of the outer iteration.
 
-.. codelens:: nested2
+.. codelens:: cl_nested2
 
     for i in range(5):
         for j in range(3):

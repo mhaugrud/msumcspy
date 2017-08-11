@@ -18,7 +18,7 @@ The ``append`` method adds a new item to the end of a list.  It is also possible
 
 Consider the following example.  The original list has 3 integers.  We want to add the word "cat" to the end of the list.
 
-.. codelens:: appcon1
+.. codelens:: cl_appcon1
 
     origlist = [45, 32, 88]
 
@@ -32,7 +32,7 @@ Here we have used ``append`` which simply modifies the list.  In order to use co
 
 Note that the word "cat" needs to be placed in a list since the concatenation operator needs two lists to do its work.
 
-.. codelens:: appcon2
+.. codelens:: cl_appcon2
 
     origlist = [45, 32, 88]
 
@@ -44,7 +44,7 @@ On the other hand, with concatenation, an entirely new list is created.  This ca
 ``newlist`` refers to a list which is a copy of the original list, ``origlist``, with the new item "cat" added to the end.  ``origlist`` still contains the three values it did before the concatenation.  This is why the assignment operation is necessary as part of the
 accumulator pattern.
 
-.. codelens:: appcon3
+.. codelens:: cl_appcon3
 
     origlist = [45, 32, 88]
 

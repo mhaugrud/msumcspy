@@ -66,7 +66,7 @@ Now, what happens if we modify a value in ``origlist``.
 
 Here is the same example in codelens.  Step through the code paying particular attention to the result of executing the assignment statement ``origlist[1] = 99``.
 
-.. codelens:: reprefstep
+.. codelens:: cl_reprefstep
     :showoutput:
 
     origlist = [45, 76, 34, 55]

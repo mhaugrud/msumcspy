@@ -99,7 +99,7 @@ Also, you can extract the right-most digit or digits from a number.  For example
 
 Finally, returning to our time example, the remainder operator is extremely useful for doing conversions, say from seconds, to hours, minutes and seconds. If we start with a number of seconds, say 7684, the following program uses integer division and remainder to convert to an easier form.  Step through it to be sure you understand how the division and remainder operators are being used to compute the correct values.
 
-.. codelens:: ch02_19_codelens
+.. codelens:: cl_ch02_19
 
     total_secs = 7684
     hours = total_secs // 3600

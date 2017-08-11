@@ -33,7 +33,7 @@ Spanish. For this dictionary, the keys are strings and the values will also be s
 One way to create a dictionary is to start with the empty dictionary and add
 **key-value pairs**. The empty dictionary is denoted ``{}``
 
-.. codelens:: chp12_dict1
+.. codelens:: cl_chp12_dict1
     
     eng2sp = {}
     eng2sp['one'] = 'uno'
@@ -56,7 +56,7 @@ For our purposes we can think of this ordering as unpredictable.
 Another way to create a dictionary is to provide a list of key-value pairs
 using the same syntax as the previous output.
 
-.. codelens:: chp12_dict2
+.. codelens:: cl_chp12_dict2
     
     
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
@@ -68,7 +68,7 @@ ordering.
 
 Here is how we use a key to look up the corresponding value.
 
-.. codelens:: chp12_dict3
+.. codelens:: cl_chp12_dict3
     
 
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}

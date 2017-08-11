@@ -80,7 +80,7 @@ by the variable.
 In each case the result is the value of the variable.
 To see this in even more detail, we can run the program using codelens.
 
-.. codelens:: ch02_9_codelens
+.. codelens:: cl_ch02_9
     :showoutput:
 
     message = "What's up, Doc?"
@@ -124,7 +124,7 @@ To see this, read and then run the following program.
 You'll notice we change the value of `day` three times, and on the third assignment we even give it a value that is of a different type.
 
 
-.. codelens:: ch02_11
+.. codelens:: cl_ch02_11
     :showoutput:
 
     day = "Thursday"

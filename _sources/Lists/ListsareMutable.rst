@@ -36,7 +36,7 @@ assignment does not work for strings.  Recall that strings are immutable.
 
 Here is the same example in codelens so that you can step through the statements and see the changes to the list elements.
 
-.. codelens:: item_assign
+.. codelens:: cl_item_assign
     
     fruit = ["banana", "apple", "cherry"]
 

@@ -72,7 +72,7 @@ Here is a complete program that defines values for ``x`` and ``y``.  Run the pro
 
 If you are still a bit unsure, here is the same selection as part of a codelens example.  Step through it to see how the correct ``print`` is chosen.
 
-.. codelens:: sel1
+.. codelens:: cl_sel1
     :showoutput:
 
     x = 10

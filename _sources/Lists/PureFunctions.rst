@@ -44,7 +44,7 @@ you must assign the return value back to ``things``.
 
 Once again, codelens helps us to see the actual references and objects as they are passed and returned.
 
-.. codelens:: ch09_mod3
+.. codelens:: cl_ch09_mod3
 
     def doubleStuff(a_list):
         """ Return a new list in which contains doubles of the elements in a_list. """

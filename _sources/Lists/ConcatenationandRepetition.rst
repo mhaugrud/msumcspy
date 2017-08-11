@@ -35,7 +35,7 @@ One way for us to make this more clear is to run a part of this example in codel
 
 
 
-.. codelens:: chp09_concatid
+.. codelens:: cl_chp09_concatid
 
     fruit = ["apple", "orange", "banana", "cherry"]
     numlist = [6, 7]

@@ -18,7 +18,7 @@ Variables and Parameters Are Local
 
 An assignment statement in a function creates a **local variable** for the variable on the left hand side of the assignment operator. It is called local because this variable only exists inside the function and you cannot use it outside. For example, consider again the ``square`` function:
 
-.. codelens:: bad_local
+.. codelens:: cl_bad_local
 
     def square(x):
         y = x * x

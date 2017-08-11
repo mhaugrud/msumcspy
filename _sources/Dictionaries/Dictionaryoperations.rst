@@ -18,7 +18,7 @@ The ``del`` statement removes a key-value pair from a dictionary. For example,
 the following dictionary contains the names of various fruits and the number of
 each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary.
 
-.. codelens:: ch12_dict4
+.. codelens:: cl_ch12_dict4
     
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
     
@@ -29,7 +29,7 @@ Dictionaries are also mutable.  As we've seen before with lists, this means that
 be modified by referencing an association on the left hand side of the assignment statement.  In the previous
 example, instead of deleting the entry for ``pears``, we could have set the inventory to ``0``.
 
-.. codelens:: ch12_dict4a
+.. codelens:: cl_ch12_dict4a
     
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
     
@@ -40,7 +40,7 @@ example, instead of deleting the entry for ``pears``, we could have set the inve
 Similarily,
 a new shipment of 200 bananas arriving could be handled like this.
 
-.. codelens:: ch12_dict5
+.. codelens:: cl_ch12_dict5
 
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}    
     inventory['bananas'] = inventory['bananas'] + 200

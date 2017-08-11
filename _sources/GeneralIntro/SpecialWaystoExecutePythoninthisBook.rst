@@ -62,7 +62,7 @@ In addition to activecode, you can also execute Python code with the assistance 
 
 
 
-.. codelens:: firstexample
+.. codelens:: cl_firstexample
     :showoutput:
 
     print("My first program adds two numbers, 2 and 3:")

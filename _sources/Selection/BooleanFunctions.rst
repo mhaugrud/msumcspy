@@ -86,7 +86,7 @@ with a few other actual parameters to see what is printed.
 Here is the same program in codelens.  When we evaluate the ``if`` statement in the main part of the program, the evaluation of
 the boolean expression causes a call to the ``isDivisible`` function.  This is very easy to see in codelens.
 
-.. codelens:: ch06_boolcodelens
+.. codelens:: cl_ch06_bool
     :showoutput:
 
     def isDivisible(x, y):
