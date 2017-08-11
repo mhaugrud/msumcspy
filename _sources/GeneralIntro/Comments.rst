@@ -52,7 +52,7 @@ are also ignored by the interpreter, but comments and blank lines can make your 
    :answer_d: Nothing in a short program.  They are only needed for really large programs.
    :correct: b
    :feedback_a: Comments are ignored by the computer.
-   :feedback_b: The computer ignores comments.  It's for humans that whant to understand your program.
+   :feedback_b: The computer ignores comments.  It's for humans that want to understand your program.
    :feedback_c: Comments can provide much needed information for anyone reading the program.
    :feedback_d: Even small programs benefit from comments.
 
