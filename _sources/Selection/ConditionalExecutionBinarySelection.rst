@@ -21,7 +21,7 @@ conditions and change the behavior of the program accordingly. **Selection state
 also referred to as **conditional statements**, give us this ability. The simplest form of selection is the **if statement**.  
 This is sometimes referred to as **binary selection** since there are two possible paths of execution.
 
-.. video:: binaryselection
+.. video:: v_binaryselection
    :controls:
    :thumb: ../_static/binaryselection.png
 

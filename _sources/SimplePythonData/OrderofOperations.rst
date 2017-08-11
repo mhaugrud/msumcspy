@@ -18,7 +18,7 @@ Order of Operations
 
 When more than one operator appears in an expression, the order of evaluation depends on the **rules of precedence**. 
 
-.. video:: precedencevid
+.. video:: v_precedencevid
     :controls:
     :thumb: ../_static/precedencethumb.png
 
@@ -26,7 +26,7 @@ When more than one operator appears in an expression, the order of evaluation de
     http://media.interactivepython.org/thinkcsVideos/precedence.webm
 
 
-.. video:: associativityvid
+.. video:: v_associativityvid
     :controls:
     :thumb: ../_static/associativitythumb.png
 

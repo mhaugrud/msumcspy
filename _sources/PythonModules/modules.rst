@@ -21,7 +21,7 @@ Python as part of the **standard library**. We have already used one of these qu
 the ``turtle`` module.  Recall that once we import the module, we can use things
 that are defined inside.
 
-.. video:: inputvid
+.. video:: v_modules
     :controls:
     :thumb: ../_static/modules.png
 

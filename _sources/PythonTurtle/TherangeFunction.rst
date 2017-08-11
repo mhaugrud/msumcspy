@@ -16,7 +16,7 @@
 The ``range`` Function
 ----------------------
 
-.. video:: advrange
+.. video:: v_advrange
    :controls:
    :thumb: ../_static/advrange.png
 

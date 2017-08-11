@@ -18,7 +18,7 @@ Reassignment
 
 As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
 
-.. video:: reassignmentvid
+.. video:: v_reassignmentvid
     :controls:
     :thumb: ../_static/reassignmentthumb.png
 

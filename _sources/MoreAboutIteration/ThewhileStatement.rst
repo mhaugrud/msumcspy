@@ -17,7 +17,7 @@ The ``while`` Statement
 
 There is another Python statement that can also be used to build an iteration.  It is called the ``while`` statement.
 
-.. video:: whileloop
+.. video:: v_whileloop
    :controls:
    :thumb: ../_static/whileloop.png
 

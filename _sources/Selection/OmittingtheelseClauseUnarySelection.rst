@@ -16,7 +16,7 @@
 Omitting the ``else`` Clause: Unary Selection
 ---------------------------------------------
 
-.. video:: unaryselection
+.. video:: v_unaryselection
    :controls:
    :thumb: ../_static/unaryselection.png
 

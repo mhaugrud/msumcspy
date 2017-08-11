@@ -17,7 +17,7 @@
 Functions
 ---------
 
-.. video:: function_intro
+.. video:: v_function_intro
    :controls:
    :thumb: ../_static/function_intro.png
 

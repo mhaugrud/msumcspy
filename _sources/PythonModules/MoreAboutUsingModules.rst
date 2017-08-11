@@ -32,7 +32,7 @@ this as: "In the module turtle, access the Python element called Turtle".
 We will now turn our attention to a few other modules that you might find useful.
 
 
-.. video:: randmodvid
+.. video:: v_randmodvid
     :controls:
     :thumb: ../_static/mathrandommodule.png
 

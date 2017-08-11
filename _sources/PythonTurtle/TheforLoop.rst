@@ -20,7 +20,7 @@ When we drew the square, it was quite tedious.  We had to move then turn, move t
 
 A basic building block of all programs is to be able to repeat some code over and over again.  In computer science, we refer to this repetitive idea as **iteration**.  In this section, we will explore some mechanisms for basic iteration.
 
-.. video:: forloopvid
+.. video:: v_forloopvid
    :controls:
    :thumb: ../_static/for_loop.png
 

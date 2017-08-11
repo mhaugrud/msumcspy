@@ -18,7 +18,7 @@ The goal of this chapter is to introduce you to the basic vocabulary of programm
 
 .. _values_n_types:
 
-.. video:: typesnconvert
+.. video:: v_typesnconvert
     :controls:
     :thumb: ../_static/valuesNtypes.png
 

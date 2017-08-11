@@ -18,7 +18,7 @@ Updating Variables
 
 One of the most common forms of reassignment is an **update** where the new value of the variable depends on the old.  
 
-.. video:: updatevid
+.. video:: v_updatevid
     :controls:
     :thumb: ../_static/updatethumb.png
 

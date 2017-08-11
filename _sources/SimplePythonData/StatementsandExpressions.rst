@@ -22,7 +22,7 @@ A **statement** is an instruction that the Python interpreter can execute. We ha
 
 An **expression** is a combination of values, variables, operators, and calls to functions. Expressions need to be evaluated.  If you ask Python to ``print`` an expression, the interpreter **evaluates** the expression and displays the result.
 
-.. video:: expression_vid
+.. video:: v_expression_vid
     :controls:
     :thumb: ../_static/expressions.png
 

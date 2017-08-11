@@ -20,7 +20,7 @@ The program in the previous section works fine but is very limited in that it on
 
 In order to do this, we need a way to get **input** from the user.  Luckily, in Python there is a built-in function to accomplish this task.  As you might expect, it is called ``input``.
 
-.. video:: inputvid
+.. video:: v_inputvid
     :controls:
     :thumb: ../_static/inputthumb.png
 
