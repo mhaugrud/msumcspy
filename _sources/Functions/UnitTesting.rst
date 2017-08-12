@@ -19,12 +19,14 @@ To write a **unit test**, we must know the correct result when calling the funct
     test.testEqual(square(10), 100)
 
 
-``test.testEqual`` is a function that allows us to perform a unit test. It takes two parameters. The first is a call to the function we want to test (square in this example) with a particular input (10 in this example). The second parameter is the correct result that should be produced (100 in this example). ``test.testEqual`` compares what the function returns with the correct result and displays whether the unit test passes or fails.
+``testEqual`` (from the ``test`` module) is a function that allows us to perform a unit test. It takes two parameters. The first is a call to the function we want to test (``square`` in this example) with a particular input (10 in this example). The second parameter is the correct result that should be produced (100 in this example). ``test.testEqual`` compares what the function returns with the correct result and displays whether the unit test passes or fails.
 
 .. admonition:: Extend the program ...
 
    On line 8, write another unit test (that should pass) for the ``square`` function.
 
+Choosing Good Unit Tests
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 When we write unit tests, we should consider significantly different valid inputs to the function. 
 

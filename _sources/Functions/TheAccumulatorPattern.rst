@@ -119,7 +119,9 @@ Here is the same program in codelens.  Step through the function and watch the "
 
    Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 5 to get the square of ``x``? **Change line 4 to repeat the correct number of times**. Now the program should produce the correct result.
 
-   Finally, change the ``toSquare`` in line 9 to ``-10`` and run. Now negative inputs also work!
+   Change the ``toSquare`` in line 9 to ``-10`` and run. Now negative inputs also work!
+
+   Remember that the boundary between our equivalence classes is 0. Try that value for ``toSquare`` also.
 
 
 **Check your understanding**
