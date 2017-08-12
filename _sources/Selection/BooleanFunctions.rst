@@ -135,7 +135,7 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
 More Unit Testing
 ^^^^^^^^^^^^^^^^^
 
-When we write unit tests, we should consider **output equivalence classes** that result in significantly different results.
+When we write unit tests, we should also consider **output equivalence classes** that result in significantly different results.
 
 The ``isDivisible`` function can return either ``True`` or ``False``. These two different outputs give us two equivalence classes. We then choose inputs that should give each of the different results. **It is important to have at least one test for each output equivalence class.**
 
