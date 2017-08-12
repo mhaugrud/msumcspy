@@ -75,7 +75,7 @@ will be able to tell which is which by looking for either the Python prompt in t
 
 **Check your understanding**
 
-.. mchoice:: question1_3_1
+.. mchoice:: mc1f
    :multiple_answers:
    :answer_a: save programs and reload saved programs.
    :answer_b: type in Python source code.
@@ -89,7 +89,7 @@ will be able to tell which is which by looking for either the Python prompt in t
 
    The activecode interpreter allows you to (select all that apply):
 
-.. mchoice:: question1_3_2
+.. mchoice:: mc1g
    :multiple_answers:
    :answer_a: measure the speed of a program's execution.
    :answer_b: control the step by step execution of a program.
