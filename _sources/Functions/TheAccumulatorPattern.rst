@@ -63,16 +63,6 @@ In the program above, notice that the variable ``runningtotal`` starts out with 
 This pattern of iterating the updating of a variable is commonly
 referred to as the **accumulator pattern**.  We refer to the variable as the **accumulator**.  This pattern will come up over and over again.  Remember that the key to making it work successfully is to be sure to initialize the variable before you start the iteration. Once inside the iteration, it is required that you update the accumulator.
 
-**The General Accumulator Pattern**
-
-.. code-block:: python
-
-    initialize the accumulator variable
-    repeat:
-        modify the accumulator variable
-
-    # when the loop terminates the accumulator has the correct value
-
 
 Here is the same program in codelens.  Step through the function and watch the "running total" accumulate the result.
 
@@ -88,6 +78,17 @@ Here is the same program in codelens.  Step through the function and watch the "
     toSquare = 10
     squareResult = square(toSquare)
     print("The result of", toSquare, "squared is", squareResult)
+
+The General Accumulator Pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    initialize the accumulator variable
+    repeat:
+        modify the accumulator variable
+
+    # when the loop terminates the accumulator has the correct value
 
 
 
