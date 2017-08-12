@@ -1,4 +1,4 @@
-.. index:: unit test, equivalence class
+.. index:: testing, unit test, equivalence class
 
 Unit Testing
 ------------
@@ -23,13 +23,16 @@ To write a **unit test**, we must know the correct result when calling the funct
 
 .. admonition:: Extend the program ...
 
-   On line 8, write another unit test (that should pass) for the square function.
+   On line 8, write another unit test (that should pass) for the ``square`` function.
 
-.. note::
-   When we write unit tests, we should consider **equivalence classes** for the function. That is, inputs that result in significantly different results.
 
-   For example, consider a function that is to calculate the square root of an input. There are two equivalence classes: 1) the input is zero or larger, 2) the input is less than zero.
+When we write unit tests, we should consider significantly different valid inputs to the function. 
 
-   It is important to have at least one test for each equivalence class. 
+For example, the input to the ``square`` function could be either a positive or negative value. These two different kinds of inputs give us two **equivalence classes** of inputs. We then choose an input from each of these classes. **It is important to have at least one test for each equivalence class of inputs.**
 
-   Semantic errors are often caused by imroperly handling the boundaries between equivalence classes. The boundary for the square root problem is zero. It is important to have a test for each boundary.
+Semantic errors are often caused by improperly handling the boundaries between equivalence classes. The boundary for this problem is zero. **It is important to have a test at each boundary.**
+
+.. admonition:: Extend the program ...
+
+   Starting on line 9, write two more unit tests (that should pass) so that all input equivalence classes and boundaries are covered.
+

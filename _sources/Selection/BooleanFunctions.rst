@@ -130,13 +130,27 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
 
      return x + y < z
 
+.. index:: unit testing, testing, equivalence class
+
+More Unit Testing
+^^^^^^^^^^^^^^^^^
+
+When we write unit tests, we should consider **equivalence classes** that result in significantly different results.
+
+The isDivisible function can return either True or False. These two different results give us two equivalence classes. We then choose inputs that should give each of the different results. **It is important to have at least one test for each equivalence class.**
 
 
-.. note::
+.. activecode:: bon
 
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
+   def isDivisible(x, y):
+       '''is x evenly divisible by y?'''
+       return x % y == 0
 
-   .. activecode:: bon
+   if __name__ == "__main__":
+      import test
+      
 
+.. admonition:: Extend the program ...
 
+   Starting on line 7, write two unit tests, one for each equivalence class.
 
