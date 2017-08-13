@@ -29,41 +29,27 @@ On one level, you will be learning to program, a useful skill by itself. On
 another level, you will use programming as a means to an end. As we go along,
 that end will become clearer.
 
-.. attention:: example
-
-   attention admonition
-
-.. caution:: example
+.. caution::
+   :name: Fix the error ...
 
    caution admonition
 
-.. danger:: example
 
-   danger admonition
-
-.. error:: example
-
-   error admonition
-
-.. hint:: example
-
-   hint admonition
-
-.. important:: example
-
-   important admonition
-
-.. note:: example
+.. note::
+   :name: Modify the program ...
 
    note admonition
 
-.. tip:: example
+.. tip:: 
+   :name: Fix the error ...
 
    tip admonition
 
-.. warning:: example
+.. note::
+   :name: Modify the program ...
 
-   warning admonition
+   another note admonition
+
 
 
 
