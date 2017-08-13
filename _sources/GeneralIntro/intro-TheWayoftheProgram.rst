@@ -30,25 +30,21 @@ another level, you will use programming as a means to an end. As we go along,
 that end will become clearer.
 
 .. caution::
-   :name: Fix the error ...
+   :name: Fix the error
 
    caution admonition
 
 
 .. note::
-   :name: Modify the program ...
+   :name: Modify the program
 
    note admonition
 
 .. tip:: 
-   :name: Fix the error ...
+   :name: Fix the error 2
 
    tip admonition
 
-.. note::
-   :name: Modify the program ...
-
-   another note admonition
 
 
 
