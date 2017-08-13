@@ -29,21 +29,15 @@ On one level, you will be learning to program, a useful skill by itself. On
 another level, you will use programming as a means to an end. As we go along,
 that end will become clearer.
 
-.. caution::
-   :name: Fix the error
+.. topic::
 
-   caution admonition
+   topiccccc
 
 
-.. note::
-   :name: Modify the program
+.. todo::
 
-   note admonition
+   todoooooooooo
 
-.. tip:: 
-   :name: Fix the error 2
-
-   tip admonition
 
 
 
