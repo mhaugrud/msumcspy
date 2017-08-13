@@ -29,20 +29,17 @@ On one level, you will be learning to program, a useful skill by itself. On
 another level, you will use programming as a means to an end. As we go along,
 that end will become clearer.
 
-.. topic::
+.. topic:: the title
 
    topiccccc
 
 
-.. todo::
+.. todo:: todoooooooooo
 
-   todoooooooooo
-
-
+.. seealso:: open your eyes
 
 
-
-
+.. warning:: look out
 
 
 
