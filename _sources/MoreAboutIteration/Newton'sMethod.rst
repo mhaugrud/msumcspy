@@ -71,10 +71,14 @@ This implementation, as shown below, uses a ``while`` condition to execute until
 
 	The ``while`` statement shown above uses comparison of two floating point numbers in the condition.  Since floating point numbers are themselves approximation of real numbers in mathematics, it is often better to compare for a result that is within some small threshold of the value you are looking for.
 
+.. index:: accumulator pattern
 
-Newton's method to calculate square roots is an example of an algorithm that repeats as long as it can improve the result. Many algorithms work this way and so require the use of indefinite iteration.
+The Accumulator Pattern Revisited
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following program adds up the reciprocals of powers of two.
+Newton's method to calculate square roots is an example of an algorithm that repeats as long as it can improve the result. It's just a variation of our accumulator pattern. Many algorithms work this way and so require the use of indefinite iteration.
+
+Here is another accumulator pattern program. It adds up the reciprocals of powers of two.
 
 .. image:: Figures/sum2n.PNG
 

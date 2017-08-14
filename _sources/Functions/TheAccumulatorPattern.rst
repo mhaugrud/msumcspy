@@ -11,7 +11,7 @@
    :prefix: func-10-
    :start: 1
 
-.. index:: accumulator
+.. index:: accumulator pattern
 
 The Accumulator Pattern
 -----------------------

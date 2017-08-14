@@ -11,7 +11,7 @@
    :prefix: list-21-
    :start: 1
 
-.. index:: list; accumulator
+.. index:: list; accumulator, accumulator pattern
 
 Functions That Produce Lists
 ----------------------------
@@ -26,6 +26,8 @@ usually::
        create a new element 
        append it to result
     return the result
+
+Once again we see our accumulator pattern!
 
 Let us show another use of this pattern.  Assume you already have a function
 ``is_prime(x)`` that can test if x is prime.  Now, write a function
