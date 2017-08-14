@@ -66,7 +66,7 @@ nonsensical variation of the square function.
 
    - What line causes the error?
    - Why is it a runtime error? 
-   - Comment out that line (type # in front of it). Then there will not be a runtime error. Run again.
+   - Comment out that line (type # in front of it). Run again. There will not be a runtime error. 
    - In line 5, change 2 to 3. Then run. The function is no longer squaring is it?
    - On line 9, type a comment that explains why this function is bad.
 

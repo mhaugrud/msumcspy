@@ -159,7 +159,7 @@ A Variation on the Accumulator Pattern
 
    Change the value of ``toSquare`` in line 9 to ``-10`` and run.
 
-   We now see that our function has a semantic error. Remember when we first introduced the square function, unit testing and equivalence classes?
+   We now see that our function has a semantic error. Remember when we first introduced the square function, unit testing and equivalence classes? We must remember to test all the equivalence classes.
 
    Change the value of ``toSquare`` in line 9 back to ``10`` and run.
 
