@@ -32,9 +32,10 @@ For example, we could write a function that returns both the area and the circum
         return (c, a)
 
     result = circleInfo(10) 
-    print(result)
+    print('circumference and area are:', result)
     (circum, area) = circleInfo(10)
-    print(circum, area)
+    print('circumference =', circum)
+    print('area =', area)
 
 
 In lines 7 and 8 ``result`` is a tuple that contains two elements.
