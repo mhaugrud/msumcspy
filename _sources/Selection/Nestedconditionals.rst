@@ -34,6 +34,8 @@ The second branch (the else from the outer) contains another ``if`` statement, w
 has two branches of its own. Those two branches could contain
 conditional statements as well.
 
+.. index:: flow chart
+
 The flow of control for this example can be seen in this flowchart illustration.
 
 .. image:: Figures/flowchart_nested_conditional.png

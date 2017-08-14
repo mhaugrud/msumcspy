@@ -30,6 +30,8 @@ conditional**
     else:
         print("x and y must be equal")
 
+.. index:: flow chart
+
 The flow of control can be drawn in a different orientation but the resulting pattern is identical to the one shown above.
 
 .. image:: Figures/flowchart_chained_conditional.png

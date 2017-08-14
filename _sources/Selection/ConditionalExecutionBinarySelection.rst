@@ -11,7 +11,7 @@
    :prefix: select-4-
    :start: 1
 
-.. index:: selection; binary, conditional, block, condition, flow chart
+.. index:: selection; binary, conditional, block, condition
 
 Conditional Execution: Binary Selection
 ---------------------------------------
@@ -53,6 +53,8 @@ The syntax for an ``if`` statement looks like this:
 The boolean expression after the ``if`` statement is called the **condition**.
 If it is true, then the indented statements, immediately below, get executed. If it is false, the statements
 indented under the ``else:`` clause get executed.
+
+.. index:: flow chart
 
 .. sidebar::  Flowchart of a **if** statement with an **else**
 
