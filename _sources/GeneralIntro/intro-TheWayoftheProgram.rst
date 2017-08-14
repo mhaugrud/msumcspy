@@ -39,7 +39,7 @@ that end will become clearer.
 .. seealso:: open your eyes
 
 
-.. warning:: look out
+.. warning:: intruder alert
 
 
 
