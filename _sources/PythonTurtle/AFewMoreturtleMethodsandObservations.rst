@@ -69,7 +69,7 @@ Here are a few more things that you might find useful as you write programs that
 
 Let's do an example that shows off some of these new features.
 
-.. activecode:: tgk
+.. activecode:: tgl
    :nocodelens:
 
    import turtle

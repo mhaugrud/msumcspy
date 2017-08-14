@@ -118,7 +118,15 @@ produced by the ``range`` function.
     for i in range(10):
        print(i)
 
+.. caution::
+   The variable after ``for`` is the **loop variable**. Do **NOT** assign a value to the loop variable yourself, like in the example below. ``for`` automatically takes care of updating the loop variable!
+ 
+   .. activecode:: tgj
 
+      for i in range(10):
+          i = i + 1  # this is asking for trouble
+
+      
 
 Finally, suppose we want to have a sequence of even numbers.
 How would we do that?  Easy, we add another parameter, a step,
@@ -128,7 +136,7 @@ and count by 2's.  So if we wanted the first 10 even numbers we would use
 ``range(start, beyondLast, step)``.  You can also create a sequence of numbers that
 starts big and gets smaller by using a negative value for the step parameter.
 
-.. activecode:: tgj
+.. activecode:: tgk
     :nocanvas:
 
     print(list(range(0, 19, 2)))
