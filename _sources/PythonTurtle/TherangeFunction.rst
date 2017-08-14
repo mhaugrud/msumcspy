@@ -61,6 +61,7 @@ the ``for`` loop.  When called with one parameter, the sequence provided by ``ra
 So to repeat something four times, a **good** Python programmer would do this:
 
 .. activecode:: tgh
+   :nocodelens:
 
    import turtle            # set up alex
    wn = turtle.Screen()
