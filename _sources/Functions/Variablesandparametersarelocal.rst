@@ -64,10 +64,10 @@ nonsensical variation of the square function.
 
 .. admonition:: Fix the error ...
 
-   - Comment out line 8 (type # in front of it) so there is not a runtime error. Then run
-
+   - What line causes the error?
+   - Why is it a runtime error? 
+   - Comment out that line (type # in front of it). Then there will not be a runtime error. Run again.
    - In line 5, change 2 to 3. Then run. The function is no longer squaring is it?
-
    - On line 9, type a comment that explains why this function is bad.
 
 Although the ``badsquare`` function works, it is silly and poorly written.  We have done it here to illustrate an important rule about how variables are looked up in Python. First, Python looks at the variables that are defined as local variables in
