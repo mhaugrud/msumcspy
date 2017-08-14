@@ -58,13 +58,19 @@ the ``for`` loop.  When called with one parameter, the sequence provided by ``ra
     Computer scientists like to count from 0!
 
 
-So to repeat something four times, a good Python programmer would do this:
+So to repeat something four times, a **good** Python programmer would do this:
 
-.. sourcecode:: python
+.. activecode:: tgh
 
-    for i in range(4):
-        alex.forward(50)
-        alex.left(90)
+   import turtle            # set up alex
+   wn = turtle.Screen()
+   alex = turtle.Turtle()
+
+   for i in range(4):
+       alex.forward(50)
+       alex.left(90)
+
+   wn.exitonclick()
 
 
 The `range <http://docs.python.org/py3k/library/functions
@@ -92,7 +98,7 @@ of range, that is the last index included + 1.
 Here are a two examples for you to run. (It is rare in a program to print a range. But to do so, we nest the ``range`` in a ``list`` constructor.)
 
 
-.. activecode:: tgh
+.. activecode:: tgi
     :nocanvas:
 
     print(list(range(4)))
@@ -121,7 +127,7 @@ and count by 2's.  So if we wanted the first 10 even numbers we would use
 ``range(start, beyondLast, step)``.  You can also create a sequence of numbers that
 starts big and gets smaller by using a negative value for the step parameter.
 
-.. activecode:: tgi
+.. activecode:: tgj
     :nocanvas:
 
     print(list(range(0, 19, 2)))
