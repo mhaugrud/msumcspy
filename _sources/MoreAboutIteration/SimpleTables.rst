@@ -140,7 +140,7 @@ flow of control as it occurs with the nested iteration.  Again, for every value 
    :feedback_c: The inner for-loop controls the second digit (j).  Notice that the inner for-loop is over the list [0, 1].
    :feedback_d: The outer for-loop runs 3 times (0, 1, 2) and the inner for-loop runs twice for each time the outer for-loop runs, so this code prints exactly 6 lines.
 
-   What will the following nested for-loop print?  (Note, if you are having trouble with this question, review CodeLens 3).
+   What will the following nested for-loop print?  (Note, if you are having trouble with this question, review CodeLens 1).
 
    .. code-block:: python
 
@@ -183,4 +183,9 @@ flow of control as it occurs with the nested iteration.  Again, for every value 
       0   1
       0   1
 
+.. admonition:: Modify the program ...
+
+   - In line 3, change ``,`` to ``*``. Run and you will see the various products of the two loop variables.
+   - In line 4, make a ``print`` statement (with nothing inside the parentheses) indented the same as line 2. Run and you will see groups of products where ``i`` has the same value.
+   - In line 3, type ``, end = ' '`` right after ``j``. Run and you will see a small multiplication table. ``end`` is an optional argument to ``print`` that states what should be printed after the other items that are printed -- it defaults to a new line character.
 
