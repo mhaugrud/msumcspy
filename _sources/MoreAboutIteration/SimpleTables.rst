@@ -118,13 +118,14 @@ Here is the same example in activecode.  Try it.  Note that the value of ``i`` s
             print(i, j)
 
 Another way to see this in more detail is to examine the behavior with codelens.  Step through the iterations to see the
-flow of control as it occurs with the nested iteration.  Again, for every value of ``i``, all of the values of ``j`` will occur.  You can see that the inner iteration completes before going on to the next pass of the outer iteration.
+flow of control as it occurs with the nested iteration.  Again, for every value of ``i``, all of the values of ``j`` will occur.  You can see that after the inner iteration completes, a blank line is displayed. Then it goes on to the next pass of the outer iteration.
 
 .. codelens:: cl_nested2
 
     for i in range(5):
         for j in range(3):
             print(i, j)
+        print()
 
 
 **Check your understanding**
@@ -186,6 +187,6 @@ flow of control as it occurs with the nested iteration.  Again, for every value 
 .. admonition:: Modify the program ...
 
    - In line 3, change ``,`` to ``*``. Run and you will see the various products of the two loop variables.
-   - In line 4, make a ``print`` statement (with nothing inside the parentheses) indented the same as line 2. Run and you will see groups of products where ``i`` has the same value.
+   - In line 4, add a statement to print a blank line like shown in the codelens example. Run and you will see groups of products where ``i`` has the same value.
    - In line 3, type ``, end = ' '`` right after ``j``. Run and you will see a small multiplication table. ``end`` is an optional argument to ``print`` that states what should be printed after the other items that are printed -- it defaults to a new line character.
 
