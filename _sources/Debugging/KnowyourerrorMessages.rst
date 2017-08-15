@@ -270,7 +270,7 @@ Name errors almost always mean that you have used a variable before it has a val
 
     .. admonition:: Solution
 
-        In this example, the student seems to be a fairly bad speller, as there are a number of typos to fix.  The first one is identified as wait_time is not defined on line 6.  Now in this example you can see that there is ``str_wait_time`` on line 2, and  ``wai_time`` on line 4 and ``wait_time`` on line 6.   If you do not have very sharp eyes it's easy to miss that there is a typo on line 4.
+        In this example, the student seems to be a fairly bad speller, as there are a number of typos to fix.  The first one is identified as wait_time is not defined on line 6.  Now in this example you can see that there is ``str_wait_time`` on line 2, and  ``wai_time`` on line 4 and ``wait_time`` on line 6.   If you do not have really sharp eyes, it's easy to miss that there is a typo on line 4.
 
 **Finding Clues**  With name errors one of the best things you can do is use the editor, or browser search function.  Quite often if you search for the exact word in the error message one of two things will happen:
 
