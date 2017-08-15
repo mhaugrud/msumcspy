@@ -16,11 +16,14 @@
 More Uses of Indefinite Iteration
 ---------------------------------
 
+Indefinite loops are much more common in the real world than definite loops. Here are some practical applications.
+
+
 
 Validating Input
 ~~~~~~~~~~~~~~~~~~~
 
-You can use a ``while`` loop when you want to **validate** input;  when you want to make sure the user has entered valid input for a prompt. Let's say you want a function that asks a yes-or-no question. In this case, you want to make sure that the person using your program enters either a y for yes or n for no. 
+You can use a ``while`` loop when you want to **validate** input;  when you want to make sure the user has entered valid input for a prompt. For example, you ask a yes-or-no question and you want to make sure that the person using your program enters either a y for yes or n for no. 
 Here is a program that uses a ``while`` loop to keep asking until it receives a valid answer. When you run the following code, try typing something other than y or n to see how the code reacts:
     
 .. activecode:: ito
@@ -44,7 +47,7 @@ Here is a program that uses a ``while`` loop to keep asking until it receives a 
 Sentinel Values
 ~~~~~~~~~~~~~~~
 
-Indefinite loops are much more common in the real world than definite loops.
+A **sentinel value** is a special value used to signal the end of the loop. Here are some examples where a sentinel is appropriate:
 
 * If you are selling tickets to an event, you don't know in advance how   many tickets you will sell. You keep selling tickets as long as people come   to the door and there's room in the hall.
 * When the baggage crew unloads a plane, they don't know in advance how many   suitcases there are. They just keep unloading while there are bags left in the   cargo hold. (Why *your* suitcase is always the last one is an entirely different problem.)
