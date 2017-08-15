@@ -365,4 +365,13 @@ The second image becomes a modified version of the original image. By doing this
       newblue = 0
 
 
+.. note::
+    If you want to try some image processing on your own, outside of this interactive textbook, you must install the cImage module. The easiest way to get this is to run the command ``pip install cImage`` from the command line. Then import as shown below: 
+
+    .. sourcecode:: python
+
+        import cImage as image
+        img = image.Image("myfile.gif")
+
+    ``cImage.py`` will only work with GIF files unless you also install the Python Image Library with ``pip install pillow``.
 
