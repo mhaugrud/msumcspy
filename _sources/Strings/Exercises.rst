@@ -392,7 +392,7 @@ Exercises
            by the character 13 characters to 'its right' in the alphabet.  So for example
            the letter a becomes the letter n.  If a letter is past the middle of the alphabet
            then the counting wraps around to the letter a again, so n becomes a, o becomes b
-           and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
+           and so on.  *Hint:* Whenever you talk about things wrapping around, it's a good idea
            to think of modulo arithmetic.
 
            .. activecode:: ex_8_20
