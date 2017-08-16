@@ -49,9 +49,9 @@ Level     Category        Operators
 
    Which of the following properly expresses the precedence of operators (using parentheses) in the following expression: 5*3 > 10 and 4+6==11
 
-Here is an animation of the above expression:
+Here is an animation for the above expression:
 
-.. showeval:: se_macl
+.. showeval:: se_mc6h
    :trace_mode: true
 
    5 * 3 > 10 and 4 + 6 == 11

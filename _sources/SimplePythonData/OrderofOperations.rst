@@ -84,18 +84,6 @@ See :ref:`operator-summary` for *all* the operators introduced in this book. You
 
       16 - 2 * 5 // 3 + 1
 
-Here is an animation of the expression above:
-
-.. showeval:: se_mdas
-   :trace_mode: true
-
-   16 - 2 * 5 // 3 + 1
-   ~~~~
-   16 - {{2 * 5}}{{10}} // 3 + 1
-   16 - {{10 // 3}}{{3}} + 1
-   {{16 - 3}}{{13}} + 1
-   {{13 + 1}}{{14}}
-
 
 .. mchoice:: mc2k
    :answer_a: 768
@@ -114,15 +102,25 @@ Here is an animation of the expression above:
 
       2 ** 2 ** 3 * 3
 
-Here is an animation of the expression above:
+Here are animations for the above expressions:
 
-.. showeval:: se_em
+.. showeval:: se_mc2j
+   :trace_mode: true
+
+   16 - 2 * 5 // 3 + 1
+   ~~~~
+   16 - {{2 * 5}}{{10}} // 3 + 1
+   16 - {{10 // 3}}{{3}} + 1
+   {{16 - 3}}{{13}} + 1
+   {{13 + 1}}{{14}}
+
+.. showeval:: se_mc2k
    :trace_mode: true
 
    2 ** 2 ** 3 * 3
    ~~~~
    2 ** {{2 ** 3}}{{8}} * 3
    {{2 ** 8}}{{256}} * 3
-   {{256 ** 3}}{{768}}
+   {{256 * 3}}{{768}}
 
 
