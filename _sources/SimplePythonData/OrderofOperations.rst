@@ -38,16 +38,15 @@ When more than one operator appears in an expression, the order of evaluation de
 Python follows the same precedence rules for its mathematical operators that mathematics does.
 
 
-#. **P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, ``2 * (3-1)`` is 4, and ``(1+1)**(5-2)`` is    8. You can also use parentheses to make an expression easier to read, as in    ``(minute * 100) / 60``, even though it doesn't change the result.
-#. **E**xponentiation has the next highest precedence, so ``2**1+1`` is 3 and    not 4, and ``3*1**3`` is 3 and not 27.  Can you explain why?
-#. **M**ultiplication and both **D**ivision operators have the same precedence, which is higher than **A**ddition and **S**ubtraction, which also have the same precedence. So ``2*3-1`` yields 5 rather than 4, and ``5-2*2`` is 1, not 6.
-#. Operators with the *same* precedence (except ``**``) are evaluated from left-to-right. In algebra we say they are *left-associative*. So in the expression ``6-3+2``, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been ``6-(3+2)``, which is 1.
+1. **P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, ``2 * (3-1)`` is 4, and ``(1+1)**(5-2)`` is    8. You can also use parentheses to make an expression easier to read, as in    ``(minute * 100) / 60``, even though it doesn't change the result.
+2. **E**xponentiation has the next highest precedence, so ``2**1+1`` is 3 and    not 4, and ``3*1**3`` is 3 and not 27.  Can you explain why?
+3. **M**ultiplication and both **D**ivision operators have the same precedence, which is higher than **A**ddition and **S**ubtraction, which also have the same precedence. So ``2*3-1`` yields 5 rather than 4, and ``5-2*2`` is 1, not 6.
+4. Operators with the *same* precedence (except ``**``) are evaluated from left-to-right. In algebra we say they are *left-associative*. So in the expression ``6-3+2``, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been ``6-(3+2)``, which is 1.
 
 .. note::
    The acronym PEMDAS is a useful way to remember the order of operations.
 
-   PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don't be misled.  Multiplication and division are at the same precedence, so the left-to-right rule applies.
-Subtraction and addition are at the same precedence, so the left-to-right rule applies.
+   PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don't be misled.  Multiplication and division are at the same precedence, so the left-to-right rule applies. Subtraction and addition are at the same precedence, so the left-to-right rule applies.
 
 
 An exception to the left-to-right left-associative rule is the exponentiation operator ``**``. A useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
@@ -69,15 +68,15 @@ See :ref:`operator-summary` for *all* the operators introduced in this book. You
 **Check your understanding**
 
 .. mchoice:: mc2j
-   :answer_a: 14
+   :answer_a: 13.667
    :answer_b: 24
    :answer_c: 3
-   :answer_d: 13.667
-   :correct: a
-   :feedback_a: Using parentheses, the expression is evaluated as (2*5) first, then (10 // 3), then (16-3), and then (13+1).
+   :answer_d: 14
+   :correct: d
+   :feedback_a: Remember that // does integer division.
    :feedback_b: Remember that * has precedence over -.
    :feedback_c: Remember that // has precedence over -.
-   :feedback_d: Remember that // does integer division.
+   :feedback_d: Using parentheses, the expression is evaluated as (2*5) first, then (10 // 3), then (16-3), and then (13+1).
 
    What is the value of the following expression:
 
@@ -87,15 +86,15 @@ See :ref:`operator-summary` for *all* the operators introduced in this book. You
 
 
 .. mchoice:: mc2k
-   :answer_a: 768
-   :answer_b: 128
+   :answer_a: 256
+   :answer_b: 192
    :answer_c: 12
-   :answer_d: 256
-   :correct: a
-   :feedback_a: Exponentiation has precedence over multiplication, but its precedence goes from right to left!  So 2 ** 3 is 8, 2 ** 8 is 256 and 256 * 3 is 768.
+   :answer_d: 768
+   :correct: d
+   :feedback_a: Remember to multiply by 3.
    :feedback_b: Exponentiation (**) is processed right to left, so take 2 ** 3 first.
    :feedback_c: There are two exponentiations.
-   :feedback_d: Remember to multiply by 3.
+   :feedback_d: Exponentiation has precedence over multiplication, but its precedence goes from right to left!  So 2 ** 3 is 8, 2 ** 8 is 256 and 256 * 3 is 768.
 
    What is the value of the following expression:
 
