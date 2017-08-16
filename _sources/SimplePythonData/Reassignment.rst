@@ -68,8 +68,10 @@ Its important to start to develop a good mental model of the steps Python takes 
     a = 5
     b = a
     ~~~~
-    a = {{5}}{{5}}
+    a = 5
     b = {{a}}{{5}}
+
+..     a = {{5}}{{5}}
 
 In the first statement `a = 5` the literal number 5 evaluates to 5, and is given the name `a`.  In the second statement, the variable `a` evaluates to 5 and so 5 now ends up with a second name `b`.
 

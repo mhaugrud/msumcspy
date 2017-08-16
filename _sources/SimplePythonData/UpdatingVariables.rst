@@ -41,6 +41,7 @@ This means get the current value of x, add one, and then update x with the new v
    x = 6
    x = x + 1
    ~~~~
+   x = 6
    x = {{x}}{{6}} + 1
    x = {{6 + 1}}{{7}}
 
