@@ -38,9 +38,9 @@ When more than one operator appears in an expression, the order of evaluation de
 Python follows the same precedence rules for its mathematical operators that mathematics does.
 
 
-1. **P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, ``2 * (3-1)`` is 4, and ``(1+1)**(5-2)`` is    8. You can also use parentheses to make an expression easier to read, as in    ``(minute * 100) / 60``, even though it doesn't change the result.
-2. **E**xponentiation has the next highest precedence, so ``2**1+1`` is 3 and    not 4, and ``3*1**3`` is 3 and not 27.  Can you explain why?
-3. **M**ultiplication and both **D**ivision operators have the same precedence, which is higher than **A**ddition and **S**ubtraction, which also have the same precedence. So ``2*3-1`` yields 5 rather than 4, and ``5-2*2`` is 1, not 6.
+1. Parentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, ``2 * (3-1)`` is 4, and ``(1+1)**(5-2)`` is    8. You can also use parentheses to make an expression easier to read, as in    ``(minute * 100) / 60``, even though it doesn't change the result.
+2. Exponentiation has the next highest precedence, so ``2**1+1`` is 3 and    not 4, and ``3*1**3`` is 3 and not 27.  Can you explain why?
+3. Multiplication and both Division operators have the same precedence, which is higher than Addition and Subtraction, which also have the same precedence. So ``2*3-1`` yields 5 rather than 4, and ``5-2*2`` is 1, not 6.
 4. Operators with the *same* precedence (except ``**``) are evaluated from left-to-right. In algebra we say they are *left-associative*. So in the expression ``6-3+2``, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been ``6-(3+2)``, which is 1.
 
 .. note::
@@ -86,13 +86,13 @@ See :ref:`operator-summary` for *all* the operators introduced in this book. You
 
 
 .. mchoice:: mc2k
-   :answer_a: 256
-   :answer_b: 192
+   :answer_a: 192
+   :answer_b: 256
    :answer_c: 12
    :answer_d: 768
    :correct: d
-   :feedback_a: Remember to multiply by 3.
-   :feedback_b: Exponentiation (**) is processed right to left, so take 2 ** 3 first.
+   :feedback_a: Exponentiation (**) is processed right to left, so take 2 ** 3 first.
+   :feedback_b: Remember to multiply by 3.
    :feedback_c: There are two exponentiations.
    :feedback_d: Exponentiation has precedence over multiplication, but its precedence goes from right to left!  So 2 ** 3 is 8, 2 ** 8 is 256 and 256 * 3 is 768.
 
