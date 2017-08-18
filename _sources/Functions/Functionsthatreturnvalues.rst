@@ -111,6 +111,10 @@ As you step through the example in codelens notice that the **return** statement
 
 
 .. codelens:: cl_ch04_clsquare
+    :question: Which line is executed next?
+    :breakline: 6
+    :feedback: Notice the function call
+    :correct: line
 
     def square(x):
         y = x * x
