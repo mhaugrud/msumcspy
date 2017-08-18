@@ -14,25 +14,25 @@ Exercises
    :number: 1
 
 
-            .. activecode:: ex_2_1
+   .. activecode:: ex_2_1
 
-               Evaluate the following numerical expressions in your head, then use the activecode window to check your results:
+      Evaluate the following numerical expressions in your head, then use the activecode window to check your results:
 
-               #. ``5 ** 2``
-               #. ``2 * 5``
-               #. ``15 / 12``
-               #. ``12 / 15``
-               #. ``15 // 12``
-               #. ``12 // 15``
-               #. ``15 % 12``
-               #. ``12 % 15``
-               #. ``5 % 2``
-               #. ``2 % 5``
-               #. ``6 % 6``
-               #. ``0 % 6``
-               #. ``2 + (3 - 1) * 10 / 5 * (2 + 3)``
-               ~~~~
-               print(' 1:', 5 ** 2)
+      #. ``5 ** 2``
+      #. ``2 * 5``
+      #. ``15 / 12``
+      #. ``12 / 15``
+      #. ``15 // 12``
+      #. ``12 // 15``
+      #. ``15 % 12``
+      #. ``12 % 15``
+      #. ``5 % 2``
+      #. ``2 % 5``
+      #. ``6 % 6``
+      #. ``0 % 6``
+      #. ``2 + (3 - 1) * 10 / 5 * (2 + 3)``
+      ~~~~
+      print(' 1:', 5 ** 2)
 
 
 
@@ -49,6 +49,7 @@ Exercises
             Write a general version of the program which asks for the starting day number, and
             the length of your stay, and it will tell you the number of day of the week you will return on.
             ~~~~
+            # your code goes here
 
       .. tab:: Sample Output
 
@@ -78,6 +79,7 @@ Exercises
             #. Update the bank balance by decreasing it by the withdrawal amount
             #. Display the bank balance with a message stating this the the current balance
             ~~~~
+            # your code goes here
 
       .. tab:: Sample Output
 
@@ -92,24 +94,24 @@ Exercises
 
 .. question:: spd_ex_4
 
-         .. activecode:: ex_2_4
+   .. activecode:: ex_2_4
 
-            Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
-            If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
-            Write a Python program to solve the general version of the above problem.
-            Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
-            Your program should output what the time will be on the clock when the alarm goes off.
-            ~~~~
-
+      Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
+      If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
+      Write a Python program to solve the general version of the above problem.
+      Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
+      Your program should output what the time will be on the clock when the alarm goes off.
+      ~~~~
+      # your code goes here
 
 
 .. question:: spd_ex_5
 
 
-         .. activecode:: ex_2_5
+   .. activecode:: ex_2_5
 
-            Take the sentence: *All work and no play makes Jack a dull boy.*             Store each word in a separate variable, then print out the sentence on             one line using ``print``.
-            ~~~~
+      Take the sentence: *All work and no play makes Jack a dull boy.*             Store each word in a separate variable, then print out the sentence on             one line using ``print``.
+      ~~~~
 
 
 .. question:: spd_ex_6
@@ -123,20 +125,20 @@ Exercises
 .. question:: spd_ex_7
 
 
-         .. activecode:: ex_2_7
+   .. activecode:: ex_2_7
 
-            The formula for computing the final amount if one is earning
-            compound interest is given on Wikipedia as
+      The formula for computing the final amount if one is earning
+      compound interest is given on Wikipedia as
 
-            .. image:: Figures/compoundInterest.png
-                :alt: formula for compound interest
+      .. image:: Figures/compoundInterest.png
+         :alt: formula for compound interest
 
-            Write a Python program that assigns the principal amount of 10000 to
-            variable `P`, assign to `n` the value 12, and assign to `r` the interest
-            rate of 8% (0.08).  Then have the program prompt the user for the number of years,
-            `t`, that the money will be compounded for.  Calculate and print the final
-            amount after `t` years.
-            ~~~~
+      Write a Python program that assigns the principal amount of 10000 to
+      variable `P`, assign to `n` the value 12, and assign to `r` the interest
+      rate of 8% (0.08).  Then have the program prompt the user for the number of years,
+      `t`, that the money will be compounded for.  Calculate and print the final
+      amount after `t` years.
+      ~~~~
 
 
 
@@ -153,11 +155,11 @@ Exercises
 .. question:: spd_ex_9
 
 
-         .. activecode:: ex_2_9
+   .. activecode:: ex_2_9
 
-            Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
-            Print a nice message with the answer.
-            ~~~~
+      Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
+      Print a nice message with the answer.
+      ~~~~
 
 
 .. question:: spd_ex_10
@@ -172,10 +174,10 @@ Exercises
 .. question:: spd_ex_11
 
 
-         .. activecode:: ex_2_11
+   .. activecode:: ex_2_11
 
-            Write a program that will convert degrees celsius to degrees fahrenheit.
-            ~~~~
+      Write a program that will convert degrees celsius to degrees fahrenheit.
+      ~~~~
 
 
 .. question:: spd_ex_12
@@ -184,3 +186,5 @@ Exercises
 
       Write a program that will convert degrees fahrenheit to degrees celsius.
       ~~~~
+      # your code goes here
+
