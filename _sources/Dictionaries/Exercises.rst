@@ -107,30 +107,31 @@ Exercises
 
         .. tab:: Question
 
-           Write a program called ``alice_words.py`` that creates a text file named
-           ``alice_words.txt`` containing an alphabetical listing of all the words, and the
-           number of times each occurs, in the text version of `Alice's Adventures in Wonderland`.
-           (You can obtain a free plain text version of the book, along with many others, from
-           http://www.gutenberg.org.) The first 10 lines of your output file should look
-           something like this
-
-            =========== ===========
-            Word              Count
-            =========== ===========
-            a                 631
-            a-piece           1
-            abide             1
-            able              1
-            about             94
-            above             3
-            absence           1
-            absurd            2
-            =========== ===========
-
-           How many times does the word, ``alice``, occur in the book?  If you are writing this
-           in the activecode window simply print out the results rather than write them to a file.
 
            .. actex:: ex_11_02
+              Write a program called ``alice_words.py`` that creates a text file named
+              ``alice_words.txt`` containing an alphabetical listing of all the words, and the
+              number of times each occurs, in the text version of `Alice's Adventures in Wonderland`.
+              (You can obtain a free plain text version of the book, along with many others, from
+              http://www.gutenberg.org.) The first 10 lines of your output file should look
+              something like this
+
+              =========== ===========
+              Word              Count
+              =========== ===========
+              a                 631
+              a-piece           1
+              abide             1
+              able              1
+              about             94
+              above             3
+              absence           1
+              absurd            2
+              =========== ===========
+
+              How many times does the word, ``alice``, occur in the book?  If you are writing this
+              in the activecode window simply print out the results rather than write them to a file.
+              ~~~~
 
         .. tab:: Answer
 
@@ -139,11 +140,6 @@ Exercises
                 f = open('alice.txt', 'r')
 
 
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_4f2d7860fc3143339c9c6a533c07b62d
 
 
 .. question:: dict_ex_4
@@ -158,35 +154,36 @@ Exercises
 
         .. tab:: Question
 
-            Here's a table of English to Pirate translations
-
-            ==========  ==============
-            English     Pirate
-            ==========  ==============
-            sir	        matey
-            hotel	    fleabag inn
-            student	    swabbie
-            boy	        matey
-            madam	    proud beauty
-            professor	foul blaggart
-            restaurant	galley
-            your	    yer
-            excuse	    arr
-            students	swabbies
-            are	        be
-            lawyer	    foul blaggart
-            the	        th'
-            restroom	head
-            my	        me
-            hello	    avast
-            is	        be
-            man	        matey
-            ==========  ==============
-
-            Write a program that asks the user for a sentence in English and then translates that
-            sentence to Pirate.
-
             .. actex:: ex_11_04
+               Here's a table of English to Pirate translations
+
+               ==========  ==============
+               English     Pirate
+               ==========  ==============
+               sir	        matey
+               hotel	    fleabag inn
+               student	    swabbie
+               boy	        matey
+               madam	    proud beauty
+               professor	foul blaggart
+               restaurant	galley
+               your	    yer
+               excuse	    arr
+               students	swabbies
+               are	        be
+               lawyer	    foul blaggart
+               the	        th'
+               restroom	head
+               my	        me
+               hello	    avast
+               is	        be
+               man	        matey
+               ==========  ==============
+
+               Write a program that asks the user for a sentence in English and then translates that
+               sentence to Pirate.
+               ~~~~
+
 
 
 

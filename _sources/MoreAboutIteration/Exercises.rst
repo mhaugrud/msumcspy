@@ -74,12 +74,12 @@ Exercises
 
 .. question:: moreiter_ex_4
 
-   Modify the walking turtle program so that rather than a 90 degree left or right turn the
-   angle of the turn is determined randomly at each step.
 
     .. actex:: ex_7_14
        :nocodelens:
-
+       Modify the walking turtle program so that rather than a 90 degree left or right turn the
+       angle of the turn is determined randomly at each step.
+       ~~~~
 
 
 

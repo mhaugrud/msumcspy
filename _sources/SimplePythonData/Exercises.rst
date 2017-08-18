@@ -42,12 +42,13 @@ Exercises
 
       .. tab:: Question
 
-         It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  For example, you go on a wonderful holiday
-         leaving on day number 3 (a Wednesday) and you return home after 9 nights, which is day 5 (a Friday).
-         Write a general version of the program which asks for the starting day number, and
-         the length of your stay, and it will tell you the number of day of the week you will return on.
-
          .. actex:: ex_2_2
+
+            It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  For example, you go on a wonderful holiday
+            leaving on day number 3 (a Wednesday) and you return home after 9 nights, which is day 5 (a Friday).
+            Write a general version of the program which asks for the starting day number, and
+            the length of your stay, and it will tell you the number of day of the week you will return on.
+            ~~~~
 
       .. tab:: Sample Output
 
@@ -64,18 +65,18 @@ Exercises
 
       .. tab:: Question
 
-         Write a small program to simulate a bank account:
-
-         #. The bank balance begins at 0
-         #. Display the bank balance with a message stating this is the current balance
-         #. Prompt the user to enter the amount to deposit (a floating point number)
-         #. Update the bank balance by increasing it by the deposit amount
-         #. Display the bank balance with a message stating this the the current balance
-         #. Prompt the user to enter the amount to withdraw (a floating point number)
-         #. Update the bank balance by decreasing it by the withdrawal amount
-         #. Display the bank balance with a message stating this the the current balance
-
          .. actex:: ex_2_3
+            Write a small program to simulate a bank account:
+
+            #. The bank balance begins at 0
+            #. Display the bank balance with a message stating this is the current balance
+            #. Prompt the user to enter the amount to deposit (a floating point number)
+            #. Update the bank balance by increasing it by the deposit amount
+            #. Display the bank balance with a message stating this the the current balance
+            #. Prompt the user to enter the amount to withdraw (a floating point number)
+            #. Update the bank balance by decreasing it by the withdrawal amount
+            #. Display the bank balance with a message stating this the the current balance
+            ~~~~
 
       .. tab:: Sample Output
 
