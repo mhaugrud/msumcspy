@@ -76,6 +76,10 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
 
 .. codelens:: cl_sel1
     :showoutput:
+    :question: What line will be executed after the line with the red arrow?
+    :breakline: 4
+    :feedback: Look at the condition.
+    :correct: line
 
     x = 10
     y = 10

@@ -111,9 +111,9 @@ As you step through the example in codelens notice that the **return** statement
 
 
 .. codelens:: cl_ch04_clsquare
-    :question: Which line is executed next?
+    :question: What line will be executed after the line with the red arrow?
     :breakline: 6
-    :feedback: Notice the function call
+    :feedback: Notice the function call.
     :correct: line
 
     def square(x):
