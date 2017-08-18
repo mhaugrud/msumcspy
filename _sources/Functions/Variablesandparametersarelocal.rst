@@ -114,10 +114,10 @@ used as the actual parameter, especially when the two share the same name.
 But this example demonstrates that that is clearly not how Python operates.
 
 .. codelens:: cl_change_parm
-   :question: What is the value of x when the line with the red arrow executes?
-   :breakline: 8
-   :feedback: x in the square function is a local variable.
-   :correct: globals.x
+    :question: What is the value of x when the line with the red arrow executes?
+    :breakline: 8
+    :feedback: x in the square function is a local variable.
+    :correct: globals.x
 
     def square(x):
         y = x * x
