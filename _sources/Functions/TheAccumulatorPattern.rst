@@ -61,7 +61,7 @@ In the program above, notice that the variable ``runningtotal`` starts out with 
 
 
 This pattern of iterating the updating of a variable is commonly
-referred to as the **accumulator pattern**.  We refer to the variable as the **accumulator**.  This pattern will come up over and over again.  Remember that the key to making it work successfully is to be sure to initialize the variable before you start the iteration. Once inside the iteration, it is required that you update the accumulator.
+referred to as the **accumulator pattern**.  We refer to the variable as the **accumulator**.  This pattern will come up over and over again.  Remember that the key to making it work successfully is to be sure to initialize the variable before you start the iteration. Once inside the iteration, you must update the accumulator.
 
 
 Here is the same program in codelens.  Step through the function and watch the "running total" accumulate the result.
@@ -70,7 +70,7 @@ Here is the same program in codelens.  Step through the function and watch the "
     :question: What is the value of runningtotal after the line with the red arrow executes?
     :breakline: 4
     :feedback: Use the square variables box to look at the current values of the variables.
-    :correct: runningtotal
+    :correct: x
 
     def square(x):
         runningtotal = 0
