@@ -70,7 +70,7 @@ Here is the same program in codelens.  Step through the function and watch the "
     :question: What is the value of runningtotal after the line with the red arrow executes?
     :breakline: 4
     :feedback: Use the square variables box to look at the current values of the variables.
-    :correct: square.runningtotal
+    :correct: runningtotal
 
     def square(x):
         runningtotal = 0
