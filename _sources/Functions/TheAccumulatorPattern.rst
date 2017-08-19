@@ -67,7 +67,8 @@ referred to as the **accumulator pattern**.  We refer to the variable as the **a
 Here is the same program in codelens.  Step through the function and watch the "running total" accumulate the result.
 
 .. codelens:: cl_sq_accum3
-
+    :showoutput:
+    
     def square(x):
         runningtotal = 0
         for counter in range(x):
