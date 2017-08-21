@@ -126,14 +126,14 @@ we compute and return the result.
 
    test.testEqual(distance(1,2, 1,2), 0)
    test.testEqual(distance(1,2, 4,6), 5)
-   test.testEqual(distance(0,0, 1,1), 1.41421356)
+   test.testEqual(distance(0,0, 1,1), 1.4142)
 
 
 .. admonition:: Fix the error ...
 
    Two of the tests pass but the last one fails. Is there still an error in the function?
 
-   Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer. This could be corrected using the ``testWithin`` function. Unfortunately, that function is not available in our interactive text.
+   Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer. 
 
    Correct the test by changing the correct answer.
 

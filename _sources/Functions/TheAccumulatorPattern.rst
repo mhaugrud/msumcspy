@@ -47,7 +47,7 @@ is the body of the function (the details of how the squaring is done).  This is 
 
         return runningtotal
 
-    toSquare = 10
+    toSquare = 5
     squareResult = square(toSquare)
     print("The result of", toSquare, "squared is", squareResult)
 
@@ -67,7 +67,10 @@ referred to as the **accumulator pattern**.  We refer to the variable as the **a
 Here is the same program in codelens.  Step through the function and watch the "running total" accumulate the result.
 
 .. codelens:: cl_sq_accum3
-    :showoutput:
+    :question: What is the value of runningtotal after the line with the red arrow executes?
+    :breakline: 4
+    :feedback: Use the square variables box to look at the current values of the variables.
+    :correct: stack_to_render.0.encoded_locals.runningtotal
     
     def square(x):
         runningtotal = 0
@@ -76,7 +79,7 @@ Here is the same program in codelens.  Step through the function and watch the "
 
         return runningtotal
 
-    toSquare = 10
+    toSquare = 5
     squareResult = square(toSquare)
     print("The result of", toSquare, "squared is", squareResult)
 
