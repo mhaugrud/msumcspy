@@ -70,13 +70,6 @@ If you try to update a variable that doesn't exist, you get an error because Pyt
 Updating a variable by adding 1 is called an **increment** and subtracting 1 is called a **decrement**.
 
 
-.. admonition:: Python Beyond the Browser
-
-     `Topic 1: <at_1_1.html>`_ Python Beyond the Browser.  This is a gentle
-     introduction to using Python from the command line.  We'll cover this
-     later, but if you are curious about what Python looks like outside of this
-     eBook, you can have a look here.  There are also instructions for
-     installing Python on your computer here.
 
 **Check your understanding**
 

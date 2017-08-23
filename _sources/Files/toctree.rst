@@ -11,5 +11,6 @@ Files
    Iteratingoverlinesinafile.rst
    AlternativeFileReadingMethods.rst
    WritingTextFiles.rst
+   With.rst
    Glossary.rst
    Exercises.rst

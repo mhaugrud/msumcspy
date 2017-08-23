@@ -80,7 +80,7 @@ Appendices
    :maxdepth: 1
 
    Appendices/errorsAndDebug.rst
-   SimplePythonData/at_1_1.rst
+   Labs/pythonshell.rst
    Appendices/PrecedenceTable.rst
 
 Acknowledgements
