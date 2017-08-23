@@ -126,20 +126,21 @@ we compute and return the result.
 
    test.testEqual(distance(1,2, 1,2), 0)
    test.testEqual(distance(1,2, 4,6), 5)
-   test.testEqual(distance(0,0, 1,1), 1.4142)
+   test.testEqual(distance(0,0, 1,1), 1.41)
 
 
 .. admonition:: Fix the error ...
 
    Two of the tests pass but the last one fails. Is there still an error in the function?
 
-   Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer. 
+   Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer.
 
-   Correct the test by changing the correct answer.
+   - There are circumstances where 2 digits to the right of the decimal point is sufficiently precise. Correct the test by typing ``, 2)`` after 1.41. The parameter 2 could be replaced with a differt number. By default the precision is 5.
+
+   - Copy line 11 to line 12. Delete ``, 2``. Change ``1.41`` to ``1.41421`` and run.
 
 
-
-Now the tests pass! Wonderful! However, you may still need to perform additional tests.
+Now all four the tests pass! Wonderful! However, you may still need to perform additional tests.
 
 
 When you start out, you might add only a line or two of code at a time. As you
