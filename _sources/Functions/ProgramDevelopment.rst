@@ -135,7 +135,7 @@ we compute and return the result.
 
    Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer.
 
-   - There are circumstances where 2 digits to the right of the decimal point is sufficiently precise. Correct the test by typing ``, 2`` after 1.41. The parameter 2 could be replaced with a different number. By default the precision is 5.
+   - There are circumstances where 2 digits to the right of the decimal point is sufficiently precise. Correct the test by typing ``, 2`` after 1.41. (The parameter 2 could be replaced with a different number. By default the precision is 5.)
 
    - Copy line 11 to line 12. Delete ``, 2`` and run. This test fails since we are testing to the default precision (5 digits to the right of the decimal point).
 
