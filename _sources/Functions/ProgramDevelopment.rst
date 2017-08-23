@@ -154,6 +154,7 @@ to chunk music --- from indvidual notes to chords, bars, phrases, and so on.
 
 The key aspects of the process are:
 
+#. Make sure you know what you are trying to accomplish. Then you can write appropriate unit tests.
 #. Start with a working skeleton program and make small incremental changes. At any
    point, if there is an error, you will know exactly where it is.
 #. Use temporary variables to hold intermediate values so that you can easily inspect
