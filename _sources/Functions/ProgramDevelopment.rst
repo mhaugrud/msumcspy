@@ -135,7 +135,7 @@ we compute and return the result.
 
    Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer.
 
-   The third test fails because by default we test to 5 digits to the right of the decimal point.
+   The third test fails because by default ``testEqual`` checks 5 digits to the right of the decimal point.
 
    - Change ``1.41`` to ``1.41421`` and run. The test will pass.
    
