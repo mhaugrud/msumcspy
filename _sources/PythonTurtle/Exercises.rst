@@ -30,7 +30,7 @@ Exercises
 .. question:: turtle_ex_3
 
 
-   Write a program that uses a for loop to print the current value of the loop variable and the string "bottles of beer on the wall". When you run this, the first line should be "99 bottles of beer on the wall" and the last line should be "0 bottles of beer on the wall".
+   Write a program that uses a for loop to print the current value of the loop variable and the string "bottles of beer on the wall". When you run this, the first line should be "99 bottles of beer on the wall"; the next line "98 bottles of beer on the wall"; and so forth down to the last line of "0 bottles of beer on the wall".
 
 
    .. activecode:: ex_3_3
