@@ -26,7 +26,7 @@ each value in the list.
    wn = turtle.Screen()
    alex = turtle.Turtle()
 
-   for i in [0, 1, 2, 3]:      # repeat four times
+   for aSide in [0, 1, 2, 3]:      # four items in list
        alex.forward(50)
        alex.left(90)
 
@@ -70,9 +70,9 @@ of the computation.
     alex = turtle.Turtle()
 
     for aColor in ["yellow", "red", "purple", "blue"]:
-       alex.color(aColor)
-       alex.forward(50)
-       alex.left(90)
+        alex.color(aColor)
+        alex.forward(50)
+        alex.left(90)
 
     wn.exitonclick()
 
