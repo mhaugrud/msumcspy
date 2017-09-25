@@ -40,7 +40,7 @@ The syntax for a **function definition** is:
         statements
 
 You can make up any names you want for the functions you create, except that
-you can't use a name that is a Python keyword, and the names must follow the rules
+you can't use a name that is a Python reserved word, and the names must follow the rules
 for legal identifiers that were given previously. The parameters specify
 what information, if any, you have to provide in order to use the new function.  Another way to say this is that the parameters specify what the function needs to do its work.
 
@@ -50,14 +50,14 @@ standard indentation of four spaces. Function definitions are the second of
 several **compound statements** we will see, all of which have the same
 pattern:
 
-#. A **header** line which begins with a keyword and ends with a colon.
+#. A **header** line which begins with a reserved word and ends with a colon.
 #. A **body** consisting of one or more Python statements, each
    indented the same amount -- *4 spaces is the Python standard* -- from
    the header line.
 
 We've already seen the ``for`` loop which follows this pattern.
 
-In a function definition, the keyword in the header is ``def``, which is
+In a function definition, the reserved word in the header is ``def``, which is
 followed by the name of the function and some *parameters* enclosed in
 parentheses. The parameter list may be empty, or it may contain any number of
 parameters separated from one another by commas. In either case, the parentheses are required.
@@ -267,7 +267,7 @@ been defined, we can call it as many times as we like with whatever actual param
    :correct: a
    :feedback_a: A function may take zero or more parameters.  It does not have to have two.  In this case the size of the circle might be specified in the body of the function.
    :feedback_b: A function needs to specify its parameters in its header.
-   :feedback_c: A function definition needs to include the keyword def.
+   :feedback_c: A function definition needs to include the reserved word def.
    :feedback_d: A function definition header must end in a colon (:).
 
    Which of the following is a valid function header (first line of a function definition)?
@@ -279,7 +279,7 @@ been defined, we can call it as many times as we like with whatever actual param
    :answer_d: Make turtle t draw a square with side sz.
    :correct: b
    :feedback_a: This line is the complete function header (except for the semi-colon) which includes the name as well as several other components.
-   :feedback_b: Yes, the name of the function is given after the keyword def and before the list of parameters.
+   :feedback_b: Yes, the name of the function is given after the reserved word def and before the list of parameters.
    :feedback_c: This includes the function name and its parameters
    :feedback_d: This is a comment stating what the function does.
 
