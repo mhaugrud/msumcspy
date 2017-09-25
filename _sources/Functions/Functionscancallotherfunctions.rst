@@ -99,7 +99,7 @@ But now we might spot that a square is a special kind of rectangle.  A square si
 
 .. admonition:: Modify the program ...
 
-   - On line 13, call the drawRectangle function so a square of the specified size is drawn.
+   - On line 13 (the body of the drawSquare function), call the drawRectangle function so a square of the specified size is drawn.
 
    - On line 20, call the drawSquare function with a size of your choice.
 
