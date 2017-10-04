@@ -240,14 +240,17 @@ Exercises
 
       ====
       from unittest.gui import TestCaseGui
-
+      import random
       class myTests(TestCaseGui):
 
          def testOne(self):
-             self.assertAlmostEqual(sumTo(15),120.0,0,"Tested sumTo on input 15")
              self.assertAlmostEqual(sumTo(0),0.0,0,"Tested sumTo on input 0")
-             self.assertAlmostEqual(sumTo(25),325.0,0,"Tested sumTo on input 25")
-             self.assertAlmostEqual(sumTo(7),28.0,0,"Tested sumTo on input 7")
+             n = random.randint(1,30)
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             n = random.randint(1,30)
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             n = random.randint(1,30)
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
 
       myTests().main()
 
@@ -263,14 +266,18 @@ Exercises
 
       ====
       from unittest.gui import TestCaseGui
+      import random
 
       class myTests(TestCaseGui):
 
          def testOne(self):
-             self.assertEqual(sumTo(15),120,"Tested sumTo on input 15")
-             self.assertEqual(sumTo(0),0,"Tested sumTo on input 0")
-             self.assertEqual(sumTo(25),325,"Tested sumTo on input 25")
-             self.assertEqual(sumTo(7),28,"Tested sumTo on input 7")
+             self.assertAlmostEqual(sumTo(0),0.0,0,"Tested sumTo on input 0")
+             n = random.randint(1,30)
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             n = random.randint(1,30)
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             n = random.randint(1,30)
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
 
       myTests().main()
 
@@ -283,19 +290,24 @@ Exercises
 
    .. activecode:: ex_5_16
 
+      import math
       def areaOfCircle(r):
           # your code here
 
       ====
       from unittest.gui import TestCaseGui
-
+      import random
+      import math
       class myTests(TestCaseGui):
 
          def testOne(self):
-             self.assertAlmostEqual(areaOfCircle(5.0),78.53981633974483,5,"Tested input: areaOfCircle(5.0)")
-             self.assertEqual(areaOfCircle(5.0),78.53981633974483,"Tested input: areaOfCirlce(5.0)")
              self.assertEqual(areaOfCircle(0),0.0,"Tested input: areaOfCirlce(0)")
-             self.assertAlmostEqual(areaOfCircle(31415.926535897932),3100627668.0299816,5,"Tested input: areaOfCirlce(31415.926535897932)")
+             n = random.randint(1,100)
+             self.assertAlmostEqual(areaOfCircle(n),n*n*math.pi,5,"Tested input: "+str(n))
+             n = random.randint(1,100)
+             self.assertAlmostEqual(areaOfCircle(n),n*n*math.pi,5,"Tested input: "+str(n))
+             n = random.randint(1,100)
+             self.assertAlmostEqual(areaOfCircle(n),n*n*math.pi,5,"Tested input: "+str(n))
 
 
       myTests().main()
@@ -326,13 +338,23 @@ Exercises
 
       ====
       from unittest.gui import TestCaseGui
+      import random
+      import math
 
       class myTests(TestCaseGui):
           def testOne(self):
-              self.assertEqual(findHypot(12.0,5.0),13.0,"Tested findHypot on inputs of 12.0 and 5.0")
-              self.assertEqual(findHypot(14.0,48.0),50.0,"Tested findHypot on inputs of 14.0 and 48.0")
-              self.assertEqual(findHypot(15.0,8.0),17.0,"Tested findHypot on inputs of 15.0 and 8.0")
-              self.assertAlmostEqual(findHypot(1,1.73205),1.999999,2,"Tested findHypot on inputs of 1 and 1.73205")
+              a = random.randint(1,50)
+              b = random.randint(1,50)
+              self.assertAlmostEqual(findHypot(a,b),math.hypot(a,b),5,"Tested inputs "+str(a)+" and "+str(b))
+              a = random.randint(1,50)
+              b = random.randint(1,50)
+              self.assertAlmostEqual(findHypot(a,b),math.hypot(a,b),5,"Tested inputs "+str(a)+" and "+str(b))
+              a = random.randint(1,50)
+              b = random.randint(1,50)
+              self.assertAlmostEqual(findHypot(a,b),math.hypot(a,b),5,"Tested inputs "+str(a)+" and "+str(b))
+              a = random.randint(1,50)
+              b = random.randint(1,50)
+              self.assertAlmostEqual(findHypot(a,b),math.hypot(a,b),5,"Tested inputs "+str(a)+" and "+str(b))
       myTests().main()
 
 
