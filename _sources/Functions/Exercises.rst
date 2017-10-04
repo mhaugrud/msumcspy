@@ -231,7 +231,7 @@ Exercises
 .. question:: functions_ex_14
 
 
-   Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the equation  (n * (n + 1)) / 2.
+   Write a fruitful function ``sumTo(n)`` that returns the sum of all positive integers up to and including `n`.   So ``sumTo(10)`` is ``1+2+3...+10`` which returns the value 55.  Use the equation  (n * (n + 1)) / 2.
 
    .. activecode:: ex_5_14
 
@@ -246,18 +246,18 @@ Exercises
          def testOne(self):
              self.assertAlmostEqual(sumTo(0),0.0,0,"Tested sumTo on input 0")
              n = random.randint(1,30)
-             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
              n = random.randint(1,30)
-             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
              n = random.randint(1,30)
-             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
 
       myTests().main()
 
 
 .. question:: functions_ex_15
 
-   Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and including `n`. This time use the accumulator pattern.
+   Rewrite the function ``sumTo(n)`` that returns the sum of all positive integers up to and including `n`. This time use the accumulator pattern.
 
    .. activecode:: ex_5_15
 
@@ -273,11 +273,11 @@ Exercises
          def testOne(self):
              self.assertAlmostEqual(sumTo(0),0.0,0,"Tested sumTo on input 0")
              n = random.randint(1,30)
-             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
              n = random.randint(1,30)
-             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
              n = random.randint(1,30)
-             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested sumTo on input "+str(n))
+             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
 
       myTests().main()
 
@@ -286,12 +286,12 @@ Exercises
 
 .. question:: functions_ex_16
 
-   Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`. Make sure you use the math module in your solution.
+   Write a function `volOfCylinder(r,h)` which returns the volume of a cylinder of radius `r` and height `h`. Make sure you use the math module in your solution.
 
    .. activecode:: ex_5_16
 
       import math
-      def areaOfCircle(r):
+      def volOfCylinder(r,h):
           # your code here
 
       ====
@@ -301,13 +301,18 @@ Exercises
       class myTests(TestCaseGui):
 
          def testOne(self):
-             self.assertEqual(areaOfCircle(0),0.0,"Tested input: areaOfCirlce(0)")
-             n = random.randint(1,100)
-             self.assertAlmostEqual(areaOfCircle(n),n*n*math.pi,5,"Tested input: "+str(n))
-             n = random.randint(1,100)
-             self.assertAlmostEqual(areaOfCircle(n),n*n*math.pi,5,"Tested input: "+str(n))
-             n = random.randint(1,100)
-             self.assertAlmostEqual(areaOfCircle(n),n*n*math.pi,5,"Tested input: "+str(n))
+             a = random.randint(1,30)
+             b = random.randint(1,30)
+             self.assertAlmostEqual(volOfCylinder(a,b),a*a*b*math.pi,5,"Tested inputs: "+str(a)+" and "+str(b))
+             a = random.randint(1,30)
+             b = random.randint(1,30)
+             self.assertAlmostEqual(volOfCylinder(a,b),a*a*b*math.pi,5,"Tested inputs: "+str(a)+" and "+str(b))
+             a = random.randint(1,30)
+             b = random.randint(1,30)
+             self.assertAlmostEqual(volOfCylinder(a,b),a*a*b*math.pi,5,"Tested inputs: "+str(a)+" and "+str(b))
+             a = random.randint(1,30)
+             b = random.randint(1,30)
+             self.assertAlmostEqual(volOfCylinder(a,b),a*a*b*math.pi,5,"Tested inputs: "+str(a)+" and "+str(b))
 
 
       myTests().main()
@@ -316,15 +321,28 @@ Exercises
 .. question:: functions_ex_17
 
 
-   Write a function called ``myPi`` that will return an approximation of PI (3.14159...).  Use either the `Leibniz <http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80>`_ approximation or the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
+   Use the accumulator pattern to write a function called ``fact`` that will return the factorial of a positive integer. Factorial is the product of positive integers up to and including the argument. So ``fact(5)`` is ``1*2*3*4*5`` which return the value 120.
 
    .. activecode:: ex_5_17
 
-      def myPi(iters):
-          # Calculate an approximation of PI 
-          # approximation with iters number of iterations
-
+      def fact(n):
           #your code here
+
+      ====
+      from unittest.gui import TestCaseGui
+      import random
+      import math
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+             n = random.randint(1,15)
+             self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
+             n = random.randint(1,15)
+             self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
+             n = random.randint(1,15)
+             self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
+             n = random.randint(1,15)
+             self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
 
 .. question:: selection_ex_18
 
@@ -343,17 +361,17 @@ Exercises
 
       class myTests(TestCaseGui):
           def testOne(self):
-              a = random.randint(1,50)
-              b = random.randint(1,50)
+              a = random.randint(1,30)
+              b = random.randint(1,30)
               self.assertAlmostEqual(findHypot(a,b),math.hypot(a,b),5,"Tested inputs "+str(a)+" and "+str(b))
-              a = random.randint(1,50)
-              b = random.randint(1,50)
+              a = random.randint(1,30)
+              b = random.randint(1,30)
               self.assertAlmostEqual(findHypot(a,b),math.hypot(a,b),5,"Tested inputs "+str(a)+" and "+str(b))
-              a = random.randint(1,50)
-              b = random.randint(1,50)
+              a = random.randint(1,30)
+              b = random.randint(1,30)
               self.assertAlmostEqual(findHypot(a,b),math.hypot(a,b),5,"Tested inputs "+str(a)+" and "+str(b))
-              a = random.randint(1,50)
-              b = random.randint(1,50)
+              a = random.randint(1,30)
+              b = random.randint(1,30)
               self.assertAlmostEqual(findHypot(a,b),math.hypot(a,b),5,"Tested inputs "+str(a)+" and "+str(b))
       myTests().main()
 
