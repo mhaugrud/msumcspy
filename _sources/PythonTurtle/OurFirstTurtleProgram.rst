@@ -154,7 +154,7 @@ screen until we click on it.
 
 .. admonition:: Extend this program ...
 
-    #. Modify this program so that before it creates the window, it prompts the user to type the desired background color. It should store the user's response in a variable, and modify the color of the window according to the user's wishes. (Hint: you can find a list of permitted color names at  http://www.w3schools.com/html/html_colornames.asp.  It includes some quite unusual ones, like "PeachPuff"  and "HotPink".)
+    #. Modify this program so that before it creates the window, it prompts the user to type the desired background color. It should store the user's response in a variable, and modify the color of the window according to the user's wishes. (Hint: you can find a list of permitted color names at  http://www.w3schools.com/colors/colors_names.asp.  It includes some quite unusual ones, like "PeachPuff"  and "HotPink".)
     #. Do similar changes to allow the user, at runtime, to set tess' color.
     #. Do the same for the width of tess' pen.  *Hint:* your dialog with the user will return a string, but tess' ``pensize`` method expects its argument to be an ``int``.  That means you need to make an int from the string before you pass it to ``pensize``.
 

@@ -19,7 +19,7 @@ Exercises
       Evaluate the following numerical expressions in your head, then use the activecode window to check your results:
 
       #. ``5 ** 2``
-      #. ``2 * 5``
+      #. ``2 ** 5``
       #. ``15 / 12``
       #. ``12 / 15``
       #. ``15 // 12``
