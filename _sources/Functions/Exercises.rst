@@ -344,6 +344,10 @@ Exercises
              n = random.randint(1,15)
              self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
 
+
+      myTests().main()
+
+
 .. question:: selection_ex_18
 
    Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
@@ -373,6 +377,7 @@ Exercises
               a = random.randint(1,30)
               b = random.randint(1,30)
               self.assertAlmostEqual(findHypot(a,b),math.hypot(a,b),5,"Tested inputs "+str(a)+" and "+str(b))
+
       myTests().main()
 
 
