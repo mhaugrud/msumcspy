@@ -335,13 +335,12 @@ Exercises
       class myTests(TestCaseGui):
 
          def testOne(self):
-             n = random.randint(1,15)
+             self.assertEqual(fact(1),1,"Tested input: 1")
+             n = random.randint(2,12)
              self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
-             n = random.randint(1,15)
+             n = random.randint(2,12)
              self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
-             n = random.randint(1,15)
-             self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
-             n = random.randint(1,15)
+             n = random.randint(2,12)
              self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
 
 
