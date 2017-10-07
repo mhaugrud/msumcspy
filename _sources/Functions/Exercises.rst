@@ -336,12 +336,14 @@ Exercises
 
          def testOne(self):
              self.assertEqual(fact(1),1,"Tested input: 1")
-             n = random.randint(2,12)
-             self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
-             n = random.randint(2,12)
-             self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
-             n = random.randint(2,12)
-             self.assertEqual(fact(n),math.factorial(n),"Tested input: "+str(n))
+             a = random.randint(1,7)*2
+             self.assertEqual(fact(a),math.factorial(b),"Tested input: "+str(a))
+             b = random.randint(1,7)*2+1
+             self.assertEqual(fact(b),math.factorial(b),"Tested input: "+str(b))
+             c = a
+             while c == a or c == b:
+                 c = random.randint(1,15)
+             self.assertEqual(fact(c),math.factorial(c),"Tested input: "+str(c))
 
 
       myTests().main()
