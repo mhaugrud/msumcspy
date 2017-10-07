@@ -337,7 +337,7 @@ Exercises
          def testOne(self):
              self.assertEqual(fact(1),1,"Tested input: 1")
              a = random.randint(1,7)*2
-             self.assertEqual(fact(a),math.factorial(b),"Tested input: "+str(a))
+             self.assertEqual(fact(a),math.factorial(a),"Tested input: "+str(a))
              b = random.randint(1,7)*2+1
              self.assertEqual(fact(b),math.factorial(b),"Tested input: "+str(b))
              c = a
