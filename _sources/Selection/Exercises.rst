@@ -23,12 +23,15 @@ Exercises
 
             .. activecode:: ex_6_1
 
-
+               1:
+               2:
+               3:
+               4:
 
 
 .. question:: selection_ex_2
 
-   Give the **logical opposites** of these conditions.  You are not allowed to use the ``not`` operator.
+   For each of the given conditions, type its **logical opposite**.  You are not allowed to use the ``not`` operator.
 
    #.  ``a > b``
    #.  ``a >= b``
@@ -36,6 +39,11 @@ Exercises
    #.  ``a >= 18  or  day != 3``
 
    .. activecode:: ex_6_2
+
+      1:
+      2:
+      3:
+      4:
 
 .. question:: selection_ex_3
 
