@@ -127,8 +127,8 @@ Exercises
               self.assertEqual(isPositive(r),True,"Tested isPositive with input of "+str(r))
               self.assertEqual(isPositive(0),False,"Tested isPositive with input of 0")
               self.assertEqual(isPositive(-r),False,"Tested isPositive with input of "+str(-r))
-              r = random.random()*100*1e-10
-              self.assertEqual(isNegative(r),True,"Tested isNegative with input of "+str(-r))
+              r = random.random()*100+1e-10
+              self.assertEqual(isNegative(-r),True,"Tested isNegative with input of "+str(-r))
               self.assertEqual(isNegative(0),False,"Tested isNegative with input of 0")
               self.assertEqual(isNegative(r),False,"Tested isNegative with input of "+str(r))
 
@@ -195,6 +195,9 @@ Exercises
 
            .. activecode:: ex_6_7
 
+               def is_even():
+                   # type your code from exercise 5 here
+
                def is_odd(n):
                    # your code here
 
@@ -227,16 +230,25 @@ Exercises
 
       ====
       from unittest.gui import TestCaseGui
+      import random
 
       class myTests(TestCaseGui):
           def testOne(self):
-              self.assertEqual(isLeap(1944),True,"Tested isLeap on an input of 1944")
-              self.assertEqual(isLeap(2011),False,"Tested isLeap on an input of 2011")
-              self.assertEqual(isLeap(1986),False,"Tested isLeap on an input of 1986")
               self.assertEqual(isLeap(1800),False,"Tested isLeap on an input of 1800")
               self.assertEqual(isLeap(1900),False,"Tested isLeap on an input of 1900")
               self.assertEqual(isLeap(2000),True,"Tested isLeap on an input of 2000")
-              self.assertEqual(isLeap(2056),True,"Tested isLeap on an input of 2056")
+              y = 2000
+              while y == 2000:
+                  y = random.randint(490,510) * 4
+              self.assertEqual(isLeap(y),True,"Tested isLeap on an input of "+str(y))
+              y = random.randint(490,510) * 4 + 1
+              self.assertEqual(isLeap(y),False,"Tested isLeap on an input of "+str(y))
+              y = random.randint(490,510) * 4 + 2
+              self.assertEqual(isLeap(y),False,"Tested isLeap on an input of "+str(y))
+              y = random.randint(490,510) * 4 + 3
+              self.assertEqual(isLeap(y),False,"Tested isLeap on an input of "+str(y))
+              self.assertEqual(isLeap(2100),False,"Tested isLeap on an input of 2100")
+
 
       myTests().main()
 
@@ -252,7 +264,7 @@ Exercises
    .. activecode:: ex_6_9
 
       def isLeap(y):
-          # your code here
+          # type your code from exercise 8 here
 
 
       def daysInMonth(month, year):
