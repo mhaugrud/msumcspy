@@ -14,7 +14,7 @@ Exercises
    :number: 1
 
 
-            What do these expressions evaluate to?
+            What do these expressions evaluate to (True or False)?
 
             #.  ``3 == 3``
             #.  ``3 != 3``
