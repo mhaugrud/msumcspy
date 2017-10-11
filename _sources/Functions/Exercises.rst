@@ -246,9 +246,11 @@ Exercises
          def testOne(self):
              self.assertEqual(sumTo(0),0,"Tested on input 0")
              self.assertEqual(sumTo(1),1,"Tested on input 1")
-             n = random.randint(3,30)
-             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
-             n = random.randint(3,30)
+             m = random.randint(3,30)
+             self.assertAlmostEqual(sumTo(m),m*(m+1)/2,0,"Tested input "+str(m))
+             n = m
+             while n == m:
+                 n = random.randint(3,30)
              self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
 
       myTests().main()
@@ -272,9 +274,11 @@ Exercises
          def testOne(self):
              self.assertEqual(sumTo(0),0,"Tested on input 0")
              self.assertEqual(sumTo(1),1,"Tested on input 1")
-             n = random.randint(3,30)
-             self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
-             n = random.randint(3,30)
+             m = random.randint(3,30)
+             self.assertAlmostEqual(sumTo(m),m*(m+1)/2,0,"Tested input "+str(m))
+             n = m
+             while n == m:
+                 n = random.randint(3,30)
              self.assertAlmostEqual(sumTo(n),n*(n+1)/2,0,"Tested input "+str(n))
 
       myTests().main()

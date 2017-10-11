@@ -219,8 +219,8 @@ Exercises
 
 .. question:: selection_ex_8
 
-   A year is a *leap year* if it is evenly divisible by 4 unless it is a century that is not evenly divisible by 400.
    Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
+   A year is a *leap year* if it is evenly divisible by 400. If it is evenly divisible by 100 (and not 400), it is not a leap year. Finally, if it is evenly divisible by 4, it is a leap year.
 
    .. activecode:: ex_6_8
 
