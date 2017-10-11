@@ -66,7 +66,6 @@ Exercises
             The square and round brackets denote closed and open intervals.
             A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.
 
-            Test your function by printing the mark and the grade for a number of different marks.
 
             .. activecode:: ex_6_3
 
