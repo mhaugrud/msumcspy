@@ -54,8 +54,10 @@ nonsensical variation of the square function.
 .. activecode:: fns
 
     def badsquare(x):
+        '''return the square of x'''
         y = x ** power
         return y
+
 
     power = 2
     result = badsquare(10)
@@ -67,10 +69,13 @@ nonsensical variation of the square function.
    - What line causes the error?
    - Why is it a runtime error? 
    - Comment out that line (type # in front of it). Run again. There will not be a runtime error. 
-   - In line 5, change 2 to 3. Then run. The function is no longer squaring is it?
-   - On line 9, type a comment that explains why this function is bad.
+   - In line 7, change 2 to 3. Then run. The function is no longer squaring is it? This is semantic error.
+   - On line 6, define a main function and make lines 7-10 its body.
+   - On line 11, call the main function. When you run the code, you will receive a name error for the power variable in line 2
 
-Although the ``badsquare`` function works, it is silly and poorly written.  We have done it here to illustrate an important rule about how variables are looked up in Python. First, Python looks at the variables that are defined as local variables in
+   Errors are not good. However, a runtime error is better than a semantic error. Why?
+
+Although the ``badsquare`` function can work, it is poorly written.  We have done it here to illustrate an important rule about how variables are looked up in Python. First, Python looks at the variables that are defined as local variables in
 the function.  We call this the **local scope**.  If the variable name is not found in the local scope, then Python looks at the global variables, or **global scope**.  This is exactly the case illustrated in the code above. ``power`` is not found locally in ``badsquare`` but it does exist globally. The appropriate way to write this function would be to pass power as a parameter.
 For practice, you should rewrite the badsquare example to have a second parameter called power.
 
@@ -80,7 +85,7 @@ change variables defined outside the function.  Consider the following codelens 
 .. codelens::  cl_powerof_bad
 
     def powerof(x, p):
-        power = p   # Another dumb mistake
+        power = p   # this power is a local variable
         y = x ** power
         return y
 
