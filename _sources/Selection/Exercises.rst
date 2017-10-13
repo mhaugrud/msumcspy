@@ -14,7 +14,7 @@ Exercises
    :number: 1
 
 
-            What do these expressions evaluate to?
+            What do these expressions evaluate to (True or False)?
 
             #.  ``3 == 3``
             #.  ``3 != 3``
@@ -23,12 +23,15 @@ Exercises
 
             .. activecode:: ex_6_1
 
-
+               1:
+               2:
+               3:
+               4:
 
 
 .. question:: selection_ex_2
 
-   Give the **logical opposites** of these conditions.  You are not allowed to use the ``not`` operator.
+   For each of the given conditions, type its **logical opposite**.  You are not allowed to use the ``not`` operator.
 
    #.  ``a > b``
    #.  ``a >= b``
@@ -36,6 +39,11 @@ Exercises
    #.  ``a >= 18  or  day != 3``
 
    .. activecode:: ex_6_2
+
+      1:
+      2:
+      3:
+      4:
 
 .. question:: selection_ex_3
 
@@ -58,7 +66,6 @@ Exercises
             The square and round brackets denote closed and open intervals.
             A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.
 
-            Test your function by printing the mark and the grade for a number of different marks.
 
             .. activecode:: ex_6_3
 
@@ -212,8 +219,8 @@ Exercises
 
 .. question:: selection_ex_8
 
-   A year is a *leap year* if it is evenly divisible by 4 unless it is a century that is not evenly divisible by 400.
    Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
+   A year is a *leap year* if it is evenly divisible by 400. If it is evenly divisible by 100 (and not 400), it is not a leap year. Finally, if it is evenly divisible by 4, it is a leap year.
 
    .. activecode:: ex_6_8
 

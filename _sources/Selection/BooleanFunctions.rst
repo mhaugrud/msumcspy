@@ -80,7 +80,7 @@ with a few other actual parameters to see what is printed.
 
 .. admonition:: Modify the program ...
 
-   In line 5, change the parameters so *Those values are no good* is displayed
+   In line 5, change the arguments so *Those values are no good* is displayed
 
 
 Here is the same program in codelens.  When we evaluate the ``if`` statement in the main part of the program, the evaluation of
