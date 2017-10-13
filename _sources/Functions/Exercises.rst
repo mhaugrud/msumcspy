@@ -321,7 +321,7 @@ Exercises
 .. question:: functions_ex_17
 
 
-   Use the accumulator pattern to write a function called ``fact`` that will return the factorial of a positive integer. Factorial is the product of positive integers up to and including the argument. So ``fact(5)`` is ``1*2*3*4*5`` which return the value 120.
+   Use the accumulator pattern to write a function called ``fact`` that will return the factorial of a positive integer. Factorial is the product of positive integers up to and including the argument. So ``fact(5)`` is ``1*2*3*4*5`` which returns the value 120.
 
    .. activecode:: ex_5_17
 
