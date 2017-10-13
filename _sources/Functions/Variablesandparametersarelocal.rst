@@ -69,11 +69,11 @@ nonsensical variation of the square function.
    - What line causes the error?
    - Why is it a runtime error? 
    - Comment out that line (type # in front of it). Run again. There will not be a runtime error. 
-   - In line 7, change 2 to 3. Then run. The function is no longer squaring is it? This is semantic error.
+   - In line 7, change 2 to 3. Then run. The function is no longer squaring is it? Based on the function's docstring, this is a semantic error.
    - On line 6, define a main function and make lines 7-10 its body.
-   - On line 11, call the main function. When you run the code, you will receive a name error for the power variable in line 2
+   - On line 11, call the main function. When you run the code, you will receive a name error for the power variable in line 3.
 
-   Errors are not good. However, a runtime error is better than a semantic error. Why?
+   Errors are not good. However, this runtime error is better than the previous semantic error. Why?
 
 Although the ``badsquare`` function can work, it is poorly written.  We have done it here to illustrate an important rule about how variables are looked up in Python. First, Python looks at the variables that are defined as local variables in
 the function.  We call this the **local scope**.  If the variable name is not found in the local scope, then Python looks at the global variables, or **global scope**.  This is exactly the case illustrated in the code above. ``power`` is not found locally in ``badsquare`` but it does exist globally. The appropriate way to write this function would be to pass power as a parameter.
