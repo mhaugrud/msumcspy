@@ -265,7 +265,7 @@ Line 10 gets the individual pixel at the current row and column from the image.
 Lines 12-14 calculate the negative intensity values by extracting the original intensity from the pixel and subtracting it
 from 255.  Once we have the ``newred``, ``newgreen``, and ``newblue`` values, we can create a new pixel (Line 16).
 
-Finally, in line 18, we replace the original pixel with the new pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.
+Finally, in line 18, we replace the original pixel with the new pixel in our image.
 
 .. admonition:: Modify the program ...
 
