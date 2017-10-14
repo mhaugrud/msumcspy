@@ -254,15 +254,18 @@ The program below implements this algorithm.  Run it to see the resulting negati
     img.draw(win)
 
 
-Let's take a closer look at the code.  After importing the image module, we create an image object.  It represents a typical digital photo.
+Let's take a closer look at the code.  After importing the image module, we create an image object.
+It represents a typical digital photo.
 
-Lines 8 and 9 create the nested iteration that we discussed earlier.  This allows us to process each pixel in the image.
-Line 10 gets an individual pixel.
+Lines 8 and 9 create the nested iteration that we discussed earlier.  
+This allows us to process the image, from top to bottom (outer loop), left to right (inner loop).
 
-Lines 12-14 create the negative intensity values by extracting the original intensity from the pixel and subtracting it
+Line 10 gets the individual pixel at the current row and column from the image.
+
+Lines 12-14 calculate the negative intensity values by extracting the original intensity from the pixel and subtracting it
 from 255.  Once we have the ``newred``, ``newgreen``, and ``newblue`` values, we can create a new pixel (Line 16).
 
-Finally, we need to replace the old pixel with the new pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.
+Finally, in line 18, we replace the original pixel with the new pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.
 
 .. admonition:: Modify the program ...
 
