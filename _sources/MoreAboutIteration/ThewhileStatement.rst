@@ -47,7 +47,7 @@ Here is a new version of the summation program that uses a while statement.
 .. activecode:: iti
 
     def sumTo(aBound):
-        """ Return the sum of 1+2+3 ... n """
+        """ Return the sum of 1+2+3+...+aBound """
 
         theSum  = 0
         aNumber = 1
@@ -71,7 +71,7 @@ The same program in codelens will allow you to observe the flow of execution.
 .. codelens:: cl_ch07_while2
 
     def sumTo(aBound):
-        """ Return the sum of 1+2+3 ... n """
+        """ Return the sum of 1+2+3+...+aBound """
 
         theSum  = 0
         aNumber = 1
@@ -143,7 +143,7 @@ terminates.
 
    3. **modify** the loop variable (in the body of the while loop)
 
-   Return to active code **iti** and type comments at the end of the lines where these activities are performed.
+   Return to the activecode toward the top of this page and type comments at the end of the lines where these activities are performed.
 
    - At the end of line 5, type ``# initialize loop variable``.
 
