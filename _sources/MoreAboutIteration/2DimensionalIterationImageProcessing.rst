@@ -309,7 +309,8 @@ Finally, in line 18, we replace the original pixel with the new pixel in our ima
     print('display original?')
     img.draw(win) # draw original image
 
-Run the program and notice that after the negative image is created and displayed, we cannot display the original image (line 25).
+Run the program and notice that after the negative image is created and displayed, 
+we cannot display the original image (line 26).
 
 
 .. admonition:: Modify the program ...
@@ -317,6 +318,8 @@ Run the program and notice that after the negative image is created and displaye
    - On line 8, type ``newimg = image.EmptyImage(img.getWidth(), img.getHeight())``.
 
    - On lines 20 and 22, change ``img`` to ``newimg``.
+
+   - When you run the program, the original image will be displayed on line 26.
 
 
 Here we create a second image object: an empty image that will be "filled in" as we process the original pixel by pixel.  Note that the width and height of the empty image is set to be the same as the width and height of the original image. 
