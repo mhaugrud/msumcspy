@@ -186,14 +186,9 @@ flow of control as it occurs with the nested iteration.  Again, for every value 
 
 .. admonition:: Modify the program ...
 
-   - In line 3, change ``,`` to ``*``. Run and you will see the various products of the two 
-   loop variables.
+   - In line 3, change ``,`` to ``*``. Run and you will see the various products of the two loop variables.
 
-   - In line 4, add a statement to print a blank line like shown in the codelens example. 
-   Run and you will see groups of products where ``i`` has the same value.
+   - In line 4, add a statement to print a blank line like shown in the codelens example. Run and you will see groups of products where ``i`` has the same value.
 
-   - In line 3, type ``, end = '\n'`` right after ``j``. Run and you will see a small 
-   multiplication table. ``end`` is an optional parameter for the ``print`` statement. It 
-   indicates what should be printed after the other items that are printed. The default is 
-   to print a new line character.
+   - In line 3, type ``, end = '\n'`` right after ``j``. Run and you will see a small multiplication table. ``end`` is an optional parameter for the ``print`` statement. It indicates what should be printed after the other items that are printed. The default is to print a new line character.
 
