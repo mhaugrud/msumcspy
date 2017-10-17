@@ -78,13 +78,11 @@ Exercises
 
 .. question:: moreiter_ex_4
 
+    Modify the walking turtle program so that rather than a 90 degree left or right turn the
+    angle of the turn is determined randomly at each step.
 
-    .. actex:: ex_7_14
+    .. activecode:: ex_7_14
        :nocodelens:
-
-       Modify the walking turtle program so that rather than a 90 degree left or right turn the
-       angle of the turn is determined randomly at each step.
-       ~~~~
 
 
 
@@ -282,9 +280,34 @@ Exercises
 
 .. question:: moreiter_ex_15
 
-           Research the Sobel edge detection algorithm and implement it.
+   Write the function pow2 that has one parameter, ``n``. This function returns the **smallest** 
+   power of 2 that is **larger** than ``n``. For example, pow2(19) is 32.
 
-           .. activecode:: ex_7_23
-              :nocodelens:
+   .. activecode:: ex_7_23
 
+      def pow2(n):
+          # type your code here
+
+
+      ====
+      from unittest.gui import TestCaseGui
+      import random
+      import math
+      class myTests(TestCaseGui):
+
+          def testOne(self):
+              p = random.randint(9,255)
+              self.assertEqual(pow2(p),math.ceil(math.log(p,2)),"Tested on "+str(p))
+              q = p
+              while q == p:
+                  q = random.randint(9,255)
+              self.assertEqual(pow2(q),math.ceil(math.log(q,2)),"Tested on "+str(q))
+              r = p
+              while r == p or r == q:
+                  r = random.randint(9,255)
+              self.assertEqual(pow2(r),math.ceil(math.log(r,2)),"Tested on "+str(r))
+              s = 2 ** random.randint(3,10)
+              self.assertEqual(pow2(s),math.ceil(math.log(s,2)),"Tested on "+str(s))
+
+      myTests().main()
 
