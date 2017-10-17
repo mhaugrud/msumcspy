@@ -297,17 +297,17 @@ Exercises
 
           def testOne(self):
               p = random.randint(9,255)
-              self.assertEqual(pow2(p),math.ceil(math.log(p,2)),"Tested on "+str(p))
+              self.assertEqual(pow2(p),2**math.ceil(math.log(p,2)),"Tested on "+str(p))
               q = p
               while q == p:
                   q = random.randint(9,255)
-              self.assertEqual(pow2(q),math.ceil(math.log(q,2)),"Tested on "+str(q))
+              self.assertEqual(pow2(q),2**math.ceil(math.log(q,2)),"Tested on "+str(q))
               r = p
               while r == p or r == q:
                   r = random.randint(9,255)
-              self.assertEqual(pow2(r),math.ceil(math.log(r,2)),"Tested on "+str(r))
+              self.assertEqual(pow2(r),2**math.ceil(math.log(r,2)),"Tested on "+str(r))
               s = 2 ** random.randint(3,10)
-              self.assertEqual(pow2(s),math.ceil(math.log(s,2)),"Tested on "+str(s))
+              self.assertEqual(pow2(s),2**math.ceil(math.log(s,2)),"Tested on "+str(s))
 
       myTests().main()
 
