@@ -29,21 +29,25 @@ Exercises
 
 .. question:: moreiter_ex_2
 
-   Write a function ``print_triangular_numbers(n)`` that prints out the first
-   n triangular numbers. A call to ``print_triangular_numbers(5)`` would
+   Write a function ``print_factors(n)`` that prints out the factors of ``n`` without any duplications. A call to ``print_factors(24)`` would
    produce the following output::
 
-       1       1
-       2       3
-       3       6
-       4       10
-       5       15
+       2       12
+       3       8
+       4       6
 
-   (*hint: use a web search to find out what a triangular number is.*)
+   Do not use any other functions. For partial credit, you may duplicate factors::
+
+       2       12
+       3       8
+       4       6
+       6       4
+       8       3
+       12      2
 
    .. activecode:: ex_7_8
 
-      def print_triangular_numbers(n):
+      def print_factors(n):
           # your code here
 
 
@@ -51,7 +55,7 @@ Exercises
 
            Write a function, ``is_prime``, that takes a single integer argument
            and returns ``True`` when the argument is a *prime number* and ``False``
-           otherwise.
+           otherwise. Hint: the code for the previous problem may be useful for this problem.
 
            .. activecode:: ex_7_9
 
@@ -77,6 +81,7 @@ Exercises
 
     .. actex:: ex_7_14
        :nocodelens:
+
        Modify the walking turtle program so that rather than a 90 degree left or right turn the
        angle of the turn is determined randomly at each step.
        ~~~~
