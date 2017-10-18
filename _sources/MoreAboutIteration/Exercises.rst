@@ -307,7 +307,7 @@ Exercises
                   r = random.randint(9,150)
               self.assertEqual(pow2(r),2**math.ceil(math.log(r,2)),"Tested on "+str(r))
               s = 2 ** random.randint(3,10)
-              self.assertEqual(pow2(s),s*2),"Tested on "+str(s))
+              self.assertEqual(pow2(s),s*2,"Tested on "+str(s))
 
       myTests().main()
 
