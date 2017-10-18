@@ -385,3 +385,41 @@ Exercises
             .. activecode:: ex_6_12
 
 
+.. question:: selection_ex_13
+
+
+            Implement the ``addup`` function. It returns the sum of a positive integers that are not evenly divisible by 2 or 3, up to and including its parameter ``n``.
+
+            .. activecode:: ex_6_13
+
+                def addup(n):
+                    # your code here
+
+
+                ====
+                from unittest.gui import TestCaseGui
+                import random
+                def myad(n):
+                    tot = 0
+                    for x in range(1,n+1):
+                        if x%2 != 0 and x%3 != 0:
+                            tot += x
+                    return tot
+
+                class myTests(TestCaseGui):
+                    def testOne(self):
+                        self.assertEqual(addup(4),1,"Tested 4")
+                        a = random.randint(5,99)
+                        self.assertEqual(addup(a),myad(a),"Tested "+str(a))
+                        b = a
+                        while b == a:
+                            b = random.randint(5,99)
+                        self.assertEqual(addup(b),myad(b),"Tested "+str(b))
+                        c = a
+                        while c == a or c == b:
+                            c = random.randint(5,99)
+                        self.assertEqual(addup(c),myad(c),"Tested "+str(c))
+
+                myTests().main()
+
+
