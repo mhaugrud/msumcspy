@@ -152,11 +152,11 @@ Exercises
                class myTests(TestCaseGui):
                     def testOne(self):
                         r = random.randrange(0,101,2)
-                        self.assertEqual(is_even(r),True,"Tested is_even on input of "+str(r))
+                        self.assertEqual(is_even(r),True,"Tested on input of "+str(r))
                         r = random.randrange(1,101,2)
-                        self.assertEqual(is_even(r),False,"Tested is_even on input of "+str(r))
-                        self.assertEqual(is_even(1),False,"Tested is_even on input of 1")
-                        self.assertEqual(is_even(0),True,"Tested is_even on input of 0")
+                        self.assertEqual(is_even(r),False,"Tested on input of "+str(r))
+                        self.assertEqual(is_even(1),False,"Tested on input of 1")
+                        self.assertEqual(is_even(0),True,"Tested on input of 0")
 
                myTests().main()
 
@@ -178,11 +178,11 @@ Exercises
        class myTests(TestCaseGui):
             def testOne(self):
                 r = random.randrange(1,101,2)
-                self.assertEqual(is_odd(r),True,"Tested is_even on input of "+str(r))
+                self.assertEqual(is_odd(r),True,"Tested on input of "+str(r))
                 r = random.randrange(0,101,2)
-                self.assertEqual(is_odd(r),False,"Tested is_even on input of "+str(r))
-                self.assertEqual(is_odd(1),True,"Tested is_odd on input of 1")
-                self.assertEqual(is_odd(0),False,"Tested is_odd on input of 0")
+                self.assertEqual(is_odd(r),False,"Tested on input of "+str(r))
+                self.assertEqual(is_odd(1),True,"Tested on input of 1")
+                self.assertEqual(is_odd(0),False,"Tested on input of 0")
 
        myTests().main()
 
@@ -194,7 +194,7 @@ Exercises
 
            .. activecode:: ex_6_7
 
-               def is_even():
+               def is_even(n):
                    # type your code from exercise 5 here
 
                def is_odd(n):
@@ -206,11 +206,11 @@ Exercises
                class myTests(TestCaseGui):
                     def testOne(self):
                         r = random.randrange(1,101,2)
-                        self.assertEqual(is_odd(r),True,"Tested is_even on input of "+str(r))
+                        self.assertEqual(is_odd(r),True,"Tested on input of "+str(r))
                         r = random.randrange(0,101,2)
-                        self.assertEqual(is_odd(r),False,"Tested is_even on input of "+str(r))
-                        self.assertEqual(is_odd(1),True,"Tested is_odd on input of 1")
-                        self.assertEqual(is_odd(0),False,"Tested is_odd on input of 0")
+                        self.assertEqual(is_odd(r),False,"Tested on input of "+str(r))
+                        self.assertEqual(is_odd(1),True,"Tested on input of 1")
+                        self.assertEqual(is_odd(0),False,"Tested on input of 0")
 
                myTests().main()
 
@@ -388,7 +388,7 @@ Exercises
 .. question:: selection_ex_13
 
 
-            Implement the ``addup`` function. It returns the sum of a positive integers that are not evenly divisible by 2 or 3, up to and including its parameter ``n``.
+            Implement the ``addup`` function. It returns the sum of all positive integers that are not evenly divisible by 2 or 3, up to and including its parameter ``n``.
 
             .. activecode:: ex_6_13
 
