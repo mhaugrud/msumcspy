@@ -378,6 +378,11 @@ The second image becomes a modified version of the original image. By doing this
 
         import cImage as image
         img = image.Image("myfile.gif")
+        win = image.ImageWin("Title of Window", img.getWidth(), img.getHeight())
 
-    ``cImage.py`` will only work with GIF files unless you also install the Python Image Library with ``pip install pillow``.
+    ``import cImage as image`` allows you to refer to the ``cImage`` module with the name ``image``.
+
+    Line 3 above, shows that the cImage ImageWin constructor requires a string as its first argument. This string provides a title for the drawing window.
+
+    ``cImage`` will only work with GIF files unless you also install the Python Image Library with ``pip install pillow``.
 
