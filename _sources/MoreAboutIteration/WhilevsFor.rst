@@ -27,7 +27,7 @@ By contrast, if you are required to repeat some computation until some condition
 As we noted before, the first case is called **definite iteration** --- we have some definite bounds for what is needed.   The latter case is called **indefinite iteration** --- we are not sure how many iterations we'll need --- we cannot even establish an upper bound!
 
 
-As a general rule, use a ``for`` loop whenever possible. This is because it is much more work to manage a ``while`` loop. You must properly initialize, test, and modify the loop control variable. If you fail to do any these activities properly, the while loop will not work. In a for loop all these tasks are handled automatically.
+As a general rule, use a ``for`` loop whenever possible. This is because it is much more work to manage a ``while`` loop. You must properly initialize, test, and modify the loop control variable. If you fail to do any these activities properly, the ``while`` loop will not work. In a ``for`` loop all these tasks are handled automatically.
 
 
 

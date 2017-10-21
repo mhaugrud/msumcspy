@@ -54,7 +54,7 @@ The ``*`` operator also works on strings.  It performs repetition. For example, 
 
     print("Go" * 6)
 
-    name = "Packers"
+    name = "Dragons"
     print(name * 3)
 
     print(name + "Go" * 3)

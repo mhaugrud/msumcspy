@@ -371,8 +371,10 @@ The second image becomes a modified version of the original image. By doing this
       newblue = 0
 
 
+.. _cimage:
+
 .. note::
-    If you want to try some image processing on your own computer, outside of this interactive textbook, you must install the cImage module. (This has already been done on Smaug.) The easiest way to get this is to run the command ``pip install cImage`` from the command line. 
+    If you want to try some image processing on your own computer, outside of this interactive textbook, you must install the ``cImage`` module. (This has already been done on Smaug.) The easiest way to get this is to run the command ``pip install cImage`` from the command line. 
 
     There a two differences as shown below: 
 
