@@ -372,7 +372,9 @@ The second image becomes a modified version of the original image. By doing this
 
 
 .. note::
-    If you want to try some image processing on your own, outside of this interactive textbook, you must install the cImage module. The easiest way to get this is to run the command ``pip install cImage`` from the command line. Then import as shown below: 
+    If you want to try some image processing on your own computer, outside of this interactive textbook, you must install the cImage module. (This has already been done on Smaug.) The easiest way to get this is to run the command ``pip install cImage`` from the command line. 
+
+    There a two differences as shown below: 
 
     .. sourcecode:: python
 
@@ -380,9 +382,9 @@ The second image becomes a modified version of the original image. By doing this
         img = image.Image("myfile.gif")
         win = image.ImageWin("Title of Window", img.getWidth(), img.getHeight())
 
-    ``import cImage as image`` allows you to refer to the ``cImage`` module with the name ``image``.
+    1. ``import cImage as image`` allows you to refer to the ``cImage`` module with the name ``image`` as in all the previous examples on this page..
 
-    Line 3 above, shows that the cImage ImageWin constructor requires a string as its first argument. This string provides a title for the drawing window.
+    2. The cImage ``ImageWin`` constructor **requires** a string as its first argument. This string provides a title for the drawing window.
 
     ``cImage`` will only work with GIF files unless you also install the Python Image Library with ``pip install pillow``.
 
