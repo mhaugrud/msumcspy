@@ -165,7 +165,7 @@ Exercises
 
 .. question:: moreiter_ex_8
 
-   Write the ceilog2 function. It counts how many time its argument can be divided by 2 until the result is 1.
+   Write the ceilog2 function. It counts how many times its argument can be divided by 2 until its value is 1.
 
    .. activecode:: ex_7_16
       
@@ -181,15 +181,15 @@ Exercises
 
           def testOne(self):
               p = random.randrange(1,5)
-              self.assertEqual(ceilog2(2**p),p),"Tested on "+str(2**p))
+              self.assertEqual(ceilog2(2**p),p,"Tested on "+str(2**p))
               p = random.randrange(5,11)
-              self.assertEqual(ceilog2(2**p),p),"Tested on "+str(2**p))
+              self.assertEqual(ceilog2(2**p),p,"Tested on "+str(2**p))
               p = random.randrange(7,11)
               q = random.randrange(1,127)
-              self.assertEqual(ceilog2(2**p+q),p),"Tested on "+str(2**p+q))
+              self.assertEqual(ceilog2(2**p+q),p,"Tested on "+str(2**p+q))
               p = random.randrange(9,21)
               q = random.randrange(1,511)
-              self.assertEqual(ceilog2(2**p+q),p),"Tested on "+str(2**p+q))
+              self.assertEqual(ceilog2(2**p+q),p,"Tested on "+str(2**p+q))
 
       myTests().main()
 
