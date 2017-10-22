@@ -165,10 +165,35 @@ Exercises
 
 .. question:: moreiter_ex_8
 
-   Write a function to convert the image to grayscale.
+   Write the ceilog2 function. It counts how many time its argument can be divided by 2 until the result is 1.
 
    .. activecode:: ex_7_16
-      :nocodelens:
+      
+      def ceilog2(n):
+          # type your code here
+
+
+      ====
+      from unittest.gui import TestCaseGui
+      import random
+      import math
+      class myTests(TestCaseGui):
+
+          def testOne(self):
+              p = random.randrange(1,5)
+              self.assertEqual(ceilog2(2**p),p),"Tested on "+str(2**p))
+              p = random.randrange(5,11)
+              self.assertEqual(ceilog2(2**p),p),"Tested on "+str(2**p))
+              p = random.randrange(7,11)
+              q = random.randrange(1,127)
+              self.assertEqual(ceilog2(2**p+q),p),"Tested on "+str(2**p+q))
+              p = random.randrange(9,21)
+              q = random.randrange(1,511)
+              self.assertEqual(ceilog2(2**p+q),p),"Tested on "+str(2**p+q))
+
+      myTests().main()
+
+
 
 
 .. question:: moreiter_ex_9
