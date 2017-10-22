@@ -180,16 +180,16 @@ Exercises
       class myTests(TestCaseGui):
 
           def testOne(self):
-              p = random.randrange(1,5)
+              p = random.randrange(1,8)
               self.assertEqual(ceilog2(2**p),p+1,"Tested on "+str(2**p))
-              p = random.randrange(5,11)
+              p = random.randrange(8,21)
               self.assertEqual(ceilog2(2**p),p+1,"Tested on "+str(2**p))
-              p = random.randrange(7,11)
-              q = random.randrange(1,127)
-              self.assertEqual(ceilog2(2**p+q),p+1,"Tested on "+str(2**p+q))
-              p = random.randrange(9,21)
-              q = random.randrange(1,511)
-              self.assertEqual(ceilog2(2**p+q),p+1,"Tested on "+str(2**p+q))
+              p = random.randrange(2,21)
+              self.assertEqual(ceilog2(2**p-1),p,"Tested on "+str(2**p-1))
+              q = p
+              while q == p:
+                  q = random.randrange(2,21)
+              self.assertEqual(ceilog2(2**q-1),q,"Tested on "+str(2**q-1))
 
       myTests().main()
 
