@@ -26,10 +26,10 @@ The general steps of the string accumulator pattern are:
 
 .. sourcecode:: python
 
-    initialize the output string to an empty string
+    initialize the output string (often to an empty string)
 
     for each character in another string:
-        (if appropriate) concatenate that character to the output string
+        (if some condition is True,) concatenate that character to the output string
 
 
 .. activecode:: str
