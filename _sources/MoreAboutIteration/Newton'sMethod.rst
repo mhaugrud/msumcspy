@@ -109,7 +109,7 @@ You may have studied this sequence in a math class and learned that the sum appr
 
    If the sum never reaches 2.0, the loop would never terminate. But the loop does stop! How many repetitions did it make before it stopped?
 
-   On line 9 (not indented), print the value of ``aNumber`` and you will see.
+   On line 9 (indented the same as line 10), print the value of ``aNumber`` and you will see.
 
    But **why** did it reach 2.0? Are those math teachers wrong?
 
