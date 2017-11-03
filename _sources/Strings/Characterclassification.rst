@@ -41,6 +41,6 @@ For more information consult the ``string`` module documentaiton (see `Global Mo
 
 .. admonition:: Modify the program ...
 
-   Starting on line 2, print the five character sets (nothing will show for whitespace).
+   Starting on line 2, print the the first four character sets (not string.whitespace).
 
 

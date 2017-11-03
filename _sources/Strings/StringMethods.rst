@@ -30,7 +30,7 @@ Strings are also objects.  Each string instance has its own attributes and metho
     print('line 2:', ss.upper())
 
     tt = ss.lower()
-    print('line 4:', tt)
+    print('line 5:', tt)
 
 
 In this example, ``upper`` is a method that can be invoked on any string object to create a new string in which all the 
@@ -112,7 +112,7 @@ change the original.  You can also consult the `Python documentation for strings
 
    - On line 11, type a line similar to line 10 that results in ``6`` being displayed.
 
-   - On line 7, make a string from the interger variable ``size`` (recall how you can make a string from an integer with ``str``). Use the rjust method on that string to right justify it in a field 5 characters wide and print the resulting string. Notice the number 25 is preceded by 3 spaces.
+   - On line 7, make a string from the integer variable ``size`` (recall how you can make a string from an integer with ``str``). Use the rjust method on that string to right justify it in a field 5 characters wide and print the resulting string. Notice the number 25 is preceded by 3 spaces.
 
 
 **Check your understanding**
@@ -212,7 +212,7 @@ Next we use floats.  Try original price $2.50  with a 7% discount:
 
     origPrice = float(input('Enter the original price: $')) 
     discount = float(input('Enter discount percentage: ')) 
-    newPrice = (1 - discount/100)*origPrice
+    newPrice = (1 - discount/100) * origPrice
     calculation = '${} discounted by {}% is ${}.'.format(origPrice, discount, newPrice)
     print(calculation)
 

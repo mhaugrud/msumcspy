@@ -16,7 +16,7 @@
 Strings and Lists
 -----------------
 
-Two of the most useful methods on strings involve lists of
+Two of the most useful **string methods** involve lists of
 strings. The ``split`` method breaks a string into a list of words.  By default, any number of whitespace characters is considered a word boundary.
 
 .. activecode:: lil
