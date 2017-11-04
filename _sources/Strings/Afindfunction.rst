@@ -16,9 +16,9 @@
 A ``find`` Function
 -------------------
 
-Here is an implementation for the ``find`` method.
+Here is an implementation for the ``find`` function.
 
-.. activecode:: st10
+.. activecode:: st09
     
     def find(astring, achar):
         """
@@ -59,11 +59,38 @@ When the iteration stops, we simply ask a question to find out why and then retu
 	soon as we find what we are looking for, we can cry Eureka!  and stop looking.  The way
 	we stop looking is by setting ``found`` to True which causes the condition to fail.
 
+Here is another version of the ``find`` function. It does not utilize the ``found`` variable. Instead, it immediately returns upon finding a match to ``aChar``.
+
+.. activecode:: st10
+    
+    def find(astring, achar):
+        """
+        Find and return the index of achar in astring.  
+        Return -1 if achar does not occur in astring.
+        """
+        ix = 0
+        while ix < len(astring):
+            if astring[ix] == achar:
+                return ix  # eureka
+    
+            ix = ix + 1    # advance to the next index
+
+        return -1 # no match found in astring
+        
+    print(find("Compsci", "C"))
+    print(find("Compsci", "i"))
+    print(find("Compsci", "p"))
+
+    print(find("Compsci", "x"))
+
 .. admonition:: Modify the program ...
 
-   - On line 21, use a string **method** to find the index of ``p`` in ``Compsci``. This should produce the same result as line 20.
+   The ``find`` function works and it is important to understand this technique. However, one  of the string methods (section 9.13) gives us this same ability without our having to write a function.
 
-   - On line 23, use a string **method** to find the index of ``x`` in ``Compsci``. This should produce the same result as line 22.
+   - On line 18, use a string **method** to find the index of ``p`` in ``Compsci``. This should produce the same result as line 20.
+
+   - On line 20, use a string **method** to find the index of ``x`` in ``Compsci``. This should produce the same result as line 22.
+
 
 
 

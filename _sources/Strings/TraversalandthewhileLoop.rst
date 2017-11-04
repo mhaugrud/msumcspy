@@ -71,10 +71,4 @@ Here is the same example in codelens so that you can trace the values of the var
           idx = idx + 2
       
 
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: st09
-
 
