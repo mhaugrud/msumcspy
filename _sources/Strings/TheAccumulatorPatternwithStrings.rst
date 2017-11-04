@@ -26,10 +26,10 @@ The general steps of the string accumulator pattern are:
 
 .. sourcecode:: python
 
-    initialize the output string (often to an empty string)
+    initialize the accumulator string (often to an empty string)
 
     for each character in another string:
-        (if some condition is True,) concatenate that character to the output string
+        (if some condition is True,) concatenate that character to the accumulator string
 
 
 .. activecode:: str
@@ -64,7 +64,7 @@ In words it says that the new value of ``newString`` will be the old value of ``
 
 Take a close look also at the initialization of ``newString``.  We start with an empty string and then begin adding new characters to the end.
 
-Step through the function using codelens to see the accumulator variable grow.
+Step through the function using codelens to see the accumulator string grow.
 
 .. codelens:: cl_ch08_acc2
     
