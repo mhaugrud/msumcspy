@@ -16,7 +16,8 @@
 A ``find`` Function
 -------------------
 
-Here is an implementation for the ``find`` function.
+Here is an implementation for a ``find`` function. It searches a string for the first occurrence of a character and returns its index. If the character is not found, the function returns ``-1``.
+In a sense, ``find`` is the opposite of the indexing operator. Instead of taking an index and extracting the corresponding character, it takes a character and finds its location. 
 
 .. activecode:: st09
     
@@ -40,11 +41,9 @@ Here is an implementation for the ``find`` function.
     print(find("Compsci", "C"))
     print(find("Compsci", "i"))
     print(find("Compsci", "p"))
-
     print(find("Compsci", "x"))
     
 
-In a sense, ``find`` is the opposite of the indexing operator. Instead of taking an index and extracting the corresponding character, it takes a character and finds the index where that character appears for the first time. If the character is not found, the function returns ``-1``.
 
 The ``while`` loop in this example uses a slightly more complex condition than we have seen in previous programs.  Here there are two parts to the condition.  We want to keep going if there
 are more characters to look through and we want to keep going if we have not found what we are  looking for.  The variable ``found`` is a boolean variable that keeps track of whether we have found the character we are searching for.  It is initialized to *False*.  If we find the character, we reassign ``found`` to *True*.
