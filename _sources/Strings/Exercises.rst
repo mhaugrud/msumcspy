@@ -60,9 +60,36 @@ Exercises
                   # your code here
 
 
-#. Print out a neatly formatted multiplication table, up to 12 x 12.
+#. Write a function that will return a string that is the binary equivalent of its positive decimal integer parameter.
 
    .. activecode:: ex_8_4
+
+      def dec2bin(n):
+          # your code here
+
+
+      ====
+      from unittest.gui import TestCaseGui
+      import random
+      class myTests(TestCaseGui):
+
+          def testOne(self):
+              a = random.randrange(1,256)
+              self.assertEqual(dec2bin(a),bin(a)[2:],"Tested on "+str(a))
+              b = a
+              while b == a:
+                  b = random.randrange(1,256)
+              self.assertEqual(dec2bin(b),bin(b)[2:],"Tested on "+str(b))
+              c = a
+              while c == a or c == b:
+                  c = random.randrange(1,256)
+              self.assertEqual(dec2bin(c),bin(c)[2:],"Tested on "+str(c))
+              d = a
+              while d == a or d == b or d == c:
+                  d = random.randrange(1,256)
+              self.assertEqual(dec2bin(d),bin(d)[2:],"Tested on "+str(d))
+
+      myTests().main()
 
 
 #.
