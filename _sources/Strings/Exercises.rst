@@ -60,7 +60,7 @@ Exercises
                   # your code here
 
 
-#. Write a function that will return a string that is the binary equivalent of its positive decimal integer parameter.
+#. Write a function that will return a string that is the binary equivalent of its positive decimal integer parameter. **Use the string accumulator pattern.**
 
    .. activecode:: ex_8_4
 
