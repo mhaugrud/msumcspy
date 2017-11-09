@@ -60,9 +60,45 @@ Exercises
                   # your code here
 
 
+#. Write a function that will return the decimal equivalent of a string that represents a binary integer. **Use the accumulator pattern.**
+
+   .. activecode:: ex_8_41
+
+      def bin2dec(n):
+          # your code here
+
+
+      ====
+      from unittest.gui import TestCaseGui
+      import random
+      class myTests(TestCaseGui):
+
+          def testOne(self):
+              a = random.randrange(1,256)
+              x = bin(a)[2:]
+              self.assertEqual(bin2dec(x),a),"Tested on "+x)
+              b = a
+              while b == a:
+                  b = random.randrange(1,256)
+              x = bin(b)[2:]
+              self.assertEqual(bin2dec(x),b),"Tested on "+x)
+              c = a
+              while c == a or c == b:
+                  c = random.randrange(1,256)
+              x = bin(c)[2:]
+              self.assertEqual(bin2dec(x),c),"Tested on "+x)
+              d = a
+              while d == a or d == b or d == c:
+                  d = random.randrange(1,256)
+              x = bin(d)[2:]
+              self.assertEqual(bin2dec(x),d),"Tested on "+x)
+
+      myTests().main()
+
+
 #. Write a function that will return a string that is the binary equivalent of its positive decimal integer parameter. **Use the string accumulator pattern.**
 
-   .. activecode:: ex_8_4
+   .. activecode:: ex_8_42
 
       def dec2bin(n):
           # your code here
