@@ -17,20 +17,13 @@ Cloning Lists
 -------------
 
 If we want to modify a list and also keep a copy of the original, we need to be
-able to make a copy of the list itself, not just the reference. This process is
-sometimes called **cloning**, to avoid the ambiguity of the word copy.
+able to make a copy of the list itself, not just the reference.
 
-The easiest way to clone a list is to use the slice operator.
-
-Taking any slice of ``a`` creates a new list. In this case the slice happens to
-consist of the whole list.
-
-.. codelens:: cl_chp09_is4
-    :showoutput:
+.. activecode:: li00
     
     a = [81, 82, 83]
 
-    b = a[:]       # make a clone using slice
+    b = a
     print(a == b)
     print(a is b)
 
@@ -39,6 +32,19 @@ consist of the whole list.
     print(a)
     print(b)
 
-Now we are free to make changes to ``b`` without worrying about ``a``.  Again, we can clearly see in codelens that ``a`` and ``b`` are entirely different list objects.
+.. admonition:: Edit the code ...
+
+   When you run this activecode, you will see that changing an element in ``b`` affects ``a``. This is because ``b`` is an alias of ``a``.
+
+   Change line 3 to ``b = [:]``. Now, when you run, notice ``a`` is no longer affected.
+
+This process is sometimes called **cloning**, to avoid the ambiguity of the word copy.
+
+The easiest way to clone a list is to use the slice operator.
+
+Taking any slice of ``a`` creates a new list. In this case the slice happens to
+consist of the whole list.
+
+Now we are free to make changes to ``b`` without worrying about ``a``.  We can clearly see that ``a`` and ``b`` are entirely different list objects.
 
 

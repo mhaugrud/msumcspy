@@ -21,21 +21,22 @@ elements in square brackets ( ``[`` and ``]``).
 
 .. sourcecode:: python
     
+    []
     [10, 20, 30, 40]
     ["spam", "bungee", "swallow"]
 
-The first example is a list of four integers. The second is a list of three
-strings. As we said above, the elements of a list don't have to be the same type.  The following
-list contains a string, a float, an integer, and
-another list.
+The first example is the simplest list. It contains no elements. It is called the **empty list**.
+
+The second example is a list of four integers. The next is a list of three
+strings. As we said above, the elements of a list don't have to be the same type.
+
+The following list contains a string, a float, an integer, and another list.
 
 .. sourcecode:: python
     
     ["hello", 2.0, 5, [10, 20]]
 
 A list within another list is said to be **nested** and the inner list is often called a **sublist**.
-Finally, there is a special list that contains no elements. It is called the
-empty list and is denoted ``[]``.
 
 As you would expect, we can also assign list values to variables and pass lists as parameters to functions.  
 

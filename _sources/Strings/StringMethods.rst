@@ -84,7 +84,7 @@ change the original.  You can also consult the `Python documentation for strings
     print("***" + ss.lstrip() + "***")
     print("***" + ss.rstrip() + "***")
 
-    news = ss.replace("o", "***")
+    news = ss.replace("l", "***")
     print(news)
 
 
