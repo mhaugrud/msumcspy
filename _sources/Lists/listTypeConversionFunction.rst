@@ -21,11 +21,15 @@ Python has a built-in type constructor function called
 
 .. activecode:: lix
     
-    xs = list("Crunchy Frog")
-    print(xs)
+    alist = list()
+    print(alist)
+    blist = list("Crunchy Frog")
+    print(blist)
 
 
-A list is made from the string "Crunchy Frog" by taking each character in the string and placing it in a list.  In general, any sequence can be turned into a list using this function.  The result will be a list containing the elements in the original sequence.  It is not legal to use the ``list`` constructor function on any argument that is not a sequence.
+In the first example, we use the ``list`` constructor to make an empty list.
+
+Next we make a list from the string "Crunchy Frog" by taking each character in the string and placing it in a list.  In general, any sequence can be turned into a list using this function.  The result will be a list containing the elements in the original sequence.  It is not legal to use the ``list`` constructor function on any argument that is not a sequence.
 
 It is also important to point out that the ``list`` constructor function will place each element of the original sequence in the new list.  When working with strings, this is very different than the result of the ``split`` method.  Whereas ``split`` will break a string into a list of "words", ``list`` will always break it into a list of characters.
     
