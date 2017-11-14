@@ -42,6 +42,15 @@ best you can do is create a new string that is a variation on the original.
 The solution here is to concatenate a new first letter onto a slice of
 ``greeting``. This operation has no effect on the original string.
 
+.. admonition:: Modify the code ...
+
+   -In line 2, change ``newGreeting`` to ``greeting``
+
+   -Comment out line 3
+
+   -Run and notice ``greeting`` is no longer the same as it was
+
+
 **Check your understanding**
 
 .. mchoice:: mc8i
