@@ -44,11 +44,11 @@ The solution here is to concatenate a new first letter onto a slice of
 
 .. admonition:: Modify the code ...
 
-   -In line 2, change ``newGreeting`` to ``greeting``
+   - In line 2, change ``newGreeting`` to ``greeting``
 
-   -Comment out line 3
+   - Comment out line 3
 
-   -Run and notice ``greeting`` is no longer the same as it was
+   - Run and notice ``greeting`` is no longer the same as it was
 
 
 **Check your understanding**
