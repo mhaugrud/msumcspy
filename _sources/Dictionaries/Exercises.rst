@@ -154,40 +154,37 @@ Exercises
 
 .. question:: dict_ex_5
 
-   .. tabbed:: q5
+   Here's a table of English to Pirate translations
 
-        .. tab:: Question
+   ==========  ==============
+   English     Pirate
+   ==========  ==============
+   sir	        matey
+   hotel	    fleabag inn
+   student	    swabbie
+   boy	        matey
+   madam	    proud beauty
+   professor	foul blaggart
+   restaurant	galley
+   your	    yer
+   excuse	    arr
+   students	swabbies
+   are	        be
+   lawyer	    foul blaggart
+   the	        th'
+   restroom	head
+   my	        me
+   hello	    avast
+   is	        be
+   man	        matey
+   ==========  ==============
 
-            .. actex:: ex_11_04
-               Here's a table of English to Pirate translations
+   Write a program that asks the user for a sentence in English and then translates that
+   sentence to Pirate.
+               
 
-               ==========  ==============
-               English     Pirate
-               ==========  ==============
-               sir	        matey
-               hotel	    fleabag inn
-               student	    swabbie
-               boy	        matey
-               madam	    proud beauty
-               professor	foul blaggart
-               restaurant	galley
-               your	    yer
-               excuse	    arr
-               students	swabbies
-               are	        be
-               lawyer	    foul blaggart
-               the	        th'
-               restroom	head
-               my	        me
-               hello	    avast
-               is	        be
-               man	        matey
-               ==========  ==============
 
-               Write a program that asks the user for a sentence in English and then translates that
-               sentence to Pirate.
-               ~~~~
-
+   .. activecode:: ex_11_04
 
 
 
