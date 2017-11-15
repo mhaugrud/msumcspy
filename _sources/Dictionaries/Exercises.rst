@@ -103,50 +103,54 @@ Exercises
 
 .. question:: dict_ex_3
 
-   .. tabbed:: q3
+   The following file called ``princess.txt`` is the script for the opening scene of The Princess Bride.
 
-        .. tab:: Question
+   .. datafile:: princess.txt
+
+      Grandson: Cough, cough, cough. Cough, cough, cough. {Grandson is on the bed, playing video game.}
+      Mother: {Enters.} Hi, honey.
+      Grandson: Hi, Mom.
+      Mother: {Kisses son and feels his forehead.} You feeling any better?
+      Grandson: A little bit.
+      Mother: Guess what?
+      Grandson: What?
+      Mother: Your Grandfather's here. {Opens curtains.}
+      Grandson: Mom, can't you tell him I'm sick?
+      Mother: You're sick? That's why he's here.
+      Grandson: He'll pinch my cheek. I hate that.
+      Mother: Maybe he won't.
+      Grandfather: {Entering with a flourish.} Heyyyy!! How's the sickie? Heh? {Pinches boy's cheek.  Boy looks at mother accusingly.}
+      Mother: I think I'll leave you two pals alone. {Exits.}
+      Grandfather: I brought you a special present.
+      Grandson: What is it?
+      Grandfather: Open it up.
+      Grandson: {Opens the package. Disappointed.} A book?
+      Grandfather: That's right. When I was your age, television was called books. And this is a special book. It was the book my father used to read to me when I was sick, {takes book} and I used to read it to your father. And today I'm gonna read it to you.
+      Grandson: Has it got any sports in it?
+      Grandfather: Are you kidding? Fencing, fighting, torture, revenge, giants, monsters, chases, escapes, true love, miracles...
+      Grandson: Doesn't sound too bad. I'll try to stay awake. {Turns off TV.}
+      Grandfather: Oh, well, thank you very much, very nice of you. Your vote of confidence is overwhelming. All right. {Puts glasses on.} The Princess Bride, by S. Morgenstern. Chapter One. Buttercup was raised on a small farm in the country of Florin.
 
 
-           .. actex:: ex_11_02
-              Write a program called ``alice_words.py`` that creates a text file named
-              ``alice_words.txt`` containing an alphabetical listing of all the words, and the
-              number of times each occurs, in the text version of `Alice's Adventures in Wonderland`.
-              (You can obtain a free plain text version of the book, along with many others, from
-              http://www.gutenberg.org.) The first 10 lines of your output file should look
-              something like this
+   Write a program that list all the words (alphabetically) in princess.txt and the
+   number of times each occurs.
 
-              =========== ===========
-              Word              Count
-              =========== ===========
-              a                 631
-              a-piece           1
-              abide             1
-              able              1
-              about             94
-              above             3
-              absence           1
-              absurd            2
-              =========== ===========
+   .. activecode:: ex_11_02
+      :available_files: princess.txt
 
-              How many times does the word, ``alice``, occur in the book?  If you are writing this
-              in the activecode window simply print out the results rather than write them to a file.
-              ~~~~
-
-        .. tab:: Answer
-
-            .. sourcecode:: python
-
-                f = open('alice.txt', 'r')
+      f = open('princess.txt', 'r')
 
 
 
 
 .. question:: dict_ex_4
 
-   What is the longest word in Alice in Wonderland? How many characters does it have?
+   Write a program that lists all words in princess.txt according to their length. All words that are the same
+   length should be in one group. These words should be in alphabetical order. The groups should be in
+   numeric order.
 
    .. activecode:: ex_11_03
+      :available_files: princess.txt
 
 .. question:: dict_ex_5
 
