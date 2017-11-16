@@ -321,11 +321,12 @@ Exercises
 
 
 
-#. Write a function that removes all occurrences of a string from another string.
+#. Write a function that changes all punctuation characters in a string to the space character. 
+   Note an appostrophe between letters isn't punctuation - it's part of the contraction.
 
    .. activecode:: ex_8_11
 
-      def remove_all(substr,theStr):
+      def remove_punct(theStr):
           # your code here
 
 
@@ -337,10 +338,14 @@ Exercises
       class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(remove_all("an","banana"),"ba","Tested remove_all on inputs of 'an' and 'banana'")
-            self.assertEqual(remove_all("cyc","bicycle"),"bile","Tested remove_all on inputs of 'cyc' and 'bicycle'")
-            self.assertEqual(remove_all("iss","Mississippi"),"Mippi","Tested remove_all on inputs of 'iss' and 'Mississippi'")
-            self.assertEqual(remove_all("eggs","bicycle"),"bicycle","Tested remove_all on inputs of 'eggs' and 'bicycle'")
+            s = "Cough, cough, cough. Cough, cough, cough."
+            self.assertEqual(remove_punct(s),"Cough  cough  cough  Cough  cough  cough ","Tested on "+s)
+            s = "You're sick? That's why he's here."
+            self.assertEqual(remove_punct(s),"You're sick  That's why he's here ","Tested on "+s)
+            s = "Doesn't sound too bad. I'll try to stay awake. {Turns off TV.}"
+            self.assertEqual(remove_punct(s),"Doesn't sound too bad  I'll try to stay awake   Turns off TV  ","Tested on "+s)
+            s = '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~'
+            self.assertEqual(remove_punct(s),"                               ","Tested on "+s)
 
 
 

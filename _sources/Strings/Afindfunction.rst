@@ -86,9 +86,9 @@ Here is another version of the ``find`` function. It does not utilize the ``foun
 
    The ``find`` function works and it is important to understand this technique. However, one  of the string methods (section 9.13) gives us this same ability without our having to write a function.
 
-   - On line 18, use a string **method** to find the index of ``p`` in ``Compsci``. This should produce the same result as line 20.
+   - On line 18, use a string **method** to find the index of ``p`` in ``Compsci``. This should produce the same result as line 17.
 
-   - On line 20, use a string **method** to find the index of ``x`` in ``Compsci``. This should produce the same result as line 22.
+   - On line 20, use a string **method** to find the index of ``x`` in ``Compsci``. This should produce the same result as line 19.
 
 
 
