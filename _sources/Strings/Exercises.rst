@@ -234,12 +234,12 @@ Exercises
 
 #.
 
-           Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
+           Write a boolean function that recognizes whether or not a string is a palindrome - the same frontwards as backwards. (Hint: use your ``reverse`` function to make this easy!).
 
            .. activecode:: ex_8_8
               :nocodelens:
 
-              def is_palindrome(myStr):
+              def is_pal(myStr):
                   # your code here
 
               ====
@@ -250,11 +250,11 @@ Exercises
               class myTests(TestCaseGui):
 
                   def testOne(self):
-                      self.assertEqual(is_palindrome("abba"),True,"Tested is_palindrome on input of 'abba'")
-                      self.assertEqual(is_palindrome("abab"),False,"Tested is_palindrome on input of 'abab'")
-                      self.assertEqual(is_palindrome("straw warts"),True,"Tested is_palindrome on input of 'straw warts'")
-                      self.assertEqual(is_palindrome("a"),True,"Tested is_palindrome on input of 'a'")
-                      self.assertEqual(is_palindrome(""),True,"Tested is_palindrome on input of ''")
+                      self.assertEqual(is_pal("robert"),False,"Tested is_palindrome on input of 'robert'")
+                      self.assertEqual(is_pal("bob"),True,"Tested is_palindrome on input of 'bob'")
+                      self.assertEqual(is_pal("racecar"),True,"Tested is_palindrome on input of 'racecar'")
+                      self.assertEqual(is_pal("starrats"),True,"Tested is_palindrome on input of 'starrats'")
+                      self.assertEqual(is_pal(""),True,"Tested is_palindrome on input of ''")
 
 
 
