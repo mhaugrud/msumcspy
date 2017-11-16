@@ -30,7 +30,7 @@ The string ``string.ascii_lowercase`` contains all of the ascii letters that the
 
     
 
-For more information consult the ``string`` module documentaiton (see `Global Module Index <http://docs.python.org/py3k/py-modindex.html>`_).
+For more information consult the ``string`` module documentation (see `Global Module Index <http://docs.python.org/py3k/py-modindex.html>`_).
 
 
 
