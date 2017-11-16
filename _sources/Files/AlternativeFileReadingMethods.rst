@@ -141,7 +141,8 @@ Now let's look at another method of reading our file using a ``while`` loop.  Th
     line = infile.readline()
     while line:
         values = line.split()
-        print('QB ', values[0], values[1], 'had a rating of ', values[10] )
+        passes = int(values[4]) + int(values[5]) + int(values[8])
+        print('{} {} made {} passes'.format(values[0], values[1], passes))
         line = infile.readline()
 
     infile.close()
@@ -153,6 +154,8 @@ We call this initial read the **priming read**.
 This is very important because the while condition needs to have a value for the ``line`` variable.  The ``readline`` method will return the empty string if there is no more data in the file. In essence, ``while line:``,  means `while the content of line is not the empty string`.  Remember that a
 blank line in the file actually has a single character, the ``\n`` character (newline).  So, the only way that a line of data from the
 file can be empty is if you are reading at the end of the file.
+
+All the values in the file are strings. So if we need to do arithmetic, we must make numbers from them.
 
 Finally, notice that the last line of the body of the ``while`` loop performs another ``readline``.  This statement will reassign the variable ``line`` to the next line of the file.  It represents the `change of state` that is necessary for the iteration to
 function correctly.  Without it, there would be an infinite loop processing the same line of data over and over.
