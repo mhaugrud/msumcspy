@@ -322,7 +322,7 @@ Exercises
 
 
 #. Write a function that changes all punctuation characters in a string to the space character. 
-   Note an appostrophe between letters isn't punctuation - it's part of the contraction.
+   Note an appostrophe between letters isn't punctuation - it's part of contraction or possessive.
 
    .. activecode:: ex_8_11
 
