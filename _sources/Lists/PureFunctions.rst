@@ -20,13 +20,12 @@ Pure Functions
 A **pure function** does not produce side effects. It communicates with the
 calling program only through parameters (which it does not modify) and a return
 value. Here is the ``doubleStuff`` function from the previous section written as a pure function. 
-Notice it utilizes the **list accumulator** pattern.
 
 If you want to modify the variable ``things`` with the pure function version of ``double_stuff``,
 you must assign the return value back to ``things``.
 
 
-.. activecode:: liv
+.. activecode:: liu
     
     def doubleStuff(a_list):
         """ Return a new list in which contains doubles of the elements in a_list. """
@@ -41,6 +40,9 @@ you must assign the return value back to ``things``.
     stuff = doubleStuff(things)
     print('things', things)
     print('stuff', stuff)
+
+.. note::
+   The above example, illustrates the accumulator pattern for lists: you start with an empty list then repeatedly add more items to the list.
 
 Once again, codelens helps us to see the actual references and objects as they are passed and returned.
 

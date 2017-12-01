@@ -30,7 +30,7 @@ Exercises
 
 
 
-            .. activecode:: ex_6_1
+            .. activecode:: ex_10_1
                :nocodelens:
                :available_files: studentdata.txt
 

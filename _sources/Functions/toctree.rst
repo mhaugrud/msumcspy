@@ -14,7 +14,6 @@ Functions
    mainfunction.rst
    ProgramDevelopment.rst
    Composition.rst
-   TuplesasReturnValues.rst
    Variablesandparametersarelocal.rst
    TheAccumulatorPattern.rst
    ProgrammingWithStyle.rst

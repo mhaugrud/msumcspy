@@ -32,4 +32,11 @@ In the first example, we use the ``list`` constructor to make an empty list.
 Next we make a list from the string "Crunchy Frog" by taking each character in the string and placing it in a list.  In general, any sequence can be turned into a list using this function.  The result will be a list containing the elements in the original sequence.  It is not legal to use the ``list`` constructor function on any argument that is not a sequence.
 
 It is also important to point out that the ``list`` constructor function will place each element of the original sequence in the new list.  When working with strings, this is very different than the result of the ``split`` method.  Whereas ``split`` will break a string into a list of "words", ``list`` will always break it into a list of characters.
+
+.. admonition:: Extend the program ...
+
+   On line 5, use a string method to reconstruct the string "Crunchy Frog" from ``blist``.
+
+.. note::
+   For fun check `Crunchy Frog <https://youtu.be/Qs8KNgT-kqo>`_.
     

@@ -31,17 +31,27 @@ In this example, each time through the loop, the variable ``position`` is used a
 .. note::
    This technique should only be used when necessary. Whenever possible, we should use :ref:`list_traverse`.
 
-Since lists are mutable, it is often desirable to traverse a list, modifying each of its elements as you go. The following code squares all the numbers from ``1`` to ``5`` using iteration by position.
+Since lists are mutable, it is often desirable to traverse a list, modifying each of its elements as you go.
 
 .. activecode:: lis
 
-    numbers = [1, 2, 3, 4, 5]
+    numbers = [1, 2, 3, 5, 8]
     print(numbers)
 
-    for i in range(len(numbers)):
-        numbers[i] = numbers[i] ** 2
+    for num in numbers:
+        num = num ** 2
 
     print(numbers)
+
+.. admonition:: Fix the program ...
+
+   - Run the above activecode and notice that even though we calculate the squares of the numbers in the list, **the elements in the list are not changed**. This is an example of where we must traverse the list by index.
+
+   - Edit line 4 to iterate over the indicies of the list (don't change ``num`` but use a range like shown in activecode lir).
+
+   - Edit line 5 to use ``num`` as an index to the ``numbers`` list (do this on both sides of the = sign).
+
+   - Run and you will see now contains the values ``[1, 4, 9, 25, 64]``.
 
 Take a moment to think about ``range(len(numbers))`` until you understand how it works. We are interested here in both the *value* and its *index* within the list, so that we can assign a new value to it.
 
@@ -53,41 +63,24 @@ Take a moment to think about ``range(len(numbers))`` until you understand how it
 **Check your understanding**
 
 .. mchoice:: mc9r
-   :answer_a: [4, 2, 8, 6, 5]
-   :answer_b: [4, 2, 8, 6, 5, 5]
-   :answer_c: [9, 7, 13, 11, 10]
-   :answer_d: Error, you cannot concatenate inside an append.
+   :answer_a: Error, i is an integer and does not understand the upper method.
+   :answer_b: Error, upper is not a list method - it is a string method.
+   :answer_c: ["APPLE", "ORANGE", "BANANA", "CHERRY"]
    :correct: c
-   :feedback_a: 5 is added to each item before the append is peformed.
-   :feedback_b: There are too many items in this list.  Only 5 append operations are performed.
-   :feedback_c: Yes, the for loop processes each item of the list.  5 is added before it is appended to blist.
-   :feedback_d: 5 is added to each item before the append is performed.
+   :feedback_a: i is used as an index into the list.
+   :feedback_b: upper is used on a list element, not on the list.
+   :feedback_c: Yes, the for loop processes each item of the list making an upper case string and reassigning it to the same location in the list.
    
    What is printed by the following statements?
    
    .. code-block:: python
 
-     alist = [4, 2, 8, 6, 5]
-     blist = [ ]
-     for item in alist:
-         blist.append(item+5)
-     print(blist)
+     fruits = ["apple", "orange", "banana", "cherry"]
+     for i in range(len(fruits)):
+         fruits[i] = fruits[i].upper()
+     print(fruits)
 
 
-.. note::
-   The above example, illustrates the accumulator pattern for lists: you start with an empty list then repeatedly add more items to the list.
-
-.. activecode:: lit
-    
-    numbers = [1, 2, 3, 5, 8]
-    squares = []
-
-
-    print(squares)
-
-.. admonition:: Modify the program ...
-
-   Type instructions on lines 3 and 4 that use the list accumulator pattern to fill the ``squares`` list with the squares of ``numbers``.
 
 
 
