@@ -16,6 +16,16 @@
 Tuples as Return Values
 -----------------------
 
+A function can only return a single value. However, we may want to return multiple values. 
+We may want to know some batsman's highest and lowest score, or we want to find the mean 
+and the standard deviation, or we want to know the year, the month, and the day, or, if 
+we're doing some ecological modeling, we may want to know the number of deer and the number 
+of wolves on an island at a given time.
+
+Since a tuple can hold multiple elements, we can overcome this limitation by using a **tuple**
+as the return value.
+
+For example, we could write a function that returns both the area and the circumference of a circle of radius r.
 In the Functions chapter, we saw how to use a tuple as a function's return value. We also saw we can unpack the tuple into simple variables.
 
 .. activecode:: tdg
@@ -28,9 +38,10 @@ In the Functions chapter, we saw how to use a tuple as a function's return value
         return (c, a)
 
     (circum, area) = circleInfo(10)
-    print(circum, area)
+    print('area =', area)
+    print('circumference =', circum)
     
-    t = circleInfo(11)
+    t = circleInfo(10)
     print(t)
 
 
@@ -38,7 +49,7 @@ In the Functions chapter, we saw how to use a tuple as a function's return value
 
 .. admonition:: Extend the program ...
 
-   In line 11, use the index operator (two times) to print the two elements of the tuple.
+   In line 13, use the index operator (two times) to print the two elements of the tuple.
 
 .. note::
    This workspace is provided for your convenience. You can use this activecode window to try out anything you like.
