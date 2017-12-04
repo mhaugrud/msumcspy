@@ -32,24 +32,36 @@ get         key,alt             Returns the value associated with key; alt other
 
 The ``keys`` method returns what Python 3 calls a **view** of its underlying keys.  
 We can iterate over the view or turn the view into a 
-list by using the ``list`` conversion function.
+list by using the ``list`` constructor function.
 
 .. activecode:: tdj
     
-    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
+    inventory = {'bananas': 312, 'pears': 525, 'oranges': 217, 'apples': 430}
   
     for akey in inventory.keys():     # the order in which we get the keys is not defined
         print("Got key", akey, "which maps to value", inventory[akey])     
        
-    ks = list(inventory.keys())
-    print(ks)
+    theKeys = list(inventory.keys())
 
-    
+    print(theKeys)
+
+
+.. admonition:: Extend the program ...
+
+   - Run the above activecode and notice the order of the keys when they are printed in line 8.
+
+   - In line 7, sort the list ``theKeys``. Run and notice the order of the keys.
+
+   - In line 9, write a for-loop that iterates by item over the list ``theKeys``.
+
+   - In line 10 (the body of the loop), print the current key and the value in ``inventory`` for the current key. Run and notice the order.
+
+
 It is so common to iterate over the keys in a dictionary that you can omit the ``keys`` method call in the ``for`` loop --- iterating over a dictionary implicitly iterates over its keys.
 
 .. activecode:: tdk
     
-    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
+    inventory = {'bananas': 312, 'pears': 525, 'oranges': 217, 'apples': 430}
   
     
     for k in inventory:     
@@ -62,17 +74,17 @@ The ``values`` and ``items`` methods are similar to ``keys``. They return  view 
 
 .. activecode:: tdl
     
-    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}  
+    inventory = {'bananas': 312, 'pears': 525, 'oranges': 217, 'apples': 430}  
     
     print(list(inventory.values()))
     print(list(inventory.items()))
 
-    for (k,v) in inventory.items():
-        print("Got", k, "that maps to", v)
-
     for k in inventory:
         print("Got", k, "that maps to", inventory[k])
     
+    for (k,v) in inventory.items():
+        print(k, "maps to", v)
+
 Note that tuples are often useful for getting both the key and the value at the same time while you are looping.  The two loops do the same thing.
 
     
@@ -80,7 +92,7 @@ The ``in`` and ``not in`` operators can test if a key is in the dictionary:
 
 .. activecode:: tdm
     
-    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
+    inventory = {'bananas': 312, 'pears': 525, 'oranges': 217, 'apples': 430}
 
     print('apples' in inventory)
     print('cherries' in inventory)
@@ -100,7 +112,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 .. activecode:: tdn
     
-    inventory = {'bananas': 312, 'oranges': 525, 'pears': 217, 'apples': 430}
+    inventory = {'bananas': 312, 'pears': 525, 'oranges': 217, 'apples': 430}
     
     print(inventory.get("apples"))
     print(inventory.get("cherries"))
