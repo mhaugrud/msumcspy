@@ -8,6 +8,7 @@ Tuples and Dictionaries
    TuplesandMutability.rst
    TupleAssignment.rst
    TuplesasReturnValues.rst
+   Composability.rst
    Enumerate.rst
    intro-Dictionaries.rst
    Dictionaryoperations.rst

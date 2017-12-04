@@ -31,9 +31,9 @@ enclose tuples in parentheses:
 
    julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
 
-Tuples are useful for representing what other languages often call *records* ---
+Tuples are useful for representing what other languages often call **records** ---
 some related information that belongs together, like your student record.  There is
-no description of what each of these *fields* means, but we can guess.  A tuple
+no description of what each of these **fields** means, but we can guess.  A tuple
 lets us "chunk" together related information and use it as a single thing.
 
 Tuples support many of the same operations as strings and lists:
