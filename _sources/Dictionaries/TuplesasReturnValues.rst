@@ -51,8 +51,3 @@ In the Functions chapter, we saw how to use a tuple as a function's return value
 
    In line 13, use the index operator (two times) to print the two elements of the tuple.
 
-.. note::
-   This workspace is provided for your convenience. You can use this activecode window to try out anything you like.
-
-   .. activecode:: tdh
-

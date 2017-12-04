@@ -50,7 +50,7 @@ You may also note that iteration by position allows the programmer to control th
 
 .. admonition:: Modify the program ...
 
-   On line 2, change the range so that the characters of fruit are printed in **reverse** order.
+   On line 2, change the range so that only the characters at odd numbered indicies are printed. For example, if computer was entered, optr would be printed.
 
 
 .. codelens:: cl_ch08_8

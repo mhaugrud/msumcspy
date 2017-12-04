@@ -47,7 +47,7 @@ Since lists are mutable, it is often desirable to traverse a list, modifying eac
 
    - Run the above activecode and notice that even though we calculate the squares of the numbers in the list, **the elements in the list are not changed**. This is an example of where we must traverse the list by index.
 
-   - Edit line 4 to iterate over the indicies of the list (don't change ``num`` but use a range like shown in activecode lir).
+   - Edit line 4 to iterate over the indicies of the list (don't change ``num`` but use a range like shown in the activecode at the top of this page).
 
    - Edit line 5 to use ``num`` as an index to the ``numbers`` list (do this on both sides of the = sign).
 
