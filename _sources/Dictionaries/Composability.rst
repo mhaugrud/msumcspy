@@ -43,6 +43,6 @@ Notice in this case that the tuple has just four elements, but each of those in 
 
    - On line 14 (the body of the loop), display only the title of the movie. Run.
 
-   - On line 12, append the movie ('Oceans Twelve', 2004) to the list. Run.
+   - On line 12, append the movie ('Oceans Twelve', 2004) to the list. Run and notice that, even though the tuple is immutable, we can change its list which is mutable.
 
 
