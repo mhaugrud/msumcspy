@@ -32,9 +32,9 @@ enclose tuples in parentheses:
    actress = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Atlanta", "Georgia")
 
 Tuples are useful for representing what other languages often call **records** ---
-some related information that belongs together, like your student record.  There is
+some related data that belong together, like your student record.  There is
 no description of what each of these **fields** means, but we can guess.  A tuple
-lets us "chunk" together related information and use it as a single thing.
+lets us "chunk" together related data and use them as a single thing.
 
 Tuples support many of the same operations as strings and lists:
  
@@ -69,14 +69,13 @@ As with strings, if we try to use item assignment to modify one of the elements 
 
 Of course, even if we can't modify the elements of a tuple, we can make a variable
 reference a new tuple holding different information.  To construct the new tuple,
-it is convenient that we can slice parts of the old tuple and join up the
-bits to make the new tuple.  So ``actress`` has a new recent film, and we might want
-to change her tuple.  We can easily slice off the parts we want and concatenate them with
-the new tuple.
+we can slice parts of the old tuple and then join the
+elements to make the new tuple.  If ``actress`` has a new recent film, and we might want
+to change her tuple.  We can easily slice off the parts we want and concatenate them to form a new tuple.
 
 .. activecode:: tdb
 
-   actress = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, ""Atlanta", "Georgia")
+   actress = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Atlanta", "Georgia")
    print(actress[2])
    print(actress[2:6])
 

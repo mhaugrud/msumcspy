@@ -11,7 +11,7 @@
    :prefix: list-27-
    :start: 1
 
-.. index:: tuple; assignment
+.. index:: tuple; assignment, tuple; packing, tuple; unpacking
  
 Tuple Assignment
 ----------------
