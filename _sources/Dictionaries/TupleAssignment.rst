@@ -22,9 +22,9 @@ on the right of the assignment.
 
 .. activecode:: tdd
 
-   julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
-   (first_name, last_name, birth_year, movie, movie_year, profession, birth_place) = julia
-   print(last_name, birth_place)
+   actress = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Atlanta", "Georgia")
+   (first_name, last_name, birth_year, movie, movie_year, birth_city, birth_state) = actress
+   print(last_name, birth_city)
 
 This does the equivalent of seven assignment statements, all on one easy line.  
 One requirement is that the number of variables on the left must match the number

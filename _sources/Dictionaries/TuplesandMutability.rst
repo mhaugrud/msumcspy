@@ -29,7 +29,7 @@ enclose tuples in parentheses:
 
 .. sourcecode:: python
 
-   julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
+   actress = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Atlanta", "Georgia")
 
 Tuples are useful for representing what other languages often call **records** ---
 some related information that belongs together, like your student record.  There is
@@ -44,41 +44,44 @@ Tuples support many of the same operations as strings and lists:
    * \+ (concatenation)
    * len
    * iteration
+   * index (method)
+   * count (method)
 
 .. activecode:: tda
 
-   julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
-   print(type(julia))
+   actress = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Atlanta", "Georgia")
+   print(type(actress))
 
 .. admonition:: Extend this program ...
 
    - On line 3, display the length of the tuple
    - On line 4, display the element at index 2 in the tuple
-   - Starting on line 5, write a loop that iterates over the tuple by **item** (not index) and displays the items
+   - On line 5, use the index method to display where "Pretty Woman" is located.
+   - Starting on line 6, write a loop that iterates over the tuple by **item** (not index) and displays the items
 
 
 As with strings, if we try to use item assignment to modify one of the elements of the tuple, we get an error.
 
 .. sourcecode:: python
 
-   julia[3] = 'Duplicity'
+   actress[3] = 'Duplicity'
    TypeError: 'tuple' object does not support item assignment
 
 Of course, even if we can't modify the elements of a tuple, we can make a variable
 reference a new tuple holding different information.  To construct the new tuple,
 it is convenient that we can slice parts of the old tuple and join up the
-bits to make the new tuple.  So ``julia`` has a new recent film, and we might want
+bits to make the new tuple.  So ``actress`` has a new recent film, and we might want
 to change her tuple.  We can easily slice off the parts we want and concatenate them with
 the new tuple.
 
 .. activecode:: tdb
 
-   julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
-   print(julia[2])
-   print(julia[2:6])
+   actress = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, ""Atlanta", "Georgia")
+   print(actress[2])
+   print(actress[2:6])
 
-   julia = julia[:3] + ("Duplicity", 2009) + julia[5:]
-   print(julia)
+   actress = actress[:3] + ("Duplicity", 2009) + actress[5:]
+   print(actress)
 
 
 To create a tuple with a single element (but you're probably not likely

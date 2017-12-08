@@ -23,24 +23,26 @@ For example, we could improve the information about our movie stars to hold the 
 
 .. activecode:: tdg2
 
-   julia = ( ("Julia", "Roberts"), (8, "October", 1967),
-             "Actress", ("Atlanta", "Georgia"),
-             [ ("Duplicity", 2009),
-               ("Notting Hill", 1999),
-               ("Pretty Woman", 1990),
-               ("Erin Brockovich", 2000),
-               ("Eat Pray Love", 2010),
-               ("Mona Lisa Smile", 2003),
-               ("Oceans Twelve", 2004) ] )
+   actress = ( ("Julia", "Roberts"), (8, "October", 1967),
+               [ ("Duplicity", 2009),
+                 ("Notting Hill", 1999),
+                 ("Pretty Woman", 1990),
+                 ("Erin Brockovich", 2000),
+                 ("Eat Pray Love", 2010),
+                 ("Mona Lisa Smile", 2003)],
+               ("Atlanta", "Georgia") )
    
-   print(type(julia[1]))
-   print(julia[1])
+   print(type(actress[1]))
+   print(actress[1])
 
-Notice in this case that the tuple has just five elements, but each of those in turn can be another tuple, a list, a string, or any other kind of Python value. This property is known as being **heterogeneous**, meaning that it can be composed of elements of different types.
+Notice in this case that the tuple has just four elements, but each of those in turn can be another tuple, a list, or any other kind of Python value. This property is known as being **heterogeneous**, meaning that it can be composed of elements of different types.
 
 .. admonition:: Extend the program ...
 
-   - On line 13, make a loop that iterates over julia's list of movies.
+   - On line 13, make a loop that iterates over her list of movies.
 
-   - On line 14 (the body of the loop), display only the title of the movie.
+   - On line 14 (the body of the loop), display only the title of the movie. Run.
+
+   - On line 12, append the movie ("Oceans Twelve", 2004) to the list. Run.
+
 
