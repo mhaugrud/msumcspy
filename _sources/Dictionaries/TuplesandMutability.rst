@@ -33,7 +33,7 @@ enclose tuples in parentheses:
 
 Tuples are useful for representing what other languages often call **records** ---
 some related data that belong together, like your student record.  There is
-no description of what each of these **fields** means, but we can guess.  A tuple
+no description of what each **field** means, but we can guess.  A tuple
 lets us "chunk" together related data and use them as a single thing.
 
 Tuples support many of the same operations as strings and lists:
@@ -68,7 +68,7 @@ As with strings, if we try to use item assignment to modify one of the elements 
    TypeError: 'tuple' object does not support item assignment
 
 Of course, even if we can't modify the elements of a tuple, we can make a variable
-reference a new tuple holding different information.  To construct the new tuple,
+reference a new tuple holding different data.  To construct the new tuple,
 we can slice parts of the old tuple and then join the
 elements to make the new tuple.  If ``actress`` has a new recent film, and we might want
 to change her tuple.  We can easily slice off the parts we want and concatenate them to form a new tuple.
