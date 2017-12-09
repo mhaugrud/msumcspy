@@ -25,8 +25,8 @@ We have seen that we can iterate over the elements of the various Python collect
    for (index, ch) in enumerate("Crunchy Frog"):
        print(index, ch)
 
-   julia = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Actress", "Atlanta, Georgia")
-   for (idx, field) in enumerate(julia):
+   actress = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Atlanta", "Georgia")
+   for (idx, field) in enumerate(actress):
        print(idx, field)
 
    fruit = ["apple", "orange", "banana", "cherry"]
