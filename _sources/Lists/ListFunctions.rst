@@ -16,11 +16,12 @@
 List Functions
 --------------
 
-Python has several functions that evaluate the elements of a list (actually any type of collection that is iterable) and product some statistic.
+We have frequently used the ``len`` function. Python has several similar functions that take a list (actually any type collection that is iterable) as an argument. These functions evaluate the elements of the collection and produce some statistic.
 
 ======  ===========
 Name    Description
 ======  ===========
+len     the number of items in the collection 
 sum     the total of the elements in the collection
 max     the largest value in the collection
 min     the smallest value in the collection

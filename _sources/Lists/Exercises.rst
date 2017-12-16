@@ -31,11 +31,6 @@ Exercises
             Your diagram should show two variables referring to two different lists.  ``a`` refers to the original list with 1,2, and 3.
             ``b`` refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
 
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_12314cf40dbe407cb145f029870c0347
 
 
 .. question:: lists_ex_2
@@ -89,7 +84,7 @@ Exercises
    of the squares of the numbers in the list ``xs``.  For example,
    ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is 29:
 
-   .. activecode:: ex_7_11
+   .. activecode:: ex_9_6
 
       def sum_of_squares(xs):
           # your code here
@@ -110,7 +105,7 @@ Exercises
 
            Write a function to count how many odd numbers are in a list.
 
-           .. activecode:: ex_9_6
+           .. activecode:: ex_9_7
 
               def countOdd(lst):
                   # your code here
@@ -135,7 +130,7 @@ Exercises
 
    Sum up all the even numbers in a list.
 
-   .. activecode:: ex_9_7
+   .. activecode:: ex_9_8
 
       def sumEven(lst):
           # your code here
@@ -157,7 +152,7 @@ Exercises
 
            Sum up all the negative numbers in a list.
 
-           .. activecode:: ex_9_8
+           .. activecode:: ex_9_9
 
               def sumNegatives(lst):
                   # your code here
@@ -182,7 +177,7 @@ Exercises
 
    Count how many words in a list have length 5.
 
-   .. activecode:: ex_9_9
+   .. activecode:: ex_9_10
 
       def countWords(lst):
           # your code here
@@ -191,7 +186,7 @@ Exercises
 
            Sum all the elements in a list up to but not including the first even number.
 
-           .. activecode:: ex_9_10
+           .. activecode:: ex_9_11
 
               def sumUntilEven(lst):
                   # your code here
@@ -214,7 +209,7 @@ Exercises
 
    Count how many words occur in a list up to and including the first occurrence of the word "sam".
 
-   .. activecode:: ex_9_11
+   .. activecode:: ex_9_12
 
       def count(lst):
           # your code here
@@ -232,7 +227,7 @@ Exercises
            #. insert
 
 
-           .. activecode:: ex_9_12
+           .. activecode:: ex_9_13
 
               def count(obj, lst):
 
@@ -278,7 +273,7 @@ Exercises
 
    *Hint*: use the ``split`` and ``join`` methods.
 
-   .. activecode:: ex_9_13
+   .. activecode:: ex_9_14
 
       def replace(s, old, new):
           # your code here
@@ -289,9 +284,11 @@ Exercises
       class myTests(TestCaseGui):
 
           def testOne(self):
-              self.assertEqual(replace('Mississippi','i','I'),'MIssIssIppI',"Tested replace on input 'Mississippi','i','I'")
-              self.assertEqual(replace('Bookkeeper','e','A'),'BookkAApAr',"Tested failed on input 'Bookkeeper','e','A'")
-              self.assertEqual(replace('Deeded','e','q'),'Dqqdqd',"Tested failed on input 'Deeded','e','q'")
+              self.assertEqual(replace('Mississippi','i','I'), 'MIssIssIppI',"Tested replace on input 'Mississippi','i','I'")
+              self.assertEqual(replace('Bookkeeper','e','A'),
+'BookkAApAr',"Tested failed on input 'Bookkeeper','e','A'")
+              self.assertEqual(replace('Deeded','e','q'),
+'Dqqdqd',"Tested failed on input 'Deeded','e','q'")
 
       myTests().main()
 
@@ -299,29 +296,39 @@ Exercises
 
 .. question:: lists_ex_15
 
-           Here are the rules for an L-system that creates something that resembles
-           a common garden herb.  Implement the following rules and try it.  Use an
-           angle of 25.7 degrees.
-
-           ::
-
-               H
-               H --> HFX[+H][-H]
-               X --> X[-FFF][+FFF]FX
+   Write the body of the ``isPal`` function. It determines if a list is the same forwards as backwards.
 
 
-           .. activecode:: ex_9_14
-              :nocodelens:
+
+   .. activecode:: ex_9_15
+
+      def isPal(alist):
+          # your code goes here
 
 
-.. question:: lists_ex_16
+      ====
+      from unittest.gui import TestCaseGui
+      import random
 
-   Here is another L-System.  Use an Angle of 25.
+      class myTests(TestCaseGui):
 
-   ::
+          def testOne(self):
+              a = random.sample(string.ascii_uppercase,3)
+              b = a[:]
+              m = random.sample(string.ascii_uppercase,1)
+              c = a+m+b
+              self.assertEqual(isPal(c),True,"Tested on "+c)
+              a = random.sample(string.ascii_uppercase,7)
+              self.assertEqual(isPal(a),False,"Tested on "+a)
+              a = random.sample(string.ascii_uppercase,4)
+              b = a[:]
+              c = a+b
+              self.assertEqual(isPal(c),True,"Tested on "+c)
+              a = random.sample(string.ascii_uppercase,8)
+              self.assertEqual(isPal(a),False,"Tested on "+a)
+              
+      myTests().main()
 
-       F
-       F --> F[-F]F[+F]F
+              
 
-   .. activecode:: ex_9_16
-      :nocodelens:
+

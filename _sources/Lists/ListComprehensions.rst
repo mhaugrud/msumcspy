@@ -20,7 +20,7 @@ The previous example creates a list from a sequence of values based on some sele
 
    [<expression> for <item> in <sequence> if  <condition>]
 
-where the if clause is optional.  For example,
+where the if-clause is optional.  For example,
 
 .. activecode:: li7
 
@@ -32,11 +32,11 @@ where the if clause is optional.  For example,
 
 
 
-The expression describes each element of the list that is being built.  The ``for`` clause iterates through each item in a sequence.  The items are filtered by the ``if`` clause if there is one.  In the example above, the ``for`` statement lets ``val`` take on all the values in the list ``mylist``.  Each value is then squared before it is appended to the list that is being built.  The result is a list of squares of the values in ``mylist``.
+The expression describes each element of the list that is being built.  The ``for`` clause iterates through each item in a sequence.  The items are filtered by the if-clause if there is one.  In the example above, the ``for`` statement lets ``val`` take on all the values in the list ``mylist``.  Each value is then squared before it is appended to the list that is being built.  The result is a list of squares of the values in ``mylist``.
 
 .. admonition:: Extend the program ...
 
-   - In line 2, add an **if** clause to the list comprehension so that only numbers greater than 2 will appear in the list that is built. Run.
+   - In line 2, add an if-clause to the list comprehension so that only numbers less than 3 will be squared. Run.
    - On line 3, call the ``sum`` function using ``sqlist`` as the argument and display the result.
 
 To write the ``primes_upto`` function we will use the ``is_prime`` function to filter the sequence of integers coming from the ``range`` function.  In other words, for every integer from 2 up to but not including ``n``, if the integer is prime, keep it in the list.
