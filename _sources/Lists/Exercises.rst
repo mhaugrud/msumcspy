@@ -285,10 +285,8 @@ Exercises
 
           def testOne(self):
               self.assertEqual(replace('Mississippi','i','I'), 'MIssIssIppI',"Tested replace on input 'Mississippi','i','I'")
-              self.assertEqual(replace('Bookkeeper','e','A'),
-'BookkAApAr',"Tested failed on input 'Bookkeeper','e','A'")
-              self.assertEqual(replace('Deeded','e','q'),
-'Dqqdqd',"Tested failed on input 'Deeded','e','q'")
+              self.assertEqual(replace('Bookkeeper','e','A'), 'BookkAApAr',"Tested failed on input 'Bookkeeper','e','A'")
+              self.assertEqual(replace('Deeded','e','q'), 'Dqqdqd',"Tested failed on input 'Deeded','e','q'")
 
       myTests().main()
 
@@ -318,15 +316,15 @@ Exercises
               b = a[:]
               m = random.sample(string.ascii_uppercase,1)
               c = a+m+b
-              self.assertEqual(isPal(c),True,"Tested on",c)
+              self.assertEqual(isPal(c),True,"Tested on "+repr(c))
               a = random.sample(string.ascii_uppercase,7)
-              self.assertEqual(isPal(a),False,"Tested on ",a)
+              self.assertEqual(isPal(a),False,"Tested on "+repr(a))
               a = random.sample(string.ascii_uppercase,4)
               b = a[:]
               c = a+b
-              self.assertEqual(isPal(c),True,"Tested on ",c)
+              self.assertEqual(isPal(c),True,"Tested on "+repr(c))
               a = random.sample(string.ascii_uppercase,8)
-              self.assertEqual(isPal(a),False,"Tested on ",a)
+              self.assertEqual(isPal(a),False,"Tested on "+repr(a))
               
       myTests().main()
 
