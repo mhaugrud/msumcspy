@@ -36,8 +36,8 @@ The expression describes each element of the list that is being built.  The ``fo
 
 .. admonition:: Extend the program ...
 
-   - In line 2, add an if-clause to the list comprehension so that only numbers less than 3 will be squared. Run.
-   - On line 3, call the ``sum`` function using ``sqlist`` as the argument and display the result.
+   - In line 3, add an if-clause to the list comprehension so that only numbers less than 3 will be squared. Run.
+   - On line 4, call the ``sum`` function using ``sqlist`` as the argument and display the result.
 
 To write the ``primes_upto`` function we will use the ``is_prime`` function to filter the sequence of integers coming from the ``range`` function.  In other words, for every integer from 2 up to but not including ``n``, if the integer is prime, keep it in the list.
 

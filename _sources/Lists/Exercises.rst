@@ -309,6 +309,7 @@ Exercises
       ====
       from unittest.gui import TestCaseGui
       import random
+      import string
 
       class myTests(TestCaseGui):
 
