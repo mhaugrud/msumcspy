@@ -313,14 +313,14 @@ Exercises
 
           def testOne(self):
               a = random.sample(string.ascii_uppercase,3)
-              b = a[:]
+              b = a[::-1]
               m = random.sample(string.ascii_uppercase,1)
               c = a+m+b
               self.assertEqual(isPal(c),True,"Tested on "+repr(c))
               a = random.sample(string.ascii_uppercase,7)
               self.assertEqual(isPal(a),False,"Tested on "+repr(a))
               a = random.sample(string.ascii_uppercase,4)
-              b = a[:]
+              b = a[::-1]
               c = a+b
               self.assertEqual(isPal(c),True,"Tested on "+repr(c))
               a = random.sample(string.ascii_uppercase,8)
