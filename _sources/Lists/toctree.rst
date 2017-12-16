@@ -29,6 +29,7 @@ Lists
    RepetitionandReferences.rst
    AppendversusConcatenate.rst
    ListDeletion.rst
+   ListFunctions.rst
    ListComprehensions.rst
    Glossary.rst
    Exercises.rst

@@ -22,24 +22,29 @@ The previous example creates a list from a sequence of values based on some sele
 
 where the if clause is optional.  For example,
 
-.. activecode:: li6
+.. activecode:: li7
 
-    mylist = [1,2,3,4,5]
+    mylist = [1,2,3,5,8]
 
-    yourlist = [item ** 2 for item in mylist]
+    sqlist = [val**2 for val in mylist]
 
-    print(yourlist)
+    print(sqlist)
 
 
 
-The expression describes each element of the list that is being built.  The ``for`` clause iterates through each item in a sequence.  The items are filtered by the ``if`` clause if there is one.  In the example above, the ``for`` statement lets ``item`` take on all the values in the list ``mylist``.  Each item is then squared before it is added to the list that is being built.  The result is a list of squares of the values in ``mylist``.
+The expression describes each element of the list that is being built.  The ``for`` clause iterates through each item in a sequence.  The items are filtered by the ``if`` clause if there is one.  In the example above, the ``for`` statement lets ``val`` take on all the values in the list ``mylist``.  Each value is then squared before it is appended to the list that is being built.  The result is a list of squares of the values in ``mylist``.
+
+.. admonition:: Extend the program ...
+
+   - In line 2, add an **if** clause to the list comprehension so that only numbers greater than 2 will appear in the list that is built. Run.
+   - On line 3, call the ``sum`` function using ``sqlist`` as the argument and display the result.
 
 To write the ``primes_upto`` function we will use the ``is_prime`` function to filter the sequence of integers coming from the ``range`` function.  In other words, for every integer from 2 up to but not including ``n``, if the integer is prime, keep it in the list.
 
 .. sourcecode:: python
 
 	def primes_upto(n):
-	    """ Return a list of all prime numbers less than n using a list comprehension. """
+	    """Return a list of prime numbers less than n using a list comprehension."""
 
 	    result = [num for num in range(2,n) if is_prime(num)]
 	    return result
@@ -50,7 +55,7 @@ To write the ``primes_upto`` function we will use the ``is_prime`` function to f
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: li7
+    .. activecode:: li8
     
     
 
