@@ -318,15 +318,15 @@ Exercises
               b = a[:]
               m = random.sample(string.ascii_uppercase,1)
               c = a+m+b
-              self.assertEqual(isPal(c),True,"Tested on "+c)
+              self.assertEqual(isPal(c),True,"Tested on",c)
               a = random.sample(string.ascii_uppercase,7)
-              self.assertEqual(isPal(a),False,"Tested on "+a)
+              self.assertEqual(isPal(a),False,"Tested on ",a)
               a = random.sample(string.ascii_uppercase,4)
               b = a[:]
               c = a+b
-              self.assertEqual(isPal(c),True,"Tested on "+c)
+              self.assertEqual(isPal(c),True,"Tested on ",c)
               a = random.sample(string.ascii_uppercase,8)
-              self.assertEqual(isPal(a),False,"Tested on "+a)
+              self.assertEqual(isPal(a),False,"Tested on ",a)
               
       myTests().main()
 
