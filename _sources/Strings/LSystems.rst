@@ -13,8 +13,8 @@
 
 .. index:: L-System
 
-Turtles and Strings and L-Systems
----------------------------------
+L-Systems
+---------
 
 This section describes a much more interested example of string iteration and the accumulator pattern.  Even 
 though it seems like we are doing something that is much more complex, the basic processing is the same as was 
