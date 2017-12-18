@@ -21,24 +21,24 @@ mouse handler functions.
 
 .. code-block:: python
 
-import turtle
+   import turtle
 
-def main():
-   def h1(x, y):
-      t.goto(x, y)
+   def main():
+       def h1(x, y):
+           t.goto(x, y)
 
-   def h2(x, y):
-       wn.bye()          # close the window and stop the program
+       def h2(x, y):
+           wn.bye()          # close the window and stop the program
 
-   wn = turtle.Screen()
-   wn.title("Handle mouse clicks on the window!")
+       wn = turtle.Screen()
+       wn.title("Handle mouse clicks on the window!")
 
-   t = turtle.Turtle()
+       t = turtle.Turtle()
 
-   wn.onclick(h1)        # associate a left button click on the window
-   wn.onclick(h2, btn=3) # 3 indicates right mouse button
+       wn.onclick(h1)        # associate a left button click on the window
+       wn.onclick(h2, btn=3) # 3 indicates right mouse button
 
-main()
+   main()
 
 
 .. note::

@@ -20,38 +20,38 @@ This is accomplished by associating a specific ``event handler`` function with t
 
 .. code-block:: python
 
-import turtle
+   import turtle
 
-def main():
-    # The next four functions are our "event handlers"
-    def h1():
-       t.forward(30)
+   def main():
+       # The next four functions are our "event handlers"
+       def h1():
+           t.forward(30)
 
-    def h2():
-       t.left(45)
+       def h2():
+           t.left(45)
 
-    def h3():
-       t.right(45)
+       def h3():
+           t.right(45)
 
-    def h4():
-        wn.bye()                         # Close down the turtle window
+       def h4():
+           wn.bye()                         # Close down the turtle window
 
-    wn = turtle.Screen()
-    wn.title("Handling keypresses!")
-    t = turtle.Turtle()
+       wn = turtle.Screen()
+       wn.title("Handling keypresses!")
+       t = turtle.Turtle()
 
-    # associate keypresses to the handlers we've defined
-    wn.onkey(h1, "Up")     # up arrow
-    wn.onkey(h2, "Left")   # left arrow
-    wn.onkey(h3, "Right")  # right arrow
-    wn.onkey(h4, "q")      # quit
+       # associate keypresses to the handlers we've defined
+       wn.onkey(h1, "Up")     # up arrow
+       wn.onkey(h2, "Left")   # left arrow
+       wn.onkey(h3, "Right")  # right arrow
+       wn.onkey(h4, "q")      # quit
 
-    # Now we need to tell the window to start listening for events,
-    # If any of the keys that we're monitoring is pressed, its
-    # handler will be called.
-    wn.listen()
+       # Now we need to tell the window to start listening for events,
+       # If any of the keys that we're monitoring is pressed, its
+       # handler will be called.
+       wn.listen()
 
-main()
+   main()
 
 .. note::
    The four event handler functions are nested in the main function. This enables the handlers to see main's

@@ -31,7 +31,7 @@ The ``turtle`` module provides similar capabilities utilizing dialog boxes and t
        t = turtle.Turtle()
        t.penup()               # so turtle will not leave a trail
        name = wn.textinput('Text Input','What is your name?')
-       t.write(name, True)     # True causes turtle to move as characters are displayed
+       t.write(name, True)     # True causes turtle to move as characters display
        numb = wn.numinput('Numeric Input','Enter a number')
        t.write(numb, True)
        t.write(type(numb))     # notice what is displayed!!!        
