@@ -16,7 +16,7 @@ Strings
    Theinandnotinoperators.rst
    TheAccumulatorPatternwithStrings.rst
    Loopingandcounting.rst
-   TurtleandStringsandLSystems.rst
+   LSystems.rst
    Characterclassification.rst
    StringMethods.rst
    StringComparison.rst
