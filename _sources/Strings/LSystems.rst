@@ -76,6 +76,8 @@ above.
 
 .. activecode::  string_lsys
 
+    import turtle
+
     def applyRules(c):
         if c == 'A':
             return 'B'   # Rule 1
@@ -88,7 +90,6 @@ above.
         newstr = ""
         for ch in oldStr:
             newstr = newstr + applyRules(ch)
-
         return newstr
 
     def createLSystem(timesToRepeat,axiom):
@@ -97,8 +98,8 @@ above.
         for i in range(timesToRepeat):
             endString = processString(startString)
             startString = endString
-
         return endString
+
 
     def main():
         instr = createLSystem(4, "A")
@@ -107,7 +108,7 @@ above.
 
     main()
 
-Try running the example above with different values for the ``numIters``
+Try running the example above with different values for the ``timesToRepeat``
 parameter.  You should see that for values 1, 2, 3, and 4, the strings generated follow the
 example above exactly.
 
@@ -167,7 +168,7 @@ To create a Python function to draw a string we will write a function called
 
 .. admonition:: Extend the program ...
 
-   - Type the drawLsystem function in activecode string_lsys
+   - Place the drawLsystem function between the createLSystem and main functions in the above activecode
    - In the main function, call the drawLSystem function with the string produced by createLSystem, and values mentions above for angle and distance
    - Try rather large values (greater than 30) for the timesToRepeat argument when calling createLSystem
 
