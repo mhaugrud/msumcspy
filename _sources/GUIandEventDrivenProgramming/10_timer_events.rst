@@ -29,7 +29,7 @@ The ``turtle`` module in Python has a timer that can cause an event when its tim
            wn.ontimer(h1, 1000)   # wait 1000 milliseconds then restart handler
 
        wn = turtle.Screen()
-       wn.title("Using a timer to get events!")
+       wn.title("Using a timer for events!")
 
        t = turtle.Turtle()
        h1()

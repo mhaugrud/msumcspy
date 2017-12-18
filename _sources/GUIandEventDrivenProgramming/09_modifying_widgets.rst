@@ -14,10 +14,10 @@
 Custom Icons
 ============
 
-We constantly use icons GUI's. The ``turtle`` module has several standard shapes we can use for turtles.
-However, we may wish to incorporate our own shapes for icons. 
+We constantly use icons in GUIs. The ``turtle`` module has several standard turtle shapes we could use for icons.
+However, we may wish to incorporate our own icon shapes. 
 
-First, we need a picture that we will ultimately use as a shape. It must be stored in the .gif format.
+First, we need a picture that we will ultimately use as an icon. It must be stored in the .gif format.
 Here is one, rocket.gif. Right click and save it on your computer in the same folder as your .py scripts.
 
 
@@ -40,10 +40,10 @@ Put the following code in the same folder as rocket.gif
         wn.title("Custom shapes")
         wn.register_shape('rocket.gif')
         t = turtle.Turtle()
-        a.left(90)
-        a.shape('rocket.gif')
+        t.left(90)
+        t.shape('rocket.gif')
 
-        a.onclick(h)
+        t.onclick(h)
 
     main()
 
