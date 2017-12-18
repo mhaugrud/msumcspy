@@ -24,6 +24,7 @@ Here is one, rocket.gif. Right click and save it on your computer in the same fo
 .. image:: Figures/rocket.gif
    :alt: rocket.gif
 
+|
 
 Put the following code in the same folder as rocket.gif
 

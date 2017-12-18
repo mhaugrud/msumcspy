@@ -30,6 +30,8 @@ that the machine continually cycles through three different states, which we’ve 
 .. image:: Figures/fsm_traffic_lights.png
    :alt: Traffic Lights
 
+|
+
 We are going to build a program that uses a turtle to simulate the traffic lights. There are three 
 lessons here. The first shows off some different ways to use our turtles. The second demonstrates how we 
 would program a state machine in Python, by using a variable to keep track of the current state, and a 
