@@ -67,6 +67,7 @@ Table of Contents
    Lists/toctree.rst
    Files/toctree.rst
    Dictionaries/toctree.rst
+   GUIandEventDrivenProgramming/toctree.rst
    ClassesBasics/toctree.rst
    ClassesDiggingDeeper/toctree.rst
    Exceptions/toctree.rst

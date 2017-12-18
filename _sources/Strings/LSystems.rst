@@ -92,10 +92,10 @@ above.
             newstr = newstr + applyRules(ch)
         return newstr
 
-    def createLSystem(timesToRepeat,axiom):
-        startString = axiom
+    def createLSystem(numTransforms,axiom):
+        startString = axiom  # the starting symbol
         endString = ""
-        for i in range(timesToRepeat):
+        for i in range(numTransforms):
             endString = processString(startString)
             startString = endString
         return endString
@@ -108,9 +108,11 @@ above.
 
     main()
 
-Try running the example above with different values for the ``timesToRepeat``
-parameter.  You should see that for values 1, 2, 3, and 4, the strings generated follow the
-example above exactly.
+.. admonition:: Try it out ...
+
+   Run the example above with different values for the ``numTransforms``
+   parameter.  You should see that for values 1, 2, 3, and 4, the strings generated follow the
+   example above exactly.
 
 One of the nice things about the program above is that if you want to
 implement a different set of rules, you don't need to re-write the entire
@@ -126,7 +128,7 @@ Y -> YF    Rule 2 Change Y to YF
 
 .. admonition:: Modify the program ...
 
-   What kind of a string would these rules create?  Modify the program above to implement this new set of rules.
+   Modify the program (applyRules and main functions) to implement this new set of rules.
 
 This L-system uses symbols that will have special meaning when we use them later with the turtle to draw a picture.
 
@@ -148,11 +150,11 @@ use the explanation above to show the resulting picture that this simple string 
 it's not a very exciting drawing, but once we expand it a few times it will get a lot more interesting.
 
 To create a Python function to draw a string we will write a function called
-``drawLsystem``  The function will take three parameters:
+``drawLsystem``  The function has three parameters:
 
 * An string that contains the results of expanding the rules above.
-* An angle to turn (for example 90)
-* A distance to move forward (for example 5)
+* An angle to turn (for example, 90)
+* A distance to move forward (for example, 5)
 
 .. sourcecode:: python
 
@@ -170,6 +172,6 @@ To create a Python function to draw a string we will write a function called
 
    - Place the drawLsystem function between the createLSystem and main functions in the above activecode
    - In the main function, call the drawLSystem function with the string produced by createLSystem, and values mentions above for angle and distance
-   - Try rather large values (greater than 30) for the timesToRepeat argument when calling createLSystem
+   - Try rather large values (greater than 20) for the timesToRepeat argument when calling createLSystem
 
 

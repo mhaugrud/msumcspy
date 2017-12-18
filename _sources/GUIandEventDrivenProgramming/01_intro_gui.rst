@@ -86,69 +86,12 @@ GUI Programming Options
 
 Python does not implement GUI, event-driven-programming in its core
 functionality. GUI programming is implemented using imported modules which
-are often referred to as "toolkits." Anyone can implement external modules
-that facilitate GUI programming, and many people have. Therefore you have
-many options available to you for GUI programming. A partial list of options
-can be found at https://docs.python.org/3/faq/gui.html. The following lessons
-explain how to use the ``Tkinter`` toolkit to create GUI programs. Once you
-understand how GUI programming works, you should be able to learn
-how to use any of the other available toolkits without much difficulty.
+are often referred to as "toolkits." There are many such options available to you for GUI programming. 
+A partial list of options can be found at https://docs.python.org/3/faq/gui.html. 
 
-TKinter
-=======
+The following lessons explain how to use the familiar ``Turtle`` module to create GUI programs.
 
-``TKinter`` is an abbreviation for "TK interface". "TK" is a platform independent,
-customizable, and configurable GUI library. The Python module ``TKinter``
-allows Python programs to use the TK libraries. An overview of TK can be
-found at https://en.wikipedia.org/wiki/Tk_(software)_
-
-Tkinter Pre-programmed Interfaces
-=================================
-
-``Tkinter`` provides a set of standard GUI dialog boxes that can be used with
-minimal programming. These are described in the next lesson.
-(A *dialog box* is a small window on a computer screen
-in which a user is prompted to provide information or select commands.)
-
-Tkinter Custom Interfaces
-=========================
-
-``Tkinter`` also provides the functionality to create any user interface
-imaginable. To create a custom GUI program you basically do five things:
-
-* Create instances of the widgets you want in your interface.
-* Define the layout of the widgets (i.e., the location and size of each widget).
-* Create functions that will perform your desired actions on user generated events.
-* Connect your functions to specific user events.
-* Start a GUI event-loop.
-
-Each of these tasks are explain in detail in the following lessons.
-
-Note: All coding examples in these lessons assume you are using Python 3.5
-or greater.
-
-Hello World
-===========
-
-Many programming languages are introduced to new users by showing them how
-to display "Hello world!" on the screen. This is considered to be the
-simplest possible program you can write in the language. In that spirit,
-here is a GUI program that displays "Hello World!:
-
-.. code-block:: python
-
-  import tkinter as tk
-  from tkinter import ttk
-
-  # Create the application window
-  window = tk.Tk()
-
-  # Create the user interface
-  my_label = ttk.Label(window, text="Hello World!")
-  my_label.grid(row=1, column=1)
-
-  # Start the GUI event loop
-  window.mainloop()
-
+.. note::
+   You cannot run the following examples in the interactive text. **You must copy the code and run it in your own Python environment.**
 
 
