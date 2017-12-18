@@ -21,8 +21,8 @@ which cause the system to leave one state and transition into a different state.
 transitions are usually drawn as an arrow on the diagram.
 
 This idea is not new: when first turning on a cellphone, it goes into a state which we could call 
-“Awaiting PIN”. When the correct PIN is entered, it transitions into a different state — say “Ready”. 
-Then we could lock the phone, and it would enter a “Locked” state, and so on.
+"Awaiting PIN". When the correct PIN is entered, it transitions into a different state - "Ready to use". 
+Then we could lock the phone, and it would enter a "Locked" state, and so on.
 
 A simple state machine that we encounter often is a traffic light. Here is a state diagram which shows 
 that the machine continually cycles through three different states, which we’ve numbered 0, 1 and 2.
@@ -30,7 +30,7 @@ that the machine continually cycles through three different states, which we’ve 
 .. image:: Figures/fsm_traffic_lights.png
    :alt: Traffic Lights
 
-We’re going to build a program that uses a turtle to simulate the traffic lights. There are three 
+We are going to build a program that uses a turtle to simulate the traffic lights. There are three 
 lessons here. The first shows off some different ways to use our turtles. The second demonstrates how we 
 would program a state machine in Python, by using a variable to keep track of the current state, and a 
 number of different if statements to inspect the current state, and take the actions as we change to a 

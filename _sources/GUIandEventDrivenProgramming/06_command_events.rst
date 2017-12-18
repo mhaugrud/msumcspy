@@ -15,7 +15,7 @@ Keyboard Events
 ===============
 
 In GUI programming, we respond to various **events**, such a keyboard presses or mouse clicks.
-This is accomplished by associating a specific ``event handler`` function with the event. 
+This is accomplished by associating a specific **event handler** function with the event. 
 
 
 .. code-block:: python

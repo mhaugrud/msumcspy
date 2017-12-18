@@ -18,6 +18,10 @@ When we first studied the ``turtle`` module, we used the ``exitonclick``
 method to respond to a mouse click. Now we will see how to write our own
 mouse handler functions.
 
+Screen Clicks
+-------------
+
+We can bind a mouse click to a ``Screen`` object.
 
 .. code-block:: python
 
@@ -47,3 +51,38 @@ mouse handler functions.
    x and y parameters are automatically supplied. Once again, the handler functions are nested in the 
    main function so they can see main's variables.
 
+
+Turtle Clicks
+-------------
+
+We can also bind a mouse click to an individual ``Turtle`` object.
+
+.. code-block:: python
+
+    import turtle
+
+    def main():
+        def h_a(x, y):
+            wn.title('a clicked at {} {}'.format(x,y))
+            a.forward(25)
+
+
+        def h_b(x, y):
+            wn.title('b clicked at {} {}'.format(x,y))
+            b.forward(25)
+
+        wn = turtle.Screen()
+        wn.title("Handle mouse clicks on the window!")
+
+        a = turtle.Turtle()
+        a.shape('turtle')
+        b = turtle.Turtle()
+        b.penup()
+        b.goto(0,50)
+        b.pendown()
+        b.shape('turtle')
+
+        a.onclick(h_a)        # associate a left button click on turtle a
+        b.onclick(h_b)        # associate a left button click on turtle b
+
+    main()

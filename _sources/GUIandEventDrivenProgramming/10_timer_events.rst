@@ -15,7 +15,7 @@
 Timer Events
 ============
 
-Alarm clocks and kitchen timers are set to create an “automatic” event after a certain interval. 
+Alarm clocks and kitchen timers are set to create an "automatic" event after a certain interval. 
 The ``turtle`` module in Python has a timer that can cause an event when its time is up.
 
 .. code-block:: python

@@ -35,7 +35,7 @@ chooses. This style of programming is called "event driven programming."
 In fact, by definition, all *GUI programs* are *event-driven programs*.
 
 GUI Programming
-===============
+---------------
 
 An GUI program has the following structure:
 
@@ -82,7 +82,7 @@ in a few lessons. First, let's learn how to create a *GUI interface* which is
 the ``widgets`` a user sees when a GUI program runs.
 
 GUI Programming Options
-=======================
+-----------------------
 
 Python does not implement GUI, event-driven-programming in its core
 functionality. GUI programming is implemented using imported modules which
