@@ -72,7 +72,7 @@ We can also bind a mouse click to an individual ``Turtle`` object.
             b.forward(25)
 
         wn = turtle.Screen()
-        wn.title("Handle mouse clicks on the window!")
+        wn.title("Handle mouse clicks on turtles!")
 
         a = turtle.Turtle()
         a.shape('turtle')
