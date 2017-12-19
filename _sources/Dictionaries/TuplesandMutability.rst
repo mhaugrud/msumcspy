@@ -42,7 +42,7 @@ Tuples support many of the same operations as strings and lists:
    * in (membership)
    * slicing
    * \+ (concatenation)
-   * len
+   * collection functions (len etc.)
    * iteration
    * index (method)
    * count (method)

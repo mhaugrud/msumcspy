@@ -13,10 +13,12 @@
 
 .. index:: list; functions, min, max, sum
 
-List Functions
---------------
+Collection Functions
+--------------------
 
-We have frequently used the ``len`` function. Python has several similar functions that take a list (actually any type of collection that is iterable) as an argument. These functions evaluate the elements of the collection and produce some statistic.
+We have frequently used the ``len`` function. Python has several similar functions that take a 
+list (actually any type of collection that is iterable) as an argument. These functions evaluate 
+the elements of the collection and produce some statistic.
 
 ======  ===========
 Name    Returns
