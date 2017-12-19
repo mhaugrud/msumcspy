@@ -34,7 +34,7 @@ Put the following code in the same folder as rocket.gif
     import turtle
 
     def main():
-        def h(x, y):
+        def handler(x, y):
             t.forward(30)
 
         wn = turtle.Screen()
@@ -44,7 +44,7 @@ Put the following code in the same folder as rocket.gif
         t.left(90)
         t.shape('rocket.gif')
 
-        t.onclick(h)
+        t.onclick(handler)
 
     main()
 

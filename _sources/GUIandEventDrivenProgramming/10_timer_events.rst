@@ -23,16 +23,16 @@ The ``turtle`` module in Python has a timer that can cause an event when its tim
    import turtle
 
    def main():
-       def h1():
+       def handler():
            t.forward(100)
            t.left(56)
-           wn.ontimer(h1, 1000)   # wait 1000 milliseconds then restart handler
+           wn.ontimer(handler, 1000) # wait 1000 milliseconds then restart handler
 
        wn = turtle.Screen()
        wn.title("Using a timer for events!")
 
        t = turtle.Turtle()
-       h1()
+       handler()
 
    main()
 

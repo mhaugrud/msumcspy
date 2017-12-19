@@ -105,6 +105,6 @@ different state. The third lesson is to use events from the keyboard to trigger 
 
 .. note::
    Nesting ``advance_state_machine`` within ``main`` allows it to see the variables it needs. However, 
-   to assign a new value to one of those variables requires and extra step. ``nonlocal`` enables us 
+   an extra step is required to assign a new value to one of those variables. ``nonlocal`` enables us 
    to give ``state`` a new value in the function and have that change reflected in ``main``.
 

@@ -16,22 +16,22 @@ Graphical User Interfaces
 
 A **graphical user interface** (GUI) allows a user
 to interact with a computer program using a pointing device that manipulates
-small pictures on a computer screen. The small pictures are called ``icons`` or
-``widgets``. Various types of pointing devices can be used, such as a mouse,
+small pictures on a computer screen. The small pictures are called **icons** or
+**widgets**. Various types of pointing devices can be used, such as a mouse,
 a stylus pen, or a human finger on a touch screen.
 
-We refer to programs that use a **graphical user interface** as "GUI programs."
+We refer to programs that use a graphical user interface as "GUI programs."
 A GUI program is very different from a program that uses a **command line interface**
 which receives user input from typed characters on a keyboard.
-Typically programs that use a **command line interface** perform a series of
+Typically programs that use a command line interface perform a series of
 tasks in a predetermined order and then terminate.
 However, a GUI program
-creates the ``icons`` and ``widgets`` that are displayed to a user and then it
+contains the icons and widgets that are displayed to a user and then it
 simply waits for the user to interact with them. The order that tasks are
 performed by the program is under the user's control -- not the program's control!
 This means a GUI program must keep track of the "state" of its processing
 and respond correctly to user commands that are given in any order the user
-chooses. This style of programming is called "event driven programming."
+chooses. This style of programming is called **event-driven programming**.
 In fact, by definition, all *GUI programs* are *event-driven programs*.
 
 GUI Programming
@@ -47,8 +47,8 @@ An GUI program has the following structure:
   event happens, the event-loop calls the function associated with that
   event.
 
-A GUI program's interface is composed of ``widgets`` displayed in a window.
-Your computer's **operating system** controls the creation and manipulation
+A GUI program's interface is composed of widgets displayed in a window.
+Your computer's operating system controls the creation and manipulation
 of windows on your computer's display screen. The operating system also
 controls the pointing devices on your computer, such as a mouse or a touch
 screen. Therefore, your computer's operating system is what recognizes events
@@ -76,15 +76,14 @@ event-loop provided for you and it looks something like this:
 
 Again, you do not implement an event-loop in a GUI program. The event
 loop has already been written for you. You make this event-loop work by
-associating a function (which is called an ``event-handler`` or
-a ``callback function``) to a specific event. We will show you how to do this
-in a few lessons. First, let's learn how to create a *GUI interface* which is
-the ``widgets`` a user sees when a GUI program runs.
+associating a function (which is called an **event-handler** or
+a **callback function**) to a specific event. We will show you how to do this
+in a few lessons. 
 
 GUI Programming Options
 -----------------------
 
-Python does not implement GUI, event-driven-programming in its core
+Python does not implement GUI, event-driven programming in its core
 functionality. GUI programming is implemented using imported modules which
 are often referred to as "toolkits." There are many such options available to you for GUI programming. 
 A partial list of options can be found at https://docs.python.org/3/faq/gui.html. 
