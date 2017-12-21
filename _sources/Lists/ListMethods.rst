@@ -56,8 +56,7 @@ The following table provides a summary of the list methods shown above.  The col
 **mutator** means that the list is changed by the method but nothing is returned (actually ``None`` is returned).  A **hybrid** method is one that not only changes the list but also returns a value as its result.  Finally, if the result is simply a return, then the list
 is unchanged by the method.
 
-Be sure
-to experiment with these methods to gain a better understanding of what they do.
+Be sure to experiment with these methods to gain a better understanding of what they do.
 
 
 
@@ -65,12 +64,13 @@ to experiment with these methods to gain a better understanding of what they do.
 ==========  ==============  ============  ================================================
 Method      Parameters       Result       Description
 ==========  ==============  ============  ================================================
-append      item            mutator       Adds a new item to the end of a list
+append      item            mutator       Adds a new item to the end of the list
+extend      alist           mutator       Adds the items in alist to the end of the list
 insert      position, item  mutator       Inserts a new item at the position given
 pop         none            hybrid        Removes and returns the last item
 pop         position        hybrid        Removes and returns the item at position
-sort        none            mutator       Modifies a list to be sorted
-reverse     none            mutator       Modifies a list to be in reverse order
+sort        none            mutator       Modifies the list by sorting its elements
+reverse     none            mutator       Modifies the list by putting its elements in reverse order
 index       item            return idx    Returns the position of first occurrence of item
 count       item            return ct     Returns the number of occurrences of item
 remove      item            mutator       Removes the first occurrence of item
@@ -91,11 +91,17 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
     mylist.append(3)
     mylist.append(12)
     print(mylist)
+    yourlist = [9,1]
+    mylist.extend(yourlist)
+    print(mylist)
 
     mylist = mylist.sort()
-    # why is line 8 an error? (answer below, then fix line 8 so it correctly sorts)
-    # 
     print(mylist)
+
+.. admonition:: Correct the error ...
+
+   - Notice what happens to mylist when you run the above activecode.
+   - Correct line 11 so mylist becomes properly sorted.
 
 **Check your understanding**
 
