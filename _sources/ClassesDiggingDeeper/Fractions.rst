@@ -34,7 +34,7 @@ method which will allow the user to provide a numerator and a denominator for th
             self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.__num) + "/" + str(self.__den)
+            return '{}/{}'.format(self.__num, self.__den)
 
         def getNum(self):
             return self.__num

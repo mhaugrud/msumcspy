@@ -51,7 +51,7 @@ You can try the addition method and then modify the fractions and retry.
             self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.__num) + "/" + str(self.__den)
+            return '{}/{}'.format(self.__num, self.__den)
 
         def simplify(self):
             common = gcd(self.__num, self.__den)
@@ -93,7 +93,7 @@ The details of the method are the same.
             self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.__num) + "/" + str(self.__den)
+            return '{}/{}'.format(self.__num, self.__den)
 
         def simplify(self):
             common = gcd(self.__num, self.__den)
@@ -116,20 +116,19 @@ Now we can perform addition in the same manner that we are used to with other nu
 
 We can overload many common operators as shown in the following table.
 
-.. table::
 
-   ========  ============
-   operator  magic method  
-   ========  ============
-   \-         __sub__
-   \*         __mul__
-   ==        __eq__
-   !=        __ne__
-   <         __lt__
-   <=        __le__
-   >         __gt__
-   >=        __ge__
-   ========  =======
+========  ============
+operator  magic method  
+========  ============
+\-         __sub__
+\*         __mul__
+==        __eq__
+!=        __ne__
+<         __lt__
+<=        __le__
+>         __gt__
+>=        __ge__
+========  =======
 
 
 .. note::

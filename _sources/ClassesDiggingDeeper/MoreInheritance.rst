@@ -28,7 +28,7 @@ In this example we define SFraction, specialized sub-class of Fraction. SFractio
             self.den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.num) + "/" + str(self.den)
+            return '{}/{}'.format(self.__num, self.__den)
 
     class SFraction(Fraction):
         '''a Fraction in simplest form'''

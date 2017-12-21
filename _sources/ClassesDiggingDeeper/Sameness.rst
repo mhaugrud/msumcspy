@@ -37,7 +37,7 @@ It allows us to find out if two references refer to the same object.
             self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.__num) + "/" + str(self.__den)
+            return '{}/{}'.format(self.__num, self.__den)
 
 
     myfraction = Fraction(3, 4)
@@ -84,7 +84,7 @@ This type of equality is known as **deep equality** since it compares the values
             self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.__num) + "/" + str(self.__den)
+            return '{}/{}'.format(self.__num, self.__den)
 
         def getNum(self):
             return self.__num

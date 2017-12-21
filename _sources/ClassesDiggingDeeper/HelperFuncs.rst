@@ -57,7 +57,7 @@ greatest common divisor.  It will then make a new Fraction by dividing its ``num
             self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
-            return str(self.__num) + "/" + str(self.__den)
+            return '{}/{}'.format(self.__num, self.__den)
 
         def simplify(self):
             common = gcd(self.__num, self.__den)
