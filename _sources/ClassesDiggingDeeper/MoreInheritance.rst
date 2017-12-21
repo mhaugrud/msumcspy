@@ -24,8 +24,8 @@ In this example we define SFraction, specialized sub-class of Fraction. SFractio
 
     class Fraction:
         def __init__(self, top, bottom):
-            self.num = top        # the numerator is on top
-            self.den = bottom     # the denominator is on the bottom
+            self.__num = top        # the numerator is on top
+            self.__den = bottom     # the denominator is on the bottom
 
         def __str__(self):
             return '{}/{}'.format(self.__num, self.__den)

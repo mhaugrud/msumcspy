@@ -117,18 +117,18 @@ Now we can perform addition in the same manner that we are used to with other nu
 We can overload many common operators as shown in the following table.
 
 
-========  ============
-operator  magic method  
-========  ============
-\-         __sub__
-\*         __mul__
-==        __eq__
-!=        __ne__
-<         __lt__
-<=        __le__
->         __gt__
->=        __ge__
-========  =======
+=========  =============
+operator   magic method  
+=========  =============
+\-          __sub__
+\*          __mul__
+==         __eq__
+!=         __ne__
+<          __lt__
+<=         __le__
+>          __gt__
+>=         __ge__
+=========  =============
 
 
 .. note::
