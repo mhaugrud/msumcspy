@@ -30,13 +30,13 @@ end of the list.
 
 
 
-Here we have used ``append`` which simply modifies the list.  In order to use concatenation, we need to write 
-an assignment statement that uses the accumulator pattern::
+Here we have used ``append`` which simply modifies the list.  In order to use concatenation, we need to 
+write an assignment statement that uses the accumulator pattern::
 
     origlist = origlist + ["cat"]
 
-Note that the word "cat" needs to be placed in a list since the concatenation operator needs two lists to do 
-its work.
+Note that the word "cat" needs to be placed in a list since the concatenation operator needs two lists 
+to do its work.
 
 .. activecode:: li4b
 
@@ -46,11 +46,20 @@ its work.
     origlist = origlist + ["cat"]
     print(origlist)
 
-It is also important to realize that with append, the original list is simply modified.  
-On the other hand, with concatenation, an entirely new list is created.  This can be seen in the following 
-codelens example where ``newlist`` refers to a list which is a copy of the original list, ``origlist``, 
-with the new item "cat" added to the end.  ``origlist`` still contains the three values it did before the 
-concatenation.  This is why the assignment operation is necessary as part of the accumulator pattern.
+It is also important to realize that with ``append``, the original list is simply modified.  
+On the other hand, with concatenation, an entirely new list is created.
+
+.. admonition:: Prove it ...
+
+   - Return to activecode 1, at the top of this page. On lines 3 and 6, type ``print(id(origlist))`` 
+   and run. ``id`` is a function that reports where in memory an item is stored. You will see ``id``
+   produces the same number in each case, indicating ``origlist`` we did not create a new list.
+   - Return to activecode 2. On lines 3 and 6, type ``print(id(origlist))`` and run. Notice ``id``
+   produces different numbers in the two cases, indicating a new list was created.
+
+   The point is that ``append`` is a much more efficient operation and thus should be used instead
+   of concatenation (unless we actually want a new list).
+
 
 
 **Check you understanding**
