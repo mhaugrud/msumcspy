@@ -20,7 +20,7 @@ Using slices to delete list elements can be awkward and therefore error-prone.
 Python provides an alternative that is more readable.
 The ``del`` statement removes an element from a list by using its position.
 
-.. activecode:: li4
+.. activecode:: li5
     
     a = ['one', 'two', 'three']
     del a[1]
@@ -36,12 +36,6 @@ In addition, you can use a slice as an index for ``del``.
 As usual, slices select all the elements up to, but not including, the second
 index.
 
-
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: li5
 
 
 

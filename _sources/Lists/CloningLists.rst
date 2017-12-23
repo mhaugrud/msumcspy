@@ -50,9 +50,9 @@ Now we are free to make changes to ``b`` without worrying about ``a``.  We can c
 ``b`` are entirely different list objects.
 
 .. note::
-   We can also clone a list by ``b = a.copy()``. The .copy method clones the entire list. However, the slice 
-   technique shown above is more versatile. It enables us to clone all or just a portion of the list.
-   For example, ``b = a[x:y]`` clones the list from index x to index y.
+   We can also clone a list by ``b = a.copy()``. The ``copy`` method clones the entire list. However, 
+   the slice technique shown above is more versatile. It enables us to clone all or just a portion of 
+   the list. For example, ``b = a[x:y]`` clones the list from index x to index y.
 
 .. caution::
    The actual elements in the list are **not** cloned. If an element in the original list is a mutable 

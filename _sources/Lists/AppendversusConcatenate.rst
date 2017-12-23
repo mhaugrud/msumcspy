@@ -14,41 +14,43 @@
 Append Versus Concatenate
 -------------------------
 
-The ``append`` method adds a new item to the end of a list.  It is also possible to add a new item to the end of a list by using the concatenation operator.  However, you need to be careful.
+The ``append`` method adds a new item to the end of a list.  It is also possible to add a new item to the 
+end of a list by using the concatenation operator.  However, you need to be careful.
 
-Consider the following example.  The original list has 3 integers.  We want to add the word "cat" to the end of the list.
+Consider the following example.  The original list has 3 integers.  We want to add the word "cat" to the 
+end of the list.
 
-.. codelens:: cl_appcon1
+.. activecode:: li4a
 
     origlist = [45, 32, 88]
+    print(origlist)
 
     origlist.append("cat")
+    print(origlist)
 
 
 
-Here we have used ``append`` which simply modifies the list.  In order to use concatenation, we need to write an assignment statement that uses the accumulator pattern::
+Here we have used ``append`` which simply modifies the list.  In order to use concatenation, we need to write 
+an assignment statement that uses the accumulator pattern::
 
     origlist = origlist + ["cat"]
 
-Note that the word "cat" needs to be placed in a list since the concatenation operator needs two lists to do its work.
+Note that the word "cat" needs to be placed in a list since the concatenation operator needs two lists to do 
+its work.
 
-.. codelens:: cl_appcon2
+.. activecode:: li4b
 
     origlist = [45, 32, 88]
+    print(origlist)
 
     origlist = origlist + ["cat"]
-
+    print(origlist)
 
 It is also important to realize that with append, the original list is simply modified.  
-On the other hand, with concatenation, an entirely new list is created.  This can be seen in the following codelens example where
-``newlist`` refers to a list which is a copy of the original list, ``origlist``, with the new item "cat" added to the end.  ``origlist`` still contains the three values it did before the concatenation.  This is why the assignment operation is necessary as part of the
-accumulator pattern.
-
-.. codelens:: cl_appcon3
-
-    origlist = [45, 32, 88]
-
-    newlist = origlist + ["cat"]
+On the other hand, with concatenation, an entirely new list is created.  This can be seen in the following 
+codelens example where ``newlist`` refers to a list which is a copy of the original list, ``origlist``, 
+with the new item "cat" added to the end.  ``origlist`` still contains the three values it did before the 
+concatenation.  This is why the assignment operation is necessary as part of the accumulator pattern.
 
 
 **Check you understanding**

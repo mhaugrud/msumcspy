@@ -21,7 +21,8 @@ We have already seen the repetition operator working on strings as well as lists
     origlist = [45, 76, 34, 55]
     print(origlist * 3)
 
-With a list, the repetition operator creates copies of the references.  Although this may seem simple enough, when we allow a list to refer to another list, a subtle problem can arise.
+With a list, the repetition operator creates copies of the references.  Although this may seem simple 
+enough, when we allow a list to refer to another list, a subtle problem can arise.
 
 Consider the following extension on the previous example.
 
@@ -34,7 +35,8 @@ Consider the following extension on the previous example.
 
     print(newlist)
 
-``newlist`` is a list of three references to ``origlist`` that were created by the repetition operator.  The reference diagram is shown below.
+``newlist`` is a list of three references to ``origlist`` that were created by the repetition operator. 
+The reference diagram is shown below.
 
 
 
@@ -44,7 +46,7 @@ Consider the following extension on the previous example.
 
 
 
-Now, what happens if we modify a value in ``origlist``.
+Now, what happens if we modify a value in ``origlist``?
 
 
 .. activecode:: li3
@@ -59,12 +61,15 @@ Now, what happens if we modify a value in ``origlist``.
 
     print(newlist)
 
-``newlist`` shows the change in three places.  This can easily be seen by noting that in the reference diagram, there is only one ``origlist``, so any changes to it appear in all three references from ``newlist``.
+``newlist`` shows the change in three places.  This can easily be seen by noting that in the reference 
+diagram, there is only one ``origlist``, so any changes to it appear in all three references from ``newlist``. 
+This is a manifestation of shallow copying.
 
 .. image:: Figures/refrep2.png
    :alt: Same reference
 
-Here is the same example in codelens.  Step through the code paying particular attention to the result of executing the assignment statement ``origlist[1] = 99``.
+Here is the same example in codelens.  Step through the code paying particular attention to the result 
+of executing the assignment statement ``origlist[1] = 99``.
 
 .. codelens:: cl_reprefstep
     :showoutput:
