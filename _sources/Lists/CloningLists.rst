@@ -34,9 +34,10 @@ able to make a copy of the list itself, not just the reference.
 
 .. admonition:: Edit the code ...
 
-   When you run this activecode, you will see that changing an element in ``b`` affects ``a``. This is because ``b`` is an alias of ``a``.
+   When you run this activecode, you will see that changing an element in ``b`` affects ``a``. This is 
+   because ``b`` is an alias of ``a``.
 
-   Change line 3 to ``b = [:]``. Now, when you run, notice ``a`` is no longer affected.
+   Change line 3 to ``b = a[:]``. Now, when you run, notice ``a`` is no longer affected.
 
 This process is sometimes called **cloning**, to avoid the ambiguity of the word copy.
 
@@ -45,6 +46,13 @@ The easiest way to clone a list is to use the slice operator.
 Taking any slice of ``a`` creates a new list. In this case the slice happens to
 consist of the whole list.
 
-Now we are free to make changes to ``b`` without worrying about ``a``.  We can clearly see that ``a`` and ``b`` are entirely different list objects.
+Now we are free to make changes to ``b`` without worrying about ``a``.  We can clearly see that ``a`` and 
+``b`` are entirely different list objects.
+
+.. note::
+   We can also clone a list by ``b = a.copy()``. The .copy method clones the entire list. However, the slice 
+   technique shown above is more versatile. It enables us to clone all or just a portion of the list.
+   For example, ``b = a[x:y]`` clones the elements from x to y.
+   
 
 
