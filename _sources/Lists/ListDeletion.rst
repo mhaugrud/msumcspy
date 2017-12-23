@@ -31,10 +31,12 @@ The ``del`` statement removes an element from a list by using its position.
     print(alist)
 
 As you might expect, ``del`` handles negative indices and causes a runtime
-error if the index is out of range.
-In addition, you can use a slice as an index for ``del``.
-As usual, slices select all the elements up to, but not including, the second
-index.
+error if the index is out of range. In addition, you can use a slice as an index for ``del``.
+As usual, slices select all the elements up to, but not including, the second index.
+
+.. admonition:: Modify the program ...
+
+   In line 6, change the slice to ``[:]``. Run and notice what happens to ``alist``.
 
 
 

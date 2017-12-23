@@ -57,13 +57,18 @@ Now, what happens if we modify a value in ``origlist``?
 
     print(newlist)
 
-    origlist[1] = 99
+
 
     print(newlist)
 
-``newlist`` shows the change in three places.  This can easily be seen by noting that in the reference 
-diagram, there is only one ``origlist``, so any changes to it appear in all three references from ``newlist``. 
-This is a manifestation of shallow copying.
+.. admonition:: Modify the program ...
+
+   - On line 7, type ``origlist[1] = 99``
+   - Run and notice ``newlist`` shows the change in three places.
+
+This can easily be seen by noting that in the reference diagram, there is only one ``origlist``, 
+so any changes to it appear in all three references from ``newlist``. This is a manifestation of 
+shallow copying.
 
 .. image:: Figures/refrep2.png
    :alt: Same reference
