@@ -13,37 +13,29 @@ Exercises
 .. question:: selection_ex_1
    :number: 1
 
+   .. shortanswer:: ex_6_1
 
-            What do these expressions evaluate to (True or False)?
+      What do these expressions evaluate to (True or False)?
 
-            #.  ``3 == 3``
-            #.  ``3 != 3``
-            #.  ``3 >= 4``
-            #.  ``not (3 < 4)``
+      #.  ``3 == 3``
+      #.  ``3 != 3``
+      #.  ``3 >= 4``
+      #.  ``not (3 < 4)``
 
-            .. activecode:: ex_6_1
-
-               1:
-               2:
-               3:
-               4:
 
 
 .. question:: selection_ex_2
 
-   For each of the given conditions, type its **logical opposite**.  You are not allowed to use the ``not`` operator.
+   .. shortanswer:: ex_6_2
 
-   #.  ``a > b``
-   #.  ``a >= b``
-   #.  ``a >= 18  and  day == 3``
-   #.  ``a >= 18  or  day != 3``
+      For each of the given conditions, type its **logical opposite**. You are not allowed to use the 
+      ``not`` operator.
 
-   .. activecode:: ex_6_2
+      #.  ``a > b``
+      #.  ``a >= b``
+      #.  ``a >= 18  and  day == 3``
+      #.  ``a >= 18  or  day != 3``
 
-      1:
-      2:
-      3:
-      4:
 
 .. question:: selection_ex_3
 
@@ -369,12 +361,12 @@ Exercises
 
 
 
-                1. a = year % 19
-                #. b = year % 4
-                #. c = year % 7
-                #. d = (19 * a + 24) % 30
-                #. e = (2 * b + 4 * c + 6 * d + 5) % 7
-                #. dateofeaster = 22 + d + e
+            1. a = year % 19
+            #. b = year % 4
+            #. c = year % 7
+            #. d = (19 * a + 24) % 30
+            #. e = (2 * b + 4 * c + 6 * d + 5) % 7
+            #. dateofeaster = 22 + d + e
 
 
             Special note: The algorithm can give a date in April.  Also, if the year is one of four special

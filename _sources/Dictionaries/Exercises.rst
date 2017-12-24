@@ -13,31 +13,31 @@ Exercises
 .. question:: dict_ex_1
    :number: 1
 
-           Write a program that allows the user to enter a string.  It then prints a
-           table of the letters of the alphabet in alphabetical order which occur in
-           the string together with the number of times each letter occurs. Case should
-           be ignored. A sample run of the program might look this this::
+   Write a program that allows the user to enter a string.  It then prints a
+   table of the letters of the alphabet in alphabetical order which occur in
+   the string together with the number of times each letter occurs. Case should
+   be ignored. A sample run of the program might look this this::
 
-               Please enter a sentence: ThiS is String with Upper and lower case Letters.
-               a  2
-               c  1
-               d  1
-               e  5
-               g  1
-               h  2
-               i  4
-               l  2
-               n  2
-               o  1
-               p  2
-               r  4
-               s  5
-               t  5
-               u  1
-               w  2
-               $
+       Please enter a sentence: ThiS is String with Upper and lower case Letters.
+       a  2
+       c  1
+       d  1
+       e  5
+       g  1
+       h  2
+       i  4
+       l  2
+       n  2
+       o  1
+       p  2
+       r  4
+       s  5
+       t  5
+       u  1
+       w  2
+       $
 
-           .. activecode:: ex_11_01
+   .. activecode:: ex_11_01
 
 
 .. question:: dict_ex_2

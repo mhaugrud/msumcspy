@@ -14,9 +14,9 @@ Exercises
    :number: 1
 
 
-    Use a ``for`` statement to print 10 random numbers.
+   Use a ``for`` statement to print 10 random numbers.
 
-    .. activecode:: ex_mod_1
+   .. activecode:: ex_mod_1
 
 
 .. question:: pymod_ex_2

@@ -16,14 +16,14 @@ Exercises
    :number: 1
 
 
-           Add a print statement to Newton's ``sqrt`` function that
-           prints out ``better`` each time it is calculated. Call your modified
-           function with 25 as an argument and record the results.
+   Add a print statement to Newton's ``sqrt`` function that
+   prints out ``better`` each time it is calculated. Call your modified
+   function with 25 as an argument and record the results.
 
-           .. activecode:: ex_7_7
+   .. activecode:: ex_7_7
 
-              def newtonSqrt(n):
-                  # your code here
+      def newtonSqrt(n):
+          # your code here
 
 
 
