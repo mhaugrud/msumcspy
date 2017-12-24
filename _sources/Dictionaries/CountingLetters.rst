@@ -16,8 +16,8 @@ Counting Letters
 Simple Solution: Counting a Single Letter
 -----------------------------------------
 
-We have previously discussed the solution to the problem of counting the number of times a specific letter appears
-in a string.  In the case below, that specific letter is "a".
+We have previously discussed the solution to the problem of counting the number of times a specific 
+letter appears in a string.  In the case below, that specific letter is "a".
 
 .. activecode:: tdr
 
@@ -44,24 +44,25 @@ Of course, we could also solve this problem by using the ``count`` method provid
 General Solution: Counting All Letters
 --------------------------------------
 
-Now we will generalize the counting problem and consider how to count the number of times each letter appears in
-a given string.  In order to do this we need to realize that writing a function that returns a single integer will no
-longer work.  Instead we will need to return some kind of collection that holds the counts for each character.
+Now we will generalize the counting problem and consider how to count the number of times each letter 
+appears in a given string. In order to do this we need to realize that writing a function that returns 
+a single integer will no longer work. Instead we will need to return some kind of collection that holds 
+the counts for each character.
 
-Although there may be many possible ways to do this, we suggest a dictionary where the keys of the dictionary will be
-the letters in the string and the associated values for each key will be the number of times that the letter
-appeared.
+Although there may be many possible ways to do this, we suggest a dictionary where the keys of the 
+dictionary will be the letters in the string and the associated values for each key will be the number 
+of times that the letter appeared.
 
-What about a letter that does not appear in the string?  It will never be placed in the dictionary.  By assumption, any
-key that is not in the dictionary has a count of 0.
+What about a letter that does not appear in the string?  It will never be placed in the dictionary. 
+By assumption, any key that is not in the dictionary has a count of 0.
 
-If we call the function ``countAll``, then a call to ``countAll`` would return the dictionary.  For example,
+If we call the function ``countAll``, then a call to ``countAll`` will return the dictionary.  For example,
 
 .. sourcecode:: python
 
     print(countAll("banana"))
 
-would return the dictionary
+returns the dictionary
 
 .. sourcecode:: python
 
@@ -72,13 +73,15 @@ would return the dictionary
 
 Here is a start to the development of the function.
 
-#. Define the function to require one parameter, the string.
 
 #. Create an empty dictionary of counts.
 
-#. Iterate through the characters of the string, one character at a time.
+#. Iterate through the characters of the string, either creating a new key-value pair or modifying
+   an existing value.
 
 .. activecode:: tds
+
+   def countAll(astring):
 
 
 

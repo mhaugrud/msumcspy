@@ -38,14 +38,14 @@ lets us "chunk" together related data and use them as a single thing.
 
 Tuples support many of the same operations as strings and lists:
  
-   * [ ] (index operator)
-   * in (membership)
-   * slicing
-   * \+ (concatenation)
-   * collection functions (len etc.)
-   * iteration
-   * index (method)
-   * count (method)
+* [ ] (index operator)
+* in (membership)
+* slicing
+* \+ (concatenation)
+* collection functions (len etc.)
+* iteration
+* index (method)
+* count (method)
 
 .. activecode:: tda
 
