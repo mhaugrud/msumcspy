@@ -45,10 +45,6 @@ The reference diagram is shown below.
 
 
 
-
-Now, what happens if we modify a value in ``origlist``?
-
-
 .. activecode:: li3
 
     origlist = [45, 76, 34, 55]
@@ -63,12 +59,14 @@ Now, what happens if we modify a value in ``origlist``?
 
 .. admonition:: Modify the program ...
 
+   Now, what happens if we modify a value in ``origlist``?
+
    - On line 7, type ``origlist[1] = 99``
    - Run and notice ``newlist`` shows the change in three places.
 
 This can easily be seen by noting that in the reference diagram, there is only one ``origlist``, 
-so any changes to it appear in all three references from ``newlist``. This is a manifestation of 
-shallow copying.
+so any changes to it appear in all three references from ``newlist``. This is an example of 
+how aliases can create subtle, hard to find semantic errors in a program.
 
 .. image:: Figures/refrep2.png
    :alt: Same reference
