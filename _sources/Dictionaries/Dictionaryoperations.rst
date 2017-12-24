@@ -14,32 +14,31 @@
 Dictionary Operations
 ---------------------
 
-The ``del`` statement removes a key-value pair from a dictionary. For example,
-the following dictionary contains the names of various fruits and the number of
-each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary.
+Note that the ``len`` function works on dictionaries.  It returns the number of key-value pairs.
+The ``del`` statement removes a key-value pair from a dictionary. For example, the following 
+dictionary contains the names of various fruits and the number of each fruit in stock. 
+If someone buys all of the bananas, we can remove the entry from the dictionary.
 
 .. activecode:: tdi5
     
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
     print(len(inventory))
     
-    del inventory['pears']
+    del inventory['bananas']
     print(inventory)
     print(len(inventory))
 
 
-Note that the ``len`` function works on dictionaries.  It returns the number of key-value pairs.
-
-Dictionaries are also mutable.  As we've seen before with lists, this means that the dictionary can
+Dictionaries are mutable.  As we've seen before with lists, this means that the dictionary can
 be modified by referencing an association on the left hand side of the assignment statement.  
-Instead of deleting the entry for ``pears``, we can set its inventory to ``0``.
+Instead of deleting the entry for ``bananas``, we can set its inventory to ``0``.
 
 .. activecode:: tdi6
     
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
     
-    inventory['pears'] = 0
-    print(inventory['pears'])
+    inventory['bananas'] = 0
+    print(inventory['bananas'])
 
 
 

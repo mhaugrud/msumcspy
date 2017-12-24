@@ -87,7 +87,7 @@ an object is stored by using the ``id`` function.
 .. admonition:: Modify the program ...
 
    - Return to activecode 1. On line 5, type ``print(id(a), id(b))``. Run and notice one number is
-   displayed twice, indicating both ``a`` and ``b`` are stored at the same memory location.
+     displayed twice, indicating both ``a`` and ``b`` are stored at the same memory location.
    - Return to activecode 2. On line 6, type ``print(id(a), id(b))``. Run and notice two different 
-   numbers aredisplayed, indicating ``a`` and ``b`` are stored at different memory locations.
+     numbers aredisplayed, indicating ``a`` and ``b`` are stored at different memory locations.
 
