@@ -33,20 +33,24 @@ Spanish. For this dictionary, the keys are strings and the values will also be s
 One way to create a dictionary is to start with the empty dictionary and add
 **key-value pairs**. The empty dictionary is denoted ``{}``
 
-.. codelens:: cl_chp12_dict1
+.. activecode:: tdi1
     
     eng2sp = {}
     eng2sp['one'] = 'uno'
     eng2sp['two'] = 'dos'
-    eng2sp['three'] = 'tres'
+    
+    print(eng2sp)
 
 
-The first assignment creates an empty dictionary named ``eng2sp``.  The other
-assignments add new key-value pairs to the dictionary.  The left hand side gives the dictionary and the key being associated.  The right hand side gives the value being associated with that key.
-We can print the current
-value of the dictionary in the usual way.
-The key-value pairs of the dictionary are separated by commas. Each pair
+The first assignment creates an empty dictionary named ``eng2sp``.  The other assignments add new 
+key-value pairs to the dictionary.  The left hand side gives the dictionary and the key being associated. 
+The right hand side gives the value being associated with that key. We can print the current value of the 
+dictionary in the usual way. The key-value pairs of the dictionary are separated by commas. Each pair
 contains a key and a value separated by a colon.
+
+.. admonition:: Extend the program ...
+
+   On line 4, type a line (similar to line 2) to associate the key ``'three'`` and the value ``'tres'``
 
 The order of the pairs may not be what you expected. Python uses complex
 algorithms, designed for very fast access, to determine where the 
@@ -56,19 +60,17 @@ For our purposes we can think of this ordering as unpredictable.
 Another way to create a dictionary is to provide a list of key-value pairs
 using the same syntax as the previous output.
 
-.. codelens:: cl_chp12_dict2
-    
-    
+.. activecode:: tdi2
+        
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
     print(eng2sp)
 
 It doesn't matter what order we write the pairs. The values in a dictionary are
-accessed with keys, not with indices, so there is no need to care about
-ordering.
+accessed with keys, not with indices, so there is no need to care about ordering.
 
 Here is how we use a key to look up the corresponding value.
 
-.. codelens:: cl_chp12_dict3
+.. activecode:: tdi3
     
 
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
@@ -85,7 +87,7 @@ The key ``'two'`` yields the value ``'dos'``.
 
     This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
-    .. activecode:: tdi
+    .. activecode:: tdi4
 
 
 **Check your understanding**

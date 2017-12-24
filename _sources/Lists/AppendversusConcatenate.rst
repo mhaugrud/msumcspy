@@ -52,10 +52,10 @@ On the other hand, with concatenation, an entirely new list is created.
 .. admonition:: Prove it ...
 
    - Return to activecode 1, at the top of this page. On lines 3 and 6, type ``print(id(origlist))`` 
-   and run. ``id`` is a function that reports where in memory an item is stored. You will see ``id``
-   produces the same number in each case, indicating ``origlist`` we did not create a new list.
+     and run. You will see ``id`` produces the same number in each case, indicating ``origlist`` we 
+     did not create a new list.
    - Return to activecode 2. On lines 3 and 6, type ``print(id(origlist))`` and run. Notice ``id``
-   produces different numbers in the two cases, indicating a new list was created.
+     produces different numbers in the two cases, indicating a new list was created.
 
    The point is that ``append`` is a much more efficient operation and thus should be used instead
    of concatenation (unless we actually want a new list).

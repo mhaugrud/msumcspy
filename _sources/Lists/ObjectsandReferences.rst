@@ -37,12 +37,13 @@ or
 .. image:: Figures/refdiag2.png
    :alt: List illustration
 
-In one case, ``a`` and ``b`` refer to two different string objects that have the same
-value. In the second case, they refer to the same object. Remember that an object is something a variable can
-refer to.
+In one case, ``a`` and ``b`` refer to two different string objects that have the same value. In the 
+second case, they refer to the same object. Remember that an object is something a variable can refer to.
 
-We already know that objects can be identified using their unique identifier.  We can also test whether two names refer to the same object using the *is*
-operator.  The *is* operator will return true if the two references are to the same object.  In other words, the references are the same.  Try our example from above.
+We already know that objects can be identified using their unique identifier.  We can also test whether 
+two names refer to the same object using the ``is`` operator.  The ``is`` operator will return ``True`` 
+if the two references are to the same object.  In other words, the references are the same.  Try our 
+example from above.
 
 .. activecode:: liy
 
@@ -52,11 +53,11 @@ operator.  The *is* operator will return true if the two references are to the s
     print(a is b)
 
 The answer is ``True``.  This tells us that both ``a`` and ``b`` refer to the same object, and that it
-is the second of the two reference diagrams that describes the relationship. 
-Since strings are *immutable*, Python optimizes resources by making two names
-that refer to the same string value refer to the same object.
+is the second of the two reference diagrams that describes the relationship. Since strings are *immutable*, 
+Python optimizes resources by making two names that refer to the same string value refer to the same object.
 
-This is not the case with lists.  Consider the following example.  Here, ``a`` and ``b`` refer to two different lists, each of which happens to have the same element values.
+This is not the case with lists. Consider the following example. Here, ``a`` and ``b`` refer to two 
+different lists, each of which happens to have the same element values.
 
 .. activecode:: liz
     
@@ -64,7 +65,6 @@ This is not the case with lists.  Consider the following example.  Here, ``a`` a
     b = [81, 82, 83]
 
     print(a is b)
-
     print(a == b)  
 
 The reference diagram for this example looks like this:
@@ -74,17 +74,20 @@ The reference diagram for this example looks like this:
 
 ``a`` and ``b`` have the same value but do not refer to the same object.
 
-There is one other important thing to notice about this reference diagram.  The variable ``a`` is a reference to a **collection of references**.  Those references actually refer to the integer values in the list.  In other words, a list is a collection of references to objects.  Interestingly, even though ``a`` and ``b`` are two different lists (two different collections of references), the integer object ``81`` is shared by both.  Like strings, integers are also immutable so Python optimizes and lets everyone share the same object.
+There is one other important thing to notice about this reference diagram.  The variable ``a`` is a 
+reference to a **collection of references**. Those references actually refer to the integer values 
+in the list. In other words, a list is a collection of references to objects. Interestingly, even 
+though ``a`` and ``b`` are two different lists (two different collections of references), the integer 
+object ``81`` is shared by both.  Like strings, integers are also immutable so Python optimizes and 
+lets everyone share the same object.
 
-Here is the example in codelens.  Pay particular attention to the `id` values.
+The ``is`` operator works by comparing where two objects are stored in memory. We can find out where 
+an object is stored by using the ``id`` function.
 
-.. codelens:: cl_chp09_istrace
-    :showoutput:
-    
-    a = [81, 82, 83]
-    b = [81, 82, 83]
+.. admonition:: Modify the program ...
 
-    print(a is b)
-    print(a == b)
-
+   - Return to activecode 1. On line 5, type ``print(id(a), id(b))``. Run and notice one number is
+   displayed twice, indicating both ``a`` and ``b`` are stored at the same memory location.
+   - Return to activecode 2. On line 6, type ``print(id(a), id(b))``. Run and notice two different 
+   numbers aredisplayed, indicating ``a`` and ``b`` are stored at different memory locations.
 
