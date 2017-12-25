@@ -7,6 +7,10 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. qnum::
+   :prefix: selection-
+   :start: 1
+
 Exercises
 ---------
 
@@ -17,10 +21,10 @@ Exercises
 
       What do these expressions evaluate to (True or False)?
 
-      #.  ``3 == 3``
-      #.  ``3 != 3``
-      #.  ``3 >= 4``
-      #.  ``not (3 < 4)``
+      1.  3 == 3
+      2.  3 != 3
+      3.  3 >= 4
+      4.  not (3 < 4)
 
 
 
@@ -31,10 +35,10 @@ Exercises
       For each of the given conditions, type its **logical opposite**. You are not allowed to use the 
       ``not`` operator.
 
-      #.  ``a > b``
-      #.  ``a >= b``
-      #.  ``a >= 18  and  day == 3``
-      #.  ``a >= 18  or  day != 3``
+      1.  a > b
+      2.  a >= b``
+      3.  a >= 18  and  b == 3
+      4.  a >= 18  or  b != 3
 
 
 .. question:: selection_ex_3

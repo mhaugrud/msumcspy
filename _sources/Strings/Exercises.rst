@@ -7,6 +7,10 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. qnum::
+   :prefix: strings-
+   :start: 1
+
 Exercises
 ---------
 
@@ -18,14 +22,14 @@ Exercises
       What is the result of each of the following:
 
       a. 'Python'[1]
-      #. "Strings are sequences of characters."[5]
-      #. len("wonderful")
-      #. 'Mystery'[:4]
-      #. 'p' in 'Pineapple'
-      #. 'apple' in 'Pineapple'
-      #. 'pear' not in 'Pineapple'
-      #. 'apple' > 'pineapple'
-      #. 'pineapple' < 'Peach'
+      b. "Strings are sequences of characters."[5]
+      c. len("wonderful")
+      d. 'Mystery'[:4]
+      e. 'p' in 'Pineapple'
+      f. 'apple' in 'Pineapple'
+      g. 'pear' not in 'Pineapple'
+      h. 'apple' > 'pineapple'
+      i. 'pineapple' < 'Peach'
 
 
 .. question:: string_2
