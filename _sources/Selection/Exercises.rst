@@ -17,10 +17,11 @@ Exercises
 .. question:: selection_ex_1
    :number: 1
 
+   What do these expressions evaluate to (``True`` or ``False``)?
+
    .. shortanswer:: ex_6_1
 
-      What do these expressions evaluate to (True or False)?
-
+      |
       1.  3 == 3
       2.  3 != 3
       3.  3 >= 4
@@ -35,6 +36,7 @@ Exercises
 
    .. shortanswer:: ex_6_2
 
+      |
       1.  a > b
       2.  a >= b
       3.  a == 18  and  b == 3

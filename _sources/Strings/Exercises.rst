@@ -17,10 +17,11 @@ Exercises
 .. question:: string_1
    :number: 1
 
+   What is the result of each of the following:
+
    .. shortanswer:: ex_8_1
 
-      What is the result of each of the following:
-
+      |
       a. 'Python'[1]
       b. "Strings are sequences of characters."[5]
       c. len("wonderful")
@@ -34,9 +35,8 @@ Exercises
 
 .. question:: string_2
 
-   In Robert McCloskey's
-   book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
-   Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
+   In Robert McCloskey's book *Make Way for Ducklings*, the names of the ducklings are Jack, 
+   Kack, Lack, Mack, Nack, Ouack, Pack, and Quack. This loop tries to output these names in order.
 
    .. sourcecode:: python
 
@@ -59,9 +59,11 @@ Exercises
    your favorite paragraph of text - perhaps a poem, a speech, instructions
    to bake a cake, some inspirational verses, etc.
 
-   Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
+   Write a function that counts the number of alphabetic characters (a through z, or A through Z) in 
+   your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis 
+   of the text like this::
 
-   Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
+      Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
 
    .. activecode:: ex_8_3
 
@@ -152,7 +154,8 @@ Exercises
 
 .. question:: string_41
 
-   Write a function that will return the decimal equivalent of a string that represents a binary integer. **Use the accumulator pattern.**
+   Write a function that will return the decimal equivalent of a string that represents a binary integer. 
+   **Use the accumulator pattern.**
 
    .. activecode:: ex_8_41
 
@@ -190,7 +193,8 @@ Exercises
 
 .. question:: string_42
 
-   Write a function that will return a string that is the binary equivalent of its positive decimal integer parameter. **Use the string accumulator pattern.**
+   Write a function that will return a string that is the binary equivalent of its positive decimal 
+   integer parameter. **Use the string accumulator pattern.**
 
    .. activecode:: ex_8_42
 
@@ -252,7 +256,8 @@ Exercises
 
 .. question:: string_8
 
-   Write a boolean function that recognizes whether or not a string is a palindrome - the same frontwards as backwards. (Hint: use your ``reverse`` function to make this easy!).
+   Write a boolean function that recognizes whether or not a string is a palindrome - the same frontwards 
+   as backwards. (Hint: use your ``reverse`` function to make this easy!).
 
    .. activecode:: ex_8_8
       :nocodelens:
@@ -376,9 +381,9 @@ Exercises
 
    Here is another interesting L-System called a Hilbert curve.  Use 90 degrees::
 
-       L
-       L -> +RF-LFL-FR+
-       R -> -LF+RFR+FL-
+       X
+       X -> RYFLXFXLFYR
+       Y -> LXFRYFYRFXL
 
    .. activecode:: ex_8_12
       :nocodelens:
@@ -388,8 +393,8 @@ Exercises
    Here is a dragon curve.  Use 90 degrees.::
 
        FX
-       X -> X+YF+
-       Y -> -FX-Y
+       X -> XRYFR
+       Y -> LFXLY
 
    .. activecode:: ex_8_13
       :nocodelens:
@@ -399,8 +404,8 @@ Exercises
    Here is something called an arrowhead curve.  Use 60 degrees.::
 
        YF
-       X -> YF+XF+Y
-       Y -> XF-YF-X
+       X -> YFRXFRY
+       Y -> XFLYFLX
 
        .. activecode:: ex_8_14
           :nocodelens:
@@ -410,8 +415,8 @@ Exercises
    Try the Peano-Gosper curve.  Use 60 degrees.::
 
        FX
-       X -> X+YF++YF-FX--FXFX-YF+
-       Y -> -FX+YFYF++YF+FX--FX-Y
+       X -> XRYFRRYFLFXLLFXFXLYFR
+       Y -> LFXRYFYFRRYFRFXLLFXLY
 
    .. activecode:: ex_8_15
       :nocodelens:
@@ -420,9 +425,9 @@ Exercises
 
    The Sierpinski Triangle.  Use 60 degrees.::
 
-       FXF--FF--FF
+       FXFLLFFLLFF
        F -> FF
-       X -> --FXF++FXF++FXF--
+       X -> LLFXFRRFXFRRFXFLL
 
    .. activecode:: ex_8_16
       :nocodelens:
@@ -456,8 +461,9 @@ Exercises
 
 .. question:: string_19
 
-   Write a function called  ``remove_dups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
-   there will never be a duplicate letter added to the new string.
+   Write a function called  ``remove_dups`` that takes a string and creates a new string by only adding 
+   those characters that are not already present.  In other words, there will never be a duplicate 
+   letter added to the new string.
 
    .. activecode:: ex_8_19
 
