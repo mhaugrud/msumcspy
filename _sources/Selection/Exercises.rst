@@ -15,6 +15,7 @@ Exercises
 ---------
 
 .. question:: selection_ex_1
+   :number: 1
 
    .. shortanswer:: ex_6_1
 
@@ -29,19 +30,18 @@ Exercises
 
 .. question:: selection_ex_2
 
+   For each of the given conditions, type its **logical opposite**. You may not use the 
+   ``not`` operator.
+
    .. shortanswer:: ex_6_2
 
-      For each of the given conditions, type its **logical opposite**. You may not use the 
-      ``not`` operator.
-
       1.  a > b
-      2.  a >= b``
-      3.  a == 18  and  b != 3
-      4.  a != 18  or  b == 3
+      2.  a >= b
+      3.  a == 18  and  b == 3
+      4.  a = 18  or  b != 3
 
 
 .. question:: selection_ex_3
-   :number: 3
 
 
             Write a function which is given an exam mark, and it returns a string --- the grade 
@@ -59,9 +59,8 @@ Exercises
                < 60      F
                =======   =====
 
-            The square and round brackets denote closed and open intervals.
-            A closed interval includes the number, and open interval excludes it.  So 79.99999 gets 
-            grade C , but 80 gets grade B.
+            The square and round brackets denote closed and open intervals. A closed interval includes 
+            the number, and open interval excludes it.  So 79.99999 gets grade C , but 80 gets grade B.
 
 
             .. activecode:: ex_6_3
@@ -253,11 +252,10 @@ Exercises
 
 .. question:: selection_ex_9
 
-   "Thirty days has September, April, June, and November. All the rest have thirty-one except 
-   February, it's different, son." Write the function ``daysInMonth``. It has two parameters: the
-   month (1 to 12) and the year. It returns how many days are that specified month. Since the number
-   days in February depends on whether or not it is a leap year, ``daysInMonth`` must call the
-   ``isLeap`` function.
+   "Thirty days has September, April, June, and November. All the rest have thirty-one except February, 
+   it's different, son." Write the function ``daysInMonth``. It has two parameters: the month (1 to 12) 
+   and the year. It returns how many days are int that specified month. Since the number days in February 
+   depends on whether or not it is a leap year, ``daysInMonth`` must call the ``isLeap`` function.
 
    .. activecode:: ex_6_9
 
@@ -300,10 +298,9 @@ Exercises
    function is always the longest side.  It will return ``True`` if the triangle
    is right-angled, or ``False`` otherwise.
 
-   Hint: floating point arithmetic is not always exactly accurate,
-   so it is not safe to test floating point numbers for equality.
-   If a good programmer wants to know whether
-   ``x`` is equal or close enough to ``y``, they would probably code it up as
+   Hint: floating point arithmetic is not always exactly accurate, so it is not safe to 
+   test floating point numbers for equality. If a good programmer wants to know whether
+   ``x`` is equal or close enough to ``y``, s/he would probably code it as
 
    .. sourcecode:: python
 
