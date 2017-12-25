@@ -15,7 +15,6 @@ Exercises
 ---------
 
 .. question:: selection_ex_1
-   :number: 1
 
    .. shortanswer:: ex_6_1
 
@@ -32,20 +31,21 @@ Exercises
 
    .. shortanswer:: ex_6_2
 
-      For each of the given conditions, type its **logical opposite**. You are not allowed to use the 
+      For each of the given conditions, type its **logical opposite**. You may not use the 
       ``not`` operator.
 
       1.  a > b
       2.  a >= b``
-      3.  a >= 18  and  b == 3
-      4.  a >= 18  or  b != 3
+      3.  a == 18  and  b != 3
+      4.  a != 18  or  b == 3
 
 
 .. question:: selection_ex_3
+   :number: 3
 
 
-            Write a function which is given an exam mark, and it returns a string --- the grade for that mark --- according to this
-            scheme:
+            Write a function which is given an exam mark, and it returns a string --- the grade 
+            for that mark --- according to this scheme:
 
             .. table::
 
@@ -60,7 +60,8 @@ Exercises
                =======   =====
 
             The square and round brackets denote closed and open intervals.
-            A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.
+            A closed interval includes the number, and open interval excludes it.  So 79.99999 gets 
+            grade C , but 80 gets grade B.
 
 
             .. activecode:: ex_6_3
@@ -215,8 +216,10 @@ Exercises
 
 .. question:: selection_ex_8
 
-   Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
-   A year is a *leap year* if it is evenly divisible by 400. If it is evenly divisible by 100 (and not 400), it is not a leap year. Finally, if it is evenly divisible by 4, it is a leap year.
+   Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, 
+   ``False`` otherwise. A year is a *leap year* if it is evenly divisible by 400. If it is evenly 
+   divisible by 100 (and not 400), it is not a leap year. Finally, if it is evenly divisible by 4, 
+   it is a leap year.
 
    .. activecode:: ex_6_8
 
@@ -384,7 +387,8 @@ Exercises
 .. question:: selection_ex_13
 
 
-            Implement the ``addup`` function. It returns the sum of all positive integers that are not evenly divisible by 2 or 3, up to and including its parameter ``n``.
+            Implement the ``addup`` function. It returns the sum of all positive integers that are not 
+            evenly divisible by 2 or 3, up to and including its parameter ``n``.
 
             .. activecode:: ex_6_13
 
