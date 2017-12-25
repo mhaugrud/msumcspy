@@ -31,7 +31,7 @@ Exercises
 
    .. shortanswer:: ex_8_1
 
-
+      ..
 
 .. question:: string_2
 
