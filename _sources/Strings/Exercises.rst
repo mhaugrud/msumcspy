@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: strings-
+   :prefix: s-
    :start: 1
 
 Exercises
@@ -17,21 +17,20 @@ Exercises
 .. question:: string_1
    :number: 1
 
-   What is the result of each of the following::
-
-      a. 'Python'[1]
-      b. "Strings are sequences of characters."[5]
-      c. len("wonderful")
-      d. 'Mystery'[:4]
-      e. 'p' in 'Pineapple'
-      f. 'apple' in 'Pineapple'
-      g. 'pear' not in 'Pineapple'
-      h. 'apple' > 'pineapple'
-      i. 'pineapple' < 'Peach'
-
    .. shortanswer:: ex_8_1
 
-      ..
+      What is the result of each of the following::
+
+         a. 'Python'[1]
+         b. "Strings are sequences of characters."[5]
+         c. len("wonderful")
+         d. 'Mystery'[:4]
+         e. 'p' in 'Pineapple'
+         f. 'apple' in 'Pineapple'
+         g. 'pear' not in 'Pineapple'
+         h. 'apple' > 'pineapple'
+         i. 'pineapple' < 'Peach'
+
 
 .. question:: string_2
 
