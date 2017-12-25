@@ -17,11 +17,8 @@ Exercises
 .. question:: string_1
    :number: 1
 
-   What is the result of each of the following:
+   What is the result of each of the following::
 
-   .. shortanswer:: ex_8_1
-
-      |
       a. 'Python'[1]
       b. "Strings are sequences of characters."[5]
       c. len("wonderful")
@@ -31,6 +28,9 @@ Exercises
       g. 'pear' not in 'Pineapple'
       h. 'apple' > 'pineapple'
       i. 'pineapple' < 'Peach'
+
+   .. shortanswer:: ex_8_1
+
 
 
 .. question:: string_2
@@ -390,7 +390,7 @@ Exercises
 
 .. question:: string_13
 
-   Here is a dragon curve.  Use 90 degrees.::
+   Here is a dragon curve.  Use 90 degrees::
 
        FX
        X -> XRYFR
@@ -401,18 +401,18 @@ Exercises
 
 .. question:: string_14
 
-   Here is something called an arrowhead curve.  Use 60 degrees.::
+   Here is something called an arrowhead curve.  Use 60 degrees::
 
        YF
        X -> YFRXFRY
        Y -> XFLYFLX
 
-       .. activecode:: ex_8_14
-          :nocodelens:
+   .. activecode:: ex_8_14
+      :nocodelens:
 
 .. question:: string_15
 
-   Try the Peano-Gosper curve.  Use 60 degrees.::
+   Try the Peano-Gosper curve.  Use 60 degrees::
 
        FX
        X -> XRYFRRYFLFXLLFXFXLYFR
@@ -423,7 +423,7 @@ Exercises
 
 .. question:: string_16
 
-   The Sierpinski Triangle.  Use 60 degrees.::
+   The Sierpinski Triangle.  Use 60 degrees::
 
        FXFLLFFLLFF
        F -> FF
