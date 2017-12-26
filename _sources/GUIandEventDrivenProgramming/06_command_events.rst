@@ -55,5 +55,6 @@ This is accomplished by associating a specific **event handler** function with t
 
 .. note::
    The four event handler functions are nested in the main function. This enables the handlers to see main's
-   variables. This is important since we cannot pass arguments to these handler functions.
+   variables. This is important since we cannot pass arguments to these handler functions. A function thus 
+   nested is called a **closure**.
 
