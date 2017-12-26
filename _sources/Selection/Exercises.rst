@@ -18,7 +18,7 @@ Exercises
    :number: 1
 
 
-   What do these expressions evaluate to (``True`` or ``False``)::
+   What do these expressions evaluate to (``True`` or ``False``)? ::
       
          1.  3 == 3
          2.  3 != 3
