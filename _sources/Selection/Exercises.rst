@@ -23,7 +23,7 @@ Exercises
          1.  3 == 3
          2.  3 != 3
          3.  3 >= 4
-         4.  not (3 < 4)
+         4.  not (3 > 4)
 
    .. activecode:: ex_6_1
 
@@ -36,8 +36,8 @@ Exercises
       
          1.  a > 7
          2.  a >= 7
-         3.  a == 7  and  b == 3
-         4.  a == 7  or  b != 3
+         3.  a == 7  or  b == 3
+         4.  a > 7  and  b != 3
 
    .. activecode:: ex_6_2
 
