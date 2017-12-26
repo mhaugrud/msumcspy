@@ -16,7 +16,7 @@ Exercises
    Write a program that allows the user to enter a string.  It then prints a
    table of the letters of the alphabet in alphabetical order which occur in
    the string together with the number of times each letter occurs. Case should
-   be ignored. A sample run of the program might look this this::
+   be ignored. A sample run of the program might look this this. ::
 
        Please enter a sentence: ThiS is String with Upper and lower case Letters.
        a  2
@@ -86,7 +86,8 @@ Exercises
           >>> 'apples' in d
 
 
-   Be sure you understand why you get each result. Then apply what you have learned to fill in the body of the function below, and add code for the indicated tests:
+   Be sure you understand why you get each result. Then apply what you have learned to fill in the body 
+   of the function below, and add code for the indicated tests:
 
    .. activecode:: q2_dict_answer
 

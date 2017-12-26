@@ -32,7 +32,7 @@ Exercises
 
 
    For each of the given conditions, type its **logical opposite**. Do not use the 
-   ``not`` operator::
+   ``not`` operator. ::
       
          1.  a > 7
          2.  a >= 7
@@ -62,7 +62,7 @@ Exercises
                =======   =====
 
             The square and round brackets denote closed and open intervals. A closed interval includes 
-            the number, and open interval excludes it.  So 79.99999 gets grade C , but 80 gets grade B.
+            the number; an open interval excludes it.  So 79.99999 gets grade C, but 80 gets grade B.
 
 
             .. activecode:: ex_6_3
@@ -256,7 +256,7 @@ Exercises
 
    "Thirty days has September, April, June, and November. All the rest have thirty-one except February, 
    it's different, son." Write the function ``daysInMonth``. It has two parameters: the month (1 to 12) 
-   and the year. It returns how many days are int that specified month. Since the number days in February 
+   and the year. It returns how many days are in the specified month. Since the number days in February 
    depends on whether or not it is a leap year, ``daysInMonth`` must call the ``isLeap`` function.
 
    .. activecode:: ex_6_9

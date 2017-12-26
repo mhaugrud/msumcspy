@@ -17,7 +17,7 @@ Exercises
 .. question:: string_1
    :number: 1
 
-   What is the result of each of the following::
+   What is the result of each of the following? ::
 
          a. 'Python'[1]
          b. "Strings are sequences of characters."[5]
