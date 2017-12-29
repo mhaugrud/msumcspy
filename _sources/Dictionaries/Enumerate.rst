@@ -62,4 +62,7 @@ The ``zip`` function enables us to create a collection of tuples with this one-t
    Change ``movie`` in lines 4 and 5, to unpack the tuple (like what was done in the activecode at the
    top of the page lines 1 and 2).
 
+.. note::
+   Both ``enumerate`` and ``zip`` take iterables as argument(s) and return an iterable.
+
 
