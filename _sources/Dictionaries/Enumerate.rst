@@ -17,9 +17,10 @@ Iterable Functions
 ------------------
 
 We have seen that we can iterate over the elements of the various Python collections such as strings, 
-lists, and tuples. For that reason, these collection are called **iterables**. The simplest way to 
-iterate is use a ``for`` loop and iterate by item. However, there are circumstances where we need to 
-iterate by index even though it is more complicated. 
+lists, and tuples. For that reason, a collection like this is call and **iterable**.
+
+The simplest way to iterate over a collection is use a ``for`` loop and iterate by item. However, there 
+are circumstances where we need to iterate by index even though it is more complicated. 
 
 The ``enumerate`` function gives us a way to iterate by item but still have access to the index. 
 ``enumerate`` constructs ``(index, value)`` tuples for each item in the collection. We can then 
@@ -27,12 +28,12 @@ iterate over this collection of tuples by item.
 
 .. activecode:: tdh1
 
-   for (index, ch) in enumerate("Crunchy Frog"): # unpack tuple
-       print(index, ch)
-
    actress = ("Julia", "Roberts", 1967, "Pretty Woman", 1990, "Atlanta", "Georgia")
    for tup in enumerate(actress): # entire tuple
        print(tup)
+
+   for (index, ch) in enumerate("Crunchy Frog"): # unpack tuple
+       print(index, ch)
 
    fruit = ["apple", "orange", "banana", "cherry"]
    for (i, f) in enumerate(fruit):
@@ -41,7 +42,7 @@ iterate over this collection of tuples by item.
    print(fruit)
 
 .. note::
-   Notice the different types of iterables in the previous examples: string, tuple, list.
+   Notice the different types of iterables in the previous examples: tuple, string, list.
        
 We may have a number of iterables, all with the same number of elements, that we want to match up 
 with one another.
@@ -57,10 +58,10 @@ The ``zip`` function enables us to create a collection of tuples with this one-t
        print(movie)
 
 
-.. admonition: Modify the program ...
+.. admonition:: Modify the program ...
 
    Change ``movie`` in lines 4 and 5, to unpack the tuple (like what was done in the activecode at the
-   top of the page lines 1 and 2).
+   top of the page lines 5 and 6).
 
 .. note::
    Both ``enumerate`` and ``zip`` take iterables as argument(s) and return an iterable.
