@@ -11,16 +11,21 @@
    :prefix: list-29-
    :start: 1
 
-.. index:: iterable, enumerate, zip
+.. index:: iterable
 
 Iterable Functions
 ------------------
 
 We have seen that we can iterate over the elements of the various Python collections such as strings, 
-lists, and tuples. For that reason, a collection like this is call and **iterable**.
+lists, and tuples. For that reason, a collection like this is called an **iterable**.
 
-The simplest way to iterate over a collection is use a ``for`` loop and iterate by item. However, there 
-are circumstances where we need to iterate by index even though it is more complicated. 
+The simplest way to iterate over such a collection is use a ``for`` loop and iterate by item. However, there 
+are circumstances where we need the index, even though iterating by index is more complicated. 
+
+.. index:: enumerate
+
+Enumerate
+^^^^^^^^^
 
 The ``enumerate`` function gives us a way to iterate by item but still have access to the index. 
 ``enumerate`` constructs ``(index, value)`` tuples for each item in the collection. We can then 
@@ -42,10 +47,15 @@ iterate over this collection of tuples by item.
    print(fruit)
 
 .. note::
-   Notice the different types of iterables in the previous examples: tuple, string, list.
+   Notice the different types of iterables in the previous examples: a tuple, a string, and a list.
+
+.. index:: zip
        
-We may have a number of iterables, all with the same number of elements, that we want to match up 
-with one another.
+Zip
+^^^
+
+We may have a number of iterables, all with the same number of elements, that we want to match up, 
+one with another.
 
 The ``zip`` function enables us to create a collection of tuples with this one-to-one association.
 
@@ -61,7 +71,7 @@ The ``zip`` function enables us to create a collection of tuples with this one-t
 .. admonition:: Modify the program ...
 
    Change ``movie`` in lines 4 and 5, to unpack the tuple (like what was done in the activecode at the
-   top of the page lines 5 and 6).
+   top of the page, lines 5 and 6).
 
 .. note::
    Both ``enumerate`` and ``zip`` take iterables as argument(s) and return an iterable.
