@@ -19,8 +19,8 @@ Iterable Functions
 We have seen that we can iterate over the elements of the various Python collections such as strings, 
 lists, and tuples. For that reason, a collection like this is called an **iterable**.
 
-The simplest way to iterate over such a collection is use a ``for`` loop and iterate by item. However, there 
-are circumstances where we need the index, even though iterating by index is more complicated. 
+The simplest way to iterate over such a collection is to use a ``for`` loop and iterate by item. However, 
+there are circumstances where we need the index, even though iterating by index is more complicated. 
 
 .. index:: enumerate
 
