@@ -12,7 +12,9 @@ Creating a String from an Object
 --------------------------------
 
  
-When we're working with classes and objects, it is often necessary to print an object (that is to print the state of an object).
+When we're working with classes and objects, it is often necessary to print an object (that is to print 
+the state of an object).
+
 Consider the example below.
 
 .. activecode:: c1i
@@ -41,18 +43,20 @@ Consider the example below.
     p.deposit(150)
     print(p)
 
-The ``print`` function shown above produces a string representation of the Account ``p``.  The default functionality provided by
-Python tells you that ``p`` is an object of type ``Account``.  However, it does not tell you anything about the specific
-state of the Account.
+The ``print`` function shown above produces a string representation of the Account ``p``. 
+The default functionality provided by Python tells you that ``p`` is an object of type ``Account``. 
+However, it does not tell you anything about the specific state of the Account.
 
 .. index:: method; magic
 
-We can improve on this representation if we include a special method call ``__str__``.  Notice that this method uses the same naming convention as the constructor, that is two underscores (dunder) before and after the name.  It is common that Python
-uses this naming technique for special methods (magic methods).
+We can improve on this representation if we include a special method call ``__str__``.  Notice that this 
+method uses the same naming convention as the constructor, that is two underscores (dunder) before and 
+after the name.  Python commonly uses this naming technique for special methods (**magic methods**).
 
-The ``__str__`` method is responsible for returning a string representation as defined by the class creator.  In other words, you as the programmer, get to choose what an ``Account`` should look like when it gets printed.  In this case, we
-have decided that the string representation will include the values of the balance attribute as well as some formatting.  It
-is required that the ``__str__`` method create and *return* a string.
+The ``__str__`` method is responsible for returning a string representation as defined by the class creator. 
+In other words, you as the programmer, get to choose what an ``Account`` should look like when it gets 
+printed. In this case, we have decided that the string representation will include the values of the balance 
+attribute as well as some formatting. The ``__str__`` method must create and return a string.
 
 .. activecode:: c1j
     
@@ -84,17 +88,15 @@ is required that the ``__str__`` method create and *return* a string.
     print(p)
           
 
-When we run the program above you can see that the ``print`` function now shows the string that we chose.
+When you run the program above you can see that the ``print`` function now uses the string that we specified.
 
-Now, you ask, don't we already have an ``str`` type converter that can 
-turn our object into a string?  Yes we do!  
+Now, you ask, don't we already have an ``str`` type converter that can turn our object into a string? 
+Yes we do! And doesn't ``print`` automatically use this when printing things?  Yes again! 
 
-And doesn't ``print``
-automatically use this when printing things?  Yes again! 
+.. index:: override
 
-
-But, as we saw earlier, these automatic mechanisms do not do exactly what we want.  Python provides many default implementations for
-methods that we as programmers will probably want to change.  When a programmer changes the meaning of a special method we
-say that we **override** the method.  Note also that the ``str`` type constructor function uses whatever ``__str__`` method we
-provide.
+But, as we saw earlier, these automatic mechanisms do not do exactly what we want.  Python provides many 
+default implementations for methods that we as programmers will probably want to change.  When a programmer 
+changes the meaning of a special method we say that we **override** the method.  Note also that the ``str`` 
+type constructor function uses whatever ``__str__`` method we provide.
 
