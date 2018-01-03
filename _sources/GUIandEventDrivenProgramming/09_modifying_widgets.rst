@@ -26,7 +26,7 @@ Here is one, ``rocket.gif``.
 
 |
 
-**Right click and save it on your computer in the same folder as your .py scripts. ** Then, put the 
+Right click and save it on your computer in the same folder as your .py scripts. Then, put the 
 following code in the same folder as rocket.gif
 
 
