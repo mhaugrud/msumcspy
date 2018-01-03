@@ -18,7 +18,9 @@ We constantly use icons in GUIs. The ``turtle`` module has several standard turt
 However, we may wish to incorporate our own icon shapes. 
 
 First, we need a picture that we will ultimately use as an icon. It must be stored in the .gif format.
-Here is one, rocket.gif. Right click and save it on your computer in the same folder as your .py scripts.
+Here is one, ``rocket.gif``.
+
+Right click and save it on your computer in the same folder as your .py scripts.
 
 
 .. image:: Figures/rocket.gif

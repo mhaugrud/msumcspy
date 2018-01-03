@@ -25,18 +25,19 @@ This idea is not new: when first turning on a cellphone, it goes into a state wh
 Then we could lock the phone, and it would enter a "Locked" state, and so on.
 
 A simple state machine that we encounter often is a traffic light. Here is a state diagram which shows 
-that the machine continually cycles through three different states, which we’ve numbered 0, 1 and 2.
+that the machine continually cycles through three different states, which we have numbered 0, 1 and 2.
 
 .. image:: Figures/fsm_traffic_lights.png
    :alt: Traffic Lights
 
 |
 
-We are going to build a program that uses a turtle to simulate the traffic lights. There are three 
+We are going to build a program that uses a turtle to simulate the traffic lights. There are several 
 lessons here. The first shows off some different ways to use our turtles. The second demonstrates how we 
 would program a state machine in Python, by using a variable to keep track of the current state, and a 
 number of different if statements to inspect the current state, and take the actions as we change to a 
-different state. The third lesson is to use events from the keyboard to trigger the state changes.
+different state. The third lesson is how we can assign a new value to a non-local variable. Finally, we
+see how to use events from the keyboard to trigger the state changes. 
 
 
 .. code-block:: python
