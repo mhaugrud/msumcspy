@@ -20,15 +20,14 @@ However, we may wish to incorporate our own icon shapes.
 First, we need a picture that we will ultimately use as an icon. It must be stored in the .gif format.
 Here is one, ``rocket.gif``.
 
-Right click and save it on your computer in the same folder as your .py scripts.
-
 
 .. image:: Figures/rocket.gif
    :alt: rocket.gif
 
 |
 
-Put the following code in the same folder as rocket.gif
+**Right click and save it on your computer in the same folder as your .py scripts. ** Then, put the 
+following code in the same folder as rocket.gif
 
 
 .. code-block:: python
