@@ -133,7 +133,7 @@ Exercises
       Grandfather: Oh, well, thank you very much, very nice of you. Your vote of confidence is overwhelming. All right. {Puts glasses on.} The Princess Bride, by S. Morgenstern. Chapter One. Buttercup was raised on a small farm in the country of Florin.
 
 
-   Write a program that list all the words (alphabetically) in princess.txt and the
+   Write a program that lists all the words (alphabetically) in princess.txt and the
    number of times each occurs.
 
    .. activecode:: ex_11_02
