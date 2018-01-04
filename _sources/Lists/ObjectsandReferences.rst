@@ -84,7 +84,7 @@ both share the same object.
 
 .. admonition:: Prove it ...
 
-   On line 7, type ``print(a[0] is b[0])`` and run. You will see that both elements reference
+   On line 7, type ``print(a[0] is b[0])``. Run and notice that both elements reference
    the same integer object.
 
 The ``is`` operator works by comparing where two objects are stored in memory. We can find out where 
@@ -99,6 +99,6 @@ an object is stored by using the ``id`` function.
 
    Edit activecode 1 at the top of this page.
 
-   On line 6, type ``print(id(a), id(b))``. Run and notice one number is displayed twice, 
+   On line 5, type ``print(id(a), id(b))``. Run and notice one number is displayed twice, 
    indicating both ``a`` and ``b`` are stored at the same memory location.
 
