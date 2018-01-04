@@ -1,6 +1,6 @@
 .. index:: with
 
-``With`` Statement
+``with`` Statement
 ------------------
 
 .. note:: 

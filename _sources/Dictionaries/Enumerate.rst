@@ -24,8 +24,8 @@ there are circumstances where we need the index, even though iterating by index 
 
 .. index:: enumerate
 
-Enumerate
-^^^^^^^^^
+``enumerate``
+^^^^^^^^^^^^^
 
 The ``enumerate`` function gives us a way to iterate by item but still have access to the index. 
 ``enumerate`` constructs ``(index, value)`` tuples for each item in the collection. We can then 
@@ -51,8 +51,8 @@ iterate over this collection of tuples by item.
 
 .. index:: zip
        
-Zip
-^^^
+``zip``
+^^^^^^^
 
 We may have a number of iterables, all with the same number of elements, that we want to match up, 
 one with another.
