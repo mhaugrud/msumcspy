@@ -52,8 +52,8 @@ example from above.
 
     print(a is b)
 
-The answer is ``True``.  This tells us that both ``a`` and ``b`` refer to the same object, and that it
-is the second of the two reference diagrams that describes the relationship. Since strings are *immutable*, 
+The answer is ``True``.  This tells us that both ``a`` and ``b`` refer to the same object, and that it is 
+the second of the two reference diagrams that describes the relationship. Since strings are **immutable**, 
 Python optimizes resources by making two names that refer to the same string value refer to the same object.
 
 This is not the case with lists. Consider the following example. Here, ``a`` and ``b`` refer to two 
@@ -64,8 +64,9 @@ different lists, each of which happens to have the same element values.
     a = [81, 82, 83]
     b = [81, 82, 83]
 
+    print(a == b)
     print(a is b)
-    print(a == b)  
+  
 
 The reference diagram for this example looks like this:
 
@@ -79,15 +80,20 @@ reference to a **collection of references**. Those references actually refer to 
 in the list. In other words, a list is a collection of references to objects. Interestingly, even 
 though ``a`` and ``b`` are two different lists (two different collections of references), the integer 
 object ``81`` is shared by both.  Like strings, integers are also immutable so Python optimizes and 
-lets everyone share the same object.
+both share the same object.
+
+.. admonition:: Prove it ...
+
+   On line 7, type ``print(a[0] is b[0])`` and run. You will see that both elements reference
+   the same integer object.
 
 The ``is`` operator works by comparing where two objects are stored in memory. We can find out where 
 an object is stored by using the ``id`` function.
 
 .. admonition:: Modify the program ...
 
-   - Return to activecode 1. On line 5, type ``print(id(a), id(b))``. Run and notice one number is
-     displayed twice, indicating both ``a`` and ``b`` are stored at the same memory location.
-   - Return to activecode 2. On line 6, type ``print(id(a), id(b))``. Run and notice two different 
-     numbers aredisplayed, indicating ``a`` and ``b`` are stored at different memory locations.
+   - On line 6, type ``print(id(a), id(b))``. Run and notice two different numbers are displayed, 
+     indicating ``a`` and ``b`` are stored at different memory locations.
+   - On line 8, type ``print(id(a[0]), id(b[0]))``. Run and notice one number is displayed twice, 
+     indicating both ``a[0]`` and ``b[0]`` are stored at the same memory location.
 
