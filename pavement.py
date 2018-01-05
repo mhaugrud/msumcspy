@@ -19,7 +19,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "msumoorhead"
+project_name = "brekke"
 ###############################
 
 master_url = 'https://dev.runestone.academy'
