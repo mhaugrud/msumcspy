@@ -27,7 +27,6 @@ where the if-clause is optional.  For example,
     mylist = [1,2,3,5,8]
 
     sqlist = [val**2 for val in mylist]
-
     print(sqlist)
 
 
@@ -36,8 +35,8 @@ The expression describes each element of the list that is being built.  The ``fo
 
 .. admonition:: Extend the program ...
 
+   - On line 5, call the ``sum`` function using ``sqlist`` as the argument and display the result. Run.
    - In line 3, add an if-clause to the list comprehension so that only numbers less than 3 will be squared. Run.
-   - On line 4, call the ``sum`` function using ``sqlist`` as the argument and display the result.
 
 To write the ``primes_upto`` function we will use the ``is_prime`` function to filter the sequence of integers coming from the ``range`` function.  In other words, for every integer from 2 up to but not including ``n``, if the integer is prime, keep it in the list.
 
