@@ -17,8 +17,7 @@ Tuple Assignment
 ----------------
 
 Python has a very powerful **tuple assignment** feature that allows a tuple of variables 
-on the left of an assignment to be assigned values from a tuple
-on the right of the assignment.
+on the left of an assignment to be assigned values from a tuple on the right of the assignment.
 
 .. activecode:: tdd
 
@@ -26,9 +25,9 @@ on the right of the assignment.
    (first_name, last_name, birth_year, movie, movie_year, birth_city, birth_state) = actress
    print(last_name, birth_city)
 
-This does the equivalent of seven assignment statements, all on one easy line.  
-One requirement is that the number of variables on the left must match the number
-of elements in the tuple. 
+This does the equivalent of seven assignment statements, all on one easy line.
+We call this operation (in line 2), **unpacking** the tuple. One requirement is that the 
+number of variables on the left must match the number of elements in the tuple. 
 
 Once in a while, it is useful to swap the values of two variables.  With
 conventional assignment statements, we have to use a temporary variable. For
