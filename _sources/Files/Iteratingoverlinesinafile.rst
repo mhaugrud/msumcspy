@@ -58,7 +58,7 @@ Recall the contents of the qbdata.txt file.
 We will now use this file as input in a program that will do some data
 processing. In the program, we will **read** each line of the file and
 print it with some additional text. Because text files are sequences of
-lines of text, we can use the *for* loop to iterate through each line of
+lines of text, we can use the ``for`` loop to iterate through each line of
 the file.
 
 A **line** of a file is defined to be a sequence of characters up to and
@@ -70,7 +70,7 @@ you are typing a Python program and you press the enter or return key on
 your keyboard, the editor inserts a newline character into your text at
 that point.
 
-As the *for* loop iterates through each line of the file the loop
+As the ``for`` loop iterates through each line of the file the loop
 variable will contain the current line of the file as a string of
 characters. The general pattern for processing each line of a text file
 is as follows:
@@ -82,9 +82,9 @@ is as follows:
             statement2
             ...
 
-To process all of our quarterback data, we will use a *for* loop to iterate over the lines of the file. Using
-the ``split`` method, we can break each line into a list containing all the fields of interest about the
-quarterback. We can then take the values corresponding to first name, lastname, and passer rating to
+To process all of our quarterback data, we will use a ``for`` loop to iterate over the lines of the file. 
+Using the ``split`` method, we can break each line into a list containing all the fields of interest about 
+the quarterback. We can then take the values corresponding to first name, lastname, and passer rating to
 construct a simple sentence.
 
 
@@ -98,15 +98,19 @@ construct a simple sentence.
 
     for aline in qbfile:
         values = aline.split()
-        print('QB ', values[0], values[1], 'had a rating of ', values[10] )
+        print('{} {} has a rating of {}'.format(values[0], values[1], values[10]))
 
     qbfile.close()
 
 
 .. note::
-   You can obtain a line from the keyboard with the ``input`` function, and you can process lines of a file. However "line" is used differently:  With ``input`` Python reads through the newline you enter from the keyboard, but the newline (``'\n'``) is *not* included in the line returned by ``input``. It is dropped.
+   You can obtain a line from the keyboard with the ``input`` function, and you can process lines of a file. 
+   With ``input``, Python reads through the newline you enter from the keyboard, but the newline (``\n``) is 
+   **not** included in the line returned by ``input``. It is dropped.
  
-   When a line is taken from a file, the terminating newline *is* included as the last character (unless you are reading the final line of a file that happens to not have a newline at the end).
+   When a line is taken from a file, the terminating newline **is** included as the last character (unless you 
+   are reading the final line of a file that happens to not have a newline at the end).
 
-   In the quarterback example it is irrelevant whether the final line has a newline character at the end or not, since it would be stripped off by the ``split`` method call.
+   In the quarterback example, it is irrelevant whether the final line has a newline character at the end or 
+   not, since it is stripped off by the ``split`` method call.
 
