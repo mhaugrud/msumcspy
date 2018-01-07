@@ -111,6 +111,6 @@ construct a simple sentence.
    When a line is taken from a file, the terminating newline **is** included as the last character (unless you 
    are reading the final line of a file that happens to not have a newline at the end).
 
-   In the quarterback example, it is irrelevant whether the final line has a newline character at the end or 
-   not, since it is stripped off by the ``split`` method call.
+   In the quarterback example, it is irrelevant whether or not the newline character is included, 
+   since it is stripped off by the ``split`` method call.
 

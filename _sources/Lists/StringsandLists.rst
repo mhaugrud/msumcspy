@@ -16,8 +16,8 @@
 Strings and Lists
 -----------------
 
-Two of the most useful **string methods** involve lists of
-strings. The ``split`` method breaks a string into a list of words.  By default, any number of whitespace characters is considered a word boundary.
+Two of the most useful **string methods** involve lists of strings. The ``split`` method breaks a string 
+into a list of words.  By default, any number of whitespace characters is considered a word boundary.
 
 .. activecode:: lil
     
@@ -25,7 +25,8 @@ strings. The ``split`` method breaks a string into a list of words.  By default,
     wds = song.split()
     print(wds)
 
-An optional argument called a **delimiter** can be used to specify which characters to use as word boundaries. The following example uses the string ``ai`` as the delimiter:
+An optional argument called a **delimiter** can be used to specify which characters to use as word boundaries. 
+The following example uses the string ``ai`` as the delimiter:
 
 .. activecode:: lim
     
@@ -35,9 +36,8 @@ An optional argument called a **delimiter** can be used to specify which charact
 
 Notice that the delimiter doesn't appear in the result.
 
-The inverse of the ``split`` method is ``join``.  You choose a
-desired **separator** string, (often called the *glue*) 
-and join the list with the glue between each of the elements.
+The inverse of the ``split`` method is ``join``.  You choose a desired **separator** string, (often called 
+the *glue*) and join the list with the glue between each of the elements.
 
 .. activecode:: lin
 
@@ -51,14 +51,17 @@ and join the list with the glue between each of the elements.
     print("".join(wds))
 
 
-The list that you glue together (``wds`` in this example) is not modified.  Also, you can use empty glue or multi-character strings as glue.
+The list that you glue together (``wds`` in this example) is not modified.  Also, you can use empty glue 
+or multi-character strings as glue.
 
 .. admonition:: Modify the program ...
 
-   - Edit lil: 
-      - On line 4 use the join method on a space character to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
-   - Edit lim: 
-      - On line 4 use the join method on "ai" to reconstruct the string. Display the joined string. It will be the same as the string on line 1.
+   - Edit activecode 1 (at the top of this page): 
+      - On line 4 use the join method on a space character to reconstruct the string. Display the 
+        joined string. It will be the same as the string on line 1.
+   - Edit activecode 2: 
+      - On line 4 use the join method on "ai" to reconstruct the string. Display the joined string. 
+        It will be the same as the string on line 1.
 
 **Check your understanding**
 
