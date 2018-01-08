@@ -14,10 +14,13 @@
 Dictionary Operations
 ---------------------
 
-Note that the ``len`` function works on dictionaries.  It returns the number of key-value pairs.
-The ``del`` statement removes a key-value pair from a dictionary. For example, the following 
-dictionary contains the names of various fruits and the number of each fruit in stock. 
-If someone buys all of the bananas, we can remove the entry from the dictionary.
+A dictionary, like strings, lists, and tuples, is an iterable collection. Therefore, many of the
+same operations can be performed on them. For example, the ``len`` function works on dictionaries. 
+It returns the number of key-value pairs. And the ``del`` statement removes a key-value pair from 
+a dictionary. 
+
+For example, the following dictionary contains the names of various fruits and the number of each 
+fruit in stock. If someone buys all of the bananas, we can remove the entry from the dictionary.
 
 .. activecode:: tdi5
     

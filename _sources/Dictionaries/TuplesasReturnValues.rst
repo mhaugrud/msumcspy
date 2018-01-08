@@ -25,8 +25,7 @@ of wolves on an island at a given time.
 Since a tuple can hold multiple elements, we can overcome this limitation by using a **tuple**
 as the return value.
 
-For example, we could write a function that returns both the area and the circumference of a circle of radius r.
-In the Functions chapter, we saw how to use a tuple as a function's return value. We also saw we can unpack the tuple into simple variables.
+For example, we can write a function that returns both the area and the circumference of a circle of radius r.
 
 .. activecode:: tdg
 
