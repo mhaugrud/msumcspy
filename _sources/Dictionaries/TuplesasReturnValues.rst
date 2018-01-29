@@ -48,5 +48,5 @@ For example, we can write a function that returns both the area and the circumfe
 
 .. admonition:: Extend the program ...
 
-   In line 13, use the index operator on the variable t to print the elements 0 and 1 of the tuple.
+   In line 13, use the index operator on the variable ``t`` to print elements 0 and 1 of the tuple.
 
