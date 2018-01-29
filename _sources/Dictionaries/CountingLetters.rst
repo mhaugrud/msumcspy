@@ -71,17 +71,25 @@ returns the dictionary
 
 
 
-Here is a start to the development of the function.
-
-
-#. Create an empty dictionary of counts.
-
-#. Iterate through the characters of the string, either creating a new key-value pair or modifying
-   an existing value.
-
 .. activecode:: tds
 
    def countAll(astring):
+       #your code goes here
 
+
+
+
+   
+   print(countAll('banana'))
+
+
+.. admonition:: Write the function ...
+
+   Write the body of the countAll function as follows:
+
+   #. Create an empty dictionary of counts.
+
+   #. Iterate through the characters of the string, either creating a new key-value pair or modifying
+      an existing value.
 
 

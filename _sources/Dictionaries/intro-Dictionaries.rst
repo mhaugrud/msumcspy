@@ -82,12 +82,26 @@ Here is how we use a key to look up the corresponding value.
 The key ``'two'`` yields the value ``'dos'``.
 
 
+In the example below we have put the English and Spanish numbers in parallel tuples. We will then construct
+the dictionary item by item.
 
-.. note::
+.. activecode:: tdi4
 
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
+   eng = ('one','two','three')
+   sp = ('uno','dos','tres')
+   eng2sp = {}
 
-    .. activecode:: tdi4
+   for (e,s) in zip(eng,sp):
+       print(e,s)
+       
+
+   print(eng2sp)
+
+
+.. admonition:: Complete the program ...
+
+   On line 7, add the current English word as a key in the dictionary with the Spanish word as its value. 
+   The resulting dictionary will be will be the same as in the previous activecodes.
 
 
 **Check your understanding**
