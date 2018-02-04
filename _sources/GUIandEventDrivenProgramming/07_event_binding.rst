@@ -86,3 +86,44 @@ We can also bind a mouse click to an individual ``Turtle`` object.
         b.onclick(h_b)        # associate a left button click on turtle b
 
     main()
+
+Generalizing Turtle Clicks
+--------------------------
+
+In the previous example we wrote handler functions specifically for each turtle. Now we show how to write
+a general function that can be employed by any turtle object. (This topic will be discussed in more detail
+in a future chapter.)
+
+First we create our own version of a ``Turtle``. ``MyTurtle`` is able to do anything that a standard ``Turtle`` 
+from the turtle module can do. Next, we define a new function (a method) for ``MyTurtle``.
+
+.. code-block:: python
+
+    import turtle
+
+    class MyTurtle(turtle.Turtle):
+        '''my version of a Turtle that is able to respond to the fwd message'''
+        def fwd(t, x, y):
+            t.forward(25)
+
+    def main():
+        wn = turtle.Screen()
+        wn.title("Handle mouse clicks on turtles!")
+
+        a = MyTurtle()
+        a.shape('turtle')
+        b = MyTurtle()
+        b.penup()
+        b.goto(0,50)
+        b.pendown()
+        b.shape('turtle')
+
+        a.onclick(a.fwd)        # associate a left button click on MyTurtle a
+        b.onclick(b.fwd)        # associate a left button click on MyTurtle b
+
+    main()
+
+The handler functions in the previous section (13.4.2) has 2 parameters, the ``x`` and ``y`` coordinates
+of the mouse click. The ``fwd`` method in this example has another parameter ``t``. It indicates which
+``MyTurtle`` was clicked.
+
