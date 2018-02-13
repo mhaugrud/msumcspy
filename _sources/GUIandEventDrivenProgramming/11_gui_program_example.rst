@@ -103,6 +103,8 @@ variable. Finally, we see how to use events from the keyboard to trigger the sta
 
     main()
 
+.. index:: nonlocal, variable; nonlocal
+
 .. note::
    Nesting ``advance_state_machine`` within ``main`` allows it to see the variables it needs. However, 
    an extra step is required to assign a new value to one of those variables. ``nonlocal`` enables us 
