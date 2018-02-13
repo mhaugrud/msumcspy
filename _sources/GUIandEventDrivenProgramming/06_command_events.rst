@@ -53,8 +53,6 @@ This is accomplished by associating a specific **event handler** function with t
 
    main()
 
-.. index:: closure
-
 .. note::
    The four event handler functions are nested in the main function. This enables the handlers to see main's
    variables. This is important since we cannot pass arguments to these handler functions. A function thus 
