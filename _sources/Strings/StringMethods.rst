@@ -66,8 +66,6 @@ find        item                Returns the leftmost index where the substring i
 rfind       item                Returns the rightmost index where the substring item is found
 index       item                Like find except causes a runtime error if item is not found
 rindex      item                Like rfind except causes a runtime error if item is not found
-isalpha     none                Returns True if all the characters in a string are letters, otherwise False
-isdigit     none                Returns True if all the characters in a string are digits, otherwise False
 format      substitutions       Involved! See :ref:`Format-Strings`, below
 ==========  ==============      ==================================================================
 
