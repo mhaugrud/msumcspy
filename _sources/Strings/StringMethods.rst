@@ -51,7 +51,8 @@ Method      Parameters          Description
 upper       none                Returns a string in all uppercase
 lower       none                Returns a string in all lowercase
 capitalize  none                Returns a string with first character capitalized, the rest lower
-
+isalpha     none                Returns True if all the characters in a string are letters, otherwise False
+isdigit     none                Returns True if all the characters in a string are digits, otherwise False
 strip       none                Returns a string with the leading and trailing whitespace removed
 lstrip      none                Returns a string with the leading whitespace removed
 rstrip      none                Returns a string with the trailing whitespace removed

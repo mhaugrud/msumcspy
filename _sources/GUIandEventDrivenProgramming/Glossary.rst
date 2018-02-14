@@ -13,6 +13,30 @@ Glossary
 .. glossary::
 
 
+    closure
+      A function that is defined within another function. Closures are often 
+      employed as event-handlers because they can access variables from the
+      function the closure is nested within. This is useful since we are not
+      able to explicitly pass parameters to event-handlers.
+
+    event-driven programming
+      A program that only executes tasks when a user specially requests a task.
+
+    event-handler
+      A function that processes an event. These functions are also called
+      ``callback functions``.
+
+    event loop
+      A built-in function of a GUI toolkit that "listens" for operating
+      system events and then calls an appropriate event-handler for each event.
+
+    graphical user interface
+      A user interacts with a computer program by pointing, clicking, and
+      dragging icons and widgets in a window on a computer screen.
+
+    GUI
+      An abbreviation for a "graphical user interface."
+
     icon
       A small picture that represents some functionality in a computer
       program. A user clicks on an icon to cause an action to be performed
@@ -23,22 +47,5 @@ Glossary
       give commands to an executing program. Example widgets include a
       ``command button``, a ``slider bar``, or a ``list box``.
 
-    graphical user interface
-      A user interacts with a computer program by pointing, clicking, and
-      dragging icons and widgets in a window on a computer screen.
-
-    GUI
-      An abbreviation for a "graphical user interface."
-
-    event-driven programming
-      A program that only executes tasks when a user specially requests a task.
-
-    event loop
-      A built-in function of a GUI toolkit that "listens" for operating
-      system events and then calls an appropriate event-handler for each event.
-
-    event-handler
-      A function that processes an event. These functions are also called
-      ``callback functions``.
 
 
