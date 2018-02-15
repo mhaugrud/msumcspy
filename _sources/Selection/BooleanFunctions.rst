@@ -130,7 +130,7 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
 
      return x + y < z
 
-.. index:: unit testing, testing, equivalence class
+.. index:: unit test, testing, equivalence class
 
 More Unit Testing
 ^^^^^^^^^^^^^^^^^

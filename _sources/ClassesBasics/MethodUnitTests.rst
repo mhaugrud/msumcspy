@@ -7,7 +7,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: unit testing
+.. index:: unit test
 
 Method Unit Testing
 -------------------
@@ -46,15 +46,15 @@ then see if the method we are testing, properly changed the state of the object.
         a.deposit(100)
         a.deposit(5)
         test.testEqual(a.getBalance(),105) # the balance after 2 deposits
-        p.deposit(-50)                     # what if a negative amount
-        test.testEqual(p.getBalance(),105) # the balance should not change
+        a.deposit(-50)                     # what if a negative amount
+        test.testEqual(a.getBalance(),105) # the balance should not change
         print('testing withdraw method')
-        p = Account()
-        p.deposit(100)
-        p.withdraw(80)
-        test.testEqual(p.getBalance(),20)  # after deposit and withdraw
-        p.withdraw(25)                     # what if withdraw too large
-        test.testEqual(p.getBalance(),20)  # the balance should not change
+        a = Account()
+        a.deposit(100)
+        a.withdraw(80)
+        test.testEqual(a.getBalance(),20)  # after deposit and withdraw
+        a.withdraw(25)                     # what if withdraw too large
+        test.testEqual(a.getBalance(),20)  # the balance should not change
 
 
 When you run the example, two tests pass. However, two fail. The first fails because
@@ -65,8 +65,6 @@ account to be in an illegal state.
 
 .. important::
 
-   **Remember**
-
    The methods in a well designed class ensure an object will never get into an illegal state.  
  
    **A class is responsible for maintaining the integrity of its objects**.
@@ -76,11 +74,11 @@ account to be in an illegal state.
 
    Do not change the unit tests
 
-   - Edit the ``deposit`` method in the above activecode to check that the ``amount`` is not  
+   - Edit the ``deposit`` method in the above activecode to check that ``amount`` is not  
      negative before adjusting ``balance``.
 
-   - Edit the ``withdraw`` method in the above activecode to check that the ``balance`` is 
-     sufficient before adjusting ``balance``.
+   - Edit the ``withdraw`` method in the above activecode to check that ``amount`` is 
+     not too large before adjusting ``balance``.
 
 
 
