@@ -81,7 +81,7 @@ between itself and the origin (0,0). But first we will write unit tests.
    Write the body of the ``distFromOrigin`` method.
 
 
-In the following example, we see a method that return a ``Point`` object. The ``halfway`` 
+In the following example, we see a method that returns a ``Point`` object. The ``halfway`` 
 method creates a new ``Point`` that is between itself and another ``Point``.
 
 .. activecode:: c1n

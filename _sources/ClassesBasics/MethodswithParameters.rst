@@ -42,7 +42,16 @@ work.  These methods will need some additional data to do their work: the amount
 
 
 Notice that the caller of ``deposit`` or ``withdraw`` does not explicitly supply an argument to match the ``self`` parameter.  This is true of all method calls. The definition will always
-have one additional parameter as compared to the invocation.  
+have one additional parameter as compared to the invocation. 
+
+.. index:: method; constructor, method; accessor, method; mutator
+
+.. note::
+   Our class methods fall into three categories:
+
+   #. constructor - create a new object of the class
+   #. accessor - return some information about the state of an object
+   #. mutator - change the state of an object
 
 You may ask, "Why did we write two methods instead of just one that could handle either type of transaction?"  
 One reason is that bankers get rather upset if you withdraw more money from your account than you have on deposit. 

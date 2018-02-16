@@ -70,8 +70,8 @@ Table of Contents
    GUIandEventDrivenProgramming/toctree.rst
    ClassesBasics/toctree.rst
    ClassesDiggingDeeper/toctree.rst
-   Exceptions/toctree.rst
    IntroRecursion/toctree.rst
+   Exceptions/toctree.rst
 
 Appendices
 ::::::::::
