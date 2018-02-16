@@ -13,54 +13,36 @@ Exercises
 .. question:: cb_ex_1
    :number: 1
 
-   .. tabbed:: q1
-
-        .. tab:: Question
-
-           Add a ``distanceFromPoint`` method that works similar to ``distanceFromOrigin`` except that it
+   Add a ``distanceFromPoint`` method that works similar to ``distanceFromOrigin`` except that it
            takes a ``Point`` as a parameter and
            computes the distance between that point and self.
 
-           .. actex:: classes_q1
+   .. actex:: classes_q1
 
-        .. tab:: Answer
+      class Point:
 
-            .. activecode:: ch_cl_ex_1_answer
+          def __init__(self, initX, initY):
+              """ Create a new point at the given coordinates """
+              self.__x = initX
+              self.__y = initY
 
-                import math
+          def getX(self):
+              """ Get its x coordinate """
+              return self.__x
 
-                class Point:
-                    """ Point class for representing and manipulating x,y coordinates. """
+          def getY(self):
+              """ Get its y coordinate """
+              return self.__y
 
-                    def __init__(self, initX, initY):
-                        """ Create a new point at the given coordinates. """
-                        self.x = initX
-                        self.y = initY
+          def __str__(self):
+              """ Return a string representation of the point """
+              return "x={}, y={}".format(self.__x, self.__y)
 
-                    def getX(self):
-                        return self.x
-
-                    def getY(self):
-                        return self.y
-
-                    def distanceFromOrigin(self):
-                        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
-
-                    def distanceFromPoint(self, otherP):
-                        dx = (otherP.getX() - self.x)
-                        dy = (otherP.getY() - self.y)
-                        return math.sqrt(dy**2 + dx**2)
-
-                p = Point(3, 3)
-                q = Point(6, 7)
-                print(p.distanceFromPoint(q))
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_090fe2d30b8d4fe58b829d06c58661f0
+          def halfway(self, target):
+              """ Create a point halfway between 2 points """  
+              mx = (self.__x + target.__x) / 2
+              my = (self.__y + target.__y) / 2
+              return Point(mx, my)
 
 
 .. question:: cb_ex_2
@@ -71,59 +53,39 @@ Exercises
 
    .. actex:: ch_cl_02
 
+              class Point:
+
+                  def __init__(self, initX, initY):
+                      """ Create a new point at the given coordinates """
+                      self.__x = initX
+                      self.__y = initY
+
+                  def getX(self):
+                      """ Get its x coordinate """
+                      return self.__x
+
+                  def getY(self):
+                      """ Get its y coordinate """
+                      return self.__y
+
+                  def __str__(self):
+                      """ Return a string representation of the point """
+                      return "x={}, y={}".format(self.__x, self.__y)
+
+                  def halfway(self, target):
+                      """ Create a point halfway between 2 points """  
+                      mx = (self.__x + target.__x) / 2
+                      my = (self.__y + target.__y) / 2
+                      return Point(mx, my)
+
+              if __name__ == "__main__":
+                  import test
+
+
 .. question:: cb_ex_3
 
-   .. tabbed:: q3
 
-        .. tab:: Question
-
-           Add a method ``slope_from_origin`` which returns the slope of the line joining the origin
-           to the point.   For example, ::
-
-              >>> Point(4, 10).slope_from_origin()
-              2.5
-
-           What cases will cause your method to fail? Return None when it happens.
-
-           .. actex:: classes_q3
-
-        .. tab:: Answer
-
-            .. activecode:: ch_cl_ex_3_answer
-
-                class Point:
-                    """ Point class for representing and manipulating x,y coordinates. """
-
-                    def __init__(self, initX, initY):
-                        """ Create a new point at the given coordinates. """
-                        self.x = initX
-                        self.y = initY
-
-                    def getX(self):
-                        return self.x
-
-                    def getY(self):
-                        return self.y
-
-                    def distanceFromOrigin(self):
-                        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
-
-                    def slope_from_origin(self):
-                        if self.x == 0:
-                           return None
-                        else:
-                           return self.y / self.x
-
-
-                p = Point(4, 10)
-                print(p.slope_from_origin())
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_d70d350ae8284138a5726f8140c45533
+   .. actex:: classes_q3
 
 
 .. question:: cb_ex_4
@@ -144,56 +106,11 @@ Exercises
 
 .. question:: cb_ex_5
 
-   .. tabbed:: q5
-
-        .. tab:: Question
-
            Add a method called ``move`` that will take two parameters, call them ``dx`` and ``dy``.  The method will
            cause the point to move in the x and y direction the number of units given. (Hint: you will change the values of the
            state of the point)
 
            .. actex:: classes_q5
-
-        .. tab:: Answer
-
-            .. activecode:: ch_cl_05_answer
-
-                class Point:
-                    """ Point class for representing and manipulating x,y coordinates. """
-
-                    def __init__(self, initX, initY):
-                        """ Create a new point at the given coordinates. """
-                        self.x = initX
-                        self.y = initY
-
-                    def getX(self):
-                        return self.x
-
-                    def getY(self):
-                        return self.y
-
-                    def distanceFromOrigin(self):
-                        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
-
-                    def move(self, dx, dy):
-                        self.x = self.x + dx
-                        self.y = self.y + dy
-
-                    def __str__(self):
-                        return str(self.x) + "," + str(self.y)
-
-
-                p = Point(7, 6)
-                print(p)
-                p.move(5, 10)
-                print(p)
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_fc589edaa0e14bd28175850c95b79d15
 
 
 .. question:: cb_ex_6

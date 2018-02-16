@@ -15,5 +15,6 @@ Classes and Objects - the Basics
    PrivateAttributes.rst
    ConvertinganObjecttoaString.rst
    AddingMoreAttributes.rst
+   PointClass.rst
    Glossary.rst
    Exercises.rst
