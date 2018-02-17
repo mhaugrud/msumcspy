@@ -37,8 +37,9 @@ Here is an example of a class that models 2-dimensional points.
 
        
 
-We would like to add a new method to the ``Point`` class to calculate the distance
-between itself and the origin (0,0). But first we will write unit tests.
+We would like to add a new method to the ``Point`` class ``distFromOrigin``. It calculates the 
+distance from itself and the origin (0,0). We start by having this this method return an
+arbitrary value of 0. Then we write unit tests that provide examples of what it should return.
 
 .. activecode:: c1m
 
@@ -63,6 +64,7 @@ between itself and the origin (0,0). But first we will write unit tests.
 
         def distFromOrigin(self):
             """ Return the distance between self and (0,0) """
+            return 0
 
 
     if __name__ == "__main__":
