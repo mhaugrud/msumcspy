@@ -81,5 +81,5 @@ Now the balance is not affected. Private attributes prevent anyone from directly
    In contrast to other programming languages like C++ and Java, Python only partially supports 
    information hiding. The reason for this is that the designers of the Python language believe 
    programmers should be mature enough to know that directly accessing attributes outside of the 
-   class definition is **evil**. 
+   class definition is **totally irresponsible**. 
 
