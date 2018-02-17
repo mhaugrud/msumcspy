@@ -7,7 +7,7 @@ Exercises
 
    Write two unit tests for the ``distFrom`` method. It is similar to ``distFromOrigin`` 
    except that it takes a ``Point`` as a parameter and computes the distance between that point 
-   and self. Do not implement the ``distFrom`` method. It currently returns an arbitrary value
+   and itself. Do not implement the ``distFrom`` method. It currently returns an arbitrary value
    of 0. Your unit tests should check the value that is returned by ``distFrom`` in two 
    different instances where the expected result is not 0.
 
@@ -96,8 +96,8 @@ Exercises
 .. question:: cb_ex_3
 
    Copy your implementation of the ``distFrom`` method from the previous question. Then, below the 
-   comment ``# your new code goes here``, make two point objects. Given two points that fall on the 
-   circumference of a circle, find and display the center and radius of the circle.
+   comment ``# your new code goes here``, make two ``Point`` objects. Given that two points fall on 
+   the circumference of a circle, find and display the center and radius of that circle.
 
    .. actex:: ch_c1_03
 
@@ -137,7 +137,7 @@ Exercises
 
 
    Write two unit tests for the ``add`` method that takes a ``Point`` as a parameter. It creates
-   a new ``Point`` whose x attribute is the sum of the x attributes of self and the parameter.
+   a new ``Point`` whose x attribute is the sum of the x attributes of itself and the parameter.
    Likewise for its y attribute. Do not implement the ``add`` method. It currently returns an 
    arbitrary ``Point`` of (0,0). Your unit tests should check the value that is returned by 
    ``add`` in two different instances where the expected result is not (0,0).

@@ -13,20 +13,26 @@ Glossary
 .. glossary::
 
 
+    accessor
+        A method that returns information about the state of an object.
+
     attribute
-        One of the named data items that makes up an instance. The name of a **private** attribute begins with two underscores (dunder).
+        One of the named data items that makes up an instance. The name of a **private** attribute 
+        begins with two underscores (dunder).
 
     class
         A user-defined compound type. A class can also be thought of as a
         template for the objects that are instances of it.
         
     constructor
-        Every class has a "factory", called by the same name as the class, for
-        making new instances.  If the class has an *initializer method*, this method
-        is used to get the attributes (i.e. the state) of the new object properly set up. 
+        Every class has a "factory" for making new class instances.  The default constructor 
+        ``__init__`` is called by the same name as the class. It may include parameters
+        specifying how to properly set up the state of the new object. Any other method that
+        returns a new instance of the class is also considered a constructor.
 
     information hiding
-        Private attributes cannot be directly accessed outside of the class definition. They can only be manipulated through the class methods.
+        Private attributes cannot be directly accessed outside of the class definition. They 
+        can only be manipulated through the class methods.
             
     initializer method
         A special method in Python (called ``__init__``) 
@@ -44,19 +50,24 @@ Glossary
         A function that is defined inside a class definition and is invoked on
         instances of that class. 
 
+    mutator
+        A method that changes the state of an object. It alters one or more
+        attributes of an existing object. A well designed mutator ensures the
+        attributes never get set to illegal values.
+
     object
         A compound data type that is often used to model a thing or concept in
         the real world.  It bundles together the data and the operations that 
         are relevant for that kind of data.  Instance and object are used
         interchangeably.
 
-    object-oriented programming
-        A powerful style of programming in which data and the operations 
-        that manipulate it are organized into classes and methods.        
-
     object-oriented language
         A language that provides features, such as user-defined classes and
         inheritance, that facilitate object-oriented programming.
+
+    object-oriented programming
+        A powerful style of programming in which data and the operations 
+        that manipulate it are organized into classes and methods.        
 
 
 

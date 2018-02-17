@@ -1,7 +1,7 @@
-Point Class
------------
+A Point Class
+-------------
 
-Here is an example of a class that models 2-dimensional points.
+Here is an example of a class that models Cartesian coordinates in 2-dimensional space.
     
 
 .. activecode:: c1l

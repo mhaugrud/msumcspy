@@ -29,8 +29,8 @@ Each Account object has a balance attribute. What would happen if we tried to ch
 
     p = Account()
     print(p.getBalance())
-    p.balance = -12345
-    print(p.getBalance())
+    p.balance = -12345     # trying to directly change the attribute
+    print(p.getBalance())  # notice what is displayed
 
 .. caution::
 
