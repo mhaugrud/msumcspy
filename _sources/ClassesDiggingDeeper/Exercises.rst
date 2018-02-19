@@ -13,17 +13,14 @@ Exercises
 .. question:: cdd_ex_1
    :number: 1
 
-   .. tabbed:: q1
-    
-        .. tab:: Question
         
-          We can represent a rectangle by knowing three things: the location of its lower left corner, its width, and its height.
-          Create a class definition for a Rectangle class using this idea.  To create a Rectangle object at location (4,5) with width 6
-          and height 5, we would do the following::
+   We can represent a rectangle by knowing three things: the location of its lower left corner, its width, and its height.
+   Create a class definition for a Rectangle class using this idea.  To create a Rectangle object at location (4,5) with width 6
+   and height 5, we would do the following::
           
-              r = Rectangle(Point(4, 5), 6, 5)
+      r = Rectangle(Point(4, 5), 6, 5)
               
-          .. actex:: classes_deeper_q1
+   .. actex:: ch_c2_1
               
   
    
@@ -32,23 +29,20 @@ Exercises
 
    Add the following accessor methods to the Rectangle class: ``getWidth``, ``getHeight``, ``__str__``.
 
-   .. actex:: ch_cl2_q2  
+   .. actex:: ch_c2_2  
    
    
                     
 
 .. question:: cdd_ex_3
 
-   .. tabbed:: q3
 
-        .. tab:: Question
-
-           Add a method ``area`` to the Rectangle class that returns the area of any instance::
+   Add a method ``area`` to the Rectangle class that returns the area of any instance::
         
-              r = Rectangle(Point(0, 0), 10, 5)
-              test(r.area(), 50)
+      r = Rectangle(Point(0, 0), 10, 5)
+      testEqual(r.area(), 50)
 
-           .. actex:: classes_q3
+   .. actex:: ch_c2_3
 
 
 .. question:: cdd_ex_4
@@ -57,28 +51,26 @@ Exercises
    the perimeter of any rectangle instance::
    
       r = Rectangle(Point(0, 0), 10, 5)
-      test(r.perimeter(), 30)
+      testEqual(r.perimeter(), 30)
       
 
-   .. actex:: ch_cl2_q4
+   .. actex:: ch_c2_4
+
+
 
 .. question:: cdd_ex_5
 
-   .. tabbed:: q5
-
-        .. tab:: Question
-
-           Write a ``transpose`` method in the Rectangle class that swaps the width
-           and the height of any rectangle instance::
+   Write a ``transpose`` method in the Rectangle class that swaps the width
+   and the height of any rectangle instance::
            
-              r = Rectangle(Point(100, 50), 10, 5)
-              test(r.width, 10)
-              test(r.height, 5)
-              r.transpose()
-              test(r.width, 5)
-              test(r.height, 10)
+      r = Rectangle(Point(100, 50), 10, 5)
+      testEqual(r.width(), 10)
+      testEqual(r.height(), 5)
+      r.transpose()
+      testEqual(r.width(), 5)
+      testEqual(r.height(), 10)
 
-           .. actex:: classes_q5
+   .. actex:: ch_c2_5
 
 
 
@@ -92,28 +84,25 @@ Exercises
    it does not contain the point (10, 2).  These tests should pass::
    
       r = Rectangle(Point(0, 0), 10, 5)
-      test(r.contains(Point(0, 0)), True)
-      test(r.contains(Point(3, 3)), True)
-      test(r.contains(Point(3, 7)), False)
-      test(r.contains(Point(3, 5)), False)
-      test(r.contains(Point(3, 4.99999)), True)
-      test(r.contains(Point(-3, -3)), False)
+      testEqual(r.contains(Point(0, 0)), True)
+      testEqual(r.contains(Point(3, 3)), True)
+      testEqual(r.contains(Point(3, 7)), False)
+      testEqual(r.contains(Point(3, 5)), False)
+      testEqual(r.contains(Point(3, 4.99999)), True)
+      testEqual(r.contains(Point(-3, -3)), False)
    
-   .. actex:: classes_q6
+   .. actex:: ch_c2_6
       :nocodelens:
    
 .. question:: cdd_ex_7
 
-   .. tabbed:: q7
 
-        .. tab:: Question
-
-           Write a new method called ``diagonal`` that will return the length of the diagonal that runs
-           from the lower left corner to the opposite corner.
+   Write a new method called ``diagonal`` that will return the length of the diagonal that runs
+   from the lower left corner to the opposite corner.
         
-           .. actex:: classes_q7
+   .. actex:: ch_c2_7
 
-:identifier: disqus_5f1e3f17064f44088a896e9bc0e10b4d
+
 
 
 .. question:: cdd_ex_8
@@ -126,5 +115,5 @@ Exercises
    this might be quite a tough exercise!  Think carefully about all the
    cases before you code.*
     
-   .. actex:: ch_cl2_q8
+   .. actex:: ch_c2_8
     
