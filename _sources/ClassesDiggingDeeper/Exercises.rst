@@ -53,4 +53,14 @@ Exercises
    .. activecode:: ch_c2_4
    
    
+.. question:: cdd_ex_5
+
+   Copy the code from question 5 of the exercises from the last chapter (add method for the Point class). 
+   
+   Change the add method to be the magic method for addition. Change the tests to use the ``+`` operator.
+   The tests should still pass.
+
+   .. activecode:: ch_c2_5
+   
+   
 
