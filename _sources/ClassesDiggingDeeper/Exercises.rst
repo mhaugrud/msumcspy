@@ -13,107 +13,44 @@ Exercises
 .. question:: cdd_ex_1
    :number: 1
 
-        
-   We can represent a rectangle by knowing three things: the location of its lower left corner, its width, and its height.
-   Create a class definition for a Rectangle class using this idea.  To create a Rectangle object at location (4,5) with width 6
-   and height 5, we would do the following::
+   First copy your definitions of the Point and Rectangle classes from the exercises in the last chapter.
+   A square is a rectangle which has the same width and height. Write the definition of the ``Square``
+   class as a subclass of ``Rectangle``. Do not create any new attributes.  
+   
           
-      r = Rectangle(Point(4, 5), 6, 5)
+      r = Square(Point(4, 5), 6)
               
-   .. actex:: ch_c2_1
-              
+   .. activecode:: ch_c2_1
+
+
   
    
                  
 .. question:: cdd_ex_2
 
-   Add the following accessor methods to the Rectangle class: ``getWidth``, ``getHeight``, ``__str__``.
+   Copy the code from the previous activecode. Then add the following accessor method to the 
+   Square class: ``getSize``. It returns the length of a side of the square. 
 
-   .. actex:: ch_c2_2  
+   .. activecode:: ch_c2_2  
    
    
                     
-
 .. question:: cdd_ex_3
 
+   Copy the code from the previous activecode. After the classes, create a Square object. Use the 
+   ``getSize``, ``getWidth``, and ``getHeight`` methods with it and display the results. (They should 
+   all produce the same value.) Use the ``getStartPoint``, ``area``, and ``perimeter`` methods with it 
+   and display the results.
 
-   Add a method ``area`` to the Rectangle class that returns the area of any instance::
-        
-      r = Rectangle(Point(0, 0), 10, 5)
-      testEqual(r.area(), 50)
-
-   .. actex:: ch_c2_3
-
-
+   .. activecode:: ch_c2_3  
+   
+   
 .. question:: cdd_ex_4
 
-   Write a ``perimeter`` method in the Rectangle class so that we can find
-   the perimeter of any rectangle instance::
+   Copy the code from question 2. After the classes, create a Square object. Create a Turtle object. Use 
+   the Square accessor methods to enable you to draw the square.
+
+   .. activecode:: ch_c2_4
    
-      r = Rectangle(Point(0, 0), 10, 5)
-      testEqual(r.perimeter(), 30)
-      
-
-   .. actex:: ch_c2_4
-
-
-
-.. question:: cdd_ex_5
-
-   Write a ``transpose`` method in the Rectangle class that swaps the width
-   and the height of any rectangle instance::
-           
-      r = Rectangle(Point(100, 50), 10, 5)
-      testEqual(r.width(), 10)
-      testEqual(r.height(), 5)
-      r.transpose()
-      testEqual(r.width(), 5)
-      testEqual(r.height(), 10)
-
-   .. actex:: ch_c2_5
-
-
-
-.. question:: cdd_ex_6
-
-   Write a new method in the Rectangle class to test if a Point falls within
-   the rectangle.  For this exercise, assume that a rectangle at (0,0) with
-   width 10 and height 5 has *open* upper bounds on the width and height, 
-   i.e. it stretches in the x direction from [0 to 10), where 0 is included
-   but 10 is excluded, and from [0 to 5) in the y direction.  So
-   it does not contain the point (10, 2).  These tests should pass::
    
-      r = Rectangle(Point(0, 0), 10, 5)
-      testEqual(r.contains(Point(0, 0)), True)
-      testEqual(r.contains(Point(3, 3)), True)
-      testEqual(r.contains(Point(3, 7)), False)
-      testEqual(r.contains(Point(3, 5)), False)
-      testEqual(r.contains(Point(3, 4.99999)), True)
-      testEqual(r.contains(Point(-3, -3)), False)
-   
-   .. actex:: ch_c2_6
-      :nocodelens:
-   
-.. question:: cdd_ex_7
 
-
-   Write a new method called ``diagonal`` that will return the length of the diagonal that runs
-   from the lower left corner to the opposite corner.
-        
-   .. actex:: ch_c2_7
-
-
-
-
-.. question:: cdd_ex_8
-
-   In games, we often put a rectangular "bounding box" around our sprites in
-   the game.  We can then do *collision detection* between, say, bombs and
-   spaceships, by comparing whether their rectangles overlap anywhere.
-
-   Write a function to determine whether two rectangles collide. *Hint:
-   this might be quite a tough exercise!  Think carefully about all the
-   cases before you code.*
-    
-   .. actex:: ch_c2_8
-    

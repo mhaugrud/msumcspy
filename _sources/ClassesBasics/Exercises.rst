@@ -11,7 +11,7 @@ Exercises
    of 0. Your unit tests should check the value that is returned by ``distFrom`` in two 
    different instances where the expected result is not 0.
 
-   .. activecode:: ch_c1_01
+   .. activecode:: ch_c1_1
 
       class Point:
 
@@ -54,7 +54,7 @@ Exercises
 
    Copy your unit tests from the above question. Then implement the ``distFrom`` method.
 
-   .. activecode:: ch_c1_02
+   .. activecode:: ch_c1_2
 
       class Point:
 
@@ -99,7 +99,7 @@ Exercises
    comment ``# your new code goes here``, make two ``Point`` objects. Given that two points fall on 
    the circumference of a circle, find and display the center and radius of that circle.
 
-   .. activecode:: ch_c1_03
+   .. activecode:: ch_c1_3
 
       class Point:
 
@@ -142,7 +142,7 @@ Exercises
    arbitrary ``Point`` of (0,0). Your unit tests should check the value that is returned by 
    ``add`` in two different instances where the expected result is not (0,0).
 
-   .. activecode:: ch_c1_04
+   .. activecode:: ch_c1_4
 
       class Point:
 
@@ -175,7 +175,7 @@ Exercises
 
    Copy your unit tests from the above question. Then implement the ``add`` method.
 
-   .. activecode:: ch_c1_05
+   .. activecode:: ch_c1_5
 
       class Point:
 
@@ -202,5 +202,64 @@ Exercises
 
       if __name__ == "__main__":
           import test
+
+
+.. question:: cb_ex_6
+
+        
+   We can represent a rectangle by knowing three things: the location of its lower left corner (its starting
+   point), its width, and its height. Create a class definition for a Rectangle class (after the definition 
+   for the Point class) using this idea.  To create a Rectangle object at location (4,5) with width 6 and 
+   height 5, we would do the following::
+          
+      r = Rectangle(Point(4, 5), 6, 5)
+              
+   .. activecode:: ch_c1_6
+
+      class Point:
+          def __init__(self, initX, initY):
+              """ Create a new point at the given coordinates """
+              self.__x = initX
+              self.__y = initY
+
+      # your code goes here
+
+  
+   
+                 
+.. question:: cb_ex_7
+
+   Copy the code from the previous activecode. Then add these accessor methods to the Rectangle class: 
+   ``getWidth``, ``getHeight``, ``getStartPoint`` (this returns a Point object), and ``__str__``. At 
+   the bottom of your code, create a Rectangle object and use these four methods with it. 
+
+   .. activecode:: ch_c1_7  
+   
+   
+                    
+
+.. question:: cb_ex_8
+
+
+   Copy the code from the previous activecode. Then add a method ``area`` to the Rectangle class 
+   that returns the area of a Rectangle instance::
+        
+      r = Rectangle(Point(0, 0), 10, 5)
+      testEqual(r.area(), 50)
+
+   .. activecode:: ch_c1_8
+
+
+.. question:: cb_ex_9
+
+   Write a ``perimeter`` method in the Rectangle class so that we can find
+   the perimeter of a Rectangle instance::
+   
+      r = Rectangle(Point(0, 0), 10, 5)
+      testEqual(r.perimeter(), 30)
+      
+
+   .. activecode:: ch_c1_9
+
 
 
