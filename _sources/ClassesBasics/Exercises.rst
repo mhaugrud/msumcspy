@@ -11,7 +11,7 @@ Exercises
    of 0. Your unit tests should check the value that is returned by ``distFrom`` in two 
    different instances where the expected result is not 0.
 
-   .. actex:: ch_c1_01
+   .. activecode:: ch_c1_01
 
       class Point:
 
@@ -54,7 +54,7 @@ Exercises
 
    Copy your unit tests from the above question. Then implement the ``distFrom`` method.
 
-   .. actex:: ch_c1_02
+   .. activecode:: ch_c1_02
 
       class Point:
 
@@ -99,7 +99,7 @@ Exercises
    comment ``# your new code goes here``, make two ``Point`` objects. Given that two points fall on 
    the circumference of a circle, find and display the center and radius of that circle.
 
-   .. actex:: ch_c1_03
+   .. activecode:: ch_c1_03
 
       class Point:
 
@@ -142,7 +142,7 @@ Exercises
    arbitrary ``Point`` of (0,0). Your unit tests should check the value that is returned by 
    ``add`` in two different instances where the expected result is not (0,0).
 
-   .. actex:: ch_c1_04
+   .. activecode:: ch_c1_04
 
       class Point:
 
@@ -175,7 +175,7 @@ Exercises
 
    Copy your unit tests from the above question. Then implement the ``add`` method.
 
-   .. actex:: ch_c1_05
+   .. activecode:: ch_c1_05
 
       class Point:
 
