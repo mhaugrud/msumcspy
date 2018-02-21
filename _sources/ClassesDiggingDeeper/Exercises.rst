@@ -15,9 +15,9 @@ Exercises
 
    First copy your definitions of the Point and Rectangle classes from the exercises in the last chapter.
    A square is a rectangle which has the same width and height. Write the definition of the ``Square``
-   class as a subclass of ``Rectangle``. Do not create any new attributes.  
+   class as a subclass of ``Rectangle`` and its constructor method. Do not create any new attributes. It
+   could be called as follows:: 
    
-          
       r = Square(Point(4, 5), 6)
               
    .. activecode:: ch_c2_1
@@ -39,8 +39,8 @@ Exercises
 
    Copy the code from the previous activecode. After the classes, create a Square object. Use the 
    ``getSize``, ``getWidth``, and ``getHeight`` methods with it and display the results. (They should 
-   all produce the same value.) Use the ``getStartPoint``, ``area``, and ``perimeter`` methods with it 
-   and display the results.
+   all produce the same value.) Use the ``__str__``, ``getStartPoint``, ``area``, and ``perimeter`` 
+   methods with it and display the results.
 
    .. activecode:: ch_c2_3  
    

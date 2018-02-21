@@ -23,7 +23,7 @@ Here is an example of a class that models Cartesian coordinates in 2-dimensional
 
         def __str__(self):
             """ Return a string representation of the point """
-            return "x={}, y={}".format(self.__x, self.__y)
+            return "({}, {})".format(self.__x, self.__y)
 
 
     p = Point(3, 4)
@@ -60,7 +60,7 @@ arbitrary value of 0. Then we write unit tests that provide examples of what it 
 
         def __str__(self):
             """ Return a string representation of self """
-            return "x={}, y={}".format(self.__x, self.__y)
+            return "({}, {})".format(self.__x, self.__y)
 
         def distFromOrigin(self):
             """ Return the distance between self and (0,0) """
@@ -105,7 +105,7 @@ method creates a new ``Point`` that is between itself and another ``Point``.
 
         def __str__(self):
             """ Return a string representation of the point """
-            return "x={}, y={}".format(self.__x, self.__y)
+            return "({}, {})".format(self.__x, self.__y)
 
         def halfway(self, other):
             """ Create a point halfway between self and other """  
@@ -149,7 +149,7 @@ Here we see a unit test for the ``halfway`` method.
 
         def __str__(self):
             """ Return a string representation of the point """
-            return "x={}, y={}".format(self.__x, self.__y)
+            return "({}, {})".format(self.__x, self.__y)
 
         def halfway(self, other):
             """ Create a point halfway between self and other """  

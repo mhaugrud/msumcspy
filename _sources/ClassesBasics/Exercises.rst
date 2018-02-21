@@ -30,7 +30,7 @@ Exercises
 
           def __str__(self):
               """ Return a string representation of the point """
-              return "x={}, y={}".format(self.__x, self.__y)
+              return "({}, {})".format(self.__x, self.__y)
 
           def halfway(self, other):
               """ Create a point halfway between self and other """
@@ -73,7 +73,7 @@ Exercises
 
           def __str__(self):
               """ Return a string representation of the point """
-              return "x={}, y={}".format(self.__x, self.__y)
+              return "({}, {})".format(self.__x, self.__y)
 
           def halfway(self, other):
               """ Create a point halfway between self and other """
@@ -118,7 +118,7 @@ Exercises
 
           def __str__(self):
               """ Return a string representation of the point """
-              return "x={}, y={}".format(self.__x, self.__y)
+              return "({}, {})".format(self.__x, self.__y)
 
           def halfway(self, other):
               """ Create a point halfway between self and other """
@@ -161,7 +161,7 @@ Exercises
 
           def __str__(self):
               """ Return a string representation of the point """
-              return "x={}, y={}".format(self.__x, self.__y)
+              return "({}, {})".format(self.__x, self.__y)
 
           def add(self, other):
               """ Return a new point that is self added to other """
@@ -194,7 +194,7 @@ Exercises
 
           def __str__(self):
               """ Return a string representation of the point """
-              return "x={}, y={}".format(self.__x, self.__y)
+              return "({}, {})".format(self.__x, self.__y)
 
           def add(self, other):
               """ Return a new point that is self added to other """
@@ -208,9 +208,9 @@ Exercises
 
         
    We can represent a rectangle by knowing three things: the location of its lower left corner (its starting
-   point), its width, and its height. Create a class definition for a Rectangle class (after the definition 
-   for the Point class) using this idea.  To create a Rectangle object at location (4,5) with width 6 and 
-   height 5, we would do the following::
+   point), its width, and its height. Create a class definition and constructor method for a Rectangle class 
+   (after the definition for the Point class) using this idea.  To create a Rectangle object at location (4,5) 
+   with width 6 and height 5, we would do the following::
           
       r = Rectangle(Point(4, 5), 6, 5)
               
@@ -222,6 +222,10 @@ Exercises
               self.__x = initX
               self.__y = initY
 
+          def __str__(self):
+              """ Return a string representation of the point """
+              return "({}, {})".format(self.__x, self.__y)
+
       # your code goes here
 
   
@@ -230,8 +234,9 @@ Exercises
 .. question:: cb_ex_7
 
    Copy the code from the previous activecode. Then add these accessor methods to the Rectangle class: 
-   ``getWidth``, ``getHeight``, ``getStartPoint`` (this returns a Point object), and ``__str__``. At 
-   the bottom of your code, create a Rectangle object and use these four methods with it. 
+   ``getWidth``, ``getHeight``, ``getStartPoint`` (it returns a Point object), and ``__str__``. After 
+   the class definitions, create a Rectangle object and use these four methods with it, displaying the
+   results. 
 
    .. activecode:: ch_c1_7  
    
@@ -242,10 +247,12 @@ Exercises
 
 
    Copy the code from the previous activecode. Then add a method ``area`` to the Rectangle class 
-   that returns the area of a Rectangle instance::
+   that returns the area of a Rectangle instance.::
         
-      r = Rectangle(Point(0, 0), 10, 5)
+      r = Rectangle(Point(3, 8), 10, 5)
       testEqual(r.area(), 50)
+
+   After the class definitions, create a Rectangle object, use the area method, and display the result.
 
    .. activecode:: ch_c1_8
 
@@ -255,9 +262,10 @@ Exercises
    Write a ``perimeter`` method in the Rectangle class so that we can find
    the perimeter of a Rectangle instance::
    
-      r = Rectangle(Point(0, 0), 10, 5)
+      r = Rectangle(Point(-1, -2), 10, 5)
       testEqual(r.perimeter(), 30)
       
+   After the class definitions, create a Rectangle object, use the perimeter method, and display the result.
 
    .. activecode:: ch_c1_9
 
