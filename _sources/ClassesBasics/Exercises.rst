@@ -247,7 +247,7 @@ Exercises
 
 
    Copy the code from the previous activecode. Then add a method ``area`` to the Rectangle class 
-   that returns the area of a Rectangle instance.::
+   that returns the area of a Rectangle instance::
         
       r = Rectangle(Point(3, 8), 10, 5)
       testEqual(r.area(), 50)
@@ -259,8 +259,8 @@ Exercises
 
 .. question:: cb_ex_9
 
-   Write a ``perimeter`` method in the Rectangle class so that we can find
-   the perimeter of a Rectangle instance::
+   Copy the code from the previous activecode. Then write a ``perimeter`` method in the Rectangle class so 
+   that returns the perimeter of a Rectangle instance::
    
       r = Rectangle(Point(-1, -2), 10, 5)
       testEqual(r.perimeter(), 30)
