@@ -137,7 +137,7 @@ Exercises
 
 
    Write two unit tests for the ``scale`` method that takes a number as a parameter. It creates
-   a new ``Point`` whose x attribute is the x attribute of itself multiplied by the parameter.
+   a new ``Point`` whose x is the x of the original point multiplied by the parameter.
    Likewise for its y attribute. Do not implement the ``add`` method. It currently returns an 
    arbitrary ``Point`` of (0,0). Your unit tests should check the value that is returned by 
    ``add`` in two different instances where the expected result is not (0,0).

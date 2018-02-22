@@ -59,7 +59,7 @@ Exercises
    the Point class). 
    
    Change the scale method to be the magic method for multiplication. Change the tests to use the ``*`` 
-   operator. The tests should still pass.
+   operator (instead of scale). The tests should still pass.
 
    .. activecode:: ch_c2_5
    
@@ -71,10 +71,10 @@ Exercises
    is a number, the method will operate the way it currently does.
    
    If the ``val`` parameter is a ``Point`` object, the method will return the dot product of the two vectors.
-   To calculate the dot product multiply the two x attributes, multiply the two y attributes, then add those
-   two products.
+   To calculate the dot product, multiply the two x attributes and multiply the two y attributes. Return the
+   sum of those two products.
 
-   Include a unit test for the dot product.
+   Include a unit test (using the ``*`` operator) for the dot product.
 
    .. activecode:: ch_c2_6
    

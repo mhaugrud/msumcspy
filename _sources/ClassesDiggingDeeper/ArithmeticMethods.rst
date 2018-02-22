@@ -109,7 +109,7 @@ called ``__add__``. We refer to such methods as **magic methods**. The details o
 
     f1 = Fraction(1, 6)
     f2 = Fraction(1, 2)
-    f3 = f1 + f2
+    f3 = f1 + f2        # + operation is the __add__ method
     print(f3)
 
 

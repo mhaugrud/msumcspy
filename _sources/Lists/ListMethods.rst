@@ -54,7 +54,7 @@ item at that position.  Either way the list is changed.
 The following table provides a summary of the list methods shown above.  The column labeled `result` gives 
 an explanation as to what the return value is as it relates to the new value of the list.  The word
 **mutator** means that the list is changed by the method but nothing is returned (actually ``None`` is 
-returned).  A **pop** method is one that not only changes the list but also returns a value as its result.  
+returned).  The **pop** method is one that not only changes the list but also returns a value as its result.  
 Finally, if the result is simply a return, then the list is unchanged by the method.
 
 Be sure to experiment with these methods to gain a better understanding of what they do.
@@ -70,11 +70,11 @@ extend      alist           mutator       Adds the items in alist to the end of 
 insert      position, item  mutator       Inserts a new item at the position given
 pop         none            mutator       Removes and returns the last item
 pop         position        mutator       Removes and returns the item at position
-sort        none            mutator       Modifies the list by sorting its elements
-reverse     none            mutator       Modifies the list by putting its elements in reverse order
-index       item            return idx    Returns the position of first occurrence of item
-count       item            return ct     Returns the number of occurrences of item
 remove      item            mutator       Removes the first occurrence of item
+reverse     none            mutator       Modifies the list by putting its elements in reverse order
+sort        none            mutator       Modifies the list by sorting its elements
+count       item            return ct     Returns the number of occurrences of item
+index       item            return idx    Returns the position of first occurrence of item
 ==========  ==============  ============  ================================================
 
 
