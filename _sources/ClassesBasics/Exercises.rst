@@ -136,8 +136,8 @@ Exercises
 .. question:: cb_ex_4
 
 
-   Write two unit tests for the ``add`` method that takes a ``Point`` as a parameter. It creates
-   a new ``Point`` whose x attribute is the sum of the x attributes of itself and the parameter.
+   Write two unit tests for the ``scale`` method that takes a number as a parameter. It creates
+   a new ``Point`` whose x attribute is the x attribute of itself multiplied by the parameter.
    Likewise for its y attribute. Do not implement the ``add`` method. It currently returns an 
    arbitrary ``Point`` of (0,0). Your unit tests should check the value that is returned by 
    ``add`` in two different instances where the expected result is not (0,0).
@@ -163,8 +163,8 @@ Exercises
               """ Return a string representation of the point """
               return "({}, {})".format(self.__x, self.__y)
 
-          def add(self, other):
-              """ Return a new point that is self added to other """
+          def scale(self, val):
+              """ Return a new point that is self multiplied by val """
               return Point(0,0)
 
       if __name__ == "__main__":
@@ -173,7 +173,7 @@ Exercises
 
 .. question:: cb_ex_5
 
-   Copy your unit tests from the above question. Then implement the ``add`` method.
+   Copy your unit tests from the above question. Then implement the ``scale`` method.
 
    .. activecode:: ch_c1_5
 
@@ -196,8 +196,8 @@ Exercises
               """ Return a string representation of the point """
               return "({}, {})".format(self.__x, self.__y)
 
-          def add(self, other):
-              """ Return a new point that is self added to other """
+          def scale(self, val):
+              """ Return a new point that is self multiplied by val """
 
 
       if __name__ == "__main__":

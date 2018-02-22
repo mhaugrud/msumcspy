@@ -55,13 +55,27 @@ Exercises
    
 .. question:: cdd_ex_5
 
-   Copy the code from question 5 of the exercises from the last chapter (it includes the ``add`` method for 
+   Copy the code from question 5 of the exercises from the last chapter (it includes the ``scale`` method for 
    the Point class). 
    
-   Change the add method to be the magic method for addition. Change the tests to use the ``+`` operator.
-   The tests should still pass.
+   Change the scale method to be the magic method for multiplication. Change the tests to use the ``*`` 
+   operator. The tests should still pass.
 
    .. activecode:: ch_c2_5
    
+
+   
+.. question:: cdd_ex_6
+
+   Copy the code from the previous question. Make this magic method polymorphic. If the ``val`` parameter
+   is a number, the method will operate the way it currently does.
+   
+   If the ``val`` parameter is a ``Point`` object, the method will return the dot product of the two vectors.
+   To calculate the dot product multiply the two x attributes, multiply the two y attributes, then add those
+   two products.
+
+   Include a unit test for the dot product.
+
+   .. activecode:: ch_c2_6
    
 
