@@ -37,7 +37,7 @@ Exercises
                     
 .. question:: cdd_ex_3
 
-   Copy the code from the previous activecode. After the classes, create a Square object. Use the 
+   Copy the code from the previous activecode. After the classes, instantiate a Square object. Use the 
    ``getSize``, ``getWidth``, and ``getHeight`` methods with it and display the results. (They should 
    all produce the same value.) Use the ``__str__``, ``getStartPoint``, ``area``, and ``perimeter`` 
    methods with it and display the results.
@@ -47,8 +47,8 @@ Exercises
    
 .. question:: cdd_ex_4
 
-   Copy the code from question 2. After the classes, create a Square object. Create a Turtle object. Use 
-   the Square accessor methods to enable you to draw the square.
+   Copy the code from question 2. After the classes, instantiate a Square object. Create a Turtle object. 
+   Use the Square accessor methods to enable you to draw the square.
 
    .. activecode:: ch_c2_4
    

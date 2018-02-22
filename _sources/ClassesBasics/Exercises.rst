@@ -96,8 +96,8 @@ Exercises
 .. question:: cb_ex_3
 
    Copy your implementation of the ``distFrom`` method from the previous question. Then, below the 
-   comment ``# your new code goes here``, make two ``Point`` objects. Given that two points fall on 
-   the circumference of a circle, find and display the center and radius of that circle.
+   comment ``# your new code goes here``, instantiate two ``Point`` objects. Given that two points 
+   fall on the circumference of a circle, find and display the center and radius of that circle.
 
    .. activecode:: ch_c1_3
 
@@ -208,9 +208,9 @@ Exercises
 
         
    We can represent a rectangle by knowing three things: the location of its lower left corner (its starting
-   point), its width, and its height. Create a class definition and constructor method for a Rectangle class 
-   (after the definition for the Point class) using this idea.  To create a Rectangle object at location (4,5) 
-   with width 6 and height 5, we would do the following::
+   point), its width, and its height. Write a class definition and constructor method for a Rectangle class 
+   (after the definition for the Point class) using this idea.  To instantiate a Rectangle object at location 
+   (4,5) with width 6 and height 5, we would do the following::
           
       r = Rectangle(Point(4, 5), 6, 5)
               
@@ -235,8 +235,8 @@ Exercises
 
    Copy the code from the previous activecode. Then add these accessor methods to the Rectangle class: 
    ``getWidth``, ``getHeight``, ``getStartPoint`` (it returns a Point object), and ``__str__``. After 
-   the class definitions, create a Rectangle object and use these four methods with it, displaying the
-   results. 
+   the class definitions, instantiate a Rectangle object and use these four methods with it, displaying 
+   the results. 
 
    .. activecode:: ch_c1_7  
    
@@ -252,7 +252,7 @@ Exercises
       r = Rectangle(Point(3, 8), 10, 5)
       testEqual(r.area(), 50)
 
-   After the class definitions, create a Rectangle object, use the area method, and display the result.
+   After the class definitions, instantiate a Rectangle object, use the area method, and display the result.
 
    .. activecode:: ch_c1_8
 
@@ -265,7 +265,7 @@ Exercises
       r = Rectangle(Point(-1, -2), 10, 5)
       testEqual(r.perimeter(), 30)
       
-   After the class definitions, create a Rectangle object, use the perimeter method, and display the result.
+   After the class definitions, instantiate a Rectangle object, use the perimeter method, and display the result.
 
    .. activecode:: ch_c1_9
 
