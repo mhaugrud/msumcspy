@@ -1,5 +1,5 @@
-Classes and Objects - Digging a Little Deeper
-:::::::::::::::::::::::::::::::::::::::::::::
+Classes and Objects - Digging Deeper
+::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :caption: Classes and Objects - Digging Deeper

@@ -58,8 +58,8 @@ Exercises
    Copy the code from question 5 of the exercises from the last chapter (it includes the ``scale`` method for 
    the Point class). 
    
-   Change the scale method to be the magic method for multiplication. Change the tests to use the ``*`` 
-   operator (since there is no longer a method named scale). The tests should still pass.
+   Change the name of the scale method to be the magic method for multiplication. Change the tests to use the 
+   ``*`` operator (since there is no longer a method named scale). The tests should still pass.
 
    .. activecode:: ch_c2_5
    
