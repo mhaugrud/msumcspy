@@ -140,7 +140,7 @@ Exercises
    a new ``Point`` whose x is the x of the original point multiplied by the parameter.
    Likewise for its y attribute. Do not implement the ``add`` method. It currently returns an 
    arbitrary ``Point`` of (0,0). Your unit tests should check the value that is returned by 
-   ``add`` in two different instances where the expected result is not (0,0).
+   ``scale`` in two different instances where the expected result is not (0,0).
 
    .. activecode:: ch_c1_4
 

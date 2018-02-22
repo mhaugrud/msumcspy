@@ -166,7 +166,7 @@ change the original.  You can also consult the `Python documentation for strings
 String Format Method
 ^^^^^^^^^^^^^^^^^^^^
 
-In quizzes a common convention is to use fill-in-the blanks. For instance,
+In quizzes a common convention is to use fill-in-the blanks. For instance::
 
     Hello _____!
 
