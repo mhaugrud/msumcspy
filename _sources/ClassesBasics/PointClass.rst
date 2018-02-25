@@ -38,7 +38,7 @@ Here is an example of a class that models Cartesian coordinates in 2-dimensional
        
 
 We would like to add a new method to the ``Point`` class ``distFromOrigin``. It calculates the 
-distance from itself and the origin (0,0). We start by having this this method return an
+distance between itself and the origin (0,0). We start by having this this method return an
 arbitrary value of 0. Then we write unit tests that provide examples of what it should return.
 
 .. activecode:: c1m
