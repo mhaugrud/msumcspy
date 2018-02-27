@@ -171,6 +171,11 @@ Here is an example unit test for the __add__ magic method.
         f3 = f1 + f2
         test.testEqual(f3.getNum(), 2)
         test.testEqual(f3.getDen(), 3)
+
+.. note::
+   Magic methods are *magic* because we do not generally invoke them directly. Instead, we use them in an
+   indirect fashion. For example, with an arithmetic operator symbol, instantiating a new object, or
+   making a string from an object.
         
 
 

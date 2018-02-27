@@ -63,12 +63,6 @@ illegal operation. The second fails because the ``withdraw`` method should not t
 ``amount`` parameter to be more than the account's ``balance``. This causes the
 account to be in an illegal state.
 
-.. important::
-
-   The methods in a well designed class ensure an object will never get into an illegal state.  
- 
-   **A class is responsible for maintaining the integrity of its objects**.
-
 
 .. admonition:: Extend the program ...
 

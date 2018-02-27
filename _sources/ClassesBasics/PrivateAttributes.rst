@@ -73,9 +73,14 @@ Now the balance is not affected. Private attributes prevent anyone from directly
 .. index:: information hiding
 
 .. important::
-   The only way to access private attributes is through the methods that are provided in the class 
-   definition. This protects the attributes from misuse. **Information hiding** is the second central 
-   principle of object-oriented programming. 
+
+   The second principle of object-oriented programming is **a class is responsible for maintaining the 
+   integrity of its objects**. The methods in a well designed class ensure an object will never get into 
+   an illegal state.  
+ 
+   We enable this through **information hiding** --- making the attributes private. The only way to 
+   access private attributes is through the methods that are provided in the class definition. This 
+   protects the attributes from misuse. 
 
 .. note::
    In contrast to other programming languages like C++ and Java, Python only partially supports 

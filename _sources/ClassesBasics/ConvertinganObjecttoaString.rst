@@ -93,10 +93,13 @@ When you run the program above you can see that the ``print`` function now uses 
 Now, you ask, don't we already have an ``str`` type converter that can turn our object into a string? 
 Yes we do! And doesn't ``print`` automatically use this when printing things?  Yes again! 
 
-.. index:: override
+.. index:: override, method; magic
 
 But, as we saw earlier, these automatic mechanisms do not do exactly what we want.  Python provides many 
 default implementations for methods that we as programmers will probably want to change.  When a programmer 
 changes the meaning of a special method we say that we **override** the method.  Note also that the ``str`` 
 type constructor function uses whatever ``__str__`` method we provide.
+
+.. note::
+   ``__init__`` and ``__str__`` are known as **magic methods**. We will see more of them in the future.
 
