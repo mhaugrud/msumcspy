@@ -82,9 +82,9 @@ Now the balance is not affected. Private attributes prevent anyone from directly
    way to access private attributes is through the methods that are provided in the class definition. 
    This protects the attributes from misuse. 
 
-   (We must also be careful that our mutator methods never leave an object in an illegal state. This 
+   We must also be careful that our mutator methods never leave an object in an illegal state. This 
    includes checking the arguments and the attributes. Recall how this was done in the ``deposit`` and 
-   ``withdraw`` methods.)
+   ``withdraw`` methods.
 
 .. note::
    In contrast to other programming languages like C++ and Java, Python only partially supports 

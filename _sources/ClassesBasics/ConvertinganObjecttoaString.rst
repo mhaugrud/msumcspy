@@ -47,16 +47,19 @@ The ``print`` function shown above produces a string representation of the Accou
 The default functionality provided by Python tells you that ``p`` is an object of type ``Account``. 
 However, it does not tell you anything about the specific state of the Account.
 
-.. index:: method; magic
+.. index:: override, method; magic
 
-We can improve on this representation if we include a special method call ``__str__``.  Notice that this 
+We can improve on this representation if we include a special method called ``__str__``.  Notice that this 
 method uses the same naming convention as the constructor, that is two underscores (dunder) before and 
 after the name.  Python commonly uses this naming technique for special methods (**magic methods**).
 
-The ``__str__`` method is responsible for returning a string representation as defined by the class creator. 
-In other words, you as the programmer, get to choose what an ``Account`` should look like when it gets 
-printed. In this case, we have decided that the string representation will include the values of the balance 
-attribute as well as some formatting. The ``__str__`` method must create and return a string.
+The ``__str__`` method is responsible for creating and returning a string for an object the class. You as 
+the programmer, get to choose what an ``Account`` string should look like. In this case, we have 
+decided that the string representation will include the values of the balance attribute as well as some 
+formatting.
+
+When a programmer changes the meaning of a pre-defined method, we say that we **override** the method.
+
 
 .. activecode:: c1j
     
@@ -85,21 +88,20 @@ attribute as well as some formatting. The ``__str__`` method must create and ret
 
     p = Account()
     p.deposit(150)
-    print(p)
+    print('the balance is ' + str(p))
           
 
-When you run the program above you can see that the ``print`` function now uses the string that we specified.
+When you run the program above you can see that the ``str`` type converter function uses the ``__str__``
+method that we wrote.
 
-Now, you ask, don't we already have an ``str`` type converter that can turn our object into a string? 
-Yes we do! And doesn't ``print`` automatically use this when printing things?  Yes again! 
+.. admonition:: Extend the program ...
 
-.. index:: override, method; magic
+   On line 27, type ``print(p)`` and run the program.
+ 
+   You will see that printing an object by itself also automatically uses the ``__str__`` method.
 
-But, as we saw earlier, these automatic mechanisms do not do exactly what we want.  Python provides many 
-default implementations for methods that we as programmers will probably want to change.  When a programmer 
-changes the meaning of a special method we say that we **override** the method. 
 
-Note that the ``str`` type constructor function automatically uses the ``__str__`` method we provide.
+
 
 .. note::
    ``__init__`` and ``__str__`` are known as **magic methods**. We will see more of them in the future.
