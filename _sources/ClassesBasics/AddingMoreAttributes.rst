@@ -67,12 +67,14 @@ Lets improve the Account class by enabling it to keep a history of all its trans
 Class Diagram
 ~~~~~~~~~~~~~
 
-Computer scientists often use diagrams to describe the design of their programs. One such diagram is a **UML Class Diagram**. It shows the design of one or more classes. Each class is represented with a rectangle that is composed of three parts:
+Computer scientists often use diagrams to describe the design of their programs. One such diagram 
+is a **UML Class Diagram**. It shows the design of one or more classes. Each class is represented 
+with a rectangle that is composed of three parts:
 
-   * The name of the class
+* The name of the class
 
-   * A list of the attributes
+* A list of the attributes
 
-   * A list of the methods (with parameters)
+* A list of the methods (with parameters)
 
 .. image:: Figures/class1.PNG

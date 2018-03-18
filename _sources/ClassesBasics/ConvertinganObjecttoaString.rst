@@ -97,8 +97,9 @@ Yes we do! And doesn't ``print`` automatically use this when printing things?  Y
 
 But, as we saw earlier, these automatic mechanisms do not do exactly what we want.  Python provides many 
 default implementations for methods that we as programmers will probably want to change.  When a programmer 
-changes the meaning of a special method we say that we **override** the method.  Note also that the ``str`` 
-type constructor function uses whatever ``__str__`` method we provide.
+changes the meaning of a special method we say that we **override** the method. 
+
+Note that the ``str`` type constructor function automatically uses the ``__str__`` method we provide.
 
 .. note::
    ``__init__`` and ``__str__`` are known as **magic methods**. We will see more of them in the future.
