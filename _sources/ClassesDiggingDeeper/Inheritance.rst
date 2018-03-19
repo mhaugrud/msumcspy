@@ -8,9 +8,10 @@ features or the existing behavior may need to be modified. Instead of building t
 we can define it based on the existing similar class. 
 
 .. important::
-   **Inheritance** is the fourth principle of object-oriented programming. We define a child (or sub) class 
-   based on a parent (or super) class. The child class inherits the features, both attributes and methods, 
-   of the parent class.
+   The fourth principle of object-oriented programming is that we build new classes from existing classes. 
+   **Inheritance** enables us to define a child (or sub) class based on a parent (or super) class. The child 
+   class inherits the features, both attributes and methods, of the parent class. The programmer can then
+   add or modify attributes or methods of the child class.
 
 .. index:: inheritance; specialization
 

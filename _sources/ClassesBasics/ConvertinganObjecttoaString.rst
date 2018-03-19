@@ -55,10 +55,10 @@ after the name.  Python commonly uses this naming technique for special methods 
 
 The ``__str__`` method is responsible for creating and returning a string for an object the class. You as 
 the programmer, get to choose what an ``Account`` string should look like. In this case, we have 
-decided that the string representation will include the values of the balance attribute as well as some 
+decided that the string representation will include the value of the balance attribute as well as some 
 formatting.
 
-When a programmer changes the meaning of a pre-defined method, we say that we **override** the method.
+When we change the meaning of a pre-defined method, we say that we **override** the method.
 
 
 .. activecode:: c1j
@@ -91,7 +91,7 @@ When a programmer changes the meaning of a pre-defined method, we say that we **
     print('the balance is ' + str(p))
           
 
-When you run the program above you can see that the ``str`` type converter function uses the ``__str__``
+When you run the program above you can see that the ``str`` type constructer function uses the ``__str__``
 method that we wrote.
 
 .. admonition:: Extend the program ...
