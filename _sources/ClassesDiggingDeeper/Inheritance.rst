@@ -29,17 +29,17 @@ after the name of the new class.
     
     class Account:
         def __init__(self):
-            self.balance = 0.00
+            self.__balance = 0.00
 
         def getBalance(self):
-            return self.balance
+            return self.__balance
 
         def deposit(self, amount):
-            self.balance += amount
+            self.__balance += amount
 
         def withdraw(self, amount):
-            if self.balance >= amount:
-                self.balance -= amount
+            if self.__balance >= amount:
+                self.__balance -= amount
 
     class LOC(Account):
         '''LOC inherits everything from Account'''
@@ -53,9 +53,6 @@ after the name of the new class.
 
 At this point a LOC account operates exactly the same as a regular Account.
 
-.. note::
-   The Python version that is provided in this interactive text does not allow us have private attributes 
-   in the parent class. However, we are not so limited if we run Python locally on our own computer.
 
 Now we modify the constructor.
 
@@ -63,17 +60,17 @@ Now we modify the constructor.
     
     class Account:
         def __init__(self):
-            self.balance = 0.00
+            self.__balance = 0.00
 
         def getBalance(self):
-            return self.balance
+            return self.__balance
 
         def deposit(self, amount):
-            self.balance += amount
+            self.__balance += amount
 
         def withdraw(self, amount):
-            if self.balance >= amount:
-                self.balance -= amount
+            if self.__balance >= amount:
+                self.__balance -= amount
 
     class LOC(Account):
         def __init__(self, line):
@@ -97,17 +94,17 @@ Now we modify the withdraw method.
     
     class Account:
         def __init__(self):
-            self.balance = 0.00
+            self.__balance = 0.00
 
         def getBalance(self):
-            return self.balance
+            return self.__balance
 
         def deposit(self, amount):
-            self.balance += amount
+            self.__balance += amount
 
         def withdraw(self, amount):
-            if self.balance >= amount:
-                self.balance -= amount
+            if self.__balance >= amount:
+                self.__balance -= amount
 
     class LOC(Account):
         def __init__(self, line):
@@ -116,8 +113,8 @@ Now we modify the withdraw method.
 
         def withdraw(self, amount):
             '''allow overdraft up to line of credit'''
-            if self.balance + self.__line >= amount:
-                self.balance -= amount
+            if self._Account__balance + self.__line >= amount:
+                self._Account__balance -= amount
 
     a = LOC(500)
     a.deposit(100)
@@ -127,6 +124,9 @@ Now we modify the withdraw method.
     a.withdraw(400)
     print(a.getBalance())
 
+.. note::
+   ``self._Account__balance`` allows us to access the private ``__balance`` attribute from the parent 
+   ``Account`` class.
 
 Both Account and LOC have a withdraw method. Both have exactly the same name. The LOC (child) withdraw 
 **overrides** the Account (parent) withdraw. Now we can withdraw more than we have on deposit, but not 
@@ -149,28 +149,28 @@ We start by saying that LOC is a child class of Account. Then we add the accrue 
     
     class Account:
         def __init__(self):
-            self.balance = 0.00
+            self.__balance = 0.00
 
         def getBalance(self):
-            return self.balance
+            return self.__balance
 
         def deposit(self, amount):
-            self.balance += amount
+            self.__balance += amount
 
         def withdraw(self, amount):
-            if self.balance >= amount:
-                self.balance -= amount
+            if self.__balance >= amount:
+                self.__balance -= amount
 
     class Savings(Account):
         '''Savings inherits everything from Account'''
-        __rate = 0.01
+        __rate = 0.01  #the savings account interest rate
         def __init__(self):
             self.__intPaid = 0.0
             Account.__init__(self)
        
         def accrue(self):
             '''calculate and deposit interest'''
-            interest = Savings.__rate * self.balance
+            interest = Savings.__rate * self._Account__balance
             self.__intPaid += interest
             self.deposit(interest)
 

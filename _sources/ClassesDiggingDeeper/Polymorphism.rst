@@ -14,7 +14,7 @@ particular type. It then returns True if the object is of the specified type.
     
     class CAD:
         """Canadian Dollar"""
-        USD = 0.75   # the value of a CAD in terms of a USD
+        __USD = 0.75   # the value of a CAD in terms of a USD
         def __init__(self, amt):
             self.__amt = amt
 
@@ -22,11 +22,11 @@ particular type. It then returns True if the object is of the specified type.
             return self.__amt
 
         def exchange(self):
-            return self.__amt * CAD.USD
+            return self.__amt * CAD.__USD
 
     class GBP:
         """Great Britain Pound"""
-        USD = 1.40   # the value of a GBP in terms of a USD
+        __USD = 1.40   # the value of a GBP in terms of a USD
         def __init__(self, amt):
             self.__amt = amt
 
@@ -34,7 +34,7 @@ particular type. It then returns True if the object is of the specified type.
             return self.__amt
 
         def exchange(self):
-            return self.__amt * GBP.USD
+            return self.__amt * GBP.__USD
 
     a = 100.0
     b = GBP(100)
@@ -59,7 +59,7 @@ class.
 .. activecode:: c2c
     
     class CAD:
-        USD = 0.75   # the value of a CAD in terms of a USD
+        __USD = 0.75   # the value of a CAD in terms of a USD
         def __init__(self, amt):
             self.__amt = amt
 
@@ -67,7 +67,7 @@ class.
             return self.__amt
 
         def exchange(self):
-            return self.__amt * CAD.USD
+            return self.__amt * CAD.__USD
 
     class Account:
         def __init__(self):
