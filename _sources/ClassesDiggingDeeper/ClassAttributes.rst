@@ -54,21 +54,23 @@ comparable number of US Dollars.
     GBP.changeRate(1.5)
     print(b.exchange(), 'US dollars')
 
-.. index:: decorator; class, method
+.. index:: decorator, class; method, method; class
 
 .. note::
-   The ``changeRate`` method in the above example is a class level method (instead of a regular 
-   instance method). It affects the class as a whole (in this case, a class attribute) not a particular 
-   object of the class.
+   The ``changeRate`` method in the above example is a **class level method** (instead of a 
+   regular instance method). It affects the class as a whole (in this case, a class attribute) 
+   not a particular object of the class.
 
-   ``@staticmethod`` is called a **decorator** (a tool to extend the behavior of a method or function).
+   ``@staticmethod`` is called a **decorator** (a tool to extend the behavior of a method or 
+   function).
 
 
 .. admonition:: Mutable or Immutable?
 
-   The Account class contains methods that alter the state of an Account object. However, the CAD and GBP 
-   classes contain no such methods. Why not? 
+   The Account class contains methods that alter the state of an Account object. However, the 
+   CAD and GBP classes contain no methods to change the state of a particular object. Why not? 
 
-   Classes are designed to model real world things. Real bank accounts constantly change so our Account 
-   objects must be mutable. A dollar, whether US or Canadian, never changes once it is printed. Therefore, 
-   our currency objects are immutable.
+   Classes are designed to model real world things. Real bank accounts constantly change so our 
+   Account objects must be mutable. A dollar, whether US or Canadian, never changes once it is 
+   printed. Therefore, our currency objects are immutable.
+
