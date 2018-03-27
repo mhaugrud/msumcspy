@@ -40,23 +40,28 @@ comparable number of US Dollars.
         def exchange(self):
             return self.__amt * GBP.__USD
 
-        def changeRate(self, rate):
+        @staticmethod
+        def changeRate(rate):
             GBP.__USD = rate # change the class exchange rate
 
     c = CAD(100) # 100 Canadian dollars
     print(c.getAmt(), 'Canadian dollars is worth')
     print(c.exchange(), 'US dollars')
+
     b = GBP(100) # 100 GB Pounds
     print(b.getAmt(), 'GB pounds is worth')
     print(b.exchange(), 'US dollars')
-    b.changeRate(1.5)
+    GBP.changeRate(1.5)
     print(b.exchange(), 'US dollars')
 
+.. index:: decorator; class, method
 
 .. note::
-   The ``changeRate`` method in the above example should actually be a class level method, instead of
-   a regular instance method. However, the Python version that is provided in this interactive text does 
-   not allow us to write a class method. We are not so limited if we run Python locally on our own computer.
+   The ``changeRate`` method in the above example is a class level method (instead of a regular 
+   instance method). It affects the class as a whole (in this case, a class attribute) not a particular 
+   object of the class.
+
+   ``@staticmethod`` is called a **decorator** (a tool to extend the behavior of a method or function).
 
 
 .. admonition:: Mutable or Immutable?
