@@ -86,10 +86,12 @@ This type of equality is known as **deep equality** since it compares the values
         def __str__(self):
             return '{}/{}'.format(self.__num, self.__den)
 
-        def getNum(self):
+        @property
+        def num(self):
             return self.__num
 
-        def getDen(self):
+        @property
+        def den(self):
             return self.__den
 
     myfraction = Fraction(3, 4)

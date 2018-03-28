@@ -16,25 +16,27 @@ particular type. It then returns True if the object is of the specified type.
         """Canadian Dollar"""
         __USD = 0.75   # the value of a CAD in terms of a USD
         def __init__(self, amt):
-            self.__amt = amt
+            self.__amount = amt
 
-        def getAmt(self):
-            return self.__amt
+        @property
+        def amount(self):
+            return self.__amount
 
         def exchange(self):
-            return self.__amt * CAD.__USD
+            return self.__amount * CAD.__USD
 
     class GBP:
         """Great Britain Pound"""
         __USD = 1.40   # the value of a GBP in terms of a USD
         def __init__(self, amt):
-            self.__amt = amt
+            self.__amount = amt
 
+        @property
         def getAmt(self):
-            return self.__amt
+            return self.__amount
 
         def exchange(self):
-            return self.__amt * GBP.__USD
+            return self.__amount * GBP.__USD
 
     a = 100.0
     b = GBP(100)
@@ -50,7 +52,7 @@ Polymorphism
 
 Our Account class has methods that enable us to make deposits and withdrawals. Our balance is in US dollars 
 and our usual transactions are in US dollars. However, we may occasionally use other currencies. If a 
-transaction in some other currency, we must convert that amount to an appropriate amount of US dollars.
+transaction is in some other currency, we must convert that amount to an appropriate amount of US dollars.
 Suppose we give the bank teller some Canadian currency to deposit in our account. The teller will convert it 
 to US dollars and place that amount in our account. Lets extend the deposit method to make this happen in our 
 class.
@@ -59,15 +61,30 @@ class.
 .. activecode:: c2c
     
     class CAD:
+        """Canadian Dollar"""
         __USD = 0.75   # the value of a CAD in terms of a USD
         def __init__(self, amt):
-            self.__amt = amt
+            self.__amount = amt
 
-        def getAmt(self):
-            return self.__amt
+        @property
+        def amount(self):
+            return self.__amount
 
         def exchange(self):
-            return self.__amt * CAD.__USD
+            return self.__amount * CAD.__USD
+
+    class GBP:
+        """Great Britain Pound"""
+        __USD = 1.40   # the value of a GBP in terms of a USD
+        def __init__(self, amt):
+            self.__amount = amt
+
+        @property
+        def getAmt(self):
+            return self.__amount
+
+        def exchange(self):
+            return self.__amount * GBP.__USD
 
     class Account:
         def __init__(self):
@@ -77,7 +94,7 @@ class.
             return self.__balance
 
         def deposit(self, amount):
-            if isinstance(amount, CAD):
+            if isinstance(amount, (CAD,GBP)):
                 amt = amount.exchange()
             else:
                 amt = amount
@@ -85,21 +102,23 @@ class.
 
     a = Account()
     a.deposit(CAD(100))
-    print(a.getBalance())
+    print(a.balance)
+    a.deposit(GBP(100))
+    print(a.balance)
     a.deposit(100)
-    print(a.getBalance())
+    print(a.balance)
 
 
-The deposit method first checks to see what is being deposited. If it is Canadian dollars, determine its 
-value before adjusting the balance. Otherwise, just adjust the balance.
+The deposit method first checks to see what is being deposited. If it is not US dollars, determine its 
+value in US dollars before adjusting the balance. Otherwise, just adjust the balance.
 
 The deposit method is able to automatically do the right action. It can identify what is being deposited 
-(US or Canadian dollars). The CAD class is able to make the exchange.
+(US dollars, CAD, or GBP). The CAD and GBP classes are able to make the exchange.
 
 .. important::
    A method may need to perform differently when given different data types. This capacity is called 
    **polymorphism**. A method has "many forms". The proper form is chosen automatically based on the 
-   input. This is the third principle of object-oriented programming.
+   input. This is the fourth principle of object-oriented programming.
 
 
 

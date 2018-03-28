@@ -5,12 +5,13 @@ Classes and Objects - Digging Deeper
    :caption: Classes and Objects - Digging Deeper
    :maxdepth: 2
 
-   ClassAttributes.rst
-   Polymorphism.rst
    Inheritance.rst
+   ClassAttributes.rst
+   Decorators.rst
+   MoreInheritance.rst
+   Polymorphism.rst
    Fractions.rst
    HelperFuncs.rst
-   MoreInheritance.rst
    Sameness.rst
    ArithmeticMethods.rst
    Glossary.rst

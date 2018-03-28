@@ -152,10 +152,12 @@ Here is an example unit test for the __add__ magic method.
             self.__num = top        # the numerator is on top
             self.__den = bottom     # the denominator is on the bottom
 
-        def getNum(self):
+        @property
+        def num(self):
             return self.__num
 
-        def getDen(self):
+        @property
+        def den(self):
             return self.__den
 
         def __add__(self,other):
@@ -169,8 +171,8 @@ Here is an example unit test for the __add__ magic method.
         f1 = Fraction(1, 6)
         f2 = Fraction(1, 2)
         f3 = f1 + f2
-        test.testEqual(f3.getNum(), 2)
-        test.testEqual(f3.getDen(), 3)
+        test.testEqual(f3.num, 2)
+        test.testEqual(f3.den, 3)
 
 .. note::
    Magic methods are *magic* because we do not generally invoke them directly. Instead, we use them in an

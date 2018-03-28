@@ -36,21 +36,23 @@ method which will allow the user to provide a numerator and a denominator for th
         def __str__(self):
             return '{}/{}'.format(self.__num, self.__den)
 
-        def getNum(self):
+        @property
+        def num(self):
             return self.__num
 
-        def getDen(self):
+        @property
+        def den(self):
             return self.__den
 
     myfraction = Fraction(3, 4)
     print(myfraction)
-    print(myfraction.getNum())
-    print(myfraction.getDen())
+    print(myfraction.num)
+    print(myfraction.den)
 
 
 
 Note that the ``__str__`` method provides a "typical" looking fraction using a slash between the numerator and denominator.
-The figure below shows the state of ``myfraction``.  We have also added a few simple accessor methods, ``getNum`` and ``getDen``, that can return the
+The figure below shows the state of ``myfraction``.  We have also added a few simple properties, ``num`` and ``den``, that can return the
 state values for the fraction.
 
 .. image:: Figures/fractionpic1.png

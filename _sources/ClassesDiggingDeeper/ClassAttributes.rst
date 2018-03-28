@@ -6,7 +6,8 @@ Class Level Attributes
 Every Account object we create has its own balance attribute. This is known as an **instance attribute**. 
 We may wish to make an attribute that is shared by all instances of the class: a **class level attribute**. 
 A class level attribute is declared within the class but not within any particular method definition. 
-Just like instance attributes, class level attributes can be either public or private.
+Class level attributes can be either public or private but the more responsible choice is to make them
+private.
 
 
 We can illustrate this with two simple classes to model various world currencies: the Canadian dollar (CAD) 
@@ -20,49 +21,34 @@ comparable number of US Dollars.
         """Canadian Dollar"""
         __USD = 0.75   # the value of a CAD in terms of a USD (private)
         def __init__(self, amt):
-            self.__amt = amt
+            self.__amount = amt
 
-        def getAmt(self):
-            return self.__amt
+        def getAmount(self):
+            return self.__amount
 
         def exchange(self):
-            return self.__amt * CAD.__USD # using class attribute
+            return self.__amount * CAD.__USD # using class attribute
 
     class GBP:
         """Great Britain Pound"""
         __USD = 1.40   # the value of a GBP in terms of a USD
         def __init__(self, amt):
-            self.__amt = amt
+            self.__amount = amt
 
-        def getAmt(self):
-            return self.__amt
+        def getAmount(self):
+            return self.__amount
 
         def exchange(self):
-            return self.__amt * GBP.__USD
+            return self.__amount * GBP.__USD
 
-        @staticmethod
-        def changeRate(rate):
-            GBP.__USD = rate # change the class exchange rate
 
     c = CAD(100) # 100 Canadian dollars
-    print(c.getAmt(), 'Canadian dollars is worth')
+    print(c.getAmount(), 'Canadian dollars is worth')
     print(c.exchange(), 'US dollars')
 
     b = GBP(100) # 100 GB Pounds
-    print(b.getAmt(), 'GB pounds is worth')
+    print(b.getAmount(), 'GB pounds is worth')
     print(b.exchange(), 'US dollars')
-    GBP.changeRate(1.5)
-    print(b.exchange(), 'US dollars')
-
-.. index:: decorator, class; method, method; class
-
-.. note::
-   The ``changeRate`` method in the above example is a **class level method** (instead of a 
-   regular instance method). It affects the class as a whole (in this case, a class attribute) 
-   not a particular object of the class.
-
-   ``@staticmethod`` is called a **decorator** (a tool to extend the behavior of a method or 
-   function).
 
 
 .. admonition:: Mutable or Immutable?
