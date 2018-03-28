@@ -36,7 +36,7 @@ method to find the greatest common divisor and then divide each part of the new 
 You can try the addition method and then modify the fractions and retry.
 
 
-.. activecode:: c2n
+.. activecode:: c2q
 
     def gcd(m, n):
         while m % n != 0:
@@ -79,7 +79,7 @@ the addition operator "+".  We call this process **operator overloading**. We ex
 work with a new data type. In this example, it requires that we implement another special method, this time 
 called ``__add__``. We refer to such methods as **magic methods**. The details of the method are the same.
 
-.. activecode:: c2o
+.. activecode:: c2r
 
     def gcd(m, n):
         while m % n != 0:
@@ -123,7 +123,7 @@ We can overload many common operators as shown in the following table.
 =========  =============
 operator   magic method  
 =========  =============
-+          __add__
+\+          __add__
 \-          __sub__
 \*          __mul__
 ==         __eq__
@@ -137,7 +137,7 @@ operator   magic method
 
 Here is an example unit test for the __add__ magic method.
 
-.. activecode:: c2p
+.. activecode:: c2s
 
     def gcd(m, n):
         while m % n != 0:

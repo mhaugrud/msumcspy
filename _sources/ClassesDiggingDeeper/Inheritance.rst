@@ -5,13 +5,13 @@ Inheritance
 
 Often we build a class but then we need new class that is slightly different. It may need additional 
 features or the existing behavior may need to be modified. Instead of building this new class from scratch, 
-we can define it based on the existing similar class. 
+we can define it based on an existing similar class. 
 
 .. important::
    The third principle of object-oriented programming is that we build new classes from existing classes. 
-   **Inheritance** enables us to define a child (or sub) class based on a parent (or super) class. The child 
-   class inherits the features, both attributes and methods, of the parent class. The programmer can then
-   add or modify attributes or methods of the child class.
+   **Inheritance** enables us to define a child (or sub or derived) class based on a parent (or super) 
+   class. The child class inherits the features, both attributes and methods, of the parent class. The 
+   programmer can then add or modify attributes or methods of the child class.
 
 .. index:: inheritance; specialization
 
@@ -19,13 +19,13 @@ Specialization
 ~~~~~~~~~~~~~~
 
 Suppose our bank introduces a new line of credit (LOC) type account. An overdraft (negative balance) is 
-permitted up to a specified amount. The maximum overdraft amount (line of credit) is established when the 
+permitted up to a specified limit. The maximum overdraft amount (line of credit) is established when the 
 account is opened.
 
-We start by defining LOC as a child class of Account. The name of the parent class appears in parentheses 
-after the name of the new class.
+We start by defining ``LOC`` as a child class of ``Account``. The name of the parent class appears in 
+parentheses after the name of the new class.
 
-.. activecode:: c2d
+.. activecode:: c2a
     
     class Account:
         def __init__(self):
@@ -51,12 +51,12 @@ after the name of the new class.
     print(a.getBalance())
 
 
-At this point a LOC account operates exactly the same as a regular Account.
+At this point a LOC account operates exactly the same as a regular account.
 
 
 Now we modify the constructor.
 
-.. activecode:: c2e
+.. activecode:: c2b
     
     class Account:
         def __init__(self):
@@ -84,13 +84,13 @@ Now we modify the constructor.
     print(a.getBalance())
 
 The constructor now has a parameter to specify the account's line of credit. This amount is used to 
-initialize a new attribute, unique to the LOC account. Next the constructor asks the parent class to 
-perform its constructor method. Notice we still cannot withdraw more than we have on deposit.
+initialize a new attribute, unique to the LOC account. Next the constructor asks the parent class 
+to perform its constructor method. Notice we still cannot withdraw more than we have on deposit.
 
-Now we modify the withdraw method.
+Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` attribute.
 
 
-.. activecode:: c2f
+.. activecode:: c2c
     
     class Account:
         def __init__(self):
@@ -121,16 +121,16 @@ Now we modify the withdraw method.
     print(a.getBalance())
     a.withdraw(300)
     print(a.getBalance())
-    a.withdraw(400)
+    a.withdraw(400) # trying to withdraw too much
     print(a.getBalance())
 
 .. note::
-   ``self._Account__balance`` allows us to access the private ``__balance`` attribute from the parent 
-   ``Account`` class.
+   ``self._Account__balance`` allows ``LOC`` to access the private ``__balance`` attribute from the 
+   parent ``Account`` class.
 
-Both Account and LOC have a withdraw method. Both have exactly the same name. The LOC (child) withdraw 
-**overrides** the Account (parent) withdraw. Now we can withdraw more than we have on deposit, but not 
-more than the account's line of credit.
+Both Account and LOC have a ``withdraw`` method, both with exactly the same name. The LOC (child) 
+withdraw **overrides** the Account (parent) withdraw. Now we can withdraw more than we have on deposit, 
+but not more than the account's line of credit.
 
 .. note::
    This form of inheritance is called **specialization**. We may include additional attributes in the

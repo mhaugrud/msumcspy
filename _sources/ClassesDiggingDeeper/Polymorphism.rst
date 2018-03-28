@@ -8,9 +8,9 @@ Distinguishing Between Classes
 
 We have often used the ``type`` function to see what kind of an object we are examining. Python also 
 provides a similar Boolean function ``isinstance`` that requires two parameters: an object and a 
-particular type. It then returns True if the object is of the specified type.
+particular type. It then returns True if the object is of the specified type (or types).
 
-.. activecode:: c2b
+.. activecode:: c2i
     
     class CAD:
         """Canadian Dollar"""
@@ -32,7 +32,7 @@ particular type. It then returns True if the object is of the specified type.
             self.__amount = amt
 
         @property
-        def getAmt(self):
+        def amount(self):
             return self.__amount
 
         def exchange(self):
@@ -58,17 +58,13 @@ to US dollars and place that amount in our account. Lets extend the deposit meth
 class.
 
 
-.. activecode:: c2c
+.. activecode:: c2j
     
     class CAD:
         """Canadian Dollar"""
         __USD = 0.75   # the value of a CAD in terms of a USD
         def __init__(self, amt):
             self.__amount = amt
-
-        @property
-        def amount(self):
-            return self.__amount
 
         def exchange(self):
             return self.__amount * CAD.__USD
@@ -79,10 +75,6 @@ class.
         def __init__(self, amt):
             self.__amount = amt
 
-        @property
-        def getAmt(self):
-            return self.__amount
-
         def exchange(self):
             return self.__amount * GBP.__USD
 
@@ -90,7 +82,8 @@ class.
         def __init__(self):
             self.__balance = 0.00
 
-        def getBalance(self):
+        @property
+        def balance(self):
             return self.__balance
 
         def deposit(self, amount):
@@ -109,11 +102,11 @@ class.
     print(a.balance)
 
 
-The deposit method first checks to see what is being deposited. If it is not US dollars, determine its 
-value in US dollars before adjusting the balance. Otherwise, just adjust the balance.
+The ``deposit`` method first checks to see what is being deposited. If it is not US dollars, determine 
+its value in US dollars before adjusting the balance. Otherwise, just adjust the balance.
 
-The deposit method is able to automatically do the right action. It can identify what is being deposited 
-(US dollars, CAD, or GBP). The CAD and GBP classes are able to make the exchange.
+The ``deposit`` method is able to automatically do the right action. It can identify what is being deposited 
+(US dollars, CAD, or GBP). The CAD and GBP classes are responsible for making the exchange.
 
 .. important::
    A method may need to perform differently when given different data types. This capacity is called 

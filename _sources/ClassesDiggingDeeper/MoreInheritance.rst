@@ -7,13 +7,15 @@ More Inheritance
 Augumentation
 ~~~~~~~~~~~~~
 
-Now suppose our bank offers savings accounts. This type of Account accrues (earns) interest based on its balance.
+Now suppose our bank offers savings accounts. This type of Account accrues (earns) interest based on 
+its balance.
 
-We start by saying that ``Saving`` is a child class of ``Account``. We add attributes for the amount of interest
-paid and the interest rate (at the class level). We also incluce an ``accrue`` method to pay interest.
+We start by saying that ``Savings`` is a child class of ``Account``. We add attributes for the amount 
+of interest paid and the interest rate (at the class level). We also include an ``accrue`` method to 
+pay interest.
 
 
-.. activecode:: c2g
+.. activecode:: c2h
     
     class Account:
         def __init__(self):
@@ -30,8 +32,8 @@ paid and the interest rate (at the class level). We also incluce an ``accrue`` m
             if self.__balance >= amount:
                 self.__balance -= amount
 
-    class Saving(Account):
-        '''Saving inherits everything from Account'''
+    class Savings(Account):
+        '''Savings inherits everything from Account'''
         __rate = 0.01  #the saving account interest rate
         def __init__(self):
             self.__intpaid = 0.0
@@ -39,7 +41,7 @@ paid and the interest rate (at the class level). We also incluce an ``accrue`` m
        
         def accrue(self):
             '''calculate and deposit interest'''
-            interest = Saving.__rate * self._Account__balance
+            interest = Savings.__rate * self._Account__balance
             self.__intpaid += interest
             self.deposit(interest)
 
@@ -48,7 +50,7 @@ paid and the interest rate (at the class level). We also incluce an ``accrue`` m
             return self.__intpaid
         
 
-    a = Saving()
+    a = Savings()
     a.deposit(1000)
     print('total interest:{} balance:{}'.format(a.intpaid,a.balance))
     a.accrue()

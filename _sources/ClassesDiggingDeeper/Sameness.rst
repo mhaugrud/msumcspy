@@ -21,7 +21,7 @@ you say, Chris and I have the same mother, you mean that his mother and yours
 are the same person.
 
 When you talk about objects, there is a similar ambiguity. For example, if two
-``Fraction``\ s are the same, does that mean they represent the same rational number
+``Fraction`` objects are the same, does that mean they represent the same rational number
 or that they are actually the same object?
 
 We've already seen the ``is`` operator in the chapter on lists, where we
@@ -29,7 +29,7 @@ talked about aliases.
 It allows us to find out if two references refer to the same object.
 
 
-.. activecode:: c2l
+.. activecode:: c2o
 
     class Fraction:
         def __init__(self, top, bottom):
@@ -57,10 +57,10 @@ of the same object.
 .. image:: Figures/fractionpic3.png
 
 
-This type of equality is called **shallow equality** because it compares only
-the references, not the contents of the objects.  Using the == operator to check equality between two user
-defined objects
-will return the shallow equality result.  In other words, the ``Fraction`` objects are equal (==) if they are the same object.
+This type of equality is called **shallow equality** because it compares only the references, not 
+the contents of the objects.  Using the == operator to check equality between two user defined objects 
+will return the shallow equality result.  In other words, the ``Fraction`` objects are equal (==) if 
+they are the same object.
 
 Of course, we could define equality to mean the fractions are the same in that they represent the same 
 rational number. Recall from algebra that a/b = c/d is equivalent to a\*d = b\*c.
@@ -69,14 +69,15 @@ Here is a boolean function that performs this check.
 .. sourcecode:: python
 
     def sameRational(f1, f2):
-        return f1.getNum()*f2.getDen() == f2.getNum()*f1.getDen()
+        return f1.num * f2.den == f2.num * f1.den
 
-This type of equality is known as **deep equality** since it compares the values "deep" in the object, not just the reference to the object. 
+This type of equality is known as **deep equality** since it compares the values "deep" in the object, 
+not just the reference to the object. 
   
-.. activecode:: c2m
+.. activecode:: c2p
 
     def sameRational(f1, f2):
-        return f1.getNum()*f2.getDen() == f2.getNum()*f1.getDen()
+        return f1.num * f2.den == f2.num * f1.den
  
     class Fraction:
         def __init__(self, top, bottom):
@@ -106,7 +107,8 @@ shallow and deep equality.
 
 .. admonition:: Beware of  == 
 
-    "When I use a word," Humpty Dumpty said, in a rather scornful tone, "it means just what I choose it to mean --- neither more nor less."   *Alice in Wonderland*
+    "When I use a word," Humpty Dumpty said, in a rather scornful tone, "it means just what I choose 
+    it to mean --- neither more nor less."   *Alice in Wonderland*
     
     Python has a powerful feature that allows a designer of a class to decide what an operation
     like ``==`` or ``<`` should mean.  (We've just shown how we can control how our own objects

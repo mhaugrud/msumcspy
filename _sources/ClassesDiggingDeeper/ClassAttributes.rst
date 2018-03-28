@@ -15,7 +15,7 @@ and the Great Britain Pound (GBP). They will include a class level attribute tha
 that currency relative to the US Dollar. They will also include a method to ``exchange`` that currency for the 
 comparable number of US Dollars.
     
-.. activecode:: c2a
+.. activecode:: c2d
     
     class CAD:
         """Canadian Dollar"""

@@ -6,10 +6,10 @@ Decorators and Properties
 The exchange rate between Canadian and US dollars changes frequently. We need a method to change 
 the class level attribute. This is accomplished with a **class level method** (instead of a 
 regular instance method). It affects the class as a whole, not a particular object of the class.
-The ``changeRate`` method in the following example is a **class level method**. Notice that we
+The ``changeRate`` method in the following example is a class level method. Notice that we
 call this method with the class name.
     
-.. activecode:: c2a1
+.. activecode:: c2e
     
     class CAD:
         """Canadian Dollar"""
@@ -51,7 +51,7 @@ A **property** is a type of decorator that enables us to access an attribute in 
 This leads to code that is more readable and more easily understood.
 
 
-.. activecode:: c2a2
+.. activecode:: c2f
     
     class CAD:
         """Canadian Dollar"""
@@ -74,7 +74,7 @@ This leads to code that is more readable and more easily understood.
 
 We can also use a property to change the value of an attribute. In this case it acts as a **setter** method.
 
-.. activecode:: c2a3
+.. activecode:: c2g
     
     class CAD:
         """Canadian Dollar"""
@@ -88,7 +88,7 @@ We can also use a property to change the value of an attribute. In this case it 
         @amount.setter
         def amount(self, amt):
             if amt >= 0:
-               self.__amount = amt
+                self.__amount = amt
 
 
     c = CAD(100)
@@ -100,6 +100,6 @@ We can also use a property to change the value of an attribute. In this case it 
     
 
 .. note::
-   The above example illustrates how we can write a setter property. However, ``CAD`` objects should be
+   The above example illustrates how we can write a setter property. However, CAD objects should be
    immutable so it is not proper to include this property.
 

@@ -12,17 +12,18 @@
 Helper Functions
 ----------------
 
-We can perform various operations on Fractions more easily if we first place it in **lowest terms**.  Lowest terms simply
-means that the numerator and denominator do not share any common factors.  For example, ``12/16`` is a fraction but it is
-not in lowest terms since 2 can divide into both 12 and 16.  We call 2 a **common divisor**.  If we divide the numerator
-and the denominator by a common divisor, we get an equivalent fraction.  If we divide by the **greatest common divisor**, 
-we will get the lowest terms representation.  In this case 4 would be the greatest common divisor and the lowest terms
+We can perform various operations on Fractions more easily if we first place it in **lowest terms**. 
+Lowest terms simply means that the numerator and denominator do not share any common factors. For 
+example, ``12/16`` is a fraction but it is not in lowest terms since 2 can divide into both 12 and 16. 
+We call 2 a **common divisor**.  If we divide the numerator and the denominator by a common divisor, 
+we get an equivalent fraction.  If we divide by the **greatest common divisor**, we will get the lowest
+terms representation.  In this case 4 would be the greatest common divisor and the lowest terms
 representation would be 3/4.
 
-There is a very nice iterative method for computing the greatest common divisor of two integers.  Try to run the
-function on a number of different examples.
+There is a very nice iterative method for computing the greatest common divisor of two integers.  Try 
+to run the function on a number of different examples.
 
-.. activecode:: c2i
+.. activecode:: c2l
 
 	def gcd(m, n):
 	    while m % n != 0:
@@ -35,13 +36,15 @@ function on a number of different examples.
 	print(gcd(12, 16))
 
 
-Now that we have a function that can help us with finding the greatest common divisor, we can use that to implement
-a fraction method called ``simplify``.  We will ask the fraction "to create a new instance of itself in lowest terms".
+Now that we have a function that can help us with finding the greatest common divisor, we can use that 
+to implement a fraction method called ``simplify``.  We will ask the fraction "to create a new instance 
+of itself in lowest terms".
 
 The ``simplify`` method will pass the numerator and the denominator to the ``gcd`` function to find the
-greatest common divisor.  It will then make a new Fraction by dividing its ``num`` and its ``den`` by that value.
+greatest common divisor.  It will then make a new Fraction by dividing its ``num`` and its ``den`` by 
+that value.
 
-.. activecode:: c2j
+.. activecode:: c2m
 
     def gcd(m, n):
         while m % n != 0:
@@ -70,9 +73,10 @@ greatest common divisor.  It will then make a new Fraction by dividing its ``num
 
 
 There are two important things to note about this implementation.  First, the ``gcd`` function is not
-a method of the class.  It does not belong to ``Fraction``.  Instead it is a function that is used by ``Fraction``
-to assist in a task that needs to be performed.  This type of function is often called a **helper function**.  Second,
-the ``simplify`` method does not change the original Fraction.  Its job is to create a new Fraction based on the original one.  
+a method of the class.  It does not belong to ``Fraction``.  Instead it is a function that is used by 
+``Fraction`` to assist in a task that needs to be performed.  This type of function is often called a 
+**helper function**.  Second, the ``simplify`` method does not change the original Fraction.  Its job 
+is to create a new Fraction based on the original one.  
 
 
 Simplifying with Inheritance
@@ -81,7 +85,7 @@ Simplifying with Inheritance
 In this example we define SFraction, specialized sub-class of Fraction. SFraction objects are automatically reduced to simplest 
 form as they are instantiated.
 
-.. activecode:: c2k
+.. activecode:: c2n
 
     def gcd(m, n):
         while m % n != 0:
