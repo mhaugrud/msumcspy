@@ -54,7 +54,7 @@ parentheses after the name of the new class.
 At this point a LOC account operates exactly the same as a regular account.
 
 
-Now we modify the constructor.
+Next we write the LOC constructor.
 
 .. activecode:: c2b
     
@@ -83,8 +83,8 @@ Now we modify the constructor.
     a.withdraw(300)
     print(a.getBalance())
 
-The constructor now has a parameter to specify the account's line of credit. This amount is used to 
-initialize a new attribute, unique to the LOC account. Next the constructor asks the parent class 
+The LOC constructor has a parameter to specify the LOC account's line of credit. This amount is used 
+to initialize a new attribute, unique to the LOC account. Next the constructor asks the parent class 
 to perform its constructor method. Notice we still cannot withdraw more than we have on deposit.
 
 Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` attribute.

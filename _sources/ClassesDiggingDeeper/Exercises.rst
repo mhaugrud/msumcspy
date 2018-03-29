@@ -13,47 +13,54 @@ Exercises
 .. question:: cdd_ex_1
    :number: 1
 
-   First copy your definitions of the Point and Rectangle classes from the exercises in the last chapter.
-   A square is a rectangle which has the same width and height. Write the definition of the ``Square``
-   class as a subclass of ``Rectangle`` and its constructor method. Do not create any new attributes. It
-   could be called as follows:: 
+   Copy your definitions of the Point and Rectangle classes from the exercises in the last chapter.
+   Change the getX, getY, getWidth, getHeight, and getStartPoint methods to properties.
+
+   .. activecode:: ch_c2_1
+
+
+.. question:: cdd_ex_2
+
+   Copy the code from the previous question. A square is a rectangle which has the same width and height. 
+   Write the definition of the ``Square`` class as a subclass of ``Rectangle`` and its constructor method. 
+   Do not create any new attributes. It could be called as follows:: 
    
       r = Square(Point(4, 5), 6)
               
-   .. activecode:: ch_c2_1
+   .. activecode:: ch_c2_2
 
 
   
    
                  
-.. question:: cdd_ex_2
-
-   Copy the code from the previous activecode. Then add the following accessor method to the 
-   Square class: ``getSize``. It returns the length of a side of the square. 
-
-   .. activecode:: ch_c2_2  
-   
-   
-                    
 .. question:: cdd_ex_3
 
-   Copy the code from the previous activecode. After the classes, instantiate a Square object. Use the 
-   ``getSize``, ``getWidth``, and ``getHeight`` methods with it and display the results. (They should 
-   all produce the same value.) Use the ``__str__``, ``getStartPoint``, ``area``, and ``perimeter`` 
-   methods with it and display the results.
+   Copy the code from the previous activecode. Then add the following accessor property to the 
+   Square class: ``size``. It returns the length of a side of the square. 
 
    .. activecode:: ch_c2_3  
    
    
+                    
 .. question:: cdd_ex_4
 
-   Copy the code from question 2. After the classes, instantiate a Square object. Create a Turtle object. 
-   Use the Square accessor methods to enable you to draw the square.
+   Copy the code from the previous activecode. After the classes, instantiate a Square object. Use the 
+   ``size``, ``width``, and ``height`` properties with it and display the results. (They should 
+   all produce the same value.) Use the ``__str__``, ``startpoint``, ``area``, and ``perimeter`` 
+   methods/properties with it and display the results.
 
-   .. activecode:: ch_c2_4
+   .. activecode:: ch_c2_4  
    
    
 .. question:: cdd_ex_5
+
+   Copy the code from question 3. After the classes, instantiate a Square object. Create a Turtle object. 
+   Use the Square accessor properties to enable you to draw the square.
+
+   .. activecode:: ch_c2_5
+   
+   
+.. question:: cdd_ex_6
 
    Copy the code from question 5 of the exercises from the last chapter (it includes the ``scale`` method for 
    the Point class). 
@@ -61,11 +68,11 @@ Exercises
    Change the name of the scale method to be the magic method for multiplication. Change the tests to use the 
    ``*`` operator (since there is no longer a method named scale). The tests should still pass.
 
-   .. activecode:: ch_c2_5
+   .. activecode:: ch_c2_6
    
 
    
-.. question:: cdd_ex_6
+.. question:: cdd_ex_7
 
    Copy the code from the previous question. Make this magic method polymorphic. If the ``val`` parameter
    is a number, the method will operate the way it currently does.
@@ -76,6 +83,6 @@ Exercises
 
    Do not remove your previous tests. But, add another unit test (using the ``*`` operator) for the dot product.
 
-   .. activecode:: ch_c2_6
+   .. activecode:: ch_c2_7
    
 
