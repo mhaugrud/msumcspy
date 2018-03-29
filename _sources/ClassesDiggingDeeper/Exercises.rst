@@ -26,12 +26,12 @@ Exercises
    * instantiate a Square object
    * use methods get the following and print the results
 
-      * the square 
-      * its width
-      * its height
-      * its starting point
-      * its area 
-      * its perimeter
+     * the square object
+     * its width
+     * its height
+     * its starting point
+     * its area 
+     * its perimeter
               
    .. activecode:: ch_c2_1
 
@@ -51,7 +51,7 @@ Exercises
               return self.__start
     
           def __str__(self):
-              return 'start={} w={} h={}'.format(self.__start,self.__width,self.__height)
+              return 'start={} w={} h={}'.format(str(self.__start),self.__width,self.__height)
     
           def area(self):
               return self.__width * self.__height
@@ -60,7 +60,6 @@ Exercises
               return (self.__width + self.__height) * 2
 
   
-   
                  
 .. question:: cdd_ex_2
 
@@ -81,16 +80,16 @@ Exercises
 .. question:: cdd_ex_3
 
    Copy the code from the previous question. Below the class definitions, delete all the instructions
-   except where you instantiate a Square object. Create a Turtle object. 
-   Use the Square properties to enable you to draw the square.
+   except where you instantiate a Square object. Create a Turtle object. Use the properties to help 
+   draw the square.
 
    .. activecode:: ch_c2_3
    
    
 .. question:: cdd_ex_4
 
-   Change the name of the ``scale`` method to be the magic method for multiplication. Change the 
-   tests to use the ``*`` operator (since there is no longer a method named scale). The tests 
+   Change the name of the ``scale`` method to be the magic method for multiplication. Use the ``*`` 
+   operator in the testing section (since there is no longer a method named scale). The tests 
    should still pass.
 
    .. activecode:: ch_c2_4
