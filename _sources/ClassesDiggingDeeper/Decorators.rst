@@ -6,8 +6,7 @@ Decorators and Properties
 The exchange rate between Canadian and US dollars changes frequently. We need a method to change 
 the class level attribute. This is accomplished with a **class level method** (instead of a 
 regular instance method). It affects the class as a whole, not a particular object of the class.
-The ``changeRate`` method in the following example is a class level method. Notice that we
-call this method with the class name.
+The ``changeRate`` method in the following example is a class level method. 
     
 .. activecode:: c2e
     
@@ -36,8 +35,12 @@ call this method with the class name.
 
 
 .. note::
-   ``@staticmethod`` is called a **decorator** (a tool to extend the behavior of a method or 
-   function).
+   Notice in line 21 that we call ``changeRate`` with the class name (not with a particular 
+   class instance).
+
+   ``@staticmethod`` is an example of a **decorator** (a tool to extend the behavior of a 
+   method or function). Decorators always start with the **@** character and appear immediately 
+   above the method or function they affect. You will see other decorators in the next section.
 
 .. index:: property
 
