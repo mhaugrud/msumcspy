@@ -13,68 +13,117 @@ Exercises
 .. question:: cdd_ex_1
    :number: 1
 
-   Copy your definitions of the Point and Rectangle classes from the exercises in the last chapter.
-   Change the getX, getY, getWidth, getHeight, and getStartPoint methods to properties.
+   A square is a rectangle which has the same width and height. Write the definition of the 
+   ``Square`` class as a subclass of ``Rectangle`` and its constructor method, with parameters
+   for its starting point and the length of its sides. Do not create any new attributes. It 
+   could be called as follows:: 
+   
+      s = Square(Point(4, 5), 6)
 
+   Below the class definition, 
+   * instantiate a Square object
+   * print the square 
+   * print its width
+   * print its height
+   * print its starting point
+   * print its area 
+   * print its perimeter
+              
    .. activecode:: ch_c2_1
 
+      class Point:
+          def __init__(self, initX, initY):
+              self.__x = initX
+              self.__y = initY
 
-.. question:: cdd_ex_2
+          def __str__(self):
+              return '({},{})'.format(self.__x,self.__y)
 
-   Copy the code from the previous question. A square is a rectangle which has the same width and height. 
-   Write the definition of the ``Square`` class as a subclass of ``Rectangle`` and its constructor method. 
-   Do not create any new attributes. It could be called as follows:: 
-   
-      r = Square(Point(4, 5), 6)
-              
-   .. activecode:: ch_c2_2
-
+      class Rectangle:
+          def __init__(self,start,width,height):
+              self.__start = start
+              self.__width = width
+              self.__height = height
+        
+          def getWidth(self):
+              return self.__width
+    
+          def getHeight(self):
+              return self.__height
+    
+          def getStartPoint(self):
+              return self.__start
+    
+          def __str__(self):
+              return 'start={} w={} h={}'.format(str(self.__start),self.__width,self.__height)
+    
+          def area(self):
+              return self.__width * self.__height
+    
+          def perimeter(self):
+              return (self.__width + self.__height) * 2
 
   
    
                  
-.. question:: cdd_ex_3
+.. question:: cdd_ex_2
 
-   Copy the code from the previous activecode. Then add the following accessor property to the 
-   Square class: ``size``. It returns the length of a side of the square. 
+   Copy the code from the previous activecode. Change the Rectangle the 3 ``get`` methods to be
+   properties that perform same action as the methods. Add a ``size`` property to the Square 
+   class. It returns the length of a side of the square. 
 
-   .. activecode:: ch_c2_3  
+   In the code below the class defintions, use the 4 properties instead of the get methods.
+
+   .. activecode:: ch_c2_2  
    
    
                     
+   
+.. question:: cdd_ex_3
+
+   Copy the code from the previous question. Below the class definitions, delete all the instructions
+   except where you instantiate a Square object. Create a Turtle object. 
+   Use the Square properties to enable you to draw the square.
+
+   .. activecode:: ch_c2_3
+   
+   
 .. question:: cdd_ex_4
 
-   Copy the code from the previous activecode. After the classes, instantiate a Square object. Use the 
-   ``size``, ``width``, and ``height`` properties with it and display the results. (They should 
-   all produce the same value.) Use the ``__str__``, ``startpoint``, ``area``, and ``perimeter`` 
-   methods/properties with it and display the results.
+   Change the name of the ``scale`` method to be the magic method for multiplication. Change the 
+   tests to use the ``*`` operator (since there is no longer a method named scale). The tests 
+   should still pass.
 
-   .. activecode:: ch_c2_4  
+   .. activecode:: ch_c2_4
    
+      class Point:
+          def __init__(self, initX, initY):
+              self.__x = initX
+              self.__y = initY
+
+          @property
+          def x(self):
+              return self.__x
+
+          @property
+          def y(self):
+              return self.__y
+
+          def scale(self, val):
+              """ Return a new point that is self multiplied by val """
+              return Point(self.__x * val, self.__y * val)
+
+      if __name__ == "__main__":
+          import test
+          a = Point(7, -3)
+          b = a.scale(2)
+          test.testEqual(b.x,14)
+          test.testEqual(b.y,-6)
    
+
 .. question:: cdd_ex_5
 
-   Copy the code from question 3. After the classes, instantiate a Square object. Create a Turtle object. 
-   Use the Square accessor properties to enable you to draw the square.
-
-   .. activecode:: ch_c2_5
-   
-   
-.. question:: cdd_ex_6
-
-   Copy the code from question 5 of the exercises from the last chapter (it includes the ``scale`` method for 
-   the Point class). 
-   
-   Change the name of the scale method to be the magic method for multiplication. Change the tests to use the 
-   ``*`` operator (since there is no longer a method named scale). The tests should still pass.
-
-   .. activecode:: ch_c2_6
-   
-
-   
-.. question:: cdd_ex_7
-
-   Copy the code from the previous question. Make this magic method polymorphic. If the ``val`` parameter
+   Copy the code from the previous question. Make the magic method polymorphic. If the ``val`` parameter
    is a number, the method will operate the way it currently does.
    
    If the ``val`` parameter is a ``Point`` object, the method will return the dot product of the two vectors.
@@ -83,6 +132,6 @@ Exercises
 
    Do not remove your previous tests. But, add another unit test (using the ``*`` operator) for the dot product.
 
-   .. activecode:: ch_c2_7
+   .. activecode:: ch_c2_5
    
 
