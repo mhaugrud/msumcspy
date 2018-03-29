@@ -24,7 +24,8 @@ Exercises
    Below the class definition,
  
    * instantiate a Square object
-   * use methods get the following and print the results:
+   * use methods get the following and print the results
+
       * the square 
       * its width
       * its height
@@ -63,9 +64,9 @@ Exercises
                  
 .. question:: cdd_ex_2
 
-   Copy the code from the previous activecode. Change the Rectangle's 3 ``get`` methods to be
-   properties that perform same action as the methods. Add a ``size`` property to the Square 
-   class. It returns the length of a side of the square. 
+   Copy the code from the previous activecode. Change the Rectangle class 3 ``get`` methods 
+   to be properties that perform same action as the methods. Add a ``size`` property to the 
+   Square class. It returns the length of a side of the square. 
 
    In the code below the class defintions
 
