@@ -13,14 +13,16 @@ Exercises
 .. question:: cdd_ex_1
    :number: 1
 
-   A square is a rectangle which has the same width and height. Write the definition of the 
-   ``Square`` class as a subclass of ``Rectangle`` and its constructor method, with parameters
-   for its starting point and the length of its sides. Do not create any new attributes. It 
-   could be called as follows:: 
+   A square is a rectangle which has the same width and height. 
+
+   * write the definition of the ``Square`` class as a subclass of ``Rectangle``
+   * write its constructor method, with parameters for its starting point and the length of its sides (do not create 
+   any new attributes). It could be called as follows:: 
    
       s = Square(Point(4, 5), 6)
 
-   Below the class definition, 
+   Below the class definition,
+ 
    * instantiate a Square object
    * print the square 
    * print its width
