@@ -16,30 +16,23 @@ Exercises
    A square is a rectangle which has the same width and height. 
 
    * write the definition of the ``Square`` class as a subclass of ``Rectangle``
-   * write its constructor method, with parameters for its starting point and the length of its sides (do not create 
-   any new attributes). It could be called as follows:: 
+   * write its constructor method, with parameters for its starting point and its size (do not create 
+     any new attributes). It could be called as follows:: 
    
-      s = Square(Point(4, 5), 6)
+        s = Square((30, 50), 70)
 
    Below the class definition,
  
    * instantiate a Square object
-   * print the square 
-   * print its width
-   * print its height
-   * print its starting point
-   * print its area 
-   * print its perimeter
+   * use methods get the following and print the results:
+      * the square 
+      * its width
+      * its height
+      * its starting point
+      * its area 
+      * its perimeter
               
    .. activecode:: ch_c2_1
-
-      class Point:
-          def __init__(self, initX, initY):
-              self.__x = initX
-              self.__y = initY
-
-          def __str__(self):
-              return '({},{})'.format(self.__x,self.__y)
 
       class Rectangle:
           def __init__(self,start,width,height):
@@ -57,7 +50,7 @@ Exercises
               return self.__start
     
           def __str__(self):
-              return 'start={} w={} h={}'.format(str(self.__start),self.__width,self.__height)
+              return 'start={} w={} h={}'.format(self.__start,self.__width,self.__height)
     
           def area(self):
               return self.__width * self.__height
@@ -70,11 +63,14 @@ Exercises
                  
 .. question:: cdd_ex_2
 
-   Copy the code from the previous activecode. Change the Rectangle the 3 ``get`` methods to be
+   Copy the code from the previous activecode. Change the Rectangle's 3 ``get`` methods to be
    properties that perform same action as the methods. Add a ``size`` property to the Square 
    class. It returns the length of a side of the square. 
 
-   In the code below the class defintions, use the 4 properties instead of the get methods.
+   In the code below the class defintions
+
+   * delete the lines using the area and perimeter methods 
+   * use the 4 properties instead of the get methods
 
    .. activecode:: ch_c2_2  
    
