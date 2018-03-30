@@ -105,9 +105,9 @@ We can also use a property to change the value of an attribute. In this case it 
     
 
 .. note::
-   The name of this decorator must match the name of corresponding getter property method followed
-   by .setter
+   The name of this decorator must match the name of the corresponding getter property method.
+   This is followed by .setter
 
-   The above example illustrates how we can write a setter property. However, CAD objects should be
-   immutable so it is not proper to include this property.
+   The above example illustrates how we can write a setter property. However, CAD objects should 
+   be immutable so it is not proper to include this property.
 
