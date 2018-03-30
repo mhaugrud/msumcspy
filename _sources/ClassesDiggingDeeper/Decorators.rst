@@ -73,7 +73,7 @@ This leads to code that is more readable and more easily understood.
 
 
 .. note::
-   Properties typically have the same name as the attribute they work with.
+   The name of the property getter method must match the name of the corresponding attribute.
 
 We can also use a property to change the value of an attribute. In this case it acts as a **setter** method.
 
@@ -94,15 +94,20 @@ We can also use a property to change the value of an attribute. In this case it 
                 self.__amount = amt
 
 
-    c = CAD(100)
+    c = CAD(0)
     print(c.amount)
-    c.amount = c.amount - 20
+    c.amount = 100            #using the setter property
+    print(c.amount)
+    c.amount = c.amount - 30  #using both getter and setter properties
     print(c.amount)
     c.amount = -10 # notice the object does not go to an illegal state
     print(c.amount)
     
 
 .. note::
+   The name of this decorator must match the name of corresponding getter property method followed
+   by .setter
+
    The above example illustrates how we can write a setter property. However, CAD objects should be
    immutable so it is not proper to include this property.
 

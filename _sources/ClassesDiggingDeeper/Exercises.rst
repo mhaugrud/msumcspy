@@ -63,14 +63,14 @@ Exercises
                  
 .. question:: cdd_ex_2
 
-   Copy the code from the previous activecode. Change the Rectangle class 3 ``get`` methods 
-   to be properties that perform same action as the methods. Add a ``size`` property to the 
-   Square class. It returns the length of a side of the square. 
+   Copy the code from the previous activecode. Change the Rectangle class three ``get`` methods 
+   to be getter properties that perform same action as the methods. Add a ``size`` getter property 
+   to the Square class. It returns the length of a side of the square. 
 
    In the code below the class defintions
 
    * delete the lines using the area and perimeter methods 
-   * use the 4 properties instead of the get methods
+   * use the four getter properties instead of the get methods
 
    .. activecode:: ch_c2_2  
    
