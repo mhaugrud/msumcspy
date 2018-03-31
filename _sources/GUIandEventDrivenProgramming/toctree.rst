@@ -7,7 +7,7 @@ GUI and Event Driven Programming
 
    01_intro_gui.rst
    02_standard_dialog_boxes.rst
-   key_events.rst
+   06_command_events.rst
    07_event_binding.rst
    09_modifying_widgets.rst
    10_timer_events.rst
