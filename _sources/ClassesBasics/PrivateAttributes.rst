@@ -76,17 +76,17 @@ Now the balance is not affected. Private attributes prevent anyone from directly
 
    The second principle of object-oriented programming is **a class is responsible for maintaining the 
    integrity of its objects**. The methods in a well designed class ensure an object will never get into 
-   an illegal state. This is accomplished in three ways 
+   an illegal state. This is accomplished in three ways: 
  
-   # We utilize **information hiding** --- making the attributes private. The only way to access 
-     private attributes is through the methods that are provided in the class definition. 
-     This protects the attributes from misuse outside of the class. 
+   #. We utilize **information hiding** --- making the attributes private. The only way to access 
+      private attributes is through the methods that are provided in the class definition. 
+      This protects the attributes from misuse outside of the class. 
 
-   # The constructor method (__init__) must initialize all the attributes to a legal state.
+   #. The constructor method (__init__) must initialize all the attributes to a legal state.
 
-   # We must carefully check that our mutator methods never cause an object to go into an illegal state. 
-     This includes checking the arguments and the attributes. Recall how this was done in the ``deposit`` 
-     and ``withdraw`` methods.
+   #. We must carefully check that our mutator methods never cause an object to go into an illegal state. 
+      This includes checking the arguments and the attributes. Recall how this was done in the ``deposit`` 
+      and ``withdraw`` methods.
 
 .. note::
    In contrast to other programming languages like C++ and Java, Python only partially supports 
