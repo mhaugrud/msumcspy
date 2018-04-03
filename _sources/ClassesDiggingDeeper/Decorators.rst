@@ -73,7 +73,7 @@ This leads to code that is more readable and more easily understood.
 
 
 .. note::
-   The name of the property getter method must match the name of the corresponding attribute.
+   The name of the getter property method typically matches the name of the corresponding attribute.
 
 We can also use a property to change the value of an attribute. In this case it acts as a **setter** method.
 
@@ -105,8 +105,9 @@ We can also use a property to change the value of an attribute. In this case it 
     
 
 .. note::
-   The name of this decorator must match the name of the corresponding getter property method.
-   This is followed by .setter
+   * We must define the getter property method before the corresponding setter property.
+
+   * The names of both of these decorator must match.
 
    The above example illustrates how we can write a setter property. However, CAD objects should 
    be immutable so it is not proper to include this property.
