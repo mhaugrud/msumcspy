@@ -19,7 +19,7 @@ How to Avoid Debugging
 Perhaps the most important lesson in debugging is that it is **largely avoidable** -- if you work carefully.
 
 1.  **Understand the Problem**  You must have a firm grasp on **what** you are trying to accomplish but not 
-    necessarily **how** to do it. You must understand what the program should do in specific circumstances 
+    necessarily **how** to do it.  You must understand what the program should do in specific circumstances 
     -- what output should be produced for some given input. You can then identify if a solution is correct or 
     whether there remains work to do or bugs to fix. This is probably the single biggest piece of advice for 
     programmers at every level.  
@@ -45,10 +45,10 @@ Every time you have a little success, your brain releases a tiny bit of chemical
 can keep yourself happy and make programming more enjoyable by creating lots of small victories for yourself.
 
 
-Let's look at an example.  Let's solve the problem posed in question 3 at the end of the Simple Python Data 
-chapter.  Ask the user for the time now (in hours 0 - 23), and ask for the number of hours to wait. Your program 
-should output what the time will be on the clock when the alarm goes off. For example, if ``current_time`` is 8 
-and ``wait_time`` is 5, ``final_time`` should be 13 (1 pm).
+Let's look at an example.  Let's solve the problem posed in question 4 from the exercises of the Simple Python 
+Data chapter. Ask the user for the time now (in hours 0 - 23), and ask for the number of hours to wait. Your 
+program should output what the time will be on the clock when the alarm goes off. For example, if 
+``current_time`` is 8 and ``wait_time`` is 5, ``final_time`` should be 13 (1 pm).
 
 So, where to start?  The problem requires two pieces of input from the user, so let's start there and make sure 
 we can get the data we need.
