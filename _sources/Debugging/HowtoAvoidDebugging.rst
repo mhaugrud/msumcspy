@@ -27,8 +27,8 @@ Perhaps the most important lesson in debugging is that it is **largely avoidable
 2.  **Start Small**  It is tempting to sit down and crank out an entire program at once.  But, when the program 
     -- inevitably -- does not work, you have a myriad of options for things that might be wrong.  Where to start? 
     Where to look first?  How to figure out what went wrong?  I'll get to that in the next section.  So, start 
-    with something really small.  Maybe just two lines and then make sure that runs ok.  Hitting the run button 
-   is quick and easy, and gives you immediate feedback about whether what you have just done is ok or not.  
+    with something really small.  Maybe just two lines and then make sure that runs.  Hitting the run button 
+   is quick and easy. It gives you immediate feedback about whether what you have just done works or not.  
    Another immediate benefit of having something small working is that you have something to turn in.  Turning 
    in a small, incomplete program, is almost always better than nothing.
 
@@ -45,7 +45,7 @@ Every time you have a little success, your brain releases a tiny bit of chemical
 can keep yourself happy and make programming more enjoyable by creating lots of small victories for yourself.
 
 
-Ok, let's look at an example.  Let's solve the problem posed in question 3 at the end of the Simple Python Data 
+Let's look at an example.  Let's solve the problem posed in question 3 at the end of the Simple Python Data 
 chapter.  Ask the user for the time now (in hours 0 - 23), and ask for the number of hours to wait. Your program 
 should output what the time will be on the clock when the alarm goes off. For example, if ``current_time`` is 8 
 and ``wait_time`` is 5, ``final_time`` should be 13 (1 pm).
