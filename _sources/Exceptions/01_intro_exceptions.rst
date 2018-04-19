@@ -11,6 +11,8 @@
    :prefix: exceptions-1-
    :start: 1
 
+.. index:: exception, flow-of-control, raise, try: except:
+
 What Is an Exception?
 =====================
 
@@ -84,9 +86,23 @@ In Python, your create an *exception* message using the ``raise`` command. The
 simplest format for a ``raise`` command is the keyword ``raise`` followed by
 the name of an exception. For example:
 
-.. code-block:: Python
 
-  raise ExceptionName
+.. activecode:: ex1
+    
+    h = int(input('enter the hour'))
+    if h < 1 or h > 12:
+        raise Exception
+    print('valid hour')
+
+See what happens when you enter various values (legal and illegal) for ``h``.
+
+.. admonition:: Modify the code ...
+
+   Look over the list of standard exceptions on the next page.
+
+   Change ``Exception`` in line 3 to one of the standard execeptions that more accurately describes
+   why this exception was raised.
+
 
 So what happens to an *exception* message after it is created? The normal
 flow-of-control of a Python program is interrupted and Python starts looking
@@ -216,6 +232,5 @@ to deal with ``ZeroDivisonError`` messages, not ``MyException`` messages.
       raise MyException
 
 
-.. index:: exception, flow-of-control, raise, try: except:
 
 

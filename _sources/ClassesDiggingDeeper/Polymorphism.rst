@@ -37,8 +37,7 @@ Polymorphism
 ~~~~~~~~~~~~
 
 Our Fraction class has a method that enables us to add two fractions. However, we may want to add an integer
-to a fraction. To do this we can make a Fraction that is equivalent to the integer. We can then just add 
-these two fractions. Lets extend the ``__add__`` method to make this happen in the Fraction class.
+to a fraction. Lets extend the ``__add__`` method to make this happen in the Fraction class.
 
 
 .. activecode:: c2u
@@ -59,9 +58,11 @@ these two fractions. Lets extend the ``__add__`` method to make this happen in t
         def __str__(self):
             return '{}/{}'.format(self.__num, self.__den)
 
-        def __add__(self,other):
-            if isinstance(other,int):
-                other = Fraction(other,1)
+        def __add__(self,val):
+            if isinstance(val,int):
+                other = Fraction(val,1)
+            else:
+                other = val
 
             newnum = self.__num * other.__den + self.__den * other.__num
             newden = self.__den * other.__den
@@ -75,10 +76,10 @@ these two fractions. Lets extend the ``__add__`` method to make this happen in t
 
 
 The ``__add__`` method automatically does the right action. It first checks to see what kind of 
-object ``other`` is. If it is an int, it creates a Fraction that has ``other`` as its numerator 
+object ``val`` is. If it is an int, it creates a Fraction that has ``val`` as its numerator 
 and 1 as its denominator. After this is done, we have two Fractions that we are able to add.
 
-Notice that ``other`` can be either a fraction or an int but ``self`` must be a fraction. That means 
+Notice that ``val`` can be either a fraction or an int but ``self`` must be a fraction. That means 
 the object to the left of the + sign (in lines 28 and 29) must be a Fraction.
 
 .. important::
