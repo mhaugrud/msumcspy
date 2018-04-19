@@ -54,10 +54,6 @@ You can try the addition method and then modify the fractions and retry.
         def __str__(self):
             return '{}/{}'.format(self.__num, self.__den)
 
-        def simplify(self):
-            common = gcd(self.__num, self.__den)
-            return Fraction(self.__num // common, self.__den // common)
-
         def add(self,other):
             newnum = self.__num * other.__den + self.__den*other.__num
             newden = self.__den * other.__den
@@ -97,10 +93,6 @@ called ``__add__``. We refer to such methods as **magic methods**. The details o
         def __str__(self):
             return '{}/{}'.format(self.__num, self.__den)
 
-        def simplify(self):
-            common = gcd(self.__num, self.__den)
-            return Fraction(self.__num // common, self.__den // common)
-
         def __add__(self,other):
             newnum = self.__num * other.__den + self.__den * other.__num
             newden = self.__den * other.__den
@@ -111,11 +103,18 @@ called ``__add__``. We refer to such methods as **magic methods**. The details o
     f2 = Fraction(1, 2)
     f3 = f1 + f2        # + operation is the __add__ method
     print(f3)
+    f4 = Fraction(5,10)
 
 
 Now we can perform addition in the same manner that we are used to with other numeric data.
 
 .. index:: method; magic
+
+.. note::
+   Magic methods are *magic* because we do not generally invoke them directly. Instead, we use them in an
+   indirect fashion. For example, with an arithmetic operator symbol, instantiating a new object, or
+   making a string from an object.
+
 
 We can overload many common operators as shown in the following table.
 
@@ -134,6 +133,14 @@ operator   magic method
 >=         __ge__
 =========  =============
 
+
+.. admonition:: Extend the program ...
+
+   Write a magic method for the ``Fraction`` class to see if two fractions are equal in value (see the 
+   body of the ``sameRational`` function in activecode 2 on the previous page).
+
+   Below the class definition, try the magic method. For example, ``print(f1 == f2)`` and ``print(f2 == f4)`` 
+        
 
 Here is an example unit test for the __add__ magic method.
 
@@ -174,11 +181,6 @@ Here is an example unit test for the __add__ magic method.
         test.testEqual(f3.num, 2)
         test.testEqual(f3.den, 3)
 
-.. note::
-   Magic methods are *magic* because we do not generally invoke them directly. Instead, we use them in an
-   indirect fashion. For example, with an arithmetic operator symbol, instantiating a new object, or
-   making a string from an object.
-        
 
 
 
