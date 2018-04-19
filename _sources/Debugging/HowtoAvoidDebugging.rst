@@ -28,9 +28,9 @@ Perhaps the most important lesson in debugging is that it is **largely avoidable
     -- inevitably -- does not work, you have a myriad of options for things that might be wrong.  Where to start? 
     Where to look first?  How to figure out what went wrong?  I'll get to that in the next section.  So, start 
     with something really small.  Maybe just two lines and then make sure that runs.  Hitting the run button 
-   is quick and easy. It gives you immediate feedback about whether what you have just done works or not.  
-   Another immediate benefit of having something small working is that you have something to turn in.  Turning 
-   in a small, incomplete program, is almost always better than nothing.
+    is quick and easy. It gives you immediate feedback about whether what you have just done works or not.  
+    Another immediate benefit of having something small working is that you have something to turn in.  Turning 
+    in a small, incomplete program, is almost always better than nothing.
 
 
 3.  **Keep Improving It**  Once you have a small part of your program working, the next step is to figure out 
