@@ -28,7 +28,7 @@ particular type. It then returns True if the object is of the specified type (or
     print(isinstance(b, float))
     print(isinstance(c, Fraction))
     print(isinstance(a, (int,float)))
-    print(isinstance(a, Fraction))
+    print(isinstance(c, (int,float)))
 
 
 .. index:: polymorphism
@@ -37,9 +37,8 @@ Polymorphism
 ~~~~~~~~~~~~
 
 Our Fraction class has a method that enables us to add two fractions. However, we may want to add an integer
-to a fraction. To do this we can make a Fraction that is equivalent to the integer. Its numerator is the 
-same as the integer and its denominator is one. We can then just add these two fractions. Lets extend the 
-__add__ method to make this happen in our class.
+to a fraction. To do this we can make a Fraction that is equivalent to the integer. We can then just add 
+these two fractions. Lets extend the ``__add__`` method to make this happen in the Fraction class.
 
 
 .. activecode:: c2u
@@ -72,18 +71,18 @@ __add__ method to make this happen in our class.
     a = Fraction(2,3)
     b = Fraction(1,2)
     print(a + b)
-    print(b + 3)
+    print(b + 2)
 
 
-The ``__add__`` method is able to automatically do the right action. It first checks to see what kind of 
-object ``other`` is. If it is an int, it creates a Fraction that has ``other`` as its numerator and 1 as 
-its denominator. After this is done, we have two Fractions that we are able to add.
+The ``__add__`` method automatically does the right action. It first checks to see what kind of 
+object ``other`` is. If it is an int, it creates a Fraction that has ``other`` as its numerator 
+and 1 as its denominator. After this is done, we have two Fractions that we are able to add.
 
-Notice that ``other`` can be either a fraction or an int but ``self`` must be a Fraction. That means the 
-object to the left of the + sign must be a Fraction.
+Notice that ``other`` can be either a fraction or an int but ``self`` must be a fraction. That means 
+the object to the left of the + sign (in lines 28 and 29) must be a Fraction.
 
 .. important::
-   A method may need to perform differently when given different data types. This capacity is called 
+   A method may need to operate differently when given different data types. This capacity is called 
    **polymorphism**. A method has "many forms". The proper form is chosen automatically based on the 
    input. This is the fourth principle of object-oriented programming.
 
