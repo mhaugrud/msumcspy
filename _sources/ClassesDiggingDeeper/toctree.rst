@@ -9,10 +9,10 @@ Classes and Objects - Digging Deeper
    ClassAttributes.rst
    Decorators.rst
    MoreInheritance.rst
-   Polymorphism.rst
    Fractions.rst
    HelperFuncs.rst
    Sameness.rst
    ArithmeticMethods.rst
+   Polymorphism.rst
    Glossary.rst
    Exercises.rst

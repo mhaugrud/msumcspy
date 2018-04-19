@@ -10,103 +10,77 @@ We have often used the ``type`` function to see what kind of an object we are ex
 provides a similar Boolean function ``isinstance`` that requires two parameters: an object and a 
 particular type. It then returns True if the object is of the specified type (or types).
 
-.. activecode:: c2i
+.. activecode:: c2t
     
-    class CAD:
-        """Canadian Dollar"""
-        __USD = 0.75   # the value of a CAD in terms of a USD
-        def __init__(self, amt):
-            self.__amount = amt
+    class Fraction:
+        def __init__(self, top, bottom):
+            self.__num = top        # the numerator is on top
+            self.__den = bottom     # the denominator is on the bottom
 
-        @property
-        def amount(self):
-            return self.__amount
+        def __str__(self):
+            return '{}/{}'.format(self.__num, self.__den)
 
-        def exchange(self):
-            return self.__amount * CAD.__USD
 
-    class GBP:
-        """Great Britain Pound"""
-        __USD = 1.40   # the value of a GBP in terms of a USD
-        def __init__(self, amt):
-            self.__amount = amt
+    a = 100
+    b = 1.23
+    c = Fraction(6,5)
+    print(isinstance(a, int))
+    print(isinstance(b, float))
+    print(isinstance(c, Fraction))
+    print(isinstance(a, (int,float)))
+    print(isinstance(a, Fraction))
 
-        @property
-        def amount(self):
-            return self.__amount
-
-        def exchange(self):
-            return self.__amount * GBP.__USD
-
-    a = 100.0
-    b = GBP(100)
-    c = CAD(100)
-    print(isinstance(a, float))
-    print(isinstance(b, CAD))
-    print(isinstance(c, CAD))
 
 .. index:: polymorphism
 
 Polymorphism
 ~~~~~~~~~~~~
 
-Our Account class has methods that enable us to make deposits and withdrawals. Our balance is in US dollars 
-and our usual transactions are in US dollars. However, we may occasionally use other currencies. If a 
-transaction is in some other currency, we must convert that amount to an appropriate amount of US dollars.
-Suppose we give the bank teller some Canadian currency to deposit in our account. The teller will convert it 
-to US dollars and place that amount in our account. Lets extend the deposit method to make this happen in our 
-class.
+Our Fraction class has a method that enables us to add two fractions. However, we may want to add an integer
+to a fraction. To do this we can make a Fraction that is equivalent to the integer. Its numerator is the 
+same as the integer and its denominator is one. We can then just add these two fractions. Lets extend the 
+__add__ method to make this happen in our class.
 
 
-.. activecode:: c2j
+.. activecode:: c2u
     
-    class CAD:
-        """Canadian Dollar"""
-        __USD = 0.75   # the value of a CAD in terms of a USD
-        def __init__(self, amt):
-            self.__amount = amt
+    def gcd(m, n):
+        while m % n != 0:
+            oldm = m
+            oldn = n
+            m = oldn
+            n = oldm % oldn
+        return n
 
-        def exchange(self):
-            return self.__amount * CAD.__USD
+    class Fraction:
+        def __init__(self, top, bottom):
+            self.__num = top        # the numerator is on top
+            self.__den = bottom     # the denominator is on the bottom
 
-    class GBP:
-        """Great Britain Pound"""
-        __USD = 1.40   # the value of a GBP in terms of a USD
-        def __init__(self, amt):
-            self.__amount = amt
+        def __str__(self):
+            return '{}/{}'.format(self.__num, self.__den)
 
-        def exchange(self):
-            return self.__amount * GBP.__USD
+        def __add__(self,other):
+            if isinstance(other,int):
+                other = Fraction(other,1)
 
-    class Account:
-        def __init__(self):
-            self.__balance = 0.00
+            newnum = self.__num * other.__den + self.__den * other.__num
+            newden = self.__den * other.__den
+            common = gcd(newnum, newden)
+            return Fraction(newnum // common, newden // common)
 
-        @property
-        def balance(self):
-            return self.__balance
-
-        def deposit(self, amount):
-            if isinstance(amount, (CAD,GBP)):
-                amt = amount.exchange()
-            else:
-                amt = amount
-            self.__balance += amt
-
-    a = Account()
-    a.deposit(CAD(100))
-    print(a.balance)
-    a.deposit(GBP(100))
-    print(a.balance)
-    a.deposit(100)
-    print(a.balance)
+    a = Fraction(2,3)
+    b = Fraction(1,2)
+    print(a + b)
+    print(b + 3)
 
 
-The ``deposit`` method first checks to see what is being deposited. If it is not US dollars, determine 
-its value in US dollars before adjusting the balance. Otherwise, just adjust the balance.
+The ``__add__`` method is able to automatically do the right action. It first checks to see what kind of 
+object ``other`` is. If it is an int, it creates a Fraction that has ``other`` as its numerator and 1 as 
+its denominator. After this is done, we have two Fractions that we are able to add.
 
-The ``deposit`` method is able to automatically do the right action. It can identify what is being deposited 
-(US dollars, CAD, or GBP). The CAD and GBP classes are responsible for making the exchange.
+Notice that ``other`` can be either a fraction or an int but ``self`` must be a Fraction. That means the 
+object to the left of the + sign must be a Fraction.
 
 .. important::
    A method may need to perform differently when given different data types. This capacity is called 

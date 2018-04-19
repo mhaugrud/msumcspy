@@ -133,3 +133,52 @@ Exercises
    .. activecode:: ch_c2_5
    
 
+
+.. question:: cdd_ex_6
+
+   The balance of our bank account is in US dollars. However, we may want to deposit some other currency. If
+   the amount to be deposited is in another currency, that amount must be exchanged for an equivalent amount
+   of US dollars before the balance is changed.
+
+   Make the ``deposit`` method polymorphic - so it can properly handle deposits in US dollar (ints or floats), 
+   CAD, or GBP amounts.
+
+   .. activecode:: ch_c2_6
+    
+      class CAD:
+          """Canadian Dollar"""
+          __USD = 0.75   # the value of a CAD in terms of a USD
+          def __init__(self, amt):
+              self.__amount = amt
+
+          def exchange(self):
+              return self.__amount * CAD.__USD
+
+      class GBP:
+          """Great Britain Pound"""
+          __USD = 1.40   # the value of a GBP in terms of a USD
+          def __init__(self, amt):
+              self.__amount = amt
+
+          def exchange(self):
+              return self.__amount * GBP.__USD
+
+      class Account:
+          def __init__(self):
+              self.__balance = 0.00
+
+          @property
+          def balance(self):
+              return self.__balance
+
+          def deposit(self, amount):
+              self.__balance += amount
+
+      a = Account()
+      a.deposit(100)      # deposit USD
+      print(a.balance)
+      a.deposit(CAD(100)) 
+      print(a.balance)    # balance should not be 200
+      a.deposit(GBP(100))
+      print(a.balance)    # balance should not be 300
+
