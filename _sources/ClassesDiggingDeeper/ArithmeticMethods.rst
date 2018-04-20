@@ -11,8 +11,8 @@
 Arithmetic Methods
 ------------------
 
-We will conclude this chapter by adding a few more methods to our ``Fraction`` class.  In particular, we will 
-implement arithmetic.  To begin, consider what it means to add two fractions together.
+We will now implement some methods for the Fraction class so that it can perform arithmetic with Fraction
+objects.  To begin, consider what it means to add two fractions together.
 Remember that you can only add fractions if they have the same denominator.  The easiest way to find a common 
 denominator is to multiply the two individual denominators together.  Anything we do to the denominator needs 
 to the done to the numerator.  This gives us the following equation for fraction addition::
