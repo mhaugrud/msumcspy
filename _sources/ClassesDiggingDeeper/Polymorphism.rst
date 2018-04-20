@@ -80,7 +80,7 @@ object ``val`` is. If it is an int, it creates a Fraction that has ``val`` as it
 and 1 as its denominator. After this is done, we have two Fractions that we are able to add.
 
 Notice that ``val`` can be either a fraction or an int but ``self`` must be a fraction. That means 
-the object to the left of the + sign (in lines 28 and 29) must be a Fraction.
+the object to the left of the + sign (in lines 30 and 31) must be a Fraction.
 
 .. important::
    A method may need to operate differently when given different data types. This capacity is called 
