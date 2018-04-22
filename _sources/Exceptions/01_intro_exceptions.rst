@@ -23,7 +23,7 @@ errors in Python are dealt with using *exceptions*, but not all
 *exceptions* are errors.
 
 Exception Handling Flow-of-Control
-==================================
+----------------------------------
 
 To explain what an *exception* does, let's review the normal "flow of control"
 in a Python program. In normal operation Python executes statements sequentially,
@@ -193,7 +193,7 @@ could put the ``try: except:`` block in the main function:
       raise MyException
 
 Summary
-=======
+-------
 
 Let's summarize our discussion. An *exception* is a message that something
 "out-of-the-ordinary" has happened and the normal flow-of-control needs to
