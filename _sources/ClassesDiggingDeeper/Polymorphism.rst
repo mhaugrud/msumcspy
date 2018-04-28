@@ -36,8 +36,13 @@ particular type. It then returns True if the object is of the specified type (or
 Polymorphism
 ~~~~~~~~~~~~
 
-Our Fraction class has a method that enables us to add two fractions. However, we may want to add an integer
-to a fraction. Lets extend the ``__add__`` method to make this happen in the Fraction class.
+Since the beginning of the course we have seen an operator or method work differently when used
+with different types of objects. For example the plus operator performs arithmetic addition with 
+integer and floats. However, with strings, it does concatenation. Even though different operations
+are performed, the actions are reasonably similar.
+
+Our Fraction class has a method that enables us to add two fractions. However, we may want to add an 
+integerto a fraction. Lets extend the ``__add__`` method to make this happen in the Fraction class.
 
 
 .. activecode:: c2u
@@ -59,10 +64,10 @@ to a fraction. Lets extend the ``__add__`` method to make this happen in the Fra
             return '{}/{}'.format(self.__num, self.__den)
 
         def __add__(self,val):
-            if isinstance(val,int):
-                other = Fraction(val,1)
-            else:
+            if isinstance(val,Fraction):
                 other = val
+            elif isinstance(val,int):
+                other = Fraction(val,1)
 
             newnum = self.__num * other.__den + self.__den * other.__num
             newden = self.__den * other.__den
@@ -76,16 +81,17 @@ to a fraction. Lets extend the ``__add__`` method to make this happen in the Fra
 
 
 The ``__add__`` method automatically does the right action. It first checks to see what kind of 
-object ``val`` is. If it is an int, it creates a Fraction that has ``val`` as its numerator 
-and 1 as its denominator. After this is done, we have two Fractions that we are able to add.
+object ``val`` is. If it is an integer, we must first make a Fraction. By using ``val`` as the 
+numerator and 1 as the denominator, we hav a fraction that has the same value as ``val``. Now 
+we have two Fractions that we are able to add as before.
 
-Notice that ``val`` can be either a fraction or an int but ``self`` must be a fraction. That means 
-the object to the left of the + sign (in lines 30 and 31) must be a Fraction.
+Notice that ``val`` can be either a fraction or an integer but ``self`` must be a fraction. That 
+means the object to the left of the + sign (in lines 30 and 31) must be a Fraction.
 
 .. important::
-   A method may need to operate differently when given different data types. This capacity is called 
-   **polymorphism**. A method has "many forms". The proper form is chosen automatically based on the 
-   input. This is the fourth principle of object-oriented programming.
+   A method may need to operate differently when given different types of objects. This capacity is 
+   called **polymorphism**. A method has "many forms". The proper form is chosen automatically based 
+   on the type of objects involved. This is the fourth principle of object-oriented programming.
 
 
 
