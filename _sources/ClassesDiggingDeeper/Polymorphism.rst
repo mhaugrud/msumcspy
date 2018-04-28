@@ -38,11 +38,11 @@ Polymorphism
 
 Since the beginning of the course we have seen an operator or method work differently when used
 with different types of objects. For example, the plus operator performs arithmetic addition with 
-integers and floats. However, with strings, it does concatenation. Even though different operations
-are performed, the actions are reasonably similar.
+integers and floats. However, with strings, it does concatenation. More recently we have been able
+to use this operator with fractions. Even though different operations are performed, the actions 
+are all reasonably similar.
 
-Our Fraction class has a method that enables us to add two fractions. Lets extend this ``__add__`` 
-method so we can also add an integer to a fraction.
+Lets now extend this ``__add__`` method so we can also add an integer to a fraction.
 
 
 .. activecode:: c2u
@@ -83,7 +83,7 @@ method so we can also add an integer to a fraction.
 The ``__add__`` method automatically performs the right action. It first checks to see what kind 
 of object ``val`` is. If it is an integer, we must first make a Fraction. By using ``val`` as the 
 numerator and 1 as the denominator, we have a fraction that has the same value as ``val``. Now 
-we have two Fractions that we are able to add as previously.
+we have two Fractions and so we are able to add as previously.
 
 Notice that ``val`` can be either a fraction or an integer but ``self`` must be a fraction. That 
 means the object to the left of the + sign (in lines 30 and 31) must be a Fraction.

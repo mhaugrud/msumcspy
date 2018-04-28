@@ -108,6 +108,7 @@ called ``__add__``. We refer to such methods as **magic methods**. The details o
 
 Now we can perform addition in the same manner that we are used to with other numeric data.
 
+
 .. index:: method; magic
 
 .. note::
@@ -133,6 +134,11 @@ operator   magic method
 >=         __ge__
 =========  =============
 
+
+All these magic methods are binary operations. They involve two objects -- one on the left side of
+the operator symbol and another on the right. For example, ``a + b``. The magic method has two 
+parameters. For example, ``def __add__(self,other)``. The first parameter corresponds to the object
+to the left of the operator symbol and the second parameter corresponds to the object to the right.
 
 .. admonition:: Extend the program ...
 
