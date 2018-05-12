@@ -140,8 +140,8 @@ Exercises
    the amount to be deposited is in another currency, that amount must be exchanged for an equivalent amount
    of US dollars before the balance is changed.
 
-   Make the ``deposit`` method polymorphic - so it can properly handle deposits in US dollar (ints or floats), 
-   CAD, or GBP amounts.
+   Make the ``deposit`` method polymorphic - so it can properly handle deposits in CAD, GBP, or US dollar 
+   (int or float) amounts.
 
    .. activecode:: ch_c2_6
     
