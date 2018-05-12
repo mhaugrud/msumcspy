@@ -116,10 +116,10 @@ Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` 
 
         def withdraw(self, amount):
             '''allow overdraft up to line of credit'''
-            if self._Account__balance + self.__line >= amount:
+            if self.getBalance() + self.__line >= amount:
                 self._Account__balance -= amount
 
-    a = LOC('Joe' 500)
+    a = LOC('Joe', 500)
     a.deposit(100)
     print(a.getBalance())
     a.withdraw(300)

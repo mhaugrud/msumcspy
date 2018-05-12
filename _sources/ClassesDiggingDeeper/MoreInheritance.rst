@@ -42,7 +42,7 @@ pay interest.
        
         def accrue(self):
             '''calculate and deposit interest'''
-            interest = Savings.__rate * self._Account__balance
+            interest = Savings.__rate * self.balance
             self.__intpaid += interest
             self.deposit(interest)
 
