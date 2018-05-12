@@ -2,16 +2,18 @@
 Private Attributes
 ------------------
 
-Each Account object has a balance attribute. What would happen if we tried to change it directly instead of using the deposit or withdraw methods? Could we get into an illegal state that way?
+Each Account object has a balance attribute. What would happen if we tried to change it directly instead of 
+using the deposit or withdraw methods? Could we get into an illegal state that way?
 
 
 .. activecode:: c1g
     
     class Account:
-        '''Account class for representing and manipulating bank accounts'''
+        '''Account class to model bank accounts'''
         
-        def __init__(self):
-            '''Create a new account with zero balance'''
+        def __init__(self, name):
+            '''Create a new account for owner name and a zero balance'''
+            self.owner = name
             self.balance = 0.00
 
         def getBalance(self):
@@ -27,27 +29,31 @@ Each Account object has a balance attribute. What would happen if we tried to ch
             if self.balance >= amount:
                 self.balance -= amount
 
-    p = Account()
+    p = Account('Joe')
     print(p.getBalance())
     p.balance = -12345     # trying to directly change the attribute
     print(p.getBalance())  # notice what is displayed
 
 .. caution::
 
-   This is definitely a problem. We provided methods that prevent an Account getting into an illegal state. But this was easily circumvented by directly accessing the attribute. This could be done since balance is a **public** attribute. Public attributes can be directly manipulated **outside** of the class definition.
+   This is definitely a problem. We provided methods that prevent an Account getting into an illegal state. 
+   But this was easily circumvented by directly accessing the attribute. This could be done since balance is 
+   a **public** attribute. Public attributes can be directly manipulated **outside** of the class definition.
 
 .. index:: attribute; private, dunder
 
-We can prevent this by using **private** atttibutes. To make an attribute private, preface its name with two underscore characters ``__balance``. We read this as dunder (double underscore) balance.
+We can prevent this by using **private** atttibutes. To make an attribute private, preface its name with two 
+underscore characters ``__balance``. We read this as dunder (double underscore) balance.
     
 .. activecode:: c1h
     
     class Account:
-        '''Account class for representing and manipulating bank accounts'''
+        '''Account class to model bank accounts'''
         
-        def __init__(self):
-            '''Create a new account with zero balance'''
-            self.__balance = 0.00
+        def __init__(self, name):
+            '''Create a new account for owner name and a zero balance'''
+            self.owner = name
+            self.balance = 0.00
 
         def getBalance(self):
             return self.__balance
@@ -62,7 +68,7 @@ We can prevent this by using **private** atttibutes. To make an attribute privat
             if self.__balance >= amount:
                 self.__balance -= amount
 
-    p = Account()
+    p = Account('Joe')
     print(p.getBalance())
     p.__balance = -12345
     print(p.getBalance())

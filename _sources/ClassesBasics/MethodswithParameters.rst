@@ -17,10 +17,11 @@ work.  These methods will need some additional data to do their work: the amount
 .. activecode:: c1d
     
     class Account:
-        '''Account class for representing and manipulating bank accounts'''
+        '''Account class to model bank accounts'''
         
-        def __init__(self):
-            '''Create a new account with zero balance'''
+        def __init__(self, name):
+            '''Create a new account for owner name and a zero balance'''
+            self.owner = name
             self.balance = 0.00
 
         def getBalance(self):
@@ -33,7 +34,7 @@ work.  These methods will need some additional data to do their work: the amount
             self.balance -= amount
 
   
-    p = Account()
+    p = Account('Joe')
     print(p.getBalance())
     p.deposit(150)
     print(p.getBalance())
@@ -41,7 +42,8 @@ work.  These methods will need some additional data to do their work: the amount
     print(p.getBalance())
 
 
-Notice that the caller of ``deposit`` or ``withdraw`` does not explicitly supply an argument to match the ``self`` parameter.  This is true of all method calls. The definition will always
+Notice that the caller of ``deposit`` or ``withdraw`` does not explicitly supply an argument to match the 
+``self`` parameter.  This is true of all method calls. The definition will always
 have one additional parameter as compared to the invocation. 
 
 .. index:: method; constructor, method; accessor, method; mutator
@@ -61,10 +63,11 @@ Run the activecode below.
 .. activecode:: c1e
     
     class Account:
-        '''Account class for representing and manipulating bank accounts'''
+        '''Account class to model bank accounts'''
         
-        def __init__(self):
-            '''Create a new account with zero balance'''
+        def __init__(self, name):
+            '''Create a new account for owner name and a zero balance'''
+            self.owner = name
             self.balance = 0.00
 
         def getBalance(self):
@@ -77,7 +80,7 @@ Run the activecode below.
             self.balance -= amount
 
   
-    p = Account()
+    p = Account('Joe')
     print(p.getBalance())
     p.deposit(150)
     print(p.getBalance())

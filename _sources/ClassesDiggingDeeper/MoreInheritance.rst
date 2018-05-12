@@ -18,7 +18,8 @@ pay interest.
 .. activecode:: c2h
     
     class Account:
-        def __init__(self):
+        def __init__(self, name):
+            self.__owner = name
             self.__balance = 0.00
 
         @property
@@ -35,9 +36,9 @@ pay interest.
     class Savings(Account):
         '''Savings inherits everything from Account'''
         __rate = 0.01  #the saving account interest rate
-        def __init__(self):
+        def __init__(self, name):
             self.__intpaid = 0.0
-            Account.__init__(self)
+            Account.__init__(self, name)
        
         def accrue(self):
             '''calculate and deposit interest'''
@@ -50,7 +51,7 @@ pay interest.
             return self.__intpaid
         
 
-    a = Savings()
+    a = Savings('Joe')
     a.deposit(1000)
     print('total interest:{} balance:{}'.format(a.intpaid,a.balance))
     a.accrue()

@@ -20,11 +20,12 @@ Consider the example below.
 .. activecode:: c1i
     
     class Account:
-        '''Account class for representing and manipulating bank accounts'''
+        '''Account class to model bank accounts'''
         
-        def __init__(self):
-            '''Create a new account with zero balance'''
-            self.__balance = 0.00
+        def __init__(self, name):
+            '''Create a new account for owner name and a zero balance'''
+            self.owner = name
+            self.balance = 0.00
 
         def getBalance(self):
             return self.__balance
@@ -39,7 +40,7 @@ Consider the example below.
             if self.__balance >= amount:
                 self.__balance -= amount
 
-    p = Account()
+    p = Account('Joe')
     p.deposit(150)
     print(p)
 
@@ -55,8 +56,8 @@ after the name.  Python commonly uses this naming technique for special methods 
 
 The ``__str__`` method is responsible for creating and returning a string for an object the class. You as 
 the programmer, get to choose what an ``Account`` string should look like. In this case, we have 
-decided that the string representation will include the value of the balance attribute as well as some 
-formatting.
+decided that the string representation will include the owner name as well as the value of the balance 
+attribute with some formatting.
 
 When we change the meaning of a pre-defined method, we say that we **override** the method.
 
@@ -64,10 +65,11 @@ When we change the meaning of a pre-defined method, we say that we **override** 
 .. activecode:: c1j
     
     class Account:
-        '''Account class for representing and manipulating bank accounts'''
+        '''Account class to model bank accounts'''
         
-        def __init__(self):
-            '''Create a new account with zero balance'''
+        def __init__(self, name):
+            '''Create a new account for owner name and a zero balance'''
+            self.__owner = name
             self.__balance = 0.00
 
         def getBalance(self):
@@ -84,11 +86,11 @@ When we change the meaning of a pre-defined method, we say that we **override** 
                 self.__balance -= amount
 
         def __str__(self):
-            return "${:,.2f}".format(self.__balance)
+            return "{} ${:,.2f}".format(self.__owner, self.__balance)
 
-    p = Account()
+    p = Account('Joe')
     p.deposit(150)
-    print('the balance is ' + str(p))
+    print(str(p))
           
 
 When you run the program above you can see that the ``str`` type constructer function uses the ``__str__``

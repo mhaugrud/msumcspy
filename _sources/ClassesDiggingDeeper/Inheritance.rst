@@ -28,7 +28,8 @@ parentheses after the name of the new class.
 .. activecode:: c2a
     
     class Account:
-        def __init__(self):
+        def __init__(self, name):
+            self.__owner = name
             self.__balance = 0.00
 
         def getBalance(self):
@@ -44,7 +45,7 @@ parentheses after the name of the new class.
     class LOC(Account):
         '''LOC inherits everything from Account'''
 
-    a = LOC()
+    a = LOC('Joe')
     a.deposit(100)
     print(a.getBalance())
     a.withdraw(300)
@@ -59,7 +60,8 @@ Next we write the LOC constructor.
 .. activecode:: c2b
     
     class Account:
-        def __init__(self):
+        def __init__(self, name):
+            self.__owner = name
             self.__balance = 0.00
 
         def getBalance(self):
@@ -73,11 +75,11 @@ Next we write the LOC constructor.
                 self.__balance -= amount
 
     class LOC(Account):
-        def __init__(self, line):
+        def __init__(self, name, line):
             self.__line = line
-            Account.__init__(self)  # perform the parent class initialization
+            Account.__init__(self, name)  # perform the parent class initialization
 
-    a = LOC(500)
+    a = LOC('Joe', 500)
     a.deposit(100)
     print(a.getBalance())
     a.withdraw(300)
@@ -93,7 +95,8 @@ Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` 
 .. activecode:: c2c
     
     class Account:
-        def __init__(self):
+        def __init__(self, name):
+            self.__owner = name
             self.__balance = 0.00
 
         def getBalance(self):
@@ -107,16 +110,16 @@ Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` 
                 self.__balance -= amount
 
     class LOC(Account):
-        def __init__(self, line):
+        def __init__(self, name, line):
             self.__line = line
-            Account.__init__(self)
+            Account.__init__(self, name)
 
         def withdraw(self, amount):
             '''allow overdraft up to line of credit'''
             if self._Account__balance + self.__line >= amount:
                 self._Account__balance -= amount
 
-    a = LOC(500)
+    a = LOC('Joe' 500)
     a.deposit(100)
     print(a.getBalance())
     a.withdraw(300)

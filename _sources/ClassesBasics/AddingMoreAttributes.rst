@@ -16,10 +16,11 @@ Lets improve the Account class by enabling it to keep a history of all its trans
 .. activecode:: c1k
     
     class Account:
-        '''Account class for representing and manipulating bank accounts'''
+        '''Account class to model bank accounts'''
         
-        def __init__(self):
-            '''Create a new account with zero balance'''
+        def __init__(self, name):
+            '''Create a new account for owner name and a zero balance'''
+            self.__owner = name
             self.__balance = 0.00
             self.__transactions = []
             self.__start = 0.00
@@ -38,7 +39,7 @@ Lets improve the Account class by enabling it to keep a history of all its trans
                 self.__balance -= amount
 
         def __str__(self):
-            return "${:,.2f}".format(self.__balance)
+            return "{} ${:,.2f}".format(self.__owner, self.__balance)
 
         def statement(self):
             '''list the transactions with the running balance'''
@@ -47,7 +48,7 @@ Lets improve the Account class by enabling it to keep a history of all its trans
             
             print('ending balance   ${:>8,.2f}'.format(self.__balance))
 
-    p = Account()
+    p = Account('Joe')
     p.deposit(150)
     p.withdraw(30)
     p.withdraw(20)

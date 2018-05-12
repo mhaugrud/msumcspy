@@ -23,10 +23,11 @@ then see if the method we are testing, properly changed the state of the object.
 .. activecode:: c1f
     
     class Account:
-        '''Account class for representing and manipulating bank accounts'''
+        '''Account class to model bank accounts'''
         
-        def __init__(self):
-            '''Create a new account with zero balance'''
+        def __init__(self, name):
+            '''Create a new account for owner name and a zero balance'''
+            self.owner = name
             self.balance = 0.00
 
         def getBalance(self):
@@ -42,7 +43,7 @@ then see if the method we are testing, properly changed the state of the object.
     if __name__ == "__main__":
         import test
         print('testing deposit method')
-        a = Account()
+        a = Account('Joe')
         a.deposit(100)
         a.deposit(5)
         test.testEqual(a.getBalance(),105) # the balance after 2 deposits
