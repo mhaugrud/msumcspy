@@ -52,8 +52,8 @@ underscore characters ``__balance``. We read this as dunder (double underscore) 
         
         def __init__(self, name):
             '''Create a new account for owner name and a zero balance'''
-            self.owner = name
-            self.balance = 0.00
+            self.__owner = name
+            self.__balance = 0.00
 
         def getBalance(self):
             return self.__balance

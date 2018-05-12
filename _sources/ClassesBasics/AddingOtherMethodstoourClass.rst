@@ -47,27 +47,9 @@ Note that the ``getBalance`` method simply returns the value of ``self.balance``
 In other words, the implementation of the method is to go to the state of the object itself and get the 
 value of ``balance``.  This is like asking the bank teller "What is my current balance?"
 
-We could write another method to change the current balance. If so, we would need to supply a parameter 
-for the method to indicate how much the balance should become.
+.. admonition:: Extend the program ...
 
-.. sourcecode:: python
-    
-    class Account:
-        '''Account class to model bank accounts'''
-        
-        def __init__(self, name):
-            '''Create a new account for owner name and a zero balance'''
-            self.owner = name
-            self.balance = 0.00
+   - Add a method to get the account owner's name
+   - Write a statement to try it out (on the line following ``print(p.getBalance())``)
 
-        def getBalance(self):
-            return self.balance
-
-        def setBalance(self, amount):
-            self.balance = amount
-
-.. warning::
-    This would be a bad design choice. The Account class is meant to model a bank account. If we go to the 
-    bank, we do not ask the teller to change our balance to some specified amount. Instead, we either make 
-    a deposit or withdrawal. These actions indirectly change the balance.
 

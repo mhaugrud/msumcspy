@@ -50,12 +50,12 @@ then see if the method we are testing, properly changed the state of the object.
         a.deposit(-50)                     # what if a negative amount
         test.testEqual(a.getBalance(),105) # the balance should not change
         print('testing withdraw method')
-        a = Account()
-        a.deposit(100)
-        a.withdraw(80)
-        test.testEqual(a.getBalance(),20)  # after deposit and withdraw
-        a.withdraw(25)                     # what if withdraw too large
-        test.testEqual(a.getBalance(),20)  # the balance should not change
+        b = Account('Moe')
+        b.deposit(100)
+        b.withdraw(80)
+        test.testEqual(b.getBalance(),20)  # after deposit and withdraw
+        b.withdraw(25)                     # what if withdraw too much?
+        test.testEqual(b.getBalance(),20)  # the balance should not change
 
 
 When you run the example, two tests pass. However, two fail. The first fails because

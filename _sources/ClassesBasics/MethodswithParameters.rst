@@ -10,8 +10,38 @@
 Methods with Parameters
 -----------------------
           
-Let's add the ``deposit`` and ``withdraw`` methods to see better how methods
-work.  These methods will need some additional data to do their work: the amount to deposit or withdraw.
+We could write another method to change the current balance. If so, we would need to supply a parameter 
+for the method to indicate how much the balance should become.
+
+.. activecode:: c1d0
+    
+    class Account:
+        '''Account class to model bank accounts'''
+        
+        def __init__(self, name):
+            '''Create a new account for owner name and a zero balance'''
+            self.owner = name
+            self.balance = 0.00
+
+        def getBalance(self):
+            return self.balance
+
+        def setBalance(self, amount):
+            self.balance = amount
+
+    p = Account('Joe')
+    print(p.getBalance())
+    p.setBalance(150)
+    print(p.getBalance())
+
+
+.. warning::
+    This would be a bad design choice. The Account class is meant to model a bank account. If we go to the 
+    bank, we do not ask the teller to change our balance to some specified amount. Instead, we either make 
+    a deposit or withdrawal. These actions indirectly change the balance.
+
+
+Instead, let's add ``deposit`` and ``withdraw`` methods to better model how accounts actually work.
 
 
 .. activecode:: c1d

@@ -18,7 +18,7 @@ that are related to the problem we are trying to solve.  We need to create our o
 As an example, consider the concept of a checking account at a bank. An account has an owner and a current balance. 
 A particular account could be owned by Joe have a current balance of 150. This is the state of that account.
 
-Thinking about our diagram above, we could draw an ``account`` object as shown here.
+Thinking about our diagram above, we could draw an ``Account`` object as shown here.
 
 .. image:: Figures/objectpic2.png
    :alt: An account has a balance
@@ -33,7 +33,7 @@ we can organize these together with the data.
    :alt: An account also has methods
 
 
-Now that we understand what an ``account`` object might look like, we can define a new **class**. 
+Now that we understand what an account object might look like, we can define a new **class**. 
 We'll want our accounts to each have ``owner`` and ``balance`` attributes,
 so our first class definition looks like this.
 
