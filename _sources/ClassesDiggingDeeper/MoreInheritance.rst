@@ -33,6 +33,9 @@ pay interest.
             if self.__balance >= amount:
                 self.__balance -= amount
 
+        def __str__(self):
+            return "{} ${:,.2f}".format(self.__owner, self.__balance)
+
     class Savings(Account):
         '''Savings inherits everything from Account'''
         __rate = 0.01  #the saving account interest rate
@@ -53,11 +56,11 @@ pay interest.
 
     a = Savings('Joe')
     a.deposit(1000)
-    print('total interest:{} balance:{}'.format(a.intpaid,a.balance))
+    print('{} total interest:{}'.format(str(a), a.intpaid))
     a.accrue()
-    print('total interest:{} balance:{}'.format(a.intpaid,a.balance))
+    print('{} total interest:{}'.format(str(a), a.intpaid))
     a.accrue()
-    print('total interest:{} balance:{}'.format(a.intpaid,a.balance))
+    print('{} total interest:{}'.format(str(s), a.intpaid))
 
 
 .. note::

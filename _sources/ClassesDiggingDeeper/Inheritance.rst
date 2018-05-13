@@ -42,12 +42,15 @@ parentheses after the name of the new class.
             if self.__balance >= amount:
                 self.__balance -= amount
 
+        def __str__(self):
+            return "{} ${:,.2f}".format(self.__owner, self.__balance)
+
     class LOC(Account):
         '''LOC inherits everything from Account'''
 
     a = LOC('Joe')
     a.deposit(100)
-    print(a.getBalance())
+    print(a)
     a.withdraw(300)
     print(a.getBalance())
 
@@ -74,6 +77,9 @@ Next we write the LOC constructor.
             if self.__balance >= amount:
                 self.__balance -= amount
 
+        def __str__(self):
+            return "{} ${:,.2f}".format(self.__owner, self.__balance)
+
     class LOC(Account):
         def __init__(self, name, line):
             self.__line = line
@@ -81,7 +87,7 @@ Next we write the LOC constructor.
 
     a = LOC('Joe', 500)
     a.deposit(100)
-    print(a.getBalance())
+    print(a)
     a.withdraw(300)
     print(a.getBalance())
 
@@ -109,6 +115,9 @@ Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` 
             if self.__balance >= amount:
                 self.__balance -= amount
 
+        def __str__(self):
+            return "{} ${:,.2f}".format(self.__owner, self.__balance)
+
     class LOC(Account):
         def __init__(self, name, line):
             self.__line = line
@@ -121,7 +130,7 @@ Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` 
 
     a = LOC('Joe', 500)
     a.deposit(100)
-    print(a.getBalance())
+    print(a)
     a.withdraw(300)
     print(a.getBalance())
     a.withdraw(400) # trying to withdraw too much
