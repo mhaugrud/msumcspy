@@ -40,7 +40,7 @@ to write functions that return values.  One thing to notice is that even though 
             return self.balance
 
     
-    p = Account('Joe')
+    p = Account('Jan')
     print(p.getBalance())
 
 Note that the ``getBalance`` method simply returns the value of ``self.balance`` from the Account itself.  

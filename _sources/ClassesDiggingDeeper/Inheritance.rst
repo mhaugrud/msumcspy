@@ -48,7 +48,7 @@ parentheses after the name of the new class.
     class LOC(Account):
         '''LOC inherits everything from Account'''
 
-    a = LOC('Joe')
+    a = LOC('Jan')
     a.deposit(100)
     print(a)
     a.withdraw(300)
@@ -85,15 +85,16 @@ Next we write the LOC constructor.
             self.__line = line
             Account.__init__(self, name)  # perform the parent class initialization
 
-    a = LOC('Joe', 500)
+    a = LOC('Jan', 500)
     a.deposit(100)
     print(a)
     a.withdraw(300)
     print(a.getBalance())
 
-The LOC constructor has a parameter to specify the LOC account's line of credit. This amount is used 
-to initialize a new attribute, unique to the LOC account. Next the constructor asks the parent class 
-to perform its constructor method. Notice we still cannot withdraw more than we have on deposit.
+The LOC constructor has two parameters: the owner's name and the LOC account's line of credit. The later 
+amount is used to initialize a new attribute, unique to the LOC account. Next the constructor asks the 
+parent class to perform its constructor method which requires the name parameter. Notice we still cannot 
+withdraw more than we have on deposit.
 
 Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` attribute.
 
@@ -128,7 +129,7 @@ Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` 
             if self.getBalance() + self.__line >= amount:
                 self._Account__balance -= amount
 
-    a = LOC('Joe', 500)
+    a = LOC('Jan', 500)
     a.deposit(100)
     print(a)
     a.withdraw(300)
@@ -140,7 +141,7 @@ Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` 
    ``self._Account__balance`` allows ``LOC`` to access the private ``__balance`` attribute from the 
    parent ``Account`` class.
 
-Both Account and LOC have a ``withdraw`` method, both with exactly the same name. The LOC (child) 
+Both Account and LOC have a ``withdraw`` method, both with **exactly the same name**. The LOC (child) 
 withdraw **overrides** the Account (parent) withdraw. Now we can withdraw more than we have on deposit, 
 but not more than the account's line of credit.
 

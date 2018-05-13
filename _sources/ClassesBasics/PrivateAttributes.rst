@@ -29,7 +29,7 @@ using the deposit or withdraw methods? Could we get into an illegal state that w
             if self.balance >= amount:
                 self.balance -= amount
 
-    p = Account('Joe')
+    p = Account('Jan')
     print(p.getBalance())
     p.balance = -12345     # trying to directly change the attribute
     print(p.getBalance())  # notice what is displayed
@@ -68,7 +68,7 @@ underscore characters ``__balance``. We read this as dunder (double underscore) 
             if self.__balance >= amount:
                 self.__balance -= amount
 
-    p = Account('Joe')
+    p = Account('Jan')
     print(p.getBalance())
     p.__balance = -12345
     print(p.getBalance())

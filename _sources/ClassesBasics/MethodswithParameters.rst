@@ -11,7 +11,7 @@ Methods with Parameters
 -----------------------
           
 We could write another method to change the current balance. If so, we would need to supply a parameter 
-for the method to indicate how much the balance should become.
+indicating what value the balance should become.
 
 .. activecode:: c1d0
     
@@ -29,7 +29,7 @@ for the method to indicate how much the balance should become.
         def setBalance(self, amount):
             self.balance = amount
 
-    p = Account('Joe')
+    p = Account('Jan')
     print(p.getBalance())
     p.setBalance(150)
     print(p.getBalance())
@@ -64,13 +64,19 @@ Instead, let's add ``deposit`` and ``withdraw`` methods to better model how acco
             self.balance -= amount
 
   
-    p = Account('Joe')
+    p = Account('Jan')
     print(p.getBalance())
-    p.deposit(150)
+    
     print(p.getBalance())
-    p.withdraw(50)
+    
     print(p.getBalance())
 
+
+.. admonition:: Extend the program ...
+
+   - On line 21, make a deposit to the account
+   - On line 23, make a withdrawal from the account
+   - Run and notice how the balance changes
 
 Notice that the caller of ``deposit`` or ``withdraw`` does not explicitly supply an argument to match the 
 ``self`` parameter.  This is true of all method calls. The definition will always
@@ -110,7 +116,7 @@ Run the activecode below.
             self.balance -= amount
 
   
-    p = Account('Joe')
+    p = Account('Jan')
     print(p.getBalance())
     p.deposit(150)
     print(p.getBalance())

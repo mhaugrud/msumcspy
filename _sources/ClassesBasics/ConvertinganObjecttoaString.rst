@@ -40,7 +40,7 @@ Consider the example below.
             if self.__balance >= amount:
                 self.__balance -= amount
 
-    p = Account('Joe')
+    p = Account('Jan')
     p.deposit(150)
     print(p)
 
@@ -88,7 +88,7 @@ When we change the meaning of a pre-defined method, we say that we **override** 
         def __str__(self):
             return "{} ${:,.2f}".format(self.__owner, self.__balance)
 
-    p = Account('Joe')
+    p = Account('Jan')
     p.deposit(150)
     print(str(p))
           

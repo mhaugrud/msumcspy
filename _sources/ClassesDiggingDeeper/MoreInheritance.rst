@@ -54,7 +54,7 @@ pay interest.
             return self.__intpaid
         
 
-    a = Savings('Joe')
+    a = Savings('Jan')
     a.deposit(1000)
     print('{} total interest:{}'.format(str(a), a.intpaid))
     a.accrue()
@@ -64,8 +64,8 @@ pay interest.
 
 
 .. note::
-   This form of inheritance is called **augmentation**. The child class has a new capability that was not 
-   available in the parent. 
+   This form of inheritance is called **augmentation**. The child class has a method (with a name
+   different than any in the parent class) giving it a new capability not available in the parent. 
 
 .. index:: class diagram; inheritance
 

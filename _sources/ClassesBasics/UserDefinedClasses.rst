@@ -11,12 +11,13 @@
 User Defined Classes
 --------------------
 
-We've already seen classes like ``str``, ``int``, ``float`` and ``Turtle``.  These were defined by Python and
-made available for us to use.  However, in many cases when we are solving problems we need to create data objects
-that are related to the problem we are trying to solve.  We need to create our own classes.
+We've already seen classes like ``str``, ``int``, ``tuple``, ``Turtle``, etc.  These were defined by Python 
+and made available for us to use.  However, customized data objects, related to a particular problem, may
+enable us to solve that problem more easily.  We will now see how to create our own classes.
 
-As an example, consider the concept of a checking account at a bank. An account has an owner and a current balance. 
-A particular account could be owned by Joe have a current balance of 150. This is the state of that account.
+As an example, consider a checking account at a bank. An account has an owner and a current balance. A 
+particular account could be owned by Jan have a current balance of 150. This is the **state** of that account.
+
 
 Thinking about our diagram above, we could draw an ``Account`` object as shown here.
 
@@ -24,10 +25,10 @@ Thinking about our diagram above, we could draw an ``Account`` object as shown h
    :alt: An account has a balance
 
 
-A typical operation that one associates with accounts might be to ask the account for its curent balance, 
-``getBalance``. One might wish to make a deposit to the account, ``deposit``, withdraw funds from the account, 
-``withdraw``, or generate a statement for it listing its transactions, ``statement``.  We'll shortly see how 
-we can organize these together with the data.
+Typical operations one associates with accounts include asking the account for its curent balance, 
+``getBalance``; making a deposit to the account, ``deposit``; withdrawing funds from the account, 
+``withdraw``, or generating a statement for it listing its transactions, ``statement``.  We'll shortly 
+see how we can organize these together with the data.
 
 .. image:: Figures/objectpic3.png
    :alt: An account also has methods
@@ -59,12 +60,11 @@ If the first line after the class header is a string, it becomes the docstring o
 recognized by various tools.  (This is also the way docstrings work in functions.)
 
 
-Every class should have a method with the special name ``__init__``.  
-This **initializer method**, often referred to as the **constructor**, is automatically called whenever a new 
-instance of ``Account`` is created.  It gives the programmer the opportunity to set up the attributes required 
-within the new instance by giving them their initial state values.  The ``self`` parameter (you could choose 
-any other name, but nobody ever does!) is automatically set to reference the newly-created object that needs to 
-be initialized.   
+Every class should have a method with the special name ``__init__``.  This **initializer method**, often 
+referred to as the **constructor**, is automatically called whenever a new instance of ``Account`` is created.  
+It gives the programmer the opportunity to set up the attributes required within the new instance by giving 
+them their initial state values.  The ``self`` parameter (you could choose any other name, but nobody ever 
+does!) is automatically set to reference the newly-created object that is to be initialized.   
 
 So let's use our new Account class now.
 
@@ -78,13 +78,13 @@ So let's use our new Account class now.
             self.owner = name
             self.balance = 0.00
     
-    p = Account('Joe')        # Instantiate an object of type Account
-    q = Account('Moe')        # and make a second Account
+    p = Account('Jan')        # Instantiate an object of type Account
+    q = Account('Dan')        # and make a second Account
 
     print("Nothing seems to have happened with the accounts")
 
-During the initialization, for each of the objects, we created attributes called `owner` and `balance`.
-We gave each of them a starting value.  You will note that when you run the program, nothing seems to have 
+During the initialization of each object, we create attributes called `owner` and `balance`.
+We give each of them a starting value.  You will note that when you run the program, nothing seems to have 
 happened.  It turns out that this is not quite the case.  In fact, two ``Accounts`` have been created, each 
 having their attributes initialized.  However, because we have not asked either account to do anything, we 
 don't see any apparent result.
@@ -105,8 +105,8 @@ You can see this for yourself, via codelens:
             self.owner = name
             self.balance = 0.00
     
-    p = Account('Joe')        # Instantiate an object of type Account
-    q = Account('Moe')        # and make a second Account
+    p = Account('Jan')        # Instantiate an object of type Account
+    q = Account('Dan')        # and make a second Account
 
     print("Nothing seems to have happened with the accounts")
 
@@ -125,8 +125,8 @@ objects (we will have more to say about this in a later chapter).
             self.owner = name
             self.balance = 0.00
     
-    p = Account('Joe')        # Instantiate an object of type Account
-    q = Account('Moe')        # and make a second Account
+    p = Account('Jan')        # Instantiate an object of type Account
+    q = Account('Dan')        # and make a second Account
 
     print("Nothing seems to have happened with the accounts")
 
@@ -136,8 +136,7 @@ objects (we will have more to say about this in a later chapter).
     print(p is q)
 
 
-This should look familiar --- we've used classes before to create
-more than one object:   
+This should look familiar --- we've used classes before to create more than one object:   
 
 .. sourcecode:: python
 
@@ -148,8 +147,8 @@ more than one object:
  
 The variables ``p`` and ``q`` are assigned references to two new ``Account`` objects. 
 A function like ``Turtle`` or ``Account`` that creates a new object instance is called a **constructor**.  
-Every class automatically uses the name of the class as the name of the constructor function.
-The definition of the constructor function is done when you write the ``__init__`` function.
+Every class automatically uses the name of the class as the name of the constructor method.
+The definition of the constructor function is done when you write the ``__init__`` method.
 
 .. index:: object; instantiation
 

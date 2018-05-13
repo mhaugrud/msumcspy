@@ -43,14 +43,14 @@ then see if the method we are testing, properly changed the state of the object.
     if __name__ == "__main__":
         import test
         print('testing deposit method')
-        a = Account('Joe')
+        a = Account('Jan')
         a.deposit(100)
         a.deposit(5)
         test.testEqual(a.getBalance(),105) # the balance after 2 deposits
         a.deposit(-50)                     # what if a negative amount
         test.testEqual(a.getBalance(),105) # the balance should not change
         print('testing withdraw method')
-        b = Account('Moe')
+        b = Account('Dan')
         b.deposit(100)
         b.withdraw(80)
         test.testEqual(b.getBalance(),20)  # after deposit and withdraw

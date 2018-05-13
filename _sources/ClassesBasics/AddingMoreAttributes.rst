@@ -11,7 +11,10 @@
 Adding More Attributes to the Class
 -----------------------------------
 
-Lets improve the Account class by enabling it to keep a history of all its transactions (deposits and withdrawals) since a statement was last generated for the Account. We add two new attributes: a list for the transactions and a starting balance for this statement period. Both of these attributes are initialized in the constructor. We also add the method ``statement`` to display this history.
+Lets improve the Account class by enabling it to keep a history of all its transactions (deposits and 
+withdrawals). We add two new attributes: a list for the transactions and a starting balance for this 
+statement period. Both of these attributes are initialized in the constructor. We also add the method 
+``statement`` to display this history.
 
 .. activecode:: c1k
     
@@ -48,7 +51,7 @@ Lets improve the Account class by enabling it to keep a history of all its trans
             
             print('ending balance   ${:>8,.2f}'.format(self.__balance))
 
-    p = Account('Joe')
+    p = Account('Jan')
     p.deposit(150)
     p.withdraw(30)
     p.withdraw(20)
