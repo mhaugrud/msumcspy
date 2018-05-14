@@ -73,8 +73,8 @@ Class Diagram with Inheritance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The arrow in this class diagram indicates inheritance. The sub-classes inherit the attributes and methods 
-of the super-class. The sub-classes can have additional attributes or methods or they can override methods 
-of the super-class.
+of the super-class. The sub-classes can have additional attributes or methods. If a sub-class has a
+method with the same name as one in the super-class, it overrides the super-class method.
 
 .. image:: Figures/class2.PNG
 
