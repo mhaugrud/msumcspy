@@ -81,8 +81,8 @@ Next we write the LOC constructor.
             return "{} ${:,.2f}".format(self.__owner, self.__balance)
 
     class LOC(Account):
-        def __init__(self, name, line):
-            self.__line = line
+        def __init__(self, name, creditLine):
+            self.__line = creditLine
             Account.__init__(self, name)  # perform the parent class initialization
 
     a = LOC('Jan', 500)
@@ -120,8 +120,8 @@ Now we modify the LOC ``withdraw`` method to also check the object's ``__line`` 
             return "{} ${:,.2f}".format(self.__owner, self.__balance)
 
     class LOC(Account):
-        def __init__(self, name, line):
-            self.__line = line
+        def __init__(self, name, creditLine):
+            self.__line = creditLine
             Account.__init__(self, name)
 
         def withdraw(self, amount):

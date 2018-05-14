@@ -40,18 +40,18 @@ pay interest.
         '''Savings inherits everything from Account'''
         __rate = 0.01  #the saving account interest rate
         def __init__(self, name):
-            self.__intpaid = 0.0
+            self.__intPaid = 0.0
             Account.__init__(self, name)
        
         def accrue(self):
             '''calculate and deposit interest'''
             interest = Savings.__rate * self.balance
-            self.__intpaid += interest
+            self.__intPaid += interest
             self.deposit(interest)
 
         @property
         def intpaid(self):
-            return self.__intpaid
+            return self.__intPaid
         
 
     a = Savings('Jan')
@@ -60,7 +60,7 @@ pay interest.
     a.accrue()
     print('{} total interest:{}'.format(str(a), a.intpaid))
     a.accrue()
-    print('{} total interest:{}'.format(str(s), a.intpaid))
+    print('{} total interest:{}'.format(str(a), a.intpaid))
 
 
 .. note::
