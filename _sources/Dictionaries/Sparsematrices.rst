@@ -58,7 +58,7 @@ Each key is a tuple, and each value is an integer.
 
 To access an element of the matrix, we could use the ``[]`` operator::
     
-    matrix[(0, 3)]
+    matrix[0, 3]
 
 Notice that the syntax for the dictionary representation is not the same as the
 syntax for the nested list representation. Instead of two integer indices, we
@@ -73,6 +73,8 @@ return if the key is not in the dictionary (which would be 0 since it is sparse)
 .. activecode:: tdt
 
    matrix = {(0, 3): 1, (2, 1): 2, (4, 3): 3}
+
+   print(matrix[0,3])
    print(matrix.get((0,3)))
 
    print(matrix.get((1, 3), 0))
