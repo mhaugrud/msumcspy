@@ -59,7 +59,11 @@ To access an element of the matrix, we can use the ``[]`` operator::
 
 Notice that the syntax for the dictionary representation is not the same as the syntax for the nested list representation. Instead of two integer indices, we use one index, which is a tuple of integers.
 
-There is a small problem. If we specify a key that is not in the dictionary, the result is ``None``. The 
+We can omit the parentheses for the tuple::
+    
+    matrix[0, 3] 
+
+There is a small problem. If we specify a key that is not in the dictionary, ``None`` is returned. The 
 alternative version of the ``get`` method solves this problem. The first argument is the key.  The second 
 argument is the value ``get`` should return if the key is not in the dictionary.
 
@@ -69,7 +73,7 @@ argument is the value ``get`` should return if the key is not in the dictionary.
 
    print(matrix[(0,3)])
    print(matrix.get((0,3)))
-   print(matrix.get((0,3), 'illegal key'))
+   print(matrix.get((0,3), 'key not found'))
    print(matrix.get((3,2)))
    print(matrix[(3,2)])
 
