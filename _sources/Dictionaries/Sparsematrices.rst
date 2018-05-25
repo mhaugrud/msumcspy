@@ -53,31 +53,32 @@ An alternative representation is to use a dictionary. For the keys, we can use t
 
 We only need three key-value pairs, one for each nonzero element of the matrix. Each key is a tuple, and each value is an integer.
 
-To access an element of the matrix, we could use the ``[]`` operator::
+To access an element of the matrix, we can use the ``[]`` operator::
     
-    matrix[0, 3]
+    matrix[(0, 3)] 
 
 Notice that the syntax for the dictionary representation is not the same as the syntax for the nested list representation. Instead of two integer indices, we use one index, which is a tuple of integers.
 
-There is one problem. If we specify a key that is not in the dictionary, we get an error. The alternative 
-version of the ``get`` method solves this problem. The first argument will be the key.  The second argument 
-is the value ``get`` should return if the key is not in the dictionary.
+There is a small problem. If we specify a key that is not in the dictionary, the result is ``None``. The 
+alternative version of the ``get`` method solves this problem. The first argument is the key.  The second 
+argument is the value ``get`` should return if the key is not in the dictionary.
 
 .. activecode:: tdu
 
    matrix = {(0, 3): 1, (2, 1): 2, (4, 3): 3}
 
-   print(matrix[0,3])
+   print(matrix[(0,3)])
    print(matrix.get((0,3)))
    print(matrix.get((0,3), 'illegal key'))
    print(matrix.get((3,2)))
+   print(matrix[(3,2)])
 
 .. admonition:: Correct the error ...
 
-   Line 6 causes a run-time error since (3,2) is not a key in the dictionary. However, in this sparse matrix 
+   Line 7 causes a run-time error since (3,2) is not a key in the dictionary. However, in this sparse matrix 
    we know that the other elements have a value of zero.
 
-   Add a second argument to ``get`` in line 6 so ``0`` is returned when a key is not present in the
-   dictionary.
+   Edit line 7 to use the ``get`` method (like line 6). Include a second argument so ``0`` is returned 
+   when a key is not present in the dictionary.
 
 
