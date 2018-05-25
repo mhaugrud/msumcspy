@@ -71,18 +71,22 @@ argument is the value ``get`` should return if the key is not in the dictionary.
 
    matrix = {(0, 3): 1, (2, 1): 2, (4, 3): 3}
 
-   print(matrix[(0,3)])
+   print(matrix[0,3])
    print(matrix.get((0,3)))
    print(matrix.get((0,3), 'key not found'))
    print(matrix.get((3,2)))
-   print(matrix[(3,2)])
+   print(matrix[3,2])
 
 .. admonition:: Correct the error ...
 
-   Line 7 causes a run-time error since (3,2) is not a key in the dictionary. However, in this sparse matrix 
-   we know that the other elements have a value of zero.
+   - Run and notice that lines 3 through 6 produce valid results.
 
-   Edit line 7 to use the ``get`` method (like line 6). Include a second argument so ``0`` is returned 
-   when a key is not present in the dictionary.
+   - Line 7 causes a run-time error since (3,2) is not a key in the dictionary. Comment out this line.
+
+   - In line 5, change ``0,3`` to ``3,2``. Run and notice there are no errors.
+
+   - In this sparse matrix all the elements not defined in the dictionary have a value of zero. In line 5, 
+     change ``'key not found'`` to ``0``. Run and notice the proper value is returned for a key not present 
+     in the dictionary.
 
 
