@@ -38,7 +38,7 @@ the nested lists represent the data in each column.
 
     print(matrix[0][3])
     print(matrix[2][1])
-    print(matrix[3][2])
+    print(matrix[1][2])
 
 
 One thing that you might note about this example matrix is that there are many items that are zero.  In fact, only three of the
@@ -74,16 +74,16 @@ argument is the value ``get`` should return if the key is not in the dictionary.
    print(matrix[0,3])
    print(matrix.get((0,3)))
    print(matrix.get((0,3), 'key not found'))
-   print(matrix.get((3,2)))
-   print(matrix[3,2])
+   print(matrix.get((1,2)))
+   print(matrix[1,2])
 
 .. admonition:: Correct the error ...
 
    - Run and notice that lines 3 through 6 produce valid results.
 
-   - Line 7 causes a run-time error since (3,2) is not a key in the dictionary. Comment out this line.
+   - Line 7 causes a run-time error since (1,2) is not a key in the dictionary. Comment out this line.
 
-   - In line 5, change ``0,3`` to ``3,2``. Run and notice there are no errors.
+   - In line 5, change ``0,3`` to ``1,2``. Run and notice there are no errors.
 
    - In this sparse matrix all the elements not defined in the dictionary have a value of zero. In line 5, 
      change ``'key not found'`` to ``0``. Run and notice the proper value is returned for a key not present 
