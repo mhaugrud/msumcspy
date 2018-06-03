@@ -89,4 +89,18 @@ argument is the value ``get`` should return if the key is not in the dictionary.
      change ``'key not found'`` to ``0``. Run and notice the proper value is returned for a key not present 
      in the dictionary.
 
+In the above example, the tuple keys consist of two integers: first the row followed by the column. This 
+closely corresponds to the indexing for the nested list example shown in the activecode at the top of
+this page.
+
+Suppose instead we want to use tuple keys with the column first followed by the row. This corresponds to
+the Cartesian system where we specify a point by its x (column) and y (row) coordinates. The activecode
+below demonstates this with the same matrix shown at the top of the page and placing (0,0) at the lower
+left corner.
+
+.. activecode:: tdv
+
+   matrix = {(3, 0): 3, (1, 2): 2, (3, 4): 1}
+
+   print(matrix[1,2])
 
