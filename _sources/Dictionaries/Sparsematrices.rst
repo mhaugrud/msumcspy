@@ -95,12 +95,22 @@ this page.
 
 Suppose instead we want to use tuple keys with the column first followed by the row. This corresponds to
 the Cartesian system where we specify a point by its x (column) and y (row) coordinates. The activecode
-below demonstates this with the same matrix shown at the top of the page and placing (0,0) at the lower
-left corner.
+below demonstates this with the same matrix shown at the top of the page and placing (0,0) at the upper
+left corner and (4,4) at the lower right. (This is the arrangement of pixels in an image.)
 
 .. activecode:: tdv
 
-   matrix = {(3, 0): 3, (1, 2): 2, (3, 4): 1}
+   matrix = {(3, 0): 1, (1, 2): 2, (3, 4): 3}
 
-   print(matrix[1,2])
+   x = int(input('x coordinate'))
+   y = int(input('y coordinate'))
+   print(matrix.get((x,y),0))
+
+.. admonition:: Modify the program ...
+
+   - Run the activecode with several different values for x and y. Compare the output with the picture
+     at the top of this page.
+   - Edit line one so (0,0) is at the lower left corner and (4,4) at the upper right. (Only keys in the
+     dictionary change - none of the values.) This is the conventional arragement of points in the
+     Cartesian coordinate system.
 
