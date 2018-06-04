@@ -13,10 +13,12 @@
 
 .. index:: matrix
 
-Sparse Matrices
----------------
+Matrices
+--------
 
-A matrix is a two dimensional collection, typically thought of as having rows and columns of data.  One of the easiest ways to create a matrix is to use a list of lists.  For example, consider the matrix shown below.  
+A matrix is a two dimensional collection, typically thought of as having rows and columns of data. In the
+*More About Iteration* chapter, we saw how an image is a two dimensional collection of pixels. One of the 
+easiest ways to create a matrix is to use a list of lists.  For example, consider the matrix shown below.  
 
 
 
@@ -24,8 +26,7 @@ A matrix is a two dimensional collection, typically thought of as having rows an
 .. image:: Figures/sparse.png
    :alt: sparse matrix 
 
-We can represent this collection as five rows, each row having five columns.  Using a list of lists representation, we will have a list of five items, each of which is a list of five items.  The outer items represent the rows and the items in 
-the nested lists represent the data in each column.
+We can represent this collection as five rows, each row having five columns.  Using a list of lists representation, we will have a list of five items, each of which is a list of five items.  The outer items represent the rows and the items in the nested lists represent the data in each column.
 
 
 .. activecode:: tdt
@@ -41,17 +42,19 @@ the nested lists represent the data in each column.
     print(matrix[1][2])
 
 
-One thing that you might note about this example matrix is that there are many items that are zero.  In fact, only three of the
-data values are nonzero.  This type of matrix has a special name.  It is called a `sparse matrix <http://en.wikipedia.org/wiki/Sparse_matrix>`__.
+One thing that you might note about this example matrix is that there are many items that are zero.  In fact, 
+only three of the data values are nonzero.  This type of matrix has a special name.  It is called a 
+`sparse matrix <http://en.wikipedia.org/wiki/Sparse_matrix>`__.
 
-Since there is really no need to store all of the zeros, the list of lists representation is considered to be inefficient.
-An alternative representation is to use a dictionary. For the keys, we can use tuples that contain the row and column numbers. Here is the dictionary representation of the same matrix.
+Since there is really no need to store all of the zeros, the list of lists representation is considered to be inefficient. An alternative representation is to use a dictionary. For the keys, we can use tuples that 
+contain the row and column numbers. Here is the dictionary representation of the same matrix.
 
 .. sourcecode:: python
     
     matrix = {(0, 3): 1, (2, 1): 2, (4, 3): 3}
 
-We only need three key-value pairs, one for each nonzero element of the matrix. Each key is a tuple, and each value is an integer.
+We only need three key-value pairs, one for each nonzero element of the matrix. Each key is a tuple
+representing the row and column numbers, and each value is an integer.
 
 To access an element of the matrix, we can use the ``[]`` operator::
     
