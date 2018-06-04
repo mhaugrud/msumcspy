@@ -110,7 +110,6 @@ left corner and (4,4) at the lower right. (This is the arrangement of pixels in 
 
    - Run the activecode with several different values for x and y. Compare the output with the picture
      at the top of this page.
-   - Edit line one so (0,0) is at the lower left corner and (4,4) at the upper right. (Only keys in the
-     dictionary change - none of the values.) This is the conventional arragement of points in the
-     Cartesian coordinate system.
+   - Edit line one so (0,0) is at the lower left corner and (4,4) at the upper right. (This is the 
+     conventional arragement of points in the Cartesian coordinate system.)
 
