@@ -18,12 +18,12 @@ The goal of this chapter is to introduce you to the basic vocabulary of programm
 
 .. _values_n_types:
 
-.. video:: v_typesnconvert
-    :controls:
-    :thumb: ../_static/valuesNtypes.png
+.. youtube:: vNfCfowr-pQ
+    :divid: typesnconvert
+    :height: 315
+    :width: 560
+    :align: left
 
-    http://media.interactivepython.org/thinkcsVideos/TypesNTypeConversion.mov
-    http://media.interactivepython.org/thinkcsVideos/TypesNTypeConversion.webm
 
 
 

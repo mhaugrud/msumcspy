@@ -20,12 +20,11 @@ The Python type for storing true and false values is called ``bool``, named
 after the British mathematician, George Boole. George Boole created *Boolean
 Algebra*, which is the basis of all modern computer arithmetic.
 
-.. video:: v_booleanexpressions
-   :controls:
-   :thumb: ../_static/booleanexpressions.png
-
-   http://media.interactivepython.org/thinkcsVideos/booleanexpressions.mov
-   http://media.interactivepython.org/thinkcsVideos/booleanexpressions.webm
+.. youtube:: LD-F4RODy-I
+    :divid: booleanexpressions
+    :height: 315
+    :width: 560
+    :align: left
 
 |
 

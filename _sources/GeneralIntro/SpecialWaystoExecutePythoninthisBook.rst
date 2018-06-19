@@ -18,13 +18,11 @@ Executing Python in This Book
 
 This book provides two special ways to execute Python programs.  Both techniques are designed to assist you as you learn the Python programming language.  They will help you increase your understanding of how Python programs work.
 
-.. video:: v_codelensvid
-    :controls:
-    :thumb: ../_static/activecodethumb.png
-
-    http://media.interactivepython.org/thinkcsVideos/activecodelens.mov
-    http://media.interactivepython.org/thinkcsVideos/activecodelens.webm
-
+.. youtube:: LZ7H1X8ar9E
+    :divid: codelensvid
+    :height: 315
+    :width: 560
+    :align: left
 
 |
 

@@ -13,15 +13,14 @@
 
 .. index:: range function
 
-The ``range`` Function
-----------------------
+The ``range`` Constructor
+-------------------------
 
-.. video:: v_advrange
-   :controls:
-   :thumb: ../_static/advrange.png
-
-   http://media.interactivepython.org/thinkcsVideos/AdvancedRange.mov
-   http://media.interactivepython.org/thinkcsVideos/AdvancedRange.webm
+.. youtube:: YK8QlIT3__M
+    :divid: advrange
+    :height: 315
+    :width: 560
+    :align: left
 
 |
 
@@ -75,13 +74,12 @@ So to repeat something four times, a **good** Python programmer would do this:
 
 
 The `range <http://docs.python.org/py3k/library/functions
-.html?highlight=range#range>`_ function is actually a very powerful function
-when it comes to
+.html?highlight=range#range>`_ constructor is actually very powerful when it comes to
 creating sequences of integers.  It can take one, two, or three parameters.  We have seen
 the simplest case of one parameter such as ``range(4)`` which creates ``[0, 1, 2, 3]``.
 But what if we really want to have the sequence ``[1, 2, 3, 4]``?
 We can do this by using a two parameter version of ``range`` where the first parameter is the starting point and the second parameter is the ending point.  The evaluation of ``range(1,5)`` produces the desired sequence.  What happened to the 5?
-In this case we interpret the parameters of the range function to mean
+In this case we interpret the parameters of the range constructor to mean
 range(start,beyondLast), where beyondLast means an index past the last index we want.  In the 2-parameter version
 of range, that is the last index included + 1.
 
@@ -111,7 +109,7 @@ Here are a two examples for you to run. (It is rare in a program to print a rang
    On line 3, type a similar instruction to create a sequence starting at 10 and going up to 20 (including 20).
 
 Codelens will help us to further understand the way range works.  In this case, the variable ``i`` will take on values
-produced by the ``range`` function.
+produced by the ``range`` constructor.
 
 .. codelens:: rangeme
 

@@ -21,12 +21,11 @@ Python as part of the **standard library**. We have already used one of these qu
 the ``turtle`` module.  Recall that once we import the module, we can use things
 that are defined inside.
 
-.. video:: v_modules
-    :controls:
-    :thumb: ../_static/modules.png
-
-    http://media.interactivepython.org/thinkcsVideos/modules.mov
-    http://media.interactivepython.org/thinkcsVideos/modules.webm
+.. youtube:: GCLHuPBtLdQ
+    :divid: vid_modules
+    :height: 315
+    :width: 560
+    :align: left
 
 |
 

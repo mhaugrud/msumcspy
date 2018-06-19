@@ -20,12 +20,11 @@ The example on the previous page (codelens cl_ch02_19) works fine but is very li
 
 In order to do this, we need a way to get **input** from the user.  Luckily, in Python there is a built-in function to accomplish this task.  As you might expect, it is called ``input``.
 
-.. video:: v_inputvid
-    :controls:
-    :thumb: ../_static/inputthumb.png
-
-    http://media.interactivepython.org/thinkcsVideos/input.mov
-    http://media.interactivepython.org/thinkcsVideos/input.webm
+.. youtube:: 2KYixkCBXSQ
+    :divid: inputvid
+    :height: 315
+    :width: 560
+    :align: left
 
 |
 

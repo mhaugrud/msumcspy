@@ -17,12 +17,11 @@
 Functions
 ---------
 
-.. video:: v_function_intro
-   :controls:
-   :thumb: ../_static/function_intro.png
-
-   http://media.interactivepython.org/thinkcsVideos/FunctionsIntro.mov
-   http://media.interactivepython.org/thinkcsVideos/FunctionsIntro.webm
+.. youtube:: 4wKtB57J5J4
+    :divid: function_intro
+    :height: 315
+    :width: 560
+    :align: left
 
 |
 

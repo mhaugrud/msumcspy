@@ -18,12 +18,11 @@ The Accumulator Pattern
 
 In the previous example, we wrote a function that computes the square of a number.  The algorithm we used in the function was simple: multiply the number by itself. In this section we will reimplement the square function and use a different algorithm, one that relies on addition instead of multiplication.
 
-.. video:: v_function_accumulator_pattern
-   :controls:
-   :thumb: ../_static/accumulatorpattern.png
-
-   http://media.interactivepython.org/thinkcsVideos/accumulatorpattern.mov
-   http://media.interactivepython.org/thinkcsVideos/accumulatorpattern.webm
+.. youtube:: aqhREpceEMI
+    :divid: function_accumulator_pattern
+    :height: 315
+    :width: 560
+    :align: left
 
 |
 
