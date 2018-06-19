@@ -59,7 +59,8 @@ options(
             'python3': 'true',
             'dburl': 'postgresql://bmiller@localhost/runestone',
             'basecourse': 'msumoorhead',
-        }
+            'downloads_enabled': 'false',
+            'default_ac_lang': 'python',        }
 
     )
 )

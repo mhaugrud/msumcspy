@@ -99,7 +99,7 @@ Glossary
         multiplication, or string concatenation.
 
     prompt string
-		Used during interactive input to provide the use with hints as to what type of value to enter.
+		Used during interactive input to provide the user with hints as to what type of value to enter.
 
     reassignment
         Making more than one assignment to the same variable during the
