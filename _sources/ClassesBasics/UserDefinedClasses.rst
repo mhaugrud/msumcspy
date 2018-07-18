@@ -16,18 +16,18 @@ and made available for us to use.  However, customized data objects, related to 
 enable us to solve that problem more easily.  We will now see how to create our own classes.
 
 As an example, consider a checking account at a bank. An account has an owner and a current balance. A 
-particular account could be owned by Jan have a current balance of 150. This is the **state** of that account.
+particular account could be owned by Jan and have a current balance of 150. This is the **state** of that account.
 
 
-Thinking about our diagram above, we could draw an ``Account`` object as shown here.
+Thinking about our diagram above, we can draw an ``Account`` object as shown here.
 
 .. image:: Figures/objectpic2.png
    :alt: An account has a balance
 
 
-Typical operations one associates with accounts include asking the account for its curent balance, 
+Typical operations associated with accounts include asking the account for its curent balance, 
 ``getBalance``; making a deposit to the account, ``deposit``; withdrawing funds from the account, 
-``withdraw``, or generating a statement for it listing its transactions, ``statement``.  We'll shortly 
+``withdraw``; or generating a statement for it listing its transactions, ``statement``.  We'll shortly 
 see how we can organize these together with the data.
 
 .. image:: Figures/objectpic3.png
@@ -35,7 +35,7 @@ see how we can organize these together with the data.
 
 
 Now that we understand what an account object might look like, we can define a new **class**. 
-We'll want our accounts to each have ``owner`` and ``balance`` attributes,
+We will want our accounts to each have ``owner`` and ``balance`` attributes,
 so our first class definition looks like this.
 
 .. index:: method; constructor, attribute; self

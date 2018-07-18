@@ -31,7 +31,7 @@ functions and makes it easier to maintain and reuse code.
 
 The most important advantage of the object-oriented style is that it
 fits our mental chunking and real-life experience more accurately. 
-In real life our ``cook`` method is part of our microwave oven --- we don't
+In real life, a ``cook`` method is part of a microwave oven --- we don't
 have a ``cook`` function sitting in the corner of the kitchen, into which
 we pass the microwave!  Similarly, we use the cellphone's own methods 
 to send an sms, or to change its state to silent.  The functionality 
