@@ -83,6 +83,7 @@ Appendices
    Appendices/errorsAndDebug.rst
    Labs/pythonshell.rst
    Appendices/PrecedenceTable.rst
+   Appendices/testmodule.rst
 
 Acknowledgements
 ::::::::::::::::

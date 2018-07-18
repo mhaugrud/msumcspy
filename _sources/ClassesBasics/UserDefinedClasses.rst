@@ -85,8 +85,8 @@ So let's use our new Account class now.
 
 During the initialization of each object, we create attributes called `owner` and `balance`.
 We give each of them a starting value.  You will note that when you run the program, nothing seems to have 
-happened.  It turns out that this is not quite the case.  In fact, two ``Accounts`` have been created, each 
-having their attributes initialized.  However, because we have not asked either account to do anything, we 
+happened.  It turns out that this is not quite the case.  In fact, two ``Account`` objects have been created, 
+each having its attributes initialized.  However, because we have not asked either account to do anything, we 
 don't see any apparent result.
 
 
