@@ -6,7 +6,7 @@ The ``test`` Module
 
 Starting in the Functions chapter, we have written unit tests using the ``testEqual`` function from
 the ``test`` module. This test module is not included in the standard Python distribution. (There is
-a test module but it is different.) What follows is the source code for this ``test`` module.
+a standard test module but it is different from this.) What follows is the source code for this ``test`` module.
 
 
 .. sourcecode:: python
