@@ -20,21 +20,23 @@ The previous example creates a list from a sequence of values based on some sele
 
    [<expression> for <item> in <sequence> if  <condition>]
 
-where the if-clause is optional.  For example,
+where the if-clause is optional.
 
 .. activecode:: li7
 
-    mylist = [1,2,3,5,8,13]
+    numbers = [1,2,3,5,8,13]
 
-    sqlist = [val**2 for val in mylist]
-    print(sqlist)
+    squares = [val**2 for val in numbers]
+    print(squares)
 
 
 
-The expression describes each element of the list that is being built.  The ``for`` clause iterates through each item in a sequence.  The items are filtered by the if-clause if there is one.  In the example above, the ``for`` statement lets ``val`` take on all the values in the list ``mylist``.  Each value is then squared before it is appended to the list that is being built.  The result is a list of squares of the values in ``mylist``.
+The expression describes each element of the list that is being built.  The ``for`` clause iterates through each item in a sequence.  The items are filtered by the if-clause if there is one.  In the example above, the ``for`` statement lets ``val`` take on all the values in the list ``numbers``.  Each value is then squared before it is appended to the list that is being built.  The result is a list of squares of the values in ``numbers``.
 
 .. admonition:: Extend the program ...
 
+   - Run the activecode without any changes and observe the output is the same as the example from the
+     previous page.
    - In line 3, add an if-clause to the list comprehension so that only numbers less than 8 will be 
      squared. Run.
    - Edit the if-clause in line 3 so that only odd numbers less than 8 will be squared. Run.
