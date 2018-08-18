@@ -69,7 +69,7 @@ to return a list of all prime numbers less than n::
 
 .. activecode:: liv
     
-    numbers = [1, 2, 3, 5, 8]
+    numbers = [1,2,3,5,8,13]
     squares = []
 
 
