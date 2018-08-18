@@ -21,6 +21,7 @@ Lists
    PureFunctions.rst
    WhichisBetter.rst
    FunctionsthatProduceLists.rst
+   ListComprehensions.rst
    NestedLists.rst
    listTypeConversionFunction.rst
    ObjectsandReferences.rst
@@ -30,6 +31,5 @@ Lists
    AppendversusConcatenate.rst
    ListDeletion.rst
    ListFunctions.rst
-   ListComprehensions.rst
    Glossary.rst
    Exercises.rst
