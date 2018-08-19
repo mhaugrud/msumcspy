@@ -18,6 +18,7 @@ The Python ``with`` statement makes using context managers easy.  The general fo
 
 When the program exits the with block, the context manager handles the common stuff that normally happens.  For example closing a file.  A simple example will clear up all of this abstract discussion of contexts.
 
+Assume the file ``mydata.txt`` with the following content.
 
 .. datafile:: mydata.txt
 
@@ -34,5 +35,7 @@ When the program exits the with block, the context manager handles the common st
            print(line)
    print(md)        
 
-The first line of the ``with`` statement opens the file and assigns it to `md`  then we can iterate over the file in any of the usual ways. and when we are done we simply stop indenting and let Python take care of closing the file and cleaning up.
+The first line of the ``with`` statement opens the file and assigns it to ``md``. We can iterate over 
+the file in any of the usual ways. When we are done, we simply stop indenting and let Python take care 
+of closing the file and cleaning up.
 

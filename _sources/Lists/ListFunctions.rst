@@ -27,8 +27,8 @@ len     the number of items in the collection
 sum     the total of the elements in the collection
 max     the largest value in the collection
 min     the smallest value in the collection
-all     a bool answering "are all the values in the collection True?"
-any     a bool answering "is at least one value in the collection True?"
+all     a bool answering the question "are all the values in the collection True?"
+any     a bool answering the question "is at least one value in the collection True?"
 ======  ===========
 
 
