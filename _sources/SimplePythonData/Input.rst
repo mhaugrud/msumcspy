@@ -68,7 +68,7 @@ To modify the codelens example, we will add an input statement to allow the user
     print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
 
 
-The variable ``str_seconds`` will refer to the string that is entered by the user. As we said above, even though this string may be ``7683``, it is still a string and not a number.  To construct an integer, we use the ``int`` function. The result is referred to by ``total_secs``.  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.
+The variable ``str_seconds`` will refer to the string that is entered by the user. As we said above, even though this string may be ``7733``, it is still a string and not a number.  To construct an integer, we use the ``int`` function. The result is referred to by ``total_secs``.  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.
 
 .. admonition:: Modify the program ...
 
