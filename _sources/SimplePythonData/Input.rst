@@ -16,7 +16,7 @@
 Input
 -----
 
-The example on the previous page (codelens cl_ch02_19) works fine but is very limited in that it only works with one value for ``total_secs``.  What if we wanted to rewrite the program so that it was more general.  One thing we could do is allow the user to enter any value they wish for the number of seconds.  The program could then print the proper result for that starting value.
+The example on the previous page (codelens cl_ch02_19) works fine but is very limited in that it only works with one value for ``total_secs``.  What if we want to rewrite the program so that it is more general?  One thing we could do is allow users to enter any value they wish for the number of seconds.  The program could then print the proper result for that starting value.
 
 In order to do this, we need a way to get **input** from the user.  Luckily, in Python there is a built-in function to accomplish this task.  As you might expect, it is called ``input``.
 
@@ -41,12 +41,13 @@ of times and try some different names in the input box that appears.
     name = input("Please enter your name: ")
     print("Hello,", name)
 
-It is very important to note that the ``input`` function returns a **string** value.  Even if you asked the user to enter their age, you would get back a string like ``"17"``.
+It is very important to note that the ``input`` function returns a **string** value.  Even if you asked the user to enter their age, you would get back a string like ``"19"``.
 
 .. admonition:: Prove it ...
 
-   On line 3, type a print statement to display the **type** of ``name``.
-   Run the program and enter your name. Run it again and enter a number. Notice the type is the same in either case.
+   - On line 3, type a print statement to display the **type** of ``name``.
+   - Run the program and enter your name. 
+   - Run it again and enter a number. Notice the type is the same in either case.
   
 
 
