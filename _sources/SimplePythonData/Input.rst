@@ -68,7 +68,7 @@ To modify the codelens example, we will add an input statement to allow the user
     print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
 
 
-The variable ``str_seconds`` will refer to the string that is entered by the user. As we said above, even though this string may be ``7684``, it is still a string and not a number.  To construct an integer, we use the ``int`` function. The result is referred to by ``total_secs``.  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.
+The variable ``str_seconds`` will refer to the string that is entered by the user. As we said above, even though this string may be ``7683``, it is still a string and not a number.  To construct an integer, we use the ``int`` function. The result is referred to by ``total_secs``.  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.
 
 .. admonition:: Modify the program ...
 
@@ -78,7 +78,7 @@ The variable ``str_seconds`` will refer to the string that is entered by the use
 
    - Comment out line 2.
 
-   - The program still runs the same. What you did in line 1 is called **nesting**, putting one thing inside of another. In this case, you placed the *input* function inside of the *int* function.
+   - The program still runs the same. What you did in line 1 is called **nesting**, putting one thing inside of another. Since the *input* function is inside of the *int* function, the *input* is executed first. Whatever the user types at the input prompt is then passed to the *int* function.
 
    - On line 10, type a print function to display the **sum** of these three terms: hours times 3600, minutes times 60, and sec_finally_remaining. If you typed this correctly, line 10 will display the number you entered in line 1.
    
