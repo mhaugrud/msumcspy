@@ -19,7 +19,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "ficek"
+project_name = "haugrud"
 ###############################
 
 master_url = 'https://dev.runestone.academy'
