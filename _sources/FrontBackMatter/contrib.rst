@@ -38,13 +38,6 @@ to contact us. The email address is `jeff@elkner.net <mailto:jeff@elkner.net>`__
 . Substantial changes made due to your suggestions will add you to the next
 version of the contributor list (unless you ask to be omitted). Thank you!
 
-Minnesota State Edition
-~~~~~~~~~~~~~~~~~~~~~~~
-This custom version of *Think Like a Computer Scientist* was written and developed 
-by Michael Haugrud, professor of Computer Science Minnesota State University
-Moorhead. He reorganized and rewrote much of the original content, particularly
-the directives to modify the existing activecode examples and the two chapters
-on classes.
 
 Second Edition
 ~~~~~~~~~~~~~~
