@@ -13,6 +13,7 @@ Minnesota State Edition
 This custom version of *Think Like a Computer Scientist* was written and developed 
 by Michael Haugrud, professor of Computer Science Minnesota State University
 Moorhead. He reorganized and rewrote much of the original content, particularly
+
 * the directives to modify the existing activecode examples
 * the use of unit testing (see the appendix for the source code of the test module), and
 * the two chapters on object oriented programming and writing classes.
