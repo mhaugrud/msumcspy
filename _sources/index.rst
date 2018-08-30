@@ -49,6 +49,7 @@ Table of Contents
 
    <ul>
    <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
+   <li><a href="../../assignments/index.html">Grades</a></li>
    </ul>
 
 .. toctree::
