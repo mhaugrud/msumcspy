@@ -102,8 +102,8 @@ Glossary
         processing.
 
     runtime error
-        An error that does not occur until the program has started to execute
-        but that prevents the program from continuing.
+        An error that occurs while a program is executing. It causes the program to 
+        abruptly stop -- with an error message -- without reaching its end.
 
     semantic error
         An error in a program that makes it do something other than what the
@@ -125,7 +125,7 @@ Glossary
 
     syntax error
         An error in a program that makes it impossible to parse --- and
-        therefore impossible to interpret.
+        therefore impossible to interpret and run.
 
     token
         One of the basic elements of the syntactic structure of a program,
