@@ -103,7 +103,7 @@ Glossary
 
     runtime error
         An error that occurs while a program is executing. It causes the program to 
-        abruptly stop -- with an error message -- without reaching its end.
+        abruptly stop -- with an error message -- without reaching the end of the code.
 
     semantic error
         An error in a program that makes it do something other than what the
