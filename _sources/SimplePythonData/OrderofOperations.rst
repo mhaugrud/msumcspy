@@ -37,7 +37,7 @@ Python follows the same precedence rules for its mathematical operators that mat
 .. note::
    The acronym PEMDAS is a useful way to remember the order of operations.
 
-   PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don't be misled.  Multiplication and division are at the same precedence, so the left-to-right rule applies. Subtraction and addition are at the same precedence, so the left-to-right rule applies.
+   PEMDAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don't be misled.  Multiplication and division are at the same precedence, so the left-to-right rule applies. Subtraction and addition are at the same precedence, so the left-to-right rule applies.
 
 
 An exception to the left-to-right left-associative rule is the exponentiation operator ``**``. A useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
