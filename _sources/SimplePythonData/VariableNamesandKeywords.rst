@@ -39,7 +39,7 @@ If you give a variable an illegal name, you get a syntax error.  In the example 
 
 ``6oclock`` is illegal because it does not begin with a letter.  ``million$`` is illegal because it contains an illegal character, the dollar sign. But what's wrong with ``class``?
 
-It turns out that ``class`` is one of the Python **reserved words**. Reserved words define the language's syntax rules and structure, and they cannot be used as variable names.
+It turns out that ``class`` is one of the Python **reserved words**. Reserved words are defined in the syntax rules and structure of the language. These words cannot be used as variable names.
 
 Python has thirty-something reserved words (and every now and again improvements to Python introduce or eliminate one or two):
 
