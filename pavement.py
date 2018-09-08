@@ -19,11 +19,11 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "haugrud"
+project_name = "brekke"
 ###############################
 
-#master_url = 'https://dev.runestone.academy'
-master_url = None
+master_url = 'https://dev.runestone.academy'
+#master_url = None
 doctrees = None
 if master_url is None:
     if gethostname() in ['web608.webfaction.com', 'rsbuilder']:
