@@ -7,11 +7,11 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Minnesota State Edition
-=======================
+MSUM Edition
+============
 
 This custom version of *Think Like a Computer Scientist* was written and developed 
-by Michael Haugrud, professor of Computer Science Minnesota State University
+by Michael Haugrud, professor of Computer Science, Minnesota State University
 Moorhead. He reorganized and rewrote much of the original content, particularly
 
 * the directives to modify the existing activecode examples
