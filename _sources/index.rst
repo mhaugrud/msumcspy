@@ -1,4 +1,4 @@
-.. How to Think Like a Computer Scientist: Interactive Edition
+.. How to Think Like a Computer Scientist: MSUM Edition
 
 .. meta::
    :description: An interactive version of the How to Think Like a Computer Scientist book
@@ -11,7 +11,7 @@
 .. raw:: html
 
    <div style="text-align:center" class="center-block">
-   <h1>How to Think Like a Computer Scientist: Interactive Edition</h1>
+   <h1>How to Think Like a Computer Scientist: MSUM Edition</h1>
    <style>
    button.reveal_button {
        margin-left: auto;
