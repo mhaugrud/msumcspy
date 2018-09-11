@@ -75,6 +75,7 @@ Let's look at a simple Python program that implements the example set of rules d
 above.
 
 .. activecode::  string_lsys
+    :nocodelens:
 
     import turtle
 

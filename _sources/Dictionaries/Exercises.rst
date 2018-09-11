@@ -138,6 +138,7 @@ Exercises
 
    .. activecode:: ex_11_02
       :available_files: princess.txt
+      :nocodelens:
 
       f = open('princess.txt', 'r')
 
@@ -152,6 +153,7 @@ Exercises
 
    .. activecode:: ex_11_03
       :available_files: princess.txt
+      :nocodelens:
 
 .. question:: dict_ex_5
 

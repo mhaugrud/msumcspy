@@ -54,6 +54,7 @@ that we can test it before we make it more complicated.
 We import the test module to enable us to write a unit test for the function
 
 .. activecode:: fnn
+   :nocodelens:
 
    import test
    def distance(x1, y1, x2, y2):
@@ -115,6 +116,7 @@ Finally, using the fractional exponent ``0.5`` to find the square root,
 we compute and return the result.
 
 .. activecode:: fno
+   :nocodelens:
 
    import test
    def distance(x1, y1, x2, y2):

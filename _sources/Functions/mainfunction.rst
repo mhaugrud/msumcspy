@@ -91,6 +91,7 @@ For example, assume that we have written a collection of functions to do some si
 The activecode below defines two simple functions and a main. 
 
 .. activecode:: fnm
+    :nocodelens:
 
     def squareit(n):
 

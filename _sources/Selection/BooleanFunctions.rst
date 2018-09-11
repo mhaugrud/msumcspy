@@ -141,6 +141,7 @@ The ``isDivisible`` function can return either ``True`` or ``False``. These two 
 
 
 .. activecode:: bon
+   :nocodelens:
 
    def isDivisible(x, y):
        '''is x evenly divisible by y?'''

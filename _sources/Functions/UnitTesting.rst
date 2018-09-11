@@ -9,6 +9,7 @@ certain that they return the correct result. To be more certain these functions 
 To write a **unit test**, we must know the correct result when calling the function with a specific input. 
 
 .. activecode:: fnj
+    :nocodelens:
 
     def square(x):
         '''raise x to the second power'''

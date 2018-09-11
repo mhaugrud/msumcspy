@@ -21,6 +21,7 @@ then see if the method we are testing, properly changed the state of the object.
 
 
 .. activecode:: c1f
+    :nocodelens:
     
     class Account:
         '''Account class to model bank accounts'''
