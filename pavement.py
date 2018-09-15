@@ -17,7 +17,6 @@ try:
 except ImportError:
     updateProgressTables = False
 
-
 ######## CHANGE THIS ##########
 project_name = "haugrud"
 ###############################
