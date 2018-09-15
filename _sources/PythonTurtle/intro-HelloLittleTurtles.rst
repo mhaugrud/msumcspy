@@ -17,7 +17,7 @@ can use in our own programs.  Some of these can send email or fetch web pages. O
 In this chapter we will introduce a module that allows us to create a data object called a **turtle** that can be used to draw pictures.
 
 .. youtube:: Yxyx6KpKRzY
-    :divid: vid_turtleintro
+    :divid: v_turtleintro
     :height: 315
     :width: 560
     :align: left
