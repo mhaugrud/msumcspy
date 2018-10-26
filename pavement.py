@@ -18,7 +18,7 @@ except ImportError:
     updateProgressTables = False
 
 ######## CHANGE THIS ##########
-project_name = "haugrud"
+project_name = "leeh"
 ###############################
 
 master_url = 'https://dev.runestone.academy'
